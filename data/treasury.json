@@ -9,29 +9,30 @@
   },
   "overview": {
     "homepage_treasury_label_usd": 46500.0,
-    "treasury_page_total_value_usd": 0.0,
-    "data_quality_note": "On 2026-03-18, the dashboard homepage displayed $46.5k while the treasury summary widget displayed $0.00. Holdings tables below were non-zero and preserved here as the reliable row-level snapshot."
+    "treasury_page_total_value_usd": 45470.32754260856,
+    "treasury_page_display_total_usd": 0.0,
+    "data_quality_note": "Homepage treasury label: 46500.0; treasury metric payload: 45470.33; visible treasury widget: 0.0. Use row-level holdings plus the metric payload as the reliable balance layer."
   },
   "records": [
+    {
+      "asset_id": "base-sendit",
+      "asset_type": "erc20",
+      "symbol": "SENDIT",
+      "name": "Sendit",
+      "token_address": "0xba5b9b2d2d06a9021eb3190ea5fb0e02160839a4",
+      "amount": 474092937.5544444,
+      "value_usd": 4707.742869915633,
+      "source_url": "https://www.gnars.com/treasury",
+      "notes": "Live treasury holdings table snapshot."
+    },
     {
       "asset_id": "base-usdc",
       "asset_type": "erc20",
       "symbol": "USDC",
       "name": "USD Coin",
       "token_address": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
-      "amount": 21396.2439,
-      "value_usd": 21392.18,
-      "source_url": "https://www.gnars.com/treasury",
-      "notes": "Live treasury holdings table snapshot."
-    },
-    {
-      "asset_id": "base-sendit",
-      "asset_type": "erc20",
-      "symbol": "SENDIT",
-      "name": "Sendit",
-      "token_address": null,
-      "amount": 474092937.55,
-      "value_usd": 4707.74,
+      "amount": 21396.243942,
+      "value_usd": 21394.125713849742,
       "source_url": "https://www.gnars.com/treasury",
       "notes": "Live treasury holdings table snapshot."
     },
@@ -40,9 +41,9 @@
       "asset_type": "erc20",
       "symbol": "WETH",
       "name": "Wrapped Ether",
-      "token_address": null,
-      "amount": 0.03,
-      "value_usd": 60.35,
+      "token_address": "0x4200000000000000000000000000000000000006",
+      "amount": 0.02752447,
+      "value_usd": 60.3493271879,
       "source_url": "https://www.gnars.com/treasury",
       "notes": "Live treasury holdings table snapshot."
     },
@@ -75,10 +76,9 @@
       "name": "zimardrp",
       "token_address": "0xa619c9b65c02613c56507759c461018fcebb0dbb",
       "amount": 111100.0,
-      "value_usd": 1.38,
+      "value_usd": 1.39,
       "source_url": "https://zora.co/collect/base:0xa619c9b65c02613c56507759c461018fcebb0dbb",
       "notes": "Zora coin balance listed on the Gnars treasury page."
     }
   ]
 }
-

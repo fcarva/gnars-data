@@ -7,6 +7,7 @@
 - `contracts.json`: verified smart contract registry for Gnars and That's Gnarly
 - `proposals.json`: curated high-signal proposal layer
 - `proposals_archive.json`: full governance archive from `gnars.com` and `Snapshot`, including raw properties, votes, and decoded transactions
+- `proposal_tags.json`: proposal categorization queue and future LLM tagging layer
 - `members.json`: contributor and member directory seeds
 - `treasury.json`: treasury asset snapshots
 - `projects.json`: executed and active workstreams

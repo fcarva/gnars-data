@@ -44,14 +44,27 @@
       "required": [
         "homepage_treasury_label_usd",
         "treasury_page_total_value_usd",
+        "treasury_page_display_total_usd",
         "data_quality_note"
       ],
       "properties": {
         "homepage_treasury_label_usd": {
-          "type": "number"
+          "type": [
+            "number",
+            "null"
+          ]
         },
         "treasury_page_total_value_usd": {
-          "type": "number"
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "treasury_page_display_total_usd": {
+          "type": [
+            "number",
+            "null"
+          ]
         },
         "data_quality_note": {
           "type": "string"
@@ -112,4 +125,3 @@
   },
   "additionalProperties": false
 }
-

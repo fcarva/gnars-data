@@ -16,4 +16,5 @@ jobs:
         run: python scripts/validate_data.py
       - name: Build CSV exports
         run: python scripts/export_csv.py
-
+      - name: Build static site
+        run: python scripts/build_site.py

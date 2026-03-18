@@ -1,0 +1,151 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "dataset",
+    "as_of",
+    "version",
+    "records"
+  ],
+  "properties": {
+    "dataset": {
+      "const": "proposal_tags"
+    },
+    "as_of": {
+      "type": "string"
+    },
+    "version": {
+      "type": "integer"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "archive_id",
+          "title",
+          "platform",
+          "chain",
+          "proposal_number",
+          "source_url",
+          "tagging_status",
+          "review_state",
+          "scope",
+          "primary_category",
+          "secondary_categories",
+          "funding_category",
+          "lifecycle_stage",
+          "entities",
+          "confidence",
+          "requires_human_review",
+          "model_provider",
+          "model_name",
+          "guidelines_version",
+          "rationale",
+          "notes",
+          "updated_at"
+        ],
+        "properties": {
+          "archive_id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "platform": {
+            "type": "string"
+          },
+          "chain": {
+            "type": "string"
+          },
+          "proposal_number": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "source_url": {
+            "type": "string"
+          },
+          "tagging_status": {
+            "type": "string"
+          },
+          "review_state": {
+            "type": "string"
+          },
+          "scope": {
+            "type": "string"
+          },
+          "primary_category": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "secondary_categories": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "funding_category": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "lifecycle_stage": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "entities": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "confidence": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "requires_human_review": {
+            "type": "boolean"
+          },
+          "model_provider": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "model_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "guidelines_version": {
+            "type": "string"
+          },
+          "rationale": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "notes": {
+            "type": "string"
+          },
+          "updated_at": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

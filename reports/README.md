@@ -9,4 +9,4 @@ Recommended recurring outputs:
 - member activity summary
 - shipped versus promised workstream review
 - quarterly operations report
-
+- proposal-tagging QA report for low-confidence items

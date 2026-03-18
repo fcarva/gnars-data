@@ -14,6 +14,7 @@ Current exports include:
 - `contracts.csv`
 - `proposals.csv`
 - `proposals_archive.csv`
+- `proposal_tags.csv`
 - `proposal_transactions.csv`
 - `proposal_votes.csv`
 - `members.csv`

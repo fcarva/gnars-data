@@ -1,0 +1,52 @@
+name: Daily Sync
+
+on:
+  schedule:
+    - cron: "15 10 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Sync proposal archive
+        run: python scripts/sync_proposals.py
+
+      - name: Sync treasury
+        run: python scripts/sync_treasury.py
+
+      - name: Seed pilot tagging queue
+        run: python scripts/tag_proposals.py --init-pilot 30 --scope pilot-30
+
+      - name: Validate datasets
+        run: python scripts/validate_data.py
+
+      - name: Build CSV exports
+        run: python scripts/export_csv.py
+
+      - name: Build Pages site
+        run: python scripts/build_site.py
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data exports raw docs scripts .github README.md config
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "chore: daily gnars data sync"
+          git push origin HEAD:main

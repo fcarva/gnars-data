@@ -19,6 +19,7 @@ Treat this repository as a long-lived operational system, not just a folder of f
 - Prefer append-only snapshots in `raw/`
 - Keep schemas aligned with dataset changes
 - Regenerate CSV exports after structured data changes
+- Rebuild `_site/` before publishing Pages artifacts
 
 ## Supplemental onchain tooling
 
@@ -48,3 +49,11 @@ On 2026-03-18, the live Gnars treasury pages showed inconsistent aggregate value
 - Token holdings tables: non-zero balances
 
 This repository stores the row-level holdings and explicitly records the discrepancy.
+
+## GitHub Pages and automation
+
+- `scripts/build_site.py` generates a Quartz-style static vault into `_site/`
+- `.github/workflows/deploy-pages.yml` publishes `_site/` to GitHub Pages
+- `.github/workflows/daily-sync.yml` refreshes proposals, treasury, exports, and the pilot tagging queue every day
+
+See `docs/operations/github-pages.md` for the one-time repository setting that must be enabled.

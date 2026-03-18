@@ -126,6 +126,39 @@ def export_proposals_archive() -> None:
     write_csv("proposals_archive.csv", rows)
 
 
+def export_proposal_tags() -> None:
+    data = load_json("proposal_tags")
+    rows = []
+    for record in data["records"]:
+        rows.append(
+            {
+                "archive_id": record["archive_id"],
+                "title": record["title"],
+                "platform": record["platform"],
+                "chain": record["chain"],
+                "proposal_number": record["proposal_number"],
+                "source_url": record["source_url"],
+                "tagging_status": record["tagging_status"],
+                "review_state": record["review_state"],
+                "scope": record["scope"],
+                "primary_category": record["primary_category"],
+                "secondary_categories": "|".join(record["secondary_categories"]),
+                "funding_category": record["funding_category"],
+                "lifecycle_stage": record["lifecycle_stage"],
+                "entities": "|".join(record["entities"]),
+                "confidence": record["confidence"],
+                "requires_human_review": record["requires_human_review"],
+                "model_provider": record["model_provider"],
+                "model_name": record["model_name"],
+                "guidelines_version": record["guidelines_version"],
+                "rationale": record["rationale"],
+                "notes": record["notes"],
+                "updated_at": record["updated_at"],
+            }
+        )
+    write_csv("proposal_tags.csv", rows)
+
+
 def export_proposal_transactions() -> None:
     data = load_json("proposals_archive")
     rows = []
@@ -220,6 +253,9 @@ def export_treasury() -> None:
             {
                 "as_of": data["as_of"],
                 "wallet_address": data["wallet"]["address"],
+                "homepage_treasury_label_usd": data["overview"]["homepage_treasury_label_usd"],
+                "treasury_page_total_value_usd": data["overview"]["treasury_page_total_value_usd"],
+                "treasury_page_display_total_usd": data["overview"]["treasury_page_display_total_usd"],
                 "asset_id": record["asset_id"],
                 "asset_type": record["asset_type"],
                 "symbol": record["symbol"],
@@ -279,6 +315,7 @@ def main() -> int:
     export_contracts()
     export_proposals()
     export_proposals_archive()
+    export_proposal_tags()
     export_proposal_transactions()
     export_proposal_votes()
     export_members()

@@ -14,6 +14,7 @@ DATASETS = {
     "contracts": "contracts.schema.json",
     "proposals": "proposals.schema.json",
     "proposals_archive": "proposals_archive.schema.json",
+    "proposal_tags": "proposal_tags.schema.json",
     "members": "members.schema.json",
     "treasury": "treasury.schema.json",
     "projects": "projects.schema.json",
