@@ -4,4 +4,4 @@ __pycache__/
 .venv/
 Thumbs.db
 .DS_Store
-
+.tmp-thatsgnarly-contracts/

@@ -20,6 +20,25 @@ Treat this repository as a long-lived operational system, not just a folder of f
 - Keep schemas aligned with dataset changes
 - Regenerate CSV exports after structured data changes
 
+## Supplemental onchain tooling
+
+- Herd Explorer and Herd MCP are tracked as supplemental context tools, not canonical data stores
+- Verified against Herd docs on 2026-03-18, Herd currently supports `Ethereum` and `Base`
+- `Polygon` is not currently listed as supported by Herd, so Polygon work still needs a different explorer or analytics source
+- Herd is useful for contract relationships, proxy history, deployment context, and transaction decoding
+- Herd is not intended for Dune-style aggregate analytics; use Dune or structured exports for rollups and KPIs
+- The official MCP endpoint is `https://mcp.herd.eco/v1` and requires client-side OAuth authentication
+
+See `docs/operations/herd-mcp.md` for the focused Herd integration note.
+
+## Supplemental Ethereum knowledge
+
+- ETHSkills is tracked as a playbook for Ethereum workflows and current tooling judgment
+- It is especially relevant for indexing design, address hygiene, L2 tradeoffs, and tool selection
+- It is not a Gnars-specific factual source and should not override explorer or repository evidence
+
+See `docs/operations/ethskills.md` for the focused ETHSkills note.
+
 ## Immediate data quality issue observed
 
 On 2026-03-18, the live Gnars treasury pages showed inconsistent aggregate values:
@@ -29,4 +48,3 @@ On 2026-03-18, the live Gnars treasury pages showed inconsistent aggregate value
 - Token holdings tables: non-zero balances
 
 This repository stores the row-level holdings and explicitly records the discrepancy.
-

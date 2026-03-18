@@ -31,6 +31,10 @@ def write_csv(filename: str, rows: list[dict[str, Any]]) -> None:
     print(f"[ok] wrote {path.relative_to(ROOT)}")
 
 
+def json_cell(value: Any) -> str:
+    return json.dumps(value, ensure_ascii=False)
+
+
 def export_proposals() -> None:
     data = load_json("proposals")
     rows = []
@@ -57,6 +61,130 @@ def export_proposals() -> None:
             }
         )
     write_csv("proposals.csv", rows)
+
+
+def export_contracts() -> None:
+    data = load_json("contracts")
+    rows = []
+    for record in data["records"]:
+        rows.append(
+            {
+                "contract_id": record["contract_id"],
+                "ecosystem": record["ecosystem"],
+                "network": record["network"],
+                "chain_id": record["chain_id"],
+                "address": record["address"],
+                "label": record["label"],
+                "kind": record["kind"],
+                "status": record["status"],
+                "proxy_for": record["proxy_for"],
+                "explorer_url": record["explorer_url"],
+                "source_urls": "|".join(record["source_urls"]),
+                "notes": record["notes"]
+            }
+        )
+    write_csv("contracts.csv", rows)
+
+
+def export_proposals_archive() -> None:
+    data = load_json("proposals_archive")
+    rows = []
+    for record in data["records"]:
+        rows.append(
+            {
+                "archive_id": record["archive_id"],
+                "platform": record["platform"],
+                "space": record["space"],
+                "chain": record["chain"],
+                "proposal_key": record["proposal_key"],
+                "proposal_number": record["proposal_number"],
+                "title": record["title"],
+                "status": record["status"],
+                "status_display": record["status_display"],
+                "proposer": record["proposer"],
+                "proposer_label": record["proposer_label"],
+                "created_at": record["created_at"],
+                "start_at": record["start_at"],
+                "end_at": record["end_at"],
+                "snapshot_block": record["snapshot_block"],
+                "quorum": record["quorum"],
+                "choices_json": json_cell(record["choices"]),
+                "scores_by_choice_json": json_cell(record["scores_by_choice"]),
+                "scores_total": record["scores_total"],
+                "transaction_count": len(record["transactions"]),
+                "vote_count": len(record["votes"]),
+                "cover_image_url": record["cover_image_url"],
+                "content_summary": record["content_summary"],
+                "content_markdown": record["content_markdown"],
+                "source_url": record["links"]["source_url"],
+                "canonical_url": record["links"]["canonical_url"],
+                "discussion_url": record["links"]["discussion_url"],
+                "explorer_url": record["links"]["explorer_url"],
+                "raw_snapshot": record.get("raw_snapshot"),
+            }
+        )
+    write_csv("proposals_archive.csv", rows)
+
+
+def export_proposal_transactions() -> None:
+    data = load_json("proposals_archive")
+    rows = []
+    for record in data["records"]:
+        for transaction in record["transactions"]:
+            rows.append(
+                {
+                    "archive_id": record["archive_id"],
+                    "platform": record["platform"],
+                    "chain": record["chain"],
+                    "proposal_number": record["proposal_number"],
+                    "title": record["title"],
+                    "source_url": record["links"]["source_url"],
+                    "index": transaction.get("index"),
+                    "kind": transaction.get("kind"),
+                    "target": transaction.get("target"),
+                    "token_contract": transaction.get("token_contract"),
+                    "sender": transaction.get("sender"),
+                    "recipient": transaction.get("recipient"),
+                    "token_id": transaction.get("token_id"),
+                    "amount_eth": transaction.get("amount_eth"),
+                    "amount_raw": transaction.get("amount_raw"),
+                    "amount_normalized": transaction.get("amount_normalized"),
+                    "value_wei": transaction.get("value_wei"),
+                    "selector": transaction.get("selector"),
+                    "calldata": transaction.get("calldata"),
+                }
+            )
+    write_csv("proposal_transactions.csv", rows)
+
+
+def export_proposal_votes() -> None:
+    data = load_json("proposals_archive")
+    rows = []
+    for record in data["records"]:
+        for vote in record["votes"]:
+            rows.append(
+                {
+                    "archive_id": record["archive_id"],
+                    "platform": record["platform"],
+                    "space": record["space"],
+                    "chain": record["chain"],
+                    "proposal_number": record["proposal_number"],
+                    "title": record["title"],
+                    "source_url": record["links"]["source_url"],
+                    "voter": vote.get("voter"),
+                    "voter_ens_name": vote.get("voterEnsName"),
+                    "choice_json": json_cell(vote.get("choice")),
+                    "votes_raw": vote.get("votes"),
+                    "vp": vote.get("vp"),
+                    "vp_by_strategy_json": json_cell(vote.get("vp_by_strategy")),
+                    "reason": vote.get("reason"),
+                    "created": vote.get("created"),
+                    "timestamp": vote.get("timestamp"),
+                    "ipfs": vote.get("ipfs"),
+                    "transaction_hash": vote.get("transactionHash"),
+                }
+            )
+    write_csv("proposal_votes.csv", rows)
 
 
 def export_members() -> None:
@@ -148,7 +276,11 @@ def export_sources() -> None:
 
 
 def main() -> int:
+    export_contracts()
     export_proposals()
+    export_proposals_archive()
+    export_proposal_transactions()
+    export_proposal_votes()
     export_members()
     export_treasury()
     export_projects()
@@ -158,4 +290,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

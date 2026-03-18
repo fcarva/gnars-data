@@ -18,7 +18,7 @@
         "treasury",
         "tv"
       ],
-      "notes": "Primary live interface for Gnars DAO on Base."
+      "notes": "Primary live interface for Gnars DAO on Base. Proposal records are archived via scripts/sync_proposals.py."
     },
     {
       "source_id": "gnars-center",
@@ -56,13 +56,28 @@
       "type": "governance-archive",
       "status": "legacy",
       "url": "https://v1.snapshot.box/#/gnars.eth",
-      "sync_mode": "manual-export",
+      "sync_mode": "graphql-sync",
       "cadence": "batch",
       "sections": [
         "legacy-proposals",
         "legacy-votes"
       ],
-      "notes": "Required to reconstruct governance history before Base."
+      "notes": "Legacy governance interface. Proposal and vote data are reconstructed through the Snapshot GraphQL hub."
+    },
+    {
+      "source_id": "snapshot-hub",
+      "name": "Snapshot GraphQL Hub",
+      "type": "api",
+      "status": "active",
+      "url": "https://hub.snapshot.org/graphql",
+      "sync_mode": "graphql-sync",
+      "cadence": "batch",
+      "sections": [
+        "legacy-proposals",
+        "legacy-votes",
+        "proposal-metadata"
+      ],
+      "notes": "Primary structured source for the gnars.eth proposal archive and vote ledger."
     },
     {
       "source_id": "hive-gnars",
@@ -107,6 +122,73 @@
         "governance-metrics"
       ],
       "notes": "Analytics layer for treasury and historical governance metrics."
+    },
+    {
+      "source_id": "herd-explorer",
+      "name": "Herd Explorer",
+      "type": "onchain-explorer",
+      "status": "active",
+      "url": "https://www.herd.eco/explorer",
+      "sync_mode": "manual-explorer",
+      "cadence": "ad-hoc",
+      "sections": [
+        "contract-context",
+        "proxy-history",
+        "transaction-decoding",
+        "wallet-relationships"
+      ],
+      "notes": "Supplementary onchain context layer for contract relationships, proxy implementations, and transaction traces. Best used for Base and Ethereum contract investigation, not Dune-style aggregate analytics."
+    },
+    {
+      "source_id": "herd-mcp",
+      "name": "Herd MCP",
+      "type": "mcp-tooling",
+      "status": "active",
+      "url": "https://mcp.herd.eco/v1",
+      "sync_mode": "client-oauth",
+      "cadence": "ad-hoc",
+      "sections": [
+        "contract-metadata",
+        "code-analysis",
+        "version-diffs",
+        "wallet-overview",
+        "token-activity",
+        "transaction-activity",
+        "deployed-contracts"
+      ],
+      "notes": "Official Herd MCP endpoint. As documented on 2026-03-18, supported networks are Ethereum and Base; Polygon is not listed as supported."
+    },
+    {
+      "source_id": "ethskills",
+      "name": "ETHSkills",
+      "type": "knowledge-base",
+      "status": "active",
+      "url": "https://ethskills.com/",
+      "sync_mode": "manual-reference",
+      "cadence": "ad-hoc",
+      "sections": [
+        "ethereum-build-guides",
+        "indexing-patterns",
+        "verified-address-guidance",
+        "l2-selection",
+        "tooling-playbooks"
+      ],
+      "notes": "Supplemental Ethereum knowledge base for agents. Useful for indexing design, address hygiene, L2 reasoning, and current tooling choices, but not a Gnars-specific source of truth."
+    },
+    {
+      "source_id": "thatsgnarly-contracts-github",
+      "name": "That's Gnarly Contracts Repo",
+      "type": "code",
+      "status": "active",
+      "url": "https://github.com/rocketman-21/thatsgnarly-contracts",
+      "sync_mode": "manual-registry",
+      "cadence": "batch",
+      "sections": [
+        "base-deploys",
+        "deployment-script",
+        "contract-source"
+      ],
+      "notes": "Primary source for That's Gnarly Base deployments and dependency wiring."
     }
   ]
 }

@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "dataset",
+    "as_of",
+    "version",
+    "records"
+  ],
+  "properties": {
+    "dataset": {
+      "const": "contracts"
+    },
+    "as_of": {
+      "type": "string"
+    },
+    "version": {
+      "type": "integer"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "contract_id",
+          "ecosystem",
+          "network",
+          "chain_id",
+          "address",
+          "label",
+          "kind",
+          "status",
+          "proxy_for",
+          "explorer_url",
+          "source_urls",
+          "notes"
+        ],
+        "properties": {
+          "contract_id": {
+            "type": "string"
+          },
+          "ecosystem": {
+            "type": "string"
+          },
+          "network": {
+            "type": "string"
+          },
+          "chain_id": {
+            "type": "integer"
+          },
+          "address": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "kind": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "proxy_for": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "explorer_url": {
+            "type": "string"
+          },
+          "source_urls": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "notes": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

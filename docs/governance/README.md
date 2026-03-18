@@ -8,6 +8,13 @@ This repository should make governance legible across every Gnars era:
 - Legacy Ethereum governance
 - Base / current `gnars.com` governance
 
+## Archive datasets
+
+- `data/proposals.json` is the curated layer for summarized, tagged proposals.
+- `data/proposals_archive.json` is the full archive layer for proposal content, raw properties, vote ledgers, and decoded treasury transactions.
+- `raw/gnars.com/proposals/` stores raw HTML evidence for current-era proposals.
+- `raw/api/*snapshot*` stores the GraphQL dump used to reconstruct legacy Snapshot governance.
+
 ## Proposal taxonomy
 
 Use the following tags consistently in `data/proposals.json` and future proposal templates:
@@ -31,4 +38,3 @@ Use the following tags consistently in `data/proposals.json` and future proposal
 - Which members are consistently active in governance?
 - What work was promised versus what shipped?
 - How has the DAO evolved from legacy to current infrastructure?
-

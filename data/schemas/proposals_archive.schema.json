@@ -1,0 +1,191 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "dataset",
+    "as_of",
+    "version",
+    "records"
+  ],
+  "properties": {
+    "dataset": {
+      "const": "proposals_archive"
+    },
+    "as_of": {
+      "type": "string"
+    },
+    "version": {
+      "type": "integer"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "archive_id",
+          "platform",
+          "space",
+          "chain",
+          "proposal_key",
+          "proposal_number",
+          "title",
+          "status",
+          "status_display",
+          "proposer",
+          "proposer_label",
+          "created_at",
+          "start_at",
+          "end_at",
+          "snapshot_block",
+          "quorum",
+          "choices",
+          "scores_by_choice",
+          "scores_total",
+          "content_markdown",
+          "content_summary",
+          "cover_image_url",
+          "transactions",
+          "votes",
+          "links",
+          "properties"
+        ],
+        "properties": {
+          "archive_id": {
+            "type": "string"
+          },
+          "platform": {
+            "type": "string"
+          },
+          "space": {
+            "type": "string"
+          },
+          "chain": {
+            "type": "string"
+          },
+          "proposal_key": {
+            "type": "string"
+          },
+          "proposal_number": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "title": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "status_display": {
+            "type": "string"
+          },
+          "proposer": {
+            "type": "string"
+          },
+          "proposer_label": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "created_at": {
+            "type": "string"
+          },
+          "start_at": {
+            "type": "string"
+          },
+          "end_at": {
+            "type": "string"
+          },
+          "snapshot_block": {
+            "type": "integer"
+          },
+          "quorum": {
+            "type": "integer"
+          },
+          "choices": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "scores_by_choice": {
+            "type": "array",
+            "items": {
+              "type": "integer"
+            }
+          },
+          "scores_total": {
+            "type": "integer"
+          },
+          "content_markdown": {
+            "type": "string"
+          },
+          "content_summary": {
+            "type": "string"
+          },
+          "cover_image_url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "transactions": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "votes": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "links": {
+            "type": "object",
+            "required": [
+              "source_url",
+              "canonical_url",
+              "discussion_url",
+              "explorer_url"
+            ],
+            "properties": {
+              "source_url": {
+                "type": "string"
+              },
+              "canonical_url": {
+                "type": "string"
+              },
+              "discussion_url": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "explorer_url": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          },
+          "properties": {
+            "type": "object"
+          },
+          "raw_snapshot": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

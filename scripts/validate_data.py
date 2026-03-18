@@ -11,7 +11,9 @@ DATA_DIR = ROOT / "data"
 SCHEMA_DIR = DATA_DIR / "schemas"
 
 DATASETS = {
+    "contracts": "contracts.schema.json",
     "proposals": "proposals.schema.json",
+    "proposals_archive": "proposals_archive.schema.json",
     "members": "members.schema.json",
     "treasury": "treasury.schema.json",
     "projects": "projects.schema.json",
@@ -105,4 +107,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
-

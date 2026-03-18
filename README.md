@@ -2,6 +2,8 @@
 
 Canonical data repository for Gnars DAO across `gnars.com`, `gnars.wtf`, `gnars.center`, governance archives, and legacy community sources.
 
+Supplementary operator tooling tracked in this repo includes Dune for aggregate analytics, Herd for Base/Ethereum contract intelligence, and ETHSkills for Ethereum workflow guidance.
+
 ## Why this repo exists
 
 This repository is designed to become the DAO's data backbone:
@@ -28,7 +30,9 @@ gnars-data/
 
 ## Current seeded datasets
 
+- `data/contracts.json`
 - `data/proposals.json`
+- `data/proposals_archive.json`
 - `data/members.json`
 - `data/treasury.json`
 - `data/projects.json`
@@ -56,6 +60,12 @@ Capture fresh raw snapshots from the live sources:
 python scripts\sync_gnars.py
 ```
 
+Collect the full governance archive from `gnars.com/proposals` and `Snapshot`:
+
+```powershell
+python scripts\sync_proposals.py
+```
+
 ## Data model conventions
 
 - `raw/` stores untouched source snapshots.
@@ -67,9 +77,12 @@ python scripts\sync_gnars.py
 
 This first commit seeds the repository with:
 
+- Verified onchain contract registry for Gnars and That's Gnarly
 - Proposal archive entries for `111` and `118`
+- Full cross-platform proposal archive in `data/proposals_archive.json`
 - Contributor directory seeds for the operations workstream
 - Treasury asset snapshot fields aligned with the live treasury page
 - Source registry for current, legacy, and external Gnars data surfaces
-- Scripts for validation, exports, and raw snapshot capture
-
+- Herd Explorer / Herd MCP as a documented supplemental layer for onchain context on Base and Ethereum
+- ETHSkills as a documented supplemental knowledge layer for indexing, addresses, L2s, and tooling decisions
+- Scripts for validation, exports, raw snapshot capture, and proposal-archive sync

@@ -16,11 +16,11 @@
 
 ### 4. Human context
 
-`docs/` stores process notes, governance summaries, proposal archives, and operating assumptions.
+`docs/` stores process notes, governance summaries, proposal archives, operating assumptions, and external tooling notes such as Herd MCP coverage.
 
 ## Expected workflow
 
-1. Pull raw snapshots from live sources with `scripts/sync_gnars.py`
+1. Pull raw snapshots from live sources with `scripts/sync_gnars.py` and `scripts/sync_proposals.py`
 2. Normalize or enrich those snapshots into `data/*.json`
 3. Validate contracts with `scripts/validate_data.py`
 4. Generate CSV outputs with `scripts/export_csv.py`
@@ -33,4 +33,3 @@ The repo includes `config/`, `raw/`, and `reports/` on purpose:
 - `config/` keeps the source registry and sync settings versioned
 - `raw/` preserves the immutable evidence layer behind each dataset
 - `reports/` gives the DAO a home for weekly digests, funding memos, and ROI tracking
-

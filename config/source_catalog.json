@@ -11,6 +11,14 @@
       "enabled": true
     },
     {
+      "source_id": "gnars-proposals-index",
+      "bucket": "gnars.com",
+      "label": "Gnars proposals index",
+      "url": "https://www.gnars.com/proposals",
+      "format": "html",
+      "enabled": true
+    },
+    {
       "source_id": "gnars-members-api",
       "bucket": "api",
       "label": "Gnars members API",
@@ -43,6 +51,14 @@
       "enabled": true
     },
     {
+      "source_id": "snapshot-v1-gnars-space",
+      "bucket": "snapshot.box",
+      "label": "Snapshot V1 gnars.eth space",
+      "url": "https://v1.snapshot.box/#/gnars.eth",
+      "format": "html",
+      "enabled": true
+    },
+    {
       "source_id": "gnars-center-home",
       "bucket": "gnars.center",
       "label": "Gnars Center",
@@ -57,7 +73,78 @@
       "url": "https://www.gnars.wtf",
       "format": "html",
       "enabled": true
+    },
+    {
+      "source_id": "herd-mcp-docs-introduction",
+      "bucket": "external",
+      "label": "Herd MCP introduction",
+      "url": "https://docs.herd.eco/herd-mcp/introduction",
+      "format": "html",
+      "enabled": false
+    },
+    {
+      "source_id": "herd-supported-chains",
+      "bucket": "external",
+      "label": "Herd supported blockchains",
+      "url": "https://docs.herd.eco/herd-app/supported-chains",
+      "format": "html",
+      "enabled": false
+    },
+    {
+      "source_id": "herd-explorer-docs",
+      "bucket": "external",
+      "label": "Herd explorer guide",
+      "url": "https://docs.herd.eco/herd-app/explorer",
+      "format": "html",
+      "enabled": false
+    },
+    {
+      "source_id": "ethskills-home",
+      "bucket": "external",
+      "label": "ETHSkills homepage",
+      "url": "https://ethskills.com/",
+      "format": "html",
+      "enabled": false
+    },
+    {
+      "source_id": "ethskills-root-skill",
+      "bucket": "external",
+      "label": "ETHSkills root skill",
+      "url": "https://ethskills.com/SKILL.md",
+      "format": "txt",
+      "enabled": false
+    },
+    {
+      "source_id": "ethskills-indexing-skill",
+      "bucket": "external",
+      "label": "ETHSkills indexing skill",
+      "url": "https://ethskills.com/indexing/SKILL.md",
+      "format": "txt",
+      "enabled": false
+    },
+    {
+      "source_id": "ethskills-addresses-skill",
+      "bucket": "external",
+      "label": "ETHSkills addresses skill",
+      "url": "https://ethskills.com/addresses/SKILL.md",
+      "format": "txt",
+      "enabled": false
+    },
+    {
+      "source_id": "ethskills-l2s-skill",
+      "bucket": "external",
+      "label": "ETHSkills L2s skill",
+      "url": "https://ethskills.com/l2s/SKILL.md",
+      "format": "txt",
+      "enabled": false
+    },
+    {
+      "source_id": "ethskills-tools-skill",
+      "bucket": "external",
+      "label": "ETHSkills tools skill",
+      "url": "https://ethskills.com/tools/SKILL.md",
+      "format": "txt",
+      "enabled": false
     }
   ]
 }
-
