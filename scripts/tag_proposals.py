@@ -82,8 +82,15 @@ def init_pilot(count: int, *, scope: str) -> int:
     archive = load_json(ARCHIVE_PATH)
     payload = ensure_top_level_shape(load_json(TAGS_PATH), timestamp=isoformat_utc(utc_now()))
 
+    candidates = sorted(archive["records"], key=archive_sort_key, reverse=True)[:count]
+    target_ids = {proposal["archive_id"] for proposal in candidates}
+    kept_records = [
+        record
+        for record in payload["records"]
+        if record.get("scope") != scope or record["archive_id"] in target_ids
+    ]
+    payload["records"] = kept_records
     existing = {record["archive_id"]: record for record in payload["records"]}
-    candidates = sorted(archive["records"], key=archive_sort_key, reverse=True)
 
     added = 0
     timestamp = isoformat_utc(utc_now())
@@ -100,8 +107,6 @@ def init_pilot(count: int, *, scope: str) -> int:
         payload["records"].append(seed_tag_record(proposal, scope=scope, timestamp=timestamp))
         existing[proposal["archive_id"]] = payload["records"][-1]
         added += 1
-        if len(payload["records"]) >= count:
-            break
 
     payload["records"] = sorted(payload["records"], key=lambda record: record["updated_at"], reverse=True)
     payload["as_of"] = timestamp

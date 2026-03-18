@@ -1,32 +1,8 @@
 {
   "dataset": "proposal_tags",
-  "as_of": "2026-03-18T22:22:38.202097Z",
+  "as_of": "2026-03-18T22:26:53.994509Z",
   "version": 1,
   "records": [
-    {
-      "archive_id": "gnars-base-85",
-      "title": "ONBOARDING VITOR RIBEIRO INTO GNARS COMMUNITY",
-      "platform": "gnars.com",
-      "chain": "base",
-      "proposal_number": 85,
-      "source_url": "https://www.gnars.com/proposals/base/85",
-      "tagging_status": "queued",
-      "review_state": "pending",
-      "scope": "pilot-30",
-      "primary_category": null,
-      "secondary_categories": [],
-      "funding_category": null,
-      "lifecycle_stage": null,
-      "entities": [],
-      "confidence": null,
-      "requires_human_review": true,
-      "model_provider": null,
-      "model_name": null,
-      "guidelines_version": "2026-03-18",
-      "rationale": null,
-      "notes": "Seeded for pilot tagging queue.",
-      "updated_at": "2026-03-18T22:22:38.202097Z"
-    },
     {
       "archive_id": "gnars-base-119",
       "title": "Pod Media Strategy - Q1 2026",

@@ -1,5 +1,4 @@
 archive_id,title,platform,chain,proposal_number,source_url,tagging_status,review_state,scope,primary_category,secondary_categories,funding_category,lifecycle_stage,entities,confidence,requires_human_review,model_provider,model_name,guidelines_version,rationale,notes,updated_at
-gnars-base-85,ONBOARDING VITOR RIBEIRO INTO GNARS COMMUNITY,gnars.com,base,85,https://www.gnars.com/proposals/base/85,queued,pending,pilot-30,,,,,,,True,,,2026-03-18,,Seeded for pilot tagging queue.,2026-03-18T22:22:38.202097Z
 gnars-base-119,Pod Media Strategy - Q1 2026,gnars.com,base,119,https://www.gnars.com/proposals/base/119,queued,pending,pilot-30,,,,,,,True,,,2026-03-18,,Seeded for pilot tagging queue.,2026-03-18T22:10:35.095440Z
 gnars-base-118,Gnars Operations - Q1 2026 Workstream Proposal,gnars.com,base,118,https://www.gnars.com/proposals/base/118,queued,pending,pilot-30,,,,,,,True,,,2026-03-18,,Seeded for pilot tagging queue.,2026-03-18T22:10:35.095440Z
 gnars-base-117,Sponsor Gnars Monik Santos in QS/WSL 2026,gnars.com,base,117,https://www.gnars.com/proposals/base/117,queued,pending,pilot-30,,,,,,,True,,,2026-03-18,,Seeded for pilot tagging queue.,2026-03-18T22:10:35.095440Z
