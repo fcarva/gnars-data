@@ -1,0 +1,4 @@
+member_id,display_name,address,role,status,domains,token_count,active_votes,votes_count,attendance_pct,like_pct,member_url,farcaster,github
+fcarva,fcarva,0xaaed9fff9858d48925904e391b77892ba5fda824,"community infrastructure, documentation, QA",active,governance|documentation|analytics|operations,4,4,24,23,96,https://www.gnars.com/members/0xaaed9fff9858d48925904e391b77892ba5fda824,https://farcaster.xyz/fcarva,https://github.com/fcarva
+r4topunk,r4topunk,0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d,"web development, data pipelines",active,web|data-pipelines|operations|governance,41,41,70,68,78,https://www.gnars.com/members/0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d,https://farcaster.xyz/r4topunk,
+vlad,vlad,0x8bf5941d27176242745b716251943ae4892a3c26,"technical lead, AI infrastructure",active,ai|infrastructure|agents|operations,35,151,8,8,63,https://www.gnars.com/members/0x8bf5941d27176242745b716251943ae4892a3c26,,

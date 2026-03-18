@@ -1,0 +1,7 @@
+as_of,wallet_address,asset_id,asset_type,symbol,name,token_address,amount,value_usd,source_url
+2026-03-18,0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88,base-usdc,erc20,USDC,USD Coin,0x833589fcd6edb6e08f4c7c32d4f71b54bda02913,21396.2439,21392.18,https://www.gnars.com/treasury
+2026-03-18,0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88,base-sendit,erc20,SENDIT,Sendit,,474092937.55,4707.74,https://www.gnars.com/treasury
+2026-03-18,0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88,base-weth,erc20,WETH,Wrapped Ether,,0.03,60.35,https://www.gnars.com/treasury
+2026-03-18,0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88,zora-gnars,zora-coin,GNARS,gnars,0x0cf0c3b75d522290d7d12c74d7f1f0cc47ccb23b,562300.0,8.85,https://zora.co/collect/base:0x0cf0c3b75d522290d7d12c74d7f1f0cc47ccb23b
+2026-03-18,0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88,zora-skatehacker,zora-coin,SKATEHACKER,skatehacker,0x774e70664b22764d0225c52bc87b7b621fcb6d04,69400.0,1.91,https://zora.co/collect/base:0x774e70664b22764d0225c52bc87b7b621fcb6d04
+2026-03-18,0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88,zora-zimardrp,zora-coin,ZIMARDRP,zimardrp,0xa619c9b65c02613c56507759c461018fcebb0dbb,111100.0,1.38,https://zora.co/collect/base:0xa619c9b65c02613c56507759c461018fcebb0dbb

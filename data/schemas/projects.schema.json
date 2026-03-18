@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "dataset",
+    "as_of",
+    "version",
+    "records"
+  ],
+  "properties": {
+    "dataset": {
+      "const": "projects"
+    },
+    "as_of": {
+      "type": "string"
+    },
+    "version": {
+      "type": "integer"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "project_id",
+          "name",
+          "status",
+          "category",
+          "origin_proposals",
+          "owner_addresses",
+          "budget",
+          "objective",
+          "outputs",
+          "kpis",
+          "notes"
+        ],
+        "properties": {
+          "project_id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "origin_proposals": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "owner_addresses": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "budget": {
+            "type": "object",
+            "required": [
+              "eth",
+              "usdc"
+            ],
+            "properties": {
+              "eth": {
+                "type": "number"
+              },
+              "usdc": {
+                "type": "number"
+              }
+            },
+            "additionalProperties": false
+          },
+          "objective": {
+            "type": "string"
+          },
+          "outputs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "kpis": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "notes": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
+

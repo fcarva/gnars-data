@@ -1,0 +1,84 @@
+{
+  "dataset": "treasury",
+  "as_of": "2026-03-18",
+  "version": 1,
+  "wallet": {
+    "label": "Gnars DAO Treasury",
+    "chain": "base",
+    "address": "0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+  },
+  "overview": {
+    "homepage_treasury_label_usd": 46500.0,
+    "treasury_page_total_value_usd": 0.0,
+    "data_quality_note": "On 2026-03-18, the dashboard homepage displayed $46.5k while the treasury summary widget displayed $0.00. Holdings tables below were non-zero and preserved here as the reliable row-level snapshot."
+  },
+  "records": [
+    {
+      "asset_id": "base-usdc",
+      "asset_type": "erc20",
+      "symbol": "USDC",
+      "name": "USD Coin",
+      "token_address": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "amount": 21396.2439,
+      "value_usd": 21392.18,
+      "source_url": "https://www.gnars.com/treasury",
+      "notes": "Live treasury holdings table snapshot."
+    },
+    {
+      "asset_id": "base-sendit",
+      "asset_type": "erc20",
+      "symbol": "SENDIT",
+      "name": "Sendit",
+      "token_address": null,
+      "amount": 474092937.55,
+      "value_usd": 4707.74,
+      "source_url": "https://www.gnars.com/treasury",
+      "notes": "Live treasury holdings table snapshot."
+    },
+    {
+      "asset_id": "base-weth",
+      "asset_type": "erc20",
+      "symbol": "WETH",
+      "name": "Wrapped Ether",
+      "token_address": null,
+      "amount": 0.03,
+      "value_usd": 60.35,
+      "source_url": "https://www.gnars.com/treasury",
+      "notes": "Live treasury holdings table snapshot."
+    },
+    {
+      "asset_id": "zora-gnars",
+      "asset_type": "zora-coin",
+      "symbol": "GNARS",
+      "name": "gnars",
+      "token_address": "0x0cf0c3b75d522290d7d12c74d7f1f0cc47ccb23b",
+      "amount": 562300.0,
+      "value_usd": 8.85,
+      "source_url": "https://zora.co/collect/base:0x0cf0c3b75d522290d7d12c74d7f1f0cc47ccb23b",
+      "notes": "Zora coin balance listed on the Gnars treasury page."
+    },
+    {
+      "asset_id": "zora-skatehacker",
+      "asset_type": "zora-coin",
+      "symbol": "SKATEHACKER",
+      "name": "skatehacker",
+      "token_address": "0x774e70664b22764d0225c52bc87b7b621fcb6d04",
+      "amount": 69400.0,
+      "value_usd": 1.91,
+      "source_url": "https://zora.co/collect/base:0x774e70664b22764d0225c52bc87b7b621fcb6d04",
+      "notes": "Zora coin balance listed on the Gnars treasury page."
+    },
+    {
+      "asset_id": "zora-zimardrp",
+      "asset_type": "zora-coin",
+      "symbol": "ZIMARDRP",
+      "name": "zimardrp",
+      "token_address": "0xa619c9b65c02613c56507759c461018fcebb0dbb",
+      "amount": 111100.0,
+      "value_usd": 1.38,
+      "source_url": "https://zora.co/collect/base:0xa619c9b65c02613c56507759c461018fcebb0dbb",
+      "notes": "Zora coin balance listed on the Gnars treasury page."
+    }
+  ]
+}
+

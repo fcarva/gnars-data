@@ -1,0 +1,140 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "dataset",
+    "as_of",
+    "version",
+    "coverage",
+    "records"
+  ],
+  "properties": {
+    "dataset": {
+      "const": "members"
+    },
+    "as_of": {
+      "type": "string"
+    },
+    "version": {
+      "type": "integer"
+    },
+    "coverage": {
+      "type": "string"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "member_id",
+          "display_name",
+          "address",
+          "role",
+          "status",
+          "domains",
+          "links",
+          "metrics",
+          "notes"
+        ],
+        "properties": {
+          "member_id": {
+            "type": "string"
+          },
+          "display_name": {
+            "type": "string"
+          },
+          "address": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "domains": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "links": {
+            "type": "object",
+            "required": [
+              "member_url",
+              "farcaster",
+              "github"
+            ],
+            "properties": {
+              "member_url": {
+                "type": "string"
+              },
+              "farcaster": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "github": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          },
+          "metrics": {
+            "type": "object",
+            "required": [
+              "token_count",
+              "active_votes",
+              "votes_count",
+              "attendance_pct",
+              "like_pct"
+            ],
+            "properties": {
+              "token_count": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "active_votes": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "votes_count": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "attendance_pct": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "like_pct": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          },
+          "notes": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
+

@@ -1,0 +1,63 @@
+{
+  "generated_at": "2026-03-18",
+  "version": 1,
+  "sources": [
+    {
+      "source_id": "gnars-dashboard",
+      "bucket": "gnars.com",
+      "label": "Gnars dashboard",
+      "url": "https://www.gnars.com",
+      "format": "html",
+      "enabled": true
+    },
+    {
+      "source_id": "gnars-members-api",
+      "bucket": "api",
+      "label": "Gnars members API",
+      "url": "https://www.gnars.com/api/members",
+      "format": "json",
+      "enabled": true
+    },
+    {
+      "source_id": "gnars-treasury",
+      "bucket": "gnars.com",
+      "label": "Gnars treasury",
+      "url": "https://www.gnars.com/treasury",
+      "format": "html",
+      "enabled": true
+    },
+    {
+      "source_id": "gnars-proposal-111",
+      "bucket": "gnars.com",
+      "label": "Proposal 111",
+      "url": "https://www.gnars.com/proposals/111",
+      "format": "html",
+      "enabled": true
+    },
+    {
+      "source_id": "gnars-proposal-118",
+      "bucket": "gnars.com",
+      "label": "Proposal 118",
+      "url": "https://www.gnars.com/proposals/base/118",
+      "format": "html",
+      "enabled": true
+    },
+    {
+      "source_id": "gnars-center-home",
+      "bucket": "gnars.center",
+      "label": "Gnars Center",
+      "url": "https://gnars.center",
+      "format": "html",
+      "enabled": true
+    },
+    {
+      "source_id": "gnars-wtf-home",
+      "bucket": "gnars.wtf",
+      "label": "Gnars WTF",
+      "url": "https://www.gnars.wtf",
+      "format": "html",
+      "enabled": true
+    }
+  ]
+}
+

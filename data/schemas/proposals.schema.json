@@ -1,0 +1,194 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "dataset",
+    "as_of",
+    "version",
+    "records"
+  ],
+  "properties": {
+    "dataset": {
+      "const": "proposals"
+    },
+    "as_of": {
+      "type": "string"
+    },
+    "version": {
+      "type": "integer"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "proposal_id",
+          "number",
+          "chain",
+          "title",
+          "status",
+          "proposer",
+          "timing",
+          "voting",
+          "budget",
+          "tags",
+          "summary",
+          "deliverables",
+          "superseded_by",
+          "links",
+          "sources"
+        ],
+        "properties": {
+          "proposal_id": {
+            "type": "string"
+          },
+          "number": {
+            "type": "integer"
+          },
+          "chain": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "proposer": {
+            "type": "object",
+            "required": [
+              "display_name",
+              "address"
+            ],
+            "properties": {
+              "display_name": {
+                "type": "string"
+              },
+              "address": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          },
+          "timing": {
+            "type": "object",
+            "required": [
+              "opened_at",
+              "ended_at"
+            ],
+            "properties": {
+              "opened_at": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "ended_at": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          },
+          "voting": {
+            "type": "object",
+            "required": [
+              "for",
+              "against",
+              "abstain",
+              "threshold",
+              "snapshot_block"
+            ],
+            "properties": {
+              "for": {
+                "type": "integer"
+              },
+              "against": {
+                "type": "integer"
+              },
+              "abstain": {
+                "type": "integer"
+              },
+              "threshold": {
+                "type": "integer"
+              },
+              "snapshot_block": {
+                "type": "integer"
+              }
+            },
+            "additionalProperties": false
+          },
+          "budget": {
+            "type": "object",
+            "required": [
+              "eth",
+              "usdc",
+              "usd_estimate"
+            ],
+            "properties": {
+              "eth": {
+                "type": "number"
+              },
+              "usdc": {
+                "type": "number"
+              },
+              "usd_estimate": {
+                "type": "number"
+              }
+            },
+            "additionalProperties": false
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "summary": {
+            "type": "string"
+          },
+          "deliverables": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "superseded_by": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "links": {
+            "type": "object",
+            "required": [
+              "proposal_url",
+              "explorer_url",
+              "archive_doc"
+            ],
+            "properties": {
+              "proposal_url": {
+                "type": "string"
+              },
+              "explorer_url": {
+                "type": "string"
+              },
+              "archive_doc": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
+

@@ -1,0 +1,8 @@
+source_id,name,type,status,url,sync_mode,cadence,sections,notes
+gnars-com,gnars.com,website,active,https://www.gnars.com,html-snapshot,daily,dashboard|proposals|members|treasury|tv,Primary live interface for Gnars DAO on Base.
+gnars-center,gnars.center,docs,active,https://gnars.center,html-snapshot,weekly,onboarding|tutorials|community-docs,Community onboarding and educational documentation.
+gnars-wtf,gnars.wtf,legacy-app,legacy,https://www.gnars.wtf,html-snapshot,weekly,base-jump|legacy-contracts|historical-context,Legacy Base Jump / Gnars V2 surface that should be preserved for continuity.
+snapshot-v1,Snapshot V1,governance-archive,legacy,https://v1.snapshot.box/#/gnars.eth,manual-export,batch,legacy-proposals|legacy-votes,Required to reconstruct governance history before Base.
+hive-gnars,Hive / Peakd @gnars,content-archive,active,https://peakd.com/@gnars,html-snapshot,weekly,onboarding-posts|storytelling|community-updates,Historic narrative layer for archival and storytelling.
+discord-gnars,Gnars Discord,community,active,https://discord.gg/bemDzx6NWf,manual-export,weekly,announcements|operations|governance-discussion,"Community coordination, operational context, and bot-related history."
+dune-gnarsv2,GnarsV2 Dune Dashboard,analytics,active,https://dune.com/0xsatori/gnarsv2,manual-export,weekly,financial-metrics|governance-metrics,Analytics layer for treasury and historical governance metrics.

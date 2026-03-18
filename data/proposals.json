@@ -1,0 +1,122 @@
+{
+  "dataset": "proposals",
+  "as_of": "2026-03-18",
+  "version": 1,
+  "records": [
+    {
+      "proposal_id": "base-111",
+      "number": 111,
+      "chain": "base",
+      "title": "Gnars Revamp: Docs and Governance",
+      "status": "defeated",
+      "proposer": {
+        "display_name": "fcarva",
+        "address": "0xaaed9fff9858d48925904e391b77892ba5fda824"
+      },
+      "timing": {
+        "opened_at": null,
+        "ended_at": "2026-02-09T13:43:25Z"
+      },
+      "voting": {
+        "for": 324,
+        "against": 136,
+        "abstain": 264,
+        "threshold": 599,
+        "snapshot_block": 41625229
+      },
+      "budget": {
+        "eth": 0.25,
+        "usdc": 900,
+        "usd_estimate": 1650
+      },
+      "tags": [
+        "governance",
+        "analytics",
+        "data-infrastructure",
+        "docs",
+        "archive"
+      ],
+      "summary": "Original proposal to consolidate fragmented Gnars history, structure governance data, and build a developer-ready repository for analytics and LLM use.",
+      "deliverables": [
+        "Data schemas for governance and treasury records",
+        "Updated analytics/dashboard inputs",
+        "Centralized documentation for legacy and current Gnars surfaces",
+        "Governance taxonomy for future UI filters",
+        "Strategic report linking legacy infrastructure to the current DAO stage"
+      ],
+      "superseded_by": [
+        "base-118"
+      ],
+      "links": {
+        "proposal_url": "https://www.gnars.com/proposals/111",
+        "explorer_url": "https://basescan.org/tx/0x5033965c86a5c36a49723f823cf9e78a36b623762b001c27bc136d28addf7574",
+        "archive_doc": "docs/proposals/111-gnars-revamp-docs-and-governance.md"
+      },
+      "sources": [
+        "gnars.com",
+        "gnars.center",
+        "gnars.wtf",
+        "snapshot",
+        "hive",
+        "discord"
+      ]
+    },
+    {
+      "proposal_id": "base-118",
+      "number": 118,
+      "chain": "base",
+      "title": "Gnars Operations - Q1 2026 Workstream Proposal",
+      "status": "active",
+      "proposer": {
+        "display_name": "r4topunk",
+        "address": "0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d"
+      },
+      "timing": {
+        "opened_at": null,
+        "ended_at": "2026-03-20T17:41:11Z"
+      },
+      "voting": {
+        "for": 614,
+        "against": 0,
+        "abstain": 154,
+        "threshold": 600,
+        "snapshot_block": 43317162
+      },
+      "budget": {
+        "eth": 1.5,
+        "usdc": 3000,
+        "usd_estimate": 6000
+      },
+      "tags": [
+        "operations",
+        "ai-infrastructure",
+        "data-pipelines",
+        "website",
+        "governance"
+      ],
+      "summary": "Three-month operations workstream proposal focused on Gnars infrastructure, AI-native knowledge systems, governance archives, dashboards, and e-commerce readiness.",
+      "deliverables": [
+        "Revenue and expense tracking system",
+        "Unified governance archive across Snapshot, ETH and Base",
+        "BI dashboard for treasury, proposals and community activity",
+        "AI knowledge base and agent support infrastructure",
+        "Shop route integration and operational QA"
+      ],
+      "superseded_by": [],
+      "links": {
+        "proposal_url": "https://www.gnars.com/proposals/base/118",
+        "explorer_url": "https://basescan.org/tx/0x195157a40ca195e9161f520ca70eb6ede06ddf63a87cb1cbdeb946f1440fffae",
+        "archive_doc": "docs/proposals/118-gnars-operations-q1-2026-workstream.md"
+      },
+      "sources": [
+        "gnars.com",
+        "gnars.center",
+        "gnars.wtf",
+        "farcaster",
+        "hive",
+        "discord"
+      ]
+    }
+  ]
+}
+

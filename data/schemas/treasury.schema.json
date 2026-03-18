@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "dataset",
+    "as_of",
+    "version",
+    "wallet",
+    "overview",
+    "records"
+  ],
+  "properties": {
+    "dataset": {
+      "const": "treasury"
+    },
+    "as_of": {
+      "type": "string"
+    },
+    "version": {
+      "type": "integer"
+    },
+    "wallet": {
+      "type": "object",
+      "required": [
+        "label",
+        "chain",
+        "address"
+      ],
+      "properties": {
+        "label": {
+          "type": "string"
+        },
+        "chain": {
+          "type": "string"
+        },
+        "address": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "overview": {
+      "type": "object",
+      "required": [
+        "homepage_treasury_label_usd",
+        "treasury_page_total_value_usd",
+        "data_quality_note"
+      ],
+      "properties": {
+        "homepage_treasury_label_usd": {
+          "type": "number"
+        },
+        "treasury_page_total_value_usd": {
+          "type": "number"
+        },
+        "data_quality_note": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "asset_id",
+          "asset_type",
+          "symbol",
+          "name",
+          "token_address",
+          "amount",
+          "value_usd",
+          "source_url",
+          "notes"
+        ],
+        "properties": {
+          "asset_id": {
+            "type": "string"
+          },
+          "asset_type": {
+            "type": "string"
+          },
+          "symbol": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "token_address": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "amount": {
+            "type": "number"
+          },
+          "value_usd": {
+            "type": "number"
+          },
+          "source_url": {
+            "type": "string"
+          },
+          "notes": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
+

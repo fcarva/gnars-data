@@ -1,0 +1,112 @@
+{
+  "dataset": "sources",
+  "as_of": "2026-03-18",
+  "version": 1,
+  "records": [
+    {
+      "source_id": "gnars-com",
+      "name": "gnars.com",
+      "type": "website",
+      "status": "active",
+      "url": "https://www.gnars.com",
+      "sync_mode": "html-snapshot",
+      "cadence": "daily",
+      "sections": [
+        "dashboard",
+        "proposals",
+        "members",
+        "treasury",
+        "tv"
+      ],
+      "notes": "Primary live interface for Gnars DAO on Base."
+    },
+    {
+      "source_id": "gnars-center",
+      "name": "gnars.center",
+      "type": "docs",
+      "status": "active",
+      "url": "https://gnars.center",
+      "sync_mode": "html-snapshot",
+      "cadence": "weekly",
+      "sections": [
+        "onboarding",
+        "tutorials",
+        "community-docs"
+      ],
+      "notes": "Community onboarding and educational documentation."
+    },
+    {
+      "source_id": "gnars-wtf",
+      "name": "gnars.wtf",
+      "type": "legacy-app",
+      "status": "legacy",
+      "url": "https://www.gnars.wtf",
+      "sync_mode": "html-snapshot",
+      "cadence": "weekly",
+      "sections": [
+        "base-jump",
+        "legacy-contracts",
+        "historical-context"
+      ],
+      "notes": "Legacy Base Jump / Gnars V2 surface that should be preserved for continuity."
+    },
+    {
+      "source_id": "snapshot-v1",
+      "name": "Snapshot V1",
+      "type": "governance-archive",
+      "status": "legacy",
+      "url": "https://v1.snapshot.box/#/gnars.eth",
+      "sync_mode": "manual-export",
+      "cadence": "batch",
+      "sections": [
+        "legacy-proposals",
+        "legacy-votes"
+      ],
+      "notes": "Required to reconstruct governance history before Base."
+    },
+    {
+      "source_id": "hive-gnars",
+      "name": "Hive / Peakd @gnars",
+      "type": "content-archive",
+      "status": "active",
+      "url": "https://peakd.com/@gnars",
+      "sync_mode": "html-snapshot",
+      "cadence": "weekly",
+      "sections": [
+        "onboarding-posts",
+        "storytelling",
+        "community-updates"
+      ],
+      "notes": "Historic narrative layer for archival and storytelling."
+    },
+    {
+      "source_id": "discord-gnars",
+      "name": "Gnars Discord",
+      "type": "community",
+      "status": "active",
+      "url": "https://discord.gg/bemDzx6NWf",
+      "sync_mode": "manual-export",
+      "cadence": "weekly",
+      "sections": [
+        "announcements",
+        "operations",
+        "governance-discussion"
+      ],
+      "notes": "Community coordination, operational context, and bot-related history."
+    },
+    {
+      "source_id": "dune-gnarsv2",
+      "name": "GnarsV2 Dune Dashboard",
+      "type": "analytics",
+      "status": "active",
+      "url": "https://dune.com/0xsatori/gnarsv2",
+      "sync_mode": "manual-export",
+      "cadence": "weekly",
+      "sections": [
+        "financial-metrics",
+        "governance-metrics"
+      ],
+      "notes": "Analytics layer for treasury and historical governance metrics."
+    }
+  ]
+}
