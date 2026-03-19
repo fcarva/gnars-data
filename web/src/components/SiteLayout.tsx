@@ -25,8 +25,8 @@ export function SiteLayout({
         <a className="brandmark" href="/">
           <span className="brandmark-badge">⌐◨-◨</span>
           <span>
-            <strong>Gnars Camp</strong>
-            <small>community, governance, treasury, delivery</small>
+            <strong>GNARS.CAMP</strong>
+            <small>community / governance / treasury / delivery</small>
           </span>
         </a>
         <nav className="top-nav" aria-label="Primary">

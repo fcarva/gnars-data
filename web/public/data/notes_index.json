@@ -1,6 +1,6 @@
 {
   "dataset": "notes_index",
-  "as_of": "2026-03-19T01:17:53.651Z",
+  "as_of": "2026-03-19T01:48:15.951Z",
   "version": 1,
   "records": [
     {
@@ -22,7 +22,7 @@
       "title": "GitHub Pages Publishing",
       "section": "docs",
       "href": "/notes/#docs-operations-github-pages-md",
-      "excerpt": "GitHub Pages Publishing This repository publishes a static vault style site built from repository markdown,  , and  . Expected public paths / /notes/ // //proposals. //proposals archive. For the fcarva/gnars data repo..."
+      "excerpt": "GitHub Pages Publishing This repository publishes the legacy static vault fallback built from repository markdown,  , and  . The new public frontend for Gnars Camp is documented separately in docs/operations/vercel.md..."
     },
     {
       "slug": "readme-md",
@@ -86,6 +86,13 @@
       "section": "docs",
       "href": "/notes/#docs-architecture-repository-map-md",
       "excerpt": "Repository Architecture Layers 1. Raw capture raw/ stores untouched snapshots from public websites and APIs. This is the archival layer. 2. Structured data data/ stores normalized  records with stable fields for analy..."
+    },
+    {
+      "slug": "docs-operations-vercel-md",
+      "title": "Vercel Deployment",
+      "section": "docs",
+      "href": "/notes/#docs-operations-vercel-md",
+      "excerpt": "Vercel Deployment The public facing Gnars Camp frontend now lives in web/ as a static React + Vite + TypeScript app. Current public URL: https://gnars data.vercel.app Vercel project settings Use these settings in the ..."
     }
   ]
 }

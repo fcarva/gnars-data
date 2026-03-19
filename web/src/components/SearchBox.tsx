@@ -41,7 +41,7 @@ export function SearchBox() {
       <input
         aria-label="Search Gnars Camp"
         className="searchbox-input"
-        placeholder="Search people, proposals, projects, archive..."
+        placeholder="search people, proposals, projects, archive..."
         type="search"
         value={query}
         onChange={(event) => setQuery(event.target.value)}

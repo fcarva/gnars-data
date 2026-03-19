@@ -4,17 +4,17 @@ type ThemeMode = "light" | "dark";
 
 function preferredTheme(): ThemeMode {
   if (typeof window === "undefined") {
-    return "light";
+    return "dark";
   }
   const stored = window.localStorage.getItem("gnars-theme");
   if (stored === "light" || stored === "dark") {
     return stored;
   }
-  return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  return window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
 }
 
 export function ThemeToggle() {
-  const [theme, setTheme] = useState<ThemeMode>("light");
+  const [theme, setTheme] = useState<ThemeMode>("dark");
 
   useEffect(() => {
     const next = preferredTheme();
@@ -34,7 +34,7 @@ export function ThemeToggle() {
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
       aria-label="Toggle color theme"
     >
-      {theme === "light" ? "Dark" : "Light"}
+      {theme === "light" ? "dark" : "light"}
     </button>
   );
 }
