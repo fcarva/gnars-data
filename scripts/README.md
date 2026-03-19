@@ -26,3 +26,9 @@ Full local MVP refresh in one command:
 ```powershell
 powershell -ExecutionPolicy Bypass -File scripts\refresh_all.ps1
 ```
+
+Optional flags:
+
+- `-SkipPagesBuild`: skip `_site` build
+- `-SkipWebBuild`: skip `web` npm install/build
+- `-ProposalSyncRetries <N>`: retry `sync_proposals.py` when Snapshot is rate-limited (default `3`)
