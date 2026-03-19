@@ -780,7 +780,7 @@ export type NetworkPageProps = {
 };
 
 export type TreasuryPageProps = {
-  treasuryScene: TreasuryViewScene;
+  treasuryScene: TreasuryViewData;
   windows: TreasuryFlowsData["windows"];
   proposalRoutes: TreasuryFlowsData["proposal_routes"];
 };
