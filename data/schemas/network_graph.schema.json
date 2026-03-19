@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["dataset", "as_of", "version", "nodes", "edges", "views"],
+  "properties": {
+    "dataset": { "const": "network_graph" },
+    "as_of": { "type": "string" },
+    "version": { "type": "integer" },
+    "nodes": { "type": "array", "items": { "type": "object" } },
+    "edges": { "type": "array", "items": { "type": "object" } },
+    "views": { "type": "object" }
+  },
+  "additionalProperties": false
+}

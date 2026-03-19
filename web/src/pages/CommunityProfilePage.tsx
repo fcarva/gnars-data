@@ -1,3 +1,5 @@
+import { ActivityChart } from "../components/ActivityChart";
+import { AssetBars } from "../components/AssetBars";
 import { SiteLayout } from "../components/SiteLayout";
 import { TimelineFeed } from "../components/TimelineFeed";
 import { formatAmount } from "../lib/format";
@@ -9,7 +11,7 @@ export function CommunityProfilePage({ meta, props }: { meta: Meta; props: Commu
       <section className="profile-hero">
         <div className="profile-identity">
           <div className="profile-avatar">
-            {props.profile.avatarUrl ? <img alt={props.profile.displayName} src={props.profile.avatarUrl} /> : <span>⌐◨-◨</span>}
+            {props.profile.avatarUrl ? <img alt={props.profile.displayName} src={props.profile.avatarUrl} /> : <span>[]</span>}
           </div>
           <div>
             <span className="eyebrow">Community Dossier</span>
@@ -33,7 +35,7 @@ export function CommunityProfilePage({ meta, props }: { meta: Meta; props: Commu
                 ? formatAmount(props.economics.totalReceivedPrimary.symbol, props.economics.totalReceivedPrimary.amount)
                 : "0 ETH"}
             </strong>
-            <small>Canonical treasury outflows from successful governance records.</small>
+            <small>Successful treasury outflows tied to this address.</small>
           </article>
           <article className="score-card">
             <span>Approved Proposals</span>
@@ -47,9 +49,56 @@ export function CommunityProfilePage({ meta, props }: { meta: Meta; props: Commu
                 ? props.economics.budgetManagedByAsset.map((item) => formatAmount(item.symbol, item.amount)).join(" + ")
                 : "0"}
             </strong>
-            <small>Successful proposal budgets led or owned through workstreams.</small>
+            <small>Successful budgets led directly or through owned workstreams.</small>
           </article>
         </div>
+      </section>
+
+      <section className="section-block two-up">
+        <div>
+          <div className="section-head">
+            <span className="eyebrow">Economics</span>
+            <h2>Asset receipts, governance posture, and delivery cadence.</h2>
+          </div>
+          <div className="stack-list">
+            <article className="list-card">
+              <div className="timeline-meta">
+                <span>Receipt Breakdown</span>
+                <span>{props.governanceMetrics.deliveryCount} delivery signals</span>
+              </div>
+              <AssetBars items={props.economics.totalReceivedByAsset} />
+            </article>
+            <article className="list-card">
+              <div className="timeline-meta">
+                <span>Governance</span>
+                <span>{props.governanceMetrics.proposalSuccessRate}% success rate</span>
+              </div>
+              <div className="stack-list compact">
+                <article className="mini-row static">
+                  <span>Active Votes</span>
+                  <strong>{props.governanceMetrics.activeVotes}</strong>
+                </article>
+                <article className="mini-row static">
+                  <span>Votes Cast</span>
+                  <strong>{props.governanceMetrics.votesCast}</strong>
+                </article>
+                <article className="mini-row static">
+                  <span>Attendance</span>
+                  <strong>{props.governanceMetrics.attendancePct ?? "n/a"}%</strong>
+                </article>
+                <article className="mini-row static">
+                  <span>Like Rate</span>
+                  <strong>{props.governanceMetrics.likePct ?? "n/a"}%</strong>
+                </article>
+              </div>
+            </article>
+          </div>
+        </div>
+        <ActivityChart
+          scene={props.activity}
+          title="Profile Signal Curve"
+          detail="A compact line of governance, treasury, and delivery around this profile."
+        />
       </section>
 
       <section className="section-block two-up">
@@ -74,7 +123,7 @@ export function CommunityProfilePage({ meta, props }: { meta: Meta; props: Commu
             ) : (
               <article className="list-card">
                 <h3>No authored proposals yet</h3>
-                <p>This profile is still visible through treasury flows, participation, and linked workstreams.</p>
+                <p>This profile is still legible through receipts, votes, workstreams, and public proof.</p>
               </article>
             )}
           </div>
@@ -82,7 +131,7 @@ export function CommunityProfilePage({ meta, props }: { meta: Meta; props: Commu
         <div>
           <div className="section-head">
             <span className="eyebrow">Proof Of Work</span>
-            <h2>Updates, deliveries, and verifiable public references.</h2>
+            <h2>Updates, deliveries, and public references.</h2>
           </div>
           <TimelineFeed items={props.proofOfWork} />
         </div>
@@ -91,16 +140,18 @@ export function CommunityProfilePage({ meta, props }: { meta: Meta; props: Commu
       <section className="section-block two-up">
         <div>
           <div className="section-head">
-            <span className="eyebrow">Participation</span>
-            <h2>Where this address appears across governance.</h2>
+            <span className="eyebrow">Network Neighbors</span>
+            <h2>The nearest proposals, projects, and linked community nodes.</h2>
           </div>
           <div className="stack-list compact">
-            {props.participation.map((item) => (
-              <a key={item.href} className="mini-row" href={item.href}>
+            {props.networkNeighbors.map((item) => (
+              <a key={`${item.kind}:${item.href}`} className="mini-row" href={item.href}>
                 <span>
-                  {item.numberLabel} - {item.title}
+                  {item.relationship} / {item.kind}
                 </span>
-                <strong>{item.status}</strong>
+                <strong>
+                  {item.label} {item.valueLabel ? `- ${item.valueLabel}` : ""}
+                </strong>
               </a>
             ))}
           </div>
@@ -108,7 +159,7 @@ export function CommunityProfilePage({ meta, props }: { meta: Meta; props: Commu
         <div>
           <div className="section-head">
             <span className="eyebrow">References</span>
-            <h2>Identity and related surfaces.</h2>
+            <h2>Identity links, participation, and related workstreams.</h2>
           </div>
           <div className="stack-list compact">
             {props.profile.links.map((link) => (
@@ -121,6 +172,14 @@ export function CommunityProfilePage({ meta, props }: { meta: Meta; props: Commu
               <a key={project.href} className="mini-row" href={project.href}>
                 <span>Project</span>
                 <strong>{project.label}</strong>
+              </a>
+            ))}
+            {props.participation.map((item) => (
+              <a key={item.href} className="mini-row" href={item.href}>
+                <span>{item.status}</span>
+                <strong>
+                  {item.numberLabel} - {item.title}
+                </strong>
               </a>
             ))}
           </div>

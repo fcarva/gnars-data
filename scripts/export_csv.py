@@ -477,6 +477,126 @@ def export_timeline_events() -> None:
     write_csv("timeline_events.csv", rows)
 
 
+def export_activity_timeseries() -> None:
+    data = load_json("activity_timeseries")
+    rows = []
+    for record in data["records"]:
+        rows.append(
+            {
+                "date": record["date"],
+                "proposals_created": record["proposals_created"],
+                "proposals_closed": record["proposals_closed"],
+                "proposals_executed": record["proposals_executed"],
+                "proposals_defeated": record["proposals_defeated"],
+                "proposals_cancelled": record["proposals_cancelled"],
+                "proposals_active": record["proposals_active"],
+                "payouts_count": record["payouts_count"],
+                "payouts_eth": record["payouts_eth"],
+                "payouts_usdc": record["payouts_usdc"],
+                "payouts_gnars": record["payouts_gnars"],
+                "updates_count": record["updates_count"],
+                "deliveries_count": record["deliveries_count"],
+            }
+        )
+    write_csv("activity_timeseries.csv", rows)
+
+
+def export_treasury_flows() -> None:
+    data = load_json("treasury_flows")
+    rows = []
+    for record in data["routes"]:
+        rows.append(
+            {
+                "route_id": record["route_id"],
+                "event_at": record["event_at"],
+                "archive_id": record["archive_id"],
+                "proposal_key": record["proposal_key"],
+                "proposal_number": record["proposal_number"],
+                "proposal_title": record["proposal_title"],
+                "proposal_status": record["proposal_status"],
+                "proposal_chain": record["proposal_chain"],
+                "project_id": record["project_id"],
+                "project_name": record["project_name"],
+                "proposer_address": record["proposer_address"],
+                "recipient_address": record["recipient_address"],
+                "recipient_display_name": record["recipient_display_name"],
+                "asset_symbol": record["asset_symbol"],
+                "amount": record["amount"],
+                "asset_kind": record["asset_kind"],
+                "token_contract": record["token_contract"],
+                "proposal_href": record["proposal_href"],
+            }
+        )
+    write_csv("treasury_flows.csv", rows)
+
+
+def export_community_signals() -> None:
+    data = load_json("community_signals")
+    rows = []
+    for window in data["windows"]:
+        rows.append(
+            {
+                "window_id": window["window_id"],
+                "label": window["label"],
+                "since": window["since"],
+                "active_proposals_now": window["metrics"]["active_proposals_now"],
+                "proposal_count": window["metrics"]["proposal_count"],
+                "successful_proposal_count": window["metrics"]["successful_proposal_count"],
+                "payout_count": window["metrics"]["payout_count"],
+                "delivery_count": window["metrics"]["delivery_count"],
+                "recipient_count": window["metrics"]["recipient_count"],
+                "payouts_by_asset_json": json_cell(window["metrics"]["payouts_by_asset"]),
+                "top_recipients_json": json_cell(window["top_recipients"]),
+                "top_projects_json": json_cell(window["top_projects"]),
+                "top_proposals_json": json_cell(window["top_proposals"]),
+                "top_people_json": json_cell(window["top_people"]),
+            }
+        )
+    write_csv("community_signals.csv", rows)
+
+
+def export_network_graph() -> None:
+    data = load_json("network_graph")
+    rows = []
+    for record in data["nodes"]:
+        rows.append(
+            {
+                "record_type": "node",
+                "record_id": record["node_id"],
+                "kind": record["kind"],
+                "label": record["label"],
+                "source": "",
+                "target": "",
+                "status": record.get("status"),
+                "size": record.get("size"),
+                "asset_symbol": "",
+                "weight": "",
+                "count": "",
+                "href": record.get("href"),
+                "metrics_json": json_cell(record.get("metrics")),
+            }
+        )
+    for record in data["edges"]:
+        rows.append(
+            {
+                "record_type": "edge",
+                "record_id": record["edge_id"],
+                "kind": record["kind"],
+                "label": "",
+                "source": record["source"],
+                "target": record["target"],
+                "status": "",
+                "size": "",
+                "asset_symbol": record.get("asset_symbol"),
+                "weight": record.get("weight"),
+                "count": record.get("count"),
+                "href": record.get("href"),
+                "metrics_json": "",
+            }
+        )
+    write_csv("network_graph.csv", rows)
+
+
 def export_sources() -> None:
     data = load_json("sources")
     rows = []
@@ -513,6 +633,10 @@ def main() -> int:
     export_spend_ledger()
     export_dao_metrics()
     export_timeline_events()
+    export_activity_timeseries()
+    export_treasury_flows()
+    export_community_signals()
+    export_network_graph()
     export_sources()
     return 0
 

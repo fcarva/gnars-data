@@ -6,6 +6,8 @@ import { ThemeToggle } from "./ThemeToggle";
 const NAV_ITEMS: { href: string; label: string; key: Meta["activeNav"] }[] = [
   { href: "/", label: "Home", key: "home" },
   { href: "/community/", label: "Community", key: "community" },
+  { href: "/network/", label: "Map", key: "network" },
+  { href: "/treasury/", label: "Flows", key: "treasury" },
   { href: "/projects/", label: "Projects", key: "projects" },
   { href: "/proposals/", label: "Governance", key: "governance" },
   { href: "/timeline/", label: "Timeline", key: "timeline" },
@@ -23,19 +25,15 @@ export function SiteLayout({
     <div className="app-shell">
       <header className="app-header">
         <a className="brandmark" href="/">
-          <span className="brandmark-badge">⌐◨-◨</span>
+          <span className="brandmark-badge">[]</span>
           <span>
             <strong>GNARS.CAMP</strong>
-            <small>community / governance / treasury / delivery</small>
+            <small>lab / field / governance / treasury / delivery</small>
           </span>
         </a>
         <nav className="top-nav" aria-label="Primary">
           {NAV_ITEMS.map((item) => (
-            <a
-              key={item.href}
-              className={item.key === meta.activeNav ? "is-active" : ""}
-              href={item.href}
-            >
+            <a key={item.href} className={item.key === meta.activeNav ? "is-active" : ""} href={item.href}>
               {item.label}
             </a>
           ))}
@@ -48,8 +46,8 @@ export function SiteLayout({
       <main className="app-main">{children}</main>
       <footer className="app-footer">
         <div>
-          <strong>Gnars Camp v2</strong>
-          <span>Editorial surface on top of canonical DAO data.</span>
+          <strong>Gnars Camp v3</strong>
+          <span>Static research atlas for the Gnars economic graph.</span>
         </div>
         <div>
           <a href="https://www.gnars.com/">gnars.com</a>

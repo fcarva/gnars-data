@@ -11,8 +11,8 @@ export function ProjectsPage({ meta, props }: { meta: Meta; props: ProjectsPageP
       <section className="hero-panel compact">
         <div>
           <span className="eyebrow">Projects</span>
-          <h1>Everything Gnars is currently shipping, funding, or formalizing.</h1>
-          <p>Projects are shown as treasury-linked, governance-linked objects instead of detached portfolio cards.</p>
+          <h1>Everything Gnars is shipping, funding, formalizing, or proving in public.</h1>
+          <p>Projects are shown as delivery systems with proposal lineage, recipients, and proof of work.</p>
         </div>
       </section>
       <div className="filter-row">
@@ -27,7 +27,7 @@ export function ProjectsPage({ meta, props }: { meta: Meta; props: ProjectsPageP
           </button>
         ))}
       </div>
-      <section className="masonry-grid">
+      <section className="masonry-grid dense">
         {projects.map((project) => (
           <a key={project.id} className="project-card" href={project.href}>
             <span className="project-status">{project.status}</span>

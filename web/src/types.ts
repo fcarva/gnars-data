@@ -1,4 +1,12 @@
-export type NavKey = "home" | "community" | "projects" | "governance" | "timeline" | "archive";
+export type NavKey =
+  | "home"
+  | "community"
+  | "projects"
+  | "governance"
+  | "timeline"
+  | "network"
+  | "treasury"
+  | "archive";
 
 export type Meta = {
   title: string;
@@ -292,6 +300,279 @@ export type DaoMetrics = {
   };
 };
 
+export type ActivityTimeseriesRecord = {
+  date: string;
+  proposals_created: number;
+  proposals_closed: number;
+  proposals_executed: number;
+  proposals_defeated: number;
+  proposals_cancelled: number;
+  proposals_active: number;
+  payouts_count: number;
+  payouts_eth: number;
+  payouts_usdc: number;
+  payouts_gnars: number;
+  updates_count: number;
+  deliveries_count: number;
+};
+
+export type ActivityTimeseriesData = {
+  dataset: "activity_timeseries";
+  as_of: string;
+  version: number;
+  granularity: string;
+  records: ActivityTimeseriesRecord[];
+};
+
+export type TreasuryFlowRoute = {
+  route_id: string;
+  event_at: string;
+  archive_id: string;
+  proposal_key: string;
+  proposal_number: number | null;
+  proposal_title: string;
+  proposal_status: string;
+  proposal_chain: string;
+  project_id: string | null;
+  project_name: string | null;
+  proposer_address: string;
+  recipient_address: string;
+  recipient_display_name: string;
+  asset_symbol: string;
+  amount: number;
+  asset_kind: string;
+  token_contract: string | null;
+  proposal_href: string;
+};
+
+export type TreasuryFlowsData = {
+  dataset: "treasury_flows";
+  as_of: string;
+  version: number;
+  routes: TreasuryFlowRoute[];
+  windows: {
+    window_id: string;
+    label: string;
+    since: string | null;
+    route_count: number;
+    proposal_count: number;
+    recipient_count: number;
+    project_count: number;
+    totals_by_asset: AssetAmount[];
+    top_recipients: {
+      address: string;
+      display_name: string;
+      totals: AssetAmount[];
+    }[];
+    top_projects: {
+      project_id: string;
+      project_name: string;
+      totals: AssetAmount[];
+    }[];
+  }[];
+  proposal_routes: {
+    archive_id: string;
+    proposal_number: number | null;
+    proposal_title: string;
+    proposal_status: string;
+    proposal_chain: string;
+    project_id: string | null;
+    project_name: string | null;
+    totals_by_asset: AssetAmount[];
+    route_count: number;
+    recipients: {
+      address: string;
+      display_name: string;
+      totals_by_asset: AssetAmount[];
+    }[];
+  }[];
+};
+
+export type CommunitySignalsData = {
+  dataset: "community_signals";
+  as_of: string;
+  version: number;
+  windows: {
+    window_id: string;
+    label: string;
+    since: string | null;
+    metrics: {
+      active_proposals_now: number;
+      proposal_count: number;
+      successful_proposal_count: number;
+      payout_count: number;
+      delivery_count: number;
+      recipient_count: number;
+      payouts_by_asset: AssetAmount[];
+    };
+    top_recipients: {
+      address: string;
+      display_name: string;
+      totals_by_asset: AssetAmount[];
+    }[];
+    top_projects: {
+      project_id: string;
+      project_name: string;
+      status: string;
+      totals_by_asset: AssetAmount[];
+    }[];
+    top_proposals: {
+      archive_id: string;
+      proposal_number: number | null;
+      title: string;
+      status: string;
+      totals_by_asset: AssetAmount[];
+    }[];
+    top_people: {
+      address: string;
+      display_name: string;
+      received_totals: AssetAmount[];
+      authored_count: number;
+      delivery_count: number;
+      score: number;
+      tribes: string[];
+    }[];
+  }[];
+  field_notes: {
+    note_id: string;
+    window_id: string;
+    kind: string;
+    title: string;
+    summary: string;
+  }[];
+};
+
+export type GraphNode = {
+  node_id: string;
+  kind: string;
+  label: string;
+  href: string;
+  status?: string;
+  tags?: string[];
+  address?: string;
+  size?: number;
+  proposal_number?: number | null;
+  metrics: Record<string, unknown>;
+};
+
+export type GraphEdge = {
+  edge_id: string;
+  source: string;
+  target: string;
+  kind: string;
+  weight: number;
+  count: number;
+  asset_symbol?: string | null;
+  href?: string | null;
+};
+
+export type NetworkGraphData = {
+  dataset: "network_graph";
+  as_of: string;
+  version: number;
+  nodes: GraphNode[];
+  edges: GraphEdge[];
+  views: {
+    homepage: {
+      node_ids: string[];
+      edge_ids: string[];
+    };
+  };
+};
+
+export type NetworkViewNode = GraphNode & {
+  x: number;
+  y: number;
+  radius: number;
+};
+
+export type NetworkViewEdge = GraphEdge & {
+  sourceNode: NetworkViewNode;
+  targetNode: NetworkViewNode;
+};
+
+export type NetworkViewData = {
+  dataset: "network_view";
+  as_of: string;
+  version: number;
+  width: number;
+  height: number;
+  nodes: NetworkViewNode[];
+  edges: NetworkViewEdge[];
+  homepage: {
+    node_ids: string[];
+    edge_ids: string[];
+  };
+  filters: {
+    tribes: string[];
+    assets: string[];
+    statuses: string[];
+  };
+};
+
+export type TreasuryViewScene = {
+  window_id: string;
+  label: string;
+  width: number;
+  height: number;
+  route_count: number;
+  total_value: number;
+  nodes: {
+    id: string;
+    label: string;
+    kind: string;
+    x0: number;
+    x1: number;
+    y0: number;
+    y1: number;
+    value: number;
+  }[];
+  links: {
+    link_id: string;
+    source: string;
+    target: string;
+    value: number;
+    width: number;
+    asset_symbol: string;
+    href?: string | null;
+    path: string;
+  }[];
+};
+
+export type TreasuryViewData = {
+  dataset: "treasury_view";
+  as_of: string;
+  version: number;
+  scenes: TreasuryViewScene[];
+};
+
+export type ActivityViewScene = {
+  window_id: string;
+  label: string;
+  width: number;
+  height: number;
+  max_value: number;
+  points: {
+    index: number;
+    date: string;
+    governance: number;
+    treasury: number;
+    deliveries: number;
+  }[];
+  paths: {
+    governance: string | null;
+    treasury: string | null;
+    deliveries: string | null;
+  };
+};
+
+export type ActivityViewData = {
+  dataset: "activity_view";
+  as_of: string;
+  version: number;
+  scenes: ActivityViewScene[];
+};
+
 export type CommunityCard = {
   slug: string;
   href: string;
@@ -341,6 +622,7 @@ export type TimelineCard = {
 };
 
 export type HomePageProps = {
+  asOf: string;
   metrics: {
     label: string;
     value: string;
@@ -350,6 +632,11 @@ export type HomePageProps = {
     title: string;
     description: string;
   };
+  economicMap: NetworkViewData;
+  activity: ActivityViewScene;
+  treasuryScene: TreasuryViewScene;
+  signalWindow: CommunitySignalsData["windows"][number];
+  fieldNotes: CommunitySignalsData["field_notes"];
   featuredCommunity: CommunityCard[];
   featuredProjects: ProjectCard[];
   governance: ProposalCard[];
@@ -367,6 +654,7 @@ export type HomePageProps = {
 export type CommunityIndexPageProps = {
   filters: string[];
   people: CommunityCard[];
+  economicMap: NetworkViewData;
 };
 
 export type CommunityProfilePageProps = {
@@ -386,6 +674,14 @@ export type CommunityProfilePageProps = {
     approvedProposals: number;
     budgetManagedByAsset: AssetAmount[];
   };
+  governanceMetrics: {
+    activeVotes: number;
+    votesCast: number;
+    attendancePct: number | null;
+    likePct: number | null;
+    proposalSuccessRate: number;
+    deliveryCount: number;
+  };
   governanceLog: {
     href: string;
     numberLabel: string;
@@ -402,11 +698,20 @@ export type CommunityProfilePageProps = {
   }[];
   projects: LinkItem[];
   proofOfWork: TimelineCard[];
+  activity: ActivityViewScene;
+  networkNeighbors: {
+    label: string;
+    href: string;
+    kind: string;
+    relationship: string;
+    valueLabel: string;
+  }[];
 };
 
 export type ProjectsPageProps = {
   filters: string[];
   projects: ProjectCard[];
+  featuredLineage: TreasuryViewScene;
 };
 
 export type ProjectDetailPageProps = {
@@ -427,11 +732,14 @@ export type ProjectDetailPageProps = {
     }[];
     proposalLinks: LinkItem[];
     timeline: TimelineCard[];
+    recipientDistribution: AssetAmount[];
+    treasuryScene: TreasuryViewScene | null;
   };
 };
 
 export type ProposalsPageProps = {
   proposals: ProposalCard[];
+  signals: CommunitySignalsData["windows"][number];
 };
 
 export type ProposalDetailPageProps = {
@@ -449,11 +757,32 @@ export type ProposalDetailPageProps = {
     }[];
     relatedPeople: LinkItem[];
     relatedProject: LinkItem | null;
+    flowLineage: AssetAmount[];
+    treasuryScene: TreasuryViewScene | null;
   };
 };
 
 export type TimelinePageProps = {
   timeline: TimelineCard[];
+  activity: ActivityViewScene;
+};
+
+export type NetworkPageProps = {
+  scene: NetworkViewData;
+  highlights: {
+    title: string;
+    items: {
+      label: string;
+      detail: string;
+      href: string;
+    }[];
+  }[];
+};
+
+export type TreasuryPageProps = {
+  treasuryScene: TreasuryViewScene;
+  windows: TreasuryFlowsData["windows"];
+  proposalRoutes: TreasuryFlowsData["proposal_routes"];
 };
 
 export type NotesPageProps = {
@@ -500,6 +829,16 @@ export type PagePayload =
       pageType: "timeline-index";
       meta: Meta;
       props: TimelinePageProps;
+    }
+  | {
+      pageType: "network-index";
+      meta: Meta;
+      props: NetworkPageProps;
+    }
+  | {
+      pageType: "treasury-index";
+      meta: Meta;
+      props: TreasuryPageProps;
     }
   | {
       pageType: "notes-index";

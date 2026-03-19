@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["dataset", "as_of", "version", "granularity", "records"],
+  "properties": {
+    "dataset": { "const": "activity_timeseries" },
+    "as_of": { "type": "string" },
+    "version": { "type": "integer" },
+    "granularity": { "type": "string" },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "date",
+          "proposals_created",
+          "proposals_closed",
+          "proposals_executed",
+          "proposals_defeated",
+          "proposals_cancelled",
+          "proposals_active",
+          "payouts_count",
+          "payouts_eth",
+          "payouts_usdc",
+          "payouts_gnars",
+          "updates_count",
+          "deliveries_count"
+        ],
+        "properties": {
+          "date": { "type": "string" },
+          "proposals_created": { "type": "integer" },
+          "proposals_closed": { "type": "integer" },
+          "proposals_executed": { "type": "integer" },
+          "proposals_defeated": { "type": "integer" },
+          "proposals_cancelled": { "type": "integer" },
+          "proposals_active": { "type": "integer" },
+          "payouts_count": { "type": "integer" },
+          "payouts_eth": { "type": "number" },
+          "payouts_usdc": { "type": "number" },
+          "payouts_gnars": { "type": "number" },
+          "updates_count": { "type": "integer" },
+          "deliveries_count": { "type": "integer" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

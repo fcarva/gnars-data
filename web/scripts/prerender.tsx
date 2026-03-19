@@ -1,11 +1,20 @@
 import { promises as fs } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { scaleLinear } from "d3-scale";
+import { curveMonotoneX, line } from "d3-shape";
 import { renderPageMarkup } from "../src/entry-server";
 import type {
+  ActivityTimeseriesData,
+  ActivityViewData,
+  ActivityViewScene,
   CommunityCard,
+  CommunityIndexPageProps,
   CommunityProfilePageProps,
+  CommunitySignalsData,
   DaoMetrics,
+  NetworkPageProps,
+  NetworkViewData,
   NotesIndexRecord,
   PagePayload,
   PersonRecord,
@@ -18,6 +27,9 @@ import type {
   SpendLedgerRecord,
   TimelineCard,
   TimelineEventRecord,
+  TreasuryFlowsData,
+  TreasuryPageProps,
+  TreasuryViewData,
 } from "../src/types";
 import {
   communityHref,
@@ -212,6 +224,110 @@ function documentHtml(payload: PagePayload, appHtml: string, assets: { scriptHre
 </html>`;
 }
 
+function buildSceneFromPoints(
+  windowId: string,
+  label: string,
+  points: { index: number; date: string; governance: number; treasury: number; deliveries: number }[],
+): ActivityViewScene {
+  const width = 1080;
+  const height = 240;
+  const left = 14;
+  const top = 16;
+  const bottom = 20;
+  const right = 14;
+  const safePoints = points.length
+    ? points
+    : [{ index: 0, date: "", governance: 0, treasury: 0, deliveries: 0 }];
+  const maxValue = Math.max(1, ...safePoints.flatMap((point) => [point.governance, point.treasury, point.deliveries]));
+  const x = scaleLinear().domain([0, Math.max(1, safePoints.length - 1)]).range([left, width - right]);
+  const y = scaleLinear().domain([0, maxValue]).range([height - bottom, top]);
+  const buildPath = (key: "governance" | "treasury" | "deliveries") =>
+    line<{ index: number; governance: number; treasury: number; deliveries: number }>()
+      .x((point) => x(point.index))
+      .y((point) => y(point[key]))
+      .curve(curveMonotoneX)(safePoints);
+
+  return {
+    window_id: windowId,
+    label,
+    width,
+    height,
+    max_value: maxValue,
+    points: safePoints,
+    paths: {
+      governance: buildPath("governance"),
+      treasury: buildPath("treasury"),
+      deliveries: buildPath("deliveries"),
+    },
+  };
+}
+
+function buildPersonActivityScene(
+  person: PersonRecord,
+  authored: ProposalArchiveRecord[],
+  participation: ProposalArchiveRecord[],
+  proofOfWork: TimelineCard[],
+  spendLedger: SpendLedgerRecord[],
+): ActivityViewScene {
+  const buckets = new Map<string, { governance: number; treasury: number; deliveries: number }>();
+  const touch = (date: string, key: "governance" | "treasury" | "deliveries", value: number) => {
+    const row = buckets.get(date) ?? { governance: 0, treasury: 0, deliveries: 0 };
+    row[key] += value;
+    buckets.set(date, row);
+  };
+
+  for (const proposal of authored) {
+    touch(proposal.end_at.slice(0, 10), "governance", 1);
+  }
+  for (const proposal of participation) {
+    touch(proposal.end_at.slice(0, 10), "governance", 0.5);
+  }
+  for (const record of spendLedger.filter((item) => item.recipient_address.toLowerCase() === person.address.toLowerCase())) {
+    const day = (record.proposal_end_at || record.proposal_created_at || "").slice(0, 10);
+    if (day) {
+      touch(day, "treasury", 1);
+    }
+  }
+  for (const event of proofOfWork) {
+    if (event.dateLabel) {
+      touch(event.dateLabel, "deliveries", 1);
+    }
+  }
+
+  const orderedDates = [...buckets.keys()].sort();
+  const points = orderedDates.slice(-90).map((date, index) => ({
+    index,
+    date,
+    governance: buckets.get(date)?.governance ?? 0,
+    treasury: buckets.get(date)?.treasury ?? 0,
+    deliveries: buckets.get(date)?.deliveries ?? 0,
+  }));
+  return buildSceneFromPoints("profile-90d", "Profile Activity", points);
+}
+
+function neighborhoodForPerson(
+  person: PersonRecord,
+  networkView: NetworkViewData,
+): CommunityProfilePageProps["networkNeighbors"] {
+  const nodeId = `person:${person.address.toLowerCase()}`;
+  const nodeById = new Map(networkView.nodes.map((node) => [node.node_id, node]));
+  return networkView.edges
+    .filter((edge) => edge.source === nodeId || edge.target === nodeId)
+    .map((edge) => {
+      const otherId = edge.source === nodeId ? edge.target : edge.source;
+      const node = nodeById.get(otherId);
+      return {
+        label: node?.label ?? otherId,
+        href: node?.href ?? "#",
+        kind: titleCase(node?.kind ?? "unknown"),
+        relationship: titleCase(edge.kind),
+        valueLabel: edge.asset_symbol ? formatAmount(edge.asset_symbol, edge.weight) : `${edge.count}`,
+      };
+    })
+    .sort((left, right) => right.valueLabel.localeCompare(left.valueLabel))
+    .slice(0, 12);
+}
+
 async function main() {
   const peopleData = await loadJson<{ records: PersonRecord[] }>("people.json");
   const spendLedgerData = await loadJson<{ records: SpendLedgerRecord[] }>("spend_ledger.json");
@@ -220,6 +336,12 @@ async function main() {
   const timelineData = await loadJson<{ records: TimelineEventRecord[] }>("timeline_events.json");
   const metricsData = await loadJson<DaoMetrics>("dao_metrics.json");
   const notesData = await loadJson<{ records: NotesIndexRecord[] }>("notes_index.json");
+  const communitySignalsData = await loadJson<CommunitySignalsData>("community_signals.json");
+  const activityTimeseriesData = await loadJson<ActivityTimeseriesData>("activity_timeseries.json");
+  const activityViewData = await loadJson<ActivityViewData>("activity_view.json");
+  const treasuryFlowsData = await loadJson<TreasuryFlowsData>("treasury_flows.json");
+  const treasuryViewData = await loadJson<TreasuryViewData>("treasury_view.json");
+  const networkViewData = await loadJson<NetworkViewData>("network_view.json");
 
   const people = peopleData.records;
   const spendLedger = spendLedgerData.records;
@@ -229,7 +351,6 @@ async function main() {
   const notes = notesData.records;
 
   const peopleByAddress = new Map(people.map((person) => [person.address.toLowerCase(), person]));
-  const peopleBySlug = new Map(people.map((person) => [person.slug, person]));
   const projectsById = new Map(projects.map((project) => [project.project_id, project]));
   const proposalsByAlias = new Map<string, ProposalArchiveRecord>();
   for (const proposal of proposals) {
@@ -253,6 +374,9 @@ async function main() {
     .sort((left, right) => `${right.end_at}${right.created_at}`.localeCompare(`${left.end_at}${left.created_at}`))
     .map((proposal) => buildProposalCard(proposal, budgetMap, projectsByArchiveId));
   const timelineCards = timeline.map((event) => buildTimelineCard(event, peopleByAddress));
+  const signalWindow = communitySignalsData.windows.find((window) => window.window_id === "30d") ?? communitySignalsData.windows[0];
+  const treasuryScene = treasuryViewData.scenes.find((scene) => scene.window_id === "30d") ?? treasuryViewData.scenes[0];
+  const activityScene = activityViewData.scenes.find((scene) => scene.window_id === "30d") ?? activityViewData.scenes[0];
 
   const payloads: PagePayload[] = [];
 
@@ -260,22 +384,28 @@ async function main() {
     pageType: "home",
     meta: {
       title: "Gnars Camp",
-      description: "Community, governance, treasury, and delivery mapped into one static Gnars atlas.",
+      description: "Research-grade community atlas of Gnars: treasury, governance, people, and delivery.",
       pathname: "/",
       activeNav: "home",
     },
     props: {
+      asOf: communitySignalsData.as_of,
       hero: {
-        title: "A static atlas of how Gnars allocates capital, builds culture, and ships work.",
+        title: "A daily static map of how Gnars routes capital, builds culture, and ships work.",
         description:
-          "Gnars Camp fuses editorial storytelling with linked governance data, so every athlete, builder, filmmaker, proposal, and workstream becomes part of one public economic graph.",
+          "Gnars Camp treats every athlete, builder, proposal, project, and treasury outflow as part of one public network. The goal is legibility: who got funded, through which proposal, for what work, and with what proof.",
       },
       metrics: [
-        { label: "People", value: String(metricsData.overview.people_count), detail: "merged identities and DAO participants" },
+        { label: "People", value: String(metricsData.overview.people_count), detail: "merged identities and participants" },
         { label: "Proposals", value: String(metricsData.overview.proposal_count), detail: "archived across gnars and snapshot" },
         { label: "Treasury", value: `$${Math.round(metricsData.overview.treasury_total_value_usd).toLocaleString("en-US")}`, detail: "current holdings view" },
-        { label: "Outflows", value: `${metricsData.overview.outflows_eth.toFixed(2)} ETH`, detail: "successful routed treasury flows" },
+        { label: "Outflows", value: `${metricsData.overview.outflows_eth.toFixed(2)} ETH`, detail: "successful treasury routes" },
       ],
+      economicMap: networkViewData,
+      activity: activityScene,
+      treasuryScene,
+      signalWindow,
+      fieldNotes: communitySignalsData.field_notes,
       featuredCommunity: communityCards
         .slice()
         .sort((left, right) => Number(right.featured) - Number(left.featured) || right.approvedProposals - left.approvedProposals)
@@ -323,7 +453,8 @@ async function main() {
     props: {
       filters,
       people: communityCards,
-    },
+      economicMap: networkViewData,
+    } satisfies CommunityIndexPageProps,
   });
 
   for (const person of people) {
@@ -389,6 +520,16 @@ async function main() {
           avatarUrl: person.identity.avatar_url ?? null,
         },
         economics,
+        governanceMetrics: {
+          activeVotes: person.governance.active_votes,
+          votesCast: person.governance.votes_cast_count,
+          attendancePct: person.governance.attendance_pct,
+          likePct: person.governance.like_pct,
+          proposalSuccessRate: authored.length
+            ? Math.round((authored.filter((proposal) => isSuccessfulProposal(proposal)).length / authored.length) * 100)
+            : 0,
+          deliveryCount: proofOfWork.length,
+        },
         governanceLog: authored.map((proposal) => ({
           href: proposalHref(proposal.archive_id),
           numberLabel: proposal.proposal_number !== null ? `Prop #${proposal.proposal_number}` : proposal.archive_id,
@@ -405,6 +546,8 @@ async function main() {
         })),
         projects: relatedProjects,
         proofOfWork,
+        activity: buildPersonActivityScene(person, authored, participation, proofOfWork, spendLedger),
+        networkNeighbors: neighborhoodForPerson(person, networkViewData),
       } satisfies CommunityProfilePageProps,
     };
     payloads.push(profilePayload);
@@ -421,6 +564,7 @@ async function main() {
     props: {
       filters: projectFilters,
       projects: projectCards,
+      featuredLineage: treasuryScene,
     },
   });
 
@@ -465,6 +609,8 @@ async function main() {
             href: proposalHref(summary.archive_id),
           })),
           timeline: timelineForProject,
+          recipientDistribution: projectSpentAssets(project),
+          treasuryScene: null,
         },
       } satisfies ProjectDetailPageProps,
     };
@@ -481,6 +627,7 @@ async function main() {
     },
     props: {
       proposals: proposalCards,
+      signals: signalWindow,
     },
   });
 
@@ -537,6 +684,8 @@ async function main() {
           }),
           relatedPeople,
           relatedProject: linkedProject ? { label: linkedProject.name, href: projectHref(linkedProject.project_id) } : null,
+          flowLineage: groupAssetTotals(budgetMap.get(proposal.archive_id) ?? []),
+          treasuryScene: null,
         },
       } satisfies ProposalDetailPageProps,
     };
@@ -553,7 +702,65 @@ async function main() {
     },
     props: {
       timeline: timelineCards,
+      activity: activityViewData.scenes.find((scene) => scene.window_id === "90d") ?? activityScene,
     },
+  });
+
+  payloads.push({
+    pageType: "network-index",
+    meta: {
+      title: "Network - Gnars Camp",
+      description: "Economic map of people, proposals, projects, and treasury routes across Gnars.",
+      pathname: "/network/",
+      activeNav: "network",
+    },
+    props: {
+      scene: networkViewData,
+      highlights: [
+        {
+          title: "Top Recipients",
+          items: signalWindow.top_recipients.slice(0, 6).map((item) => {
+            const linked = peopleByAddress.get(item.address.toLowerCase());
+            return {
+              label: item.display_name,
+              detail: item.totals_by_asset.map((asset) => formatAmount(asset.symbol, asset.amount)).join(" + "),
+              href: linked ? communityHref(linked.slug) : "#",
+            };
+          }),
+        },
+        {
+          title: "Top Projects",
+          items: signalWindow.top_projects.slice(0, 6).map((item) => ({
+            label: item.project_name,
+            detail: item.totals_by_asset.map((asset) => formatAmount(asset.symbol, asset.amount)).join(" + "),
+            href: projectHref(item.project_id),
+          })),
+        },
+        {
+          title: "Top Proposals",
+          items: signalWindow.top_proposals.slice(0, 6).map((item) => ({
+            label: item.proposal_number !== null ? `Prop #${item.proposal_number}` : item.title,
+            detail: item.totals_by_asset.map((asset) => formatAmount(asset.symbol, asset.amount)).join(" + "),
+            href: proposalHref(item.archive_id),
+          })),
+        },
+      ],
+    } satisfies NetworkPageProps,
+  });
+
+  payloads.push({
+    pageType: "treasury-index",
+    meta: {
+      title: "Treasury - Gnars Camp",
+      description: "Treasury routing and proposal-to-recipient flow across Gnars.",
+      pathname: "/treasury/",
+      activeNav: "treasury",
+    },
+    props: {
+      treasuryScene: treasuryViewData,
+      windows: treasuryFlowsData.windows,
+      proposalRoutes: treasuryFlowsData.proposal_routes,
+    } satisfies TreasuryPageProps,
   });
 
   payloads.push({

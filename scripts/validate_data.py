@@ -25,6 +25,10 @@ DATASETS = {
     "spend_ledger": "spend_ledger.schema.json",
     "dao_metrics": "dao_metrics.schema.json",
     "timeline_events": "timeline_events.schema.json",
+    "activity_timeseries": "activity_timeseries.schema.json",
+    "treasury_flows": "treasury_flows.schema.json",
+    "community_signals": "community_signals.schema.json",
+    "network_graph": "network_graph.schema.json",
     "sources": "sources.schema.json",
 }
 

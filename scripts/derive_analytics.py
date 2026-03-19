@@ -1,8 +1,10 @@
 from __future__ import annotations
 
 import json
+import math
 import re
 from collections import Counter, defaultdict
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 
@@ -85,6 +87,109 @@ def integer_or_none(value: Any) -> int | None:
     if value in (None, ""):
         return None
     return int(value)
+
+
+def parse_datetime(value: Any) -> datetime | None:
+    if value in (None, ""):
+        return None
+    text = str(value).strip()
+    if not text:
+        return None
+    normalized = text.replace("Z", "+00:00")
+    try:
+        parsed = datetime.fromisoformat(normalized)
+    except ValueError:
+        return None
+    if parsed.tzinfo is None:
+        return parsed.replace(tzinfo=timezone.utc)
+    return parsed.astimezone(timezone.utc)
+
+
+def iso_day(value: Any) -> str | None:
+    parsed = parse_datetime(value)
+    if parsed is None:
+        return None
+    return parsed.date().isoformat()
+
+
+def latest_day(*values: Any) -> str | None:
+    parsed_values = [parsed for parsed in (parse_datetime(value) for value in values) if parsed is not None]
+    if not parsed_values:
+        return None
+    return max(parsed_values).date().isoformat()
+
+
+def windowed(records: list[dict[str, Any]], key: str, since: datetime | None) -> list[dict[str, Any]]:
+    if since is None:
+        return records
+    filtered: list[dict[str, Any]] = []
+    for record in records:
+        parsed = parse_datetime(record.get(key))
+        if parsed is not None and parsed >= since:
+            filtered.append(record)
+    return filtered
+
+
+def build_window_specs(as_of_value: str) -> list[dict[str, Any]]:
+    as_of = parse_datetime(as_of_value) or datetime.now(timezone.utc)
+    return [
+        {"window_id": "7d", "label": "Last 7 Days", "since": as_of - timedelta(days=7)},
+        {"window_id": "30d", "label": "Last 30 Days", "since": as_of - timedelta(days=30)},
+        {"window_id": "90d", "label": "Last 90 Days", "since": as_of - timedelta(days=90)},
+        {"window_id": "all", "label": "All Time", "since": None},
+    ]
+
+
+def is_successful_proposal(record: dict[str, Any]) -> bool:
+    platform = str(record.get("platform") or "").strip().lower()
+    status = str(record.get("status") or "").strip().lower()
+    if platform == "gnars":
+        return status == "executed"
+    if platform == "snapshot" and status == "closed":
+        scores = [number_or_zero(value) for value in (record.get("scores_by_choice") or [])]
+        if not scores or number_or_zero(record.get("scores_total")) < number_or_zero(record.get("quorum")):
+            return False
+        return scores[0] > 0 and scores[0] == max(scores)
+    return False
+
+
+def proposal_event_at(record: dict[str, Any]) -> Any:
+    return record.get("end_at") or record.get("created_at") or record.get("start_at")
+
+
+def in_window(value: Any, since: datetime | None) -> bool:
+    if since is None:
+        return True
+    parsed = parse_datetime(value)
+    return parsed is not None and parsed >= since
+
+
+def asset_totals(records: list[dict[str, Any]], *, symbol_key: str = "asset_symbol", amount_key: str = "amount") -> list[dict[str, Any]]:
+    totals: defaultdict[str, float] = defaultdict(float)
+    for record in records:
+        symbol = str(record.get(symbol_key) or "").strip().upper()
+        amount = number_or_zero(record.get(amount_key))
+        if not symbol or amount <= 0:
+            continue
+        totals[symbol] += amount
+    return [
+        {
+            "symbol": symbol,
+            "amount": round(amount, 8),
+        }
+        for symbol, amount in sorted(totals.items(), key=lambda item: (-item[1], item[0]))
+    ]
+
+
+def primary_asset_amount(records: list[dict[str, Any]]) -> float:
+    if not records:
+        return 0.0
+    if "amount" in records[0] and "symbol" in records[0]:
+        return number_or_zero(records[0]["amount"])
+    totals = asset_totals(records)
+    if not totals:
+        return 0.0
+    return number_or_zero(totals[0]["amount"])
 
 
 def latest_members_snapshot() -> dict[str, Any]:
@@ -1075,6 +1180,704 @@ def build_timeline_events(
     }
 
 
+def build_activity_timeseries(
+    archive: dict[str, Any],
+    spend_records: list[dict[str, Any]],
+    project_updates: dict[str, Any],
+) -> dict[str, Any]:
+    activity: defaultdict[str, dict[str, Any]] = defaultdict(
+        lambda: {
+            "date": "",
+            "proposals_created": 0,
+            "proposals_closed": 0,
+            "proposals_executed": 0,
+            "proposals_defeated": 0,
+            "proposals_cancelled": 0,
+            "proposals_active": 0,
+            "payouts_count": 0,
+            "payouts_eth": 0.0,
+            "payouts_usdc": 0.0,
+            "payouts_gnars": 0.0,
+            "updates_count": 0,
+            "deliveries_count": 0,
+        }
+    )
+
+    min_date: datetime | None = None
+    max_date = parse_datetime(archive["as_of"]) or datetime.now(timezone.utc)
+
+    proposal_spans: list[tuple[datetime, datetime]] = []
+    for proposal in archive["records"]:
+        created_at = parse_datetime(proposal.get("created_at") or proposal.get("start_at") or proposal_event_at(proposal))
+        ended_at = parse_datetime(proposal_event_at(proposal)) or created_at
+        if created_at is None or ended_at is None:
+            continue
+        proposal_spans.append((created_at, ended_at))
+        min_date = created_at if min_date is None else min(min_date, created_at)
+        max_date = max(max_date, ended_at)
+
+        created_day = created_at.date().isoformat()
+        activity[created_day]["date"] = created_day
+        activity[created_day]["proposals_created"] += 1
+
+        ended_day = ended_at.date().isoformat()
+        activity[ended_day]["date"] = ended_day
+        status = str(proposal.get("status") or "").strip().lower()
+        if status in {"closed", "executed", "defeated", "cancelled", "canceled", "expired"}:
+            activity[ended_day]["proposals_closed"] += 1
+        if status == "executed":
+            activity[ended_day]["proposals_executed"] += 1
+        if status in {"defeated", "failed"}:
+            activity[ended_day]["proposals_defeated"] += 1
+        if status in {"cancelled", "canceled", "expired"}:
+            activity[ended_day]["proposals_cancelled"] += 1
+
+    for record in spend_records:
+        event_at = parse_datetime(record.get("proposal_end_at") or record.get("proposal_created_at") or archive["as_of"])
+        if event_at is None:
+            continue
+        min_date = event_at if min_date is None else min(min_date, event_at)
+        max_date = max(max_date, event_at)
+        day = event_at.date().isoformat()
+        activity[day]["date"] = day
+        activity[day]["payouts_count"] += 1
+        symbol = str(record.get("asset_symbol") or "").upper()
+        amount = number_or_zero(record.get("amount"))
+        if symbol == "ETH":
+            activity[day]["payouts_eth"] += amount
+        elif symbol == "USDC":
+            activity[day]["payouts_usdc"] += amount
+        elif symbol == "GNARS":
+            activity[day]["payouts_gnars"] += amount
+
+    for update in project_updates["records"]:
+        update_at = parse_datetime(update.get("date"))
+        if update_at is None:
+            continue
+        min_date = update_at if min_date is None else min(min_date, update_at)
+        max_date = max(max_date, update_at)
+        day = update_at.date().isoformat()
+        activity[day]["date"] = day
+        activity[day]["updates_count"] += 1
+        if str(update.get("status") or "").strip().lower() == "completed" or str(update.get("kind") or "").strip().lower() in {"delivery", "milestone"}:
+            activity[day]["deliveries_count"] += 1
+
+    if min_date is None:
+        min_date = max_date
+
+    records: list[dict[str, Any]] = []
+    cursor = min_date.date()
+    last_day = max_date.date()
+    while cursor <= last_day:
+        day = cursor.isoformat()
+        row = activity[day]
+        row["date"] = day
+        active_count = 0
+        for start_at, end_at in proposal_spans:
+            if start_at.date() <= cursor <= end_at.date():
+                active_count += 1
+        row["proposals_active"] = active_count
+        records.append(
+            {
+                "date": day,
+                "proposals_created": row["proposals_created"],
+                "proposals_closed": row["proposals_closed"],
+                "proposals_executed": row["proposals_executed"],
+                "proposals_defeated": row["proposals_defeated"],
+                "proposals_cancelled": row["proposals_cancelled"],
+                "proposals_active": row["proposals_active"],
+                "payouts_count": row["payouts_count"],
+                "payouts_eth": round(row["payouts_eth"], 8),
+                "payouts_usdc": round(row["payouts_usdc"], 8),
+                "payouts_gnars": round(row["payouts_gnars"], 8),
+                "updates_count": row["updates_count"],
+                "deliveries_count": row["deliveries_count"],
+            }
+        )
+        cursor += timedelta(days=1)
+
+    return {
+        "dataset": "activity_timeseries",
+        "as_of": max_date.isoformat(),
+        "version": 1,
+        "granularity": "day",
+        "records": records,
+    }
+
+
+def build_treasury_flows(
+    archive: dict[str, Any],
+    spend_records: list[dict[str, Any]],
+) -> dict[str, Any]:
+    proposals_by_id = {record["archive_id"]: record for record in archive["records"]}
+    routes: list[dict[str, Any]] = []
+
+    for record in spend_records:
+        proposal = proposals_by_id.get(record["archive_id"], {})
+        event_at = parse_datetime(record.get("proposal_end_at") or record.get("proposal_created_at") or archive["as_of"])
+        routes.append(
+            {
+                "route_id": record["ledger_id"],
+                "event_at": event_at.isoformat() if event_at else archive["as_of"],
+                "archive_id": record["archive_id"],
+                "proposal_key": record["proposal_key"],
+                "proposal_number": record["proposal_number"],
+                "proposal_title": record["title"],
+                "proposal_status": record["status"],
+                "proposal_chain": record["chain"],
+                "project_id": record["project_id"],
+                "project_name": record["project_name"],
+                "proposer_address": record["proposer"],
+                "recipient_address": record["recipient_address"],
+                "recipient_display_name": record["recipient_display_name"],
+                "asset_symbol": record["asset_symbol"],
+                "amount": round(number_or_zero(record["amount"]), 8),
+                "asset_kind": record["asset_kind"],
+                "token_contract": record["token_contract"],
+                "proposal_href": proposal.get("links", {}).get("canonical_url") or record["canonical_url"],
+            }
+        )
+
+    routes.sort(key=lambda record: (str(record["event_at"]), str(record["route_id"])), reverse=True)
+    as_of = latest_day(*(route["event_at"] for route in routes), archive["as_of"]) or str(archive["as_of"])
+    window_specs = build_window_specs(as_of)
+
+    windows: list[dict[str, Any]] = []
+    for spec in window_specs:
+        selected = [route for route in routes if in_window(route["event_at"], spec["since"])]
+        recipient_groups: dict[str, list[dict[str, Any]]] = defaultdict(list)
+        project_groups: dict[str, list[dict[str, Any]]] = defaultdict(list)
+        for route in selected:
+            recipient_groups[route["recipient_address"]].append(route)
+            if route.get("project_id"):
+                project_groups[str(route["project_id"])].append(route)
+
+        recipient_rows = [
+            {
+                "address": address,
+                "display_name": rows[0]["recipient_display_name"],
+                "totals": asset_totals(rows),
+            }
+            for address, rows in recipient_groups.items()
+        ]
+        project_rows = [
+            {
+                "project_id": project_id,
+                "project_name": rows[0]["project_name"],
+                "totals": asset_totals(rows),
+            }
+            for project_id, rows in project_groups.items()
+        ]
+
+        windows.append(
+            {
+                "window_id": spec["window_id"],
+                "label": spec["label"],
+                "since": spec["since"].isoformat() if spec["since"] is not None else None,
+                "route_count": len(selected),
+                "proposal_count": len({route["archive_id"] for route in selected}),
+                "recipient_count": len(recipient_rows),
+                "project_count": len(project_rows),
+                "totals_by_asset": asset_totals(selected),
+                "top_recipients": sorted(
+                    recipient_rows,
+                    key=lambda row: (-primary_asset_amount(row["totals"]), str(row["display_name"]).lower()),
+                )[:8],
+                "top_projects": sorted(
+                    project_rows,
+                    key=lambda row: (-primary_asset_amount(row["totals"]), str(row["project_name"]).lower()),
+                )[:8],
+            }
+        )
+
+    proposal_routes: list[dict[str, Any]] = []
+    for proposal in archive["records"]:
+        related = [route for route in routes if route["archive_id"] == proposal["archive_id"]]
+        recipient_groups: dict[str, list[dict[str, Any]]] = defaultdict(list)
+        for route in related:
+            recipient_groups[route["recipient_address"]].append(route)
+        proposal_routes.append(
+            {
+                "archive_id": proposal["archive_id"],
+                "proposal_number": proposal["proposal_number"],
+                "proposal_title": proposal["title"],
+                "proposal_status": proposal["status"],
+                "proposal_chain": proposal["chain"],
+                "project_id": related[0]["project_id"] if related else None,
+                "project_name": related[0]["project_name"] if related else None,
+                "totals_by_asset": asset_totals(related),
+                "route_count": len(related),
+                "recipients": [
+                    {
+                        "address": address,
+                        "display_name": rows[0]["recipient_display_name"],
+                        "totals_by_asset": asset_totals(rows),
+                    }
+                    for address, rows in sorted(recipient_groups.items(), key=lambda item: item[0])
+                ],
+            }
+        )
+
+    proposal_routes.sort(
+        key=lambda record: (
+            -(record["proposal_number"] if record["proposal_number"] is not None else -1),
+            str(record["archive_id"]),
+        )
+    )
+
+    return {
+        "dataset": "treasury_flows",
+        "as_of": as_of,
+        "version": 1,
+        "routes": routes,
+        "windows": windows,
+        "proposal_routes": proposal_routes,
+    }
+
+
+def build_community_signals(
+    archive: dict[str, Any],
+    people: dict[str, Any],
+    project_rollups: dict[str, Any],
+    timeline_events: dict[str, Any],
+    treasury_flows: dict[str, Any],
+) -> dict[str, Any]:
+    people_by_address = {record["address"]: record for record in people["records"]}
+    proposals_by_id = {record["archive_id"]: record for record in archive["records"]}
+    projects_by_id = {record["project_id"]: record for record in project_rollups["records"]}
+    routes = treasury_flows["routes"]
+    as_of = treasury_flows["as_of"]
+
+    def proposal_rows_for_window(since: datetime | None) -> list[dict[str, Any]]:
+        return [
+            proposal
+            for proposal in archive["records"]
+            if in_window(proposal_event_at(proposal), since)
+        ]
+
+    def update_rows_for_window(since: datetime | None) -> list[dict[str, Any]]:
+        return [
+            event
+            for event in timeline_events["records"]
+            if event.get("kind") != "proposal" and in_window(event.get("date"), since)
+        ]
+
+    windows: list[dict[str, Any]] = []
+    for spec in build_window_specs(as_of):
+        selected_routes = [route for route in routes if in_window(route["event_at"], spec["since"])]
+        selected_proposals = proposal_rows_for_window(spec["since"])
+        selected_updates = update_rows_for_window(spec["since"])
+
+        recipient_scores: defaultdict[str, list[dict[str, Any]]] = defaultdict(list)
+        project_scores: defaultdict[str, list[dict[str, Any]]] = defaultdict(list)
+        proposal_scores: defaultdict[str, list[dict[str, Any]]] = defaultdict(list)
+        activity_scores: defaultdict[str, dict[str, Any]] = defaultdict(
+            lambda: {
+                "address": "",
+                "display_name": "",
+                "received_routes": [],
+                "authored_count": 0,
+                "delivery_count": 0,
+            }
+        )
+
+        for route in selected_routes:
+            recipient_scores[route["recipient_address"]].append(route)
+            proposal_scores[route["archive_id"]].append(route)
+            if route.get("project_id"):
+                project_scores[str(route["project_id"])].append(route)
+
+            address = route["recipient_address"]
+            person = people_by_address.get(address, {})
+            row = activity_scores[address]
+            row["address"] = address
+            row["display_name"] = person.get("display_name") or route["recipient_display_name"]
+            row["received_routes"].append(route)
+
+        for proposal in selected_proposals:
+            proposer = normalize_address(proposal.get("proposer"))
+            if not proposer:
+                continue
+            person = people_by_address.get(proposer, {})
+            row = activity_scores[proposer]
+            row["address"] = proposer
+            row["display_name"] = person.get("display_name") or proposal.get("proposer_label") or short_address(proposer)
+            row["authored_count"] += 1
+
+        for event in selected_updates:
+            for address in unique_addresses(event.get("people_addresses") or []):
+                person = people_by_address.get(address, {})
+                row = activity_scores[address]
+                row["address"] = address
+                row["display_name"] = person.get("display_name") or short_address(address)
+                row["delivery_count"] += 1
+
+        top_recipients = sorted(
+            [
+                {
+                    "address": address,
+                    "display_name": rows[0]["recipient_display_name"],
+                    "totals_by_asset": asset_totals(rows),
+                }
+                for address, rows in recipient_scores.items()
+            ],
+            key=lambda row: (-primary_asset_amount(row["totals_by_asset"]), str(row["display_name"]).lower()),
+        )[:8]
+
+        top_projects = sorted(
+            [
+                {
+                    "project_id": project_id,
+                    "project_name": (projects_by_id.get(project_id) or {}).get("name") or rows[0]["project_name"] or project_id,
+                    "status": (projects_by_id.get(project_id) or {}).get("status") or "unknown",
+                    "totals_by_asset": asset_totals(rows),
+                }
+                for project_id, rows in project_scores.items()
+            ],
+            key=lambda row: (-primary_asset_amount(row["totals_by_asset"]), str(row["project_name"]).lower()),
+        )[:8]
+
+        top_proposals = sorted(
+            [
+                {
+                    "archive_id": archive_id,
+                    "proposal_number": (proposals_by_id.get(archive_id) or {}).get("proposal_number"),
+                    "title": (proposals_by_id.get(archive_id) or {}).get("title") or archive_id,
+                    "status": (proposals_by_id.get(archive_id) or {}).get("status") or "unknown",
+                    "totals_by_asset": asset_totals(rows),
+                }
+                for archive_id, rows in proposal_scores.items()
+            ],
+            key=lambda row: (-primary_asset_amount(row["totals_by_asset"]), str(row["title"]).lower()),
+        )[:8]
+
+        top_people = sorted(
+            [
+                {
+                    "address": row["address"],
+                    "display_name": row["display_name"],
+                    "received_totals": asset_totals(row["received_routes"]),
+                    "authored_count": row["authored_count"],
+                    "delivery_count": row["delivery_count"],
+                    "score": round(
+                        primary_asset_amount(asset_totals(row["received_routes"])) + row["authored_count"] * 2 + row["delivery_count"] * 1.5,
+                        4,
+                    ),
+                    "tribes": (people_by_address.get(row["address"]) or {}).get("tags") or [],
+                }
+                for row in activity_scores.values()
+                if row["address"]
+            ],
+            key=lambda row: (-number_or_zero(row["score"]), str(row["display_name"]).lower()),
+        )[:10]
+
+        windows.append(
+            {
+                "window_id": spec["window_id"],
+                "label": spec["label"],
+                "since": spec["since"].isoformat() if spec["since"] is not None else None,
+                "metrics": {
+                    "active_proposals_now": sum(1 for proposal in archive["records"] if str(proposal.get("status") or "").lower() == "active"),
+                    "proposal_count": len(selected_proposals),
+                    "successful_proposal_count": sum(1 for proposal in selected_proposals if is_successful_proposal(proposal)),
+                    "payout_count": len(selected_routes),
+                    "delivery_count": len(selected_updates),
+                    "recipient_count": len(recipient_scores),
+                    "payouts_by_asset": asset_totals(selected_routes),
+                },
+                "top_recipients": top_recipients,
+                "top_projects": top_projects,
+                "top_proposals": top_proposals,
+                "top_people": top_people,
+            }
+        )
+
+    leading_window = next((window for window in windows if window["window_id"] == "30d"), windows[0] if windows else None)
+    leading_asset = (leading_window or {}).get("metrics", {}).get("payouts_by_asset", [])
+    leading_asset_label = leading_asset[0]["symbol"] if leading_asset else "capital"
+    leading_recipient = ((leading_window or {}).get("top_recipients") or [{}])[0]
+    leading_project = ((leading_window or {}).get("top_projects") or [{}])[0]
+
+    field_notes = [
+        {
+            "note_id": "field-note-capital",
+            "window_id": leading_window["window_id"] if leading_window else "30d",
+            "kind": "treasury",
+            "title": "Capital flows concentrate around visible operators.",
+            "summary": (
+                f"In the latest active window, routed value is dominated by {leading_asset_label} flows, "
+                f"with {leading_recipient.get('display_name') or 'core contributors'} appearing as the top recipient cluster."
+            ),
+        },
+        {
+            "note_id": "field-note-delivery",
+            "window_id": leading_window["window_id"] if leading_window else "30d",
+            "kind": "delivery",
+            "title": "Workstreams are legible when treasury and proof sit together.",
+            "summary": (
+                f"{leading_project.get('project_name') or 'Current workstreams'} surfaces as a leading delivery node when treasury routes, proposals, and public updates are read as one chain of evidence."
+            ),
+        },
+        {
+            "note_id": "field-note-governance",
+            "window_id": "all",
+            "kind": "governance",
+            "title": "Governance acts as editorial infrastructure.",
+            "summary": "Proposal history is most useful when it is read alongside recipients, workstreams, and public proof, rather than as an isolated voting log.",
+        },
+    ]
+
+    return {
+        "dataset": "community_signals",
+        "as_of": as_of,
+        "version": 1,
+        "windows": windows,
+        "field_notes": field_notes,
+    }
+
+
+def build_network_graph(
+    archive: dict[str, Any],
+    people: dict[str, Any],
+    project_rollups: dict[str, Any],
+    timeline_events: dict[str, Any],
+    treasury_flows: dict[str, Any],
+) -> dict[str, Any]:
+    proposals_by_id = {record["archive_id"]: record for record in archive["records"]}
+    people_by_address = {record["address"]: record for record in people["records"]}
+    project_by_id = {record["project_id"]: record for record in project_rollups["records"]}
+    routes = treasury_flows["routes"]
+
+    nodes: dict[str, dict[str, Any]] = {}
+    edges: dict[str, dict[str, Any]] = {}
+
+    def upsert_node(node_id: str, payload: dict[str, Any]) -> None:
+        existing = nodes.get(node_id)
+        if existing is None:
+            nodes[node_id] = {"node_id": node_id, **payload}
+            return
+        merged = {**existing, **payload}
+        nodes[node_id] = merged
+
+    def add_edge(
+        source: str,
+        target: str,
+        kind: str,
+        *,
+        weight: float = 1.0,
+        count: int = 1,
+        asset_symbol: str | None = None,
+        href: str | None = None,
+    ) -> None:
+        edge_id = f"{kind}:{source}:{target}:{asset_symbol or 'all'}"
+        if edge_id not in edges:
+            edges[edge_id] = {
+                "edge_id": edge_id,
+                "source": source,
+                "target": target,
+                "kind": kind,
+                "weight": 0.0,
+                "count": 0,
+                "asset_symbol": asset_symbol,
+                "href": href,
+            }
+        edges[edge_id]["weight"] = round(number_or_zero(edges[edge_id]["weight"]) + weight, 8)
+        edges[edge_id]["count"] = int(edges[edge_id]["count"]) + count
+
+    treasury_node_id = "treasury:gnars"
+    upsert_node(
+        treasury_node_id,
+        {
+            "kind": "treasury",
+            "label": "Gnars Treasury",
+            "href": "/treasury/",
+            "status": "active",
+            "tags": ["treasury"],
+            "size": 48.0,
+            "metrics": {
+                "route_count": len(routes),
+                "proposal_count": len({route["archive_id"] for route in routes}),
+            },
+        },
+    )
+
+    for person in people["records"]:
+        total_received = person["receipts"]["eth_received"] + person["receipts"]["usdc_received"] + person["receipts"]["gnars_received"]
+        size = 14 + math.log1p(total_received + person["governance"]["active_votes"] + person["governance"]["proposals_authored_count"] * 4) * 10
+        upsert_node(
+            f"person:{person['address']}",
+            {
+                "kind": "person",
+                "label": person["display_name"],
+                "href": f"/community/{person['slug']}/",
+                "status": person["status"],
+                "tags": person["tags"],
+                "address": person["address"],
+                "size": round(size, 2),
+                "metrics": {
+                    "eth_received": person["receipts"]["eth_received"],
+                    "usdc_received": person["receipts"]["usdc_received"],
+                    "gnars_received": person["receipts"]["gnars_received"],
+                    "active_votes": person["governance"]["active_votes"],
+                    "proposals_authored": person["governance"]["proposals_authored_count"],
+                },
+            },
+        )
+
+    for proposal in archive["records"]:
+        routed_total = sum(
+            number_or_zero(route["amount"])
+            for route in routes
+            if route["archive_id"] == proposal["archive_id"]
+        )
+        size = 16 + math.log1p(routed_total + number_or_zero(proposal.get("scores_total")) / 100) * 9
+        upsert_node(
+            f"proposal:{proposal['archive_id']}",
+            {
+                "kind": "proposal",
+                "label": proposal["title"],
+                "href": f"/proposals/{proposal['archive_id']}/",
+                "status": proposal["status"],
+                "chain": proposal["chain"],
+                "proposal_number": proposal["proposal_number"],
+                "tags": [proposal["platform"], proposal["chain"]],
+                "size": round(size, 2),
+                "metrics": {
+                    "scores_total": proposal["scores_total"],
+                    "vote_count": len(proposal.get("votes") or []),
+                    "routed_total": round(routed_total, 8),
+                    "successful": is_successful_proposal(proposal),
+                },
+            },
+        )
+
+    for project in project_rollups["records"]:
+        total_spent = project["spent"]["eth"] + project["spent"]["usdc"] + project["spent"]["gnars"]
+        size = 18 + math.log1p(total_spent + project["updates_count"] * 2 + len(project["proposal_summaries"])) * 10
+        upsert_node(
+            f"project:{project['project_id']}",
+            {
+                "kind": "project",
+                "label": project["name"],
+                "href": f"/projects/{project['project_id']}/",
+                "status": project["status"],
+                "tags": [project["category"]],
+                "size": round(size, 2),
+                "metrics": {
+                    "spent_eth": project["spent"]["eth"],
+                    "spent_usdc": project["spent"]["usdc"],
+                    "spent_gnars": project["spent"]["gnars"],
+                    "updates_count": project["updates_count"],
+                },
+            },
+        )
+
+    for proposal in archive["records"]:
+        proposal_id = f"proposal:{proposal['archive_id']}"
+        proposer = normalize_address(proposal.get("proposer"))
+        if proposer and proposer in people_by_address:
+            person_id = f"person:{proposer}"
+            add_edge(person_id, proposal_id, "authored", href=f"/proposals/{proposal['archive_id']}/")
+            if is_successful_proposal(proposal):
+                add_edge(person_id, proposal_id, "managed", weight=2.0, href=f"/proposals/{proposal['archive_id']}/")
+
+        vote_counter: Counter[str] = Counter(
+            normalize_address(vote.get("voter"))
+            for vote in (proposal.get("votes") or [])
+            if normalize_address(vote.get("voter"))
+        )
+        for voter, count in vote_counter.items():
+            if voter in people_by_address:
+                add_edge(f"person:{voter}", proposal_id, "voted", weight=float(count), count=count, href=f"/proposals/{proposal['archive_id']}/")
+
+    for route in routes:
+        proposal_id = f"proposal:{route['archive_id']}"
+        add_edge(
+            treasury_node_id,
+            proposal_id,
+            "funded",
+            weight=number_or_zero(route["amount"]),
+            asset_symbol=route["asset_symbol"],
+            href=f"/proposals/{route['archive_id']}/",
+        )
+        if route.get("project_id") and route["project_id"] in project_by_id:
+            add_edge(
+                proposal_id,
+                f"project:{route['project_id']}",
+                "funded",
+                weight=number_or_zero(route["amount"]),
+                asset_symbol=route["asset_symbol"],
+                href=f"/projects/{route['project_id']}/",
+            )
+        if route["recipient_address"] in people_by_address:
+            add_edge(
+                proposal_id,
+                f"person:{route['recipient_address']}",
+                "funded",
+                weight=number_or_zero(route["amount"]),
+                asset_symbol=route["asset_symbol"],
+                href=f"/community/{people_by_address[route['recipient_address']]['slug']}/",
+            )
+
+    for project in project_rollups["records"]:
+        project_id = f"project:{project['project_id']}"
+        for address in unique_addresses(project.get("owner_addresses") or []):
+            if address in people_by_address:
+                add_edge(f"person:{address}", project_id, "owned", href=f"/projects/{project['project_id']}/")
+
+    for event in timeline_events["records"]:
+        project_id = event.get("project_id")
+        if not project_id or project_id not in project_by_id:
+            continue
+        for address in unique_addresses(event.get("people_addresses") or []):
+            if address not in people_by_address:
+                continue
+            kind = "delivered" if str(event.get("status") or "").lower() == "completed" else "referenced"
+            add_edge(
+                f"person:{address}",
+                f"project:{project_id}",
+                kind,
+                href=f"/projects/{project_id}/",
+            )
+
+    node_list = sorted(nodes.values(), key=lambda record: (record["kind"], str(record["label"]).lower(), record["node_id"]))
+    edge_list = sorted(edges.values(), key=lambda record: (record["kind"], record["source"], record["target"], str(record.get("asset_symbol") or "")))
+
+    top_people = sorted(
+        [record for record in node_list if record["kind"] == "person"],
+        key=lambda record: (-number_or_zero(record["size"]), str(record["label"]).lower()),
+    )[:18]
+    top_projects = sorted(
+        [record for record in node_list if record["kind"] == "project"],
+        key=lambda record: (-number_or_zero(record["size"]), str(record["label"]).lower()),
+    )[:10]
+    top_proposals = sorted(
+        [record for record in node_list if record["kind"] == "proposal" and (record.get("status") == "active" or number_or_zero(record["metrics"].get("routed_total")) > 0)],
+        key=lambda record: (-number_or_zero(record["size"]), str(record["label"]).lower()),
+    )[:12]
+
+    homepage_node_ids = {treasury_node_id, *(record["node_id"] for record in top_people), *(record["node_id"] for record in top_projects), *(record["node_id"] for record in top_proposals)}
+    homepage_edge_ids = [
+        record["edge_id"]
+        for record in edge_list
+        if record["source"] in homepage_node_ids and record["target"] in homepage_node_ids
+    ]
+
+    return {
+        "dataset": "network_graph",
+        "as_of": treasury_flows["as_of"],
+        "version": 1,
+        "nodes": node_list,
+        "edges": edge_list,
+        "views": {
+            "homepage": {
+                "node_ids": sorted(homepage_node_ids),
+                "edge_ids": homepage_edge_ids,
+            },
+        },
+    }
+
+
 def main() -> int:
     archive = load_json("proposals_archive")
     treasury = load_json("treasury")
@@ -1159,6 +1962,29 @@ def main() -> int:
         project_rollups=project_rollups,
         project_lookup=project_lookup,
     )
+    activity_timeseries = build_activity_timeseries(
+        archive=archive,
+        spend_records=spend_records,
+        project_updates=project_updates,
+    )
+    treasury_flows = build_treasury_flows(
+        archive=archive,
+        spend_records=spend_records,
+    )
+    community_signals = build_community_signals(
+        archive=archive,
+        people=people,
+        project_rollups=project_rollups,
+        timeline_events=timeline_events,
+        treasury_flows=treasury_flows,
+    )
+    network_graph = build_network_graph(
+        archive=archive,
+        people=people,
+        project_rollups=project_rollups,
+        timeline_events=timeline_events,
+        treasury_flows=treasury_flows,
+    )
 
     write_json("people", people)
     write_json(
@@ -1173,6 +1999,10 @@ def main() -> int:
     write_json("project_rollups", project_rollups)
     write_json("dao_metrics", dao_metrics)
     write_json("timeline_events", timeline_events)
+    write_json("activity_timeseries", activity_timeseries)
+    write_json("treasury_flows", treasury_flows)
+    write_json("community_signals", community_signals)
+    write_json("network_graph", network_graph)
     return 0
 
 

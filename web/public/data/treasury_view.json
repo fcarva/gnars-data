@@ -1,0 +1,4385 @@
+{
+  "dataset": "treasury_view",
+  "as_of": "2026-03-21",
+  "version": 1,
+  "scenes": [
+    {
+      "window_id": "7d",
+      "label": "Last 7 Days",
+      "width": 1380,
+      "height": 840,
+      "route_count": 9,
+      "total_value": 7472,
+      "nodes": [
+        {
+          "id": "treasury:gnars",
+          "label": "Gnars Treasury",
+          "kind": "treasury",
+          "x0": 14,
+          "x1": 30,
+          "y0": 23.616940909830262,
+          "y1": 763.6169409098301,
+          "value": 7472
+        },
+        {
+          "id": "proposal:gnars-base-119",
+          "label": "Prop #119",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 14.000000000000002,
+          "y1": 301.25508565310474,
+          "value": 2900.5
+        },
+        {
+          "id": "recipient:0xe5f6202ff7ddc5273c249073865bc6f4d5d68beb",
+          "label": "0xe5f6...8beb",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 14,
+          "y1": 301.25508565310486,
+          "value": 2900.5
+        },
+        {
+          "id": "proposal:gnars-base-118",
+          "label": "Prop #118",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 319.25508565310474,
+          "y1": 616.5128479657385,
+          "value": 3001.5
+        },
+        {
+          "id": "project:operations-q1-2026",
+          "label": "Gnars Operations - Q1 2026 Workstream",
+          "kind": "project",
+          "x0": 904.6666666666666,
+          "x1": 920.6666666666666,
+          "y0": 310.21108749202966,
+          "y1": 607.4688498046635,
+          "value": 3001.5
+        },
+        {
+          "id": "recipient:0xaaed9fff9858d48925904e391b77892ba5fda824",
+          "label": "fcarva",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 319.25508565310486,
+          "y1": 378.70663811563173,
+          "value": 600.3
+        },
+        {
+          "id": "recipient:0x8bf5941d27176242745b716251943ae4892a3c26",
+          "label": "vlad",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 396.70663811563173,
+          "y1": 515.6097430406853,
+          "value": 1200.6
+        },
+        {
+          "id": "recipient:0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d",
+          "label": "r4topunk",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 533.6097430406853,
+          "y1": 652.5128479657391,
+          "value": 1200.6
+        },
+        {
+          "id": "proposal:gnars-base-117",
+          "label": "Prop #117",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 644.212010891636,
+          "y1": 799.6991629258973,
+          "value": 1570
+        },
+        {
+          "id": "recipient:0x25810d1a8b1affc444d5333bf0496f1202d6f89f",
+          "label": "0x2581...f89f",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 670.5128479657391,
+          "y1": 826.0000000000003,
+          "value": 1570
+        }
+      ],
+      "links": [
+        {
+          "link_id": "7d:0",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-119",
+          "value": 2900,
+          "width": 287.2055674518201,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-119/",
+          "path": "M30,167.2197246357403C244.66666666666666,167.2197246357403,244.66666666666666,157.60278372591006,459.3333333333333,157.60278372591006"
+        },
+        {
+          "link_id": "7d:1",
+          "source": "proposal:gnars-base-119",
+          "target": "recipient:0xe5f6202ff7ddc5273c249073865bc6f4d5d68beb",
+          "value": 2900,
+          "width": 287.2055674518201,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/119",
+          "path": "M475.3333333333333,157.60278372591006C912.6666666666666,157.60278372591006,912.6666666666666,157.60278372591006,1350,157.60278372591006"
+        },
+        {
+          "link_id": "7d:2",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-119",
+          "value": 0.5,
+          "width": 0.04951820128479657,
+          "asset_symbol": "ETH",
+          "href": "/proposals/gnars-base-119/",
+          "path": "M30,310.84726746229273C244.66666666666666,310.84726746229273,244.66666666666666,301.2303265524625,459.3333333333333,301.2303265524625"
+        },
+        {
+          "link_id": "7d:3",
+          "source": "proposal:gnars-base-119",
+          "target": "recipient:0xe5f6202ff7ddc5273c249073865bc6f4d5d68beb",
+          "value": 0.5,
+          "width": 0.04951820128479657,
+          "asset_symbol": "ETH",
+          "href": "https://gnars.com/proposals/base/119",
+          "path": "M475.3333333333333,301.2303265524625C912.6666666666666,301.2303265524625,912.6666666666666,301.2303265524625,1350,301.2303265524625"
+        },
+        {
+          "link_id": "7d:4",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-118",
+          "value": 3000,
+          "width": 297.1092077087794,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-118/",
+          "path": "M30,459.4266304173249C244.66666666666666,459.4266304173249,244.66666666666666,467.80968950749445,459.3333333333333,467.80968950749445"
+        },
+        {
+          "link_id": "7d:5",
+          "source": "proposal:gnars-base-118",
+          "target": "project:operations-q1-2026",
+          "value": 3000,
+          "width": 297.1092077087794,
+          "asset_symbol": "USDC",
+          "href": "/projects/operations-q1-2026/",
+          "path": "M475.3333333333333,467.80968950749445C690,467.80968950749445,690,458.7656913464194,904.6666666666666,458.7656913464194"
+        },
+        {
+          "link_id": "7d:6",
+          "source": "project:operations-q1-2026",
+          "target": "recipient:0xaaed9fff9858d48925904e391b77892ba5fda824",
+          "value": 600,
+          "width": 59.42184154175589,
+          "asset_symbol": "USDC",
+          "href": "/community/0xaaed9fff9858d48925904e391b77892ba5fda824/",
+          "path": "M920.6666666666666,339.9220082629076C1135.3333333333333,339.9220082629076,1135.3333333333333,348.9660064239828,1350,348.9660064239828"
+        },
+        {
+          "link_id": "7d:7",
+          "source": "project:operations-q1-2026",
+          "target": "recipient:0x8bf5941d27176242745b716251943ae4892a3c26",
+          "value": 1200,
+          "width": 118.84368308351178,
+          "asset_symbol": "USDC",
+          "href": "/community/0x8bf5941d27176242745b716251943ae4892a3c26/",
+          "path": "M920.6666666666666,429.0844814963123C1135.3333333333333,429.0844814963123,1135.3333333333333,456.12847965738763,1350,456.12847965738763"
+        },
+        {
+          "link_id": "7d:8",
+          "source": "project:operations-q1-2026",
+          "target": "recipient:0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d",
+          "value": 1200,
+          "width": 118.84368308351178,
+          "asset_symbol": "USDC",
+          "href": "/community/0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d/",
+          "path": "M920.6666666666666,547.9875864213658C1135.3333333333333,547.9875864213658,1135.3333333333333,593.0315845824412,1350,593.0315845824412"
+        },
+        {
+          "link_id": "7d:9",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-118",
+          "value": 1.5,
+          "width": 0.14855460385438973,
+          "asset_symbol": "ETH",
+          "href": "/proposals/gnars-base-118/",
+          "path": "M30,608.0555115736418C244.66666666666666,608.0555115736418,244.66666666666666,616.4385706638113,459.3333333333333,616.4385706638113"
+        },
+        {
+          "link_id": "7d:10",
+          "source": "proposal:gnars-base-118",
+          "target": "project:operations-q1-2026",
+          "value": 1.5,
+          "width": 0.14855460385438973,
+          "asset_symbol": "ETH",
+          "href": "/projects/operations-q1-2026/",
+          "path": "M475.3333333333333,616.4385706638113C690,616.4385706638113,690,607.3945725027363,904.6666666666666,607.3945725027363"
+        },
+        {
+          "link_id": "7d:11",
+          "source": "project:operations-q1-2026",
+          "target": "recipient:0xaaed9fff9858d48925904e391b77892ba5fda824",
+          "value": 0.3,
+          "width": 0.029710920770877943,
+          "asset_symbol": "ETH",
+          "href": "/community/0xaaed9fff9858d48925904e391b77892ba5fda824/",
+          "path": "M920.6666666666666,369.647784494171C1135.3333333333333,369.647784494171,1135.3333333333333,378.6917826552462,1350,378.6917826552462"
+        },
+        {
+          "link_id": "7d:12",
+          "source": "project:operations-q1-2026",
+          "target": "recipient:0x8bf5941d27176242745b716251943ae4892a3c26",
+          "value": 0.6,
+          "width": 0.059421841541755886,
+          "asset_symbol": "ETH",
+          "href": "/community/0x8bf5941d27176242745b716251943ae4892a3c26/",
+          "path": "M920.6666666666666,488.5360339588391C1135.3333333333333,488.5360339588391,1135.3333333333333,515.5800321199143,1350,515.5800321199143"
+        },
+        {
+          "link_id": "7d:13",
+          "source": "project:operations-q1-2026",
+          "target": "recipient:0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d",
+          "value": 0.6,
+          "width": 0.059421841541755886,
+          "asset_symbol": "ETH",
+          "href": "/community/0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d/",
+          "path": "M920.6666666666666,607.4391388838926C1135.3333333333333,607.4391388838926,1135.3333333333333,652.483137044968,1350,652.483137044968"
+        },
+        {
+          "link_id": "7d:14",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-117",
+          "value": 1570,
+          "width": 155.48715203426124,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-117/",
+          "path": "M30,685.8733648926996C244.66666666666666,685.8733648926996,244.66666666666666,721.9555869087667,459.3333333333333,721.9555869087667"
+        },
+        {
+          "link_id": "7d:15",
+          "source": "proposal:gnars-base-117",
+          "target": "recipient:0x25810d1a8b1affc444d5333bf0496f1202d6f89f",
+          "value": 1570,
+          "width": 155.48715203426124,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/117",
+          "path": "M475.3333333333333,721.9555869087667C912.6666666666666,721.9555869087667,912.6666666666666,748.2564239828697,1350,748.2564239828697"
+        }
+      ]
+    },
+    {
+      "window_id": "30d",
+      "label": "Last 30 Days",
+      "width": 1380,
+      "height": 840,
+      "route_count": 10,
+      "total_value": 7472.4,
+      "nodes": [
+        {
+          "id": "treasury:gnars",
+          "label": "Gnars Treasury",
+          "kind": "treasury",
+          "x0": 14,
+          "x1": 30,
+          "y0": 22.924048920594608,
+          "y1": 744.9240489205947,
+          "value": 7472.4
+        },
+        {
+          "id": "proposal:gnars-base-119",
+          "label": "Prop #119",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 14,
+          "y1": 294.25279695947756,
+          "value": 2900.5
+        },
+        {
+          "id": "recipient:0xe5f6202ff7ddc5273c249073865bc6f4d5d68beb",
+          "label": "0xe5f6...8beb",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 14,
+          "y1": 294.2527969594775,
+          "value": 2900.5
+        },
+        {
+          "id": "proposal:gnars-base-118",
+          "label": "Prop #118",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 312.25279695947756,
+          "y1": 602.26443980515,
+          "value": 3001.5
+        },
+        {
+          "id": "project:operations-q1-2026",
+          "label": "Gnars Operations - Q1 2026 Workstream",
+          "kind": "project",
+          "x0": 904.6666666666666,
+          "x1": 920.6666666666666,
+          "y0": 303.1286412455694,
+          "y1": 593.1402840912415,
+          "value": 3001.5
+        },
+        {
+          "id": "recipient:0xaaed9fff9858d48925904e391b77892ba5fda824",
+          "label": "fcarva",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 312.2527969594775,
+          "y1": 370.2551255286119,
+          "value": 600.3
+        },
+        {
+          "id": "recipient:0x8bf5941d27176242745b716251943ae4892a3c26",
+          "label": "vlad",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 388.2551255286119,
+          "y1": 504.25978266688077,
+          "value": 1200.6
+        },
+        {
+          "id": "recipient:0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d",
+          "label": "r4topunk",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 522.2597826668807,
+          "y1": 638.2644398051496,
+          "value": 1200.6
+        },
+        {
+          "id": "proposal:gnars-base-117",
+          "label": "Prop #117",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 620.5912517610075,
+          "y1": 772.288163061259,
+          "value": 1570
+        },
+        {
+          "id": "recipient:0x25810d1a8b1affc444d5333bf0496f1202d6f89f",
+          "label": "0x2581...f89f",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 656.2644398051496,
+          "y1": 807.9613511054013,
+          "value": 1570
+        },
+        {
+          "id": "proposal:gnars-base-113",
+          "label": "Prop #113",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 790.2881630612591,
+          "y1": 790.3268119558578,
+          "value": 0.4
+        },
+        {
+          "id": "recipient:0x4d16fce1bd6e327ae31398ce9a2c4e12c077ecb1",
+          "label": "0x4d16...ecb1",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 825.9613511054013,
+          "y1": 826,
+          "value": 0.4
+        }
+      ],
+      "links": [
+        {
+          "link_id": "30d:0",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-119",
+          "value": 2900,
+          "width": 280.2044858412291,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-119/",
+          "path": "M30,163.02629184120914C244.66666666666666,163.02629184120914,244.66666666666666,154.10224292061454,459.3333333333333,154.10224292061454"
+        },
+        {
+          "link_id": "30d:1",
+          "source": "proposal:gnars-base-119",
+          "target": "recipient:0xe5f6202ff7ddc5273c249073865bc6f4d5d68beb",
+          "value": 2900,
+          "width": 280.2044858412291,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/119",
+          "path": "M475.3333333333333,154.10224292061454C912.6666666666666,154.10224292061454,912.6666666666666,154.10224292061454,1350,154.10224292061454"
+        },
+        {
+          "link_id": "30d:2",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-119",
+          "value": 0.5,
+          "width": 0.04831111824848777,
+          "asset_symbol": "ETH",
+          "href": "/proposals/gnars-base-119/",
+          "path": "M30,303.15269032094795C244.66666666666666,303.15269032094795,244.66666666666666,294.22864140035335,459.3333333333333,294.22864140035335"
+        },
+        {
+          "link_id": "30d:3",
+          "source": "proposal:gnars-base-119",
+          "target": "recipient:0xe5f6202ff7ddc5273c249073865bc6f4d5d68beb",
+          "value": 0.5,
+          "width": 0.04831111824848777,
+          "asset_symbol": "ETH",
+          "href": "https://gnars.com/proposals/base/119",
+          "path": "M475.3333333333333,294.22864140035335C912.6666666666666,294.22864140035335,912.6666666666666,294.22864140035335,1350,294.22864140035335"
+        },
+        {
+          "link_id": "30d:4",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-118",
+          "value": 3000,
+          "width": 289.8667094909266,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-118/",
+          "path": "M30,448.11020062553547C244.66666666666666,448.11020062553547,244.66666666666666,457.18615170494087,459.3333333333333,457.18615170494087"
+        },
+        {
+          "link_id": "30d:5",
+          "source": "proposal:gnars-base-118",
+          "target": "project:operations-q1-2026",
+          "value": 3000,
+          "width": 289.8667094909266,
+          "asset_symbol": "USDC",
+          "href": "/projects/operations-q1-2026/",
+          "path": "M475.3333333333333,457.18615170494087C690,457.18615170494087,690,448.0619959910327,904.6666666666666,448.0619959910327"
+        },
+        {
+          "link_id": "30d:6",
+          "source": "project:operations-q1-2026",
+          "target": "recipient:0xaaed9fff9858d48925904e391b77892ba5fda824",
+          "value": 600,
+          "width": 57.973341898185325,
+          "asset_symbol": "USDC",
+          "href": "/community/0xaaed9fff9858d48925904e391b77892ba5fda824/",
+          "path": "M920.6666666666666,332.11531219466207C1135.3333333333333,332.11531219466207,1135.3333333333333,341.2394679085702,1350,341.2394679085702"
+        },
+        {
+          "link_id": "30d:7",
+          "source": "project:operations-q1-2026",
+          "target": "recipient:0x8bf5941d27176242745b716251943ae4892a3c26",
+          "value": 1200,
+          "width": 115.94668379637065,
+          "asset_symbol": "USDC",
+          "href": "/community/0x8bf5941d27176242745b716251943ae4892a3c26/",
+          "path": "M920.6666666666666,419.1043117128891C1135.3333333333333,419.1043117128891,1135.3333333333333,446.22846742679724,1350,446.22846742679724"
+        },
+        {
+          "link_id": "30d:8",
+          "source": "project:operations-q1-2026",
+          "target": "recipient:0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d",
+          "value": 1200,
+          "width": 115.94668379637065,
+          "asset_symbol": "USDC",
+          "href": "/community/0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d/",
+          "path": "M920.6666666666666,535.1089688511579C1135.3333333333333,535.1089688511579,1135.3333333333333,580.2331245650661,1350,580.2331245650661"
+        },
+        {
+          "link_id": "30d:9",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-118",
+          "value": 1.5,
+          "width": 0.14493335474546332,
+          "asset_symbol": "ETH",
+          "href": "/proposals/gnars-base-118/",
+          "path": "M30,593.1160220483715C244.66666666666666,593.1160220483715,244.66666666666666,602.1919731277769,459.3333333333333,602.1919731277769"
+        },
+        {
+          "link_id": "30d:10",
+          "source": "proposal:gnars-base-118",
+          "target": "project:operations-q1-2026",
+          "value": 1.5,
+          "width": 0.14493335474546332,
+          "asset_symbol": "ETH",
+          "href": "/projects/operations-q1-2026/",
+          "path": "M475.3333333333333,602.1919731277769C690,602.1919731277769,690,593.0678174138687,904.6666666666666,593.0678174138687"
+        },
+        {
+          "link_id": "30d:11",
+          "source": "project:operations-q1-2026",
+          "target": "recipient:0xaaed9fff9858d48925904e391b77892ba5fda824",
+          "value": 0.3,
+          "width": 0.02898667094909266,
+          "asset_symbol": "ETH",
+          "href": "/community/0xaaed9fff9858d48925904e391b77892ba5fda824/",
+          "path": "M920.6666666666666,361.1164764792292C1135.3333333333333,361.1164764792292,1135.3333333333333,370.24063219313734,1350,370.24063219313734"
+        },
+        {
+          "link_id": "30d:12",
+          "source": "project:operations-q1-2026",
+          "target": "recipient:0x8bf5941d27176242745b716251943ae4892a3c26",
+          "value": 0.6,
+          "width": 0.05797334189818532,
+          "asset_symbol": "ETH",
+          "href": "/community/0x8bf5941d27176242745b716251943ae4892a3c26/",
+          "path": "M920.6666666666666,477.10664028202353C1135.3333333333333,477.10664028202353,1135.3333333333333,504.2307959959317,1350,504.2307959959317"
+        },
+        {
+          "link_id": "30d:13",
+          "source": "project:operations-q1-2026",
+          "target": "recipient:0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d",
+          "value": 0.6,
+          "width": 0.05797334189818532,
+          "asset_symbol": "ETH",
+          "href": "/community/0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d/",
+          "path": "M920.6666666666666,593.1112974202923C1135.3333333333333,593.1112974202923,1135.3333333333333,638.2354531342004,1350,638.2354531342004"
+        },
+        {
+          "link_id": "30d:14",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-117",
+          "value": 1570,
+          "width": 151.6969113002516,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-117/",
+          "path": "M30,669.03694437587C244.66666666666666,669.03694437587,244.66666666666666,696.4397074111332,459.3333333333333,696.4397074111332"
+        },
+        {
+          "link_id": "30d:15",
+          "source": "proposal:gnars-base-117",
+          "target": "recipient:0x25810d1a8b1affc444d5333bf0496f1202d6f89f",
+          "value": 1570,
+          "width": 151.6969113002516,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/117",
+          "path": "M475.3333333333333,696.4397074111332C912.6666666666666,696.4397074111332,912.6666666666666,732.1128954552753,1350,732.1128954552753"
+        },
+        {
+          "link_id": "30d:16",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-113",
+          "value": 0.4,
+          "width": 0.03864889459879022,
+          "asset_symbol": "ETH",
+          "href": "/proposals/gnars-base-113/",
+          "path": "M30,744.9047244732952C244.66666666666666,744.9047244732952,244.66666666666666,790.3074875085584,459.3333333333333,790.3074875085584"
+        },
+        {
+          "link_id": "30d:17",
+          "source": "proposal:gnars-base-113",
+          "target": "recipient:0x4d16fce1bd6e327ae31398ce9a2c4e12c077ecb1",
+          "value": 0.4,
+          "width": 0.03864889459879022,
+          "asset_symbol": "ETH",
+          "href": "https://gnars.com/proposals/base/113",
+          "path": "M475.3333333333333,790.3074875085584C912.6666666666666,790.3074875085584,912.6666666666666,825.9806755527006,1350,825.9806755527006"
+        }
+      ]
+    },
+    {
+      "window_id": "90d",
+      "label": "Last 90 Days",
+      "width": 1380,
+      "height": 840,
+      "route_count": 14,
+      "total_value": 8984.75,
+      "nodes": [
+        {
+          "id": "treasury:gnars",
+          "label": "Gnars Treasury",
+          "kind": "treasury",
+          "x0": 14,
+          "x1": 30,
+          "y0": 35.47672802682186,
+          "y1": 721.476728026822,
+          "value": 8984.75
+        },
+        {
+          "id": "proposal:gnars-base-119",
+          "label": "Prop #119",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 14,
+          "y1": 235.4578035003757,
+          "value": 2900.5
+        },
+        {
+          "id": "recipient:0xe5f6202ff7ddc5273c249073865bc6f4d5d68beb",
+          "label": "0xe5f6...8beb",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 14,
+          "y1": 235.4578035003757,
+          "value": 2900.5
+        },
+        {
+          "id": "proposal:gnars-base-118",
+          "label": "Prop #118",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 340.1933275828487,
+          "y1": 569.3626422549319,
+          "value": 3001.5
+        },
+        {
+          "id": "project:operations-q1-2026",
+          "label": "Gnars Operations - Q1 2026 Workstream",
+          "kind": "project",
+          "x0": 904.6666666666666,
+          "x1": 920.6666666666666,
+          "y0": 330.50782937637337,
+          "y1": 559.6771440484565,
+          "value": 3001.5
+        },
+        {
+          "id": "recipient:0xaaed9fff9858d48925904e391b77892ba5fda824",
+          "label": "fcarva",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 253.4578035003757,
+          "y1": 368.02719051726547,
+          "value": 1500.55
+        },
+        {
+          "id": "recipient:0x8bf5941d27176242745b716251943ae4892a3c26",
+          "label": "vlad",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 386.02719051726547,
+          "y1": 477.6949163860988,
+          "value": 1200.6
+        },
+        {
+          "id": "recipient:0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d",
+          "label": "r4topunk",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 495.6949163860988,
+          "y1": 587.362642254932,
+          "value": 1200.6
+        },
+        {
+          "id": "proposal:gnars-base-117",
+          "label": "Prop #117",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 587.3626422549319,
+          "y1": 707.2346475973177,
+          "value": 1570
+        },
+        {
+          "id": "recipient:0x25810d1a8b1affc444d5333bf0496f1202d6f89f",
+          "label": "0x2581...f89f",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 605.362642254932,
+          "y1": 725.2346475973177,
+          "value": 1570
+        },
+        {
+          "id": "proposal:gnars-base-113",
+          "label": "Prop #113",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 725.2346475973177,
+          "y1": 725.2651882356215,
+          "value": 0.4
+        },
+        {
+          "id": "recipient:0x4d16fce1bd6e327ae31398ce9a2c4e12c077ecb1",
+          "label": "0x4d16...ecb1",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 743.2346475973177,
+          "y1": 743.2651882356215,
+          "value": 0.4
+        },
+        {
+          "id": "proposal:gnars-base-112",
+          "label": "Prop #112",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 743.2651882356215,
+          "y1": 789.9923648404242,
+          "value": 612
+        },
+        {
+          "id": "recipient:0x057cfcd04198e6d17f1bf502135d9508b6fa2fde",
+          "label": "0x057c...2fde",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 761.2651882356215,
+          "y1": 807.992364840424,
+          "value": 612
+        },
+        {
+          "id": "proposal:gnars-base-111",
+          "label": "Prop #111",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 253.4578035003757,
+          "y1": 322.1933275828487,
+          "value": 900.25
+        },
+        {
+          "id": "project:docs-governance-revamp",
+          "label": "Gnars Revamp: Docs and Governance",
+          "kind": "project",
+          "x0": 904.6666666666666,
+          "x1": 920.6666666666666,
+          "y0": 242.84706878877415,
+          "y1": 311.58259287124724,
+          "value": 900.25
+        },
+        {
+          "id": "proposal:gnars-base-109",
+          "label": "Prop #109",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 807.9923648404242,
+          "y1": 808,
+          "value": 0.1
+        },
+        {
+          "id": "recipient:0x225e9b54f41f44f42150b6aaa730da5f2d23faf2",
+          "label": "0x225e...faf2",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 825.992364840424,
+          "y1": 826,
+          "value": 0.1
+        }
+      ],
+      "links": [
+        {
+          "link_id": "90d:0",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-119",
+          "value": 2900,
+          "width": 221.41962770249592,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-119/",
+          "path": "M30,146.18654187806982C244.66666666666666,146.18654187806982,244.66666666666666,124.70981385124796,459.3333333333333,124.70981385124796"
+        },
+        {
+          "link_id": "90d:1",
+          "source": "proposal:gnars-base-119",
+          "target": "recipient:0xe5f6202ff7ddc5273c249073865bc6f4d5d68beb",
+          "value": 2900,
+          "width": 221.41962770249592,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/119",
+          "path": "M475.3333333333333,124.70981385124796C912.6666666666666,124.70981385124796,912.6666666666666,124.70981385124796,1350,124.70981385124796"
+        },
+        {
+          "link_id": "90d:2",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-119",
+          "value": 0.5,
+          "width": 0.038175797879740674,
+          "asset_symbol": "ETH",
+          "href": "/proposals/gnars-base-119/",
+          "path": "M30,256.9154436282576C244.66666666666666,256.9154436282576,244.66666666666666,235.43871560143577,459.3333333333333,235.43871560143577"
+        },
+        {
+          "link_id": "90d:3",
+          "source": "proposal:gnars-base-119",
+          "target": "recipient:0xe5f6202ff7ddc5273c249073865bc6f4d5d68beb",
+          "value": 0.5,
+          "width": 0.038175797879740674,
+          "asset_symbol": "ETH",
+          "href": "https://gnars.com/proposals/base/119",
+          "path": "M475.3333333333333,235.43871560143577C912.6666666666666,235.43871560143577,912.6666666666666,235.43871560143577,1350,235.43871560143577"
+        },
+        {
+          "link_id": "90d:4",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-118",
+          "value": 3000,
+          "width": 229.05478727844405,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-118/",
+          "path": "M30,440.19744924889255C244.66666666666666,440.19744924889255,244.66666666666666,454.7207212220708,459.3333333333333,454.7207212220708"
+        },
+        {
+          "link_id": "90d:5",
+          "source": "proposal:gnars-base-118",
+          "target": "project:operations-q1-2026",
+          "value": 3000,
+          "width": 229.05478727844405,
+          "asset_symbol": "USDC",
+          "href": "/projects/operations-q1-2026/",
+          "path": "M475.3333333333333,454.7207212220708C690,454.7207212220708,690,445.0352230155954,904.6666666666666,445.0352230155954"
+        },
+        {
+          "link_id": "90d:6",
+          "source": "project:operations-q1-2026",
+          "target": "recipient:0xaaed9fff9858d48925904e391b77892ba5fda824",
+          "value": 600,
+          "width": 45.81095745568881,
+          "asset_symbol": "USDC",
+          "href": "/community/0xaaed9fff9858d48925904e391b77892ba5fda824/",
+          "path": "M920.6666666666666,353.4133081042178C1135.3333333333333,353.4133081042178,1135.3333333333333,345.0988063106932,1350,345.0988063106932"
+        },
+        {
+          "link_id": "90d:7",
+          "source": "project:operations-q1-2026",
+          "target": "recipient:0x8bf5941d27176242745b716251943ae4892a3c26",
+          "value": 1200,
+          "width": 91.62191491137762,
+          "asset_symbol": "USDC",
+          "href": "/community/0x8bf5941d27176242745b716251943ae4892a3c26/",
+          "path": "M920.6666666666666,422.1526497664789C1135.3333333333333,422.1526497664789,1135.3333333333333,431.8381479729543,1350,431.8381479729543"
+        },
+        {
+          "link_id": "90d:8",
+          "source": "project:operations-q1-2026",
+          "target": "recipient:0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d",
+          "value": 1200,
+          "width": 91.62191491137762,
+          "asset_symbol": "USDC",
+          "href": "/community/0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d/",
+          "path": "M920.6666666666666,513.8203756353121C1135.3333333333333,513.8203756353121,1135.3333333333333,541.5058738417875,1350,541.5058738417875"
+        },
+        {
+          "link_id": "90d:9",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-118",
+          "value": 1.5,
+          "width": 0.11452739363922201,
+          "asset_symbol": "ETH",
+          "href": "/proposals/gnars-base-118/",
+          "path": "M30,554.7821065849342C244.66666666666666,554.7821065849342,244.66666666666666,569.3053785581125,459.3333333333333,569.3053785581125"
+        },
+        {
+          "link_id": "90d:10",
+          "source": "proposal:gnars-base-118",
+          "target": "project:operations-q1-2026",
+          "value": 1.5,
+          "width": 0.11452739363922201,
+          "asset_symbol": "ETH",
+          "href": "/projects/operations-q1-2026/",
+          "path": "M475.3333333333333,569.3053785581125C690,569.3053785581125,690,559.6198803516371,904.6666666666666,559.6198803516371"
+        },
+        {
+          "link_id": "90d:11",
+          "source": "project:operations-q1-2026",
+          "target": "recipient:0xaaed9fff9858d48925904e391b77892ba5fda824",
+          "value": 0.3,
+          "width": 0.022905478727844403,
+          "asset_symbol": "ETH",
+          "href": "/community/0xaaed9fff9858d48925904e391b77892ba5fda824/",
+          "path": "M920.6666666666666,376.3302395714261C1135.3333333333333,376.3302395714261,1135.3333333333333,368.0157377779015,1350,368.0157377779015"
+        },
+        {
+          "link_id": "90d:12",
+          "source": "project:operations-q1-2026",
+          "target": "recipient:0x8bf5941d27176242745b716251943ae4892a3c26",
+          "value": 0.6,
+          "width": 0.045810957455688806,
+          "asset_symbol": "ETH",
+          "href": "/community/0x8bf5941d27176242745b716251943ae4892a3c26/",
+          "path": "M920.6666666666666,467.9865127008955C1135.3333333333333,467.9865127008955,1135.3333333333333,477.672010907371,1350,477.672010907371"
+        },
+        {
+          "link_id": "90d:13",
+          "source": "project:operations-q1-2026",
+          "target": "recipient:0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d",
+          "value": 0.6,
+          "width": 0.045810957455688806,
+          "asset_symbol": "ETH",
+          "href": "/community/0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d/",
+          "path": "M920.6666666666666,559.6542385697287C1135.3333333333333,559.6542385697287,1135.3333333333333,587.3397367762042,1350,587.3397367762042"
+        },
+        {
+          "link_id": "90d:14",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-117",
+          "value": 1570,
+          "width": 119.87200534238572,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-117/",
+          "path": "M30,614.7753729529468C244.66666666666666,614.7753729529468,244.66666666666666,647.2986449261248,459.3333333333333,647.2986449261248"
+        },
+        {
+          "link_id": "90d:15",
+          "source": "proposal:gnars-base-117",
+          "target": "recipient:0x25810d1a8b1affc444d5333bf0496f1202d6f89f",
+          "value": 1570,
+          "width": 119.87200534238572,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/117",
+          "path": "M475.3333333333333,647.2986449261248C912.6666666666666,647.2986449261248,912.6666666666666,665.2986449261249,1350,665.2986449261249"
+        },
+        {
+          "link_id": "90d:16",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-113",
+          "value": 0.4,
+          "width": 0.03054063830379254,
+          "asset_symbol": "ETH",
+          "href": "/proposals/gnars-base-113/",
+          "path": "M30,674.7266459432915C244.66666666666666,674.7266459432915,244.66666666666666,725.2499179164696,459.3333333333333,725.2499179164696"
+        },
+        {
+          "link_id": "90d:17",
+          "source": "proposal:gnars-base-113",
+          "target": "recipient:0x4d16fce1bd6e327ae31398ce9a2c4e12c077ecb1",
+          "value": 0.4,
+          "width": 0.03054063830379254,
+          "asset_symbol": "ETH",
+          "href": "https://gnars.com/proposals/base/113",
+          "path": "M475.3333333333333,725.2499179164696C912.6666666666666,725.2499179164696,912.6666666666666,743.2499179164696,1350,743.2499179164696"
+        },
+        {
+          "link_id": "90d:18",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-112",
+          "value": 612,
+          "width": 46.72717660480259,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-112/",
+          "path": "M30,698.1055045648446C244.66666666666666,698.1055045648446,244.66666666666666,766.6287765380227,459.3333333333333,766.6287765380227"
+        },
+        {
+          "link_id": "90d:19",
+          "source": "proposal:gnars-base-112",
+          "target": "recipient:0x057cfcd04198e6d17f1bf502135d9508b6fa2fde",
+          "value": 612,
+          "width": 46.72717660480259,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/112",
+          "path": "M475.3333333333333,766.6287765380227C912.6666666666666,766.6287765380227,912.6666666666666,784.6287765380227,1350,784.6287765380227"
+        },
+        {
+          "link_id": "90d:20",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-111",
+          "value": 900,
+          "width": 68.71643618353322,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-111/",
+          "path": "M30,291.2927496189641C244.66666666666666,291.2927496189641,244.66666666666666,287.8160215921423,459.3333333333333,287.8160215921423"
+        },
+        {
+          "link_id": "90d:21",
+          "source": "proposal:gnars-base-111",
+          "target": "project:docs-governance-revamp",
+          "value": 900,
+          "width": 68.71643618353322,
+          "asset_symbol": "USDC",
+          "href": "/projects/docs-governance-revamp/",
+          "path": "M475.3333333333333,287.8160215921423C690,287.8160215921423,690,277.20528688054077,904.6666666666666,277.20528688054077"
+        },
+        {
+          "link_id": "90d:22",
+          "source": "project:docs-governance-revamp",
+          "target": "recipient:0xaaed9fff9858d48925904e391b77892ba5fda824",
+          "value": 900,
+          "width": 68.71643618353322,
+          "asset_symbol": "USDC",
+          "href": "/community/0xaaed9fff9858d48925904e391b77892ba5fda824/",
+          "path": "M920.6666666666666,277.20528688054077C1135.3333333333333,277.20528688054077,1135.3333333333333,287.8160215921423,1350,287.8160215921423"
+        },
+        {
+          "link_id": "90d:23",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-111",
+          "value": 0.25,
+          "width": 0.019087898939870337,
+          "asset_symbol": "ETH",
+          "href": "/proposals/gnars-base-111/",
+          "path": "M30,325.66051166020065C244.66666666666666,325.66051166020065,244.66666666666666,322.1837836333789,459.3333333333333,322.1837836333789"
+        },
+        {
+          "link_id": "90d:24",
+          "source": "proposal:gnars-base-111",
+          "target": "project:docs-governance-revamp",
+          "value": 0.25,
+          "width": 0.019087898939870337,
+          "asset_symbol": "ETH",
+          "href": "/projects/docs-governance-revamp/",
+          "path": "M475.3333333333333,322.1837836333789C690,322.1837836333789,690,311.57304892177734,904.6666666666666,311.57304892177734"
+        },
+        {
+          "link_id": "90d:25",
+          "source": "project:docs-governance-revamp",
+          "target": "recipient:0xaaed9fff9858d48925904e391b77892ba5fda824",
+          "value": 0.25,
+          "width": 0.019087898939870337,
+          "asset_symbol": "ETH",
+          "href": "/community/0xaaed9fff9858d48925904e391b77892ba5fda824/",
+          "path": "M920.6666666666666,311.57304892177734C1135.3333333333333,311.57304892177734,1135.3333333333333,322.1837836333789,1350,322.1837836333789"
+        },
+        {
+          "link_id": "90d:26",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-109",
+          "value": 0.1,
+          "width": 0.007635159575948135,
+          "asset_symbol": "ETH",
+          "href": "/proposals/gnars-base-109/",
+          "path": "M30,721.472910447034C244.66666666666666,721.472910447034,244.66666666666666,807.9961824202122,459.3333333333333,807.9961824202122"
+        },
+        {
+          "link_id": "90d:27",
+          "source": "proposal:gnars-base-109",
+          "target": "recipient:0x225e9b54f41f44f42150b6aaa730da5f2d23faf2",
+          "value": 0.1,
+          "width": 0.007635159575948135,
+          "asset_symbol": "ETH",
+          "href": "https://gnars.com/proposals/base/109",
+          "path": "M475.3333333333333,807.9961824202122C912.6666666666666,807.9961824202122,912.6666666666666,825.996182420212,1350,825.996182420212"
+        }
+      ]
+    },
+    {
+      "window_id": "all",
+      "label": "All Time",
+      "width": 1380,
+      "height": 840,
+      "route_count": 96,
+      "total_value": 3.426088412892531e+26,
+      "nodes": [
+        {
+          "id": "treasury:gnars",
+          "label": "Gnars Treasury",
+          "kind": "treasury",
+          "x0": 14,
+          "x1": 30,
+          "y0": 466.367143381236,
+          "y1": 466.367143381236,
+          "value": 3.426088412892531e+26
+        },
+        {
+          "id": "proposal:gnars-base-119",
+          "label": "Prop #119",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 34.820512820511226,
+          "y1": 34.820512820511226,
+          "value": 2900.5
+        },
+        {
+          "id": "recipient:0xe5f6202ff7ddc5273c249073865bc6f4d5d68beb",
+          "label": "0xe5f6...8beb",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 85.75590035718012,
+          "y1": 85.75590035718012,
+          "value": 33466.5
+        },
+        {
+          "id": "proposal:gnars-base-118",
+          "label": "Prop #118",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 24.41025641025641,
+          "y1": 24.41025641025641,
+          "value": 3001.5
+        },
+        {
+          "id": "project:operations-q1-2026",
+          "label": "Gnars Operations - Q1 2026 Workstream",
+          "kind": "project",
+          "x0": 904.6666666666666,
+          "x1": 920.6666666666666,
+          "y0": 24.41025641025641,
+          "y1": 24.41025641025641,
+          "value": 3001.5
+        },
+        {
+          "id": "recipient:0xaaed9fff9858d48925904e391b77892ba5fda824",
+          "label": "fcarva",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 14,
+          "y1": 14,
+          "value": 1500.55
+        },
+        {
+          "id": "recipient:0x8bf5941d27176242745b716251943ae4892a3c26",
+          "label": "vlad",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 24.41025641025641,
+          "y1": 24.41025641025641,
+          "value": 1200.6
+        },
+        {
+          "id": "recipient:0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d",
+          "label": "r4topunk",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 41.25454009920598,
+          "y1": 41.25454009920598,
+          "value": 1200.6000999999999
+        },
+        {
+          "id": "proposal:gnars-base-117",
+          "label": "Prop #117",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 138.9230769230753,
+          "y1": 138.9230769230753,
+          "value": 1570
+        },
+        {
+          "id": "recipient:0x25810d1a8b1affc444d5333bf0496f1202d6f89f",
+          "label": "0x2581...f89f",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 138.82387352284235,
+          "y1": 138.82387352284235,
+          "value": 1570
+        },
+        {
+          "id": "proposal:gnars-base-113",
+          "label": "Prop #113",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 170.15384615384454,
+          "y1": 170.15384615384454,
+          "value": 0.4
+        },
+        {
+          "id": "recipient:0x4d16fce1bd6e327ae31398ce9a2c4e12c077ecb1",
+          "label": "0x4d16...ecb1",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 167.04470256745782,
+          "y1": 167.04470256745782,
+          "value": 0.4
+        },
+        {
+          "id": "proposal:gnars-base-112",
+          "label": "Prop #112",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 180.56410256410095,
+          "y1": 180.56410256410095,
+          "value": 612
+        },
+        {
+          "id": "recipient:0x057cfcd04198e6d17f1bf502135d9508b6fa2fde",
+          "label": "0x057c...2fde",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 177.45495897771423,
+          "y1": 177.45495897771423,
+          "value": 612
+        },
+        {
+          "id": "proposal:gnars-base-111",
+          "label": "Prop #111",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 14,
+          "y1": 14,
+          "value": 900.25
+        },
+        {
+          "id": "project:docs-governance-revamp",
+          "label": "Gnars Revamp: Docs and Governance",
+          "kind": "project",
+          "x0": 904.6666666666666,
+          "x1": 920.6666666666666,
+          "y0": 14,
+          "y1": 14,
+          "value": 900.25
+        },
+        {
+          "id": "proposal:gnars-base-109",
+          "label": "Prop #109",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 190.97435897435736,
+          "y1": 190.97435897435736,
+          "value": 0.1
+        },
+        {
+          "id": "recipient:0x225e9b54f41f44f42150b6aaa730da5f2d23faf2",
+          "label": "0x225e...faf2",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 187.86521538797064,
+          "y1": 187.86521538797064,
+          "value": 0.1
+        },
+        {
+          "id": "proposal:gnars-base-108",
+          "label": "Prop #108",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 201.38461538461377,
+          "y1": 201.38461538461377,
+          "value": 2500
+        },
+        {
+          "id": "recipient:0x8d2a253a5885806aa14e583c80c8833a904fb252",
+          "label": "0x8d2a...b252",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 198.27547179822704,
+          "y1": 198.27547179822704,
+          "value": 2500
+        },
+        {
+          "id": "proposal:gnars-base-107",
+          "label": "Prop #107",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 222.20512820512658,
+          "y1": 222.20512820512658,
+          "value": 4500
+        },
+        {
+          "id": "recipient:0x709a480188cf171b1672438e28bbec3ba2d3a68a",
+          "label": "0x709a...a68a",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 229.18043856861738,
+          "y1": 229.18043856861738,
+          "value": 8639
+        },
+        {
+          "id": "proposal:gnars-base-106",
+          "label": "Prop #106",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 76.46153846153686,
+          "y1": 76.46153846153686,
+          "value": 3986
+        },
+        {
+          "id": "recipient:0x33bbf6e27ce7b254e537bcb9f3b00cd1451563ea",
+          "label": "0x33bb...63ea",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 75.34564394692372,
+          "y1": 75.34564394692372,
+          "value": 9689.390042
+        },
+        {
+          "id": "proposal:gnars-base-105",
+          "label": "Prop #105",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 86.87179487179327,
+          "y1": 86.87179487179327,
+          "value": 5700
+        },
+        {
+          "id": "proposal:gnars-base-104",
+          "label": "Prop #104",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 305.48717948717785,
+          "y1": 305.48717948717785,
+          "value": 0.42
+        },
+        {
+          "id": "recipient:0x9ad8d2a8ef4bf60a667dd43fcb178bdbd93ae1c8",
+          "label": "0x9ad8...e1c8",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 324.03329776621774,
+          "y1": 324.03329776621774,
+          "value": 5500.42
+        },
+        {
+          "id": "proposal:gnars-base-103",
+          "label": "Prop #103",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 263.8461538461522,
+          "y1": 263.8461538461522,
+          "value": 0.75
+        },
+        {
+          "id": "recipient:0x05c73ecef963fd68a414e713f4b28d9e792c73bd",
+          "label": "0x05c7...73bd",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 266.1651589901929,
+          "y1": 266.1651589901929,
+          "value": 0.75
+        },
+        {
+          "id": "proposal:gnars-base-102",
+          "label": "Prop #102",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 274.2564102564086,
+          "y1": 274.2564102564086,
+          "value": 400
+        },
+        {
+          "id": "recipient:0x41cb654d1f47913acab158a8199191d160dabe4a",
+          "label": "0x41cb...be4a",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 287.31180063611544,
+          "y1": 287.31180063611544,
+          "value": 8.588010623200002e+25
+        },
+        {
+          "id": "proposal:gnars-base-101",
+          "label": "Prop #101",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 211.79487179487018,
+          "y1": 211.79487179487018,
+          "value": 2600.619
+        },
+        {
+          "id": "recipient:0x49d31dcb59e115f5c9e505a58a323ade076f2176",
+          "label": "0x49d3...2176",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 208.68572820848345,
+          "y1": 208.68572820848345,
+          "value": 2600.619
+        },
+        {
+          "id": "proposal:gnars-base-96",
+          "label": "Prop #96",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 55.641025641024044,
+          "y1": 55.641025641024044,
+          "value": 2131
+        },
+        {
+          "id": "proposal:gnars-base-95",
+          "label": "Prop #95",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 243.0256410256394,
+          "y1": 243.0256410256394,
+          "value": 1200
+        },
+        {
+          "id": "recipient:0xd2d164aea2a354e46ee3cf207899f48e5432b968",
+          "label": "0xd2d1...b968",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 250.61460877797026,
+          "y1": 250.61460877797026,
+          "value": 2400
+        },
+        {
+          "id": "proposal:gnars-base-94",
+          "label": "Prop #94",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 253.4358974358958,
+          "y1": 253.4358974358958,
+          "value": 1200
+        },
+        {
+          "id": "proposal:gnars-base-91",
+          "label": "Prop #91",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 295.07692307692145,
+          "y1": 295.07692307692145,
+          "value": 206232000000000000000
+        },
+        {
+          "id": "proposal:gnars-base-89",
+          "label": "Prop #89",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 367.9487179487163,
+          "y1": 367.9487179487163,
+          "value": 1700
+        },
+        {
+          "id": "recipient:0x43c363f3821b4efe4f9d04df74c0e32db42a7970",
+          "label": "0x43c3...7970",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 371.8730495674005,
+          "y1": 371.8730495674005,
+          "value": 3400
+        },
+        {
+          "id": "proposal:gnars-base-87",
+          "label": "Prop #87",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 378.3589743589727,
+          "y1": 378.3589743589727,
+          "value": 1700
+        },
+        {
+          "id": "proposal:gnars-base-86",
+          "label": "Prop #86",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 326.3076923076907,
+          "y1": 326.3076923076907,
+          "value": 8001
+        },
+        {
+          "id": "recipient:0xc4079dc1f8f84711eee0942c192829f473fc3c28",
+          "label": "0xc407...3c28",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 313.62304135596133,
+          "y1": 313.62304135596133,
+          "value": 8000
+        },
+        {
+          "id": "recipient:0x289715ffbb2f4b482e2917d2f183feab564ec84f",
+          "label": "0x2897...c84f",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 334.44355417647415,
+          "y1": 334.44355417647415,
+          "value": 1
+        },
+        {
+          "id": "proposal:gnars-base-83",
+          "label": "Prop #83",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 347.1282051282035,
+          "y1": 347.1282051282035,
+          "value": 5000
+        },
+        {
+          "id": "recipient:0x43df6cea26d6bbe40cfa065ae57380327f1dea66",
+          "label": "0x43df...ea66",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 350.448161378412,
+          "y1": 350.448161378412,
+          "value": 5000
+        },
+        {
+          "id": "proposal:gnars-base-78",
+          "label": "Prop #78",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 45.230769230767635,
+          "y1": 45.230769230767635,
+          "value": 0.0001
+        },
+        {
+          "id": "proposal:gnars-base-77",
+          "label": "Prop #77",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 357.5384615384599,
+          "y1": 357.5384615384599,
+          "value": 1350
+        },
+        {
+          "id": "recipient:0xddd7c01cecdbd0ac633ef7405a60165f731e645f",
+          "label": "0xddd7...645f",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 360.8584177886684,
+          "y1": 360.8584177886684,
+          "value": 1350
+        },
+        {
+          "id": "proposal:gnars-base-76",
+          "label": "Prop #76",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 315.89743589743426,
+          "y1": 315.89743589743426,
+          "value": 2500
+        },
+        {
+          "id": "proposal:gnars-base-75",
+          "label": "Prop #75",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 388.7692307692291,
+          "y1": 388.7692307692291,
+          "value": 3924
+        },
+        {
+          "id": "recipient:0xb3fb1987aade1002e4791d49f44ace54899b7129",
+          "label": "0xb3fb...7129",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 382.28330597765694,
+          "y1": 382.28330597765694,
+          "value": 3924
+        },
+        {
+          "id": "proposal:gnars-base-70",
+          "label": "Prop #70",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 399.17948717948553,
+          "y1": 399.17948717948553,
+          "value": 2042
+        },
+        {
+          "id": "recipient:0x0020d02026e6e82a8f002024a418c0f486bc597e",
+          "label": "0x0020...597e",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 392.69356238791335,
+          "y1": 392.69356238791335,
+          "value": 2042
+        },
+        {
+          "id": "proposal:gnars-base-68",
+          "label": "Prop #68",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 409.58974358974194,
+          "y1": 409.58974358974194,
+          "value": 1250
+        },
+        {
+          "id": "recipient:0xe61bcfe6a7e4fd33f1c439558e9fd549371d728e",
+          "label": "0xe61b...728e",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 403.10381879816975,
+          "y1": 403.10381879816975,
+          "value": 1250
+        },
+        {
+          "id": "proposal:gnars-base-65",
+          "label": "Prop #65",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 440.82051282051117,
+          "y1": 440.82051282051117,
+          "value": 1.2881837e+25
+        },
+        {
+          "id": "recipient:0xa903c06bf35286f6d1cdad25396748353979a44c",
+          "label": "0xa903...a44c",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 447.01396657974806,
+          "y1": 447.01396657974806,
+          "value": 1.2881837e+25
+        },
+        {
+          "id": "proposal:gnars-base-64",
+          "label": "Prop #64",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 461.641025641024,
+          "y1": 461.641025641024,
+          "value": 2250
+        },
+        {
+          "id": "recipient:0x2858eba3985476ca81217f2f8c5e65508f34960f",
+          "label": "0x2858...960f",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 473.47046320026715,
+          "y1": 473.47046320026715,
+          "value": 4950
+        },
+        {
+          "id": "proposal:gnars-base-63",
+          "label": "Prop #63",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 419.99999999999835,
+          "y1": 419.99999999999835,
+          "value": 4.65e+25
+        },
+        {
+          "id": "recipient:0x244306053c673b93bc9885fdacfc352032725c87",
+          "label": "0x2443...5c87",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 413.51407520842616,
+          "y1": 413.51407520842616,
+          "value": 4.65e+25
+        },
+        {
+          "id": "proposal:gnars-base-62",
+          "label": "Prop #62",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 451.2307692307676,
+          "y1": 451.2307692307676,
+          "value": 3545
+        },
+        {
+          "id": "recipient:0xca8adab20b66f4693ee5fce756c074a5629ae986",
+          "label": "0xca8a...e986",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 457.42422299000447,
+          "y1": 457.42422299000447,
+          "value": 3545
+        },
+        {
+          "id": "proposal:gnars-base-61",
+          "label": "Prop #61",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 430.41025641025476,
+          "y1": 430.41025641025476,
+          "value": 1.1956912028725313e+26
+        },
+        {
+          "id": "recipient:0xbc94f5266c5f78677b98238fc93d825d25abfc12",
+          "label": "0xbc94...fc12",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 431.43922956781523,
+          "y1": 431.43922956781523,
+          "value": 1.1956912028725313e+26
+        },
+        {
+          "id": "proposal:gnars-base-60",
+          "label": "Prop #60",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 482.4615384615368,
+          "y1": 482.4615384615368,
+          "value": 6204
+        },
+        {
+          "id": "recipient:0xd32d87e34913f7dee83a7a6faed8b6f054b97cd4",
+          "label": "0xd32d...7cd4",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 489.25746752400994,
+          "y1": 489.25746752400994,
+          "value": 6204
+        },
+        {
+          "id": "proposal:gnars-base-59",
+          "label": "Prop #59",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 66.05128205128045,
+          "y1": 66.05128205128045,
+          "value": 8550
+        },
+        {
+          "id": "proposal:gnars-base-58",
+          "label": "Prop #58",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 492.8717948717932,
+          "y1": 492.8717948717932,
+          "value": 8550
+        },
+        {
+          "id": "recipient:0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+          "label": "0x8335...2913",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 499.66772393426635,
+          "y1": 499.66772393426635,
+          "value": 8550
+        },
+        {
+          "id": "proposal:gnars-base-57",
+          "label": "Prop #57",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 284.66666666666504,
+          "y1": 284.66666666666504,
+          "value": 8.58799e+25
+        },
+        {
+          "id": "proposal:gnars-base-56",
+          "label": "Prop #56",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 107.69230769230609,
+          "y1": 107.69230769230609,
+          "value": 1.2
+        },
+        {
+          "id": "proposal:gnars-base-55",
+          "label": "Prop #55",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 128.5128205128189,
+          "y1": 128.5128205128189,
+          "value": 0.000042
+        },
+        {
+          "id": "proposal:gnars-base-54",
+          "label": "Prop #54",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 159.74358974358813,
+          "y1": 159.74358974358813,
+          "value": 1.2
+        },
+        {
+          "id": "proposal:gnars-base-53",
+          "label": "Prop #53",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 232.615384615383,
+          "y1": 232.615384615383,
+          "value": 4139
+        },
+        {
+          "id": "proposal:gnars-base-52",
+          "label": "Prop #52",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 534.512820512819,
+          "y1": 534.512820512819,
+          "value": 5100
+        },
+        {
+          "id": "recipient:0x4f81ca00ccadfaffa10672d863e6e6077bad3f20",
+          "label": "0x4f81...3f20",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 541.3393880571738,
+          "y1": 541.3393880571738,
+          "value": 5100
+        },
+        {
+          "id": "proposal:gnars-base-51",
+          "label": "Prop #51",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 544.9230769230754,
+          "y1": 544.9230769230754,
+          "value": 5660
+        },
+        {
+          "id": "recipient:0xdb47bd2fca1237038aa2c542f64cfe08591463c4",
+          "label": "0xdb47...63c4",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 551.7496444674302,
+          "y1": 551.7496444674302,
+          "value": 5660
+        },
+        {
+          "id": "proposal:gnars-base-48",
+          "label": "Prop #48",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 503.2820512820496,
+          "y1": 503.2820512820496,
+          "value": 0.4
+        },
+        {
+          "id": "recipient:0xc2e3df2748e4ef6e1a8322772fd7d962410c721a",
+          "label": "0xc2e3...721a",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 510.07798034452276,
+          "y1": 510.07798034452276,
+          "value": 0.2
+        },
+        {
+          "id": "recipient:0xba6e1c26be2f8b46d9e7ab7573b99921ee81acf5",
+          "label": "0xba6e...acf5",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 520.4882367547792,
+          "y1": 520.4882367547792,
+          "value": 0.2
+        },
+        {
+          "id": "proposal:gnars-base-47",
+          "label": "Prop #47",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 513.692307692306,
+          "y1": 513.692307692306,
+          "value": 1000
+        },
+        {
+          "id": "recipient:0xeed943aa972dd394146e6f77b9434df07f36a282",
+          "label": "0xeed9...a282",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 530.8984931650357,
+          "y1": 530.8984931650357,
+          "value": 1000.0004
+        },
+        {
+          "id": "proposal:gnars-base-45",
+          "label": "Prop #45",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 555.3333333333319,
+          "y1": 555.3333333333319,
+          "value": 6969
+        },
+        {
+          "id": "recipient:0x9d4e88f7f2ccbb005426c1ed91eb2bb7d235937f",
+          "label": "0x9d4e...937f",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 562.1599008776867,
+          "y1": 562.1599008776867,
+          "value": 6969
+        },
+        {
+          "id": "proposal:gnars-base-44",
+          "label": "Prop #44",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 565.7435897435884,
+          "y1": 565.7435897435884,
+          "value": 3.5
+        },
+        {
+          "id": "recipient:0x2508e0cd16a6f44fae56970c2b0812dd0f1e7faf",
+          "label": "0x2508...7faf",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 572.5701572879432,
+          "y1": 572.5701572879432,
+          "value": 3.5
+        },
+        {
+          "id": "proposal:gnars-base-43",
+          "label": "Prop #43",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 472.0512820512804,
+          "y1": 472.0512820512804,
+          "value": 2700
+        },
+        {
+          "id": "proposal:gnars-base-42",
+          "label": "Prop #42",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 576.1538461538448,
+          "y1": 576.1538461538448,
+          "value": 0.00042
+        },
+        {
+          "id": "recipient:0x29c03fee4ba44aeb1bd63b95a73aefffd6e6ec66",
+          "label": "0x29c0...ec66",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 582.9804136981996,
+          "y1": 582.9804136981996,
+          "value": 0.00042
+        },
+        {
+          "id": "proposal:gnars-base-41",
+          "label": "Prop #41",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 336.7179487179471,
+          "y1": 336.7179487179471,
+          "value": 3000
+        },
+        {
+          "id": "proposal:gnars-base-40",
+          "label": "Prop #40",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 628.2051282051272,
+          "y1": 628.2051282051272,
+          "value": 6850
+        },
+        {
+          "id": "recipient:0xed7be8b630924f437c28af58a99cc63fc80413f4",
+          "label": "0xed7b...13f4",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 635.0351767464964,
+          "y1": 635.0351767464964,
+          "value": 6850
+        },
+        {
+          "id": "proposal:gnars-base-39",
+          "label": "Prop #39",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 97.28205128204968,
+          "y1": 97.28205128204968,
+          "value": 11800
+        },
+        {
+          "id": "proposal:gnars-base-38",
+          "label": "Prop #38",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 638.6153846153836,
+          "y1": 638.6153846153836,
+          "value": 0.43
+        },
+        {
+          "id": "recipient:0xedc1a397589a0236c4810883b7d559288a5fe7e1",
+          "label": "0xedc1...e7e1",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 645.4454331567529,
+          "y1": 645.4454331567529,
+          "value": 0.43
+        },
+        {
+          "id": "proposal:gnars-base-37",
+          "label": "Prop #37",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 649.0256410256401,
+          "y1": 649.0256410256401,
+          "value": 7870
+        },
+        {
+          "id": "recipient:0x0a7b7374d9cba3ac9d31f18b2cd45aac4b3b442e",
+          "label": "0x0a7b...442e",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 655.8556895670093,
+          "y1": 655.8556895670093,
+          "value": 7870
+        },
+        {
+          "id": "proposal:gnars-base-36",
+          "label": "Prop #36",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 596.9743589743578,
+          "y1": 596.9743589743578,
+          "value": 950000000
+        },
+        {
+          "id": "recipient:0x09e938e239803c78507abd5687a97acfea1188ea",
+          "label": "0x09e9...88ea",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 612.8536888643512,
+          "y1": 612.8536888643512,
+          "value": 2200000000
+        },
+        {
+          "id": "proposal:gnars-base-35",
+          "label": "Prop #35",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 607.3846153846142,
+          "y1": 607.3846153846142,
+          "value": 625000000
+        },
+        {
+          "id": "proposal:gnars-base-34",
+          "label": "Prop #34",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 617.7948717948707,
+          "y1": 617.7948717948707,
+          "value": 625000000
+        },
+        {
+          "id": "proposal:gnars-base-33",
+          "label": "Prop #33",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 586.5641025641013,
+          "y1": 586.5641025641013,
+          "value": 4500.12
+        },
+        {
+          "id": "recipient:0x387a161c6b25aa854100abaed39274e51aaffffd",
+          "label": "0x387a...fffd",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 593.3906701084561,
+          "y1": 593.3906701084561,
+          "value": 4500.12
+        },
+        {
+          "id": "proposal:gnars-base-32",
+          "label": "Prop #32",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 659.4358974358965,
+          "y1": 659.4358974358965,
+          "value": 16116
+        },
+        {
+          "id": "recipient:0xe1b91eb3f3747d00485e95da79041e6d9d399641",
+          "label": "0xe1b9...9641",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 666.2659459772658,
+          "y1": 666.2659459772658,
+          "value": 16116
+        },
+        {
+          "id": "proposal:gnars-base-31",
+          "label": "Prop #31",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 680.2564102564095,
+          "y1": 680.2564102564095,
+          "value": 0.0004
+        },
+        {
+          "id": "recipient:0x3a7b8d37cb2da4c3b7c897421d90f42cc015d68d",
+          "label": "0x3a7b...d68d",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 687.0864587977787,
+          "y1": 687.0864587977787,
+          "value": 0.0004
+        },
+        {
+          "id": "proposal:gnars-base-29",
+          "label": "Prop #29",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 669.846153846153,
+          "y1": 669.846153846153,
+          "value": 5503
+        },
+        {
+          "id": "recipient:0xe8b290f49c2fb50ab018d89626e77c2321dc599d",
+          "label": "0xe8b2...599d",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 676.6762023875223,
+          "y1": 676.6762023875223,
+          "value": 5503
+        },
+        {
+          "id": "proposal:gnars-base-28",
+          "label": "Prop #28",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 690.666666666666,
+          "y1": 690.666666666666,
+          "value": 7888
+        },
+        {
+          "id": "recipient:0xfc27b375faf1fbd3f3462044cf810082f042a45b",
+          "label": "0xfc27...a45b",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 697.4967152080352,
+          "y1": 697.4967152080352,
+          "value": 7888
+        },
+        {
+          "id": "proposal:gnars-base-27",
+          "label": "Prop #27",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 701.0769230769224,
+          "y1": 701.0769230769224,
+          "value": 0.8
+        },
+        {
+          "id": "recipient:0x597960438e28e3b529dcea95c267dc9cfc458db0",
+          "label": "0x5979...8db0",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 707.9069716182917,
+          "y1": 707.9069716182917,
+          "value": 0.8
+        },
+        {
+          "id": "proposal:gnars-base-26",
+          "label": "Prop #26",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 118.1025641025625,
+          "y1": 118.1025641025625,
+          "value": 8085
+        },
+        {
+          "id": "proposal:gnars-base-25",
+          "label": "Prop #25",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 149.33333333333172,
+          "y1": 149.33333333333172,
+          "value": 0.99
+        },
+        {
+          "id": "proposal:gnars-base-24",
+          "label": "Prop #24",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 711.4871794871789,
+          "y1": 711.4871794871789,
+          "value": 12000
+        },
+        {
+          "id": "recipient:0x3f5111e64c0b96cc6b436151da820a3f979ef7f2",
+          "label": "0x3f51...f7f2",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 718.3172280285481,
+          "y1": 718.3172280285481,
+          "value": 12000
+        },
+        {
+          "id": "proposal:gnars-base-23",
+          "label": "Prop #23",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 721.8974358974353,
+          "y1": 721.8974358974353,
+          "value": 7500
+        },
+        {
+          "id": "recipient:0x459b40643251f10d93334d91cf256f97d31f69de",
+          "label": "0x459b...69de",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 728.7274844388046,
+          "y1": 728.7274844388046,
+          "value": 7500
+        },
+        {
+          "id": "proposal:gnars-base-22",
+          "label": "Prop #22",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 732.3076923076918,
+          "y1": 732.3076923076918,
+          "value": 0.00034
+        },
+        {
+          "id": "recipient:0x10c3a08e1cdd302eefb4d2c1a9a7779aa4ded7b3",
+          "label": "0x10c3...d7b3",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 739.1377408490611,
+          "y1": 739.1377408490611,
+          "value": 0.00034
+        },
+        {
+          "id": "proposal:gnars-base-21",
+          "label": "Prop #21",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 742.7179487179483,
+          "y1": 742.7179487179483,
+          "value": 0.00028
+        },
+        {
+          "id": "recipient:0x9cb927c5632685c4365b734cfb01249d4637f772",
+          "label": "0x9cb9...f772",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 749.5479972593175,
+          "y1": 749.5479972593175,
+          "value": 0.00028
+        },
+        {
+          "id": "proposal:gnars-base-20",
+          "label": "Prop #20",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 763.5384615384612,
+          "y1": 763.5384615384612,
+          "value": 9900
+        },
+        {
+          "id": "recipient:0x735135ff4152b3ae255ca708eb37d83b0a8853f8",
+          "label": "0x7351...53f8",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 780.7787664900869,
+          "y1": 780.7787664900869,
+          "value": 9900.00026671
+        },
+        {
+          "id": "proposal:gnars-base-19",
+          "label": "Prop #19",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 784.3589743589741,
+          "y1": 784.3589743589741,
+          "value": 5984
+        },
+        {
+          "id": "recipient:0xbb4e936d0f29a515757c518fa883794c4048ef62",
+          "label": "0xbb4e...ef62",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 819.6431618752242,
+          "y1": 819.6431618752242,
+          "value": 15964
+        },
+        {
+          "id": "proposal:gnars-base-18",
+          "label": "Prop #18",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 805.1794871794871,
+          "y1": 805.1794871794871,
+          "value": 0.00025
+        },
+        {
+          "id": "recipient:0x1f3903417cf35dea83f6a2797e89e78c7d380d2b",
+          "label": "0x1f39...0d2b",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 809.2329054649678,
+          "y1": 809.2329054649678,
+          "value": 0.00025
+        },
+        {
+          "id": "proposal:gnars-base-17",
+          "label": "Prop #17",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 794.7692307692306,
+          "y1": 794.7692307692306,
+          "value": 0.00026671
+        },
+        {
+          "id": "proposal:gnars-base-16",
+          "label": "Prop #16",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 815.5897435897435,
+          "y1": 815.5897435897435,
+          "value": 3990
+        },
+        {
+          "id": "recipient:0xb2b7d66bb56ce8ff7838dc8053ff35050ed95e9d",
+          "label": "0xb2b7...5e9d",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 795.7947320740129,
+          "y1": 795.7947320740129,
+          "value": 9600
+        },
+        {
+          "id": "proposal:gnars-base-15",
+          "label": "Prop #15",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 826,
+          "y1": 826,
+          "value": 9980
+        },
+        {
+          "id": "proposal:gnars-base-14",
+          "label": "Prop #14",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 524.1025641025625,
+          "y1": 524.1025641025625,
+          "value": 0.0004
+        },
+        {
+          "id": "proposal:gnars-base-13",
+          "label": "Prop #13",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 773.9487179487177,
+          "y1": 773.9487179487177,
+          "value": 5610
+        },
+        {
+          "id": "proposal:gnars-base-12",
+          "label": "Prop #12",
+          "kind": "proposal",
+          "x0": 459.3333333333333,
+          "x1": 475.3333333333333,
+          "y0": 753.1282051282047,
+          "y1": 753.1282051282047,
+          "value": 7.777777777e+25
+        },
+        {
+          "id": "recipient:0xe63617c62f18dbc7eff3d7c9eb8bac4d1c2adecc",
+          "label": "0xe636...decc",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 759.958253669574,
+          "y1": 759.958253669574,
+          "value": 3.8888888885e+25
+        },
+        {
+          "id": "recipient:0x576950a0ae9c6c134a381fb4cf245e478e82ecab",
+          "label": "0x5769...ecab",
+          "kind": "recipient",
+          "x0": 1350,
+          "x1": 1366,
+          "y0": 770.3685100798305,
+          "y1": 770.3685100798305,
+          "value": 3.8888888885e+25
+        }
+      ],
+      "links": [
+        {
+          "link_id": "all:0",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-119",
+          "value": 2900,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-119/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,34.820512820511226,459.3333333333333,34.820512820511226"
+        },
+        {
+          "link_id": "all:1",
+          "source": "proposal:gnars-base-119",
+          "target": "recipient:0xe5f6202ff7ddc5273c249073865bc6f4d5d68beb",
+          "value": 2900,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/119",
+          "path": "M475.3333333333333,34.820512820511226C912.6666666666666,34.820512820511226,912.6666666666666,85.75590035718012,1350,85.75590035718012"
+        },
+        {
+          "link_id": "all:2",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-119",
+          "value": 0.5,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "/proposals/gnars-base-119/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,34.820512820511226,459.3333333333333,34.820512820511226"
+        },
+        {
+          "link_id": "all:3",
+          "source": "proposal:gnars-base-119",
+          "target": "recipient:0xe5f6202ff7ddc5273c249073865bc6f4d5d68beb",
+          "value": 0.5,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "https://gnars.com/proposals/base/119",
+          "path": "M475.3333333333333,34.820512820511226C912.6666666666666,34.820512820511226,912.6666666666666,85.75590035718012,1350,85.75590035718012"
+        },
+        {
+          "link_id": "all:4",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-118",
+          "value": 3000,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-118/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,24.41025641025641,459.3333333333333,24.41025641025641"
+        },
+        {
+          "link_id": "all:5",
+          "source": "proposal:gnars-base-118",
+          "target": "project:operations-q1-2026",
+          "value": 3000,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/projects/operations-q1-2026/",
+          "path": "M475.3333333333333,24.41025641025641C690,24.41025641025641,690,24.41025641025641,904.6666666666666,24.41025641025641"
+        },
+        {
+          "link_id": "all:6",
+          "source": "project:operations-q1-2026",
+          "target": "recipient:0xaaed9fff9858d48925904e391b77892ba5fda824",
+          "value": 600,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/community/0xaaed9fff9858d48925904e391b77892ba5fda824/",
+          "path": "M920.6666666666666,24.41025641025641C1135.3333333333333,24.41025641025641,1135.3333333333333,14,1350,14"
+        },
+        {
+          "link_id": "all:7",
+          "source": "project:operations-q1-2026",
+          "target": "recipient:0x8bf5941d27176242745b716251943ae4892a3c26",
+          "value": 1200,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/community/0x8bf5941d27176242745b716251943ae4892a3c26/",
+          "path": "M920.6666666666666,24.41025641025641C1135.3333333333333,24.41025641025641,1135.3333333333333,24.41025641025641,1350,24.41025641025641"
+        },
+        {
+          "link_id": "all:8",
+          "source": "project:operations-q1-2026",
+          "target": "recipient:0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d",
+          "value": 1200,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/community/0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d/",
+          "path": "M920.6666666666666,24.41025641025641C1135.3333333333333,24.41025641025641,1135.3333333333333,41.25454009920598,1350,41.25454009920598"
+        },
+        {
+          "link_id": "all:9",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-118",
+          "value": 1.5,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "/proposals/gnars-base-118/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,24.41025641025641,459.3333333333333,24.41025641025641"
+        },
+        {
+          "link_id": "all:10",
+          "source": "proposal:gnars-base-118",
+          "target": "project:operations-q1-2026",
+          "value": 1.5,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "/projects/operations-q1-2026/",
+          "path": "M475.3333333333333,24.41025641025641C690,24.41025641025641,690,24.41025641025641,904.6666666666666,24.41025641025641"
+        },
+        {
+          "link_id": "all:11",
+          "source": "project:operations-q1-2026",
+          "target": "recipient:0xaaed9fff9858d48925904e391b77892ba5fda824",
+          "value": 0.3,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "/community/0xaaed9fff9858d48925904e391b77892ba5fda824/",
+          "path": "M920.6666666666666,24.41025641025641C1135.3333333333333,24.41025641025641,1135.3333333333333,14,1350,14"
+        },
+        {
+          "link_id": "all:12",
+          "source": "project:operations-q1-2026",
+          "target": "recipient:0x8bf5941d27176242745b716251943ae4892a3c26",
+          "value": 0.6,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "/community/0x8bf5941d27176242745b716251943ae4892a3c26/",
+          "path": "M920.6666666666666,24.41025641025641C1135.3333333333333,24.41025641025641,1135.3333333333333,24.41025641025641,1350,24.41025641025641"
+        },
+        {
+          "link_id": "all:13",
+          "source": "project:operations-q1-2026",
+          "target": "recipient:0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d",
+          "value": 0.6,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "/community/0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d/",
+          "path": "M920.6666666666666,24.41025641025641C1135.3333333333333,24.41025641025641,1135.3333333333333,41.25454009920598,1350,41.25454009920598"
+        },
+        {
+          "link_id": "all:14",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-117",
+          "value": 1570,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-117/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,138.9230769230753,459.3333333333333,138.9230769230753"
+        },
+        {
+          "link_id": "all:15",
+          "source": "proposal:gnars-base-117",
+          "target": "recipient:0x25810d1a8b1affc444d5333bf0496f1202d6f89f",
+          "value": 1570,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/117",
+          "path": "M475.3333333333333,138.9230769230753C912.6666666666666,138.9230769230753,912.6666666666666,138.82387352284235,1350,138.82387352284235"
+        },
+        {
+          "link_id": "all:16",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-113",
+          "value": 0.4,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "/proposals/gnars-base-113/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,170.15384615384454,459.3333333333333,170.15384615384454"
+        },
+        {
+          "link_id": "all:17",
+          "source": "proposal:gnars-base-113",
+          "target": "recipient:0x4d16fce1bd6e327ae31398ce9a2c4e12c077ecb1",
+          "value": 0.4,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "https://gnars.com/proposals/base/113",
+          "path": "M475.3333333333333,170.15384615384454C912.6666666666666,170.15384615384454,912.6666666666666,167.04470256745782,1350,167.04470256745782"
+        },
+        {
+          "link_id": "all:18",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-112",
+          "value": 612,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-112/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,180.56410256410095,459.3333333333333,180.56410256410095"
+        },
+        {
+          "link_id": "all:19",
+          "source": "proposal:gnars-base-112",
+          "target": "recipient:0x057cfcd04198e6d17f1bf502135d9508b6fa2fde",
+          "value": 612,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/112",
+          "path": "M475.3333333333333,180.56410256410095C912.6666666666666,180.56410256410095,912.6666666666666,177.45495897771423,1350,177.45495897771423"
+        },
+        {
+          "link_id": "all:20",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-111",
+          "value": 900,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-111/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,14,459.3333333333333,14"
+        },
+        {
+          "link_id": "all:21",
+          "source": "proposal:gnars-base-111",
+          "target": "project:docs-governance-revamp",
+          "value": 900,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/projects/docs-governance-revamp/",
+          "path": "M475.3333333333333,14C690,14,690,14,904.6666666666666,14"
+        },
+        {
+          "link_id": "all:22",
+          "source": "project:docs-governance-revamp",
+          "target": "recipient:0xaaed9fff9858d48925904e391b77892ba5fda824",
+          "value": 900,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/community/0xaaed9fff9858d48925904e391b77892ba5fda824/",
+          "path": "M920.6666666666666,14C1135.3333333333333,14,1135.3333333333333,14,1350,14"
+        },
+        {
+          "link_id": "all:23",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-111",
+          "value": 0.25,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "/proposals/gnars-base-111/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,14,459.3333333333333,14"
+        },
+        {
+          "link_id": "all:24",
+          "source": "proposal:gnars-base-111",
+          "target": "project:docs-governance-revamp",
+          "value": 0.25,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "/projects/docs-governance-revamp/",
+          "path": "M475.3333333333333,14C690,14,690,14,904.6666666666666,14"
+        },
+        {
+          "link_id": "all:25",
+          "source": "project:docs-governance-revamp",
+          "target": "recipient:0xaaed9fff9858d48925904e391b77892ba5fda824",
+          "value": 0.25,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "/community/0xaaed9fff9858d48925904e391b77892ba5fda824/",
+          "path": "M920.6666666666666,14C1135.3333333333333,14,1135.3333333333333,14,1350,14"
+        },
+        {
+          "link_id": "all:26",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-109",
+          "value": 0.1,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "/proposals/gnars-base-109/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,190.97435897435736,459.3333333333333,190.97435897435736"
+        },
+        {
+          "link_id": "all:27",
+          "source": "proposal:gnars-base-109",
+          "target": "recipient:0x225e9b54f41f44f42150b6aaa730da5f2d23faf2",
+          "value": 0.1,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "https://gnars.com/proposals/base/109",
+          "path": "M475.3333333333333,190.97435897435736C912.6666666666666,190.97435897435736,912.6666666666666,187.86521538797064,1350,187.86521538797064"
+        },
+        {
+          "link_id": "all:28",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-108",
+          "value": 2500,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-108/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,201.38461538461377,459.3333333333333,201.38461538461377"
+        },
+        {
+          "link_id": "all:29",
+          "source": "proposal:gnars-base-108",
+          "target": "recipient:0x8d2a253a5885806aa14e583c80c8833a904fb252",
+          "value": 2500,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/108",
+          "path": "M475.3333333333333,201.38461538461377C912.6666666666666,201.38461538461377,912.6666666666666,198.27547179822704,1350,198.27547179822704"
+        },
+        {
+          "link_id": "all:30",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-107",
+          "value": 4500,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-107/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,222.20512820512658,459.3333333333333,222.20512820512658"
+        },
+        {
+          "link_id": "all:31",
+          "source": "proposal:gnars-base-107",
+          "target": "recipient:0x709a480188cf171b1672438e28bbec3ba2d3a68a",
+          "value": 4500,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/107",
+          "path": "M475.3333333333333,222.20512820512658C912.6666666666666,222.20512820512658,912.6666666666666,229.18043856861738,1350,229.18043856861738"
+        },
+        {
+          "link_id": "all:32",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-106",
+          "value": 3986,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-106/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,76.46153846153686,459.3333333333333,76.46153846153686"
+        },
+        {
+          "link_id": "all:33",
+          "source": "proposal:gnars-base-106",
+          "target": "recipient:0x33bbf6e27ce7b254e537bcb9f3b00cd1451563ea",
+          "value": 3986,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/106",
+          "path": "M475.3333333333333,76.46153846153686C912.6666666666666,76.46153846153686,912.6666666666666,75.34564394692372,1350,75.34564394692372"
+        },
+        {
+          "link_id": "all:34",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-105",
+          "value": 5700,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-105/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,86.87179487179327,459.3333333333333,86.87179487179327"
+        },
+        {
+          "link_id": "all:35",
+          "source": "proposal:gnars-base-105",
+          "target": "recipient:0x33bbf6e27ce7b254e537bcb9f3b00cd1451563ea",
+          "value": 5700,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/105",
+          "path": "M475.3333333333333,86.87179487179327C912.6666666666666,86.87179487179327,912.6666666666666,75.34564394692372,1350,75.34564394692372"
+        },
+        {
+          "link_id": "all:36",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-104",
+          "value": 0.42,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "/proposals/gnars-base-104/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,305.48717948717785,459.3333333333333,305.48717948717785"
+        },
+        {
+          "link_id": "all:37",
+          "source": "proposal:gnars-base-104",
+          "target": "recipient:0x9ad8d2a8ef4bf60a667dd43fcb178bdbd93ae1c8",
+          "value": 0.42,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "https://gnars.com/proposals/base/104",
+          "path": "M475.3333333333333,305.48717948717785C912.6666666666666,305.48717948717785,912.6666666666666,324.03329776621774,1350,324.03329776621774"
+        },
+        {
+          "link_id": "all:38",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-103",
+          "value": 0.75,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "/proposals/gnars-base-103/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,263.8461538461522,459.3333333333333,263.8461538461522"
+        },
+        {
+          "link_id": "all:39",
+          "source": "proposal:gnars-base-103",
+          "target": "recipient:0x05c73ecef963fd68a414e713f4b28d9e792c73bd",
+          "value": 0.75,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "https://gnars.com/proposals/base/103",
+          "path": "M475.3333333333333,263.8461538461522C912.6666666666666,263.8461538461522,912.6666666666666,266.1651589901929,1350,266.1651589901929"
+        },
+        {
+          "link_id": "all:40",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-102",
+          "value": 400,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-102/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,274.2564102564086,459.3333333333333,274.2564102564086"
+        },
+        {
+          "link_id": "all:41",
+          "source": "proposal:gnars-base-102",
+          "target": "recipient:0x41cb654d1f47913acab158a8199191d160dabe4a",
+          "value": 400,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/102",
+          "path": "M475.3333333333333,274.2564102564086C912.6666666666666,274.2564102564086,912.6666666666666,287.31180063611544,1350,287.31180063611544"
+        },
+        {
+          "link_id": "all:42",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-101",
+          "value": 2600,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-101/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,211.79487179487018,459.3333333333333,211.79487179487018"
+        },
+        {
+          "link_id": "all:43",
+          "source": "proposal:gnars-base-101",
+          "target": "recipient:0x49d31dcb59e115f5c9e505a58a323ade076f2176",
+          "value": 2600,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/101",
+          "path": "M475.3333333333333,211.79487179487018C912.6666666666666,211.79487179487018,912.6666666666666,208.68572820848345,1350,208.68572820848345"
+        },
+        {
+          "link_id": "all:44",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-101",
+          "value": 0.619,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "/proposals/gnars-base-101/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,211.79487179487018,459.3333333333333,211.79487179487018"
+        },
+        {
+          "link_id": "all:45",
+          "source": "proposal:gnars-base-101",
+          "target": "recipient:0x49d31dcb59e115f5c9e505a58a323ade076f2176",
+          "value": 0.619,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "https://gnars.com/proposals/base/101",
+          "path": "M475.3333333333333,211.79487179487018C912.6666666666666,211.79487179487018,912.6666666666666,208.68572820848345,1350,208.68572820848345"
+        },
+        {
+          "link_id": "all:46",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-96",
+          "value": 1,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "/proposals/gnars-base-96/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,55.641025641024044,459.3333333333333,55.641025641024044"
+        },
+        {
+          "link_id": "all:47",
+          "source": "proposal:gnars-base-96",
+          "target": "recipient:0xe5f6202ff7ddc5273c249073865bc6f4d5d68beb",
+          "value": 1,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "https://gnars.com/proposals/base/96",
+          "path": "M475.3333333333333,55.641025641024044C912.6666666666666,55.641025641024044,912.6666666666666,85.75590035718012,1350,85.75590035718012"
+        },
+        {
+          "link_id": "all:48",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-96",
+          "value": 2130,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-96/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,55.641025641024044,459.3333333333333,55.641025641024044"
+        },
+        {
+          "link_id": "all:49",
+          "source": "proposal:gnars-base-96",
+          "target": "recipient:0xe5f6202ff7ddc5273c249073865bc6f4d5d68beb",
+          "value": 2130,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/96",
+          "path": "M475.3333333333333,55.641025641024044C912.6666666666666,55.641025641024044,912.6666666666666,85.75590035718012,1350,85.75590035718012"
+        },
+        {
+          "link_id": "all:50",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-95",
+          "value": 1200,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-95/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,243.0256410256394,459.3333333333333,243.0256410256394"
+        },
+        {
+          "link_id": "all:51",
+          "source": "proposal:gnars-base-95",
+          "target": "recipient:0xd2d164aea2a354e46ee3cf207899f48e5432b968",
+          "value": 1200,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/95",
+          "path": "M475.3333333333333,243.0256410256394C912.6666666666666,243.0256410256394,912.6666666666666,250.61460877797026,1350,250.61460877797026"
+        },
+        {
+          "link_id": "all:52",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-94",
+          "value": 1200,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-94/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,253.4358974358958,459.3333333333333,253.4358974358958"
+        },
+        {
+          "link_id": "all:53",
+          "source": "proposal:gnars-base-94",
+          "target": "recipient:0xd2d164aea2a354e46ee3cf207899f48e5432b968",
+          "value": 1200,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/94",
+          "path": "M475.3333333333333,253.4358974358958C912.6666666666666,253.4358974358958,912.6666666666666,250.61460877797026,1350,250.61460877797026"
+        },
+        {
+          "link_id": "all:54",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-91",
+          "value": 206232000000000000000,
+          "width": 0,
+          "asset_symbol": "0X4F6047",
+          "href": "/proposals/gnars-base-91/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,295.07692307692145,459.3333333333333,295.07692307692145"
+        },
+        {
+          "link_id": "all:55",
+          "source": "proposal:gnars-base-91",
+          "target": "recipient:0x41cb654d1f47913acab158a8199191d160dabe4a",
+          "value": 206232000000000000000,
+          "width": 0,
+          "asset_symbol": "0X4F6047",
+          "href": "https://gnars.com/proposals/base/91",
+          "path": "M475.3333333333333,295.07692307692145C912.6666666666666,295.07692307692145,912.6666666666666,287.31180063611544,1350,287.31180063611544"
+        },
+        {
+          "link_id": "all:56",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-89",
+          "value": 1700,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-89/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,367.9487179487163,459.3333333333333,367.9487179487163"
+        },
+        {
+          "link_id": "all:57",
+          "source": "proposal:gnars-base-89",
+          "target": "recipient:0x43c363f3821b4efe4f9d04df74c0e32db42a7970",
+          "value": 1700,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/89",
+          "path": "M475.3333333333333,367.9487179487163C912.6666666666666,367.9487179487163,912.6666666666666,371.8730495674005,1350,371.8730495674005"
+        },
+        {
+          "link_id": "all:58",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-87",
+          "value": 1700,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-87/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,378.3589743589727,459.3333333333333,378.3589743589727"
+        },
+        {
+          "link_id": "all:59",
+          "source": "proposal:gnars-base-87",
+          "target": "recipient:0x43c363f3821b4efe4f9d04df74c0e32db42a7970",
+          "value": 1700,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/87",
+          "path": "M475.3333333333333,378.3589743589727C912.6666666666666,378.3589743589727,912.6666666666666,371.8730495674005,1350,371.8730495674005"
+        },
+        {
+          "link_id": "all:60",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-86",
+          "value": 8000,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-86/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,326.3076923076907,459.3333333333333,326.3076923076907"
+        },
+        {
+          "link_id": "all:61",
+          "source": "proposal:gnars-base-86",
+          "target": "recipient:0xc4079dc1f8f84711eee0942c192829f473fc3c28",
+          "value": 8000,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/86",
+          "path": "M475.3333333333333,326.3076923076907C912.6666666666666,326.3076923076907,912.6666666666666,313.62304135596133,1350,313.62304135596133"
+        },
+        {
+          "link_id": "all:62",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-86",
+          "value": 1,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "/proposals/gnars-base-86/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,326.3076923076907,459.3333333333333,326.3076923076907"
+        },
+        {
+          "link_id": "all:63",
+          "source": "proposal:gnars-base-86",
+          "target": "recipient:0x289715ffbb2f4b482e2917d2f183feab564ec84f",
+          "value": 1,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "https://gnars.com/proposals/base/86",
+          "path": "M475.3333333333333,326.3076923076907C912.6666666666666,326.3076923076907,912.6666666666666,334.44355417647415,1350,334.44355417647415"
+        },
+        {
+          "link_id": "all:64",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-83",
+          "value": 5000,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-83/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,347.1282051282035,459.3333333333333,347.1282051282035"
+        },
+        {
+          "link_id": "all:65",
+          "source": "proposal:gnars-base-83",
+          "target": "recipient:0x43df6cea26d6bbe40cfa065ae57380327f1dea66",
+          "value": 5000,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/83",
+          "path": "M475.3333333333333,347.1282051282035C912.6666666666666,347.1282051282035,912.6666666666666,350.448161378412,1350,350.448161378412"
+        },
+        {
+          "link_id": "all:66",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-78",
+          "value": 0.0001,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "/proposals/gnars-base-78/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,45.230769230767635,459.3333333333333,45.230769230767635"
+        },
+        {
+          "link_id": "all:67",
+          "source": "proposal:gnars-base-78",
+          "target": "recipient:0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d",
+          "value": 0.0001,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "https://gnars.com/proposals/base/78",
+          "path": "M475.3333333333333,45.230769230767635C912.6666666666666,45.230769230767635,912.6666666666666,41.25454009920598,1350,41.25454009920598"
+        },
+        {
+          "link_id": "all:68",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-77",
+          "value": 1350,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-77/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,357.5384615384599,459.3333333333333,357.5384615384599"
+        },
+        {
+          "link_id": "all:69",
+          "source": "proposal:gnars-base-77",
+          "target": "recipient:0xddd7c01cecdbd0ac633ef7405a60165f731e645f",
+          "value": 1350,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/77",
+          "path": "M475.3333333333333,357.5384615384599C912.6666666666666,357.5384615384599,912.6666666666666,360.8584177886684,1350,360.8584177886684"
+        },
+        {
+          "link_id": "all:70",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-76",
+          "value": 2500,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-76/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,315.89743589743426,459.3333333333333,315.89743589743426"
+        },
+        {
+          "link_id": "all:71",
+          "source": "proposal:gnars-base-76",
+          "target": "recipient:0x9ad8d2a8ef4bf60a667dd43fcb178bdbd93ae1c8",
+          "value": 2500,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/76",
+          "path": "M475.3333333333333,315.89743589743426C912.6666666666666,315.89743589743426,912.6666666666666,324.03329776621774,1350,324.03329776621774"
+        },
+        {
+          "link_id": "all:72",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-75",
+          "value": 3924,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-75/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,388.7692307692291,459.3333333333333,388.7692307692291"
+        },
+        {
+          "link_id": "all:73",
+          "source": "proposal:gnars-base-75",
+          "target": "recipient:0xb3fb1987aade1002e4791d49f44ace54899b7129",
+          "value": 3924,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/75",
+          "path": "M475.3333333333333,388.7692307692291C912.6666666666666,388.7692307692291,912.6666666666666,382.28330597765694,1350,382.28330597765694"
+        },
+        {
+          "link_id": "all:74",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-70",
+          "value": 2042,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-70/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,399.17948717948553,459.3333333333333,399.17948717948553"
+        },
+        {
+          "link_id": "all:75",
+          "source": "proposal:gnars-base-70",
+          "target": "recipient:0x0020d02026e6e82a8f002024a418c0f486bc597e",
+          "value": 2042,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/70",
+          "path": "M475.3333333333333,399.17948717948553C912.6666666666666,399.17948717948553,912.6666666666666,392.69356238791335,1350,392.69356238791335"
+        },
+        {
+          "link_id": "all:76",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-68",
+          "value": 1250,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-68/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,409.58974358974194,459.3333333333333,409.58974358974194"
+        },
+        {
+          "link_id": "all:77",
+          "source": "proposal:gnars-base-68",
+          "target": "recipient:0xe61bcfe6a7e4fd33f1c439558e9fd549371d728e",
+          "value": 1250,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/68",
+          "path": "M475.3333333333333,409.58974358974194C912.6666666666666,409.58974358974194,912.6666666666666,403.10381879816975,1350,403.10381879816975"
+        },
+        {
+          "link_id": "all:78",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-65",
+          "value": 1.2881837e+25,
+          "width": 0,
+          "asset_symbol": "SENDIT",
+          "href": "/proposals/gnars-base-65/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,440.82051282051117,459.3333333333333,440.82051282051117"
+        },
+        {
+          "link_id": "all:79",
+          "source": "proposal:gnars-base-65",
+          "target": "recipient:0xa903c06bf35286f6d1cdad25396748353979a44c",
+          "value": 1.2881837e+25,
+          "width": 0,
+          "asset_symbol": "SENDIT",
+          "href": "https://gnars.com/proposals/base/65",
+          "path": "M475.3333333333333,440.82051282051117C912.6666666666666,440.82051282051117,912.6666666666666,447.01396657974806,1350,447.01396657974806"
+        },
+        {
+          "link_id": "all:80",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-64",
+          "value": 2250,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-64/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,461.641025641024,459.3333333333333,461.641025641024"
+        },
+        {
+          "link_id": "all:81",
+          "source": "proposal:gnars-base-64",
+          "target": "recipient:0x2858eba3985476ca81217f2f8c5e65508f34960f",
+          "value": 2250,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/64",
+          "path": "M475.3333333333333,461.641025641024C912.6666666666666,461.641025641024,912.6666666666666,473.47046320026715,1350,473.47046320026715"
+        },
+        {
+          "link_id": "all:82",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-63",
+          "value": 4.65e+25,
+          "width": 0,
+          "asset_symbol": "SENDIT",
+          "href": "/proposals/gnars-base-63/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,419.99999999999835,459.3333333333333,419.99999999999835"
+        },
+        {
+          "link_id": "all:83",
+          "source": "proposal:gnars-base-63",
+          "target": "recipient:0x244306053c673b93bc9885fdacfc352032725c87",
+          "value": 4.65e+25,
+          "width": 0,
+          "asset_symbol": "SENDIT",
+          "href": "https://gnars.com/proposals/base/63",
+          "path": "M475.3333333333333,419.99999999999835C912.6666666666666,419.99999999999835,912.6666666666666,413.51407520842616,1350,413.51407520842616"
+        },
+        {
+          "link_id": "all:84",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-63",
+          "value": 1,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "/proposals/gnars-base-63/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,419.99999999999835,459.3333333333333,419.99999999999835"
+        },
+        {
+          "link_id": "all:85",
+          "source": "proposal:gnars-base-63",
+          "target": "recipient:0x244306053c673b93bc9885fdacfc352032725c87",
+          "value": 1,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "https://gnars.com/proposals/base/63",
+          "path": "M475.3333333333333,419.99999999999835C912.6666666666666,419.99999999999835,912.6666666666666,413.51407520842616,1350,413.51407520842616"
+        },
+        {
+          "link_id": "all:86",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-63",
+          "value": 3200,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-63/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,419.99999999999835,459.3333333333333,419.99999999999835"
+        },
+        {
+          "link_id": "all:87",
+          "source": "proposal:gnars-base-63",
+          "target": "recipient:0x244306053c673b93bc9885fdacfc352032725c87",
+          "value": 3200,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/63",
+          "path": "M475.3333333333333,419.99999999999835C912.6666666666666,419.99999999999835,912.6666666666666,413.51407520842616,1350,413.51407520842616"
+        },
+        {
+          "link_id": "all:88",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-62",
+          "value": 3545,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-62/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,451.2307692307676,459.3333333333333,451.2307692307676"
+        },
+        {
+          "link_id": "all:89",
+          "source": "proposal:gnars-base-62",
+          "target": "recipient:0xca8adab20b66f4693ee5fce756c074a5629ae986",
+          "value": 3545,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/62",
+          "path": "M475.3333333333333,451.2307692307676C912.6666666666666,451.2307692307676,912.6666666666666,457.42422299000447,1350,457.42422299000447"
+        },
+        {
+          "link_id": "all:90",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-61",
+          "value": 1.1956912028725313e+26,
+          "width": 0,
+          "asset_symbol": "SENDIT",
+          "href": "/proposals/gnars-base-61/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,430.41025641025476,459.3333333333333,430.41025641025476"
+        },
+        {
+          "link_id": "all:91",
+          "source": "proposal:gnars-base-61",
+          "target": "recipient:0xbc94f5266c5f78677b98238fc93d825d25abfc12",
+          "value": 1.1956912028725313e+26,
+          "width": 0,
+          "asset_symbol": "SENDIT",
+          "href": "https://gnars.com/proposals/base/61",
+          "path": "M475.3333333333333,430.41025641025476C912.6666666666666,430.41025641025476,912.6666666666666,431.43922956781523,1350,431.43922956781523"
+        },
+        {
+          "link_id": "all:92",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-61",
+          "value": 2650,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-61/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,430.41025641025476,459.3333333333333,430.41025641025476"
+        },
+        {
+          "link_id": "all:93",
+          "source": "proposal:gnars-base-61",
+          "target": "recipient:0xbc94f5266c5f78677b98238fc93d825d25abfc12",
+          "value": 2650,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/61",
+          "path": "M475.3333333333333,430.41025641025476C912.6666666666666,430.41025641025476,912.6666666666666,431.43922956781523,1350,431.43922956781523"
+        },
+        {
+          "link_id": "all:94",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-60",
+          "value": 6204,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-60/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,482.4615384615368,459.3333333333333,482.4615384615368"
+        },
+        {
+          "link_id": "all:95",
+          "source": "proposal:gnars-base-60",
+          "target": "recipient:0xd32d87e34913f7dee83a7a6faed8b6f054b97cd4",
+          "value": 6204,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/60",
+          "path": "M475.3333333333333,482.4615384615368C912.6666666666666,482.4615384615368,912.6666666666666,489.25746752400994,1350,489.25746752400994"
+        },
+        {
+          "link_id": "all:96",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-59",
+          "value": 8550,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-59/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,66.05128205128045,459.3333333333333,66.05128205128045"
+        },
+        {
+          "link_id": "all:97",
+          "source": "proposal:gnars-base-59",
+          "target": "recipient:0xe5f6202ff7ddc5273c249073865bc6f4d5d68beb",
+          "value": 8550,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/59",
+          "path": "M475.3333333333333,66.05128205128045C912.6666666666666,66.05128205128045,912.6666666666666,85.75590035718012,1350,85.75590035718012"
+        },
+        {
+          "link_id": "all:98",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-58",
+          "value": 8550,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-58/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,492.8717948717932,459.3333333333333,492.8717948717932"
+        },
+        {
+          "link_id": "all:99",
+          "source": "proposal:gnars-base-58",
+          "target": "recipient:0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+          "value": 8550,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/58",
+          "path": "M475.3333333333333,492.8717948717932C912.6666666666666,492.8717948717932,912.6666666666666,499.66772393426635,1350,499.66772393426635"
+        },
+        {
+          "link_id": "all:100",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-57",
+          "value": 8.58799e+25,
+          "width": 0,
+          "asset_symbol": "SENDIT",
+          "href": "/proposals/gnars-base-57/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,284.66666666666504,459.3333333333333,284.66666666666504"
+        },
+        {
+          "link_id": "all:101",
+          "source": "proposal:gnars-base-57",
+          "target": "recipient:0x41cb654d1f47913acab158a8199191d160dabe4a",
+          "value": 8.58799e+25,
+          "width": 0,
+          "asset_symbol": "SENDIT",
+          "href": "https://gnars.com/proposals/base/57",
+          "path": "M475.3333333333333,284.66666666666504C912.6666666666666,284.66666666666504,912.6666666666666,287.31180063611544,1350,287.31180063611544"
+        },
+        {
+          "link_id": "all:102",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-56",
+          "value": 1.2,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "/proposals/gnars-base-56/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,107.69230769230609,459.3333333333333,107.69230769230609"
+        },
+        {
+          "link_id": "all:103",
+          "source": "proposal:gnars-base-56",
+          "target": "recipient:0x33bbf6e27ce7b254e537bcb9f3b00cd1451563ea",
+          "value": 1.2,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "https://gnars.com/proposals/base/56",
+          "path": "M475.3333333333333,107.69230769230609C912.6666666666666,107.69230769230609,912.6666666666666,75.34564394692372,1350,75.34564394692372"
+        },
+        {
+          "link_id": "all:104",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-55",
+          "value": 0.000042,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "/proposals/gnars-base-55/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,128.5128205128189,459.3333333333333,128.5128205128189"
+        },
+        {
+          "link_id": "all:105",
+          "source": "proposal:gnars-base-55",
+          "target": "recipient:0x33bbf6e27ce7b254e537bcb9f3b00cd1451563ea",
+          "value": 0.000042,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "https://gnars.com/proposals/base/55",
+          "path": "M475.3333333333333,128.5128205128189C912.6666666666666,128.5128205128189,912.6666666666666,75.34564394692372,1350,75.34564394692372"
+        },
+        {
+          "link_id": "all:106",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-54",
+          "value": 1.2,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "/proposals/gnars-base-54/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,159.74358974358813,459.3333333333333,159.74358974358813"
+        },
+        {
+          "link_id": "all:107",
+          "source": "proposal:gnars-base-54",
+          "target": "recipient:0x33bbf6e27ce7b254e537bcb9f3b00cd1451563ea",
+          "value": 1.2,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "https://gnars.com/proposals/base/54",
+          "path": "M475.3333333333333,159.74358974358813C912.6666666666666,159.74358974358813,912.6666666666666,75.34564394692372,1350,75.34564394692372"
+        },
+        {
+          "link_id": "all:108",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-53",
+          "value": 4139,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-53/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,232.615384615383,459.3333333333333,232.615384615383"
+        },
+        {
+          "link_id": "all:109",
+          "source": "proposal:gnars-base-53",
+          "target": "recipient:0x709a480188cf171b1672438e28bbec3ba2d3a68a",
+          "value": 4139,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/53",
+          "path": "M475.3333333333333,232.615384615383C912.6666666666666,232.615384615383,912.6666666666666,229.18043856861738,1350,229.18043856861738"
+        },
+        {
+          "link_id": "all:110",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-52",
+          "value": 5100,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-52/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,534.512820512819,459.3333333333333,534.512820512819"
+        },
+        {
+          "link_id": "all:111",
+          "source": "proposal:gnars-base-52",
+          "target": "recipient:0x4f81ca00ccadfaffa10672d863e6e6077bad3f20",
+          "value": 5100,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/52",
+          "path": "M475.3333333333333,534.512820512819C912.6666666666666,534.512820512819,912.6666666666666,541.3393880571738,1350,541.3393880571738"
+        },
+        {
+          "link_id": "all:112",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-51",
+          "value": 5660,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-51/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,544.9230769230754,459.3333333333333,544.9230769230754"
+        },
+        {
+          "link_id": "all:113",
+          "source": "proposal:gnars-base-51",
+          "target": "recipient:0xdb47bd2fca1237038aa2c542f64cfe08591463c4",
+          "value": 5660,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/51",
+          "path": "M475.3333333333333,544.9230769230754C912.6666666666666,544.9230769230754,912.6666666666666,551.7496444674302,1350,551.7496444674302"
+        },
+        {
+          "link_id": "all:114",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-48",
+          "value": 0.4,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "/proposals/gnars-base-48/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,503.2820512820496,459.3333333333333,503.2820512820496"
+        },
+        {
+          "link_id": "all:115",
+          "source": "proposal:gnars-base-48",
+          "target": "recipient:0xc2e3df2748e4ef6e1a8322772fd7d962410c721a",
+          "value": 0.2,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "https://gnars.com/proposals/base/48",
+          "path": "M475.3333333333333,503.2820512820496C912.6666666666666,503.2820512820496,912.6666666666666,510.07798034452276,1350,510.07798034452276"
+        },
+        {
+          "link_id": "all:116",
+          "source": "proposal:gnars-base-48",
+          "target": "recipient:0xba6e1c26be2f8b46d9e7ab7573b99921ee81acf5",
+          "value": 0.2,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "https://gnars.com/proposals/base/48",
+          "path": "M475.3333333333333,503.2820512820496C912.6666666666666,503.2820512820496,912.6666666666666,520.4882367547792,1350,520.4882367547792"
+        },
+        {
+          "link_id": "all:117",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-47",
+          "value": 1000,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-47/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,513.692307692306,459.3333333333333,513.692307692306"
+        },
+        {
+          "link_id": "all:118",
+          "source": "proposal:gnars-base-47",
+          "target": "recipient:0xeed943aa972dd394146e6f77b9434df07f36a282",
+          "value": 1000,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/47",
+          "path": "M475.3333333333333,513.692307692306C912.6666666666666,513.692307692306,912.6666666666666,530.8984931650357,1350,530.8984931650357"
+        },
+        {
+          "link_id": "all:119",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-45",
+          "value": 6969,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-45/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,555.3333333333319,459.3333333333333,555.3333333333319"
+        },
+        {
+          "link_id": "all:120",
+          "source": "proposal:gnars-base-45",
+          "target": "recipient:0x9d4e88f7f2ccbb005426c1ed91eb2bb7d235937f",
+          "value": 6969,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/45",
+          "path": "M475.3333333333333,555.3333333333319C912.6666666666666,555.3333333333319,912.6666666666666,562.1599008776867,1350,562.1599008776867"
+        },
+        {
+          "link_id": "all:121",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-44",
+          "value": 3.5,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "/proposals/gnars-base-44/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,565.7435897435884,459.3333333333333,565.7435897435884"
+        },
+        {
+          "link_id": "all:122",
+          "source": "proposal:gnars-base-44",
+          "target": "recipient:0x2508e0cd16a6f44fae56970c2b0812dd0f1e7faf",
+          "value": 3.5,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "https://gnars.com/proposals/base/44",
+          "path": "M475.3333333333333,565.7435897435884C912.6666666666666,565.7435897435884,912.6666666666666,572.5701572879432,1350,572.5701572879432"
+        },
+        {
+          "link_id": "all:123",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-43",
+          "value": 2700,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-43/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,472.0512820512804,459.3333333333333,472.0512820512804"
+        },
+        {
+          "link_id": "all:124",
+          "source": "proposal:gnars-base-43",
+          "target": "recipient:0x2858eba3985476ca81217f2f8c5e65508f34960f",
+          "value": 2700,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/43",
+          "path": "M475.3333333333333,472.0512820512804C912.6666666666666,472.0512820512804,912.6666666666666,473.47046320026715,1350,473.47046320026715"
+        },
+        {
+          "link_id": "all:125",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-42",
+          "value": 0.00042,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "/proposals/gnars-base-42/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,576.1538461538448,459.3333333333333,576.1538461538448"
+        },
+        {
+          "link_id": "all:126",
+          "source": "proposal:gnars-base-42",
+          "target": "recipient:0x29c03fee4ba44aeb1bd63b95a73aefffd6e6ec66",
+          "value": 0.00042,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "https://gnars.com/proposals/base/42",
+          "path": "M475.3333333333333,576.1538461538448C912.6666666666666,576.1538461538448,912.6666666666666,582.9804136981996,1350,582.9804136981996"
+        },
+        {
+          "link_id": "all:127",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-41",
+          "value": 3000,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-41/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,336.7179487179471,459.3333333333333,336.7179487179471"
+        },
+        {
+          "link_id": "all:128",
+          "source": "proposal:gnars-base-41",
+          "target": "recipient:0x9ad8d2a8ef4bf60a667dd43fcb178bdbd93ae1c8",
+          "value": 3000,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/41",
+          "path": "M475.3333333333333,336.7179487179471C912.6666666666666,336.7179487179471,912.6666666666666,324.03329776621774,1350,324.03329776621774"
+        },
+        {
+          "link_id": "all:129",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-40",
+          "value": 6850,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-40/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,628.2051282051272,459.3333333333333,628.2051282051272"
+        },
+        {
+          "link_id": "all:130",
+          "source": "proposal:gnars-base-40",
+          "target": "recipient:0xed7be8b630924f437c28af58a99cc63fc80413f4",
+          "value": 6850,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/40",
+          "path": "M475.3333333333333,628.2051282051272C912.6666666666666,628.2051282051272,912.6666666666666,635.0351767464964,1350,635.0351767464964"
+        },
+        {
+          "link_id": "all:131",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-39",
+          "value": 11800,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-39/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,97.28205128204968,459.3333333333333,97.28205128204968"
+        },
+        {
+          "link_id": "all:132",
+          "source": "proposal:gnars-base-39",
+          "target": "recipient:0xe5f6202ff7ddc5273c249073865bc6f4d5d68beb",
+          "value": 11800,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/39",
+          "path": "M475.3333333333333,97.28205128204968C912.6666666666666,97.28205128204968,912.6666666666666,85.75590035718012,1350,85.75590035718012"
+        },
+        {
+          "link_id": "all:133",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-38",
+          "value": 0.43,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "/proposals/gnars-base-38/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,638.6153846153836,459.3333333333333,638.6153846153836"
+        },
+        {
+          "link_id": "all:134",
+          "source": "proposal:gnars-base-38",
+          "target": "recipient:0xedc1a397589a0236c4810883b7d559288a5fe7e1",
+          "value": 0.43,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "https://gnars.com/proposals/base/38",
+          "path": "M475.3333333333333,638.6153846153836C912.6666666666666,638.6153846153836,912.6666666666666,645.4454331567529,1350,645.4454331567529"
+        },
+        {
+          "link_id": "all:135",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-37",
+          "value": 7870,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-37/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,649.0256410256401,459.3333333333333,649.0256410256401"
+        },
+        {
+          "link_id": "all:136",
+          "source": "proposal:gnars-base-37",
+          "target": "recipient:0x0a7b7374d9cba3ac9d31f18b2cd45aac4b3b442e",
+          "value": 7870,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/37",
+          "path": "M475.3333333333333,649.0256410256401C912.6666666666666,649.0256410256401,912.6666666666666,655.8556895670093,1350,655.8556895670093"
+        },
+        {
+          "link_id": "all:137",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-36",
+          "value": 950000000,
+          "width": 0,
+          "asset_symbol": "0X09E938",
+          "href": "/proposals/gnars-base-36/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,596.9743589743578,459.3333333333333,596.9743589743578"
+        },
+        {
+          "link_id": "all:138",
+          "source": "proposal:gnars-base-36",
+          "target": "recipient:0x09e938e239803c78507abd5687a97acfea1188ea",
+          "value": 950000000,
+          "width": 0,
+          "asset_symbol": "0X09E938",
+          "href": "https://gnars.com/proposals/base/36",
+          "path": "M475.3333333333333,596.9743589743578C912.6666666666666,596.9743589743578,912.6666666666666,612.8536888643512,1350,612.8536888643512"
+        },
+        {
+          "link_id": "all:139",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-35",
+          "value": 625000000,
+          "width": 0,
+          "asset_symbol": "0X09E938",
+          "href": "/proposals/gnars-base-35/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,607.3846153846142,459.3333333333333,607.3846153846142"
+        },
+        {
+          "link_id": "all:140",
+          "source": "proposal:gnars-base-35",
+          "target": "recipient:0x09e938e239803c78507abd5687a97acfea1188ea",
+          "value": 625000000,
+          "width": 0,
+          "asset_symbol": "0X09E938",
+          "href": "https://gnars.com/proposals/base/35",
+          "path": "M475.3333333333333,607.3846153846142C912.6666666666666,607.3846153846142,912.6666666666666,612.8536888643512,1350,612.8536888643512"
+        },
+        {
+          "link_id": "all:141",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-34",
+          "value": 625000000,
+          "width": 0,
+          "asset_symbol": "0X09E938",
+          "href": "/proposals/gnars-base-34/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,617.7948717948707,459.3333333333333,617.7948717948707"
+        },
+        {
+          "link_id": "all:142",
+          "source": "proposal:gnars-base-34",
+          "target": "recipient:0x09e938e239803c78507abd5687a97acfea1188ea",
+          "value": 625000000,
+          "width": 0,
+          "asset_symbol": "0X09E938",
+          "href": "https://gnars.com/proposals/base/34",
+          "path": "M475.3333333333333,617.7948717948707C912.6666666666666,617.7948717948707,912.6666666666666,612.8536888643512,1350,612.8536888643512"
+        },
+        {
+          "link_id": "all:143",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-33",
+          "value": 4500,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-33/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,586.5641025641013,459.3333333333333,586.5641025641013"
+        },
+        {
+          "link_id": "all:144",
+          "source": "proposal:gnars-base-33",
+          "target": "recipient:0x387a161c6b25aa854100abaed39274e51aaffffd",
+          "value": 4500,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/33",
+          "path": "M475.3333333333333,586.5641025641013C912.6666666666666,586.5641025641013,912.6666666666666,593.3906701084561,1350,593.3906701084561"
+        },
+        {
+          "link_id": "all:145",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-33",
+          "value": 0.12,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "/proposals/gnars-base-33/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,586.5641025641013,459.3333333333333,586.5641025641013"
+        },
+        {
+          "link_id": "all:146",
+          "source": "proposal:gnars-base-33",
+          "target": "recipient:0x387a161c6b25aa854100abaed39274e51aaffffd",
+          "value": 0.12,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "https://gnars.com/proposals/base/33",
+          "path": "M475.3333333333333,586.5641025641013C912.6666666666666,586.5641025641013,912.6666666666666,593.3906701084561,1350,593.3906701084561"
+        },
+        {
+          "link_id": "all:147",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-32",
+          "value": 16116,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-32/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,659.4358974358965,459.3333333333333,659.4358974358965"
+        },
+        {
+          "link_id": "all:148",
+          "source": "proposal:gnars-base-32",
+          "target": "recipient:0xe1b91eb3f3747d00485e95da79041e6d9d399641",
+          "value": 16116,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/32",
+          "path": "M475.3333333333333,659.4358974358965C912.6666666666666,659.4358974358965,912.6666666666666,666.2659459772658,1350,666.2659459772658"
+        },
+        {
+          "link_id": "all:149",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-31",
+          "value": 0.0004,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "/proposals/gnars-base-31/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,680.2564102564095,459.3333333333333,680.2564102564095"
+        },
+        {
+          "link_id": "all:150",
+          "source": "proposal:gnars-base-31",
+          "target": "recipient:0x3a7b8d37cb2da4c3b7c897421d90f42cc015d68d",
+          "value": 0.0004,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "https://gnars.com/proposals/base/31",
+          "path": "M475.3333333333333,680.2564102564095C912.6666666666666,680.2564102564095,912.6666666666666,687.0864587977787,1350,687.0864587977787"
+        },
+        {
+          "link_id": "all:151",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-29",
+          "value": 5500,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-29/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,669.846153846153,459.3333333333333,669.846153846153"
+        },
+        {
+          "link_id": "all:152",
+          "source": "proposal:gnars-base-29",
+          "target": "recipient:0xe8b290f49c2fb50ab018d89626e77c2321dc599d",
+          "value": 5500,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/29",
+          "path": "M475.3333333333333,669.846153846153C912.6666666666666,669.846153846153,912.6666666666666,676.6762023875223,1350,676.6762023875223"
+        },
+        {
+          "link_id": "all:153",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-29",
+          "value": 3,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "/proposals/gnars-base-29/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,669.846153846153,459.3333333333333,669.846153846153"
+        },
+        {
+          "link_id": "all:154",
+          "source": "proposal:gnars-base-29",
+          "target": "recipient:0xe8b290f49c2fb50ab018d89626e77c2321dc599d",
+          "value": 3,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "https://gnars.com/proposals/base/29",
+          "path": "M475.3333333333333,669.846153846153C912.6666666666666,669.846153846153,912.6666666666666,676.6762023875223,1350,676.6762023875223"
+        },
+        {
+          "link_id": "all:155",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-28",
+          "value": 7888,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-28/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,690.666666666666,459.3333333333333,690.666666666666"
+        },
+        {
+          "link_id": "all:156",
+          "source": "proposal:gnars-base-28",
+          "target": "recipient:0xfc27b375faf1fbd3f3462044cf810082f042a45b",
+          "value": 7888,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/28",
+          "path": "M475.3333333333333,690.666666666666C912.6666666666666,690.666666666666,912.6666666666666,697.4967152080352,1350,697.4967152080352"
+        },
+        {
+          "link_id": "all:157",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-27",
+          "value": 0.8,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "/proposals/gnars-base-27/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,701.0769230769224,459.3333333333333,701.0769230769224"
+        },
+        {
+          "link_id": "all:158",
+          "source": "proposal:gnars-base-27",
+          "target": "recipient:0x597960438e28e3b529dcea95c267dc9cfc458db0",
+          "value": 0.8,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "https://gnars.com/proposals/base/27",
+          "path": "M475.3333333333333,701.0769230769224C912.6666666666666,701.0769230769224,912.6666666666666,707.9069716182917,1350,707.9069716182917"
+        },
+        {
+          "link_id": "all:159",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-26",
+          "value": 8085,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-26/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,118.1025641025625,459.3333333333333,118.1025641025625"
+        },
+        {
+          "link_id": "all:160",
+          "source": "proposal:gnars-base-26",
+          "target": "recipient:0xe5f6202ff7ddc5273c249073865bc6f4d5d68beb",
+          "value": 8085,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/26",
+          "path": "M475.3333333333333,118.1025641025625C912.6666666666666,118.1025641025625,912.6666666666666,85.75590035718012,1350,85.75590035718012"
+        },
+        {
+          "link_id": "all:161",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-25",
+          "value": 0.99,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "/proposals/gnars-base-25/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,149.33333333333172,459.3333333333333,149.33333333333172"
+        },
+        {
+          "link_id": "all:162",
+          "source": "proposal:gnars-base-25",
+          "target": "recipient:0x33bbf6e27ce7b254e537bcb9f3b00cd1451563ea",
+          "value": 0.99,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "https://gnars.com/proposals/base/25",
+          "path": "M475.3333333333333,149.33333333333172C912.6666666666666,149.33333333333172,912.6666666666666,75.34564394692372,1350,75.34564394692372"
+        },
+        {
+          "link_id": "all:163",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-24",
+          "value": 12000,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-24/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,711.4871794871789,459.3333333333333,711.4871794871789"
+        },
+        {
+          "link_id": "all:164",
+          "source": "proposal:gnars-base-24",
+          "target": "recipient:0x3f5111e64c0b96cc6b436151da820a3f979ef7f2",
+          "value": 12000,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/24",
+          "path": "M475.3333333333333,711.4871794871789C912.6666666666666,711.4871794871789,912.6666666666666,718.3172280285481,1350,718.3172280285481"
+        },
+        {
+          "link_id": "all:165",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-23",
+          "value": 7500,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-23/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,721.8974358974353,459.3333333333333,721.8974358974353"
+        },
+        {
+          "link_id": "all:166",
+          "source": "proposal:gnars-base-23",
+          "target": "recipient:0x459b40643251f10d93334d91cf256f97d31f69de",
+          "value": 7500,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/23",
+          "path": "M475.3333333333333,721.8974358974353C912.6666666666666,721.8974358974353,912.6666666666666,728.7274844388046,1350,728.7274844388046"
+        },
+        {
+          "link_id": "all:167",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-22",
+          "value": 0.00034,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "/proposals/gnars-base-22/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,732.3076923076918,459.3333333333333,732.3076923076918"
+        },
+        {
+          "link_id": "all:168",
+          "source": "proposal:gnars-base-22",
+          "target": "recipient:0x10c3a08e1cdd302eefb4d2c1a9a7779aa4ded7b3",
+          "value": 0.00034,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "https://gnars.com/proposals/base/22",
+          "path": "M475.3333333333333,732.3076923076918C912.6666666666666,732.3076923076918,912.6666666666666,739.1377408490611,1350,739.1377408490611"
+        },
+        {
+          "link_id": "all:169",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-21",
+          "value": 0.00028,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "/proposals/gnars-base-21/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,742.7179487179483,459.3333333333333,742.7179487179483"
+        },
+        {
+          "link_id": "all:170",
+          "source": "proposal:gnars-base-21",
+          "target": "recipient:0x9cb927c5632685c4365b734cfb01249d4637f772",
+          "value": 0.00028,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "https://gnars.com/proposals/base/21",
+          "path": "M475.3333333333333,742.7179487179483C912.6666666666666,742.7179487179483,912.6666666666666,749.5479972593175,1350,749.5479972593175"
+        },
+        {
+          "link_id": "all:171",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-20",
+          "value": 9900,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-20/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,763.5384615384612,459.3333333333333,763.5384615384612"
+        },
+        {
+          "link_id": "all:172",
+          "source": "proposal:gnars-base-20",
+          "target": "recipient:0x735135ff4152b3ae255ca708eb37d83b0a8853f8",
+          "value": 9900,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/20",
+          "path": "M475.3333333333333,763.5384615384612C912.6666666666666,763.5384615384612,912.6666666666666,780.7787664900869,1350,780.7787664900869"
+        },
+        {
+          "link_id": "all:173",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-19",
+          "value": 5984,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-19/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,784.3589743589741,459.3333333333333,784.3589743589741"
+        },
+        {
+          "link_id": "all:174",
+          "source": "proposal:gnars-base-19",
+          "target": "recipient:0xbb4e936d0f29a515757c518fa883794c4048ef62",
+          "value": 5984,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/19",
+          "path": "M475.3333333333333,784.3589743589741C912.6666666666666,784.3589743589741,912.6666666666666,819.6431618752242,1350,819.6431618752242"
+        },
+        {
+          "link_id": "all:175",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-18",
+          "value": 0.00025,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "/proposals/gnars-base-18/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,805.1794871794871,459.3333333333333,805.1794871794871"
+        },
+        {
+          "link_id": "all:176",
+          "source": "proposal:gnars-base-18",
+          "target": "recipient:0x1f3903417cf35dea83f6a2797e89e78c7d380d2b",
+          "value": 0.00025,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "https://gnars.com/proposals/base/18",
+          "path": "M475.3333333333333,805.1794871794871C912.6666666666666,805.1794871794871,912.6666666666666,809.2329054649678,1350,809.2329054649678"
+        },
+        {
+          "link_id": "all:177",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-17",
+          "value": 0.00026671,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "/proposals/gnars-base-17/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,794.7692307692306,459.3333333333333,794.7692307692306"
+        },
+        {
+          "link_id": "all:178",
+          "source": "proposal:gnars-base-17",
+          "target": "recipient:0x735135ff4152b3ae255ca708eb37d83b0a8853f8",
+          "value": 0.00026671,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "https://gnars.com/proposals/base/17",
+          "path": "M475.3333333333333,794.7692307692306C912.6666666666666,794.7692307692306,912.6666666666666,780.7787664900869,1350,780.7787664900869"
+        },
+        {
+          "link_id": "all:179",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-16",
+          "value": 3990,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-16/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,815.5897435897435,459.3333333333333,815.5897435897435"
+        },
+        {
+          "link_id": "all:180",
+          "source": "proposal:gnars-base-16",
+          "target": "recipient:0xb2b7d66bb56ce8ff7838dc8053ff35050ed95e9d",
+          "value": 3990,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/16",
+          "path": "M475.3333333333333,815.5897435897435C912.6666666666666,815.5897435897435,912.6666666666666,795.7947320740129,1350,795.7947320740129"
+        },
+        {
+          "link_id": "all:181",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-15",
+          "value": 9980,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-15/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,826,459.3333333333333,826"
+        },
+        {
+          "link_id": "all:182",
+          "source": "proposal:gnars-base-15",
+          "target": "recipient:0xbb4e936d0f29a515757c518fa883794c4048ef62",
+          "value": 9980,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/15",
+          "path": "M475.3333333333333,826C912.6666666666666,826,912.6666666666666,819.6431618752242,1350,819.6431618752242"
+        },
+        {
+          "link_id": "all:183",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-14",
+          "value": 0.0004,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "/proposals/gnars-base-14/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,524.1025641025625,459.3333333333333,524.1025641025625"
+        },
+        {
+          "link_id": "all:184",
+          "source": "proposal:gnars-base-14",
+          "target": "recipient:0xeed943aa972dd394146e6f77b9434df07f36a282",
+          "value": 0.0004,
+          "width": 0,
+          "asset_symbol": "ETH",
+          "href": "https://gnars.com/proposals/base/14",
+          "path": "M475.3333333333333,524.1025641025625C912.6666666666666,524.1025641025625,912.6666666666666,530.8984931650357,1350,530.8984931650357"
+        },
+        {
+          "link_id": "all:185",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-13",
+          "value": 5610,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "/proposals/gnars-base-13/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,773.9487179487177,459.3333333333333,773.9487179487177"
+        },
+        {
+          "link_id": "all:186",
+          "source": "proposal:gnars-base-13",
+          "target": "recipient:0xb2b7d66bb56ce8ff7838dc8053ff35050ed95e9d",
+          "value": 5610,
+          "width": 0,
+          "asset_symbol": "USDC",
+          "href": "https://gnars.com/proposals/base/13",
+          "path": "M475.3333333333333,773.9487179487177C912.6666666666666,773.9487179487177,912.6666666666666,795.7947320740129,1350,795.7947320740129"
+        },
+        {
+          "link_id": "all:187",
+          "source": "treasury:gnars",
+          "target": "proposal:gnars-base-12",
+          "value": 7.777777777e+25,
+          "width": 0,
+          "asset_symbol": "SENDIT",
+          "href": "/proposals/gnars-base-12/",
+          "path": "M30,466.367143381236C244.66666666666666,466.367143381236,244.66666666666666,753.1282051282047,459.3333333333333,753.1282051282047"
+        },
+        {
+          "link_id": "all:188",
+          "source": "proposal:gnars-base-12",
+          "target": "recipient:0xe63617c62f18dbc7eff3d7c9eb8bac4d1c2adecc",
+          "value": 3.8888888885e+25,
+          "width": 0,
+          "asset_symbol": "SENDIT",
+          "href": "https://gnars.com/proposals/base/12",
+          "path": "M475.3333333333333,753.1282051282047C912.6666666666666,753.1282051282047,912.6666666666666,759.958253669574,1350,759.958253669574"
+        },
+        {
+          "link_id": "all:189",
+          "source": "proposal:gnars-base-12",
+          "target": "recipient:0x576950a0ae9c6c134a381fb4cf245e478e82ecab",
+          "value": 3.8888888885e+25,
+          "width": 0,
+          "asset_symbol": "SENDIT",
+          "href": "https://gnars.com/proposals/base/12",
+          "path": "M475.3333333333333,753.1282051282047C912.6666666666666,753.1282051282047,912.6666666666666,770.3685100798305,1350,770.3685100798305"
+        }
+      ]
+    }
+  ]
+}

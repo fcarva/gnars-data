@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["dataset", "as_of", "version", "windows", "field_notes"],
+  "properties": {
+    "dataset": { "const": "community_signals" },
+    "as_of": { "type": "string" },
+    "version": { "type": "integer" },
+    "windows": { "type": "array", "items": { "type": "object" } },
+    "field_notes": { "type": "array", "items": { "type": "object" } }
+  },
+  "additionalProperties": false
+}

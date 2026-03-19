@@ -1,8 +1,20 @@
 {
   "dataset": "search_index",
-  "as_of": "2026-03-19T01:48:16.139Z",
+  "as_of": "2026-03-19T02:41:19.650Z",
   "version": 1,
   "records": [
+    {
+      "title": "Economic Map",
+      "href": "/network/",
+      "kind": "Map",
+      "summary": "Treasury, proposals, projects, and people rendered as one public graph."
+    },
+    {
+      "title": "Treasury Flows",
+      "href": "/treasury/",
+      "kind": "Treasury",
+      "summary": "Proposal-to-project-to-recipient routing through the Gnars treasury."
+    },
     {
       "title": "0xe5f6...8beb",
       "href": "/community/0xe5f6-8beb/",

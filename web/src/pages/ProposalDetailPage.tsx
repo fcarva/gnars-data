@@ -1,3 +1,4 @@
+import { AssetBars } from "../components/AssetBars";
 import { SiteLayout } from "../components/SiteLayout";
 import { formatAmount } from "../lib/format";
 import type { Meta, ProposalDetailPageProps } from "../types";
@@ -23,7 +24,7 @@ export function ProposalDetailPage({ meta, props }: { meta: Meta; props: Proposa
         <div>
           <div className="section-head">
             <span className="eyebrow">Proposal File</span>
-            <h2>Timing, routing, and links.</h2>
+            <h2>Timing, routing, and references.</h2>
           </div>
           <div className="stack-list compact">
             <article className="mini-row static">
@@ -50,8 +51,24 @@ export function ProposalDetailPage({ meta, props }: { meta: Meta; props: Proposa
         </div>
         <div>
           <div className="section-head">
-            <span className="eyebrow">Treasury Routing</span>
-            <h2>Recipients tied to the proposal payload.</h2>
+            <span className="eyebrow">Flow Lineage</span>
+            <h2>Fungible treasury routes decoded from proposal payloads.</h2>
+          </div>
+          <article className="list-card">
+            <div className="timeline-meta">
+              <span>Treasury Routing</span>
+              <span>{proposal.budgetLabel}</span>
+            </div>
+            <AssetBars items={proposal.flowLineage} emptyLabel="No decoded fungible flows" />
+          </article>
+        </div>
+      </section>
+
+      <section className="section-block two-up">
+        <div>
+          <div className="section-head">
+            <span className="eyebrow">Recipients</span>
+            <h2>People or addresses tied to the proposal payload.</h2>
           </div>
           <div className="stack-list compact">
             {proposal.recipients.length ? (
@@ -76,9 +93,6 @@ export function ProposalDetailPage({ meta, props }: { meta: Meta; props: Proposa
             )}
           </div>
         </div>
-      </section>
-
-      <section className="section-block two-up">
         <div>
           <div className="section-head">
             <span className="eyebrow">Related People</span>
@@ -93,19 +107,20 @@ export function ProposalDetailPage({ meta, props }: { meta: Meta; props: Proposa
             ))}
           </div>
         </div>
-        <div>
-          <div className="section-head">
-            <span className="eyebrow">Choice Set</span>
-            <h2>How the proposal was structured for voting.</h2>
-          </div>
-          <div className="stack-list compact">
-            {proposal.choices.map((choice, index) => (
-              <article key={`${choice}:${index}`} className="mini-row static">
-                <span>{proposal.scoresByChoice[index] ?? 0} votes</span>
-                <strong>{choice}</strong>
-              </article>
-            ))}
-          </div>
+      </section>
+
+      <section className="section-block">
+        <div className="section-head">
+          <span className="eyebrow">Choice Set</span>
+          <h2>How the proposal was structured for voting.</h2>
+        </div>
+        <div className="stack-list compact">
+          {proposal.choices.map((choice, index) => (
+            <article key={`${choice}:${index}`} className="mini-row static">
+              <span>{proposal.scoresByChoice[index] ?? 0} votes</span>
+              <strong>{choice}</strong>
+            </article>
+          ))}
         </div>
       </section>
     </SiteLayout>

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NetworkMap } from "../components/NetworkMap";
 import { SiteLayout } from "../components/SiteLayout";
 import type { CommunityIndexPageProps, Meta } from "../types";
 
@@ -16,10 +17,11 @@ export function CommunityIndexPage({ meta, props }: { meta: Meta; props: Communi
       <section className="hero-panel compact">
         <div>
           <span className="eyebrow">Community</span>
-          <h1>One directory for athletes, builders, filmmakers, organizers, delegates, and recipients.</h1>
-          <p>This is the social and economic graph of Gnars, rendered as a browsable public dossier.</p>
+          <h1>Every athlete, builder, filmmaker, organizer, delegate, and recipient on one social graph.</h1>
+          <p>The community index is not a directory of bios. It is the readable edge of the Gnars economy.</p>
         </div>
       </section>
+      <NetworkMap scene={props.economicMap} mode="full" />
       <div className="filter-row">
         {props.filters.map((filter) => (
           <button

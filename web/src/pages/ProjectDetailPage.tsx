@@ -1,3 +1,4 @@
+import { AssetBars } from "../components/AssetBars";
 import { SiteLayout } from "../components/SiteLayout";
 import { TimelineFeed } from "../components/TimelineFeed";
 import { formatAmount } from "../lib/format";
@@ -38,8 +39,28 @@ export function ProjectDetailPage({ meta, props }: { meta: Meta; props: ProjectD
       <section className="section-block two-up">
         <div>
           <div className="section-head">
+            <span className="eyebrow">Funding Split</span>
+            <h2>Budget, realized spend, and recipient concentration by asset.</h2>
+          </div>
+          <article className="list-card">
+            <div className="timeline-meta">
+              <span>Approved</span>
+              <span>{project.budgetLabel}</span>
+            </div>
+            <AssetBars items={project.budgetByAsset} emptyLabel="No approved budget" />
+          </article>
+          <article className="list-card">
+            <div className="timeline-meta">
+              <span>Realized</span>
+              <span>{project.spentByAsset.map((item) => formatAmount(item.symbol, item.amount)).join(" + ") || "0"}</span>
+            </div>
+            <AssetBars items={project.spentByAsset} emptyLabel="No realized spend" />
+          </article>
+        </div>
+        <div>
+          <div className="section-head">
             <span className="eyebrow">Outputs</span>
-            <h2>What this workstream aims to deliver.</h2>
+            <h2>What this workstream is meant to produce.</h2>
           </div>
           <div className="stack-list compact">
             {project.outputs.map((item) => (
@@ -56,10 +77,13 @@ export function ProjectDetailPage({ meta, props }: { meta: Meta; props: ProjectD
             ))}
           </div>
         </div>
+      </section>
+
+      <section className="section-block two-up">
         <div>
           <div className="section-head">
             <span className="eyebrow">Recipients</span>
-            <h2>Who handled the budget.</h2>
+            <h2>Who handled the budget and in which assets.</h2>
           </div>
           <div className="stack-list compact">
             {project.recipients.map((recipient) => (
@@ -70,12 +94,9 @@ export function ProjectDetailPage({ meta, props }: { meta: Meta; props: ProjectD
             ))}
           </div>
         </div>
-      </section>
-
-      <section className="section-block two-up">
         <div>
           <div className="section-head">
-            <span className="eyebrow">Related Proposals</span>
+            <span className="eyebrow">Proposal Lineage</span>
             <h2>Governance links that created or shaped this workstream.</h2>
           </div>
           <div className="stack-list compact">
@@ -87,13 +108,14 @@ export function ProjectDetailPage({ meta, props }: { meta: Meta; props: ProjectD
             ))}
           </div>
         </div>
-        <div>
-          <div className="section-head">
-            <span className="eyebrow">Proof Of Work</span>
-            <h2>Chronology of updates and public checkpoints.</h2>
-          </div>
-          <TimelineFeed items={project.timeline} />
+      </section>
+
+      <section className="section-block">
+        <div className="section-head">
+          <span className="eyebrow">Proof Of Work</span>
+          <h2>Chronology of public updates and checkpoints.</h2>
         </div>
+        <TimelineFeed items={project.timeline} />
       </section>
     </SiteLayout>
   );

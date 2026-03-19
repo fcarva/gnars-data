@@ -600,6 +600,227 @@ img {
   color: var(--accent);
 }
 
+.atlas-hero {
+  align-items: start;
+}
+
+.atlas-hero .metric-grid {
+  gap: 10px;
+}
+
+.graph-card,
+.chart-card {
+  display: grid;
+  gap: 12px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--surface) 94%, transparent);
+}
+
+.signal-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.chart-head,
+.chart-foot {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  color: var(--muted);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.chart-head strong {
+  color: var(--text);
+  font-size: 12px;
+}
+
+.chart-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.chart-legend .governance,
+.activity-path.governance {
+  color: var(--accent);
+  stroke: var(--accent);
+}
+
+.chart-legend .treasury,
+.activity-path.treasury {
+  color: var(--accent-yellow);
+  stroke: var(--accent-yellow);
+}
+
+.chart-legend .deliveries,
+.activity-path.deliveries {
+  color: var(--accent-blue);
+  stroke: var(--accent-blue);
+}
+
+.activity-chart,
+.network-map,
+.sankey-chart {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-tight);
+  background:
+    linear-gradient(180deg, rgba(135, 154, 57, 0.05), transparent),
+    var(--surface-strong);
+}
+
+.activity-path {
+  fill: none;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.filter-row.tight {
+  gap: 6px;
+}
+
+.network-edge {
+  stroke: var(--line-strong);
+  opacity: 0.32;
+}
+
+.network-edge.kind-funded {
+  stroke: var(--accent-yellow);
+  opacity: 0.45;
+}
+
+.network-edge.kind-authored,
+.network-edge.kind-managed {
+  stroke: var(--accent);
+}
+
+.network-edge.kind-delivered {
+  stroke: var(--accent-blue);
+}
+
+.network-node text {
+  fill: var(--text);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  pointer-events: none;
+}
+
+.network-node circle,
+.network-node rect {
+  fill: var(--surface-raised);
+  stroke: var(--line-strong);
+  stroke-width: 1.5;
+}
+
+.network-node.kind-treasury rect {
+  fill: rgba(135, 154, 57, 0.18);
+  stroke: var(--accent);
+}
+
+.network-node.kind-proposal circle {
+  fill: rgba(208, 162, 21, 0.12);
+  stroke: var(--accent-yellow);
+}
+
+.network-node.kind-project rect {
+  fill: rgba(67, 133, 190, 0.12);
+  stroke: var(--accent-blue);
+}
+
+.network-node.kind-person circle {
+  fill: rgba(255, 255, 255, 0.03);
+}
+
+.sankey-link {
+  fill: none;
+  stroke: var(--line-strong);
+  opacity: 0.4;
+}
+
+.sankey-link.asset-eth {
+  stroke: var(--accent-yellow);
+}
+
+.sankey-link.asset-usdc {
+  stroke: var(--accent-blue);
+}
+
+.sankey-link.asset-gnars {
+  stroke: var(--accent);
+}
+
+.sankey-node rect {
+  fill: var(--surface-raised);
+  stroke: var(--line-strong);
+}
+
+.sankey-node.kind-treasury rect {
+  fill: rgba(135, 154, 57, 0.18);
+  stroke: var(--accent);
+}
+
+.sankey-node.kind-proposal rect {
+  fill: rgba(208, 162, 21, 0.14);
+  stroke: var(--accent-yellow);
+}
+
+.sankey-node.kind-project rect {
+  fill: rgba(67, 133, 190, 0.14);
+  stroke: var(--accent-blue);
+}
+
+.sankey-node text {
+  fill: var(--text);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.bar-stack {
+  display: grid;
+  gap: 12px;
+}
+
+.bar-row {
+  display: grid;
+  gap: 6px;
+}
+
+.bar-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.bar-track {
+  height: 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface-strong);
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-yellow));
+}
+
 .app-footer {
   margin-top: 22px;
 }

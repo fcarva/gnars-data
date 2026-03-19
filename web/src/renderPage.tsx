@@ -7,6 +7,8 @@ import { ProjectDetailPage } from "./pages/ProjectDetailPage";
 import { ProposalsPage } from "./pages/ProposalsPage";
 import { ProposalDetailPage } from "./pages/ProposalDetailPage";
 import { TimelinePage } from "./pages/TimelinePage";
+import { NetworkPage } from "./pages/NetworkPage";
+import { TreasuryPage } from "./pages/TreasuryPage";
 import { NotesPage } from "./pages/NotesPage";
 
 export function renderPage(payload: PagePayload) {
@@ -27,6 +29,10 @@ export function renderPage(payload: PagePayload) {
       return <ProposalDetailPage meta={payload.meta} props={payload.props} />;
     case "timeline-index":
       return <TimelinePage meta={payload.meta} props={payload.props} />;
+    case "network-index":
+      return <NetworkPage meta={payload.meta} props={payload.props} />;
+    case "treasury-index":
+      return <TreasuryPage meta={payload.meta} props={payload.props} />;
     case "notes-index":
       return <NotesPage meta={payload.meta} props={payload.props} />;
     default:

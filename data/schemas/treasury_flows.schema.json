@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["dataset", "as_of", "version", "routes", "windows", "proposal_routes"],
+  "properties": {
+    "dataset": { "const": "treasury_flows" },
+    "as_of": { "type": "string" },
+    "version": { "type": "integer" },
+    "routes": { "type": "array", "items": { "type": "object" } },
+    "windows": { "type": "array", "items": { "type": "object" } },
+    "proposal_routes": { "type": "array", "items": { "type": "object" } }
+  },
+  "additionalProperties": false
+}
