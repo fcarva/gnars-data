@@ -111,11 +111,18 @@ img {
 .app-header,
 .app-footer {
   display: grid;
-  grid-template-columns: 260px 1fr 360px;
   gap: 0;
   align-items: stretch;
   padding: 0;
   overflow: hidden;
+}
+
+.app-header {
+  grid-template-columns: minmax(220px, 260px) minmax(0, 1fr) minmax(280px, 360px);
+}
+
+.app-footer {
+  grid-template-columns: minmax(260px, 1fr) minmax(0, 1fr);
 }
 
 .brandmark,
@@ -531,6 +538,16 @@ img {
     transform 120ms ease;
 }
 
+.mini-row span,
+.mini-row strong {
+  min-width: 0;
+}
+
+.mini-row span {
+  flex: 1 1 auto;
+  overflow-wrap: anywhere;
+}
+
 .mini-row strong {
   text-align: right;
   font-family: var(--mono);
@@ -883,6 +900,18 @@ img {
 
   .top-nav a {
     min-height: 44px;
+  }
+}
+
+@media (max-width: 1480px) {
+  .masonry-grid {
+    columns: 3 240px;
+  }
+}
+
+@media (max-width: 1040px) {
+  .masonry-grid {
+    columns: 2 240px;
   }
 }
 
