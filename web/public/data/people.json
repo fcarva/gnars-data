@@ -1,8 +1,8 @@
 {
   "dataset": "people",
-  "as_of": "2026-03-18T20:16:40.716404Z",
+  "as_of": "2026-03-19T03:35:14.475549Z",
   "version": 1,
-  "source_members_snapshot": "20260318T175953Z-gnars-members-api.json",
+  "source_members_snapshot": "20260319T031601Z-gnars-members-api.json",
   "records": [
     {
       "person_id": "0xe5f6...8beb",
@@ -40,9 +40,9 @@
       },
       "receipts": {
         "eth_received": 1.5,
-        "usdc_received": 33465.0,
+        "usdc_received": 24915.0,
         "gnars_received": 0.0,
-        "fungible_transfer_count": 7,
+        "fungible_transfer_count": 6,
         "nft_received_count": 11,
         "nft_transfer_count": 11,
         "by_asset": [
@@ -52,7 +52,7 @@
           },
           {
             "symbol": "USDC",
-            "amount": 33465.0
+            "amount": 24915.0
           }
         ],
         "nft_assets": [
@@ -69,7 +69,6 @@
           "gnars-base-119",
           "gnars-base-26",
           "gnars-base-39",
-          "gnars-base-59",
           "gnars-base-96"
         ],
         "owned_projects": [],
@@ -180,7 +179,7 @@
         "attendance_pct": 17,
         "like_pct": 100,
         "proposals_authored_count": 2,
-        "votes_cast_count": 19
+        "votes_cast_count": 16
       },
       "receipts": {
         "eth_received": 0.0,
@@ -215,10 +214,7 @@
           "gnars-base-39",
           "gnars-base-40",
           "gnars-base-57",
-          "gnars-base-60",
-          "gnars-base-68",
           "gnars-base-70",
-          "gnars-base-76",
           "snapshot-0x30847f96110952ed83c1aa78c09b5cc11ef1076614560efd29de73e8b9b18894",
           "snapshot-0x724cb37a14c245ee347f8144b1f65606147389624ccc11ce77280bf630b08be1",
           "snapshot-0x89077af5385f8ebea349c16a7b20ea052e31ea865011da3eed1c8e6567305d38"
@@ -329,7 +325,7 @@
         "attendance_pct": 9,
         "like_pct": 89,
         "proposals_authored_count": 1,
-        "votes_cast_count": 9
+        "votes_cast_count": 7
       },
       "receipts": {
         "eth_received": 0.00026671,
@@ -366,8 +362,6 @@
           "gnars-base-22",
           "gnars-base-31",
           "gnars-base-53",
-          "gnars-base-75",
-          "gnars-base-76",
           "gnars-base-85"
         ],
         "payout_proposals": [
@@ -415,7 +409,7 @@
         "attendance_pct": 31,
         "like_pct": 94,
         "proposals_authored_count": 6,
-        "votes_cast_count": 32
+        "votes_cast_count": 23
       },
       "receipts": {
         "eth_received": 3.390042,
@@ -450,28 +444,19 @@
           "gnars-base-104",
           "gnars-base-106",
           "gnars-base-107",
-          "gnars-base-11",
           "gnars-base-110",
-          "gnars-base-116",
-          "gnars-base-117",
           "gnars-base-118",
           "gnars-base-119",
           "gnars-base-26",
           "gnars-base-33",
           "gnars-base-36",
           "gnars-base-41",
-          "gnars-base-42",
           "gnars-base-45",
           "gnars-base-46",
           "gnars-base-53",
           "gnars-base-56",
           "gnars-base-57",
-          "gnars-base-59",
-          "gnars-base-66",
-          "gnars-base-67",
-          "gnars-base-68",
           "gnars-base-72",
-          "gnars-base-74",
           "gnars-base-79",
           "gnars-base-86",
           "gnars-base-95",
@@ -528,7 +513,7 @@
         "attendance_pct": 63,
         "like_pct": 83,
         "proposals_authored_count": 2,
-        "votes_cast_count": 76
+        "votes_cast_count": 67
       },
       "receipts": {
         "eth_received": 0.0,
@@ -553,14 +538,11 @@
         "voted_proposals": [
           "gnars-base-102",
           "gnars-base-104",
-          "gnars-base-108",
-          "gnars-base-109",
-          "gnars-base-11",
           "gnars-base-110",
           "gnars-base-111",
           "gnars-base-112",
-          "gnars-base-117",
           "gnars-base-118",
+          "gnars-base-119",
           "gnars-base-12",
           "gnars-base-13",
           "gnars-base-14",
@@ -583,19 +565,13 @@
           "gnars-base-39",
           "gnars-base-47",
           "gnars-base-48",
-          "gnars-base-52",
           "gnars-base-57",
           "gnars-base-61",
           "gnars-base-63",
           "gnars-base-64",
           "gnars-base-65",
-          "gnars-base-66",
-          "gnars-base-67",
-          "gnars-base-68",
           "gnars-base-70",
           "gnars-base-72",
-          "gnars-base-74",
-          "gnars-base-76",
           "gnars-base-77",
           "gnars-base-79",
           "gnars-base-80",
@@ -701,67 +677,6 @@
       "notes": ""
     },
     {
-      "person_id": "0x8335...2913",
-      "slug": "0x8335-2913",
-      "display_name": "0x8335...2913",
-      "address": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
-      "address_short": "0x8335...2913",
-      "status": "active",
-      "role": "community member",
-      "roles": [],
-      "tags": [
-        "contributor",
-        "recipient"
-      ],
-      "domains": [],
-      "bio": "",
-      "identity": {
-        "member_url": "https://www.gnars.com/members/0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
-        "farcaster": null,
-        "github": null,
-        "avatar_url": null,
-        "website": null,
-        "x": null,
-        "instagram": null
-      },
-      "governance": {
-        "holder_token_count": 0,
-        "delegated_token_count": 0,
-        "active_votes": 0,
-        "votes_count": 0,
-        "attendance_pct": null,
-        "like_pct": null,
-        "proposals_authored_count": 0,
-        "votes_cast_count": 0
-      },
-      "receipts": {
-        "eth_received": 0.0,
-        "usdc_received": 8550.0,
-        "gnars_received": 0.0,
-        "fungible_transfer_count": 1,
-        "nft_received_count": 0,
-        "nft_transfer_count": 0,
-        "by_asset": [
-          {
-            "symbol": "USDC",
-            "amount": 8550.0
-          }
-        ],
-        "nft_assets": []
-      },
-      "relationships": {
-        "authored_proposals": [],
-        "voted_proposals": [],
-        "payout_proposals": [
-          "gnars-base-58"
-        ],
-        "owned_projects": [],
-        "related_projects": [],
-        "related_updates": []
-      },
-      "notes": ""
-    },
-    {
       "person_id": "0xc407...3c28",
       "slug": "0xc407-3c28",
       "display_name": "0xc407...3c28",
@@ -858,7 +773,7 @@
         "attendance_pct": 37,
         "like_pct": 97,
         "proposals_authored_count": 3,
-        "votes_cast_count": 53
+        "votes_cast_count": 47
       },
       "receipts": {
         "eth_received": 0.0,
@@ -883,8 +798,6 @@
         ],
         "voted_proposals": [
           "gnars-base-100",
-          "gnars-base-11",
-          "gnars-base-117",
           "gnars-base-12",
           "gnars-base-13",
           "gnars-base-14",
@@ -901,13 +814,9 @@
           "gnars-base-36",
           "gnars-base-47",
           "gnars-base-48",
-          "gnars-base-52",
           "gnars-base-56",
           "gnars-base-57",
-          "gnars-base-59",
-          "gnars-base-60",
           "gnars-base-61",
-          "gnars-base-68",
           "gnars-base-70",
           "gnars-base-77",
           "gnars-base-86",
@@ -1199,140 +1108,6 @@
       "notes": ""
     },
     {
-      "person_id": "0xd32d...7cd4",
-      "slug": "0xd32d-7cd4",
-      "display_name": "0xd32d...7cd4",
-      "address": "0xd32d87e34913f7dee83a7a6faed8b6f054b97cd4",
-      "address_short": "0xd32d...7cd4",
-      "status": "active",
-      "role": "community member",
-      "roles": [],
-      "tags": [
-        "contributor",
-        "proposer",
-        "recipient"
-      ],
-      "domains": [],
-      "bio": "",
-      "identity": {
-        "member_url": "https://www.gnars.com/members/0xd32d87e34913f7dee83a7a6faed8b6f054b97cd4",
-        "farcaster": null,
-        "github": null,
-        "avatar_url": null,
-        "website": null,
-        "x": null,
-        "instagram": null
-      },
-      "governance": {
-        "holder_token_count": 0,
-        "delegated_token_count": 0,
-        "active_votes": 0,
-        "votes_count": 0,
-        "attendance_pct": null,
-        "like_pct": null,
-        "proposals_authored_count": 1,
-        "votes_cast_count": 1
-      },
-      "receipts": {
-        "eth_received": 0.0,
-        "usdc_received": 6204.0,
-        "gnars_received": 0.0,
-        "fungible_transfer_count": 1,
-        "nft_received_count": 0,
-        "nft_transfer_count": 0,
-        "by_asset": [
-          {
-            "symbol": "USDC",
-            "amount": 6204.0
-          }
-        ],
-        "nft_assets": []
-      },
-      "relationships": {
-        "authored_proposals": [
-          "gnars-base-61"
-        ],
-        "voted_proposals": [
-          "gnars-base-61"
-        ],
-        "payout_proposals": [
-          "gnars-base-60"
-        ],
-        "owned_projects": [],
-        "related_projects": [],
-        "related_updates": []
-      },
-      "notes": ""
-    },
-    {
-      "person_id": "0xdb47...63c4",
-      "slug": "0xdb47-63c4",
-      "display_name": "0xdb47...63c4",
-      "address": "0xdb47bd2fca1237038aa2c542f64cfe08591463c4",
-      "address_short": "0xdb47...63c4",
-      "status": "active",
-      "role": "community member",
-      "roles": [],
-      "tags": [
-        "athlete",
-        "contributor",
-        "proposer",
-        "recipient"
-      ],
-      "domains": [],
-      "bio": "",
-      "identity": {
-        "member_url": "https://www.gnars.com/members/0xdb47bd2fca1237038aa2c542f64cfe08591463c4",
-        "farcaster": null,
-        "github": null,
-        "avatar_url": null,
-        "website": null,
-        "x": null,
-        "instagram": null
-      },
-      "governance": {
-        "holder_token_count": 0,
-        "delegated_token_count": 0,
-        "active_votes": 0,
-        "votes_count": 0,
-        "attendance_pct": null,
-        "like_pct": null,
-        "proposals_authored_count": 2,
-        "votes_cast_count": 1
-      },
-      "receipts": {
-        "eth_received": 0.0,
-        "usdc_received": 5660.0,
-        "gnars_received": 0.0,
-        "fungible_transfer_count": 1,
-        "nft_received_count": 0,
-        "nft_transfer_count": 0,
-        "by_asset": [
-          {
-            "symbol": "USDC",
-            "amount": 5660.0
-          }
-        ],
-        "nft_assets": []
-      },
-      "relationships": {
-        "authored_proposals": [
-          "gnars-base-51",
-          "gnars-base-52"
-        ],
-        "voted_proposals": [
-          "gnars-base-52"
-        ],
-        "payout_proposals": [
-          "gnars-base-51"
-        ],
-        "owned_projects": [],
-        "related_projects": [],
-        "related_updates": []
-      },
-      "notes": ""
-    },
-    {
       "person_id": "0xe8b2...599d",
       "slug": "0xe8b2-599d",
       "display_name": "0xe8b2...599d",
@@ -1398,283 +1173,6 @@
       "notes": ""
     },
     {
-      "person_id": "0x9ad8...e1c8",
-      "slug": "0x9ad8-e1c8",
-      "display_name": "0x9ad8...e1c8",
-      "address": "0x9ad8d2a8ef4bf60a667dd43fcb178bdbd93ae1c8",
-      "address_short": "0x9ad8...e1c8",
-      "status": "active",
-      "role": "community member",
-      "roles": [],
-      "tags": [
-        "athlete",
-        "contributor",
-        "delegate",
-        "holder",
-        "proposer",
-        "recipient"
-      ],
-      "domains": [],
-      "bio": "",
-      "identity": {
-        "member_url": "https://www.gnars.com/members/0x9ad8d2a8ef4bf60a667dd43fcb178bdbd93ae1c8",
-        "farcaster": null,
-        "github": null,
-        "avatar_url": null,
-        "website": null,
-        "x": null,
-        "instagram": null
-      },
-      "governance": {
-        "holder_token_count": 1,
-        "delegated_token_count": 1,
-        "active_votes": 1,
-        "votes_count": 2,
-        "attendance_pct": 2,
-        "like_pct": 100,
-        "proposals_authored_count": 2,
-        "votes_cast_count": 2
-      },
-      "receipts": {
-        "eth_received": 0.42,
-        "usdc_received": 5500.0,
-        "gnars_received": 0.0,
-        "fungible_transfer_count": 3,
-        "nft_received_count": 0,
-        "nft_transfer_count": 0,
-        "by_asset": [
-          {
-            "symbol": "ETH",
-            "amount": 0.42
-          },
-          {
-            "symbol": "USDC",
-            "amount": 5500.0
-          }
-        ],
-        "nft_assets": []
-      },
-      "relationships": {
-        "authored_proposals": [
-          "gnars-base-104",
-          "gnars-base-76"
-        ],
-        "voted_proposals": [
-          "gnars-base-108",
-          "gnars-base-76"
-        ],
-        "payout_proposals": [
-          "gnars-base-104",
-          "gnars-base-41",
-          "gnars-base-76"
-        ],
-        "owned_projects": [],
-        "related_projects": [],
-        "related_updates": []
-      },
-      "notes": ""
-    },
-    {
-      "person_id": "0x4f81...3f20",
-      "slug": "0x4f81-3f20",
-      "display_name": "0x4f81...3f20",
-      "address": "0x4f81ca00ccadfaffa10672d863e6e6077bad3f20",
-      "address_short": "0x4f81...3f20",
-      "status": "active",
-      "role": "community member",
-      "roles": [],
-      "tags": [
-        "contributor",
-        "recipient"
-      ],
-      "domains": [],
-      "bio": "",
-      "identity": {
-        "member_url": "https://www.gnars.com/members/0x4f81ca00ccadfaffa10672d863e6e6077bad3f20",
-        "farcaster": null,
-        "github": null,
-        "avatar_url": null,
-        "website": null,
-        "x": null,
-        "instagram": null
-      },
-      "governance": {
-        "holder_token_count": 0,
-        "delegated_token_count": 0,
-        "active_votes": 0,
-        "votes_count": 0,
-        "attendance_pct": null,
-        "like_pct": null,
-        "proposals_authored_count": 0,
-        "votes_cast_count": 0
-      },
-      "receipts": {
-        "eth_received": 0.0,
-        "usdc_received": 5100.0,
-        "gnars_received": 0.0,
-        "fungible_transfer_count": 1,
-        "nft_received_count": 0,
-        "nft_transfer_count": 0,
-        "by_asset": [
-          {
-            "symbol": "USDC",
-            "amount": 5100.0
-          }
-        ],
-        "nft_assets": []
-      },
-      "relationships": {
-        "authored_proposals": [],
-        "voted_proposals": [],
-        "payout_proposals": [
-          "gnars-base-52"
-        ],
-        "owned_projects": [],
-        "related_projects": [],
-        "related_updates": []
-      },
-      "notes": ""
-    },
-    {
-      "person_id": "0x43df...ea66",
-      "slug": "0x43df-ea66",
-      "display_name": "0x43df...ea66",
-      "address": "0x43df6cea26d6bbe40cfa065ae57380327f1dea66",
-      "address_short": "0x43df...ea66",
-      "status": "active",
-      "role": "community member",
-      "roles": [],
-      "tags": [
-        "contributor",
-        "recipient"
-      ],
-      "domains": [],
-      "bio": "",
-      "identity": {
-        "member_url": "https://www.gnars.com/members/0x43df6cea26d6bbe40cfa065ae57380327f1dea66",
-        "farcaster": null,
-        "github": null,
-        "avatar_url": null,
-        "website": null,
-        "x": null,
-        "instagram": null
-      },
-      "governance": {
-        "holder_token_count": 0,
-        "delegated_token_count": 0,
-        "active_votes": 0,
-        "votes_count": 0,
-        "attendance_pct": null,
-        "like_pct": null,
-        "proposals_authored_count": 0,
-        "votes_cast_count": 0
-      },
-      "receipts": {
-        "eth_received": 0.0,
-        "usdc_received": 5000.0,
-        "gnars_received": 0.0,
-        "fungible_transfer_count": 1,
-        "nft_received_count": 0,
-        "nft_transfer_count": 0,
-        "by_asset": [
-          {
-            "symbol": "USDC",
-            "amount": 5000.0
-          }
-        ],
-        "nft_assets": []
-      },
-      "relationships": {
-        "authored_proposals": [],
-        "voted_proposals": [],
-        "payout_proposals": [
-          "gnars-base-83"
-        ],
-        "owned_projects": [],
-        "related_projects": [],
-        "related_updates": []
-      },
-      "notes": ""
-    },
-    {
-      "person_id": "0x2858...960f",
-      "slug": "0x2858-960f",
-      "display_name": "0x2858...960f",
-      "address": "0x2858eba3985476ca81217f2f8c5e65508f34960f",
-      "address_short": "0x2858...960f",
-      "status": "active",
-      "role": "community member",
-      "roles": [],
-      "tags": [
-        "contributor",
-        "delegate",
-        "holder",
-        "proposer",
-        "recipient"
-      ],
-      "domains": [],
-      "bio": "",
-      "identity": {
-        "member_url": "https://www.gnars.com/members/0x2858eba3985476ca81217f2f8c5e65508f34960f",
-        "farcaster": null,
-        "github": null,
-        "avatar_url": null,
-        "website": null,
-        "x": null,
-        "instagram": null
-      },
-      "governance": {
-        "holder_token_count": 14,
-        "delegated_token_count": 14,
-        "active_votes": 14,
-        "votes_count": 12,
-        "attendance_pct": 12,
-        "like_pct": 100,
-        "proposals_authored_count": 1,
-        "votes_cast_count": 10
-      },
-      "receipts": {
-        "eth_received": 0.0,
-        "usdc_received": 4950.0,
-        "gnars_received": 0.0,
-        "fungible_transfer_count": 2,
-        "nft_received_count": 0,
-        "nft_transfer_count": 0,
-        "by_asset": [
-          {
-            "symbol": "USDC",
-            "amount": 4950.0
-          }
-        ],
-        "nft_assets": []
-      },
-      "relationships": {
-        "authored_proposals": [
-          "gnars-base-64"
-        ],
-        "voted_proposals": [
-          "gnars-base-110",
-          "gnars-base-43",
-          "gnars-base-47",
-          "gnars-base-48",
-          "gnars-base-64",
-          "gnars-base-65",
-          "gnars-base-66",
-          "gnars-base-67",
-          "gnars-base-79",
-          "gnars-base-96"
-        ],
-        "payout_proposals": [
-          "gnars-base-43",
-          "gnars-base-64"
-        ],
-        "owned_projects": [],
-        "related_projects": [],
-        "related_updates": []
-      },
-      "notes": ""
-    },
-    {
       "person_id": "0x387a...fffd",
       "slug": "0x387a-fffd",
       "display_name": "0x387a...fffd",
@@ -1710,19 +1208,19 @@
         "attendance_pct": 58,
         "like_pct": 97,
         "proposals_authored_count": 10,
-        "votes_cast_count": 101
+        "votes_cast_count": 93
       },
       "receipts": {
-        "eth_received": 0.12,
+        "eth_received": 10.35730283,
         "usdc_received": 4500.0,
         "gnars_received": 0.0,
-        "fungible_transfer_count": 2,
+        "fungible_transfer_count": 3,
         "nft_received_count": 0,
         "nft_transfer_count": 0,
         "by_asset": [
           {
             "symbol": "ETH",
-            "amount": 0.12
+            "amount": 10.35730283
           },
           {
             "symbol": "USDC",
@@ -1748,10 +1246,8 @@
           "gnars-base-101",
           "gnars-base-102",
           "gnars-base-104",
-          "gnars-base-108",
           "gnars-base-110",
           "gnars-base-111",
-          "gnars-base-117",
           "gnars-base-12",
           "gnars-base-14",
           "gnars-base-17",
@@ -1777,17 +1273,13 @@
           "gnars-base-39",
           "gnars-base-40",
           "gnars-base-41",
-          "gnars-base-42",
           "gnars-base-45",
           "gnars-base-46",
           "gnars-base-47",
           "gnars-base-48",
-          "gnars-base-50",
-          "gnars-base-52",
           "gnars-base-53",
           "gnars-base-56",
           "gnars-base-57",
-          "gnars-base-59",
           "gnars-base-61",
           "gnars-base-64",
           "gnars-base-65",
@@ -1795,8 +1287,6 @@
           "gnars-base-70",
           "gnars-base-71",
           "gnars-base-72",
-          "gnars-base-74",
-          "gnars-base-76",
           "snapshot-0x00fc8920736e34ab77c10ed9837df13aed9ddfe35132c271d5982a19a5857b74",
           "snapshot-0x013702a15624613befa0ed1488350610f8d98c3d71c82e240183e8692600a5f9",
           "snapshot-0x08ea9fc7005cfae9028e522eacf567748a00e33ad8991174389096bf4f14334b",
@@ -1848,68 +1338,8 @@
           "snapshot-0xf9d1ed89fff9a329cb4fb25771215836f3f2ce985a086115cfe4f34ea6ef0d5c"
         ],
         "payout_proposals": [
-          "gnars-base-33"
-        ],
-        "owned_projects": [],
-        "related_projects": [],
-        "related_updates": []
-      },
-      "notes": ""
-    },
-    {
-      "person_id": "0xb3fb...7129",
-      "slug": "0xb3fb-7129",
-      "display_name": "0xb3fb...7129",
-      "address": "0xb3fb1987aade1002e4791d49f44ace54899b7129",
-      "address_short": "0xb3fb...7129",
-      "status": "active",
-      "role": "community member",
-      "roles": [],
-      "tags": [
-        "contributor",
-        "recipient"
-      ],
-      "domains": [],
-      "bio": "",
-      "identity": {
-        "member_url": "https://www.gnars.com/members/0xb3fb1987aade1002e4791d49f44ace54899b7129",
-        "farcaster": null,
-        "github": null,
-        "avatar_url": null,
-        "website": null,
-        "x": null,
-        "instagram": null
-      },
-      "governance": {
-        "holder_token_count": 0,
-        "delegated_token_count": 0,
-        "active_votes": 0,
-        "votes_count": 0,
-        "attendance_pct": null,
-        "like_pct": null,
-        "proposals_authored_count": 0,
-        "votes_cast_count": 0
-      },
-      "receipts": {
-        "eth_received": 0.0,
-        "usdc_received": 3924.0,
-        "gnars_received": 0.0,
-        "fungible_transfer_count": 1,
-        "nft_received_count": 0,
-        "nft_transfer_count": 0,
-        "by_asset": [
-          {
-            "symbol": "USDC",
-            "amount": 3924.0
-          }
-        ],
-        "nft_assets": []
-      },
-      "relationships": {
-        "authored_proposals": [],
-        "voted_proposals": [],
-        "payout_proposals": [
-          "gnars-base-75"
+          "gnars-base-33",
+          "gnars-ethereum-38"
         ],
         "owned_projects": [],
         "related_projects": [],
@@ -2014,7 +1444,7 @@
         "attendance_pct": 12,
         "like_pct": 83,
         "proposals_authored_count": 2,
-        "votes_cast_count": 12
+        "votes_cast_count": 8
       },
       "receipts": {
         "eth_received": 0.0,
@@ -2037,14 +1467,10 @@
           "gnars-base-89"
         ],
         "voted_proposals": [
-          "gnars-base-43",
-          "gnars-base-44",
           "gnars-base-45",
           "gnars-base-46",
           "gnars-base-47",
           "gnars-base-48",
-          "gnars-base-50",
-          "gnars-base-52",
           "gnars-base-86",
           "gnars-base-87",
           "gnars-base-89",
@@ -2126,6 +1552,78 @@
         ],
         "payout_proposals": [
           "gnars-base-63"
+        ],
+        "owned_projects": [],
+        "related_projects": [],
+        "related_updates": []
+      },
+      "notes": ""
+    },
+    {
+      "person_id": "0x9ad8...e1c8",
+      "slug": "0x9ad8-e1c8",
+      "display_name": "0x9ad8...e1c8",
+      "address": "0x9ad8d2a8ef4bf60a667dd43fcb178bdbd93ae1c8",
+      "address_short": "0x9ad8...e1c8",
+      "status": "active",
+      "role": "community member",
+      "roles": [],
+      "tags": [
+        "athlete",
+        "contributor",
+        "delegate",
+        "holder",
+        "proposer",
+        "recipient"
+      ],
+      "domains": [],
+      "bio": "",
+      "identity": {
+        "member_url": "https://www.gnars.com/members/0x9ad8d2a8ef4bf60a667dd43fcb178bdbd93ae1c8",
+        "farcaster": null,
+        "github": null,
+        "avatar_url": null,
+        "website": null,
+        "x": null,
+        "instagram": null
+      },
+      "governance": {
+        "holder_token_count": 1,
+        "delegated_token_count": 1,
+        "active_votes": 1,
+        "votes_count": 2,
+        "attendance_pct": 2,
+        "like_pct": 100,
+        "proposals_authored_count": 1,
+        "votes_cast_count": 0
+      },
+      "receipts": {
+        "eth_received": 0.42,
+        "usdc_received": 3000.0,
+        "gnars_received": 0.0,
+        "fungible_transfer_count": 2,
+        "nft_received_count": 0,
+        "nft_transfer_count": 0,
+        "by_asset": [
+          {
+            "symbol": "ETH",
+            "amount": 0.42
+          },
+          {
+            "symbol": "USDC",
+            "amount": 3000.0
+          }
+        ],
+        "nft_assets": []
+      },
+      "relationships": {
+        "authored_proposals": [
+          "gnars-base-104"
+        ],
+        "voted_proposals": [],
+        "payout_proposals": [
+          "gnars-base-104",
+          "gnars-base-41"
         ],
         "owned_projects": [],
         "related_projects": [],
@@ -2234,7 +1732,7 @@
         "attendance_pct": 23,
         "like_pct": 96,
         "proposals_authored_count": 1,
-        "votes_cast_count": 21
+        "votes_cast_count": 16
       },
       "receipts": {
         "eth_received": 0.619,
@@ -2264,7 +1762,6 @@
           "gnars-base-101",
           "gnars-base-102",
           "gnars-base-104",
-          "gnars-base-108",
           "gnars-base-110",
           "gnars-base-111",
           "gnars-base-119",
@@ -2274,106 +1771,12 @@
           "gnars-base-54",
           "gnars-base-56",
           "gnars-base-57",
-          "gnars-base-59",
-          "gnars-base-68",
-          "gnars-base-74",
-          "gnars-base-76",
           "gnars-base-89",
           "gnars-base-93",
           "gnars-base-96"
         ],
         "payout_proposals": [
           "gnars-base-101"
-        ],
-        "owned_projects": [],
-        "related_projects": [],
-        "related_updates": []
-      },
-      "notes": ""
-    },
-    {
-      "person_id": "0x8d2a...b252",
-      "slug": "0x8d2a-b252",
-      "display_name": "0x8d2a...b252",
-      "address": "0x8d2a253a5885806aa14e583c80c8833a904fb252",
-      "address_short": "0x8d2a...b252",
-      "status": "active",
-      "role": "community member",
-      "roles": [],
-      "tags": [
-        "athlete",
-        "contributor",
-        "delegate",
-        "holder",
-        "proposer",
-        "recipient"
-      ],
-      "domains": [],
-      "bio": "",
-      "identity": {
-        "member_url": "https://www.gnars.com/members/0x8d2a253a5885806aa14e583c80c8833a904fb252",
-        "farcaster": null,
-        "github": null,
-        "avatar_url": null,
-        "website": null,
-        "x": null,
-        "instagram": null
-      },
-      "governance": {
-        "holder_token_count": 6,
-        "delegated_token_count": 6,
-        "active_votes": 6,
-        "votes_count": 25,
-        "attendance_pct": 24,
-        "like_pct": 100,
-        "proposals_authored_count": 2,
-        "votes_cast_count": 21
-      },
-      "receipts": {
-        "eth_received": 0.0,
-        "usdc_received": 2500.0,
-        "gnars_received": 0.0,
-        "fungible_transfer_count": 1,
-        "nft_received_count": 0,
-        "nft_transfer_count": 0,
-        "by_asset": [
-          {
-            "symbol": "USDC",
-            "amount": 2500.0
-          }
-        ],
-        "nft_assets": []
-      },
-      "relationships": {
-        "authored_proposals": [
-          "gnars-base-107",
-          "gnars-base-108"
-        ],
-        "voted_proposals": [
-          "gnars-base-102",
-          "gnars-base-104",
-          "gnars-base-106",
-          "gnars-base-107",
-          "gnars-base-108",
-          "gnars-base-110",
-          "gnars-base-118",
-          "gnars-base-61",
-          "gnars-base-63",
-          "gnars-base-66",
-          "gnars-base-67",
-          "gnars-base-70",
-          "gnars-base-72",
-          "gnars-base-76",
-          "gnars-base-77",
-          "gnars-base-80",
-          "gnars-base-85",
-          "gnars-base-86",
-          "gnars-base-89",
-          "gnars-base-95",
-          "gnars-base-96"
-        ],
-        "payout_proposals": [
-          "gnars-base-108"
         ],
         "owned_projects": [],
         "related_projects": [],
@@ -2449,6 +1852,80 @@
       "notes": ""
     },
     {
+      "person_id": "0x2858...960f",
+      "slug": "0x2858-960f",
+      "display_name": "0x2858...960f",
+      "address": "0x2858eba3985476ca81217f2f8c5e65508f34960f",
+      "address_short": "0x2858...960f",
+      "status": "active",
+      "role": "community member",
+      "roles": [],
+      "tags": [
+        "contributor",
+        "delegate",
+        "holder",
+        "proposer",
+        "recipient"
+      ],
+      "domains": [],
+      "bio": "",
+      "identity": {
+        "member_url": "https://www.gnars.com/members/0x2858eba3985476ca81217f2f8c5e65508f34960f",
+        "farcaster": null,
+        "github": null,
+        "avatar_url": null,
+        "website": null,
+        "x": null,
+        "instagram": null
+      },
+      "governance": {
+        "holder_token_count": 14,
+        "delegated_token_count": 14,
+        "active_votes": 14,
+        "votes_count": 12,
+        "attendance_pct": 12,
+        "like_pct": 100,
+        "proposals_authored_count": 1,
+        "votes_cast_count": 7
+      },
+      "receipts": {
+        "eth_received": 0.0,
+        "usdc_received": 2250.0,
+        "gnars_received": 0.0,
+        "fungible_transfer_count": 1,
+        "nft_received_count": 0,
+        "nft_transfer_count": 0,
+        "by_asset": [
+          {
+            "symbol": "USDC",
+            "amount": 2250.0
+          }
+        ],
+        "nft_assets": []
+      },
+      "relationships": {
+        "authored_proposals": [
+          "gnars-base-64"
+        ],
+        "voted_proposals": [
+          "gnars-base-110",
+          "gnars-base-47",
+          "gnars-base-48",
+          "gnars-base-64",
+          "gnars-base-65",
+          "gnars-base-79",
+          "gnars-base-96"
+        ],
+        "payout_proposals": [
+          "gnars-base-64"
+        ],
+        "owned_projects": [],
+        "related_projects": [],
+        "related_updates": []
+      },
+      "notes": ""
+    },
+    {
       "person_id": "0x0020...597e",
       "slug": "0x0020-597e",
       "display_name": "0x0020...597e",
@@ -2510,78 +1987,6 @@
       "notes": ""
     },
     {
-      "person_id": "0x2581...f89f",
-      "slug": "0x2581-f89f",
-      "display_name": "0x2581...f89f",
-      "address": "0x25810d1a8b1affc444d5333bf0496f1202d6f89f",
-      "address_short": "0x2581...f89f",
-      "status": "active",
-      "role": "community member",
-      "roles": [],
-      "tags": [
-        "athlete",
-        "contributor",
-        "delegate",
-        "holder",
-        "proposer",
-        "recipient"
-      ],
-      "domains": [],
-      "bio": "",
-      "identity": {
-        "member_url": "https://www.gnars.com/members/0x25810d1a8b1affc444d5333bf0496f1202d6f89f",
-        "farcaster": null,
-        "github": null,
-        "avatar_url": null,
-        "website": null,
-        "x": null,
-        "instagram": null
-      },
-      "governance": {
-        "holder_token_count": 2,
-        "delegated_token_count": 16,
-        "active_votes": 16,
-        "votes_count": 4,
-        "attendance_pct": 4,
-        "like_pct": 100,
-        "proposals_authored_count": 2,
-        "votes_cast_count": 3
-      },
-      "receipts": {
-        "eth_received": 0.0,
-        "usdc_received": 1570.0,
-        "gnars_received": 0.0,
-        "fungible_transfer_count": 1,
-        "nft_received_count": 0,
-        "nft_transfer_count": 0,
-        "by_asset": [
-          {
-            "symbol": "USDC",
-            "amount": 1570.0
-          }
-        ],
-        "nft_assets": []
-      },
-      "relationships": {
-        "authored_proposals": [
-          "gnars-base-117",
-          "gnars-base-70"
-        ],
-        "voted_proposals": [
-          "gnars-base-117",
-          "gnars-base-70",
-          "gnars-base-95"
-        ],
-        "payout_proposals": [
-          "gnars-base-117"
-        ],
-        "owned_projects": [],
-        "related_projects": [],
-        "related_updates": []
-      },
-      "notes": ""
-    },
-    {
       "person_id": "fcarva",
       "slug": "fcarva",
       "display_name": "fcarva",
@@ -2590,10 +1995,10 @@
       "status": "active",
       "role": "community infrastructure, documentation, QA",
       "roles": [
-        "community infrastructure, documentation, QA",
+        "operations",
         "documentation",
         "community infrastructure",
-        "operations"
+        "community infrastructure, documentation, QA"
       ],
       "tags": [
         "builder",
@@ -2624,11 +2029,11 @@
         "holder_token_count": 8,
         "delegated_token_count": 4,
         "active_votes": 4,
-        "votes_count": 24,
-        "attendance_pct": 23,
+        "votes_count": 25,
+        "attendance_pct": 24,
         "like_pct": 96,
         "proposals_authored_count": 1,
-        "votes_cast_count": 22
+        "votes_cast_count": 17
       },
       "receipts": {
         "eth_received": 0.55,
@@ -2662,22 +2067,17 @@
           "gnars-base-110",
           "gnars-base-111",
           "gnars-base-112",
-          "gnars-base-116",
-          "gnars-base-117",
           "gnars-base-118",
           "gnars-base-119",
           "gnars-base-24",
           "gnars-base-69",
           "gnars-base-70",
           "gnars-base-72",
-          "gnars-base-74",
-          "gnars-base-76",
           "gnars-base-80",
           "gnars-base-81",
           "gnars-base-85",
           "gnars-base-86",
           "gnars-base-88",
-          "gnars-base-91",
           "gnars-base-93",
           "gnars-base-95",
           "gnars-base-96"
@@ -2738,8 +2138,8 @@
         "votes_count": 15,
         "attendance_pct": 15,
         "like_pct": 100,
-        "proposals_authored_count": 6,
-        "votes_cast_count": 14
+        "proposals_authored_count": 4,
+        "votes_cast_count": 10
       },
       "receipts": {
         "eth_received": 0.0,
@@ -2758,8 +2158,6 @@
       },
       "relationships": {
         "authored_proposals": [
-          "gnars-base-66",
-          "gnars-base-67",
           "gnars-base-77",
           "gnars-base-80",
           "gnars-base-94",
@@ -2767,10 +2165,6 @@
         ],
         "voted_proposals": [
           "gnars-base-106",
-          "gnars-base-108",
-          "gnars-base-59",
-          "gnars-base-67",
-          "gnars-base-76",
           "gnars-base-77",
           "gnars-base-80",
           "gnars-base-81",
@@ -2791,67 +2185,6 @@
       "notes": ""
     },
     {
-      "person_id": "0xe61b...728e",
-      "slug": "0xe61b-728e",
-      "display_name": "0xe61b...728e",
-      "address": "0xe61bcfe6a7e4fd33f1c439558e9fd549371d728e",
-      "address_short": "0xe61b...728e",
-      "status": "active",
-      "role": "community member",
-      "roles": [],
-      "tags": [
-        "contributor",
-        "recipient"
-      ],
-      "domains": [],
-      "bio": "",
-      "identity": {
-        "member_url": "https://www.gnars.com/members/0xe61bcfe6a7e4fd33f1c439558e9fd549371d728e",
-        "farcaster": null,
-        "github": null,
-        "avatar_url": null,
-        "website": null,
-        "x": null,
-        "instagram": null
-      },
-      "governance": {
-        "holder_token_count": 0,
-        "delegated_token_count": 0,
-        "active_votes": 0,
-        "votes_count": 0,
-        "attendance_pct": null,
-        "like_pct": null,
-        "proposals_authored_count": 0,
-        "votes_cast_count": 0
-      },
-      "receipts": {
-        "eth_received": 0.0,
-        "usdc_received": 1250.0,
-        "gnars_received": 0.0,
-        "fungible_transfer_count": 1,
-        "nft_received_count": 0,
-        "nft_transfer_count": 0,
-        "by_asset": [
-          {
-            "symbol": "USDC",
-            "amount": 1250.0
-          }
-        ],
-        "nft_assets": []
-      },
-      "relationships": {
-        "authored_proposals": [],
-        "voted_proposals": [],
-        "payout_proposals": [
-          "gnars-base-68"
-        ],
-        "owned_projects": [],
-        "related_projects": [],
-        "related_updates": []
-      },
-      "notes": ""
-    },
-    {
       "person_id": "r4topunk",
       "slug": "r4topunk",
       "display_name": "r4topunk",
@@ -2860,10 +2193,10 @@
       "status": "active",
       "role": "web development, data pipelines",
       "roles": [
-        "web development, data pipelines",
+        "data pipelines",
         "operations",
         "web development",
-        "data pipelines"
+        "web development, data pipelines"
       ],
       "tags": [
         "builder",
@@ -2898,7 +2231,7 @@
         "attendance_pct": 68,
         "like_pct": 78,
         "proposals_authored_count": 3,
-        "votes_cast_count": 63
+        "votes_cast_count": 47
       },
       "receipts": {
         "eth_received": 0.6001,
@@ -2935,12 +2268,8 @@
           "gnars-base-101",
           "gnars-base-102",
           "gnars-base-103",
-          "gnars-base-108",
-          "gnars-base-109",
-          "gnars-base-11",
           "gnars-base-111",
           "gnars-base-112",
-          "gnars-base-117",
           "gnars-base-118",
           "gnars-base-119",
           "gnars-base-17",
@@ -2956,41 +2285,29 @@
           "gnars-base-37",
           "gnars-base-38",
           "gnars-base-39",
-          "gnars-base-42",
           "gnars-base-45",
           "gnars-base-47",
           "gnars-base-48",
-          "gnars-base-50",
-          "gnars-base-52",
           "gnars-base-53",
           "gnars-base-54",
           "gnars-base-56",
-          "gnars-base-59",
           "gnars-base-61",
           "gnars-base-63",
           "gnars-base-64",
           "gnars-base-65",
-          "gnars-base-66",
-          "gnars-base-67",
-          "gnars-base-68",
           "gnars-base-69",
           "gnars-base-70",
           "gnars-base-71",
           "gnars-base-72",
-          "gnars-base-74",
-          "gnars-base-75",
-          "gnars-base-76",
           "gnars-base-77",
           "gnars-base-79",
           "gnars-base-80",
           "gnars-base-81",
-          "gnars-base-83",
           "gnars-base-85",
           "gnars-base-86",
           "gnars-base-87",
           "gnars-base-88",
           "gnars-base-89",
-          "gnars-base-91",
           "gnars-base-93",
           "gnars-base-95",
           "gnars-base-96"
@@ -3022,10 +2339,10 @@
       "status": "active",
       "role": "technical lead, AI infrastructure",
       "roles": [
-        "technical lead",
-        "AI infrastructure",
         "technical lead, AI infrastructure",
-        "operations"
+        "operations",
+        "AI infrastructure",
+        "technical lead"
       ],
       "tags": [
         "builder",
@@ -3059,7 +2376,7 @@
         "attendance_pct": 8,
         "like_pct": 63,
         "proposals_authored_count": 0,
-        "votes_cast_count": 8
+        "votes_cast_count": 5
       },
       "receipts": {
         "eth_received": 0.6,
@@ -3088,12 +2405,9 @@
       "relationships": {
         "authored_proposals": [],
         "voted_proposals": [
-          "gnars-base-109",
           "gnars-base-110",
           "gnars-base-112",
           "gnars-base-113",
-          "gnars-base-116",
-          "gnars-base-117",
           "gnars-base-118",
           "gnars-base-119"
         ],
@@ -3150,15 +2464,15 @@
         "attendance_pct": 46,
         "like_pct": 81,
         "proposals_authored_count": 4,
-        "votes_cast_count": 45
+        "votes_cast_count": 34
       },
       "receipts": {
         "eth_received": 0.0004,
         "usdc_received": 1000.0,
         "gnars_received": 0.0,
         "fungible_transfer_count": 2,
-        "nft_received_count": 3,
-        "nft_transfer_count": 3,
+        "nft_received_count": 1,
+        "nft_transfer_count": 1,
         "by_asset": [
           {
             "symbol": "ETH",
@@ -3172,7 +2486,7 @@
         "nft_assets": [
           {
             "label": "Gnars NFT",
-            "count": 3
+            "count": 1
           }
         ]
       },
@@ -3199,28 +2513,17 @@
           "gnars-base-36",
           "gnars-base-37",
           "gnars-base-39",
-          "gnars-base-43",
-          "gnars-base-44",
           "gnars-base-45",
           "gnars-base-46",
           "gnars-base-47",
           "gnars-base-48",
-          "gnars-base-50",
-          "gnars-base-52",
           "gnars-base-53",
           "gnars-base-57",
-          "gnars-base-59",
           "gnars-base-63",
           "gnars-base-64",
           "gnars-base-65",
-          "gnars-base-66",
-          "gnars-base-67",
-          "gnars-base-68",
           "gnars-base-70",
           "gnars-base-71",
-          "gnars-base-74",
-          "gnars-base-75",
-          "gnars-base-76",
           "gnars-base-77",
           "gnars-base-79",
           "gnars-base-80",
@@ -3276,7 +2579,7 @@
         "attendance_pct": 30,
         "like_pct": 94,
         "proposals_authored_count": 1,
-        "votes_cast_count": 27
+        "votes_cast_count": 18
       },
       "receipts": {
         "eth_received": 0.0,
@@ -3300,29 +2603,20 @@
         "voted_proposals": [
           "gnars-base-100",
           "gnars-base-101",
-          "gnars-base-108",
           "gnars-base-111",
           "gnars-base-112",
-          "gnars-base-117",
           "gnars-base-118",
           "gnars-base-119",
-          "gnars-base-59",
           "gnars-base-61",
           "gnars-base-63",
           "gnars-base-64",
           "gnars-base-65",
-          "gnars-base-66",
-          "gnars-base-67",
-          "gnars-base-68",
           "gnars-base-69",
           "gnars-base-72",
-          "gnars-base-74",
-          "gnars-base-76",
           "gnars-base-86",
           "gnars-base-87",
           "gnars-base-88",
           "gnars-base-89",
-          "gnars-base-91",
           "gnars-base-93",
           "gnars-base-96"
         ],
@@ -3368,21 +2662,17 @@
         "votes_count": 0,
         "attendance_pct": null,
         "like_pct": null,
-        "proposals_authored_count": 22,
-        "votes_cast_count": 157
+        "proposals_authored_count": 20,
+        "votes_cast_count": 141
       },
       "receipts": {
         "eth_received": 0.0,
         "usdc_received": 400.0,
         "gnars_received": 0.0,
-        "fungible_transfer_count": 3,
+        "fungible_transfer_count": 2,
         "nft_received_count": 0,
         "nft_transfer_count": 0,
         "by_asset": [
-          {
-            "symbol": "0X4F6047",
-            "amount": 2.06232e+20
-          },
           {
             "symbol": "SENDIT",
             "amount": 8.58799e+25
@@ -3401,10 +2691,8 @@
           "gnars-base-17",
           "gnars-base-21",
           "gnars-base-41",
-          "gnars-base-42",
           "gnars-base-53",
           "gnars-base-57",
-          "gnars-base-91",
           "gnars-snapshot-99",
           "snapshot-0x31563b41a9581f2cac219a22d6ed5c8fbf4a639c427cd3a627b0668ce14f2a55",
           "snapshot-0x3dcb9566427c72d318242451eac0e8e37ec338f63c4813ffcbf9cffc7603f188",
@@ -3426,8 +2714,6 @@
           "gnars-base-104",
           "gnars-base-106",
           "gnars-base-107",
-          "gnars-base-108",
-          "gnars-base-11",
           "gnars-base-12",
           "gnars-base-13",
           "gnars-base-14",
@@ -3457,35 +2743,22 @@
           "gnars-base-39",
           "gnars-base-40",
           "gnars-base-41",
-          "gnars-base-42",
-          "gnars-base-43",
-          "gnars-base-44",
           "gnars-base-45",
           "gnars-base-46",
           "gnars-base-47",
           "gnars-base-48",
-          "gnars-base-50",
-          "gnars-base-52",
           "gnars-base-53",
           "gnars-base-54",
           "gnars-base-56",
           "gnars-base-57",
-          "gnars-base-59",
-          "gnars-base-60",
           "gnars-base-61",
           "gnars-base-63",
           "gnars-base-64",
           "gnars-base-65",
-          "gnars-base-66",
-          "gnars-base-67",
-          "gnars-base-68",
           "gnars-base-69",
           "gnars-base-70",
           "gnars-base-71",
           "gnars-base-72",
-          "gnars-base-74",
-          "gnars-base-75",
-          "gnars-base-76",
           "gnars-base-77",
           "gnars-base-79",
           "gnars-base-80",
@@ -3495,7 +2768,6 @@
           "gnars-base-87",
           "gnars-base-88",
           "gnars-base-89",
-          "gnars-base-91",
           "gnars-base-93",
           "gnars-base-96",
           "snapshot-0x00fc8920736e34ab77c10ed9837df13aed9ddfe35132c271d5982a19a5857b74",
@@ -3580,69 +2852,7 @@
         ],
         "payout_proposals": [
           "gnars-base-102",
-          "gnars-base-57",
-          "gnars-base-91"
-        ],
-        "owned_projects": [],
-        "related_projects": [],
-        "related_updates": []
-      },
-      "notes": ""
-    },
-    {
-      "person_id": "0x2508...7faf",
-      "slug": "0x2508-7faf",
-      "display_name": "0x2508...7faf",
-      "address": "0x2508e0cd16a6f44fae56970c2b0812dd0f1e7faf",
-      "address_short": "0x2508...7faf",
-      "status": "active",
-      "role": "community member",
-      "roles": [],
-      "tags": [
-        "contributor",
-        "recipient"
-      ],
-      "domains": [],
-      "bio": "",
-      "identity": {
-        "member_url": "https://www.gnars.com/members/0x2508e0cd16a6f44fae56970c2b0812dd0f1e7faf",
-        "farcaster": null,
-        "github": null,
-        "avatar_url": null,
-        "website": null,
-        "x": null,
-        "instagram": null
-      },
-      "governance": {
-        "holder_token_count": 0,
-        "delegated_token_count": 0,
-        "active_votes": 0,
-        "votes_count": 0,
-        "attendance_pct": null,
-        "like_pct": null,
-        "proposals_authored_count": 0,
-        "votes_cast_count": 0
-      },
-      "receipts": {
-        "eth_received": 3.5,
-        "usdc_received": 0.0,
-        "gnars_received": 0.0,
-        "fungible_transfer_count": 1,
-        "nft_received_count": 0,
-        "nft_transfer_count": 0,
-        "by_asset": [
-          {
-            "symbol": "ETH",
-            "amount": 3.5
-          }
-        ],
-        "nft_assets": []
-      },
-      "relationships": {
-        "authored_proposals": [],
-        "voted_proposals": [],
-        "payout_proposals": [
-          "gnars-base-44"
+          "gnars-base-57"
         ],
         "owned_projects": [],
         "related_projects": [],
@@ -3830,7 +3040,7 @@
         "attendance_pct": 4,
         "like_pct": 100,
         "proposals_authored_count": 1,
-        "votes_cast_count": 3
+        "votes_cast_count": 2
       },
       "receipts": {
         "eth_received": 0.75,
@@ -3853,8 +3063,7 @@
         ],
         "voted_proposals": [
           "gnars-base-100",
-          "gnars-base-103",
-          "gnars-base-108"
+          "gnars-base-103"
         ],
         "payout_proposals": [
           "gnars-base-103"
@@ -3899,8 +3108,8 @@
         "votes_count": 15,
         "attendance_pct": 15,
         "like_pct": 93,
-        "proposals_authored_count": 3,
-        "votes_cast_count": 43
+        "proposals_authored_count": 2,
+        "votes_cast_count": 38
       },
       "receipts": {
         "eth_received": 0.43,
@@ -3920,24 +3129,18 @@
       "relationships": {
         "authored_proposals": [
           "gnars-base-38",
-          "gnars-base-43",
           "gnars-ethereum-35"
         ],
         "voted_proposals": [
           "gnars-base-100",
-          "gnars-base-108",
           "gnars-base-110",
-          "gnars-base-117",
           "gnars-base-16",
           "gnars-base-17",
           "gnars-base-27",
           "gnars-base-33",
           "gnars-base-38",
           "gnars-base-63",
-          "gnars-base-66",
-          "gnars-base-67",
           "gnars-base-86",
-          "gnars-base-91",
           "gnars-base-93",
           "snapshot-0x08ea9fc7005cfae9028e522eacf567748a00e33ad8991174389096bf4f14334b",
           "snapshot-0x23cf980a45d2c4535ee96e3803538cbe6132e2ee31873ab60143ae9e4eacc041",
@@ -4012,7 +3215,7 @@
         "attendance_pct": 13,
         "like_pct": 85,
         "proposals_authored_count": 1,
-        "votes_cast_count": 12
+        "votes_cast_count": 7
       },
       "receipts": {
         "eth_received": 0.4,
@@ -4037,13 +3240,8 @@
           "gnars-base-102",
           "gnars-base-106",
           "gnars-base-107",
-          "gnars-base-108",
-          "gnars-base-109",
           "gnars-base-110",
-          "gnars-base-116",
-          "gnars-base-117",
           "gnars-base-89",
-          "gnars-base-91",
           "gnars-base-93",
           "gnars-base-95"
         ],
@@ -4091,7 +3289,7 @@
         "attendance_pct": 20,
         "like_pct": 86,
         "proposals_authored_count": 2,
-        "votes_cast_count": 42
+        "votes_cast_count": 41
       },
       "receipts": {
         "eth_received": 0.2,
@@ -4114,7 +3312,6 @@
           "gnars-ethereum-32"
         ],
         "voted_proposals": [
-          "gnars-base-11",
           "gnars-base-12",
           "gnars-base-14",
           "gnars-base-15",
@@ -4198,7 +3395,7 @@
         "attendance_pct": null,
         "like_pct": null,
         "proposals_authored_count": 0,
-        "votes_cast_count": 12
+        "votes_cast_count": 10
       },
       "receipts": {
         "eth_received": 0.2,
@@ -4224,8 +3421,6 @@
           "gnars-base-46",
           "gnars-base-47",
           "gnars-base-48",
-          "gnars-base-50",
-          "gnars-base-52",
           "gnars-base-56",
           "gnars-base-57",
           "snapshot-0x3dcb9566427c72d318242451eac0e8e37ec338f63c4813ffcbf9cffc7603f188",
@@ -4233,138 +3428,6 @@
         ],
         "payout_proposals": [
           "gnars-base-48"
-        ],
-        "owned_projects": [],
-        "related_projects": [],
-        "related_updates": []
-      },
-      "notes": ""
-    },
-    {
-      "person_id": "0x225e...faf2",
-      "slug": "0x225e-faf2",
-      "display_name": "0x225e...faf2",
-      "address": "0x225e9b54f41f44f42150b6aaa730da5f2d23faf2",
-      "address_short": "0x225e...faf2",
-      "status": "active",
-      "role": "community member",
-      "roles": [],
-      "tags": [
-        "athlete",
-        "contributor",
-        "delegate",
-        "holder",
-        "proposer",
-        "recipient"
-      ],
-      "domains": [],
-      "bio": "",
-      "identity": {
-        "member_url": "https://www.gnars.com/members/0x225e9b54f41f44f42150b6aaa730da5f2d23faf2",
-        "farcaster": null,
-        "github": null,
-        "avatar_url": null,
-        "website": null,
-        "x": null,
-        "instagram": null
-      },
-      "governance": {
-        "holder_token_count": 33,
-        "delegated_token_count": 33,
-        "active_votes": 33,
-        "votes_count": 0,
-        "attendance_pct": 0,
-        "like_pct": 0,
-        "proposals_authored_count": 1,
-        "votes_cast_count": 1
-      },
-      "receipts": {
-        "eth_received": 0.1,
-        "usdc_received": 0.0,
-        "gnars_received": 0.0,
-        "fungible_transfer_count": 1,
-        "nft_received_count": 0,
-        "nft_transfer_count": 0,
-        "by_asset": [
-          {
-            "symbol": "ETH",
-            "amount": 0.1
-          }
-        ],
-        "nft_assets": []
-      },
-      "relationships": {
-        "authored_proposals": [
-          "gnars-base-109"
-        ],
-        "voted_proposals": [
-          "snapshot-0x31563b41a9581f2cac219a22d6ed5c8fbf4a639c427cd3a627b0668ce14f2a55"
-        ],
-        "payout_proposals": [
-          "gnars-base-109"
-        ],
-        "owned_projects": [],
-        "related_projects": [],
-        "related_updates": []
-      },
-      "notes": ""
-    },
-    {
-      "person_id": "0x29c0...ec66",
-      "slug": "0x29c0-ec66",
-      "display_name": "0x29c0...ec66",
-      "address": "0x29c03fee4ba44aeb1bd63b95a73aefffd6e6ec66",
-      "address_short": "0x29c0...ec66",
-      "status": "active",
-      "role": "community member",
-      "roles": [],
-      "tags": [
-        "contributor",
-        "delegate",
-        "holder",
-        "recipient"
-      ],
-      "domains": [],
-      "bio": "",
-      "identity": {
-        "member_url": "https://www.gnars.com/members/0x29c03fee4ba44aeb1bd63b95a73aefffd6e6ec66",
-        "farcaster": null,
-        "github": null,
-        "avatar_url": null,
-        "website": null,
-        "x": null,
-        "instagram": null
-      },
-      "governance": {
-        "holder_token_count": 1,
-        "delegated_token_count": 1,
-        "active_votes": 1,
-        "votes_count": 0,
-        "attendance_pct": 0,
-        "like_pct": 0,
-        "proposals_authored_count": 0,
-        "votes_cast_count": 0
-      },
-      "receipts": {
-        "eth_received": 0.00042,
-        "usdc_received": 0.0,
-        "gnars_received": 0.0,
-        "fungible_transfer_count": 1,
-        "nft_received_count": 0,
-        "nft_transfer_count": 0,
-        "by_asset": [
-          {
-            "symbol": "ETH",
-            "amount": 0.00042
-          }
-        ],
-        "nft_assets": []
-      },
-      "relationships": {
-        "authored_proposals": [],
-        "voted_proposals": [],
-        "payout_proposals": [
-          "gnars-base-42"
         ],
         "owned_projects": [],
         "related_projects": [],
@@ -4406,7 +3469,7 @@
         "attendance_pct": 17,
         "like_pct": 100,
         "proposals_authored_count": 0,
-        "votes_cast_count": 17
+        "votes_cast_count": 15
       },
       "receipts": {
         "eth_received": 0.0004,
@@ -4429,14 +3492,12 @@
           "gnars-base-100",
           "gnars-base-104",
           "gnars-base-107",
-          "gnars-base-108",
           "gnars-base-110",
           "gnars-base-112",
           "gnars-base-118",
           "gnars-base-119",
           "gnars-base-40",
           "gnars-base-41",
-          "gnars-base-44",
           "gnars-base-46",
           "gnars-base-57",
           "gnars-base-85",
@@ -4559,8 +3620,8 @@
         "votes_count": 7,
         "attendance_pct": 7,
         "like_pct": 100,
-        "proposals_authored_count": 2,
-        "votes_cast_count": 6
+        "proposals_authored_count": 1,
+        "votes_cast_count": 4
       },
       "receipts": {
         "eth_received": 0.00028,
@@ -4584,14 +3645,11 @@
       },
       "relationships": {
         "authored_proposals": [
-          "gnars-base-62",
-          "gnars-base-75"
+          "gnars-base-62"
         ],
         "voted_proposals": [
           "gnars-base-28",
           "gnars-base-40",
-          "gnars-base-75",
-          "gnars-base-76",
           "gnars-base-77",
           "gnars-base-80"
         ],
@@ -4636,7 +3694,7 @@
         "attendance_pct": null,
         "like_pct": null,
         "proposals_authored_count": 0,
-        "votes_cast_count": 4
+        "votes_cast_count": 3
       },
       "receipts": {
         "eth_received": 0.00025,
@@ -4663,8 +3721,7 @@
         "voted_proposals": [
           "gnars-base-20",
           "gnars-base-28",
-          "gnars-base-32",
-          "gnars-base-60"
+          "gnars-base-32"
         ],
         "payout_proposals": [
           "gnars-base-18"
@@ -4887,7 +3944,7 @@
         "attendance_pct": 44,
         "like_pct": 100,
         "proposals_authored_count": 5,
-        "votes_cast_count": 99
+        "votes_cast_count": 93
       },
       "receipts": {
         "eth_received": 0.0,
@@ -4908,7 +3965,6 @@
           "snapshot-0xd79cf66e97cce5ae64f72d01a218451f8fcadfcd7f66d8a118c37849b3b60275"
         ],
         "voted_proposals": [
-          "gnars-base-11",
           "gnars-base-110",
           "gnars-base-16",
           "gnars-base-17",
@@ -4932,17 +3988,12 @@
           "gnars-base-46",
           "gnars-base-47",
           "gnars-base-48",
-          "gnars-base-52",
           "gnars-base-53",
-          "gnars-base-59",
-          "gnars-base-60",
           "gnars-base-63",
           "gnars-base-64",
           "gnars-base-65",
           "gnars-base-70",
           "gnars-base-71",
-          "gnars-base-76",
-          "gnars-base-91",
           "snapshot-0x00fc8920736e34ab77c10ed9837df13aed9ddfe35132c271d5982a19a5857b74",
           "snapshot-0x013702a15624613befa0ed1488350610f8d98c3d71c82e240183e8692600a5f9",
           "snapshot-0x0925892015b8809cc4ab3a7030c77364657c46f64ee083eba9f4fd5c61058b9b",
@@ -5025,7 +4076,6 @@
       "role": "community member",
       "roles": [],
       "tags": [
-        "athlete",
         "contributor",
         "delegate",
         "holder",
@@ -5049,8 +4099,8 @@
         "votes_count": 65,
         "attendance_pct": 63,
         "like_pct": 82,
-        "proposals_authored_count": 3,
-        "votes_cast_count": 89
+        "proposals_authored_count": 2,
+        "votes_cast_count": 80
       },
       "receipts": {
         "eth_received": 0.0,
@@ -5064,7 +4114,6 @@
       },
       "relationships": {
         "authored_proposals": [
-          "gnars-base-44",
           "gnars-base-79",
           "snapshot-0x1353abe6679ea8aecf8505fc0a2785328adfefe358d4352d25862bd97dd2278d"
         ],
@@ -5072,13 +4121,10 @@
           "gnars-base-100",
           "gnars-base-101",
           "gnars-base-104",
-          "gnars-base-109",
-          "gnars-base-11",
           "gnars-base-110",
           "gnars-base-111",
           "gnars-base-112",
           "gnars-base-113",
-          "gnars-base-117",
           "gnars-base-118",
           "gnars-base-119",
           "gnars-base-12",
@@ -5103,17 +4149,12 @@
           "gnars-base-46",
           "gnars-base-47",
           "gnars-base-48",
-          "gnars-base-50",
           "gnars-base-53",
           "gnars-base-56",
-          "gnars-base-66",
-          "gnars-base-67",
-          "gnars-base-68",
           "gnars-base-69",
           "gnars-base-70",
           "gnars-base-71",
           "gnars-base-72",
-          "gnars-base-74",
           "gnars-base-79",
           "gnars-base-80",
           "gnars-base-81",
@@ -5121,7 +4162,6 @@
           "gnars-base-86",
           "gnars-base-88",
           "gnars-base-89",
-          "gnars-base-91",
           "gnars-base-93",
           "gnars-base-96",
           "snapshot-0x08e71d63f57a0e47eb487e8b99c44b051e1d3bf6cb69344726e17a0d75645e8b",
@@ -5201,7 +4241,7 @@
         "attendance_pct": 12,
         "like_pct": 92,
         "proposals_authored_count": 1,
-        "votes_cast_count": 29
+        "votes_cast_count": 28
       },
       "receipts": {
         "eth_received": 0.0,
@@ -5218,7 +4258,6 @@
           "snapshot-0x70526f9ba5616545ed8de674349307f6a6d671c7f9365552f457598026801d1a"
         ],
         "voted_proposals": [
-          "gnars-base-11",
           "gnars-base-12",
           "gnars-base-14",
           "gnars-base-15",
@@ -5343,7 +4382,7 @@
         "attendance_pct": 62,
         "like_pct": 81,
         "proposals_authored_count": 3,
-        "votes_cast_count": 127
+        "votes_cast_count": 119
       },
       "receipts": {
         "eth_received": 0.0,
@@ -5362,7 +4401,6 @@
           "snapshot-0xe472fc837743ed478fe98ebef15378dbae2efe519f6af18f3a34118ee5dea367"
         ],
         "voted_proposals": [
-          "gnars-base-11",
           "gnars-base-12",
           "gnars-base-13",
           "gnars-base-14",
@@ -5392,12 +4430,8 @@
           "gnars-base-39",
           "gnars-base-40",
           "gnars-base-41",
-          "gnars-base-42",
-          "gnars-base-43",
           "gnars-base-47",
           "gnars-base-48",
-          "gnars-base-50",
-          "gnars-base-52",
           "gnars-base-53",
           "gnars-base-54",
           "gnars-base-56",
@@ -5409,9 +4443,6 @@
           "gnars-base-70",
           "gnars-base-71",
           "gnars-base-72",
-          "gnars-base-74",
-          "gnars-base-75",
-          "gnars-base-76",
           "gnars-base-77",
           "gnars-base-79",
           "gnars-base-80",
@@ -5614,11 +4645,11 @@
         "holder_token_count": 66,
         "delegated_token_count": 66,
         "active_votes": 66,
-        "votes_count": 5,
-        "attendance_pct": 5,
+        "votes_count": 6,
+        "attendance_pct": 6,
         "like_pct": 100,
         "proposals_authored_count": 0,
-        "votes_cast_count": 9
+        "votes_cast_count": 8
       },
       "receipts": {
         "eth_received": 0.0,
@@ -5636,7 +4667,6 @@
           "gnars-base-118",
           "gnars-base-119",
           "gnars-base-48",
-          "gnars-base-60",
           "gnars-base-61",
           "gnars-base-63",
           "snapshot-0x552d01d8f6172bf86262015fb4350e27fa52df606ae468f2a21376755d0135dc",
@@ -5718,8 +4748,7 @@
         "contributor",
         "delegate",
         "holder",
-        "proposer",
-        "recipient"
+        "proposer"
       ],
       "domains": [],
       "bio": "",
@@ -5739,31 +4768,24 @@
         "votes_count": 73,
         "attendance_pct": 71,
         "like_pct": 94,
-        "proposals_authored_count": 6,
-        "votes_cast_count": 64
+        "proposals_authored_count": 4,
+        "votes_cast_count": 49
       },
       "receipts": {
         "eth_received": 0.0,
         "usdc_received": 0.0,
         "gnars_received": 0.0,
         "fungible_transfer_count": 0,
-        "nft_received_count": 2,
-        "nft_transfer_count": 2,
+        "nft_received_count": 0,
+        "nft_transfer_count": 0,
         "by_asset": [],
-        "nft_assets": [
-          {
-            "label": "Gnars NFT",
-            "count": 2
-          }
-        ]
+        "nft_assets": []
       },
       "relationships": {
         "authored_proposals": [
           "gnars-base-100",
           "gnars-base-119",
           "gnars-base-39",
-          "gnars-base-58",
-          "gnars-base-59",
           "gnars-ethereum-34"
         ],
         "voted_proposals": [
@@ -5774,11 +4796,7 @@
           "gnars-base-104",
           "gnars-base-106",
           "gnars-base-107",
-          "gnars-base-108",
-          "gnars-base-109",
-          "gnars-base-11",
           "gnars-base-110",
-          "gnars-base-117",
           "gnars-base-118",
           "gnars-base-119",
           "gnars-base-13",
@@ -5799,26 +4817,16 @@
           "gnars-base-37",
           "gnars-base-38",
           "gnars-base-39",
-          "gnars-base-42",
-          "gnars-base-43",
           "gnars-base-45",
           "gnars-base-46",
           "gnars-base-47",
-          "gnars-base-50",
-          "gnars-base-52",
           "gnars-base-53",
           "gnars-base-54",
-          "gnars-base-59",
-          "gnars-base-60",
           "gnars-base-61",
           "gnars-base-63",
           "gnars-base-64",
-          "gnars-base-66",
-          "gnars-base-67",
-          "gnars-base-68",
           "gnars-base-69",
           "gnars-base-70",
-          "gnars-base-76",
           "gnars-base-77",
           "gnars-base-79",
           "gnars-base-80",
@@ -5827,7 +4835,6 @@
           "gnars-base-86",
           "gnars-base-87",
           "gnars-base-89",
-          "gnars-base-91",
           "gnars-base-96",
           "snapshot-0x0925892015b8809cc4ab3a7030c77364657c46f64ee083eba9f4fd5c61058b9b",
           "snapshot-0x30847f96110952ed83c1aa78c09b5cc11ef1076614560efd29de73e8b9b18894"
@@ -6181,8 +5188,8 @@
         "votes_count": 57,
         "attendance_pct": 55,
         "like_pct": 82,
-        "proposals_authored_count": 36,
-        "votes_cast_count": 126
+        "proposals_authored_count": 35,
+        "votes_cast_count": 115
       },
       "receipts": {
         "eth_received": 0.0,
@@ -6197,7 +5204,6 @@
       "relationships": {
         "authored_proposals": [
           "gnars-base-49",
-          "gnars-base-50",
           "gnars-base-72",
           "gnars-snapshot-100",
           "snapshot-0x00fc8920736e34ab77c10ed9837df13aed9ddfe35132c271d5982a19a5857b74",
@@ -6236,12 +5242,9 @@
         "voted_proposals": [
           "gnars-base-100",
           "gnars-base-101",
-          "gnars-base-109",
           "gnars-base-110",
           "gnars-base-111",
           "gnars-base-113",
-          "gnars-base-116",
-          "gnars-base-117",
           "gnars-base-118",
           "gnars-base-119",
           "gnars-base-15",
@@ -6255,25 +5258,17 @@
           "gnars-base-35",
           "gnars-base-36",
           "gnars-base-41",
-          "gnars-base-42",
           "gnars-base-47",
           "gnars-base-48",
-          "gnars-base-50",
-          "gnars-base-52",
           "gnars-base-53",
           "gnars-base-57",
           "gnars-base-65",
-          "gnars-base-68",
           "gnars-base-71",
           "gnars-base-72",
-          "gnars-base-74",
-          "gnars-base-75",
-          "gnars-base-76",
           "gnars-base-77",
           "gnars-base-79",
           "gnars-base-80",
           "gnars-base-81",
-          "gnars-base-83",
           "gnars-base-85",
           "gnars-base-86",
           "gnars-base-88",
@@ -6431,6 +5426,62 @@
       "notes": ""
     },
     {
+      "person_id": "0x225e...faf2",
+      "slug": "0x225e-faf2",
+      "display_name": "0x225e...faf2",
+      "address": "0x225e9b54f41f44f42150b6aaa730da5f2d23faf2",
+      "address_short": "0x225e...faf2",
+      "status": "active",
+      "role": "community member",
+      "roles": [],
+      "tags": [
+        "delegate",
+        "holder"
+      ],
+      "domains": [],
+      "bio": "",
+      "identity": {
+        "member_url": "https://www.gnars.com/members/0x225e9b54f41f44f42150b6aaa730da5f2d23faf2",
+        "farcaster": null,
+        "github": null,
+        "avatar_url": null,
+        "website": null,
+        "x": null,
+        "instagram": null
+      },
+      "governance": {
+        "holder_token_count": 33,
+        "delegated_token_count": 33,
+        "active_votes": 33,
+        "votes_count": 0,
+        "attendance_pct": 0,
+        "like_pct": 0,
+        "proposals_authored_count": 0,
+        "votes_cast_count": 1
+      },
+      "receipts": {
+        "eth_received": 0.0,
+        "usdc_received": 0.0,
+        "gnars_received": 0.0,
+        "fungible_transfer_count": 0,
+        "nft_received_count": 0,
+        "nft_transfer_count": 0,
+        "by_asset": [],
+        "nft_assets": []
+      },
+      "relationships": {
+        "authored_proposals": [],
+        "voted_proposals": [
+          "snapshot-0x31563b41a9581f2cac219a22d6ed5c8fbf4a639c427cd3a627b0668ce14f2a55"
+        ],
+        "payout_proposals": [],
+        "owned_projects": [],
+        "related_projects": [],
+        "related_updates": []
+      },
+      "notes": ""
+    },
+    {
       "person_id": "0x64c4...9c5d",
       "slug": "0x64c4-9c5d",
       "display_name": "0x64c4...9c5d",
@@ -6545,7 +5596,7 @@
         "attendance_pct": 4,
         "like_pct": 100,
         "proposals_authored_count": 0,
-        "votes_cast_count": 14
+        "votes_cast_count": 12
       },
       "receipts": {
         "eth_received": 0.0,
@@ -6560,10 +5611,8 @@
       "relationships": {
         "authored_proposals": [],
         "voted_proposals": [
-          "gnars-base-117",
           "gnars-base-119",
           "gnars-base-16",
-          "gnars-base-59",
           "snapshot-0x08e71d63f57a0e47eb487e8b99c44b051e1d3bf6cb69344726e17a0d75645e8b",
           "snapshot-0x08ea9fc7005cfae9028e522eacf567748a00e33ad8991174389096bf4f14334b",
           "snapshot-0x1fbdefc05981d023894a3198e407911800e85d89222cb12e453611d1a953c0e2",
@@ -7302,7 +6351,7 @@
         "attendance_pct": 17,
         "like_pct": 83,
         "proposals_authored_count": 0,
-        "votes_cast_count": 15
+        "votes_cast_count": 7
       },
       "receipts": {
         "eth_received": 0.0,
@@ -7317,19 +6366,11 @@
       "relationships": {
         "authored_proposals": [],
         "voted_proposals": [
-          "gnars-base-59",
-          "gnars-base-60",
           "gnars-base-61",
           "gnars-base-63",
-          "gnars-base-66",
-          "gnars-base-67",
-          "gnars-base-68",
           "gnars-base-72",
-          "gnars-base-74",
-          "gnars-base-76",
           "gnars-base-80",
           "gnars-base-81",
-          "gnars-base-91",
           "gnars-base-93",
           "gnars-base-96"
         ],
@@ -7728,7 +6769,7 @@
         "attendance_pct": 32,
         "like_pct": 91,
         "proposals_authored_count": 0,
-        "votes_cast_count": 41
+        "votes_cast_count": 35
       },
       "receipts": {
         "eth_received": 0.0,
@@ -7748,7 +6789,6 @@
           "gnars-base-106",
           "gnars-base-107",
           "gnars-base-110",
-          "gnars-base-117",
           "gnars-base-118",
           "gnars-base-119",
           "gnars-base-20",
@@ -7756,19 +6796,14 @@
           "gnars-base-37",
           "gnars-base-39",
           "gnars-base-41",
-          "gnars-base-42",
-          "gnars-base-50",
           "gnars-base-56",
           "gnars-base-57",
           "gnars-base-61",
           "gnars-base-64",
           "gnars-base-65",
-          "gnars-base-74",
-          "gnars-base-76",
           "gnars-base-77",
           "gnars-base-86",
           "gnars-base-88",
-          "gnars-base-91",
           "gnars-base-93",
           "gnars-base-96",
           "snapshot-0x0925892015b8809cc4ab3a7030c77364657c46f64ee083eba9f4fd5c61058b9b",
@@ -7847,6 +6882,68 @@
       "notes": ""
     },
     {
+      "person_id": "0x2581...f89f",
+      "slug": "0x2581-f89f",
+      "display_name": "0x2581...f89f",
+      "address": "0x25810d1a8b1affc444d5333bf0496f1202d6f89f",
+      "address_short": "0x2581...f89f",
+      "status": "active",
+      "role": "community member",
+      "roles": [],
+      "tags": [
+        "athlete",
+        "contributor",
+        "delegate",
+        "holder",
+        "proposer"
+      ],
+      "domains": [],
+      "bio": "",
+      "identity": {
+        "member_url": "https://www.gnars.com/members/0x25810d1a8b1affc444d5333bf0496f1202d6f89f",
+        "farcaster": null,
+        "github": null,
+        "avatar_url": null,
+        "website": null,
+        "x": null,
+        "instagram": null
+      },
+      "governance": {
+        "holder_token_count": 2,
+        "delegated_token_count": 16,
+        "active_votes": 16,
+        "votes_count": 4,
+        "attendance_pct": 4,
+        "like_pct": 100,
+        "proposals_authored_count": 1,
+        "votes_cast_count": 2
+      },
+      "receipts": {
+        "eth_received": 0.0,
+        "usdc_received": 0.0,
+        "gnars_received": 0.0,
+        "fungible_transfer_count": 0,
+        "nft_received_count": 0,
+        "nft_transfer_count": 0,
+        "by_asset": [],
+        "nft_assets": []
+      },
+      "relationships": {
+        "authored_proposals": [
+          "gnars-base-70"
+        ],
+        "voted_proposals": [
+          "gnars-base-70",
+          "gnars-base-95"
+        ],
+        "payout_proposals": [],
+        "owned_projects": [],
+        "related_projects": [],
+        "related_updates": []
+      },
+      "notes": ""
+    },
+    {
       "person_id": "0x7f49...bf03",
       "slug": "0x7f49-bf03",
       "display_name": "0x7f49...bf03",
@@ -7878,7 +6975,7 @@
         "attendance_pct": 2,
         "like_pct": 100,
         "proposals_authored_count": 0,
-        "votes_cast_count": 2
+        "votes_cast_count": 0
       },
       "receipts": {
         "eth_received": 0.0,
@@ -7892,10 +6989,7 @@
       },
       "relationships": {
         "authored_proposals": [],
-        "voted_proposals": [
-          "gnars-base-43",
-          "gnars-base-44"
-        ],
+        "voted_proposals": [],
         "payout_proposals": [],
         "owned_projects": [],
         "related_projects": [],
@@ -8072,7 +7166,7 @@
         "attendance_pct": 35,
         "like_pct": 89,
         "proposals_authored_count": 2,
-        "votes_cast_count": 53
+        "votes_cast_count": 45
       },
       "receipts": {
         "eth_received": 0.0,
@@ -8091,7 +7185,6 @@
         ],
         "voted_proposals": [
           "gnars-base-107",
-          "gnars-base-108",
           "gnars-base-110",
           "gnars-base-112",
           "gnars-base-12",
@@ -8103,21 +7196,14 @@
           "gnars-base-27",
           "gnars-base-28",
           "gnars-base-29",
-          "gnars-base-42",
           "gnars-base-45",
           "gnars-base-47",
-          "gnars-base-50",
-          "gnars-base-66",
-          "gnars-base-67",
-          "gnars-base-68",
           "gnars-base-72",
-          "gnars-base-74",
           "gnars-base-77",
           "gnars-base-85",
           "gnars-base-86",
           "gnars-base-88",
           "gnars-base-89",
-          "gnars-base-91",
           "gnars-base-95",
           "gnars-base-96",
           "snapshot-0x0925892015b8809cc4ab3a7030c77364657c46f64ee083eba9f4fd5c61058b9b",
@@ -8473,7 +7559,7 @@
         "attendance_pct": 11,
         "like_pct": 100,
         "proposals_authored_count": 0,
-        "votes_cast_count": 11
+        "votes_cast_count": 9
       },
       "receipts": {
         "eth_received": 0.0,
@@ -8492,11 +7578,9 @@
           "gnars-base-40",
           "gnars-base-64",
           "gnars-base-65",
-          "gnars-base-76",
           "gnars-base-79",
           "gnars-base-80",
           "gnars-base-88",
-          "gnars-base-91",
           "gnars-base-93",
           "gnars-base-95"
         ],
@@ -8603,7 +7687,7 @@
         "attendance_pct": 32,
         "like_pct": 94,
         "proposals_authored_count": 1,
-        "votes_cast_count": 57
+        "votes_cast_count": 50
       },
       "receipts": {
         "eth_received": 0.0,
@@ -8620,7 +7704,6 @@
           "snapshot-0x39abf329516ad7cb9ff48c23b30fae4b46590198421cd8a34977bb58032e7f93"
         ],
         "voted_proposals": [
-          "gnars-base-11",
           "gnars-base-12",
           "gnars-base-13",
           "gnars-base-14",
@@ -8637,19 +7720,13 @@
           "gnars-base-39",
           "gnars-base-40",
           "gnars-base-41",
-          "gnars-base-42",
-          "gnars-base-43",
-          "gnars-base-44",
           "gnars-base-45",
           "gnars-base-47",
           "gnars-base-48",
-          "gnars-base-50",
-          "gnars-base-52",
           "gnars-base-53",
           "gnars-base-54",
           "gnars-base-56",
           "gnars-base-57",
-          "gnars-base-68",
           "gnars-base-95",
           "snapshot-0x00fc8920736e34ab77c10ed9837df13aed9ddfe35132c271d5982a19a5857b74",
           "snapshot-0x1353abe6679ea8aecf8505fc0a2785328adfefe358d4352d25862bd97dd2278d",
@@ -8771,7 +7848,7 @@
         "attendance_pct": 3,
         "like_pct": 100,
         "proposals_authored_count": 0,
-        "votes_cast_count": 3
+        "votes_cast_count": 1
       },
       "receipts": {
         "eth_received": 0.0,
@@ -8786,9 +7863,7 @@
       "relationships": {
         "authored_proposals": [],
         "voted_proposals": [
-          "gnars-base-52",
-          "gnars-base-54",
-          "gnars-base-59"
+          "gnars-base-54"
         ],
         "payout_proposals": [],
         "owned_projects": [],
@@ -8926,10 +8001,8 @@
       "role": "community member",
       "roles": [],
       "tags": [
-        "contributor",
         "delegate",
-        "holder",
-        "proposer"
+        "holder"
       ],
       "domains": [],
       "bio": "",
@@ -8949,7 +8022,7 @@
         "votes_count": 0,
         "attendance_pct": 0,
         "like_pct": 0,
-        "proposals_authored_count": 1,
+        "proposals_authored_count": 0,
         "votes_cast_count": 0
       },
       "receipts": {
@@ -8963,9 +8036,7 @@
         "nft_assets": []
       },
       "relationships": {
-        "authored_proposals": [
-          "gnars-base-83"
-        ],
+        "authored_proposals": [],
         "voted_proposals": [],
         "payout_proposals": [],
         "owned_projects": [],
@@ -9060,7 +8131,7 @@
         "attendance_pct": 18,
         "like_pct": 95,
         "proposals_authored_count": 0,
-        "votes_cast_count": 18
+        "votes_cast_count": 15
       },
       "receipts": {
         "eth_received": 0.0,
@@ -9085,12 +8156,9 @@
           "gnars-base-35",
           "gnars-base-37",
           "gnars-base-46",
-          "gnars-base-50",
           "gnars-base-53",
           "gnars-base-57",
           "gnars-base-61",
-          "gnars-base-68",
-          "gnars-base-75",
           "gnars-base-86",
           "gnars-base-95"
         ],
@@ -9194,7 +8262,7 @@
         "attendance_pct": 4,
         "like_pct": 100,
         "proposals_authored_count": 0,
-        "votes_cast_count": 13
+        "votes_cast_count": 12
       },
       "receipts": {
         "eth_received": 0.0,
@@ -9211,7 +8279,6 @@
         "voted_proposals": [
           "gnars-base-13",
           "gnars-base-16",
-          "gnars-base-52",
           "snapshot-0x0925892015b8809cc4ab3a7030c77364657c46f64ee083eba9f4fd5c61058b9b",
           "snapshot-0x27c109216d227ccc3fa01bb4fdf864d5aa0bd54be5a33ae7015816ed62ee3703",
           "snapshot-0x30847f96110952ed83c1aa78c09b5cc11ef1076614560efd29de73e8b9b18894",
@@ -10339,7 +9406,7 @@
         "attendance_pct": 27,
         "like_pct": 96,
         "proposals_authored_count": 0,
-        "votes_cast_count": 37
+        "votes_cast_count": 33
       },
       "receipts": {
         "eth_received": 0.0,
@@ -10369,15 +9436,11 @@
           "gnars-base-37",
           "gnars-base-38",
           "gnars-base-39",
-          "gnars-base-43",
-          "gnars-base-44",
           "gnars-base-45",
           "gnars-base-46",
           "gnars-base-47",
           "gnars-base-48",
-          "gnars-base-50",
           "gnars-base-53",
-          "gnars-base-59",
           "gnars-base-88",
           "gnars-base-96",
           "snapshot-0x27c109216d227ccc3fa01bb4fdf864d5aa0bd54be5a33ae7015816ed62ee3703",
@@ -10409,12 +9472,10 @@
       "role": "community member",
       "roles": [],
       "tags": [
-        "athlete",
         "contributor",
         "delegate",
         "holder",
-        "proposer",
-        "recipient"
+        "proposer"
       ],
       "domains": [],
       "bio": "",
@@ -10434,27 +9495,21 @@
         "votes_count": 66,
         "attendance_pct": 64,
         "like_pct": 88,
-        "proposals_authored_count": 2,
-        "votes_cast_count": 74
+        "proposals_authored_count": 1,
+        "votes_cast_count": 60
       },
       "receipts": {
         "eth_received": 0.0,
         "usdc_received": 0.0,
         "gnars_received": 0.0,
         "fungible_transfer_count": 0,
-        "nft_received_count": 2,
-        "nft_transfer_count": 2,
+        "nft_received_count": 0,
+        "nft_transfer_count": 0,
         "by_asset": [],
-        "nft_assets": [
-          {
-            "label": "Gnars NFT",
-            "count": 2
-          }
-        ]
+        "nft_assets": []
       },
       "relationships": {
         "authored_proposals": [
-          "gnars-base-11",
           "gnars-base-96"
         ],
         "voted_proposals": [
@@ -10464,13 +9519,9 @@
           "gnars-base-104",
           "gnars-base-106",
           "gnars-base-107",
-          "gnars-base-108",
-          "gnars-base-109",
-          "gnars-base-11",
           "gnars-base-110",
           "gnars-base-111",
           "gnars-base-112",
-          "gnars-base-117",
           "gnars-base-118",
           "gnars-base-119",
           "gnars-base-13",
@@ -10486,31 +9537,21 @@
           "gnars-base-37",
           "gnars-base-39",
           "gnars-base-41",
-          "gnars-base-42",
-          "gnars-base-43",
           "gnars-base-45",
           "gnars-base-46",
           "gnars-base-53",
           "gnars-base-54",
           "gnars-base-56",
           "gnars-base-57",
-          "gnars-base-59",
-          "gnars-base-60",
           "gnars-base-63",
           "gnars-base-64",
           "gnars-base-65",
-          "gnars-base-66",
-          "gnars-base-67",
-          "gnars-base-68",
           "gnars-base-69",
           "gnars-base-72",
-          "gnars-base-74",
           "gnars-base-79",
-          "gnars-base-83",
           "gnars-base-86",
           "gnars-base-88",
           "gnars-base-89",
-          "gnars-base-91",
           "gnars-base-93",
           "gnars-base-95",
           "gnars-base-96",
@@ -10820,8 +9861,8 @@
         "votes_count": 54,
         "attendance_pct": 52,
         "like_pct": 98,
-        "proposals_authored_count": 5,
-        "votes_cast_count": 51
+        "proposals_authored_count": 4,
+        "votes_cast_count": 38
       },
       "receipts": {
         "eth_received": 0.0,
@@ -10837,7 +9878,6 @@
         "authored_proposals": [
           "gnars-base-110",
           "gnars-base-31",
-          "gnars-base-84",
           "gnars-base-85",
           "gnars-base-88"
         ],
@@ -10846,7 +9886,6 @@
           "gnars-base-101",
           "gnars-base-102",
           "gnars-base-104",
-          "gnars-base-108",
           "gnars-base-110",
           "gnars-base-111",
           "gnars-base-118",
@@ -10863,25 +9902,13 @@
           "gnars-base-37",
           "gnars-base-39",
           "gnars-base-41",
-          "gnars-base-42",
-          "gnars-base-43",
-          "gnars-base-44",
           "gnars-base-45",
           "gnars-base-46",
           "gnars-base-47",
-          "gnars-base-52",
-          "gnars-base-59",
-          "gnars-base-60",
-          "gnars-base-66",
-          "gnars-base-67",
-          "gnars-base-68",
           "gnars-base-69",
           "gnars-base-70",
           "gnars-base-71",
           "gnars-base-72",
-          "gnars-base-74",
-          "gnars-base-75",
-          "gnars-base-76",
           "gnars-base-77",
           "gnars-base-80",
           "gnars-base-81",
@@ -11294,7 +10321,7 @@
         "attendance_pct": 6,
         "like_pct": 100,
         "proposals_authored_count": 0,
-        "votes_cast_count": 6
+        "votes_cast_count": 4
       },
       "receipts": {
         "eth_received": 0.0,
@@ -11312,8 +10339,6 @@
           "gnars-base-104",
           "gnars-base-71",
           "gnars-base-72",
-          "gnars-base-74",
-          "gnars-base-75",
           "gnars-base-86"
         ],
         "payout_proposals": [],
@@ -11814,7 +10839,7 @@
         "attendance_pct": 13,
         "like_pct": 92,
         "proposals_authored_count": 3,
-        "votes_cast_count": 39
+        "votes_cast_count": 38
       },
       "receipts": {
         "eth_received": 0.0,
@@ -11850,7 +10875,6 @@
           "gnars-base-41",
           "gnars-base-47",
           "gnars-base-61",
-          "gnars-base-91",
           "snapshot-0x08ea9fc7005cfae9028e522eacf567748a00e33ad8991174389096bf4f14334b",
           "snapshot-0x1fbdefc05981d023894a3198e407911800e85d89222cb12e453611d1a953c0e2",
           "snapshot-0x27c109216d227ccc3fa01bb4fdf864d5aa0bd54be5a33ae7015816ed62ee3703",
@@ -11978,7 +11002,7 @@
         "attendance_pct": 49,
         "like_pct": 98,
         "proposals_authored_count": 1,
-        "votes_cast_count": 47
+        "votes_cast_count": 38
       },
       "receipts": {
         "eth_received": 0.0,
@@ -11997,11 +11021,8 @@
         "voted_proposals": [
           "gnars-base-102",
           "gnars-base-107",
-          "gnars-base-108",
           "gnars-base-111",
           "gnars-base-112",
-          "gnars-base-116",
-          "gnars-base-117",
           "gnars-base-118",
           "gnars-base-119",
           "gnars-base-22",
@@ -12017,13 +11038,9 @@
           "gnars-base-38",
           "gnars-base-39",
           "gnars-base-41",
-          "gnars-base-42",
-          "gnars-base-43",
           "gnars-base-45",
           "gnars-base-46",
           "gnars-base-47",
-          "gnars-base-50",
-          "gnars-base-52",
           "gnars-base-53",
           "gnars-base-54",
           "gnars-base-56",
@@ -12032,8 +11049,6 @@
           "gnars-base-65",
           "gnars-base-69",
           "gnars-base-70",
-          "gnars-base-74",
-          "gnars-base-76",
           "gnars-base-77",
           "gnars-base-80",
           "gnars-base-81",
@@ -13173,7 +12188,7 @@
         "attendance_pct": 8,
         "like_pct": 100,
         "proposals_authored_count": 0,
-        "votes_cast_count": 25
+        "votes_cast_count": 24
       },
       "receipts": {
         "eth_received": 0.0,
@@ -13194,7 +12209,6 @@
           "gnars-base-77",
           "gnars-base-79",
           "gnars-base-86",
-          "gnars-base-91",
           "gnars-base-93",
           "snapshot-0x00fc8920736e34ab77c10ed9837df13aed9ddfe35132c271d5982a19a5857b74",
           "snapshot-0x0b3d6c307f7e596892dda29cf4914598368c0b0212739081290ab6608de770cf",
@@ -13253,7 +12267,7 @@
         "attendance_pct": 1,
         "like_pct": 100,
         "proposals_authored_count": 0,
-        "votes_cast_count": 1
+        "votes_cast_count": 0
       },
       "receipts": {
         "eth_received": 0.0,
@@ -13267,9 +12281,7 @@
       },
       "relationships": {
         "authored_proposals": [],
-        "voted_proposals": [
-          "gnars-base-108"
-        ],
+        "voted_proposals": [],
         "payout_proposals": [],
         "owned_projects": [],
         "related_projects": [],
@@ -13324,6 +12336,83 @@
       "relationships": {
         "authored_proposals": [],
         "voted_proposals": [],
+        "payout_proposals": [],
+        "owned_projects": [],
+        "related_projects": [],
+        "related_updates": []
+      },
+      "notes": ""
+    },
+    {
+      "person_id": "0x8d2a...b252",
+      "slug": "0x8d2a-b252",
+      "display_name": "0x8d2a...b252",
+      "address": "0x8d2a253a5885806aa14e583c80c8833a904fb252",
+      "address_short": "0x8d2a...b252",
+      "status": "active",
+      "role": "community member",
+      "roles": [],
+      "tags": [
+        "athlete",
+        "contributor",
+        "delegate",
+        "holder",
+        "proposer"
+      ],
+      "domains": [],
+      "bio": "",
+      "identity": {
+        "member_url": "https://www.gnars.com/members/0x8d2a253a5885806aa14e583c80c8833a904fb252",
+        "farcaster": null,
+        "github": null,
+        "avatar_url": null,
+        "website": null,
+        "x": null,
+        "instagram": null
+      },
+      "governance": {
+        "holder_token_count": 6,
+        "delegated_token_count": 6,
+        "active_votes": 6,
+        "votes_count": 25,
+        "attendance_pct": 24,
+        "like_pct": 100,
+        "proposals_authored_count": 1,
+        "votes_cast_count": 17
+      },
+      "receipts": {
+        "eth_received": 0.0,
+        "usdc_received": 0.0,
+        "gnars_received": 0.0,
+        "fungible_transfer_count": 0,
+        "nft_received_count": 0,
+        "nft_transfer_count": 0,
+        "by_asset": [],
+        "nft_assets": []
+      },
+      "relationships": {
+        "authored_proposals": [
+          "gnars-base-107"
+        ],
+        "voted_proposals": [
+          "gnars-base-102",
+          "gnars-base-104",
+          "gnars-base-106",
+          "gnars-base-107",
+          "gnars-base-110",
+          "gnars-base-118",
+          "gnars-base-61",
+          "gnars-base-63",
+          "gnars-base-70",
+          "gnars-base-72",
+          "gnars-base-77",
+          "gnars-base-80",
+          "gnars-base-85",
+          "gnars-base-86",
+          "gnars-base-89",
+          "gnars-base-95",
+          "gnars-base-96"
+        ],
         "payout_proposals": [],
         "owned_projects": [],
         "related_projects": [],
@@ -13705,7 +12794,7 @@
         "attendance_pct": 23,
         "like_pct": 96,
         "proposals_authored_count": 0,
-        "votes_cast_count": 21
+        "votes_cast_count": 15
       },
       "receipts": {
         "eth_received": 0.0,
@@ -13724,13 +12813,8 @@
           "gnars-base-102",
           "gnars-base-119",
           "gnars-base-22",
-          "gnars-base-66",
-          "gnars-base-67",
           "gnars-base-71",
           "gnars-base-72",
-          "gnars-base-74",
-          "gnars-base-75",
-          "gnars-base-76",
           "gnars-base-77",
           "gnars-base-79",
           "gnars-base-80",
@@ -13738,7 +12822,6 @@
           "gnars-base-85",
           "gnars-base-87",
           "gnars-base-89",
-          "gnars-base-91",
           "gnars-base-95",
           "gnars-base-96"
         ],
@@ -14064,7 +13147,7 @@
         "attendance_pct": 43,
         "like_pct": 86,
         "proposals_authored_count": 0,
-        "votes_cast_count": 42
+        "votes_cast_count": 32
       },
       "receipts": {
         "eth_received": 0.0,
@@ -14094,31 +13177,21 @@
           "gnars-base-39",
           "gnars-base-40",
           "gnars-base-41",
-          "gnars-base-42",
-          "gnars-base-43",
-          "gnars-base-44",
           "gnars-base-45",
-          "gnars-base-50",
-          "gnars-base-52",
           "gnars-base-56",
           "gnars-base-57",
           "gnars-base-61",
           "gnars-base-63",
-          "gnars-base-68",
           "gnars-base-69",
           "gnars-base-70",
           "gnars-base-72",
-          "gnars-base-74",
-          "gnars-base-75",
           "gnars-base-77",
           "gnars-base-79",
           "gnars-base-80",
           "gnars-base-81",
-          "gnars-base-83",
           "gnars-base-86",
           "gnars-base-87",
           "gnars-base-88",
-          "gnars-base-91",
           "gnars-base-93",
           "gnars-base-95"
         ],
@@ -14215,7 +13288,7 @@
         "attendance_pct": 27,
         "like_pct": 96,
         "proposals_authored_count": 0,
-        "votes_cast_count": 45
+        "votes_cast_count": 42
       },
       "receipts": {
         "eth_received": 0.0,
@@ -14252,10 +13325,7 @@
           "gnars-base-35",
           "gnars-base-36",
           "gnars-base-41",
-          "gnars-base-42",
-          "gnars-base-43",
           "gnars-base-45",
-          "gnars-base-52",
           "gnars-base-53",
           "gnars-base-54",
           "snapshot-0x013702a15624613befa0ed1488350610f8d98c3d71c82e240183e8692600a5f9",
@@ -14589,7 +13659,7 @@
         "attendance_pct": 7,
         "like_pct": 100,
         "proposals_authored_count": 0,
-        "votes_cast_count": 6
+        "votes_cast_count": 5
       },
       "receipts": {
         "eth_received": 0.0,
@@ -14605,7 +13675,6 @@
         "authored_proposals": [],
         "voted_proposals": [
           "gnars-base-63",
-          "gnars-base-68",
           "gnars-base-69",
           "gnars-base-70",
           "gnars-base-71",
@@ -14881,7 +13950,7 @@
         "attendance_pct": 2,
         "like_pct": 100,
         "proposals_authored_count": 0,
-        "votes_cast_count": 2
+        "votes_cast_count": 1
       },
       "receipts": {
         "eth_received": 0.0,
@@ -14896,7 +13965,6 @@
       "relationships": {
         "authored_proposals": [],
         "voted_proposals": [
-          "gnars-base-11",
           "gnars-base-12"
         ],
         "payout_proposals": [],
@@ -15108,7 +14176,7 @@
         "attendance_pct": 33,
         "like_pct": 94,
         "proposals_authored_count": 1,
-        "votes_cast_count": 30
+        "votes_cast_count": 21
       },
       "receipts": {
         "eth_received": 0.0,
@@ -15129,21 +14197,13 @@
           "gnars-base-101",
           "gnars-base-102",
           "gnars-base-104",
-          "gnars-base-108",
-          "gnars-base-109",
           "gnars-base-110",
-          "gnars-base-117",
           "gnars-base-118",
           "gnars-base-119",
           "gnars-base-64",
           "gnars-base-65",
-          "gnars-base-66",
-          "gnars-base-67",
-          "gnars-base-68",
           "gnars-base-69",
           "gnars-base-72",
-          "gnars-base-74",
-          "gnars-base-76",
           "gnars-base-77",
           "gnars-base-80",
           "gnars-base-81",
@@ -15151,7 +14211,6 @@
           "gnars-base-86",
           "gnars-base-88",
           "gnars-base-89",
-          "gnars-base-91",
           "gnars-base-93",
           "gnars-base-95",
           "gnars-base-96"
@@ -15249,7 +14308,7 @@
         "attendance_pct": 2,
         "like_pct": 100,
         "proposals_authored_count": 0,
-        "votes_cast_count": 2
+        "votes_cast_count": 0
       },
       "receipts": {
         "eth_received": 0.0,
@@ -15263,10 +14322,7 @@
       },
       "relationships": {
         "authored_proposals": [],
-        "voted_proposals": [
-          "gnars-base-66",
-          "gnars-base-67"
-        ],
+        "voted_proposals": [],
         "payout_proposals": [],
         "owned_projects": [],
         "related_projects": [],
@@ -15733,7 +14789,7 @@
         "attendance_pct": 25,
         "like_pct": 100,
         "proposals_authored_count": 2,
-        "votes_cast_count": 61
+        "votes_cast_count": 60
       },
       "receipts": {
         "eth_received": 0.0,
@@ -15768,7 +14824,6 @@
           "gnars-base-37",
           "gnars-base-38",
           "gnars-base-39",
-          "gnars-base-52",
           "snapshot-0x00fc8920736e34ab77c10ed9837df13aed9ddfe35132c271d5982a19a5857b74",
           "snapshot-0x08e71d63f57a0e47eb487e8b99c44b051e1d3bf6cb69344726e17a0d75645e8b",
           "snapshot-0x08ea9fc7005cfae9028e522eacf567748a00e33ad8991174389096bf4f14334b",
@@ -15960,7 +15015,7 @@
         "attendance_pct": 12,
         "like_pct": 100,
         "proposals_authored_count": 0,
-        "votes_cast_count": 7
+        "votes_cast_count": 6
       },
       "receipts": {
         "eth_received": 0.0,
@@ -15975,7 +15030,6 @@
       "relationships": {
         "authored_proposals": [],
         "voted_proposals": [
-          "gnars-base-11",
           "gnars-base-13",
           "gnars-base-14",
           "gnars-base-15",
@@ -16284,7 +15338,7 @@
         "attendance_pct": 2,
         "like_pct": 100,
         "proposals_authored_count": 0,
-        "votes_cast_count": 2
+        "votes_cast_count": 1
       },
       "receipts": {
         "eth_received": 0.0,
@@ -16299,8 +15353,7 @@
       "relationships": {
         "authored_proposals": [],
         "voted_proposals": [
-          "gnars-base-16",
-          "gnars-base-52"
+          "gnars-base-16"
         ],
         "payout_proposals": [],
         "owned_projects": [],
@@ -16341,7 +15394,7 @@
         "attendance_pct": 20,
         "like_pct": 48,
         "proposals_authored_count": 0,
-        "votes_cast_count": 17
+        "votes_cast_count": 12
       },
       "receipts": {
         "eth_received": 0.0,
@@ -16357,20 +15410,15 @@
         "authored_proposals": [],
         "voted_proposals": [
           "gnars-base-101",
-          "gnars-base-108",
           "gnars-base-13",
           "gnars-base-14",
           "gnars-base-15",
           "gnars-base-16",
           "gnars-base-19",
           "gnars-base-28",
-          "gnars-base-43",
           "gnars-base-47",
           "gnars-base-64",
-          "gnars-base-66",
-          "gnars-base-67",
           "gnars-base-72",
-          "gnars-base-76",
           "gnars-base-85",
           "gnars-base-87"
         ],
@@ -16481,7 +15529,7 @@
         "attendance_pct": 2,
         "like_pct": 100,
         "proposals_authored_count": 0,
-        "votes_cast_count": 2
+        "votes_cast_count": 0
       },
       "receipts": {
         "eth_received": 0.0,
@@ -16495,10 +15543,7 @@
       },
       "relationships": {
         "authored_proposals": [],
-        "voted_proposals": [
-          "gnars-base-117",
-          "gnars-base-68"
-        ],
+        "voted_proposals": [],
         "payout_proposals": [],
         "owned_projects": [],
         "related_projects": [],
@@ -18495,7 +17540,7 @@
         "attendance_pct": 7,
         "like_pct": 86,
         "proposals_authored_count": 0,
-        "votes_cast_count": 5
+        "votes_cast_count": 4
       },
       "receipts": {
         "eth_received": 0.0,
@@ -18510,7 +17555,6 @@
       "relationships": {
         "authored_proposals": [],
         "voted_proposals": [
-          "gnars-base-11",
           "gnars-base-12",
           "gnars-base-16",
           "gnars-base-27",
@@ -20136,7 +19180,7 @@
         "attendance_pct": 35,
         "like_pct": 86,
         "proposals_authored_count": 0,
-        "votes_cast_count": 36
+        "votes_cast_count": 33
       },
       "receipts": {
         "eth_received": 0.0,
@@ -20177,13 +19221,10 @@
           "gnars-base-38",
           "gnars-base-39",
           "gnars-base-41",
-          "gnars-base-43",
-          "gnars-base-44",
           "gnars-base-45",
           "gnars-base-46",
           "gnars-base-47",
           "gnars-base-48",
-          "gnars-base-50",
           "gnars-base-53",
           "gnars-base-54",
           "gnars-base-57"
@@ -20227,7 +19268,7 @@
         "attendance_pct": 28,
         "like_pct": 100,
         "proposals_authored_count": 0,
-        "votes_cast_count": 24
+        "votes_cast_count": 20
       },
       "receipts": {
         "eth_received": 0.0,
@@ -20242,7 +19283,6 @@
       "relationships": {
         "authored_proposals": [],
         "voted_proposals": [
-          "gnars-base-11",
           "gnars-base-12",
           "gnars-base-13",
           "gnars-base-14",
@@ -20259,11 +19299,8 @@
           "gnars-base-29",
           "gnars-base-30",
           "gnars-base-40",
-          "gnars-base-43",
-          "gnars-base-44",
           "gnars-base-46",
           "gnars-base-47",
-          "gnars-base-52",
           "gnars-base-56",
           "gnars-base-57"
         ],
@@ -21025,7 +20062,7 @@
         "attendance_pct": 4,
         "like_pct": 75,
         "proposals_authored_count": 0,
-        "votes_cast_count": 4
+        "votes_cast_count": 3
       },
       "receipts": {
         "eth_received": 0.0,
@@ -21040,7 +20077,6 @@
       "relationships": {
         "authored_proposals": [],
         "voted_proposals": [
-          "gnars-base-117",
           "gnars-base-85",
           "gnars-base-86",
           "gnars-base-88"
@@ -21954,7 +20990,7 @@
         "attendance_pct": 3,
         "like_pct": 100,
         "proposals_authored_count": 0,
-        "votes_cast_count": 3
+        "votes_cast_count": 1
       },
       "receipts": {
         "eth_received": 0.0,
@@ -21969,9 +21005,7 @@
       "relationships": {
         "authored_proposals": [],
         "voted_proposals": [
-          "gnars-base-52",
-          "gnars-base-54",
-          "gnars-base-74"
+          "gnars-base-54"
         ],
         "payout_proposals": [],
         "owned_projects": [],
@@ -22336,7 +21370,7 @@
         "attendance_pct": 5,
         "like_pct": 80,
         "proposals_authored_count": 0,
-        "votes_cast_count": 1
+        "votes_cast_count": 0
       },
       "receipts": {
         "eth_received": 0.0,
@@ -22350,9 +21384,7 @@
       },
       "relationships": {
         "authored_proposals": [],
-        "voted_proposals": [
-          "gnars-base-11"
-        ],
+        "voted_proposals": [],
         "payout_proposals": [],
         "owned_projects": [],
         "related_projects": [],
@@ -22392,7 +21424,7 @@
         "attendance_pct": 12,
         "like_pct": 100,
         "proposals_authored_count": 0,
-        "votes_cast_count": 11
+        "votes_cast_count": 9
       },
       "receipts": {
         "eth_received": 0.0,
@@ -22411,11 +21443,9 @@
           "gnars-base-102",
           "gnars-base-64",
           "gnars-base-65",
-          "gnars-base-75",
           "gnars-base-80",
           "gnars-base-81",
           "gnars-base-86",
-          "gnars-base-91",
           "gnars-base-93",
           "gnars-base-96"
         ],
@@ -23726,7 +22756,7 @@
         "attendance_pct": 1,
         "like_pct": 100,
         "proposals_authored_count": 0,
-        "votes_cast_count": 1
+        "votes_cast_count": 0
       },
       "receipts": {
         "eth_received": 0.0,
@@ -23740,9 +22770,7 @@
       },
       "relationships": {
         "authored_proposals": [],
-        "voted_proposals": [
-          "gnars-base-43"
-        ],
+        "voted_proposals": [],
         "payout_proposals": [],
         "owned_projects": [],
         "related_projects": [],
@@ -26338,7 +25366,7 @@
         "attendance_pct": 7,
         "like_pct": 100,
         "proposals_authored_count": 0,
-        "votes_cast_count": 3
+        "votes_cast_count": 0
       },
       "receipts": {
         "eth_received": 0.0,
@@ -26352,11 +25380,7 @@
       },
       "relationships": {
         "authored_proposals": [],
-        "voted_proposals": [
-          "gnars-base-42",
-          "gnars-base-50",
-          "gnars-base-52"
-        ],
+        "voted_proposals": [],
         "payout_proposals": [],
         "owned_projects": [],
         "related_projects": [],
@@ -27130,7 +26154,7 @@
         "attendance_pct": 8,
         "like_pct": 88,
         "proposals_authored_count": 0,
-        "votes_cast_count": 8
+        "votes_cast_count": 7
       },
       "receipts": {
         "eth_received": 0.0,
@@ -27151,7 +26175,6 @@
           "gnars-base-25",
           "gnars-base-26",
           "gnars-base-27",
-          "gnars-base-52",
           "snapshot-0x39abf329516ad7cb9ff48c23b30fae4b46590198421cd8a34977bb58032e7f93"
         ],
         "payout_proposals": [],
@@ -27524,7 +26547,7 @@
         "attendance_pct": 19,
         "like_pct": 90,
         "proposals_authored_count": 0,
-        "votes_cast_count": 15
+        "votes_cast_count": 14
       },
       "receipts": {
         "eth_received": 0.0,
@@ -27540,7 +26563,6 @@
         "authored_proposals": [],
         "voted_proposals": [
           "gnars-base-102",
-          "gnars-base-11",
           "gnars-base-12",
           "gnars-base-13",
           "gnars-base-14",
@@ -29708,7 +28730,7 @@
         "attendance_pct": 12,
         "like_pct": 75,
         "proposals_authored_count": 0,
-        "votes_cast_count": 8
+        "votes_cast_count": 7
       },
       "receipts": {
         "eth_received": 0.0,
@@ -29723,7 +28745,6 @@
       "relationships": {
         "authored_proposals": [],
         "voted_proposals": [
-          "gnars-base-11",
           "gnars-base-13",
           "gnars-base-14",
           "gnars-base-15",
@@ -29774,7 +28795,7 @@
         "attendance_pct": 5,
         "like_pct": 100,
         "proposals_authored_count": 1,
-        "votes_cast_count": 15
+        "votes_cast_count": 14
       },
       "receipts": {
         "eth_received": 0.0,
@@ -29793,7 +28814,6 @@
         "voted_proposals": [
           "gnars-base-13",
           "gnars-base-16",
-          "gnars-base-52",
           "snapshot-0x0e72c06b7b2208ce492f04811002b07b1203b5fa25bbb38f53fc3c09089bdae8",
           "snapshot-0x27c109216d227ccc3fa01bb4fdf864d5aa0bd54be5a33ae7015816ed62ee3703",
           "snapshot-0x41f72da6620a57ff48a149171f03bc98a4dc48d0444455ce40e16e43758c1c5e",
@@ -30662,7 +29682,7 @@
         "attendance_pct": 11,
         "like_pct": 91,
         "proposals_authored_count": 2,
-        "votes_cast_count": 10
+        "votes_cast_count": 9
       },
       "receipts": {
         "eth_received": 0.0,
@@ -30682,9 +29702,8 @@
         "voted_proposals": [
           "gnars-base-101",
           "gnars-base-110",
+          "gnars-base-119",
           "gnars-base-24",
-          "gnars-base-75",
-          "gnars-base-76",
           "gnars-base-85",
           "gnars-base-86",
           "gnars-base-93",
@@ -31545,7 +30564,7 @@
         "attendance_pct": 1,
         "like_pct": 100,
         "proposals_authored_count": 0,
-        "votes_cast_count": 1
+        "votes_cast_count": 0
       },
       "receipts": {
         "eth_received": 0.0,
@@ -31559,9 +30578,7 @@
       },
       "relationships": {
         "authored_proposals": [],
-        "voted_proposals": [
-          "gnars-base-52"
-        ],
+        "voted_proposals": [],
         "payout_proposals": [],
         "owned_projects": [],
         "related_projects": [],
@@ -33382,6 +32399,60 @@
       "notes": ""
     },
     {
+      "person_id": "0x29c0...ec66",
+      "slug": "0x29c0-ec66",
+      "display_name": "0x29c0...ec66",
+      "address": "0x29c03fee4ba44aeb1bd63b95a73aefffd6e6ec66",
+      "address_short": "0x29c0...ec66",
+      "status": "active",
+      "role": "community member",
+      "roles": [],
+      "tags": [
+        "delegate",
+        "holder"
+      ],
+      "domains": [],
+      "bio": "",
+      "identity": {
+        "member_url": "https://www.gnars.com/members/0x29c03fee4ba44aeb1bd63b95a73aefffd6e6ec66",
+        "farcaster": null,
+        "github": null,
+        "avatar_url": null,
+        "website": null,
+        "x": null,
+        "instagram": null
+      },
+      "governance": {
+        "holder_token_count": 1,
+        "delegated_token_count": 1,
+        "active_votes": 1,
+        "votes_count": 0,
+        "attendance_pct": 0,
+        "like_pct": 0,
+        "proposals_authored_count": 0,
+        "votes_cast_count": 0
+      },
+      "receipts": {
+        "eth_received": 0.0,
+        "usdc_received": 0.0,
+        "gnars_received": 0.0,
+        "fungible_transfer_count": 0,
+        "nft_received_count": 0,
+        "nft_transfer_count": 0,
+        "by_asset": [],
+        "nft_assets": []
+      },
+      "relationships": {
+        "authored_proposals": [],
+        "voted_proposals": [],
+        "payout_proposals": [],
+        "owned_projects": [],
+        "related_projects": [],
+        "related_updates": []
+      },
+      "notes": ""
+    },
+    {
       "person_id": "0x2a0b...22e6",
       "slug": "0x2a0b-22e6",
       "display_name": "0x2a0b...22e6",
@@ -33629,7 +32700,7 @@
         "attendance_pct": 2,
         "like_pct": 100,
         "proposals_authored_count": 0,
-        "votes_cast_count": 8
+        "votes_cast_count": 7
       },
       "receipts": {
         "eth_received": 0.0,
@@ -33645,7 +32716,6 @@
         "authored_proposals": [],
         "voted_proposals": [
           "gnars-base-28",
-          "gnars-base-60",
           "snapshot-0x08ea9fc7005cfae9028e522eacf567748a00e33ad8991174389096bf4f14334b",
           "snapshot-0x30847f96110952ed83c1aa78c09b5cc11ef1076614560efd29de73e8b9b18894",
           "snapshot-0x31d9113448e4dc06cf86cb8b2d94681297769fbe6cde158c24745c7eaf0f1b62",
@@ -33962,7 +33032,7 @@
         "attendance_pct": 2,
         "like_pct": 100,
         "proposals_authored_count": 0,
-        "votes_cast_count": 2
+        "votes_cast_count": 1
       },
       "receipts": {
         "eth_received": 0.0,
@@ -33977,7 +33047,6 @@
       "relationships": {
         "authored_proposals": [],
         "voted_proposals": [
-          "gnars-base-11",
           "gnars-base-12"
         ],
         "payout_proposals": [],
@@ -35000,7 +34069,7 @@
         "attendance_pct": 6,
         "like_pct": 67,
         "proposals_authored_count": 0,
-        "votes_cast_count": 6
+        "votes_cast_count": 3
       },
       "receipts": {
         "eth_received": 0.0,
@@ -35015,10 +34084,7 @@
       "relationships": {
         "authored_proposals": [],
         "voted_proposals": [
-          "gnars-base-117",
           "gnars-base-61",
-          "gnars-base-75",
-          "gnars-base-76",
           "gnars-base-79",
           "gnars-base-86"
         ],
@@ -35115,7 +34181,7 @@
         "attendance_pct": 1,
         "like_pct": 0,
         "proposals_authored_count": 0,
-        "votes_cast_count": 1
+        "votes_cast_count": 0
       },
       "receipts": {
         "eth_received": 0.0,
@@ -35129,9 +34195,7 @@
       },
       "relationships": {
         "authored_proposals": [],
-        "voted_proposals": [
-          "gnars-base-117"
-        ],
+        "voted_proposals": [],
         "payout_proposals": [],
         "owned_projects": [],
         "related_projects": [],
@@ -37353,7 +36417,7 @@
         "attendance_pct": 8,
         "like_pct": 100,
         "proposals_authored_count": 0,
-        "votes_cast_count": 7
+        "votes_cast_count": 5
       },
       "receipts": {
         "eth_received": 0.0,
@@ -37371,8 +36435,6 @@
           "gnars-base-61",
           "gnars-base-64",
           "gnars-base-65",
-          "gnars-base-66",
-          "gnars-base-67",
           "gnars-base-72",
           "gnars-base-95"
         ],
@@ -37577,7 +36639,7 @@
         "attendance_pct": 15,
         "like_pct": 80,
         "proposals_authored_count": 0,
-        "votes_cast_count": 12
+        "votes_cast_count": 8
       },
       "receipts": {
         "eth_received": 0.0,
@@ -37596,14 +36658,10 @@
           "gnars-base-28",
           "gnars-base-41",
           "gnars-base-48",
-          "gnars-base-50",
           "gnars-base-53",
           "gnars-base-54",
           "gnars-base-57",
-          "gnars-base-59",
-          "gnars-base-60",
-          "gnars-base-65",
-          "gnars-base-68"
+          "gnars-base-65"
         ],
         "payout_proposals": [],
         "owned_projects": [],
@@ -37644,7 +36702,7 @@
         "attendance_pct": 5,
         "like_pct": 100,
         "proposals_authored_count": 0,
-        "votes_cast_count": 4
+        "votes_cast_count": 3
       },
       "receipts": {
         "eth_received": 0.0,
@@ -37660,7 +36718,6 @@
         "authored_proposals": [],
         "voted_proposals": [
           "gnars-base-101",
-          "gnars-base-76",
           "gnars-base-86",
           "gnars-base-96"
         ],
@@ -38524,7 +37581,7 @@
         "attendance_pct": 1,
         "like_pct": 100,
         "proposals_authored_count": 0,
-        "votes_cast_count": 1
+        "votes_cast_count": 0
       },
       "receipts": {
         "eth_received": 0.0,
@@ -38538,9 +37595,7 @@
       },
       "relationships": {
         "authored_proposals": [],
-        "voted_proposals": [
-          "gnars-base-91"
-        ],
+        "voted_proposals": [],
         "payout_proposals": [],
         "owned_projects": [],
         "related_projects": [],
@@ -39336,7 +38391,7 @@
         "attendance_pct": 1,
         "like_pct": 100,
         "proposals_authored_count": 0,
-        "votes_cast_count": 1
+        "votes_cast_count": 0
       },
       "receipts": {
         "eth_received": 0.0,
@@ -39350,9 +38405,7 @@
       },
       "relationships": {
         "authored_proposals": [],
-        "voted_proposals": [
-          "gnars-base-52"
-        ],
+        "voted_proposals": [],
         "payout_proposals": [],
         "owned_projects": [],
         "related_projects": [],
@@ -39833,7 +38886,7 @@
         "attendance_pct": 3,
         "like_pct": 100,
         "proposals_authored_count": 0,
-        "votes_cast_count": 5
+        "votes_cast_count": 4
       },
       "receipts": {
         "eth_received": 0.0,
@@ -39849,7 +38902,6 @@
         "authored_proposals": [],
         "voted_proposals": [
           "gnars-base-13",
-          "gnars-base-52",
           "gnars-base-57",
           "snapshot-0x00fc8920736e34ab77c10ed9837df13aed9ddfe35132c271d5982a19a5857b74",
           "snapshot-0x8262bdb00439e0820c588c334bfda1c44022d227347d343b733f3127fd713a74"
@@ -44124,10 +43176,8 @@
       "role": "community member",
       "roles": [],
       "tags": [
-        "contributor",
         "delegate",
-        "holder",
-        "recipient"
+        "holder"
       ],
       "domains": [],
       "bio": "",
@@ -44148,27 +43198,21 @@
         "attendance_pct": 4,
         "like_pct": 100,
         "proposals_authored_count": 0,
-        "votes_cast_count": 2
+        "votes_cast_count": 1
       },
       "receipts": {
         "eth_received": 0.0,
         "usdc_received": 0.0,
         "gnars_received": 0.0,
         "fungible_transfer_count": 0,
-        "nft_received_count": 1,
-        "nft_transfer_count": 1,
+        "nft_received_count": 0,
+        "nft_transfer_count": 0,
         "by_asset": [],
-        "nft_assets": [
-          {
-            "label": "Gnars NFT",
-            "count": 1
-          }
-        ]
+        "nft_assets": []
       },
       "relationships": {
         "authored_proposals": [],
         "voted_proposals": [
-          "gnars-base-108",
           "gnars-base-110"
         ],
         "payout_proposals": [],
@@ -44322,7 +43366,7 @@
         "attendance_pct": 13,
         "like_pct": 100,
         "proposals_authored_count": 0,
-        "votes_cast_count": 14
+        "votes_cast_count": 12
       },
       "receipts": {
         "eth_received": 0.0,
@@ -44343,8 +43387,6 @@
           "gnars-base-45",
           "gnars-base-53",
           "gnars-base-57",
-          "gnars-base-59",
-          "gnars-base-76",
           "snapshot-0x1f626537f05b054c5f5f3e3ad4438606b748234bed9ea5d8d6301b1a2ac26ee2",
           "snapshot-0x31d9113448e4dc06cf86cb8b2d94681297769fbe6cde158c24745c7eaf0f1b62",
           "snapshot-0x4b0fef8be71a1beae3d7d2b31d44ee2df2ca539b36aa66a8221b346f6a713c4a",
@@ -45583,7 +44625,7 @@
         "attendance_pct": 5,
         "like_pct": 80,
         "proposals_authored_count": 0,
-        "votes_cast_count": 5
+        "votes_cast_count": 3
       },
       "receipts": {
         "eth_received": 0.0,
@@ -45598,9 +44640,7 @@
       "relationships": {
         "authored_proposals": [],
         "voted_proposals": [
-          "gnars-base-108",
           "gnars-base-110",
-          "gnars-base-116",
           "gnars-base-118",
           "gnars-base-119"
         ],
@@ -50141,7 +49181,7 @@
         "attendance_pct": 4,
         "like_pct": 100,
         "proposals_authored_count": 0,
-        "votes_cast_count": 4
+        "votes_cast_count": 2
       },
       "receipts": {
         "eth_received": 0.0,
@@ -50157,8 +49197,6 @@
         "authored_proposals": [],
         "voted_proposals": [
           "gnars-base-118",
-          "gnars-base-59",
-          "gnars-base-66",
           "gnars-base-77"
         ],
         "payout_proposals": [],
@@ -50647,7 +49685,7 @@
         "attendance_pct": 1,
         "like_pct": 100,
         "proposals_authored_count": 0,
-        "votes_cast_count": 1
+        "votes_cast_count": 0
       },
       "receipts": {
         "eth_received": 0.0,
@@ -50661,9 +49699,7 @@
       },
       "relationships": {
         "authored_proposals": [],
-        "voted_proposals": [
-          "gnars-base-52"
-        ],
+        "voted_proposals": [],
         "payout_proposals": [],
         "owned_projects": [],
         "related_projects": [],
@@ -51084,7 +50120,7 @@
         "attendance_pct": 2,
         "like_pct": 100,
         "proposals_authored_count": 0,
-        "votes_cast_count": 2
+        "votes_cast_count": 1
       },
       "receipts": {
         "eth_received": 0.0,
@@ -51099,7 +50135,6 @@
       "relationships": {
         "authored_proposals": [],
         "voted_proposals": [
-          "gnars-base-50",
           "gnars-base-65"
         ],
         "payout_proposals": [],
@@ -51789,7 +50824,7 @@
         "attendance_pct": 14,
         "like_pct": 86,
         "proposals_authored_count": 0,
-        "votes_cast_count": 10
+        "votes_cast_count": 9
       },
       "receipts": {
         "eth_received": 0.0,
@@ -51804,7 +50839,6 @@
       "relationships": {
         "authored_proposals": [],
         "voted_proposals": [
-          "gnars-base-11",
           "gnars-base-12",
           "gnars-base-13",
           "gnars-base-14",
@@ -52348,7 +51382,7 @@
         "attendance_pct": 8,
         "like_pct": 88,
         "proposals_authored_count": 0,
-        "votes_cast_count": 6
+        "votes_cast_count": 5
       },
       "receipts": {
         "eth_received": 0.0,
@@ -52367,8 +51401,7 @@
           "gnars-base-19",
           "gnars-base-22",
           "gnars-base-39",
-          "gnars-base-70",
-          "gnars-base-75"
+          "gnars-base-70"
         ],
         "payout_proposals": [],
         "owned_projects": [],
@@ -54314,7 +53347,7 @@
         "attendance_pct": 23,
         "like_pct": 88,
         "proposals_authored_count": 0,
-        "votes_cast_count": 22
+        "votes_cast_count": 15
       },
       "receipts": {
         "eth_received": 0.0,
@@ -54330,21 +53363,14 @@
         "authored_proposals": [],
         "voted_proposals": [
           "gnars-base-104",
-          "gnars-base-108",
           "gnars-base-22",
-          "gnars-base-43",
-          "gnars-base-44",
           "gnars-base-45",
-          "gnars-base-50",
-          "gnars-base-52",
           "gnars-base-56",
           "gnars-base-63",
-          "gnars-base-68",
           "gnars-base-69",
           "gnars-base-70",
           "gnars-base-71",
           "gnars-base-72",
-          "gnars-base-74",
           "gnars-base-80",
           "gnars-base-81",
           "gnars-base-85",
@@ -55205,7 +54231,7 @@
         "attendance_pct": 2,
         "like_pct": 100,
         "proposals_authored_count": 0,
-        "votes_cast_count": 2
+        "votes_cast_count": 1
       },
       "receipts": {
         "eth_received": 0.0,
@@ -55220,7 +54246,6 @@
       "relationships": {
         "authored_proposals": [],
         "voted_proposals": [
-          "gnars-base-59",
           "gnars-base-63"
         ],
         "payout_proposals": [],
@@ -56944,7 +55969,7 @@
         "attendance_pct": 1,
         "like_pct": 0,
         "proposals_authored_count": 0,
-        "votes_cast_count": 1
+        "votes_cast_count": 0
       },
       "receipts": {
         "eth_received": 0.0,
@@ -56958,9 +55983,7 @@
       },
       "relationships": {
         "authored_proposals": [],
-        "voted_proposals": [
-          "gnars-base-75"
-        ],
+        "voted_proposals": [],
         "payout_proposals": [],
         "owned_projects": [],
         "related_projects": [],
@@ -57108,7 +56131,7 @@
         "attendance_pct": 1,
         "like_pct": 100,
         "proposals_authored_count": 0,
-        "votes_cast_count": 1
+        "votes_cast_count": 0
       },
       "receipts": {
         "eth_received": 0.0,
@@ -57122,9 +56145,7 @@
       },
       "relationships": {
         "authored_proposals": [],
-        "voted_proposals": [
-          "gnars-base-52"
-        ],
+        "voted_proposals": [],
         "payout_proposals": [],
         "owned_projects": [],
         "related_projects": [],
@@ -57434,7 +56455,7 @@
         "attendance_pct": 5,
         "like_pct": 80,
         "proposals_authored_count": 0,
-        "votes_cast_count": 5
+        "votes_cast_count": 3
       },
       "receipts": {
         "eth_received": 0.0,
@@ -57450,8 +56471,6 @@
         "authored_proposals": [],
         "voted_proposals": [
           "gnars-base-41",
-          "gnars-base-42",
-          "gnars-base-43",
           "gnars-base-45",
           "gnars-base-46"
         ],
@@ -58098,7 +57117,7 @@
         "attendance_pct": 3,
         "like_pct": 33,
         "proposals_authored_count": 1,
-        "votes_cast_count": 3
+        "votes_cast_count": 1
       },
       "receipts": {
         "eth_received": 0.0,
@@ -58120,9 +57139,7 @@
           "gnars-base-71"
         ],
         "voted_proposals": [
-          "gnars-base-71",
-          "gnars-base-75",
-          "gnars-base-76"
+          "gnars-base-71"
         ],
         "payout_proposals": [],
         "owned_projects": [],
@@ -60276,7 +59293,7 @@
         "attendance_pct": null,
         "like_pct": null,
         "proposals_authored_count": 0,
-        "votes_cast_count": 19
+        "votes_cast_count": 17
       },
       "receipts": {
         "eth_received": 0.0,
@@ -60291,7 +59308,6 @@
       "relationships": {
         "authored_proposals": [],
         "voted_proposals": [
-          "gnars-base-11",
           "gnars-base-12",
           "gnars-base-13",
           "gnars-base-14",
@@ -60304,7 +59320,6 @@
           "gnars-base-37",
           "gnars-base-39",
           "gnars-base-40",
-          "gnars-base-42",
           "gnars-base-45",
           "gnars-base-53",
           "gnars-base-63",
@@ -60797,7 +59812,7 @@
         "attendance_pct": null,
         "like_pct": null,
         "proposals_authored_count": 0,
-        "votes_cast_count": 6
+        "votes_cast_count": 5
       },
       "receipts": {
         "eth_received": 0.0,
@@ -60812,7 +59827,6 @@
       "relationships": {
         "authored_proposals": [],
         "voted_proposals": [
-          "gnars-base-11",
           "gnars-base-12",
           "gnars-base-13",
           "gnars-base-14",
@@ -61716,8 +60730,8 @@
         "votes_count": 16,
         "attendance_pct": 16,
         "like_pct": 81,
-        "proposals_authored_count": 2,
-        "votes_cast_count": 15
+        "proposals_authored_count": 1,
+        "votes_cast_count": 11
       },
       "receipts": {
         "eth_received": 0.0,
@@ -61731,23 +60745,18 @@
       },
       "relationships": {
         "authored_proposals": [
-          "gnars-base-73",
-          "gnars-base-74"
+          "gnars-base-73"
         ],
         "voted_proposals": [
           "gnars-base-100",
           "gnars-base-101",
           "gnars-base-41",
           "gnars-base-46",
-          "gnars-base-52",
           "gnars-base-53",
           "gnars-base-54",
           "gnars-base-72",
-          "gnars-base-74",
-          "gnars-base-75",
           "gnars-base-79",
           "gnars-base-86",
-          "gnars-base-91",
           "gnars-base-93",
           "gnars-base-96"
         ],
@@ -61924,64 +60933,6 @@
           "gnars-base-14",
           "gnars-base-16",
           "gnars-base-39"
-        ],
-        "payout_proposals": [],
-        "owned_projects": [],
-        "related_projects": [],
-        "related_updates": []
-      },
-      "notes": ""
-    },
-    {
-      "person_id": "0x32c8...2428",
-      "slug": "0x32c8-2428",
-      "display_name": "0x32c8...2428",
-      "address": "0x32c862fd5133a2342305c1b2db110b173c5e2428",
-      "address_short": "0x32c8...2428",
-      "status": "active",
-      "role": "community member",
-      "roles": [],
-      "tags": [
-        "contributor",
-        "proposer"
-      ],
-      "domains": [],
-      "bio": "",
-      "identity": {
-        "member_url": "https://www.gnars.com/members/0x32c862fd5133a2342305c1b2db110b173c5e2428",
-        "farcaster": null,
-        "github": null,
-        "avatar_url": null,
-        "website": null,
-        "x": null,
-        "instagram": null
-      },
-      "governance": {
-        "holder_token_count": 0,
-        "delegated_token_count": 0,
-        "active_votes": 0,
-        "votes_count": 0,
-        "attendance_pct": null,
-        "like_pct": null,
-        "proposals_authored_count": 1,
-        "votes_cast_count": 1
-      },
-      "receipts": {
-        "eth_received": 0.0,
-        "usdc_received": 0.0,
-        "gnars_received": 0.0,
-        "fungible_transfer_count": 0,
-        "nft_received_count": 0,
-        "nft_transfer_count": 0,
-        "by_asset": [],
-        "nft_assets": []
-      },
-      "relationships": {
-        "authored_proposals": [
-          "gnars-base-60"
-        ],
-        "voted_proposals": [
-          "gnars-base-60"
         ],
         "payout_proposals": [],
         "owned_projects": [],
@@ -62861,8 +61812,8 @@
         "votes_count": 0,
         "attendance_pct": null,
         "like_pct": null,
-        "proposals_authored_count": 3,
-        "votes_cast_count": 1
+        "proposals_authored_count": 1,
+        "votes_cast_count": 0
       },
       "receipts": {
         "eth_received": 0.0,
@@ -62876,13 +61827,9 @@
       },
       "relationships": {
         "authored_proposals": [
-          "gnars-base-114",
-          "gnars-base-115",
-          "gnars-base-116"
+          "gnars-base-114"
         ],
-        "voted_proposals": [
-          "gnars-base-117"
-        ],
+        "voted_proposals": [],
         "payout_proposals": [],
         "owned_projects": [],
         "related_projects": [],
@@ -63692,112 +62639,6 @@
       "notes": ""
     },
     {
-      "person_id": "0x658d...7a03",
-      "slug": "0x658d-7a03",
-      "display_name": "0x658d...7a03",
-      "address": "0x658de0443259a1027caa976ef9a42e6982037a03",
-      "address_short": "0x658d...7a03",
-      "status": "active",
-      "role": "community member",
-      "roles": [],
-      "tags": [],
-      "domains": [],
-      "bio": "",
-      "identity": {
-        "member_url": "https://www.gnars.com/members/0x658de0443259a1027caa976ef9a42e6982037a03",
-        "farcaster": null,
-        "github": null,
-        "avatar_url": null,
-        "website": null,
-        "x": null,
-        "instagram": null
-      },
-      "governance": {
-        "holder_token_count": 0,
-        "delegated_token_count": 0,
-        "active_votes": 0,
-        "votes_count": 0,
-        "attendance_pct": null,
-        "like_pct": null,
-        "proposals_authored_count": 0,
-        "votes_cast_count": 1
-      },
-      "receipts": {
-        "eth_received": 0.0,
-        "usdc_received": 0.0,
-        "gnars_received": 0.0,
-        "fungible_transfer_count": 0,
-        "nft_received_count": 0,
-        "nft_transfer_count": 0,
-        "by_asset": [],
-        "nft_assets": []
-      },
-      "relationships": {
-        "authored_proposals": [],
-        "voted_proposals": [
-          "gnars-base-68"
-        ],
-        "payout_proposals": [],
-        "owned_projects": [],
-        "related_projects": [],
-        "related_updates": []
-      },
-      "notes": ""
-    },
-    {
-      "person_id": "0x665e...9dc1",
-      "slug": "0x665e-9dc1",
-      "display_name": "0x665e...9dc1",
-      "address": "0x665eaba50ff0c80f318de79f5c2b7a9fce409dc1",
-      "address_short": "0x665e...9dc1",
-      "status": "active",
-      "role": "community member",
-      "roles": [],
-      "tags": [],
-      "domains": [],
-      "bio": "",
-      "identity": {
-        "member_url": "https://www.gnars.com/members/0x665eaba50ff0c80f318de79f5c2b7a9fce409dc1",
-        "farcaster": null,
-        "github": null,
-        "avatar_url": null,
-        "website": null,
-        "x": null,
-        "instagram": null
-      },
-      "governance": {
-        "holder_token_count": 0,
-        "delegated_token_count": 0,
-        "active_votes": 0,
-        "votes_count": 0,
-        "attendance_pct": null,
-        "like_pct": null,
-        "proposals_authored_count": 0,
-        "votes_cast_count": 1
-      },
-      "receipts": {
-        "eth_received": 0.0,
-        "usdc_received": 0.0,
-        "gnars_received": 0.0,
-        "fungible_transfer_count": 0,
-        "nft_received_count": 0,
-        "nft_transfer_count": 0,
-        "by_asset": [],
-        "nft_assets": []
-      },
-      "relationships": {
-        "authored_proposals": [],
-        "voted_proposals": [
-          "gnars-base-52"
-        ],
-        "payout_proposals": [],
-        "owned_projects": [],
-        "related_projects": [],
-        "related_updates": []
-      },
-      "notes": ""
-    },
-    {
       "person_id": "0x672c...c8fc",
       "slug": "0x672c-c8fc",
       "display_name": "0x672c...c8fc",
@@ -63933,7 +62774,7 @@
         "attendance_pct": null,
         "like_pct": null,
         "proposals_authored_count": 0,
-        "votes_cast_count": 10
+        "votes_cast_count": 9
       },
       "receipts": {
         "eth_received": 0.0,
@@ -63948,7 +62789,6 @@
       "relationships": {
         "authored_proposals": [],
         "voted_proposals": [
-          "gnars-base-11",
           "snapshot-0x0925892015b8809cc4ab3a7030c77364657c46f64ee083eba9f4fd5c61058b9b",
           "snapshot-0x1f626537f05b054c5f5f3e3ad4438606b748234bed9ea5d8d6301b1a2ac26ee2",
           "snapshot-0x3dcb9566427c72d318242451eac0e8e37ec338f63c4813ffcbf9cffc7603f188",
@@ -63958,59 +62798,6 @@
           "snapshot-0xa0681871875f12ad4bbaf9c56f16b8c9daf145929e3cd08d00978dfbd0a0af80",
           "snapshot-0xbd104aec85af594c4fe35b826fd792dba0e860c8ee0ab0625bd6d67284ef8ad7",
           "snapshot-0xe13a7551f6ee674f29beee0f80193c0e7540b1b9286c6d646738c01e24e0f0e7"
-        ],
-        "payout_proposals": [],
-        "owned_projects": [],
-        "related_projects": [],
-        "related_updates": []
-      },
-      "notes": ""
-    },
-    {
-      "person_id": "0x6ad1...d08d",
-      "slug": "0x6ad1-d08d",
-      "display_name": "0x6ad1...d08d",
-      "address": "0x6ad1bb9de62b004aecdab504f5c6ec18f494d08d",
-      "address_short": "0x6ad1...d08d",
-      "status": "active",
-      "role": "community member",
-      "roles": [],
-      "tags": [],
-      "domains": [],
-      "bio": "",
-      "identity": {
-        "member_url": "https://www.gnars.com/members/0x6ad1bb9de62b004aecdab504f5c6ec18f494d08d",
-        "farcaster": null,
-        "github": null,
-        "avatar_url": null,
-        "website": null,
-        "x": null,
-        "instagram": null
-      },
-      "governance": {
-        "holder_token_count": 0,
-        "delegated_token_count": 0,
-        "active_votes": 0,
-        "votes_count": 0,
-        "attendance_pct": null,
-        "like_pct": null,
-        "proposals_authored_count": 0,
-        "votes_cast_count": 1
-      },
-      "receipts": {
-        "eth_received": 0.0,
-        "usdc_received": 0.0,
-        "gnars_received": 0.0,
-        "fungible_transfer_count": 0,
-        "nft_received_count": 0,
-        "nft_transfer_count": 0,
-        "by_asset": [],
-        "nft_assets": []
-      },
-      "relationships": {
-        "authored_proposals": [],
-        "voted_proposals": [
-          "gnars-base-109"
         ],
         "payout_proposals": [],
         "owned_projects": [],
@@ -64048,7 +62835,7 @@
         "attendance_pct": null,
         "like_pct": null,
         "proposals_authored_count": 0,
-        "votes_cast_count": 6
+        "votes_cast_count": 5
       },
       "receipts": {
         "eth_received": 0.0,
@@ -64063,7 +62850,6 @@
       "relationships": {
         "authored_proposals": [],
         "voted_proposals": [
-          "gnars-base-11",
           "gnars-base-12",
           "gnars-base-13",
           "gnars-base-14",
@@ -64162,7 +62948,7 @@
         "attendance_pct": null,
         "like_pct": null,
         "proposals_authored_count": 3,
-        "votes_cast_count": 16
+        "votes_cast_count": 15
       },
       "receipts": {
         "eth_received": 0.0,
@@ -64189,7 +62975,6 @@
           "gnars-base-23",
           "gnars-base-24",
           "gnars-base-46",
-          "gnars-base-50",
           "snapshot-0x0925892015b8809cc4ab3a7030c77364657c46f64ee083eba9f4fd5c61058b9b",
           "snapshot-0x872bfadf89dee5dcea47992b94ebff05bd24dcf9a02d3e5daac50b2ff48eb90b",
           "snapshot-0x9d63add3de1dd0868f7b4414b9de375e5fc58c3800270ee1a08c819c9b3393ad",
@@ -64291,7 +63076,7 @@
         "attendance_pct": 29,
         "like_pct": 97,
         "proposals_authored_count": 2,
-        "votes_cast_count": 72
+        "votes_cast_count": 70
       },
       "receipts": {
         "eth_received": 0.0,
@@ -64309,7 +63094,6 @@
           "snapshot-0x6095121db59fa6116e4bbbc4ca5d091273088eee7854ad496f1f322ae9d1706e"
         ],
         "voted_proposals": [
-          "gnars-base-11",
           "gnars-base-12",
           "gnars-base-14",
           "gnars-base-15",
@@ -64329,7 +63113,6 @@
           "gnars-base-81",
           "gnars-base-86",
           "gnars-base-88",
-          "gnars-base-91",
           "gnars-base-93",
           "snapshot-0x08e71d63f57a0e47eb487e8b99c44b051e1d3bf6cb69344726e17a0d75645e8b",
           "snapshot-0x08ea9fc7005cfae9028e522eacf567748a00e33ad8991174389096bf4f14334b",
@@ -65029,65 +63812,6 @@
       "notes": ""
     },
     {
-      "person_id": "0x880f...0c17",
-      "slug": "0x880f-0c17",
-      "display_name": "0x880f...0c17",
-      "address": "0x880fb3cf5c6cc2d7dfc13a993e839a9411200c17",
-      "address_short": "0x880f...0c17",
-      "status": "active",
-      "role": "community member",
-      "roles": [],
-      "tags": [
-        "contributor",
-        "recipient"
-      ],
-      "domains": [],
-      "bio": "",
-      "identity": {
-        "member_url": "https://www.gnars.com/members/0x880fb3cf5c6cc2d7dfc13a993e839a9411200c17",
-        "farcaster": null,
-        "github": null,
-        "avatar_url": null,
-        "website": null,
-        "x": null,
-        "instagram": null
-      },
-      "governance": {
-        "holder_token_count": 0,
-        "delegated_token_count": 0,
-        "active_votes": 0,
-        "votes_count": 0,
-        "attendance_pct": null,
-        "like_pct": null,
-        "proposals_authored_count": 0,
-        "votes_cast_count": 0
-      },
-      "receipts": {
-        "eth_received": 0.0,
-        "usdc_received": 0.0,
-        "gnars_received": 0.0,
-        "fungible_transfer_count": 0,
-        "nft_received_count": 6,
-        "nft_transfer_count": 6,
-        "by_asset": [],
-        "nft_assets": [
-          {
-            "label": "Gnars NFT",
-            "count": 6
-          }
-        ]
-      },
-      "relationships": {
-        "authored_proposals": [],
-        "voted_proposals": [],
-        "payout_proposals": [],
-        "owned_projects": [],
-        "related_projects": [],
-        "related_updates": []
-      },
-      "notes": ""
-    },
-    {
       "person_id": "0x88b7...4fc6",
       "slug": "0x88b7-4fc6",
       "display_name": "0x88b7...4fc6",
@@ -65519,7 +64243,7 @@
         "attendance_pct": null,
         "like_pct": null,
         "proposals_authored_count": 0,
-        "votes_cast_count": 2
+        "votes_cast_count": 1
       },
       "receipts": {
         "eth_received": 0.0,
@@ -65534,7 +64258,6 @@
       "relationships": {
         "authored_proposals": [],
         "voted_proposals": [
-          "gnars-base-68",
           "gnars-base-69"
         ],
         "payout_proposals": [],
@@ -65735,7 +64458,7 @@
         "attendance_pct": null,
         "like_pct": null,
         "proposals_authored_count": 0,
-        "votes_cast_count": 9
+        "votes_cast_count": 8
       },
       "receipts": {
         "eth_received": 0.0,
@@ -65750,7 +64473,6 @@
       "relationships": {
         "authored_proposals": [],
         "voted_proposals": [
-          "gnars-base-11",
           "gnars-base-12",
           "gnars-base-13",
           "gnars-base-14",
@@ -65961,7 +64683,7 @@
         "attendance_pct": null,
         "like_pct": null,
         "proposals_authored_count": 0,
-        "votes_cast_count": 6
+        "votes_cast_count": 5
       },
       "receipts": {
         "eth_received": 0.0,
@@ -65976,7 +64698,6 @@
       "relationships": {
         "authored_proposals": [],
         "voted_proposals": [
-          "gnars-base-11",
           "gnars-base-12",
           "gnars-base-14",
           "gnars-base-15",
@@ -66198,7 +64919,7 @@
         "attendance_pct": 1,
         "like_pct": 100,
         "proposals_authored_count": 0,
-        "votes_cast_count": 1
+        "votes_cast_count": 0
       },
       "receipts": {
         "eth_received": 0.0,
@@ -66217,9 +64938,7 @@
       },
       "relationships": {
         "authored_proposals": [],
-        "voted_proposals": [
-          "gnars-base-75"
-        ],
+        "voted_proposals": [],
         "payout_proposals": [],
         "owned_projects": [],
         "related_projects": [],
@@ -66859,7 +65578,7 @@
         "attendance_pct": null,
         "like_pct": null,
         "proposals_authored_count": 0,
-        "votes_cast_count": 34
+        "votes_cast_count": 29
       },
       "receipts": {
         "eth_received": 0.0,
@@ -66897,15 +65616,10 @@
           "gnars-base-39",
           "gnars-base-40",
           "gnars-base-41",
-          "gnars-base-42",
-          "gnars-base-43",
-          "gnars-base-44",
           "gnars-base-45",
           "gnars-base-46",
           "gnars-base-47",
           "gnars-base-48",
-          "gnars-base-50",
-          "gnars-base-52",
           "gnars-base-56",
           "gnars-base-57"
         ],
@@ -67737,6 +66451,64 @@
       "notes": ""
     },
     {
+      "person_id": "0xd32d...7cd4",
+      "slug": "0xd32d-7cd4",
+      "display_name": "0xd32d...7cd4",
+      "address": "0xd32d87e34913f7dee83a7a6faed8b6f054b97cd4",
+      "address_short": "0xd32d...7cd4",
+      "status": "active",
+      "role": "community member",
+      "roles": [],
+      "tags": [
+        "contributor",
+        "proposer"
+      ],
+      "domains": [],
+      "bio": "",
+      "identity": {
+        "member_url": "https://www.gnars.com/members/0xd32d87e34913f7dee83a7a6faed8b6f054b97cd4",
+        "farcaster": null,
+        "github": null,
+        "avatar_url": null,
+        "website": null,
+        "x": null,
+        "instagram": null
+      },
+      "governance": {
+        "holder_token_count": 0,
+        "delegated_token_count": 0,
+        "active_votes": 0,
+        "votes_count": 0,
+        "attendance_pct": null,
+        "like_pct": null,
+        "proposals_authored_count": 1,
+        "votes_cast_count": 1
+      },
+      "receipts": {
+        "eth_received": 0.0,
+        "usdc_received": 0.0,
+        "gnars_received": 0.0,
+        "fungible_transfer_count": 0,
+        "nft_received_count": 0,
+        "nft_transfer_count": 0,
+        "by_asset": [],
+        "nft_assets": []
+      },
+      "relationships": {
+        "authored_proposals": [
+          "gnars-base-61"
+        ],
+        "voted_proposals": [
+          "gnars-base-61"
+        ],
+        "payout_proposals": [],
+        "owned_projects": [],
+        "related_projects": [],
+        "related_updates": []
+      },
+      "notes": ""
+    },
+    {
       "person_id": "0xd6ee...7dff",
       "slug": "0xd6ee-7dff",
       "display_name": "0xd6ee...7dff",
@@ -67980,7 +66752,7 @@
         "attendance_pct": null,
         "like_pct": null,
         "proposals_authored_count": 0,
-        "votes_cast_count": 2
+        "votes_cast_count": 1
       },
       "receipts": {
         "eth_received": 0.0,
@@ -67995,7 +66767,6 @@
       "relationships": {
         "authored_proposals": [],
         "voted_proposals": [
-          "gnars-base-11",
           "gnars-base-12"
         ],
         "payout_proposals": [],
@@ -68472,7 +67243,7 @@
         "attendance_pct": 1,
         "like_pct": 100,
         "proposals_authored_count": 0,
-        "votes_cast_count": 18
+        "votes_cast_count": 17
       },
       "receipts": {
         "eth_received": 0.0,
@@ -68487,7 +67258,6 @@
       "relationships": {
         "authored_proposals": [],
         "voted_proposals": [
-          "gnars-base-59",
           "snapshot-0x013702a15624613befa0ed1488350610f8d98c3d71c82e240183e8692600a5f9",
           "snapshot-0x27c109216d227ccc3fa01bb4fdf864d5aa0bd54be5a33ae7015816ed62ee3703",
           "snapshot-0x31563b41a9581f2cac219a22d6ed5c8fbf4a639c427cd3a627b0668ce14f2a55",
@@ -68675,65 +67445,6 @@
       "notes": ""
     },
     {
-      "person_id": "0xf32d...79c7",
-      "slug": "0xf32d-79c7",
-      "display_name": "0xf32d...79c7",
-      "address": "0xf32dd1bd55bd14d929218499a2e7d106f72f79c7",
-      "address_short": "0xf32d...79c7",
-      "status": "active",
-      "role": "community member",
-      "roles": [],
-      "tags": [
-        "athlete",
-        "contributor",
-        "proposer"
-      ],
-      "domains": [],
-      "bio": "",
-      "identity": {
-        "member_url": "https://www.gnars.com/members/0xf32dd1bd55bd14d929218499a2e7d106f72f79c7",
-        "farcaster": null,
-        "github": null,
-        "avatar_url": null,
-        "website": null,
-        "x": null,
-        "instagram": null
-      },
-      "governance": {
-        "holder_token_count": 0,
-        "delegated_token_count": 0,
-        "active_votes": 0,
-        "votes_count": 0,
-        "attendance_pct": null,
-        "like_pct": null,
-        "proposals_authored_count": 1,
-        "votes_cast_count": 1
-      },
-      "receipts": {
-        "eth_received": 0.0,
-        "usdc_received": 0.0,
-        "gnars_received": 0.0,
-        "fungible_transfer_count": 0,
-        "nft_received_count": 0,
-        "nft_transfer_count": 0,
-        "by_asset": [],
-        "nft_assets": []
-      },
-      "relationships": {
-        "authored_proposals": [
-          "gnars-base-68"
-        ],
-        "voted_proposals": [
-          "gnars-base-68"
-        ],
-        "payout_proposals": [],
-        "owned_projects": [],
-        "related_projects": [],
-        "related_updates": []
-      },
-      "notes": ""
-    },
-    {
       "person_id": "0xf91d...bdaf",
       "slug": "0xf91d-bdaf",
       "display_name": "0xf91d...bdaf",
@@ -68819,7 +67530,7 @@
         "attendance_pct": null,
         "like_pct": null,
         "proposals_authored_count": 0,
-        "votes_cast_count": 41
+        "votes_cast_count": 40
       },
       "receipts": {
         "eth_received": 0.0,
@@ -68834,7 +67545,6 @@
       "relationships": {
         "authored_proposals": [],
         "voted_proposals": [
-          "gnars-base-11",
           "gnars-base-12",
           "snapshot-0x08e71d63f57a0e47eb487e8b99c44b051e1d3bf6cb69344726e17a0d75645e8b",
           "snapshot-0x08ea9fc7005cfae9028e522eacf567748a00e33ad8991174389096bf4f14334b",
@@ -68970,7 +67680,7 @@
         "attendance_pct": null,
         "like_pct": null,
         "proposals_authored_count": 0,
-        "votes_cast_count": 5
+        "votes_cast_count": 4
       },
       "receipts": {
         "eth_received": 0.0,
@@ -68985,7 +67695,6 @@
       "relationships": {
         "authored_proposals": [],
         "voted_proposals": [
-          "gnars-base-11",
           "gnars-base-12",
           "gnars-base-14",
           "gnars-base-15",
@@ -69089,7 +67798,7 @@
         "attendance_pct": null,
         "like_pct": null,
         "proposals_authored_count": 1,
-        "votes_cast_count": 53
+        "votes_cast_count": 45
       },
       "receipts": {
         "eth_received": 0.0,
@@ -69106,7 +67815,6 @@
           "gnars-base-37"
         ],
         "voted_proposals": [
-          "gnars-base-11",
           "gnars-base-12",
           "gnars-base-13",
           "gnars-base-14",
@@ -69135,22 +67843,15 @@
           "gnars-base-39",
           "gnars-base-40",
           "gnars-base-41",
-          "gnars-base-42",
           "gnars-base-45",
           "gnars-base-46",
           "gnars-base-47",
-          "gnars-base-50",
           "gnars-base-53",
           "gnars-base-54",
           "gnars-base-57",
-          "gnars-base-59",
-          "gnars-base-60",
           "gnars-base-64",
           "gnars-base-65",
-          "gnars-base-75",
-          "gnars-base-76",
           "gnars-base-85",
-          "gnars-base-91",
           "gnars-base-93",
           "snapshot-0x0925892015b8809cc4ab3a7030c77364657c46f64ee083eba9f4fd5c61058b9b",
           "snapshot-0x3dcb9566427c72d318242451eac0e8e37ec338f63c4813ffcbf9cffc7603f188",
@@ -69269,59 +67970,6 @@
           "snapshot-0x7923cb621955e9fedccf66f545b46358f2b80562554169bc2a0e390a676b137e",
           "snapshot-0xc0d8af294ff7c51e20145320a8b878ca9ed871599f210ac1616fc6c3d4da263b",
           "snapshot-0xe5f8417d633b7d2b6136be896b9d100b82056cfbdb7c39e67adb806c8c0d830f"
-        ],
-        "payout_proposals": [],
-        "owned_projects": [],
-        "related_projects": [],
-        "related_updates": []
-      },
-      "notes": ""
-    },
-    {
-      "person_id": "0xfecd...a075",
-      "slug": "0xfecd-a075",
-      "display_name": "0xfecd...a075",
-      "address": "0xfecd0cb6ee16c61bc7e8c5c7a464f6b3a8f1a075",
-      "address_short": "0xfecd...a075",
-      "status": "active",
-      "role": "community member",
-      "roles": [],
-      "tags": [],
-      "domains": [],
-      "bio": "",
-      "identity": {
-        "member_url": "https://www.gnars.com/members/0xfecd0cb6ee16c61bc7e8c5c7a464f6b3a8f1a075",
-        "farcaster": null,
-        "github": null,
-        "avatar_url": null,
-        "website": null,
-        "x": null,
-        "instagram": null
-      },
-      "governance": {
-        "holder_token_count": 0,
-        "delegated_token_count": 0,
-        "active_votes": 0,
-        "votes_count": 0,
-        "attendance_pct": null,
-        "like_pct": null,
-        "proposals_authored_count": 0,
-        "votes_cast_count": 1
-      },
-      "receipts": {
-        "eth_received": 0.0,
-        "usdc_received": 0.0,
-        "gnars_received": 0.0,
-        "fungible_transfer_count": 0,
-        "nft_received_count": 0,
-        "nft_transfer_count": 0,
-        "by_asset": [],
-        "nft_assets": []
-      },
-      "relationships": {
-        "authored_proposals": [],
-        "voted_proposals": [
-          "gnars-base-50"
         ],
         "payout_proposals": [],
         "owned_projects": [],

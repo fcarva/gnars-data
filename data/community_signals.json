@@ -14,6 +14,13 @@
         "payout_count": 8,
         "delivery_count": 4,
         "recipient_count": 4,
+        "project_count": 1,
+        "unique_voters_count": 26,
+        "avg_votes_per_proposal": 21.5,
+        "median_votes_per_proposal": 21.5,
+        "proposal_success_rate_pct": 0.0,
+        "payouts_per_proposal": 4.0,
+        "deliveries_per_proposal": 2.0,
         "payouts_by_asset": [
           {
             "symbol": "USDC",
@@ -261,6 +268,13 @@
         "payout_count": 9,
         "delivery_count": 4,
         "recipient_count": 5,
+        "project_count": 1,
+        "unique_voters_count": 27,
+        "avg_votes_per_proposal": 11.75,
+        "median_votes_per_proposal": 12.5,
+        "proposal_success_rate_pct": 0.0,
+        "payouts_per_proposal": 2.25,
+        "deliveries_per_proposal": 1.0,
         "payouts_by_asset": [
           {
             "symbol": "USDC",
@@ -563,6 +577,13 @@
         "payout_count": 12,
         "delivery_count": 4,
         "recipient_count": 6,
+        "project_count": 2,
+        "unique_voters_count": 43,
+        "avg_votes_per_proposal": 14.29,
+        "median_votes_per_proposal": 15.0,
+        "proposal_success_rate_pct": 0.0,
+        "payouts_per_proposal": 1.714,
+        "deliveries_per_proposal": 0.571,
         "payouts_by_asset": [
           {
             "symbol": "USDC",
@@ -954,6 +975,13 @@
         "payout_count": 81,
         "delivery_count": 4,
         "recipient_count": 47,
+        "project_count": 2,
+        "unique_voters_count": 436,
+        "avg_votes_per_proposal": 20.25,
+        "median_votes_per_proposal": 21.0,
+        "proposal_success_rate_pct": 46.63,
+        "payouts_per_proposal": 0.42,
+        "deliveries_per_proposal": 0.021,
         "payouts_by_asset": [
           {
             "symbol": "SENDIT",

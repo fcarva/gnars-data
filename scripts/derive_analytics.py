@@ -89,6 +89,28 @@ def integer_or_none(value: Any) -> int | None:
     return int(value)
 
 
+def mean(values: list[float]) -> float:
+    if not values:
+        return 0.0
+    return sum(values) / len(values)
+
+
+def median(values: list[float]) -> float:
+    if not values:
+        return 0.0
+    ordered = sorted(values)
+    mid = len(ordered) // 2
+    if len(ordered) % 2 == 1:
+        return ordered[mid]
+    return (ordered[mid - 1] + ordered[mid]) / 2
+
+
+def percent(numerator: float, denominator: float) -> float | None:
+    if denominator <= 0:
+        return None
+    return round((numerator / denominator) * 100, 2)
+
+
 def parse_datetime(value: Any) -> datetime | None:
     if value in (None, ""):
         return None
@@ -922,9 +944,61 @@ def build_dao_metrics(
     spend_records: list[dict[str, Any]],
     nft_records: list[dict[str, Any]],
     treasury: dict[str, Any],
+    project_updates: dict[str, Any],
 ) -> dict[str, Any]:
     people_records = people["records"]
     proposal_status_counts = Counter(record["status"] for record in archive["records"])
+    as_of_dt = parse_datetime(archive["as_of"]) or datetime.now(timezone.utc)
+    by_30d = as_of_dt - timedelta(days=30)
+
+    successful_proposals = [record for record in archive["records"] if is_successful_proposal(record)]
+    closed_outcomes = sum(
+        1
+        for record in archive["records"]
+        if str(record.get("status") or "").strip().lower() in {"executed", "closed", "defeated", "failed", "cancelled", "canceled", "expired"}
+    )
+    unique_voters = {
+        normalize_address(vote.get("voter"))
+        for proposal in archive["records"]
+        for vote in (proposal.get("votes") or [])
+        if normalize_address(vote.get("voter"))
+    }
+    vote_counts = [float(len(record.get("votes") or [])) for record in archive["records"]]
+
+    proposals_with_routes = {record["archive_id"] for record in spend_records}
+    payout_values_usdc = [number_or_zero(record["receipts"].get("usdc_received")) for record in people_records]
+    payout_values_eth = [number_or_zero(record["receipts"].get("eth_received")) for record in people_records]
+    top10_usdc = sum(sorted(payout_values_usdc, reverse=True)[:10])
+    top10_eth = sum(sorted(payout_values_eth, reverse=True)[:10])
+
+    recent_proposals_30d = [record for record in archive["records"] if in_window(proposal_event_at(record), by_30d)]
+    recent_spend_30d = [record for record in spend_records if in_window(record.get("proposal_end_at") or record.get("proposal_created_at"), by_30d)]
+    recent_deliveries_30d = [
+        record
+        for record in project_updates["records"]
+        if in_window(record.get("date"), by_30d)
+        and (
+            str(record.get("status") or "").strip().lower() == "completed"
+            or str(record.get("kind") or "").strip().lower() in {"delivery", "milestone"}
+        )
+    ]
+
+    project_status_counts = Counter(str(record.get("status") or "unknown").strip().lower() for record in project_rollups["records"])
+
+    proposal_event_days = [parse_datetime(proposal_event_at(record)) for record in archive["records"]]
+    proposal_event_days = [day for day in proposal_event_days if day is not None]
+    payout_event_days = [
+        parse_datetime(record.get("proposal_end_at") or record.get("proposal_created_at"))
+        for record in spend_records
+    ]
+    payout_event_days = [day for day in payout_event_days if day is not None]
+    delivery_event_days = [
+        parse_datetime(record.get("date"))
+        for record in project_updates["records"]
+        if str(record.get("status") or "").strip().lower() == "completed"
+        or str(record.get("kind") or "").strip().lower() in {"delivery", "milestone"}
+    ]
+    delivery_event_days = [day for day in delivery_event_days if day is not None]
 
     def leaderboard(
         value_getter: Any,
@@ -965,6 +1039,9 @@ def build_dao_metrics(
     overview = {
         "proposal_count": len(archive["records"]),
         "active_proposal_count": proposal_status_counts.get("active", 0),
+        "successful_proposal_count": len(successful_proposals),
+        "closed_outcome_count": closed_outcomes,
+        "proposal_success_rate_pct": percent(len(successful_proposals), closed_outcomes),
         "people_count": len(people_records),
         "holders_count": sum(1 for record in people_records if "holder" in record["tags"]),
         "delegates_count": sum(1 for record in people_records if "delegate" in record["tags"]),
@@ -972,7 +1049,11 @@ def build_dao_metrics(
         "athletes_count": sum(1 for record in people_records if "athlete" in record["tags"]),
         "recipients_count": sum(1 for record in people_records if "recipient" in record["tags"]),
         "proposers_count": sum(1 for record in people_records if "proposer" in record["tags"]),
+        "unique_voters_count": len(unique_voters),
+        "avg_votes_per_proposal": round(mean(vote_counts), 2),
+        "median_votes_per_proposal": round(median(vote_counts), 2),
         "workstream_count": len(project_rollups["records"]),
+        "workstream_status_counts": dict(sorted(project_status_counts.items())),
         "treasury_assets_count": len(treasury["records"]),
         "treasury_total_value_usd": treasury["overview"]["treasury_page_total_value_usd"],
         "outflows_eth": round(sum(record["amount"] for record in spend_records if record["asset_symbol"] == "ETH"), 8),
@@ -980,6 +1061,18 @@ def build_dao_metrics(
         "outflows_gnars": round(sum(record["amount"] for record in spend_records if record["asset_symbol"] == "GNARS"), 8),
         "fungible_transfer_count": len(spend_records),
         "nft_transfer_count": len(nft_records),
+        "routed_proposal_count": len(proposals_with_routes),
+        "routed_proposal_share_pct": percent(len(proposals_with_routes), len(archive["records"])),
+        "top10_recipient_concentration_usdc_pct": percent(top10_usdc, sum(payout_values_usdc)),
+        "top10_recipient_concentration_eth_pct": percent(top10_eth, sum(payout_values_eth)),
+        "proposals_30d": len(recent_proposals_30d),
+        "successful_proposals_30d": sum(1 for record in recent_proposals_30d if is_successful_proposal(record)),
+        "payout_routes_30d": len(recent_spend_30d),
+        "deliveries_30d": len(recent_deliveries_30d),
+        "active_recipients_30d": len({record["recipient_address"] for record in recent_spend_30d}),
+        "days_since_last_proposal": max(0, (as_of_dt.date() - max(proposal_event_days).date()).days) if proposal_event_days else None,
+        "days_since_last_payout": max(0, (as_of_dt.date() - max(payout_event_days).date()).days) if payout_event_days else None,
+        "days_since_last_delivery": max(0, (as_of_dt.date() - max(delivery_event_days).date()).days) if delivery_event_days else None,
         "proposal_status_counts": dict(sorted(proposal_status_counts.items())),
     }
 
@@ -1571,6 +1664,15 @@ def build_community_signals(
             key=lambda row: (-number_or_zero(row["score"]), str(row["display_name"]).lower()),
         )[:10]
 
+        unique_voters = {
+            normalize_address(vote.get("voter"))
+            for proposal in selected_proposals
+            for vote in (proposal.get("votes") or [])
+            if normalize_address(vote.get("voter"))
+        }
+        vote_counts = [float(len(proposal.get("votes") or [])) for proposal in selected_proposals]
+        successful_count = sum(1 for proposal in selected_proposals if is_successful_proposal(proposal))
+
         windows.append(
             {
                 "window_id": spec["window_id"],
@@ -1579,10 +1681,17 @@ def build_community_signals(
                 "metrics": {
                     "active_proposals_now": sum(1 for proposal in archive["records"] if str(proposal.get("status") or "").lower() == "active"),
                     "proposal_count": len(selected_proposals),
-                    "successful_proposal_count": sum(1 for proposal in selected_proposals if is_successful_proposal(proposal)),
+                    "successful_proposal_count": successful_count,
                     "payout_count": len(selected_routes),
                     "delivery_count": len(selected_updates),
                     "recipient_count": len(recipient_scores),
+                    "project_count": len(project_scores),
+                    "unique_voters_count": len(unique_voters),
+                    "avg_votes_per_proposal": round(mean(vote_counts), 2),
+                    "median_votes_per_proposal": round(median(vote_counts), 2),
+                    "proposal_success_rate_pct": percent(successful_count, len(selected_proposals)),
+                    "payouts_per_proposal": round(len(selected_routes) / len(selected_proposals), 3) if selected_proposals else 0.0,
+                    "deliveries_per_proposal": round(len(selected_updates) / len(selected_proposals), 3) if selected_proposals else 0.0,
                     "payouts_by_asset": asset_totals(selected_routes),
                 },
                 "top_recipients": top_recipients,
@@ -1955,6 +2064,7 @@ def main() -> int:
         spend_records=spend_records,
         nft_records=nft_records,
         treasury=treasury,
+        project_updates=project_updates,
     )
     timeline_events = build_timeline_events(
         archive=archive,

@@ -1995,10 +1995,10 @@
       "status": "active",
       "role": "community infrastructure, documentation, QA",
       "roles": [
-        "community infrastructure, documentation, QA",
         "operations",
         "documentation",
-        "community infrastructure"
+        "community infrastructure",
+        "community infrastructure, documentation, QA"
       ],
       "tags": [
         "builder",
@@ -2193,9 +2193,9 @@
       "status": "active",
       "role": "web development, data pipelines",
       "roles": [
+        "data pipelines",
         "operations",
         "web development",
-        "data pipelines",
         "web development, data pipelines"
       ],
       "tags": [
@@ -2339,9 +2339,9 @@
       "status": "active",
       "role": "technical lead, AI infrastructure",
       "roles": [
+        "technical lead, AI infrastructure",
         "operations",
         "AI infrastructure",
-        "technical lead, AI infrastructure",
         "technical lead"
       ],
       "tags": [
