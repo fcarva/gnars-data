@@ -506,6 +506,109 @@
       "primary_href": "https://ipfs.skatehive.app/ipfs/bafkreieztr6n7wpm6rgvqum24rrbg7ubr4au3ywjve6wfbivjxfgk7floy"
     },
     {
+      "item_id": "community:zimardrp-eth",
+      "kind": "community_reference",
+      "date": "2026-03-21",
+      "status": "active",
+      "title": "zimardrp.eth",
+      "summary": "community member. 3 passed authored proposals, 0 treasury routes, 30 proof records.",
+      "labels": [
+        "athlete",
+        "delegate",
+        "holder",
+        "proposer",
+        "contributor",
+        "community",
+        "active",
+        "archival",
+        "report"
+      ],
+      "editorial_labels": [
+        "athlete",
+        "delegate",
+        "holder",
+        "proposer",
+        "contributor",
+        "community"
+      ],
+      "status_labels": [
+        "active"
+      ],
+      "funding_labels": [],
+      "relationship_labels": [
+        "community"
+      ],
+      "platform_labels": [],
+      "lifecycle_labels": [
+        "archival"
+      ],
+      "proof_labels": [
+        "report"
+      ],
+      "source_labels": [],
+      "linked_people": [
+        "0x2feb329b9289b60064904fa61fc347157a5aed6a"
+      ],
+      "linked_projects": [],
+      "linked_proposals": [
+        "gnars-base-100",
+        "gnars-base-119",
+        "gnars-base-39",
+        "gnars-ethereum-34"
+      ],
+      "linked_assets": [],
+      "primary_href": "/community/zimardrp-eth/"
+    },
+    {
+      "item_id": "community:willdias-eth",
+      "kind": "community_reference",
+      "date": "2026-03-21",
+      "status": "active",
+      "title": "willdias.eth",
+      "summary": "community member. 0 passed authored proposals, 0 treasury routes, 8 proof records.",
+      "labels": [
+        "delegate",
+        "holder",
+        "proposer",
+        "contributor",
+        "community",
+        "active",
+        "archival",
+        "report"
+      ],
+      "editorial_labels": [
+        "delegate",
+        "holder",
+        "proposer",
+        "contributor",
+        "community"
+      ],
+      "status_labels": [
+        "active"
+      ],
+      "funding_labels": [],
+      "relationship_labels": [
+        "community"
+      ],
+      "platform_labels": [],
+      "lifecycle_labels": [
+        "archival"
+      ],
+      "proof_labels": [
+        "report"
+      ],
+      "source_labels": [],
+      "linked_people": [
+        "0xddb4938755c243a4f60a2f2f8f95df4f894c58cc"
+      ],
+      "linked_projects": [],
+      "linked_proposals": [
+        "gnars-base-96"
+      ],
+      "linked_assets": [],
+      "primary_href": "/community/willdias-eth/"
+    },
+    {
       "item_id": "community:vlad",
       "kind": "community_reference",
       "date": "2026-03-21",
@@ -555,6 +658,159 @@
       "linked_proposals": [],
       "linked_assets": [],
       "primary_href": "/community/vlad/"
+    },
+    {
+      "item_id": "community:vasconsa-eth",
+      "kind": "community_reference",
+      "date": "2026-03-21",
+      "status": "active",
+      "title": "vasconsa.eth",
+      "summary": "community member. 1 passed authored proposals, 0 treasury routes, 4 proof records.",
+      "labels": [
+        "delegate",
+        "holder",
+        "proposer",
+        "contributor",
+        "community",
+        "active",
+        "archival",
+        "report"
+      ],
+      "editorial_labels": [
+        "delegate",
+        "holder",
+        "proposer",
+        "contributor",
+        "community"
+      ],
+      "status_labels": [
+        "active"
+      ],
+      "funding_labels": [],
+      "relationship_labels": [
+        "community"
+      ],
+      "platform_labels": [],
+      "lifecycle_labels": [
+        "archival"
+      ],
+      "proof_labels": [
+        "report"
+      ],
+      "source_labels": [],
+      "linked_people": [
+        "0x1273261b09dc30d0b6ce460d7cab5820fa42e38c"
+      ],
+      "linked_projects": [],
+      "linked_proposals": [
+        "gnars-base-65"
+      ],
+      "linked_assets": [],
+      "primary_href": "/community/vasconsa-eth/"
+    },
+    {
+      "item_id": "community:satori-wtf",
+      "kind": "community_reference",
+      "date": "2026-03-21",
+      "status": "active",
+      "title": "satori.wtf",
+      "summary": "community member. 2 passed authored proposals, 0 treasury routes, 6 proof records.",
+      "labels": [
+        "delegate",
+        "holder",
+        "proposer",
+        "contributor",
+        "community",
+        "active",
+        "archival",
+        "report"
+      ],
+      "editorial_labels": [
+        "delegate",
+        "holder",
+        "proposer",
+        "contributor",
+        "community"
+      ],
+      "status_labels": [
+        "active"
+      ],
+      "funding_labels": [],
+      "relationship_labels": [
+        "community"
+      ],
+      "platform_labels": [],
+      "lifecycle_labels": [
+        "archival"
+      ],
+      "proof_labels": [
+        "report"
+      ],
+      "source_labels": [],
+      "linked_people": [
+        "0xdcf37d8aa17142f053aaa7dc56025ab00d897a19"
+      ],
+      "linked_projects": [],
+      "linked_proposals": [
+        "gnars-base-79",
+        "snapshot-0x1353abe6679ea8aecf8505fc0a2785328adfefe358d4352d25862bd97dd2278d"
+      ],
+      "linked_assets": [],
+      "primary_href": "/community/satori-wtf/"
+    },
+    {
+      "item_id": "community:rickyday-eth",
+      "kind": "community_reference",
+      "date": "2026-03-21",
+      "status": "active",
+      "title": "rickyday.eth",
+      "summary": "community member. 1 passed authored proposals, 1 treasury routes, 16 proof records.",
+      "labels": [
+        "delegate",
+        "holder",
+        "proposer",
+        "recipient",
+        "contributor",
+        "community",
+        "active",
+        "archival",
+        "report"
+      ],
+      "editorial_labels": [
+        "delegate",
+        "holder",
+        "proposer",
+        "recipient",
+        "contributor",
+        "community"
+      ],
+      "status_labels": [
+        "active"
+      ],
+      "funding_labels": [],
+      "relationship_labels": [
+        "community"
+      ],
+      "platform_labels": [],
+      "lifecycle_labels": [
+        "archival"
+      ],
+      "proof_labels": [
+        "report"
+      ],
+      "source_labels": [],
+      "linked_people": [
+        "0xb2b7d66bb56ce8ff7838dc8053ff35050ed95e9d"
+      ],
+      "linked_projects": [],
+      "linked_proposals": [
+        "gnars-base-13",
+        "gnars-base-16"
+      ],
+      "linked_assets": [
+        "USDC"
+      ],
+      "primary_href": "/community/rickyday-eth/"
     },
     {
       "item_id": "community:r4topunk",
@@ -614,6 +870,221 @@
       "primary_href": "/community/r4topunk/"
     },
     {
+      "item_id": "community:pamtech-eth",
+      "kind": "community_reference",
+      "date": "2026-03-21",
+      "status": "active",
+      "title": "pamtech.eth",
+      "summary": "community member. 0 passed authored proposals, 0 treasury routes, 8 proof records.",
+      "labels": [
+        "athlete",
+        "delegate",
+        "holder",
+        "proposer",
+        "contributor",
+        "community",
+        "active",
+        "archival",
+        "report"
+      ],
+      "editorial_labels": [
+        "athlete",
+        "delegate",
+        "holder",
+        "proposer",
+        "contributor",
+        "community"
+      ],
+      "status_labels": [
+        "active"
+      ],
+      "funding_labels": [],
+      "relationship_labels": [
+        "community"
+      ],
+      "platform_labels": [],
+      "lifecycle_labels": [
+        "archival"
+      ],
+      "proof_labels": [
+        "report"
+      ],
+      "source_labels": [],
+      "linked_people": [
+        "0x057cfcd04198e6d17f1bf502135d9508b6fa2fde"
+      ],
+      "linked_projects": [],
+      "linked_proposals": [
+        "gnars-base-112"
+      ],
+      "linked_assets": [],
+      "primary_href": "/community/pamtech-eth/"
+    },
+    {
+      "item_id": "community:ionirmera-eth",
+      "kind": "community_reference",
+      "date": "2026-03-21",
+      "status": "active",
+      "title": "ionirmera.eth",
+      "summary": "community member. 1 passed authored proposals, 0 treasury routes, 16 proof records.",
+      "labels": [
+        "delegate",
+        "holder",
+        "proposer",
+        "contributor",
+        "community",
+        "active",
+        "archival",
+        "report"
+      ],
+      "editorial_labels": [
+        "delegate",
+        "holder",
+        "proposer",
+        "contributor",
+        "community"
+      ],
+      "status_labels": [
+        "active"
+      ],
+      "funding_labels": [],
+      "relationship_labels": [
+        "community"
+      ],
+      "platform_labels": [],
+      "lifecycle_labels": [
+        "archival"
+      ],
+      "proof_labels": [
+        "report"
+      ],
+      "source_labels": [],
+      "linked_people": [
+        "0x164bb715575fa22c7b713940834f7535336ba086"
+      ],
+      "linked_projects": [],
+      "linked_proposals": [
+        "gnars-base-92",
+        "gnars-base-93"
+      ],
+      "linked_assets": [],
+      "primary_href": "/community/ionirmera-eth/"
+    },
+    {
+      "item_id": "community:fuzzyface-eth",
+      "kind": "community_reference",
+      "date": "2026-03-21",
+      "status": "active",
+      "title": "fuzzyface.eth",
+      "summary": "community member. 1 passed authored proposals, 1 treasury routes, 48 proof records.",
+      "labels": [
+        "delegate",
+        "holder",
+        "proposer",
+        "recipient",
+        "contributor",
+        "community",
+        "active",
+        "archival",
+        "report"
+      ],
+      "editorial_labels": [
+        "delegate",
+        "holder",
+        "proposer",
+        "recipient",
+        "contributor",
+        "community"
+      ],
+      "status_labels": [
+        "active"
+      ],
+      "funding_labels": [],
+      "relationship_labels": [
+        "community"
+      ],
+      "platform_labels": [],
+      "lifecycle_labels": [
+        "archival"
+      ],
+      "proof_labels": [
+        "report"
+      ],
+      "source_labels": [],
+      "linked_people": [
+        "0x33bbf6e27ce7b254e537bcb9f3b00cd1451563ea"
+      ],
+      "linked_projects": [],
+      "linked_proposals": [
+        "gnars-base-105",
+        "gnars-base-106",
+        "gnars-base-25",
+        "gnars-base-54",
+        "gnars-base-55",
+        "gnars-base-56"
+      ],
+      "linked_assets": [
+        "ETH"
+      ],
+      "primary_href": "/community/fuzzyface-eth/"
+    },
+    {
+      "item_id": "community:fernandoferreira-eth",
+      "kind": "community_reference",
+      "date": "2026-03-21",
+      "status": "active",
+      "title": "fernandoferreira.eth",
+      "summary": "community member. 1 passed authored proposals, 2 treasury routes, 8 proof records.",
+      "labels": [
+        "athlete",
+        "delegate",
+        "holder",
+        "proposer",
+        "recipient",
+        "contributor",
+        "community",
+        "active",
+        "archival",
+        "report"
+      ],
+      "editorial_labels": [
+        "athlete",
+        "delegate",
+        "holder",
+        "proposer",
+        "recipient",
+        "contributor",
+        "community"
+      ],
+      "status_labels": [
+        "active"
+      ],
+      "funding_labels": [],
+      "relationship_labels": [
+        "community"
+      ],
+      "platform_labels": [],
+      "lifecycle_labels": [
+        "archival"
+      ],
+      "proof_labels": [
+        "report"
+      ],
+      "source_labels": [],
+      "linked_people": [
+        "0x49d31dcb59e115f5c9e505a58a323ade076f2176"
+      ],
+      "linked_projects": [],
+      "linked_proposals": [
+        "gnars-base-101"
+      ],
+      "linked_assets": [
+        "ETH",
+        "USDC"
+      ],
+      "primary_href": "/community/fernandoferreira-eth/"
+    },
+    {
       "item_id": "community:fcarva",
       "kind": "community_reference",
       "date": "2026-03-21",
@@ -670,11 +1141,11 @@
       "primary_href": "/community/fcarva/"
     },
     {
-      "item_id": "community:0xdfb6-d939",
+      "item_id": "community:davinoyesigye-eth",
       "kind": "community_reference",
       "date": "2026-03-21",
       "status": "active",
-      "title": "0xdfb6...d939",
+      "title": "davinoyesigye.eth",
       "summary": "community member. 30 passed authored proposals, 0 treasury routes, 151 proof records.",
       "labels": [
         "athlete",
@@ -752,106 +1223,7 @@
         "snapshot-0xfcaca218cc64051674bf2eac535af1d863d06933fef1d88d6b5fb0398cf65cdc"
       ],
       "linked_assets": [],
-      "primary_href": "/community/0xdfb6-d939/"
-    },
-    {
-      "item_id": "community:0xddb4-58cc",
-      "kind": "community_reference",
-      "date": "2026-03-21",
-      "status": "active",
-      "title": "0xddb4...58cc",
-      "summary": "community member. 0 passed authored proposals, 0 treasury routes, 8 proof records.",
-      "labels": [
-        "delegate",
-        "holder",
-        "proposer",
-        "contributor",
-        "community",
-        "active",
-        "archival",
-        "report"
-      ],
-      "editorial_labels": [
-        "delegate",
-        "holder",
-        "proposer",
-        "contributor",
-        "community"
-      ],
-      "status_labels": [
-        "active"
-      ],
-      "funding_labels": [],
-      "relationship_labels": [
-        "community"
-      ],
-      "platform_labels": [],
-      "lifecycle_labels": [
-        "archival"
-      ],
-      "proof_labels": [
-        "report"
-      ],
-      "source_labels": [],
-      "linked_people": [
-        "0xddb4938755c243a4f60a2f2f8f95df4f894c58cc"
-      ],
-      "linked_projects": [],
-      "linked_proposals": [
-        "gnars-base-96"
-      ],
-      "linked_assets": [],
-      "primary_href": "/community/0xddb4-58cc/"
-    },
-    {
-      "item_id": "community:0xdcf3-7a19",
-      "kind": "community_reference",
-      "date": "2026-03-21",
-      "status": "active",
-      "title": "0xdcf3...7a19",
-      "summary": "community member. 2 passed authored proposals, 0 treasury routes, 6 proof records.",
-      "labels": [
-        "delegate",
-        "holder",
-        "proposer",
-        "contributor",
-        "community",
-        "active",
-        "archival",
-        "report"
-      ],
-      "editorial_labels": [
-        "delegate",
-        "holder",
-        "proposer",
-        "contributor",
-        "community"
-      ],
-      "status_labels": [
-        "active"
-      ],
-      "funding_labels": [],
-      "relationship_labels": [
-        "community"
-      ],
-      "platform_labels": [],
-      "lifecycle_labels": [
-        "archival"
-      ],
-      "proof_labels": [
-        "report"
-      ],
-      "source_labels": [],
-      "linked_people": [
-        "0xdcf37d8aa17142f053aaa7dc56025ab00d897a19"
-      ],
-      "linked_projects": [],
-      "linked_proposals": [
-        "gnars-base-79",
-        "snapshot-0x1353abe6679ea8aecf8505fc0a2785328adfefe358d4352d25862bd97dd2278d"
-      ],
-      "linked_assets": [],
-      "primary_href": "/community/0xdcf3-7a19/"
+      "primary_href": "/community/davinoyesigye-eth/"
     },
     {
       "item_id": "community:0xd119-c7d8",
@@ -906,116 +1278,6 @@
       ],
       "linked_assets": [],
       "primary_href": "/community/0xd119-c7d8/"
-    },
-    {
-      "item_id": "community:0xb2b7-5e9d",
-      "kind": "community_reference",
-      "date": "2026-03-21",
-      "status": "active",
-      "title": "0xb2b7...5e9d",
-      "summary": "community member. 1 passed authored proposals, 1 treasury routes, 16 proof records.",
-      "labels": [
-        "delegate",
-        "holder",
-        "proposer",
-        "recipient",
-        "contributor",
-        "community",
-        "active",
-        "archival",
-        "report"
-      ],
-      "editorial_labels": [
-        "delegate",
-        "holder",
-        "proposer",
-        "recipient",
-        "contributor",
-        "community"
-      ],
-      "status_labels": [
-        "active"
-      ],
-      "funding_labels": [],
-      "relationship_labels": [
-        "community"
-      ],
-      "platform_labels": [],
-      "lifecycle_labels": [
-        "archival"
-      ],
-      "proof_labels": [
-        "report"
-      ],
-      "source_labels": [],
-      "linked_people": [
-        "0xb2b7d66bb56ce8ff7838dc8053ff35050ed95e9d"
-      ],
-      "linked_projects": [],
-      "linked_proposals": [
-        "gnars-base-13",
-        "gnars-base-16"
-      ],
-      "linked_assets": [
-        "USDC"
-      ],
-      "primary_href": "/community/0xb2b7-5e9d/"
-    },
-    {
-      "item_id": "community:0x49d3-2176",
-      "kind": "community_reference",
-      "date": "2026-03-21",
-      "status": "active",
-      "title": "0x49d3...2176",
-      "summary": "community member. 1 passed authored proposals, 2 treasury routes, 8 proof records.",
-      "labels": [
-        "athlete",
-        "delegate",
-        "holder",
-        "proposer",
-        "recipient",
-        "contributor",
-        "community",
-        "active",
-        "archival",
-        "report"
-      ],
-      "editorial_labels": [
-        "athlete",
-        "delegate",
-        "holder",
-        "proposer",
-        "recipient",
-        "contributor",
-        "community"
-      ],
-      "status_labels": [
-        "active"
-      ],
-      "funding_labels": [],
-      "relationship_labels": [
-        "community"
-      ],
-      "platform_labels": [],
-      "lifecycle_labels": [
-        "archival"
-      ],
-      "proof_labels": [
-        "report"
-      ],
-      "source_labels": [],
-      "linked_people": [
-        "0x49d31dcb59e115f5c9e505a58a323ade076f2176"
-      ],
-      "linked_projects": [],
-      "linked_proposals": [
-        "gnars-base-101"
-      ],
-      "linked_assets": [
-        "ETH",
-        "USDC"
-      ],
-      "primary_href": "/community/0x49d3-2176/"
     },
     {
       "item_id": "community:0x3a7b-d68d",
@@ -1113,268 +1375,6 @@
       ],
       "linked_assets": [],
       "primary_href": "/community/0x356d-f7e6/"
-    },
-    {
-      "item_id": "community:0x33bb-63ea",
-      "kind": "community_reference",
-      "date": "2026-03-21",
-      "status": "active",
-      "title": "0x33bb...63ea",
-      "summary": "community member. 1 passed authored proposals, 1 treasury routes, 48 proof records.",
-      "labels": [
-        "delegate",
-        "holder",
-        "proposer",
-        "recipient",
-        "contributor",
-        "community",
-        "active",
-        "archival",
-        "report"
-      ],
-      "editorial_labels": [
-        "delegate",
-        "holder",
-        "proposer",
-        "recipient",
-        "contributor",
-        "community"
-      ],
-      "status_labels": [
-        "active"
-      ],
-      "funding_labels": [],
-      "relationship_labels": [
-        "community"
-      ],
-      "platform_labels": [],
-      "lifecycle_labels": [
-        "archival"
-      ],
-      "proof_labels": [
-        "report"
-      ],
-      "source_labels": [],
-      "linked_people": [
-        "0x33bbf6e27ce7b254e537bcb9f3b00cd1451563ea"
-      ],
-      "linked_projects": [],
-      "linked_proposals": [
-        "gnars-base-105",
-        "gnars-base-106",
-        "gnars-base-25",
-        "gnars-base-54",
-        "gnars-base-55",
-        "gnars-base-56"
-      ],
-      "linked_assets": [
-        "ETH"
-      ],
-      "primary_href": "/community/0x33bb-63ea/"
-    },
-    {
-      "item_id": "community:0x2feb-ed6a",
-      "kind": "community_reference",
-      "date": "2026-03-21",
-      "status": "active",
-      "title": "0x2feb...ed6a",
-      "summary": "community member. 3 passed authored proposals, 0 treasury routes, 30 proof records.",
-      "labels": [
-        "athlete",
-        "delegate",
-        "holder",
-        "proposer",
-        "contributor",
-        "community",
-        "active",
-        "archival",
-        "report"
-      ],
-      "editorial_labels": [
-        "athlete",
-        "delegate",
-        "holder",
-        "proposer",
-        "contributor",
-        "community"
-      ],
-      "status_labels": [
-        "active"
-      ],
-      "funding_labels": [],
-      "relationship_labels": [
-        "community"
-      ],
-      "platform_labels": [],
-      "lifecycle_labels": [
-        "archival"
-      ],
-      "proof_labels": [
-        "report"
-      ],
-      "source_labels": [],
-      "linked_people": [
-        "0x2feb329b9289b60064904fa61fc347157a5aed6a"
-      ],
-      "linked_projects": [],
-      "linked_proposals": [
-        "gnars-base-100",
-        "gnars-base-119",
-        "gnars-base-39",
-        "gnars-ethereum-34"
-      ],
-      "linked_assets": [],
-      "primary_href": "/community/0x2feb-ed6a/"
-    },
-    {
-      "item_id": "community:0x164b-a086",
-      "kind": "community_reference",
-      "date": "2026-03-21",
-      "status": "active",
-      "title": "0x164b...a086",
-      "summary": "community member. 1 passed authored proposals, 0 treasury routes, 16 proof records.",
-      "labels": [
-        "delegate",
-        "holder",
-        "proposer",
-        "contributor",
-        "community",
-        "active",
-        "archival",
-        "report"
-      ],
-      "editorial_labels": [
-        "delegate",
-        "holder",
-        "proposer",
-        "contributor",
-        "community"
-      ],
-      "status_labels": [
-        "active"
-      ],
-      "funding_labels": [],
-      "relationship_labels": [
-        "community"
-      ],
-      "platform_labels": [],
-      "lifecycle_labels": [
-        "archival"
-      ],
-      "proof_labels": [
-        "report"
-      ],
-      "source_labels": [],
-      "linked_people": [
-        "0x164bb715575fa22c7b713940834f7535336ba086"
-      ],
-      "linked_projects": [],
-      "linked_proposals": [
-        "gnars-base-92",
-        "gnars-base-93"
-      ],
-      "linked_assets": [],
-      "primary_href": "/community/0x164b-a086/"
-    },
-    {
-      "item_id": "community:0x1273-e38c",
-      "kind": "community_reference",
-      "date": "2026-03-21",
-      "status": "active",
-      "title": "0x1273...e38c",
-      "summary": "community member. 1 passed authored proposals, 0 treasury routes, 4 proof records.",
-      "labels": [
-        "delegate",
-        "holder",
-        "proposer",
-        "contributor",
-        "community",
-        "active",
-        "archival",
-        "report"
-      ],
-      "editorial_labels": [
-        "delegate",
-        "holder",
-        "proposer",
-        "contributor",
-        "community"
-      ],
-      "status_labels": [
-        "active"
-      ],
-      "funding_labels": [],
-      "relationship_labels": [
-        "community"
-      ],
-      "platform_labels": [],
-      "lifecycle_labels": [
-        "archival"
-      ],
-      "proof_labels": [
-        "report"
-      ],
-      "source_labels": [],
-      "linked_people": [
-        "0x1273261b09dc30d0b6ce460d7cab5820fa42e38c"
-      ],
-      "linked_projects": [],
-      "linked_proposals": [
-        "gnars-base-65"
-      ],
-      "linked_assets": [],
-      "primary_href": "/community/0x1273-e38c/"
-    },
-    {
-      "item_id": "community:0x057c-2fde",
-      "kind": "community_reference",
-      "date": "2026-03-21",
-      "status": "active",
-      "title": "0x057c...2fde",
-      "summary": "community member. 0 passed authored proposals, 0 treasury routes, 8 proof records.",
-      "labels": [
-        "athlete",
-        "delegate",
-        "holder",
-        "proposer",
-        "contributor",
-        "community",
-        "active",
-        "archival",
-        "report"
-      ],
-      "editorial_labels": [
-        "athlete",
-        "delegate",
-        "holder",
-        "proposer",
-        "contributor",
-        "community"
-      ],
-      "status_labels": [
-        "active"
-      ],
-      "funding_labels": [],
-      "relationship_labels": [
-        "community"
-      ],
-      "platform_labels": [],
-      "lifecycle_labels": [
-        "archival"
-      ],
-      "proof_labels": [
-        "report"
-      ],
-      "source_labels": [],
-      "linked_people": [
-        "0x057cfcd04198e6d17f1bf502135d9508b6fa2fde"
-      ],
-      "linked_projects": [],
-      "linked_proposals": [
-        "gnars-base-112"
-      ],
-      "linked_assets": [],
-      "primary_href": "/community/0x057c-2fde/"
     },
     {
       "item_id": "proposal:gnars-base-118",
@@ -1669,11 +1669,11 @@
       "primary_href": "https://ipfs.skatehive.app/ipfs/bafybeibegz5todnufnv2qxowmi7d6ffqc3ibjwiolp6hudny4ojak2wrge"
     },
     {
-      "item_id": "community:0xb496-2f6c",
+      "item_id": "community:skatehive-eth",
       "kind": "community_reference",
       "date": "2026-03-20",
       "status": "active",
-      "title": "0xb496...2f6c",
+      "title": "skatehive.eth",
       "summary": "community member. 2 passed authored proposals, 0 treasury routes, 16 proof records.",
       "labels": [
         "athlete",
@@ -1718,7 +1718,7 @@
         "snapshot-0xff05ff3617e604c701ffde6c6e34d39016bd2126f61efe66499617ea3acfd603"
       ],
       "linked_assets": [],
-      "primary_href": "/community/0xb496-2f6c/"
+      "primary_href": "/community/skatehive-eth/"
     },
     {
       "item_id": "community:0x8d2a-b252",
@@ -2466,11 +2466,11 @@
       "primary_href": "https://nouns.build/dao/base/0xe8af882f2f5c79580230710ac0e2344070099432/vote/58"
     },
     {
-      "item_id": "community:0x4d16-ecb1",
+      "item_id": "community:swarthyhatter-eth",
       "kind": "community_reference",
       "date": "2026-02-19",
       "status": "active",
-      "title": "0x4d16...ecb1",
+      "title": "swarthyhatter.eth",
       "summary": "community member. 0 passed authored proposals, 0 treasury routes, 1 proof records.",
       "labels": [
         "delegate",
@@ -2512,7 +2512,7 @@
         "gnars-base-113"
       ],
       "linked_assets": [],
-      "primary_href": "/community/0x4d16-ecb1/"
+      "primary_href": "/community/swarthyhatter-eth/"
     },
     {
       "item_id": "proposal:gnars-base-112",
@@ -2991,11 +2991,11 @@
       "primary_href": "https://ipfs.skatehive.app/ipfs/bafybeiahdkdayifqpcol3almd3gdywy3cv5brso54om7kesuwjxve4fzgi"
     },
     {
-      "item_id": "community:0xdb1c-2cdf",
+      "item_id": "community:webgnar-eth",
       "kind": "community_reference",
       "date": "2026-02-11",
       "status": "active",
-      "title": "0xdb1c...2cdf",
+      "title": "webgnar.eth",
       "summary": "community member. 2 passed authored proposals, 0 treasury routes, 11 proof records.",
       "labels": [
         "athlete",
@@ -3040,7 +3040,7 @@
         "snapshot-0x29ce2485975728ebbde5812d6f3a4d1bb27d409a2248a09aa3d604dba8380442"
       ],
       "linked_assets": [],
-      "primary_href": "/community/0xdb1c-2cdf/"
+      "primary_href": "/community/webgnar-eth/"
     },
     {
       "item_id": "proposal:gnars-base-111",
@@ -3561,11 +3561,11 @@
       "primary_href": "https://ipfs.skatehive.app/ipfs/bafybeicbtpigicsixbast2y6zklpvdal5lp5w23pqvktw5cwrup3oc27u4"
     },
     {
-      "item_id": "community:0x4b5f-aa30",
+      "item_id": "community:marinioac-eth",
       "kind": "community_reference",
       "date": "2026-02-09",
       "status": "active",
-      "title": "0x4b5f...aa30",
+      "title": "marinioac.eth",
       "summary": "community member. 2 passed authored proposals, 0 treasury routes, 16 proof records.",
       "labels": [
         "athlete",
@@ -3610,14 +3610,14 @@
         "snapshot-0x9e670758685c096b923e0b9fa65e2e9cd44906983ea78fe73d750d77be7c568c"
       ],
       "linked_assets": [],
-      "primary_href": "/community/0x4b5f-aa30/"
+      "primary_href": "/community/marinioac-eth/"
     },
     {
-      "item_id": "community:0x387a-fffd",
+      "item_id": "community:gami-eth",
       "kind": "community_reference",
       "date": "2026-02-09",
       "status": "active",
-      "title": "0x387a...fffd",
+      "title": "gami.eth",
       "summary": "community member. 10 passed authored proposals, 3 treasury routes, 57 proof records.",
       "labels": [
         "athlete",
@@ -3675,7 +3675,7 @@
         "ETH",
         "USDC"
       ],
-      "primary_href": "/community/0x387a-fffd/"
+      "primary_href": "/community/gami-eth/"
     },
     {
       "item_id": "proposal:gnars-base-110",
@@ -4138,111 +4138,11 @@
       "primary_href": "https://ipfs.skatehive.app/ipfs/bafybeibanplzm3vheoaumirklos2rcu3vp7b3slqn3ccoumwnlkj5mi4aq"
     },
     {
-      "item_id": "community:0xedc1-e7e1",
+      "item_id": "community:gondy-eth",
       "kind": "community_reference",
       "date": "2026-01-10",
       "status": "active",
-      "title": "0xedc1...e7e1",
-      "summary": "community member. 1 passed authored proposals, 1 treasury routes, 15 proof records.",
-      "labels": [
-        "delegate",
-        "holder",
-        "proposer",
-        "recipient",
-        "contributor",
-        "community",
-        "active",
-        "archival",
-        "report"
-      ],
-      "editorial_labels": [
-        "delegate",
-        "holder",
-        "proposer",
-        "recipient",
-        "contributor",
-        "community"
-      ],
-      "status_labels": [
-        "active"
-      ],
-      "funding_labels": [],
-      "relationship_labels": [
-        "community"
-      ],
-      "platform_labels": [],
-      "lifecycle_labels": [
-        "archival"
-      ],
-      "proof_labels": [
-        "report"
-      ],
-      "source_labels": [],
-      "linked_people": [
-        "0xedc1a397589a0236c4810883b7d559288a5fe7e1"
-      ],
-      "linked_projects": [],
-      "linked_proposals": [
-        "gnars-base-38",
-        "gnars-ethereum-35"
-      ],
-      "linked_assets": [
-        "ETH"
-      ],
-      "primary_href": "/community/0xedc1-e7e1/"
-    },
-    {
-      "item_id": "community:0xd2d1-b968",
-      "kind": "community_reference",
-      "date": "2026-01-10",
-      "status": "active",
-      "title": "0xd2d1...b968",
-      "summary": "community member. 0 passed authored proposals, 1 treasury routes, 0 proof records.",
-      "labels": [
-        "delegate",
-        "holder",
-        "recipient",
-        "contributor",
-        "community",
-        "active",
-        "archival"
-      ],
-      "editorial_labels": [
-        "delegate",
-        "holder",
-        "recipient",
-        "contributor",
-        "community"
-      ],
-      "status_labels": [
-        "active"
-      ],
-      "funding_labels": [],
-      "relationship_labels": [
-        "community"
-      ],
-      "platform_labels": [],
-      "lifecycle_labels": [
-        "archival"
-      ],
-      "proof_labels": [],
-      "source_labels": [],
-      "linked_people": [
-        "0xd2d164aea2a354e46ee3cf207899f48e5432b968"
-      ],
-      "linked_projects": [],
-      "linked_proposals": [],
-      "linked_assets": [
-        "USDC"
-      ],
-      "primary_href": "/community/0xd2d1-b968/"
-    },
-    {
-      "item_id": "community:0x56b6-44d8",
-      "kind": "community_reference",
-      "date": "2026-01-10",
-      "status": "active",
-      "title": "0x56b6...44d8",
+      "title": "gondy.eth",
       "summary": "community member. 5 passed authored proposals, 0 treasury routes, 14 proof records.",
       "labels": [
         "athlete",
@@ -4290,7 +4190,107 @@
         "snapshot-0xd79cf66e97cce5ae64f72d01a218451f8fcadfcd7f66d8a118c37849b3b60275"
       ],
       "linked_assets": [],
-      "primary_href": "/community/0x56b6-44d8/"
+      "primary_href": "/community/gondy-eth/"
+    },
+    {
+      "item_id": "community:fattybuthappy-eth",
+      "kind": "community_reference",
+      "date": "2026-01-10",
+      "status": "active",
+      "title": "fattybuthappy.eth",
+      "summary": "community member. 1 passed authored proposals, 1 treasury routes, 15 proof records.",
+      "labels": [
+        "delegate",
+        "holder",
+        "proposer",
+        "recipient",
+        "contributor",
+        "community",
+        "active",
+        "archival",
+        "report"
+      ],
+      "editorial_labels": [
+        "delegate",
+        "holder",
+        "proposer",
+        "recipient",
+        "contributor",
+        "community"
+      ],
+      "status_labels": [
+        "active"
+      ],
+      "funding_labels": [],
+      "relationship_labels": [
+        "community"
+      ],
+      "platform_labels": [],
+      "lifecycle_labels": [
+        "archival"
+      ],
+      "proof_labels": [
+        "report"
+      ],
+      "source_labels": [],
+      "linked_people": [
+        "0xedc1a397589a0236c4810883b7d559288a5fe7e1"
+      ],
+      "linked_projects": [],
+      "linked_proposals": [
+        "gnars-base-38",
+        "gnars-ethereum-35"
+      ],
+      "linked_assets": [
+        "ETH"
+      ],
+      "primary_href": "/community/fattybuthappy-eth/"
+    },
+    {
+      "item_id": "community:0xd2d1-b968",
+      "kind": "community_reference",
+      "date": "2026-01-10",
+      "status": "active",
+      "title": "0xd2d1...b968",
+      "summary": "community member. 0 passed authored proposals, 1 treasury routes, 0 proof records.",
+      "labels": [
+        "delegate",
+        "holder",
+        "recipient",
+        "contributor",
+        "community",
+        "active",
+        "archival"
+      ],
+      "editorial_labels": [
+        "delegate",
+        "holder",
+        "recipient",
+        "contributor",
+        "community"
+      ],
+      "status_labels": [
+        "active"
+      ],
+      "funding_labels": [],
+      "relationship_labels": [
+        "community"
+      ],
+      "platform_labels": [],
+      "lifecycle_labels": [
+        "archival"
+      ],
+      "proof_labels": [],
+      "source_labels": [],
+      "linked_people": [
+        "0xd2d164aea2a354e46ee3cf207899f48e5432b968"
+      ],
+      "linked_projects": [],
+      "linked_proposals": [],
+      "linked_assets": [
+        "USDC"
+      ],
+      "primary_href": "/community/0xd2d1-b968/"
     },
     {
       "item_id": "community:0x2858-960f",
@@ -6400,7 +6400,7 @@
       "kind": "payout",
       "date": "2025-11-09T18:49:01.000Z",
       "status": "executed",
-      "title": "0x9ad8...e1c8 received 0.42 ETH",
+      "title": "7capas.eth received 0.42 ETH",
       "summary": "Routed through 7Capasmag Skate&Jazz Vol 2 - New Nounstacle inauguration in Devconnect  on base.",
       "labels": [
         "media",
@@ -6451,14 +6451,14 @@
       "linked_assets": [
         "ETH"
       ],
-      "primary_href": "/community/0x9ad8-e1c8/"
+      "primary_href": "/community/7capas-eth/"
     },
     {
-      "item_id": "community:0x9ad8-e1c8",
+      "item_id": "community:7capas-eth",
       "kind": "community_reference",
       "date": "2025-11-09",
       "status": "active",
-      "title": "0x9ad8...e1c8",
+      "title": "7capas.eth",
       "summary": "community member. 1 passed authored proposals, 2 treasury routes, 8 proof records.",
       "labels": [
         "athlete",
@@ -6507,7 +6507,7 @@
         "ETH",
         "USDC"
       ],
-      "primary_href": "/community/0x9ad8-e1c8/"
+      "primary_href": "/community/7capas-eth/"
     },
     {
       "item_id": "proposal:gnars-base-103",
@@ -6984,11 +6984,11 @@
       "primary_href": "https://farcaster.xyz/vidaverde.eth"
     },
     {
-      "item_id": "community:0x05c7-73bd",
+      "item_id": "community:vidaverde-eth",
       "kind": "community_reference",
       "date": "2025-10-21",
       "status": "active",
-      "title": "0x05c7...73bd",
+      "title": "vidaverde.eth",
       "summary": "community member. 0 passed authored proposals, 0 treasury routes, 8 proof records.",
       "labels": [
         "athlete",
@@ -7032,7 +7032,7 @@
         "gnars-base-103"
       ],
       "linked_assets": [],
-      "primary_href": "/community/0x05c7-73bd/"
+      "primary_href": "/community/vidaverde-eth/"
     },
     {
       "item_id": "proposal:gnars-base-102",
@@ -7974,7 +7974,7 @@
       "kind": "payout",
       "date": "2025-10-14T14:45:39.000Z",
       "status": "executed",
-      "title": "0x49d3...2176 received 2600.0 USDC",
+      "title": "fernandoferreira.eth received 2600.0 USDC",
       "summary": "Routed through Gnars India Initiative: Building Bridges Through Skateboarding on base.",
       "labels": [
         "media",
@@ -8025,14 +8025,14 @@
       "linked_assets": [
         "USDC"
       ],
-      "primary_href": "/community/0x49d3-2176/"
+      "primary_href": "/community/fernandoferreira-eth/"
     },
     {
       "item_id": "payout:gnars-base-101:1",
       "kind": "payout",
       "date": "2025-10-14T14:45:39.000Z",
       "status": "executed",
-      "title": "0x49d3...2176 received 0.62 ETH",
+      "title": "fernandoferreira.eth received 0.62 ETH",
       "summary": "Routed through Gnars India Initiative: Building Bridges Through Skateboarding on base.",
       "labels": [
         "media",
@@ -8083,14 +8083,14 @@
       "linked_assets": [
         "ETH"
       ],
-      "primary_href": "/community/0x49d3-2176/"
+      "primary_href": "/community/fernandoferreira-eth/"
     },
     {
-      "item_id": "community:0x2ce3-e1ef",
+      "item_id": "community:nogglesboard-eth",
       "kind": "community_reference",
       "date": "2025-10-14",
       "status": "active",
-      "title": "0x2ce3...e1ef",
+      "title": "nogglesboard.eth",
       "summary": "community member. 0 passed authored proposals, 0 treasury routes, 8 proof records.",
       "labels": [
         "holder",
@@ -8130,7 +8130,7 @@
         "gnars-base-73"
       ],
       "linked_assets": [],
-      "primary_href": "/community/0x2ce3-e1ef/"
+      "primary_href": "/community/nogglesboard-eth/"
     },
     {
       "item_id": "proposal:gnars-base-100",
@@ -8486,11 +8486,11 @@
       "primary_href": "https://ipfs.skatehive.app/ipfs/QmRS3jsFUUL4ZmyY8Nu26oBeaf3YciqQYKNy6JghAUW6aq"
     },
     {
-      "item_id": "community:0xfc27-a45b",
+      "item_id": "community:luizhadad-eth",
       "kind": "community_reference",
       "date": "2025-10-06",
       "status": "active",
-      "title": "0xfc27...a45b",
+      "title": "luizhadad.eth",
       "summary": "community member. 3 passed authored proposals, 1 treasury routes, 20 proof records.",
       "labels": [
         "athlete",
@@ -8540,7 +8540,7 @@
       "linked_assets": [
         "USDC"
       ],
-      "primary_href": "/community/0xfc27-a45b/"
+      "primary_href": "/community/luizhadad-eth/"
     },
     {
       "item_id": "proposal:gnars-base-96",
@@ -9016,6 +9016,58 @@
       "primary_href": "https://images.hive.blog/DQmfFNztc1J4n2VfkKeHMVLUe6fjyxow6ao1z3WgMXsgwXw/Captura%20de%20Tela%202025-07-08%20a%CC%80s%2021.25.59.png"
     },
     {
+      "item_id": "community:eth-e3f6",
+      "kind": "community_reference",
+      "date": "2025-08-11",
+      "status": "active",
+      "title": "◧-◧¬.eth",
+      "summary": "community member. 2 passed authored proposals, 0 treasury routes, 16 proof records.",
+      "labels": [
+        "athlete",
+        "delegate",
+        "holder",
+        "proposer",
+        "contributor",
+        "community",
+        "active",
+        "archival",
+        "report"
+      ],
+      "editorial_labels": [
+        "athlete",
+        "delegate",
+        "holder",
+        "proposer",
+        "contributor",
+        "community"
+      ],
+      "status_labels": [
+        "active"
+      ],
+      "funding_labels": [],
+      "relationship_labels": [
+        "community"
+      ],
+      "platform_labels": [],
+      "lifecycle_labels": [
+        "archival"
+      ],
+      "proof_labels": [
+        "report"
+      ],
+      "source_labels": [],
+      "linked_people": [
+        "0x8d36bac540c57dbd009ea9d9d8cdf9443a83e3f6"
+      ],
+      "linked_projects": [],
+      "linked_proposals": [
+        "snapshot-0x0b3d6c307f7e596892dda29cf4914598368c0b0212739081290ab6608de770cf",
+        "snapshot-0xdc3be19c4d846e9af7bcc625582f355ba4f6ea6db4559251b8ba688e8dbbbe5a"
+      ],
+      "linked_assets": [],
+      "primary_href": "/community/eth-e3f6/"
+    },
+    {
       "item_id": "community:0xeed9-a282",
       "kind": "community_reference",
       "date": "2025-08-11",
@@ -9073,58 +9125,6 @@
         "USDC"
       ],
       "primary_href": "/community/0xeed9-a282/"
-    },
-    {
-      "item_id": "community:0x8d36-e3f6",
-      "kind": "community_reference",
-      "date": "2025-08-11",
-      "status": "active",
-      "title": "0x8d36...e3f6",
-      "summary": "community member. 2 passed authored proposals, 0 treasury routes, 16 proof records.",
-      "labels": [
-        "athlete",
-        "delegate",
-        "holder",
-        "proposer",
-        "contributor",
-        "community",
-        "active",
-        "archival",
-        "report"
-      ],
-      "editorial_labels": [
-        "athlete",
-        "delegate",
-        "holder",
-        "proposer",
-        "contributor",
-        "community"
-      ],
-      "status_labels": [
-        "active"
-      ],
-      "funding_labels": [],
-      "relationship_labels": [
-        "community"
-      ],
-      "platform_labels": [],
-      "lifecycle_labels": [
-        "archival"
-      ],
-      "proof_labels": [
-        "report"
-      ],
-      "source_labels": [],
-      "linked_people": [
-        "0x8d36bac540c57dbd009ea9d9d8cdf9443a83e3f6"
-      ],
-      "linked_projects": [],
-      "linked_proposals": [
-        "snapshot-0x0b3d6c307f7e596892dda29cf4914598368c0b0212739081290ab6608de770cf",
-        "snapshot-0xdc3be19c4d846e9af7bcc625582f355ba4f6ea6db4559251b8ba688e8dbbbe5a"
-      ],
-      "linked_assets": [],
-      "primary_href": "/community/0x8d36-e3f6/"
     },
     {
       "item_id": "proposal:gnars-base-95",
@@ -9704,11 +9704,67 @@
       "primary_href": "/proposals/gnars-base-94/"
     },
     {
-      "item_id": "community:0xc232-ffed",
+      "item_id": "community:rocketman21-eth",
       "kind": "community_reference",
       "date": "2025-08-02",
       "status": "active",
-      "title": "0xc232...ffed",
+      "title": "rocketman21.eth",
+      "summary": "community member. 2 passed authored proposals, 1 treasury routes, 8 proof records.",
+      "labels": [
+        "athlete",
+        "delegate",
+        "holder",
+        "proposer",
+        "recipient",
+        "contributor",
+        "community",
+        "active",
+        "archival",
+        "report"
+      ],
+      "editorial_labels": [
+        "athlete",
+        "delegate",
+        "holder",
+        "proposer",
+        "recipient",
+        "contributor",
+        "community"
+      ],
+      "status_labels": [
+        "active"
+      ],
+      "funding_labels": [],
+      "relationship_labels": [
+        "community"
+      ],
+      "platform_labels": [],
+      "lifecycle_labels": [
+        "archival"
+      ],
+      "proof_labels": [
+        "report"
+      ],
+      "source_labels": [],
+      "linked_people": [
+        "0x289715ffbb2f4b482e2917d2f183feab564ec84f"
+      ],
+      "linked_projects": [],
+      "linked_proposals": [
+        "gnars-base-23",
+        "gnars-base-86"
+      ],
+      "linked_assets": [
+        "ETH"
+      ],
+      "primary_href": "/community/rocketman21-eth/"
+    },
+    {
+      "item_id": "community:charoncrypto-eth",
+      "kind": "community_reference",
+      "date": "2025-08-02",
+      "status": "active",
+      "title": "charoncrypto.eth",
       "summary": "community member. 1 passed authored proposals, 0 treasury routes, 8 proof records.",
       "labels": [
         "delegate",
@@ -9750,7 +9806,7 @@
         "snapshot-0x39abf329516ad7cb9ff48c23b30fae4b46590198421cd8a34977bb58032e7f93"
       ],
       "linked_assets": [],
-      "primary_href": "/community/0xc232-ffed/"
+      "primary_href": "/community/charoncrypto-eth/"
     },
     {
       "item_id": "community:0x43c3-7970",
@@ -9807,62 +9863,6 @@
         "USDC"
       ],
       "primary_href": "/community/0x43c3-7970/"
-    },
-    {
-      "item_id": "community:0x2897-c84f",
-      "kind": "community_reference",
-      "date": "2025-08-02",
-      "status": "active",
-      "title": "0x2897...c84f",
-      "summary": "community member. 2 passed authored proposals, 1 treasury routes, 8 proof records.",
-      "labels": [
-        "athlete",
-        "delegate",
-        "holder",
-        "proposer",
-        "recipient",
-        "contributor",
-        "community",
-        "active",
-        "archival",
-        "report"
-      ],
-      "editorial_labels": [
-        "athlete",
-        "delegate",
-        "holder",
-        "proposer",
-        "recipient",
-        "contributor",
-        "community"
-      ],
-      "status_labels": [
-        "active"
-      ],
-      "funding_labels": [],
-      "relationship_labels": [
-        "community"
-      ],
-      "platform_labels": [],
-      "lifecycle_labels": [
-        "archival"
-      ],
-      "proof_labels": [
-        "report"
-      ],
-      "source_labels": [],
-      "linked_people": [
-        "0x289715ffbb2f4b482e2917d2f183feab564ec84f"
-      ],
-      "linked_projects": [],
-      "linked_proposals": [
-        "gnars-base-23",
-        "gnars-base-86"
-      ],
-      "linked_assets": [
-        "ETH"
-      ],
-      "primary_href": "/community/0x2897-c84f/"
     },
     {
       "item_id": "community:0x2581-f89f",
@@ -10396,11 +10396,11 @@
       "primary_href": "https://images.hive.blog/DQmd5LZ7JxtGYHvCLFPAGeabHQGiK8fmGGxCKZVXcRDAzxn/Captura%20de%20Tela%202025-07-14%20a%CC%80s%2012.12.35.png"
     },
     {
-      "item_id": "community:0xfcae-d200",
+      "item_id": "community:beaglexv-eth",
       "kind": "community_reference",
       "date": "2025-07-22",
       "status": "active",
-      "title": "0xfcae...d200",
+      "title": "beaglexv.eth",
       "summary": "community member. 1 passed authored proposals, 0 treasury routes, 8 proof records.",
       "labels": [
         "athlete",
@@ -10440,7 +10440,7 @@
         "gnars-base-37"
       ],
       "linked_assets": [],
-      "primary_href": "/community/0xfcae-d200/"
+      "primary_href": "/community/beaglexv-eth/"
     },
     {
       "item_id": "community:0x761b-6693",
@@ -12912,7 +12912,7 @@
       "kind": "payout",
       "date": "2025-05-28T21:09:35.000Z",
       "status": "executed",
-      "title": "0x2897...c84f received 1.0 ETH",
+      "title": "rocketman21.eth received 1.0 ETH",
       "summary": "Routed through Gnars Flows on base.",
       "labels": [
         "athlete-support",
@@ -12963,24 +12963,29 @@
       "linked_assets": [
         "ETH"
       ],
-      "primary_href": "/community/0x2897-c84f/"
+      "primary_href": "/community/rocketman21-eth/"
     },
     {
-      "item_id": "community:0xc407-3c28",
+      "item_id": "community:ourrevolution-eth",
       "kind": "community_reference",
       "date": "2025-05-28",
       "status": "active",
-      "title": "0xc407...3c28",
-      "summary": "community member. 0 passed authored proposals, 1 treasury routes, 0 proof records.",
+      "title": "ourrevolution.eth",
+      "summary": "community member. 1 passed authored proposals, 0 treasury routes, 12 proof records.",
       "labels": [
-        "recipient",
+        "delegate",
+        "holder",
+        "proposer",
         "contributor",
         "community",
         "active",
-        "archival"
+        "archival",
+        "report"
       ],
       "editorial_labels": [
-        "recipient",
+        "delegate",
+        "holder",
+        "proposer",
         "contributor",
         "community"
       ],
@@ -12995,24 +13000,27 @@
       "lifecycle_labels": [
         "archival"
       ],
-      "proof_labels": [],
+      "proof_labels": [
+        "report"
+      ],
       "source_labels": [],
       "linked_people": [
-        "0xc4079dc1f8f84711eee0942c192829f473fc3c28"
+        "0x8d028dc71b347268d439432349b55bc27989851e"
       ],
       "linked_projects": [],
-      "linked_proposals": [],
-      "linked_assets": [
-        "USDC"
+      "linked_proposals": [
+        "gnars-ethereum-30",
+        "gnars-ethereum-36"
       ],
-      "primary_href": "/community/0xc407-3c28/"
+      "linked_assets": [],
+      "primary_href": "/community/ourrevolution-eth/"
     },
     {
-      "item_id": "community:0x9a91-b62d",
+      "item_id": "community:monkzdao-eth",
       "kind": "community_reference",
       "date": "2025-05-28",
       "status": "active",
-      "title": "0x9a91...b62d",
+      "title": "monkzdao.eth",
       "summary": "community member. 1 passed authored proposals, 0 treasury routes, 3 proof records.",
       "labels": [
         "athlete",
@@ -13056,64 +13064,14 @@
         "snapshot-0xe5f8417d633b7d2b6136be896b9d100b82056cfbdb7c39e67adb806c8c0d830f"
       ],
       "linked_assets": [],
-      "primary_href": "/community/0x9a91-b62d/"
+      "primary_href": "/community/monkzdao-eth/"
     },
     {
-      "item_id": "community:0x8d02-851e",
+      "item_id": "community:geffenz-eth",
       "kind": "community_reference",
       "date": "2025-05-28",
       "status": "active",
-      "title": "0x8d02...851e",
-      "summary": "community member. 1 passed authored proposals, 0 treasury routes, 12 proof records.",
-      "labels": [
-        "delegate",
-        "holder",
-        "proposer",
-        "contributor",
-        "community",
-        "active",
-        "archival",
-        "report"
-      ],
-      "editorial_labels": [
-        "delegate",
-        "holder",
-        "proposer",
-        "contributor",
-        "community"
-      ],
-      "status_labels": [
-        "active"
-      ],
-      "funding_labels": [],
-      "relationship_labels": [
-        "community"
-      ],
-      "platform_labels": [],
-      "lifecycle_labels": [
-        "archival"
-      ],
-      "proof_labels": [
-        "report"
-      ],
-      "source_labels": [],
-      "linked_people": [
-        "0x8d028dc71b347268d439432349b55bc27989851e"
-      ],
-      "linked_projects": [],
-      "linked_proposals": [
-        "gnars-ethereum-30",
-        "gnars-ethereum-36"
-      ],
-      "linked_assets": [],
-      "primary_href": "/community/0x8d02-851e/"
-    },
-    {
-      "item_id": "community:0x069d-eca0",
-      "kind": "community_reference",
-      "date": "2025-05-28",
-      "status": "active",
-      "title": "0x069d...eca0",
+      "title": "geffenz.eth",
       "summary": "community member. 1 passed authored proposals, 0 treasury routes, 0 proof records.",
       "labels": [
         "athlete",
@@ -13154,7 +13112,49 @@
         "snapshot-0x70526f9ba5616545ed8de674349307f6a6d671c7f9365552f457598026801d1a"
       ],
       "linked_assets": [],
-      "primary_href": "/community/0x069d-eca0/"
+      "primary_href": "/community/geffenz-eth/"
+    },
+    {
+      "item_id": "community:0xc407-3c28",
+      "kind": "community_reference",
+      "date": "2025-05-28",
+      "status": "active",
+      "title": "0xc407...3c28",
+      "summary": "community member. 0 passed authored proposals, 1 treasury routes, 0 proof records.",
+      "labels": [
+        "recipient",
+        "contributor",
+        "community",
+        "active",
+        "archival"
+      ],
+      "editorial_labels": [
+        "recipient",
+        "contributor",
+        "community"
+      ],
+      "status_labels": [
+        "active"
+      ],
+      "funding_labels": [],
+      "relationship_labels": [
+        "community"
+      ],
+      "platform_labels": [],
+      "lifecycle_labels": [
+        "archival"
+      ],
+      "proof_labels": [],
+      "source_labels": [],
+      "linked_people": [
+        "0xc4079dc1f8f84711eee0942c192829f473fc3c28"
+      ],
+      "linked_projects": [],
+      "linked_proposals": [],
+      "linked_assets": [
+        "USDC"
+      ],
+      "primary_href": "/community/0xc407-3c28/"
     },
     {
       "item_id": "proposal:gnars-base-85",
@@ -14336,6 +14336,57 @@
       "primary_href": "https://hackmd.io/_uploads/ByC3XVmklx.jpg"
     },
     {
+      "item_id": "community:brettdrawsstuff-eth",
+      "kind": "community_reference",
+      "date": "2025-05-01",
+      "status": "active",
+      "title": "brettdrawsstuff.eth",
+      "summary": "community member. 3 passed authored proposals, 0 treasury routes, 14 proof records.",
+      "labels": [
+        "delegate",
+        "holder",
+        "proposer",
+        "contributor",
+        "community",
+        "active",
+        "archival",
+        "report"
+      ],
+      "editorial_labels": [
+        "delegate",
+        "holder",
+        "proposer",
+        "contributor",
+        "community"
+      ],
+      "status_labels": [
+        "active"
+      ],
+      "funding_labels": [],
+      "relationship_labels": [
+        "community"
+      ],
+      "platform_labels": [],
+      "lifecycle_labels": [
+        "archival"
+      ],
+      "proof_labels": [
+        "report"
+      ],
+      "source_labels": [],
+      "linked_people": [
+        "0x9c87a1065994f156f0b7b87aaa8b3c5f7bd67e02"
+      ],
+      "linked_projects": [],
+      "linked_proposals": [
+        "snapshot-0xd44c38a59adc8b086ec31e9c8759b2623dbea06421bbfabd65c19d72a2559289",
+        "snapshot-0xde48f061cef8580ec5b487f8305ce12b8d31cbb29b52508382cc0d71bf46fbc5",
+        "snapshot-0xe472fc837743ed478fe98ebef15378dbae2efe519f6af18f3a34118ee5dea367"
+      ],
+      "linked_assets": [],
+      "primary_href": "/community/brettdrawsstuff-eth/"
+    },
+    {
       "item_id": "community:0x9cb9-f772",
       "kind": "community_reference",
       "date": "2025-05-01",
@@ -14389,57 +14440,6 @@
         "ETH"
       ],
       "primary_href": "/community/0x9cb9-f772/"
-    },
-    {
-      "item_id": "community:0x9c87-7e02",
-      "kind": "community_reference",
-      "date": "2025-05-01",
-      "status": "active",
-      "title": "0x9c87...7e02",
-      "summary": "community member. 3 passed authored proposals, 0 treasury routes, 14 proof records.",
-      "labels": [
-        "delegate",
-        "holder",
-        "proposer",
-        "contributor",
-        "community",
-        "active",
-        "archival",
-        "report"
-      ],
-      "editorial_labels": [
-        "delegate",
-        "holder",
-        "proposer",
-        "contributor",
-        "community"
-      ],
-      "status_labels": [
-        "active"
-      ],
-      "funding_labels": [],
-      "relationship_labels": [
-        "community"
-      ],
-      "platform_labels": [],
-      "lifecycle_labels": [
-        "archival"
-      ],
-      "proof_labels": [
-        "report"
-      ],
-      "source_labels": [],
-      "linked_people": [
-        "0x9c87a1065994f156f0b7b87aaa8b3c5f7bd67e02"
-      ],
-      "linked_projects": [],
-      "linked_proposals": [
-        "snapshot-0xd44c38a59adc8b086ec31e9c8759b2623dbea06421bbfabd65c19d72a2559289",
-        "snapshot-0xde48f061cef8580ec5b487f8305ce12b8d31cbb29b52508382cc0d71bf46fbc5",
-        "snapshot-0xe472fc837743ed478fe98ebef15378dbae2efe519f6af18f3a34118ee5dea367"
-      ],
-      "linked_assets": [],
-      "primary_href": "/community/0x9c87-7e02/"
     },
     {
       "item_id": "proposal:gnars-base-79",
@@ -15923,11 +15923,11 @@
       "primary_href": "/proposals/gnars-base-71/"
     },
     {
-      "item_id": "community:0xf41a-8f7a",
+      "item_id": "community:dreadpizzaroberts-eth",
       "kind": "community_reference",
       "date": "2025-03-24",
       "status": "active",
-      "title": "0xf41a...8f7a",
+      "title": "dreadpizzaroberts.eth",
       "summary": "community member. 1 passed authored proposals, 0 treasury routes, 0 proof records.",
       "labels": [
         "delegate",
@@ -15968,7 +15968,7 @@
         "gnars-base-71"
       ],
       "linked_assets": [],
-      "primary_href": "/community/0xf41a-8f7a/"
+      "primary_href": "/community/dreadpizzaroberts-eth/"
     },
     {
       "item_id": "proposal:gnars-base-70",
@@ -16987,7 +16987,7 @@
       "kind": "payout",
       "date": "2025-02-17T15:45:27.000Z",
       "status": "executed",
-      "title": "0xa903...a44c received 12881837.0 SENDIT",
+      "title": "benbodhi.eth received 12881837.0 SENDIT",
       "summary": "Routed through Reimbursement Proposal for Benbodhi on base.",
       "labels": [
         "athlete-support",
@@ -17041,7 +17041,7 @@
       "linked_assets": [
         "SENDIT"
       ],
-      "primary_href": "/community/0xa903-a44c/"
+      "primary_href": "/community/benbodhi-eth/"
     },
     {
       "item_id": "proposal:gnars-base-64",
@@ -17477,11 +17477,11 @@
       "primary_href": "/community/0x2858-960f/"
     },
     {
-      "item_id": "community:0xa903-a44c",
+      "item_id": "community:benbodhi-eth",
       "kind": "community_reference",
       "date": "2025-02-17",
       "status": "active",
-      "title": "0xa903...a44c",
+      "title": "benbodhi.eth",
       "summary": "community member. 0 passed authored proposals, 1 treasury routes, 0 proof records.",
       "labels": [
         "recipient",
@@ -17516,7 +17516,7 @@
       "linked_assets": [
         "SENDIT"
       ],
-      "primary_href": "/community/0xa903-a44c/"
+      "primary_href": "/community/benbodhi-eth/"
     },
     {
       "item_id": "proposal:gnars-base-63",
@@ -19340,6 +19340,52 @@
       "primary_href": "/community/0xbc94-fc12/"
     },
     {
+      "item_id": "community:gnarley-quinn-eth",
+      "kind": "community_reference",
+      "date": "2025-02-01",
+      "status": "active",
+      "title": "gnarley-quinn.eth",
+      "summary": "community member. 1 passed authored proposals, 0 treasury routes, 0 proof records.",
+      "labels": [
+        "delegate",
+        "holder",
+        "proposer",
+        "contributor",
+        "community",
+        "active",
+        "archival"
+      ],
+      "editorial_labels": [
+        "delegate",
+        "holder",
+        "proposer",
+        "contributor",
+        "community"
+      ],
+      "status_labels": [
+        "active"
+      ],
+      "funding_labels": [],
+      "relationship_labels": [
+        "community"
+      ],
+      "platform_labels": [],
+      "lifecycle_labels": [
+        "archival"
+      ],
+      "proof_labels": [],
+      "source_labels": [],
+      "linked_people": [
+        "0x0f7341c76ba4460736abec4f65a1953e824658cc"
+      ],
+      "linked_projects": [],
+      "linked_proposals": [
+        "snapshot-0x23cf980a45d2c4535ee96e3803538cbe6132e2ee31873ab60143ae9e4eacc041"
+      ],
+      "linked_assets": [],
+      "primary_href": "/community/gnarley-quinn-eth/"
+    },
+    {
       "item_id": "community:0xd32d-7cd4",
       "kind": "community_reference",
       "date": "2025-02-01",
@@ -19426,52 +19472,6 @@
         "USDC"
       ],
       "primary_href": "/community/0xbc94-fc12/"
-    },
-    {
-      "item_id": "community:0x0f73-58cc",
-      "kind": "community_reference",
-      "date": "2025-02-01",
-      "status": "active",
-      "title": "0x0f73...58cc",
-      "summary": "community member. 1 passed authored proposals, 0 treasury routes, 0 proof records.",
-      "labels": [
-        "delegate",
-        "holder",
-        "proposer",
-        "contributor",
-        "community",
-        "active",
-        "archival"
-      ],
-      "editorial_labels": [
-        "delegate",
-        "holder",
-        "proposer",
-        "contributor",
-        "community"
-      ],
-      "status_labels": [
-        "active"
-      ],
-      "funding_labels": [],
-      "relationship_labels": [
-        "community"
-      ],
-      "platform_labels": [],
-      "lifecycle_labels": [
-        "archival"
-      ],
-      "proof_labels": [],
-      "source_labels": [],
-      "linked_people": [
-        "0x0f7341c76ba4460736abec4f65a1953e824658cc"
-      ],
-      "linked_projects": [],
-      "linked_proposals": [
-        "snapshot-0x23cf980a45d2c4535ee96e3803538cbe6132e2ee31873ab60143ae9e4eacc041"
-      ],
-      "linked_assets": [],
-      "primary_href": "/community/0x0f73-58cc/"
     },
     {
       "item_id": "proposal:gnars-base-57",
@@ -19644,11 +19644,11 @@
       "primary_href": "/community/0x41cb-be4a/"
     },
     {
-      "item_id": "community:0xc2e3-721a",
+      "item_id": "community:millz-eth",
       "kind": "community_reference",
       "date": "2024-12-20",
       "status": "active",
-      "title": "0xc2e3...721a",
+      "title": "millz.eth",
       "summary": "community member. 0 passed authored proposals, 1 treasury routes, 0 proof records.",
       "labels": [
         "recipient",
@@ -19683,7 +19683,7 @@
       "linked_assets": [
         "ETH"
       ],
-      "primary_href": "/community/0xc2e3-721a/"
+      "primary_href": "/community/millz-eth/"
     },
     {
       "item_id": "proposal:gnars-base-56",
@@ -22267,7 +22267,7 @@
       "kind": "payout",
       "date": "2024-10-27T00:06:43.000Z",
       "status": "executed",
-      "title": "0xc2e3...721a received 0.2 ETH",
+      "title": "millz.eth received 0.2 ETH",
       "summary": "Routed through Pay Millz and Bagelface for their time and energy spent working on base migration and gnars frontend on base.",
       "labels": [
         "governance",
@@ -22321,14 +22321,14 @@
       "linked_assets": [
         "ETH"
       ],
-      "primary_href": "/community/0xc2e3-721a/"
+      "primary_href": "/community/millz-eth/"
     },
     {
       "item_id": "payout:gnars-base-48:1",
       "kind": "payout",
       "date": "2024-10-27T00:06:43.000Z",
       "status": "executed",
-      "title": "0xba6e...acf5 received 0.2 ETH",
+      "title": "bagelface.eth received 0.2 ETH",
       "summary": "Routed through Pay Millz and Bagelface for their time and energy spent working on base migration and gnars frontend on base.",
       "labels": [
         "governance",
@@ -22382,14 +22382,14 @@
       "linked_assets": [
         "ETH"
       ],
-      "primary_href": "/community/0xba6e-acf5/"
+      "primary_href": "/community/bagelface-eth/"
     },
     {
-      "item_id": "community:0xba6e-acf5",
+      "item_id": "community:bagelface-eth",
       "kind": "community_reference",
       "date": "2024-10-27",
       "status": "active",
-      "title": "0xba6e...acf5",
+      "title": "bagelface.eth",
       "summary": "community member. 2 passed authored proposals, 1 treasury routes, 7 proof records.",
       "labels": [
         "delegate",
@@ -22436,7 +22436,7 @@
       "linked_assets": [
         "ETH"
       ],
-      "primary_href": "/community/0xba6e-acf5/"
+      "primary_href": "/community/bagelface-eth/"
     },
     {
       "item_id": "proposal:gnars-base-47",
@@ -22963,11 +22963,11 @@
       "primary_href": "/community/0xeed9-a282/"
     },
     {
-      "item_id": "community:0xe931-ea4d",
+      "item_id": "community:tomrohrer-eth",
       "kind": "community_reference",
       "date": "2024-10-24",
       "status": "active",
-      "title": "0xe931...ea4d",
+      "title": "tomrohrer.eth",
       "summary": "community member. 1 passed authored proposals, 0 treasury routes, 8 proof records.",
       "labels": [
         "proposer",
@@ -23005,7 +23005,7 @@
         "gnars-base-29"
       ],
       "linked_assets": [],
-      "primary_href": "/community/0xe931-ea4d/"
+      "primary_href": "/community/tomrohrer-eth/"
     },
     {
       "item_id": "proposal:gnars-base-46",
@@ -23490,11 +23490,11 @@
       "primary_href": "https://ipfs.skatehive.app/ipfs/QmRfL4RBNAUjQm28bUiSatqaXPFP94zdKeSivsdDuwHMid"
     },
     {
-      "item_id": "community:0x6dfd-21b4",
+      "item_id": "community:team7-eth",
       "kind": "community_reference",
       "date": "2024-10-20",
       "status": "active",
-      "title": "0x6dfd...21b4",
+      "title": "team7.eth",
       "summary": "community member. 2 passed authored proposals, 0 treasury routes, 15 proof records.",
       "labels": [
         "proposer",
@@ -23534,7 +23534,7 @@
         "snapshot-0xbd104aec85af594c4fe35b826fd792dba0e860c8ee0ab0625bd6d67284ef8ad7"
       ],
       "linked_assets": [],
-      "primary_href": "/community/0x6dfd-21b4/"
+      "primary_href": "/community/team7-eth/"
     },
     {
       "item_id": "proposal:gnars-base-45",
@@ -24602,7 +24602,7 @@
       "kind": "payout",
       "date": "2024-09-25T15:18:53.000Z",
       "status": "executed",
-      "title": "0x9ad8...e1c8 received 3000.0 USDC",
+      "title": "7capas.eth received 3000.0 USDC",
       "summary": "Routed through SKATE AND JAZZ - 1st Noggles Rail in Argentina on base.",
       "labels": [
         "travel",
@@ -24654,7 +24654,7 @@
       "linked_assets": [
         "USDC"
       ],
-      "primary_href": "/community/0x9ad8-e1c8/"
+      "primary_href": "/community/7capas-eth/"
     },
     {
       "item_id": "proposal:gnars-base-40",
@@ -25145,7 +25145,7 @@
       "kind": "payout",
       "date": "2024-09-07T16:15:57.000Z",
       "status": "executed",
-      "title": "0xed7b...13f4 received 6850.0 USDC",
+      "title": "overhau1.eth received 6850.0 USDC",
       "summary": "Routed through Gnars Wakeboarding Culture on base.",
       "labels": [
         "operations",
@@ -25196,14 +25196,14 @@
       "linked_assets": [
         "USDC"
       ],
-      "primary_href": "/community/0xed7b-13f4/"
+      "primary_href": "/community/overhau1-eth/"
     },
     {
-      "item_id": "community:0xed7b-13f4",
+      "item_id": "community:overhau1-eth",
       "kind": "community_reference",
       "date": "2024-09-07",
       "status": "active",
-      "title": "0xed7b...13f4",
+      "title": "overhau1.eth",
       "summary": "community member. 1 passed authored proposals, 1 treasury routes, 8 proof records.",
       "labels": [
         "delegate",
@@ -25249,7 +25249,7 @@
       "linked_assets": [
         "USDC"
       ],
-      "primary_href": "/community/0xed7b-13f4/"
+      "primary_href": "/community/overhau1-eth/"
     },
     {
       "item_id": "proposal:gnars-base-39",
@@ -26262,7 +26262,7 @@
       "kind": "payout",
       "date": "2024-08-21T16:25:57.000Z",
       "status": "executed",
-      "title": "0xedc1...e7e1 received 0.43 ETH",
+      "title": "fattybuthappy.eth received 0.43 ETH",
       "summary": "Routed through Retro ramp of Mexico can be gnarlier on base.",
       "labels": [
         "media",
@@ -26313,7 +26313,7 @@
       "linked_assets": [
         "ETH"
       ],
-      "primary_href": "/community/0xedc1-e7e1/"
+      "primary_href": "/community/fattybuthappy-eth/"
     },
     {
       "item_id": "proposal:gnars-base-37",
@@ -28120,7 +28120,7 @@
       "kind": "payout",
       "date": "2024-08-18T02:52:19.000Z",
       "status": "executed",
-      "title": "0x387a...fffd received 4500.0 USDC",
+      "title": "gami.eth received 4500.0 USDC",
       "summary": "Routed through Noggles Rail debut in London UK on base.",
       "labels": [
         "events",
@@ -28171,14 +28171,14 @@
       "linked_assets": [
         "USDC"
       ],
-      "primary_href": "/community/0x387a-fffd/"
+      "primary_href": "/community/gami-eth/"
     },
     {
       "item_id": "payout:gnars-base-33:1",
       "kind": "payout",
       "date": "2024-08-18T02:52:19.000Z",
       "status": "executed",
-      "title": "0x387a...fffd received 0.12 ETH",
+      "title": "gami.eth received 0.12 ETH",
       "summary": "Routed through Noggles Rail debut in London UK on base.",
       "labels": [
         "events",
@@ -28229,7 +28229,7 @@
       "linked_assets": [
         "ETH"
       ],
-      "primary_href": "/community/0x387a-fffd/"
+      "primary_href": "/community/gami-eth/"
     },
     {
       "item_id": "proposal:gnars-base-32",
@@ -30851,7 +30851,7 @@
       "kind": "payout",
       "date": "2024-08-02T23:02:39.000Z",
       "status": "executed",
-      "title": "0xfc27...a45b received 7888.0 USDC",
+      "title": "luizhadad.eth received 7888.0 USDC",
       "summary": "Routed through Travel Grant Proposal - IndoGNARS 2 on base.",
       "labels": [
         "travel",
@@ -30902,7 +30902,7 @@
       "linked_assets": [
         "USDC"
       ],
-      "primary_href": "/community/0xfc27-a45b/"
+      "primary_href": "/community/luizhadad-eth/"
     },
     {
       "item_id": "community:0x10c3-d7b3",
@@ -32538,7 +32538,7 @@
       "kind": "payout",
       "date": "2024-07-23T23:33:23.000Z",
       "status": "executed",
-      "title": "0x33bb...63ea received 0.99 ETH",
+      "title": "fuzzyface.eth received 0.99 ETH",
       "summary": "Routed through Sculpture NOGGLES RAIL at Medellin Colombia on base.",
       "labels": [
         "events",
@@ -32591,7 +32591,7 @@
       "linked_assets": [
         "ETH"
       ],
-      "primary_href": "/community/0x33bb-63ea/"
+      "primary_href": "/community/fuzzyface-eth/"
     },
     {
       "item_id": "proposal:gnars-base-24",
@@ -36982,7 +36982,7 @@
       "kind": "payout",
       "date": "2024-05-13T02:15:19.000Z",
       "status": "executed",
-      "title": "0xb2b7...5e9d received 3990.0 USDC",
+      "title": "rickyday.eth received 3990.0 USDC",
       "summary": "Routed through  V2 Gnars Sunset IRL Docuseries Premiere Event on base.",
       "labels": [
         "events",
@@ -37033,14 +37033,14 @@
       "linked_assets": [
         "USDC"
       ],
-      "primary_href": "/community/0xb2b7-5e9d/"
+      "primary_href": "/community/rickyday-eth/"
     },
     {
-      "item_id": "community:0x10fb-ecfc",
+      "item_id": "community:joaoborges-eth",
       "kind": "community_reference",
       "date": "2024-05-13",
       "status": "active",
-      "title": "0x10fb...ecfc",
+      "title": "joaoborges.eth",
       "summary": "community member. 1 passed authored proposals, 0 treasury routes, 8 proof records.",
       "labels": [
         "athlete",
@@ -37084,7 +37084,7 @@
         "gnars-ethereum-33"
       ],
       "linked_assets": [],
-      "primary_href": "/community/0x10fb-ecfc/"
+      "primary_href": "/community/joaoborges-eth/"
     },
     {
       "item_id": "proposal:gnars-base-15",
@@ -39516,7 +39516,7 @@
       "kind": "payout",
       "date": "2024-03-26T04:50:23.000Z",
       "status": "executed",
-      "title": "0x387a...fffd received 10.24 ETH",
+      "title": "gami.eth received 10.24 ETH",
       "summary": "Routed through Base Jump 4 of 4 (proposals 2-3 not required) on ethereum.",
       "labels": [
         "operations",
@@ -39567,7 +39567,7 @@
       "linked_assets": [
         "ETH"
       ],
-      "primary_href": "/community/0x387a-fffd/"
+      "primary_href": "/community/gami-eth/"
     },
     {
       "item_id": "proposal:snapshot-0x0925892015b8809cc4ab3a7030c77364657c46f64ee083eba9f4fd5c61058b9b",
@@ -39675,6 +39675,51 @@
       "primary_href": "/proposals/gnars-snapshot-101/"
     },
     {
+      "item_id": "community:vote-gami-eth",
+      "kind": "community_reference",
+      "date": "2024-03-17",
+      "status": "active",
+      "title": "vote.gami.eth",
+      "summary": "community member. 1 passed authored proposals, 0 treasury routes, 2 proof records.",
+      "labels": [
+        "proposer",
+        "contributor",
+        "community",
+        "active",
+        "archival",
+        "report"
+      ],
+      "editorial_labels": [
+        "proposer",
+        "contributor",
+        "community"
+      ],
+      "status_labels": [
+        "active"
+      ],
+      "funding_labels": [],
+      "relationship_labels": [
+        "community"
+      ],
+      "platform_labels": [],
+      "lifecycle_labels": [
+        "archival"
+      ],
+      "proof_labels": [
+        "report"
+      ],
+      "source_labels": [],
+      "linked_people": [
+        "0x7c621d5954a4ac21a0fd741ab6f302398f29d644"
+      ],
+      "linked_projects": [],
+      "linked_proposals": [
+        "snapshot-0x41f72da6620a57ff48a149171f03bc98a4dc48d0444455ce40e16e43758c1c5e"
+      ],
+      "linked_assets": [],
+      "primary_href": "/community/vote-gami-eth/"
+    },
+    {
       "item_id": "community:0xc269-67fd",
       "kind": "community_reference",
       "date": "2024-03-17",
@@ -39718,51 +39763,6 @@
       ],
       "linked_assets": [],
       "primary_href": "/community/0xc269-67fd/"
-    },
-    {
-      "item_id": "community:0x7c62-d644",
-      "kind": "community_reference",
-      "date": "2024-03-17",
-      "status": "active",
-      "title": "0x7c62...d644",
-      "summary": "community member. 1 passed authored proposals, 0 treasury routes, 2 proof records.",
-      "labels": [
-        "proposer",
-        "contributor",
-        "community",
-        "active",
-        "archival",
-        "report"
-      ],
-      "editorial_labels": [
-        "proposer",
-        "contributor",
-        "community"
-      ],
-      "status_labels": [
-        "active"
-      ],
-      "funding_labels": [],
-      "relationship_labels": [
-        "community"
-      ],
-      "platform_labels": [],
-      "lifecycle_labels": [
-        "archival"
-      ],
-      "proof_labels": [
-        "report"
-      ],
-      "source_labels": [],
-      "linked_people": [
-        "0x7c621d5954a4ac21a0fd741ab6f302398f29d644"
-      ],
-      "linked_projects": [],
-      "linked_proposals": [
-        "snapshot-0x41f72da6620a57ff48a149171f03bc98a4dc48d0444455ce40e16e43758c1c5e"
-      ],
-      "linked_assets": [],
-      "primary_href": "/community/0x7c62-d644/"
     },
     {
       "item_id": "proposal:gnars-ethereum-37",
@@ -46144,11 +46144,11 @@
       "primary_href": "https://ipfs.decentralized-content.com/ipfs/bafkreicnjc5oebxyrxhbepupq32777qxjn5fchttuqdrjenpowqa7ldcfy"
     },
     {
-      "item_id": "community:0xa594-9bb8",
+      "item_id": "community:snowmaker-eth",
       "kind": "community_reference",
       "date": "2023-06-14",
       "status": "active",
-      "title": "0xa594...9bb8",
+      "title": "snowmaker.eth",
       "summary": "community member. 0 passed authored proposals, 0 treasury routes, 3 proof records.",
       "labels": [
         "athlete",
@@ -46192,7 +46192,7 @@
         "snapshot-0x2bb3be84669b8dc31083dd7acb62f6f1e543245ddcf8bfcc08523a1978146777"
       ],
       "linked_assets": [],
-      "primary_href": "/community/0xa594-9bb8/"
+      "primary_href": "/community/snowmaker-eth/"
     },
     {
       "item_id": "proposal:snapshot-0x872bfadf89dee5dcea47992b94ebff05bd24dcf9a02d3e5daac50b2ff48eb90b",
@@ -46837,11 +46837,11 @@
       "primary_href": "https://app.charmverse.io/gnars/page-5339523206847683"
     },
     {
-      "item_id": "community:0x27d1-38a6",
+      "item_id": "community:bob-burnquist-eth",
       "kind": "community_reference",
       "date": "2023-05-20",
       "status": "active",
-      "title": "0x27d1...38a6",
+      "title": "bob-burnquist.eth",
       "summary": "community member. 1 passed authored proposals, 0 treasury routes, 1 proof records.",
       "labels": [
         "proposer",
@@ -46879,7 +46879,7 @@
         "snapshot-0x34e846a58f13a974606beda45fbe9a5f0fefcd76159c0f574520c3839e04673e"
       ],
       "linked_assets": [],
-      "primary_href": "/community/0x27d1-38a6/"
+      "primary_href": "/community/bob-burnquist-eth/"
     },
     {
       "item_id": "proposal:snapshot-0x7e812c9d03494df1d7bd8e030f55c4d79f5211eeec42de07e681f2d57422b9f6",
@@ -48969,11 +48969,55 @@
       "primary_href": "https://www.ewrc-results.com/profile/19308-igor-mandic/"
     },
     {
-      "item_id": "community:0xcf93-6f62",
+      "item_id": "community:0xsatori-eth",
       "kind": "community_reference",
       "date": "2023-04-14",
       "status": "active",
-      "title": "0xcf93...6f62",
+      "title": "0xsatori.eth",
+      "summary": "community member. 1 passed authored proposals, 0 treasury routes, 0 proof records.",
+      "labels": [
+        "holder",
+        "proposer",
+        "contributor",
+        "community",
+        "active",
+        "archival"
+      ],
+      "editorial_labels": [
+        "holder",
+        "proposer",
+        "contributor",
+        "community"
+      ],
+      "status_labels": [
+        "active"
+      ],
+      "funding_labels": [],
+      "relationship_labels": [
+        "community"
+      ],
+      "platform_labels": [],
+      "lifecycle_labels": [
+        "archival"
+      ],
+      "proof_labels": [],
+      "source_labels": [],
+      "linked_people": [
+        "0x05e189e1bbaf77f1654f0983872fd938ae592edd"
+      ],
+      "linked_projects": [],
+      "linked_proposals": [
+        "snapshot-0x9d63add3de1dd0868f7b4414b9de375e5fc58c3800270ee1a08c819c9b3393ad"
+      ],
+      "linked_assets": [],
+      "primary_href": "/community/0xsatori-eth/"
+    },
+    {
+      "item_id": "community:04175-eth",
+      "kind": "community_reference",
+      "date": "2023-04-14",
+      "status": "active",
+      "title": "04175.eth",
       "summary": "community member. 0 passed authored proposals, 0 treasury routes, 5 proof records.",
       "labels": [
         "delegate",
@@ -49015,51 +49059,7 @@
         "snapshot-0x8f8d97fccfb5dad5cec24504fecc7543833ee26f3d14ffd80db3f0f381536b20"
       ],
       "linked_assets": [],
-      "primary_href": "/community/0xcf93-6f62/"
-    },
-    {
-      "item_id": "community:0x05e1-2edd",
-      "kind": "community_reference",
-      "date": "2023-04-14",
-      "status": "active",
-      "title": "0x05e1...2edd",
-      "summary": "community member. 1 passed authored proposals, 0 treasury routes, 0 proof records.",
-      "labels": [
-        "holder",
-        "proposer",
-        "contributor",
-        "community",
-        "active",
-        "archival"
-      ],
-      "editorial_labels": [
-        "holder",
-        "proposer",
-        "contributor",
-        "community"
-      ],
-      "status_labels": [
-        "active"
-      ],
-      "funding_labels": [],
-      "relationship_labels": [
-        "community"
-      ],
-      "platform_labels": [],
-      "lifecycle_labels": [
-        "archival"
-      ],
-      "proof_labels": [],
-      "source_labels": [],
-      "linked_people": [
-        "0x05e189e1bbaf77f1654f0983872fd938ae592edd"
-      ],
-      "linked_projects": [],
-      "linked_proposals": [
-        "snapshot-0x9d63add3de1dd0868f7b4414b9de375e5fc58c3800270ee1a08c819c9b3393ad"
-      ],
-      "linked_assets": [],
-      "primary_href": "/community/0x05e1-2edd/"
+      "primary_href": "/community/04175-eth/"
     },
     {
       "item_id": "proposal:snapshot-0x29ce2485975728ebbde5812d6f3a4d1bb27d409a2248a09aa3d604dba8380442",
@@ -54820,11 +54820,11 @@
       "primary_href": "https://i.imgur.com/QmqVfRD.jpg"
     },
     {
-      "item_id": "community:0x8972-85f4",
+      "item_id": "community:guaremate-eth",
       "kind": "community_reference",
       "date": "2023-02-21",
       "status": "active",
-      "title": "0x8972...85f4",
+      "title": "guaremate.eth",
       "summary": "community member. 0 passed authored proposals, 0 treasury routes, 5 proof records.",
       "labels": [
         "athlete",
@@ -54864,7 +54864,7 @@
         "snapshot-0x8e162378aca3e306086e60566e64bcd21000c8fa464d2d1487133c8c4f0785f2"
       ],
       "linked_assets": [],
-      "primary_href": "/community/0x8972-85f4/"
+      "primary_href": "/community/guaremate-eth/"
     },
     {
       "item_id": "proposal:snapshot-0xb98dbe42c7fee10c45eee0624cfe0ee852e4d7757eacf016d07bcb39b48e5d84",
@@ -56092,11 +56092,11 @@
       "primary_href": "/proposals/snapshot-0x23cf980a45d2c4535ee96e3803538cbe6132e2ee31873ab60143ae9e4eacc041/"
     },
     {
-      "item_id": "community:0x2f60-959a",
+      "item_id": "community:xxxxt-eth",
       "kind": "community_reference",
       "date": "2023-02-08",
       "status": "active",
-      "title": "0x2f60...959a",
+      "title": "xxxxt.eth",
       "summary": "community member. 0 passed authored proposals, 0 treasury routes, 2 proof records.",
       "labels": [
         "delegate",
@@ -56138,7 +56138,7 @@
         "snapshot-0xe7aeb375bbc63b6a064a89924c20473ff998797cad22b68c17e14afd2923a77b"
       ],
       "linked_assets": [],
-      "primary_href": "/community/0x2f60-959a/"
+      "primary_href": "/community/xxxxt-eth/"
     },
     {
       "item_id": "proposal:snapshot-0xd44c38a59adc8b086ec31e9c8759b2623dbea06421bbfabd65c19d72a2559289",
@@ -56803,11 +56803,11 @@
       "primary_href": "https://twitter.com/volkyeth"
     },
     {
-      "item_id": "community:0x7322-382c",
+      "item_id": "community:gnars-com",
       "kind": "community_reference",
       "date": "2023-01-29",
       "status": "active",
-      "title": "0x7322...382c",
+      "title": "gnars.com",
       "summary": "community member. 17 passed authored proposals, 0 treasury routes, 58 proof records.",
       "labels": [
         "athlete",
@@ -56867,7 +56867,7 @@
         "snapshot-0xfc4598096ca508794797ed88e9115f52dc9ce63f2b0fb760ea2dea3eb1c5ba4b"
       ],
       "linked_assets": [],
-      "primary_href": "/community/0x7322-382c/"
+      "primary_href": "/community/gnars-com/"
     },
     {
       "item_id": "proposal:snapshot-0xf1e34b3d91d49a2d3c83e465fb3bed3763c067d30a483ac22e98edee03709c38",

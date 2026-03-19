@@ -41,6 +41,7 @@ import {
   getAthleteEconomics,
   groupAssetTotals,
   isSuccessfulProposal,
+  personIdentityLabel,
   personLabel,
   personSubtitle,
   projectBudgetAssets,
@@ -116,7 +117,7 @@ function buildCommunityCard(
   return {
     slug: person.slug,
     href: communityHref(person.slug),
-    displayName: person.display_name,
+    displayName: personLabel(person),
     subtitle: person.history_short || personSubtitle(person),
     tribes,
     totalReceivedLabel: economics.totalReceivedPrimary
@@ -133,7 +134,7 @@ function buildCommunityCard(
     budgetManagedPrimary: economics.budgetManagedByAsset[0]?.amount ?? 0,
     proofCount: person.proof_count ?? 0,
     lastSeenAt: person.last_seen_at,
-    searchText: `${person.display_name} ${person.role} ${(person.tribes || person.tags).join(" ")} ${person.headline || ""}`,
+    searchText: `${personLabel(person)} ${person.identity.ens ?? ""} ${person.role} ${(person.tribes || person.tags).join(" ")} ${person.headline || ""}`,
   };
 }
 
@@ -209,7 +210,7 @@ function buildTimelineCard(
       .map((address) => peopleByAddress.get(address.toLowerCase()))
       .filter((person): person is PersonRecord => Boolean(person))
       .map((person) => ({
-        label: person.display_name,
+        label: personLabel(person),
         href: communityHref(person.slug),
       })),
     (item) => item.href,
@@ -590,6 +591,7 @@ async function main() {
       .slice(0, 12);
     const identityLinks = [
       person.identity.member_url ? { label: "Gnars member page", url: person.identity.member_url, kind: "Member" } : null,
+      person.identity.ens ? { label: person.identity.ens, url: `https://app.ens.domains/${person.identity.ens}`, kind: "ENS" } : null,
       person.identity.farcaster ? { label: "Farcaster", url: person.identity.farcaster, kind: "Social" } : null,
       person.identity.github ? { label: "GitHub", url: person.identity.github, kind: "Code" } : null,
       person.identity.website ? { label: "Website", url: person.identity.website, kind: "Web" } : null,
@@ -600,8 +602,8 @@ async function main() {
     const profilePayload: PagePayload = {
       pageType: "community-profile",
       meta: {
-        title: `${person.display_name} - Gnars Camp`,
-        description: `Treasury, governance, and delivery dossier for ${person.display_name}.`,
+        title: `${personLabel(person)} - Gnars Camp`,
+        description: `Treasury, governance, and delivery dossier for ${personLabel(person)}.`,
         pathname: communityHref(person.slug),
         activeNav: "community",
       },
@@ -610,6 +612,8 @@ async function main() {
           displayName: personLabel(person),
           address: person.address,
           addressShort: person.address_short,
+          identityLabel: personIdentityLabel(person),
+          ens: person.identity.ens ?? null,
           tribes: tribeLabels(person.tribes?.length ? person.tribes : person.tags),
           role: person.role,
           bio: person.history_short || person.bio,
@@ -756,7 +760,7 @@ async function main() {
       ]
         .filter((person): person is PersonRecord => Boolean(person))
         .map((person) => ({
-          label: person.display_name,
+          label: personLabel(person),
           href: communityHref(person.slug),
         })),
       (item) => item.href,
@@ -791,7 +795,7 @@ async function main() {
           recipients: [...groupedRecipients.entries()].map(([address, records]) => {
             const linked = peopleByAddress.get(address.toLowerCase());
             return {
-              label: linked?.display_name ?? records[0].recipient_display_name,
+              label: linked ? personLabel(linked) : records[0].recipient_display_name,
               href: linked ? communityHref(linked.slug) : null,
               amounts: groupAssetTotals(records),
             };

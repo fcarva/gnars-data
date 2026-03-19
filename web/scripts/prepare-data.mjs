@@ -457,11 +457,12 @@ async function buildSearchIndex(notesIndex) {
   ];
 
   for (const person of people.records) {
+    const identityLabel = person.identity?.ens || person.address_short;
     records.push({
       title: person.display_name,
       href: `/community/${person.slug}/`,
       kind: "Community",
-      summary: stripMarkdown(person.bio || person.role || person.address_short),
+      summary: stripMarkdown([person.bio || person.role || "", identityLabel].filter(Boolean).join(" ")),
     });
   }
 

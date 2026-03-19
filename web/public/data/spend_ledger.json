@@ -22,7 +22,7 @@
       "asset_kind": "native",
       "token_contract": null,
       "recipient_address": "0x9ad8d2a8ef4bf60a667dd43fcb178bdbd93ae1c8",
-      "recipient_display_name": "0x9ad8...e1c8",
+      "recipient_display_name": "7capas.eth",
       "amount": 0.42,
       "source_url": "https://www.gnars.com/proposals/base/104",
       "canonical_url": "https://gnars.com/proposals/base/104"
@@ -45,7 +45,7 @@
       "asset_kind": "erc20",
       "token_contract": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
       "recipient_address": "0x49d31dcb59e115f5c9e505a58a323ade076f2176",
-      "recipient_display_name": "0x49d3...2176",
+      "recipient_display_name": "fernandoferreira.eth",
       "amount": 2600.0,
       "source_url": "https://www.gnars.com/proposals/base/101",
       "canonical_url": "https://gnars.com/proposals/base/101"
@@ -68,7 +68,7 @@
       "asset_kind": "native",
       "token_contract": null,
       "recipient_address": "0x49d31dcb59e115f5c9e505a58a323ade076f2176",
-      "recipient_display_name": "0x49d3...2176",
+      "recipient_display_name": "fernandoferreira.eth",
       "amount": 0.619,
       "source_url": "https://www.gnars.com/proposals/base/101",
       "canonical_url": "https://gnars.com/proposals/base/101"
@@ -160,7 +160,7 @@
       "asset_kind": "native",
       "token_contract": null,
       "recipient_address": "0x289715ffbb2f4b482e2917d2f183feab564ec84f",
-      "recipient_display_name": "0x2897...c84f",
+      "recipient_display_name": "rocketman21.eth",
       "amount": 1.0,
       "source_url": "https://www.gnars.com/proposals/base/86",
       "canonical_url": "https://gnars.com/proposals/base/86"
@@ -229,7 +229,7 @@
       "asset_kind": "erc20",
       "token_contract": "0xba5b9b2d2d06a9021eb3190ea5fb0e02160839a4",
       "recipient_address": "0xa903c06bf35286f6d1cdad25396748353979a44c",
-      "recipient_display_name": "0xa903...a44c",
+      "recipient_display_name": "benbodhi.eth",
       "amount": 12881837.0,
       "source_url": "https://www.gnars.com/proposals/base/65",
       "canonical_url": "https://gnars.com/proposals/base/65"
@@ -436,7 +436,7 @@
       "asset_kind": "native",
       "token_contract": null,
       "recipient_address": "0xc2e3df2748e4ef6e1a8322772fd7d962410c721a",
-      "recipient_display_name": "0xc2e3...721a",
+      "recipient_display_name": "millz.eth",
       "amount": 0.2,
       "source_url": "https://www.gnars.com/proposals/base/48",
       "canonical_url": "https://gnars.com/proposals/base/48"
@@ -459,7 +459,7 @@
       "asset_kind": "native",
       "token_contract": null,
       "recipient_address": "0xba6e1c26be2f8b46d9e7ab7573b99921ee81acf5",
-      "recipient_display_name": "0xba6e...acf5",
+      "recipient_display_name": "bagelface.eth",
       "amount": 0.2,
       "source_url": "https://www.gnars.com/proposals/base/48",
       "canonical_url": "https://gnars.com/proposals/base/48"
@@ -528,7 +528,7 @@
       "asset_kind": "erc20",
       "token_contract": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
       "recipient_address": "0x9ad8d2a8ef4bf60a667dd43fcb178bdbd93ae1c8",
-      "recipient_display_name": "0x9ad8...e1c8",
+      "recipient_display_name": "7capas.eth",
       "amount": 3000.0,
       "source_url": "https://www.gnars.com/proposals/base/41",
       "canonical_url": "https://gnars.com/proposals/base/41"
@@ -551,7 +551,7 @@
       "asset_kind": "erc20",
       "token_contract": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
       "recipient_address": "0xed7be8b630924f437c28af58a99cc63fc80413f4",
-      "recipient_display_name": "0xed7b...13f4",
+      "recipient_display_name": "overhau1.eth",
       "amount": 6850.0,
       "source_url": "https://www.gnars.com/proposals/base/40",
       "canonical_url": "https://gnars.com/proposals/base/40"
@@ -597,7 +597,7 @@
       "asset_kind": "native",
       "token_contract": null,
       "recipient_address": "0xedc1a397589a0236c4810883b7d559288a5fe7e1",
-      "recipient_display_name": "0xedc1...e7e1",
+      "recipient_display_name": "fattybuthappy.eth",
       "amount": 0.43,
       "source_url": "https://www.gnars.com/proposals/base/38",
       "canonical_url": "https://gnars.com/proposals/base/38"
@@ -689,7 +689,7 @@
       "asset_kind": "erc20",
       "token_contract": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
       "recipient_address": "0x387a161c6b25aa854100abaed39274e51aaffffd",
-      "recipient_display_name": "0x387a...fffd",
+      "recipient_display_name": "gami.eth",
       "amount": 4500.0,
       "source_url": "https://www.gnars.com/proposals/base/33",
       "canonical_url": "https://gnars.com/proposals/base/33"
@@ -712,7 +712,7 @@
       "asset_kind": "native",
       "token_contract": null,
       "recipient_address": "0x387a161c6b25aa854100abaed39274e51aaffffd",
-      "recipient_display_name": "0x387a...fffd",
+      "recipient_display_name": "gami.eth",
       "amount": 0.12,
       "source_url": "https://www.gnars.com/proposals/base/33",
       "canonical_url": "https://gnars.com/proposals/base/33"
@@ -827,7 +827,7 @@
       "asset_kind": "erc20",
       "token_contract": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
       "recipient_address": "0xfc27b375faf1fbd3f3462044cf810082f042a45b",
-      "recipient_display_name": "0xfc27...a45b",
+      "recipient_display_name": "luizhadad.eth",
       "amount": 7888.0,
       "source_url": "https://www.gnars.com/proposals/base/28",
       "canonical_url": "https://gnars.com/proposals/base/28"
@@ -896,7 +896,7 @@
       "asset_kind": "native",
       "token_contract": null,
       "recipient_address": "0x33bbf6e27ce7b254e537bcb9f3b00cd1451563ea",
-      "recipient_display_name": "0x33bb...63ea",
+      "recipient_display_name": "fuzzyface.eth",
       "amount": 0.99,
       "source_url": "https://www.gnars.com/proposals/base/25",
       "canonical_url": "https://gnars.com/proposals/base/25"
@@ -1103,7 +1103,7 @@
       "asset_kind": "erc20",
       "token_contract": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
       "recipient_address": "0xb2b7d66bb56ce8ff7838dc8053ff35050ed95e9d",
-      "recipient_display_name": "0xb2b7...5e9d",
+      "recipient_display_name": "rickyday.eth",
       "amount": 3990.0,
       "source_url": "https://www.gnars.com/proposals/base/16",
       "canonical_url": "https://gnars.com/proposals/base/16"
@@ -1195,7 +1195,7 @@
       "asset_kind": "native",
       "token_contract": null,
       "recipient_address": "0x387a161c6b25aa854100abaed39274e51aaffffd",
-      "recipient_display_name": "0x387a...fffd",
+      "recipient_display_name": "gami.eth",
       "amount": 10.23730283,
       "source_url": "https://www.gnars.com/proposals/ethereum/38",
       "canonical_url": "https://gnars.com/proposals/ethereum/38"

@@ -58,6 +58,9 @@ export type PersonRecord = {
   bio: string;
   identity: {
     member_url?: string | null;
+    ens?: string | null;
+    ens_source?: string | null;
+    ens_verified_at?: string | null;
     farcaster?: string | null;
     github?: string | null;
     avatar_url?: string | null;
@@ -943,6 +946,8 @@ export type CommunityProfilePageProps = {
     displayName: string;
     address: string;
     addressShort: string;
+    identityLabel: string;
+    ens: string | null;
     tribes: string[];
     role: string;
     bio: string;

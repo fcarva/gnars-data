@@ -7,6 +7,10 @@ from collections import Counter, defaultdict
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
+from urllib import error as urllib_error
+from urllib import request as urllib_request
+
+from Crypto.Hash import keccak
 
 from product_datasets import (
     build_feed_stream,
@@ -32,6 +36,37 @@ TOKEN_DECIMALS_BY_ADDRESS = {
     BASE_USDC: 6,
     BASE_SENDIT: 18,
 }
+ETH_MAINNET_RPC_URL = "https://ethereum-rpc.publicnode.com"
+ETH_MAINNET_CHAIN_ID = "0x1"
+ENS_REGISTRY = "0x00000000000c2e074ec69a0dfb2997ba6c7d2e1e"
+RPC_BATCH_SIZE = 200
+DISPLAY_NAME_PRIORITIES = {
+    "seed": 350,
+    "override": 400,
+    "ens": 300,
+    "farcaster": 250,
+    "proposal_label": 200,
+    "archive_vote_ens": 150,
+}
+JSON_RPC_HEADERS = {
+    "Content-Type": "application/json",
+    "User-Agent": "gnars-data/ens-resolver",
+}
+
+
+def keccak256(value: bytes) -> bytes:
+    digest = keccak.new(digest_bits=256)
+    digest.update(value)
+    return digest.digest()
+
+
+def function_selector(signature: str) -> str:
+    return keccak256(signature.encode("utf-8"))[:4].hex()
+
+
+ENS_RESOLVER_SELECTOR = function_selector("resolver(bytes32)")
+ENS_NAME_SELECTOR = function_selector("name(bytes32)")
+ENS_ADDR_SELECTOR = function_selector("addr(bytes32)")
 
 
 def load_json_path(path: Path) -> Any:
@@ -41,6 +76,13 @@ def load_json_path(path: Path) -> Any:
 
 def load_json(name: str) -> Any:
     return load_json_path(DATA_DIR / f"{name}.json")
+
+
+def load_json_optional(name: str) -> Any | None:
+    path = DATA_DIR / f"{name}.json"
+    if not path.exists():
+        return None
+    return load_json_path(path)
 
 
 def write_json(name: str, payload: dict[str, Any]) -> None:
@@ -62,6 +104,73 @@ def short_address(address: str) -> str:
     if len(address) < 12:
         return address
     return f"{address[:6]}...{address[-4:]}"
+
+
+def rpc_batch(payload: list[dict[str, Any]], url: str = ETH_MAINNET_RPC_URL) -> dict[int, Any]:
+    request = urllib_request.Request(
+        url,
+        data=json.dumps(payload).encode("utf-8"),
+        headers=JSON_RPC_HEADERS,
+    )
+    try:
+        with urllib_request.urlopen(request, timeout=45) as response:
+            raw = response.read().decode("utf-8")
+    except urllib_error.URLError as exc:
+        raise RuntimeError(f"RPC batch request failed: {exc}") from exc
+    body = json.loads(raw)
+    if isinstance(body, dict):
+        body = [body]
+    results: dict[int, Any] = {}
+    for item in body:
+        if "error" in item:
+            results[int(item["id"])] = None
+            continue
+        results[int(item["id"])] = item.get("result")
+    return results
+
+
+def namehash(name: str) -> str:
+    node = b"\x00" * 32
+    if name:
+        for label in reversed([part for part in name.split(".") if part]):
+            node = keccak256(node + keccak256(label.encode("utf-8")))
+    return node.hex()
+
+
+def decode_solidity_address(result: Any) -> str | None:
+    if result in (None, "", "0x", "0x0"):
+        return None
+    text = str(result)
+    if not text.startswith("0x"):
+        return None
+    body = text[2:].rjust(64, "0")
+    address = f"0x{body[-40:]}".lower()
+    if int(address, 16) == 0:
+        return None
+    return address
+
+
+def decode_solidity_string(result: Any) -> str | None:
+    if result in (None, "", "0x", "0x0"):
+        return None
+    text = str(result)
+    if not text.startswith("0x"):
+        return None
+    body = text[2:]
+    if len(body) < 128:
+        return None
+    offset = int(body[:64], 16) * 2
+    if len(body) < offset + 64:
+        return None
+    length = int(body[offset : offset + 64], 16)
+    start = offset + 64
+    end = start + (length * 2)
+    if len(body) < end:
+        return None
+    try:
+        return bytes.fromhex(body[start:end]).decode("utf-8")
+    except ValueError:
+        return None
 
 
 def slugify(value: str) -> str:
@@ -239,6 +348,175 @@ def latest_members_snapshot() -> dict[str, Any]:
     return load_json_path(candidates[-1])
 
 
+def build_previous_ens_cache() -> dict[str, dict[str, Any]]:
+    existing_people = load_json_optional("people") or {}
+    cache: dict[str, dict[str, Any]] = {}
+    for record in existing_people.get("records", []):
+        address = normalize_address(record.get("address"))
+        identity = record.get("identity") or {}
+        ens_name = str(identity.get("ens") or "").strip().lower()
+        if not address:
+            continue
+        cache[address] = {
+            "ens": ens_name or None,
+            "ens_source": identity.get("ens_source"),
+            "ens_verified_at": identity.get("ens_verified_at"),
+        }
+    return cache
+
+
+def resolve_verified_ens_profiles(
+    addresses: list[str],
+    *,
+    analytics_as_of: str,
+    previous_cache: dict[str, dict[str, Any]] | None = None,
+) -> dict[str, dict[str, Any]]:
+    unique = unique_addresses(addresses)
+    if not unique:
+        return {}
+
+    previous = previous_cache or {}
+    resolved: dict[str, dict[str, Any]] = {
+        address: {
+            "ens": previous.get(address, {}).get("ens"),
+            "ens_source": previous.get(address, {}).get("ens_source"),
+            "ens_verified_at": previous.get(address, {}).get("ens_verified_at"),
+        }
+        for address in unique
+    }
+
+    reverse_nodes = {
+        address: namehash(f"{address[2:]}.addr.reverse")
+        for address in unique
+        if address.startswith("0x") and len(address) == 42
+    }
+    if not reverse_nodes:
+        return resolved
+
+    try:
+        chain_id_response = rpc_batch(
+            [{"jsonrpc": "2.0", "id": 1, "method": "eth_chainId", "params": []}],
+        )
+        if str(chain_id_response.get(1)) != ETH_MAINNET_CHAIN_ID:
+            raise RuntimeError(f"Unexpected ENS RPC chain id: {chain_id_response.get(1)!r}")
+
+        reverse_resolver_requests: list[dict[str, Any]] = []
+        reverse_request_ids: dict[int, str] = {}
+        next_id = 10
+        for address, node in reverse_nodes.items():
+            reverse_request_ids[next_id] = address
+            reverse_resolver_requests.append(
+                {
+                    "jsonrpc": "2.0",
+                    "id": next_id,
+                    "method": "eth_call",
+                    "params": [{"to": ENS_REGISTRY, "data": f"0x{ENS_RESOLVER_SELECTOR}{node}"}, "latest"],
+                }
+            )
+            next_id += 1
+
+        reverse_resolver_results: dict[int, Any] = {}
+        for start in range(0, len(reverse_resolver_requests), RPC_BATCH_SIZE):
+            reverse_resolver_results.update(rpc_batch(reverse_resolver_requests[start : start + RPC_BATCH_SIZE]))
+
+        reverse_resolvers = {
+            reverse_request_ids[request_id]: decode_solidity_address(result)
+            for request_id, result in reverse_resolver_results.items()
+        }
+
+        reverse_name_requests: list[dict[str, Any]] = []
+        reverse_name_request_ids: dict[int, str] = {}
+        for address, resolver in reverse_resolvers.items():
+            if not resolver:
+                continue
+            reverse_name_request_ids[next_id] = address
+            reverse_name_requests.append(
+                {
+                    "jsonrpc": "2.0",
+                    "id": next_id,
+                    "method": "eth_call",
+                    "params": [{"to": resolver, "data": f"0x{ENS_NAME_SELECTOR}{reverse_nodes[address]}"}, "latest"],
+                }
+            )
+            next_id += 1
+
+        reverse_name_results: dict[int, Any] = {}
+        for start in range(0, len(reverse_name_requests), RPC_BATCH_SIZE):
+            reverse_name_results.update(rpc_batch(reverse_name_requests[start : start + RPC_BATCH_SIZE]))
+
+        reverse_names = {
+            reverse_name_request_ids[request_id]: (decode_solidity_string(result) or "").strip().lower()
+            for request_id, result in reverse_name_results.items()
+        }
+        reverse_names = {address: name for address, name in reverse_names.items() if name}
+
+        forward_resolver_requests: list[dict[str, Any]] = []
+        forward_resolver_request_ids: dict[int, tuple[str, str]] = {}
+        forward_nodes: dict[str, str] = {}
+        for address, ens_name in reverse_names.items():
+            node = namehash(ens_name)
+            forward_nodes[address] = node
+            forward_resolver_request_ids[next_id] = (address, ens_name)
+            forward_resolver_requests.append(
+                {
+                    "jsonrpc": "2.0",
+                    "id": next_id,
+                    "method": "eth_call",
+                    "params": [{"to": ENS_REGISTRY, "data": f"0x{ENS_RESOLVER_SELECTOR}{node}"}, "latest"],
+                }
+            )
+            next_id += 1
+
+        forward_resolver_results: dict[int, Any] = {}
+        for start in range(0, len(forward_resolver_requests), RPC_BATCH_SIZE):
+            forward_resolver_results.update(rpc_batch(forward_resolver_requests[start : start + RPC_BATCH_SIZE]))
+
+        forward_resolvers: dict[str, tuple[str, str]] = {}
+        for request_id, result in forward_resolver_results.items():
+            address, ens_name = forward_resolver_request_ids[request_id]
+            resolver = decode_solidity_address(result)
+            if resolver:
+                forward_resolvers[address] = (ens_name, resolver)
+
+        forward_address_requests: list[dict[str, Any]] = []
+        forward_address_request_ids: dict[int, tuple[str, str]] = {}
+        for address, (ens_name, resolver) in forward_resolvers.items():
+            forward_address_request_ids[next_id] = (address, ens_name)
+            forward_address_requests.append(
+                {
+                    "jsonrpc": "2.0",
+                    "id": next_id,
+                    "method": "eth_call",
+                    "params": [{"to": resolver, "data": f"0x{ENS_ADDR_SELECTOR}{forward_nodes[address]}"}, "latest"],
+                }
+            )
+            next_id += 1
+
+        forward_address_results: dict[int, Any] = {}
+        for start in range(0, len(forward_address_requests), RPC_BATCH_SIZE):
+            forward_address_results.update(rpc_batch(forward_address_requests[start : start + RPC_BATCH_SIZE]))
+
+        for request_id, result in forward_address_results.items():
+            address, ens_name = forward_address_request_ids[request_id]
+            if decode_solidity_address(result) == address:
+                resolved[address] = {
+                    "ens": ens_name,
+                    "ens_source": "mainnet-reverse-forward",
+                    "ens_verified_at": analytics_as_of,
+                }
+            else:
+                resolved[address] = {
+                    "ens": None,
+                    "ens_source": None,
+                    "ens_verified_at": None,
+                }
+    except Exception as exc:
+        print(f"[warn] ENS resolution failed, keeping cached ENS values: {exc}")
+        return resolved
+
+    return resolved
+
+
 def contract_symbol(value: str) -> str:
     cleaned = re.sub(r"[^A-Za-z0-9]+", "", value or "").upper()
     if cleaned == "GNARS":
@@ -368,6 +646,7 @@ def empty_person(address: str) -> dict[str, Any]:
     return {
         "address": address,
         "display_name": None,
+        "display_name_priority": 0,
         "slug": None,
         "status": "active",
         "role": None,
@@ -384,6 +663,9 @@ def empty_person(address: str) -> dict[str, Any]:
             "x": None,
             "instagram": None,
         },
+        "ens": None,
+        "ens_source": None,
+        "ens_verified_at": None,
         "notes": [],
         "holder_token_count": 0,
         "delegated_token_count": 0,
@@ -427,6 +709,28 @@ def maybe_farcaster_url(value: Any) -> str | None:
     if text.startswith("http://") or text.startswith("https://"):
         return text
     return f"https://farcaster.xyz/{text.lstrip('@')}"
+
+
+def farcaster_handle(value: Any) -> str | None:
+    url = maybe_farcaster_url(value)
+    if not url:
+        return None
+    return url.rstrip("/").rsplit("/", 1)[-1] or None
+
+
+def set_preferred_display_name(
+    person: dict[str, Any],
+    candidate: Any,
+    source: str,
+) -> None:
+    text = str(candidate or "").strip()
+    if not text:
+        return
+    priority = DISPLAY_NAME_PRIORITIES[source]
+    current_priority = int(person.get("display_name_priority") or 0)
+    if priority >= current_priority:
+        person["display_name"] = text
+        person["display_name_priority"] = priority
 
 
 def authored_suggests_athlete(text: str) -> bool:
@@ -481,13 +785,14 @@ def build_people_dataset(
     people_overrides: dict[str, Any],
     spend_ledger_records: list[dict[str, Any]],
     nft_receipts: list[dict[str, Any]],
+    ens_profiles: dict[str, dict[str, Any]] | None = None,
 ) -> dict[str, Any]:
     people: dict[str, dict[str, Any]] = {}
 
     for record in members_seed["records"]:
         address = normalize_address(record["address"])
         person = ensure_person(people, address)
-        person["display_name"] = record.get("display_name") or person["display_name"]
+        set_preferred_display_name(person, record.get("display_name"), "seed")
         person["role"] = record.get("role") or person["role"]
         person["roles"].add(record.get("role") or "")
         person["domains"].update(record.get("domains") or [])
@@ -506,8 +811,12 @@ def build_people_dataset(
     for record in people_overrides["records"]:
         address = normalize_address(record["address"])
         person = ensure_person(people, address)
-        if record.get("display_name"):
-            person["display_name"] = record["display_name"]
+        set_preferred_display_name(person, record.get("display_name"), "override")
+        override_ens = str(record.get("ens") or "").strip().lower()
+        if override_ens:
+            person["ens"] = override_ens
+            person["ens_source"] = "override"
+            person["ens_verified_at"] = people_overrides.get("as_of")
         if record.get("slug"):
             person["slug"] = record["slug"]
         if record.get("status"):
@@ -544,8 +853,7 @@ def build_people_dataset(
             farcaster = maybe_farcaster_url(record.get("farcaster"))
             if farcaster and not owner_person["links"]["farcaster"]:
                 owner_person["links"]["farcaster"] = farcaster
-                if not owner_person["display_name"]:
-                    owner_person["display_name"] = farcaster.rstrip("/").rsplit("/", 1)[-1]
+                set_preferred_display_name(owner_person, farcaster_handle(farcaster), "farcaster")
 
         if delegate:
             delegate_person = ensure_person(people, delegate)
@@ -562,8 +870,7 @@ def build_people_dataset(
             person = ensure_person(people, proposer)
             person["proposals_authored"].add(archive_id)
             person["tags"].update({"proposer", "contributor"})
-            if record.get("proposer_label") and not person["display_name"]:
-                person["display_name"] = record["proposer_label"]
+            set_preferred_display_name(person, record.get("proposer_label"), "proposal_label")
             if authored_suggests_athlete(f"{proposal_title}\n{record.get('content_summary') or ''}"):
                 person["tags"].add("athlete")
 
@@ -573,8 +880,7 @@ def build_people_dataset(
                 continue
             person = ensure_person(people, voter)
             person["voted_proposals"].add(archive_id)
-            if vote.get("voterEnsName") and not person["display_name"]:
-                person["display_name"] = vote["voterEnsName"]
+            set_preferred_display_name(person, vote.get("voterEnsName"), "archive_vote_ens")
 
     for record in spend_ledger_records:
         address = normalize_address(record["recipient_address"])
@@ -632,6 +938,14 @@ def build_people_dataset(
     for address, person in people.items():
         if not person["links"]["member_url"]:
             person["links"]["member_url"] = f"https://www.gnars.com/members/{address}"
+        ens_profile = (ens_profiles or {}).get(address) or {}
+        ens_name = person["ens"] or str(ens_profile.get("ens") or "").strip().lower() or None
+        if ens_name and not person["ens_source"]:
+            person["ens_source"] = ens_profile.get("ens_source")
+            person["ens_verified_at"] = ens_profile.get("ens_verified_at")
+        person["ens"] = ens_name
+        if ens_name:
+            set_preferred_display_name(person, ens_name, "ens")
 
         display_name = person["display_name"] or short_address(address)
         base_role = person["role"] or ", ".join(unique_strings(list(person["roles"]))[:2]) or "community member"
@@ -664,6 +978,9 @@ def build_people_dataset(
                 "bio": person["bio"] or "",
                 "identity": {
                     "member_url": person["links"]["member_url"],
+                    "ens": person["ens"],
+                    "ens_source": person["ens_source"],
+                    "ens_verified_at": person["ens_verified_at"],
                     "farcaster": person["links"]["farcaster"],
                     "github": person["links"]["github"],
                     "avatar_url": person["links"]["avatar_url"],
@@ -2061,6 +2378,15 @@ def main() -> int:
         project_names=project_names,
         people_by_address=seed_people_by_address,
     )
+    ens_profiles = resolve_verified_ens_profiles(
+        addresses=[
+            *[record["address"] for record in seed_people["records"]],
+            *[record["recipient_address"] for record in spend_records],
+            *[record["recipient_address"] for record in nft_records],
+        ],
+        analytics_as_of=analytics_as_of,
+        previous_cache=build_previous_ens_cache(),
+    )
 
     people = build_people_dataset(
         members_seed=members_seed,
@@ -2071,12 +2397,21 @@ def main() -> int:
         people_overrides=people_overrides,
         spend_ledger_records=spend_records,
         nft_receipts=nft_records,
+        ens_profiles=ens_profiles,
     )
     people_by_address = {record["address"]: record for record in people["records"]}
     for record in spend_records:
         record["recipient_display_name"] = people_by_address.get(record["recipient_address"], {}).get("display_name") or short_address(record["recipient_address"])
     for record in nft_records:
         record["recipient_display_name"] = people_by_address.get(record["recipient_address"], {}).get("display_name") or short_address(record["recipient_address"])
+    for record in archive["records"]:
+        proposer = normalize_address(record.get("proposer"))
+        if proposer:
+            record["proposer_label"] = (
+                people_by_address.get(proposer, {}).get("display_name")
+                or record.get("proposer_label")
+                or short_address(proposer)
+            )
 
     proposals_by_key: dict[str, dict[str, Any]] = {}
     for record in archive["records"]:

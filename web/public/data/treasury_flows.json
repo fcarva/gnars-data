@@ -16,7 +16,7 @@
       "project_name": null,
       "proposer_address": "0x9ad8d2a8ef4bf60a667dd43fcb178bdbd93ae1c8",
       "recipient_address": "0x9ad8d2a8ef4bf60a667dd43fcb178bdbd93ae1c8",
-      "recipient_display_name": "0x9ad8...e1c8",
+      "recipient_display_name": "7capas.eth",
       "asset_symbol": "ETH",
       "amount": 0.42,
       "asset_kind": "native",
@@ -36,7 +36,7 @@
       "project_name": null,
       "proposer_address": "0x49d31dcb59e115f5c9e505a58a323ade076f2176",
       "recipient_address": "0x49d31dcb59e115f5c9e505a58a323ade076f2176",
-      "recipient_display_name": "0x49d3...2176",
+      "recipient_display_name": "fernandoferreira.eth",
       "asset_symbol": "USDC",
       "amount": 2600.0,
       "asset_kind": "erc20",
@@ -56,7 +56,7 @@
       "project_name": null,
       "proposer_address": "0x49d31dcb59e115f5c9e505a58a323ade076f2176",
       "recipient_address": "0x49d31dcb59e115f5c9e505a58a323ade076f2176",
-      "recipient_display_name": "0x49d3...2176",
+      "recipient_display_name": "fernandoferreira.eth",
       "asset_symbol": "ETH",
       "amount": 0.619,
       "asset_kind": "native",
@@ -136,7 +136,7 @@
       "project_name": null,
       "proposer_address": "0x289715ffbb2f4b482e2917d2f183feab564ec84f",
       "recipient_address": "0x289715ffbb2f4b482e2917d2f183feab564ec84f",
-      "recipient_display_name": "0x2897...c84f",
+      "recipient_display_name": "rocketman21.eth",
       "asset_symbol": "ETH",
       "amount": 1.0,
       "asset_kind": "native",
@@ -196,7 +196,7 @@
       "project_name": null,
       "proposer_address": "0x1273261b09dc30d0b6ce460d7cab5820fa42e38c",
       "recipient_address": "0xa903c06bf35286f6d1cdad25396748353979a44c",
-      "recipient_display_name": "0xa903...a44c",
+      "recipient_display_name": "benbodhi.eth",
       "asset_symbol": "SENDIT",
       "amount": 12881837.0,
       "asset_kind": "erc20",
@@ -376,7 +376,7 @@
       "project_name": null,
       "proposer_address": "0x56b6dcddd5d96535c35b720c96e19939920544d8",
       "recipient_address": "0xc2e3df2748e4ef6e1a8322772fd7d962410c721a",
-      "recipient_display_name": "0xc2e3...721a",
+      "recipient_display_name": "millz.eth",
       "asset_symbol": "ETH",
       "amount": 0.2,
       "asset_kind": "native",
@@ -396,7 +396,7 @@
       "project_name": null,
       "proposer_address": "0x56b6dcddd5d96535c35b720c96e19939920544d8",
       "recipient_address": "0xba6e1c26be2f8b46d9e7ab7573b99921ee81acf5",
-      "recipient_display_name": "0xba6e...acf5",
+      "recipient_display_name": "bagelface.eth",
       "asset_symbol": "ETH",
       "amount": 0.2,
       "asset_kind": "native",
@@ -456,7 +456,7 @@
       "project_name": null,
       "proposer_address": "0x41cb654d1f47913acab158a8199191d160dabe4a",
       "recipient_address": "0x9ad8d2a8ef4bf60a667dd43fcb178bdbd93ae1c8",
-      "recipient_display_name": "0x9ad8...e1c8",
+      "recipient_display_name": "7capas.eth",
       "asset_symbol": "USDC",
       "amount": 3000.0,
       "asset_kind": "erc20",
@@ -476,7 +476,7 @@
       "project_name": null,
       "proposer_address": "0xed7be8b630924f437c28af58a99cc63fc80413f4",
       "recipient_address": "0xed7be8b630924f437c28af58a99cc63fc80413f4",
-      "recipient_display_name": "0xed7b...13f4",
+      "recipient_display_name": "overhau1.eth",
       "asset_symbol": "USDC",
       "amount": 6850.0,
       "asset_kind": "erc20",
@@ -516,7 +516,7 @@
       "project_name": null,
       "proposer_address": "0xedc1a397589a0236c4810883b7d559288a5fe7e1",
       "recipient_address": "0xedc1a397589a0236c4810883b7d559288a5fe7e1",
-      "recipient_display_name": "0xedc1...e7e1",
+      "recipient_display_name": "fattybuthappy.eth",
       "asset_symbol": "ETH",
       "amount": 0.43,
       "asset_kind": "native",
@@ -596,7 +596,7 @@
       "project_name": null,
       "proposer_address": "0x387a161c6b25aa854100abaed39274e51aaffffd",
       "recipient_address": "0x387a161c6b25aa854100abaed39274e51aaffffd",
-      "recipient_display_name": "0x387a...fffd",
+      "recipient_display_name": "gami.eth",
       "asset_symbol": "USDC",
       "amount": 4500.0,
       "asset_kind": "erc20",
@@ -616,7 +616,7 @@
       "project_name": null,
       "proposer_address": "0x387a161c6b25aa854100abaed39274e51aaffffd",
       "recipient_address": "0x387a161c6b25aa854100abaed39274e51aaffffd",
-      "recipient_display_name": "0x387a...fffd",
+      "recipient_display_name": "gami.eth",
       "asset_symbol": "ETH",
       "amount": 0.12,
       "asset_kind": "native",
@@ -716,7 +716,7 @@
       "project_name": null,
       "proposer_address": "0xfc27b375faf1fbd3f3462044cf810082f042a45b",
       "recipient_address": "0xfc27b375faf1fbd3f3462044cf810082f042a45b",
-      "recipient_display_name": "0xfc27...a45b",
+      "recipient_display_name": "luizhadad.eth",
       "asset_symbol": "USDC",
       "amount": 7888.0,
       "asset_kind": "erc20",
@@ -776,7 +776,7 @@
       "project_name": null,
       "proposer_address": "0x33bbf6e27ce7b254e537bcb9f3b00cd1451563ea",
       "recipient_address": "0x33bbf6e27ce7b254e537bcb9f3b00cd1451563ea",
-      "recipient_display_name": "0x33bb...63ea",
+      "recipient_display_name": "fuzzyface.eth",
       "asset_symbol": "ETH",
       "amount": 0.99,
       "asset_kind": "native",
@@ -956,7 +956,7 @@
       "project_name": null,
       "proposer_address": "0xb2b7d66bb56ce8ff7838dc8053ff35050ed95e9d",
       "recipient_address": "0xb2b7d66bb56ce8ff7838dc8053ff35050ed95e9d",
-      "recipient_display_name": "0xb2b7...5e9d",
+      "recipient_display_name": "rickyday.eth",
       "asset_symbol": "USDC",
       "amount": 3990.0,
       "asset_kind": "erc20",
@@ -1036,7 +1036,7 @@
       "project_name": null,
       "proposer_address": "0x387a161c6b25aa854100abaed39274e51aaffffd",
       "recipient_address": "0x387a161c6b25aa854100abaed39274e51aaffffd",
-      "recipient_display_name": "0x387a...fffd",
+      "recipient_display_name": "gami.eth",
       "asset_symbol": "ETH",
       "amount": 10.23730283,
       "asset_kind": "native",
@@ -1182,7 +1182,7 @@
         },
         {
           "address": "0xa903c06bf35286f6d1cdad25396748353979a44c",
-          "display_name": "0xa903...a44c",
+          "display_name": "benbodhi.eth",
           "totals": [
             {
               "symbol": "SENDIT",
@@ -1343,7 +1343,7 @@
       "recipients": [
         {
           "address": "0x9ad8d2a8ef4bf60a667dd43fcb178bdbd93ae1c8",
-          "display_name": "0x9ad8...e1c8",
+          "display_name": "7capas.eth",
           "totals_by_asset": [
             {
               "symbol": "ETH",
@@ -1399,7 +1399,7 @@
       "recipients": [
         {
           "address": "0x49d31dcb59e115f5c9e505a58a323ade076f2176",
-          "display_name": "0x49d3...2176",
+          "display_name": "fernandoferreira.eth",
           "totals_by_asset": [
             {
               "symbol": "USDC",
@@ -1611,7 +1611,7 @@
       "recipients": [
         {
           "address": "0x289715ffbb2f4b482e2917d2f183feab564ec84f",
-          "display_name": "0x2897...c84f",
+          "display_name": "rocketman21.eth",
           "totals_by_asset": [
             {
               "symbol": "ETH",
@@ -1813,7 +1813,7 @@
       "recipients": [
         {
           "address": "0xa903c06bf35286f6d1cdad25396748353979a44c",
-          "display_name": "0xa903...a44c",
+          "display_name": "benbodhi.eth",
           "totals_by_asset": [
             {
               "symbol": "SENDIT",
@@ -2065,7 +2065,7 @@
       "recipients": [
         {
           "address": "0xba6e1c26be2f8b46d9e7ab7573b99921ee81acf5",
-          "display_name": "0xba6e...acf5",
+          "display_name": "bagelface.eth",
           "totals_by_asset": [
             {
               "symbol": "ETH",
@@ -2075,7 +2075,7 @@
         },
         {
           "address": "0xc2e3df2748e4ef6e1a8322772fd7d962410c721a",
-          "display_name": "0xc2e3...721a",
+          "display_name": "millz.eth",
           "totals_by_asset": [
             {
               "symbol": "ETH",
@@ -2171,7 +2171,7 @@
       "recipients": [
         {
           "address": "0x9ad8d2a8ef4bf60a667dd43fcb178bdbd93ae1c8",
-          "display_name": "0x9ad8...e1c8",
+          "display_name": "7capas.eth",
           "totals_by_asset": [
             {
               "symbol": "USDC",
@@ -2199,7 +2199,7 @@
       "recipients": [
         {
           "address": "0xed7be8b630924f437c28af58a99cc63fc80413f4",
-          "display_name": "0xed7b...13f4",
+          "display_name": "overhau1.eth",
           "totals_by_asset": [
             {
               "symbol": "USDC",
@@ -2255,7 +2255,7 @@
       "recipients": [
         {
           "address": "0xedc1a397589a0236c4810883b7d559288a5fe7e1",
-          "display_name": "0xedc1...e7e1",
+          "display_name": "fattybuthappy.eth",
           "totals_by_asset": [
             {
               "symbol": "ETH",
@@ -2283,7 +2283,7 @@
       "recipients": [
         {
           "address": "0x387a161c6b25aa854100abaed39274e51aaffffd",
-          "display_name": "0x387a...fffd",
+          "display_name": "gami.eth",
           "totals_by_asset": [
             {
               "symbol": "ETH",
@@ -2459,7 +2459,7 @@
       "recipients": [
         {
           "address": "0x387a161c6b25aa854100abaed39274e51aaffffd",
-          "display_name": "0x387a...fffd",
+          "display_name": "gami.eth",
           "totals_by_asset": [
             {
               "symbol": "USDC",
@@ -2643,7 +2643,7 @@
       "recipients": [
         {
           "address": "0xfc27b375faf1fbd3f3462044cf810082f042a45b",
-          "display_name": "0xfc27...a45b",
+          "display_name": "luizhadad.eth",
           "totals_by_asset": [
             {
               "symbol": "USDC",
@@ -2727,7 +2727,7 @@
       "recipients": [
         {
           "address": "0x33bbf6e27ce7b254e537bcb9f3b00cd1451563ea",
-          "display_name": "0x33bb...63ea",
+          "display_name": "fuzzyface.eth",
           "totals_by_asset": [
             {
               "symbol": "ETH",
@@ -2979,7 +2979,7 @@
       "recipients": [
         {
           "address": "0xb2b7d66bb56ce8ff7838dc8053ff35050ed95e9d",
-          "display_name": "0xb2b7...5e9d",
+          "display_name": "rickyday.eth",
           "totals_by_asset": [
             {
               "symbol": "USDC",

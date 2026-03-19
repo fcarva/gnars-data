@@ -98,9 +98,9 @@
   "leaderboards": {
     "eth_received": [
       {
-        "display_name": "0x387a...fffd",
+        "display_name": "gami.eth",
         "address": "0x387a161c6b25aa854100abaed39274e51aaffffd",
-        "slug": "0x387a-fffd",
+        "slug": "gami-eth",
         "value": 10.35730283,
         "label": "ETH received"
       },
@@ -119,16 +119,16 @@
         "label": "ETH received"
       },
       {
-        "display_name": "0x2897...c84f",
+        "display_name": "rocketman21.eth",
         "address": "0x289715ffbb2f4b482e2917d2f183feab564ec84f",
-        "slug": "0x2897-c84f",
+        "slug": "rocketman21-eth",
         "value": 1.0,
         "label": "ETH received"
       },
       {
-        "display_name": "0x33bb...63ea",
+        "display_name": "fuzzyface.eth",
         "address": "0x33bbf6e27ce7b254e537bcb9f3b00cd1451563ea",
-        "slug": "0x33bb-63ea",
+        "slug": "fuzzyface-eth",
         "value": 0.99,
         "label": "ETH received"
       },
@@ -140,30 +140,30 @@
         "label": "ETH received"
       },
       {
-        "display_name": "0x49d3...2176",
+        "display_name": "fernandoferreira.eth",
         "address": "0x49d31dcb59e115f5c9e505a58a323ade076f2176",
-        "slug": "0x49d3-2176",
+        "slug": "fernandoferreira-eth",
         "value": 0.619,
         "label": "ETH received"
       },
       {
-        "display_name": "0xedc1...e7e1",
+        "display_name": "fattybuthappy.eth",
         "address": "0xedc1a397589a0236c4810883b7d559288a5fe7e1",
-        "slug": "0xedc1-e7e1",
+        "slug": "fattybuthappy-eth",
         "value": 0.43,
         "label": "ETH received"
       },
       {
-        "display_name": "0x9ad8...e1c8",
+        "display_name": "7capas.eth",
         "address": "0x9ad8d2a8ef4bf60a667dd43fcb178bdbd93ae1c8",
-        "slug": "0x9ad8-e1c8",
+        "slug": "7capas-eth",
         "value": 0.42,
         "label": "ETH received"
       },
       {
-        "display_name": "0xba6e...acf5",
+        "display_name": "bagelface.eth",
         "address": "0xba6e1c26be2f8b46d9e7ab7573b99921ee81acf5",
-        "slug": "0xba6e-acf5",
+        "slug": "bagelface-eth",
         "value": 0.2,
         "label": "ETH received"
       }
@@ -205,9 +205,9 @@
         "label": "USDC received"
       },
       {
-        "display_name": "0xfc27...a45b",
+        "display_name": "luizhadad.eth",
         "address": "0xfc27b375faf1fbd3f3462044cf810082f042a45b",
-        "slug": "0xfc27-a45b",
+        "slug": "luizhadad-eth",
         "value": 7888.0,
         "label": "USDC received"
       },
@@ -233,9 +233,9 @@
         "label": "USDC received"
       },
       {
-        "display_name": "0xed7b...13f4",
+        "display_name": "overhau1.eth",
         "address": "0xed7be8b630924f437c28af58a99cc63fc80413f4",
-        "slug": "0xed7b-13f4",
+        "slug": "overhau1-eth",
         "value": 6850.0,
         "label": "USDC received"
       }
@@ -243,9 +243,9 @@
     "gnars_received": [],
     "proposal_count": [
       {
-        "display_name": "0xdfb6...d939",
+        "display_name": "davinoyesigye.eth",
         "address": "0xdfb6ed808fadddad9154f5605e349fff96e3d939",
-        "slug": "0xdfb6-d939",
+        "slug": "davinoyesigye-eth",
         "value": 35,
         "label": "proposals authored"
       },
@@ -257,38 +257,31 @@
         "label": "proposals authored"
       },
       {
-        "display_name": "0x7322...382c",
+        "display_name": "gnars.com",
         "address": "0x73222225044ce0fc672ff9b6f9730d0a0421382c",
-        "slug": "0x7322-382c",
+        "slug": "gnars-com",
         "value": 17,
         "label": "proposals authored"
       },
       {
-        "display_name": "0x387a...fffd",
+        "display_name": "gami.eth",
         "address": "0x387a161c6b25aa854100abaed39274e51aaffffd",
-        "slug": "0x387a-fffd",
+        "slug": "gami-eth",
         "value": 10,
         "label": "proposals authored"
       },
       {
-        "display_name": "0x33bb...63ea",
+        "display_name": "fuzzyface.eth",
         "address": "0x33bbf6e27ce7b254e537bcb9f3b00cd1451563ea",
-        "slug": "0x33bb-63ea",
+        "slug": "fuzzyface-eth",
         "value": 6,
         "label": "proposals authored"
       },
       {
-        "display_name": "0x56b6...44d8",
+        "display_name": "gondy.eth",
         "address": "0x56b6dcddd5d96535c35b720c96e19939920544d8",
-        "slug": "0x56b6-44d8",
+        "slug": "gondy-eth",
         "value": 5,
-        "label": "proposals authored"
-      },
-      {
-        "display_name": "0x2feb...ed6a",
-        "address": "0x2feb329b9289b60064904fa61fc347157a5aed6a",
-        "slug": "0x2feb-ed6a",
-        "value": 4,
         "label": "proposals authored"
       },
       {
@@ -311,13 +304,20 @@
         "slug": "0xeed9-a282",
         "value": 4,
         "label": "proposals authored"
+      },
+      {
+        "display_name": "zimardrp.eth",
+        "address": "0x2feb329b9289b60064904fa61fc347157a5aed6a",
+        "slug": "zimardrp-eth",
+        "value": 4,
+        "label": "proposals authored"
       }
     ],
     "attendance_pct": [
       {
-        "display_name": "0x2feb...ed6a",
+        "display_name": "zimardrp.eth",
         "address": "0x2feb329b9289b60064904fa61fc347157a5aed6a",
-        "slug": "0x2feb-ed6a",
+        "slug": "zimardrp-eth",
         "value": 71,
         "label": "attendance %"
       },
@@ -329,44 +329,44 @@
         "label": "attendance %"
       },
       {
-        "display_name": "0xddb4...58cc",
+        "display_name": "willdias.eth",
         "address": "0xddb4938755c243a4f60a2f2f8f95df4f894c58cc",
-        "slug": "0xddb4-58cc",
+        "slug": "willdias-eth",
         "value": 64,
         "label": "attendance %"
       },
       {
-        "display_name": "0xb2b7...5e9d",
+        "display_name": "rickyday.eth",
         "address": "0xb2b7d66bb56ce8ff7838dc8053ff35050ed95e9d",
-        "slug": "0xb2b7-5e9d",
+        "slug": "rickyday-eth",
         "value": 63,
         "label": "attendance %"
       },
       {
-        "display_name": "0xdcf3...7a19",
+        "display_name": "satori.wtf",
         "address": "0xdcf37d8aa17142f053aaa7dc56025ab00d897a19",
-        "slug": "0xdcf3-7a19",
+        "slug": "satori-wtf",
         "value": 63,
         "label": "attendance %"
       },
       {
-        "display_name": "0x9c87...7e02",
+        "display_name": "brettdrawsstuff.eth",
         "address": "0x9c87a1065994f156f0b7b87aaa8b3c5f7bd67e02",
-        "slug": "0x9c87-7e02",
+        "slug": "brettdrawsstuff-eth",
         "value": 62,
         "label": "attendance %"
       },
       {
-        "display_name": "0x387a...fffd",
+        "display_name": "gami.eth",
         "address": "0x387a161c6b25aa854100abaed39274e51aaffffd",
-        "slug": "0x387a-fffd",
+        "slug": "gami-eth",
         "value": 58,
         "label": "attendance %"
       },
       {
-        "display_name": "0xdfb6...d939",
+        "display_name": "davinoyesigye.eth",
         "address": "0xdfb6ed808fadddad9154f5605e349fff96e3d939",
-        "slug": "0xdfb6-d939",
+        "slug": "davinoyesigye-eth",
         "value": 55,
         "label": "attendance %"
       },
@@ -394,9 +394,9 @@
         "label": "active votes"
       },
       {
-        "display_name": "0x7093...b3ba",
+        "display_name": "kevinlangeree.eth",
         "address": "0x7093c7ee24c49ab814165b129bc7b5ff0993b3ba",
-        "slug": "0x7093-b3ba",
+        "slug": "kevinlangeree-eth",
         "value": 312,
         "label": "active votes"
       },
@@ -408,16 +408,16 @@
         "label": "active votes"
       },
       {
-        "display_name": "0x56b6...44d8",
+        "display_name": "gondy.eth",
         "address": "0x56b6dcddd5d96535c35b720c96e19939920544d8",
-        "slug": "0x56b6-44d8",
+        "slug": "gondy-eth",
         "value": 232,
         "label": "active votes"
       },
       {
-        "display_name": "0xb2b7...5e9d",
+        "display_name": "rickyday.eth",
         "address": "0xb2b7d66bb56ce8ff7838dc8053ff35050ed95e9d",
-        "slug": "0xb2b7-5e9d",
+        "slug": "rickyday-eth",
         "value": 154,
         "label": "active votes"
       },
@@ -429,30 +429,30 @@
         "label": "active votes"
       },
       {
-        "display_name": "0x387a...fffd",
+        "display_name": "gami.eth",
         "address": "0x387a161c6b25aa854100abaed39274e51aaffffd",
-        "slug": "0x387a-fffd",
+        "slug": "gami-eth",
         "value": 134,
         "label": "active votes"
       },
       {
-        "display_name": "0xdcf3...7a19",
+        "display_name": "satori.wtf",
         "address": "0xdcf37d8aa17142f053aaa7dc56025ab00d897a19",
-        "slug": "0xdcf3-7a19",
+        "slug": "satori-wtf",
         "value": 111,
         "label": "active votes"
       },
       {
-        "display_name": "0xedc1...e7e1",
+        "display_name": "fattybuthappy.eth",
         "address": "0xedc1a397589a0236c4810883b7d559288a5fe7e1",
-        "slug": "0xedc1-e7e1",
+        "slug": "fattybuthappy-eth",
         "value": 110,
         "label": "active votes"
       },
       {
-        "display_name": "0x069d...eca0",
-        "address": "0x069da1bad547d67abf26c42358d3a6a8a78deca0",
-        "slug": "0x069d-eca0",
+        "display_name": "blue-onchain.eth",
+        "address": "0x978bdbecb54c54800d01055df5a8f6af600bface",
+        "slug": "blue-onchain-eth",
         "value": 100,
         "label": "active votes"
       }
@@ -551,7 +551,7 @@
         "archive_id": "gnars-base-104",
         "asset_symbol": "ETH",
         "amount": 0.42,
-        "recipient_display_name": "0x9ad8...e1c8",
+        "recipient_display_name": "7capas.eth",
         "recipient_address": "0x9ad8d2a8ef4bf60a667dd43fcb178bdbd93ae1c8",
         "project_id": null,
         "proposal_end_at": "2025-11-09T18:49:01.000Z"
@@ -561,7 +561,7 @@
         "archive_id": "gnars-base-101",
         "asset_symbol": "USDC",
         "amount": 2600.0,
-        "recipient_display_name": "0x49d3...2176",
+        "recipient_display_name": "fernandoferreira.eth",
         "recipient_address": "0x49d31dcb59e115f5c9e505a58a323ade076f2176",
         "project_id": null,
         "proposal_end_at": "2025-10-14T14:45:39.000Z"
@@ -571,7 +571,7 @@
         "archive_id": "gnars-base-101",
         "asset_symbol": "ETH",
         "amount": 0.619,
-        "recipient_display_name": "0x49d3...2176",
+        "recipient_display_name": "fernandoferreira.eth",
         "recipient_address": "0x49d31dcb59e115f5c9e505a58a323ade076f2176",
         "project_id": null,
         "proposal_end_at": "2025-10-14T14:45:39.000Z"
@@ -611,7 +611,7 @@
         "archive_id": "gnars-base-86",
         "asset_symbol": "ETH",
         "amount": 1.0,
-        "recipient_display_name": "0x2897...c84f",
+        "recipient_display_name": "rocketman21.eth",
         "recipient_address": "0x289715ffbb2f4b482e2917d2f183feab564ec84f",
         "project_id": null,
         "proposal_end_at": "2025-05-28T21:09:35.000Z"
@@ -641,7 +641,7 @@
         "archive_id": "gnars-base-65",
         "asset_symbol": "SENDIT",
         "amount": 12881837.0,
-        "recipient_display_name": "0xa903...a44c",
+        "recipient_display_name": "benbodhi.eth",
         "recipient_address": "0xa903c06bf35286f6d1cdad25396748353979a44c",
         "project_id": null,
         "proposal_end_at": "2025-02-17T15:45:27.000Z"

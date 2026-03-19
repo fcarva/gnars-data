@@ -139,7 +139,11 @@ export function getAthleteEconomics(
 }
 
 export function personLabel(record: PersonRecord): string {
-  return record.display_name || record.identity.farcaster || shortAddress(record.address);
+  return record.display_name || record.identity.ens || record.identity.farcaster || shortAddress(record.address);
+}
+
+export function personIdentityLabel(record: PersonRecord): string {
+  return record.identity.ens || shortAddress(record.address);
 }
 
 export function personSubtitle(record: PersonRecord): string {

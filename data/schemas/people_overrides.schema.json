@@ -40,6 +40,9 @@
           "display_name": {
             "type": "string"
           },
+          "ens": {
+            "type": "string"
+          },
           "slug": {
             "type": "string"
           },

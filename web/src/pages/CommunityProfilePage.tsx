@@ -23,7 +23,9 @@ export function CommunityProfilePage({ meta, props }: { meta: Meta; props: Commu
                   {tribe}
                 </span>
               ))}
-              <span className="tag muted">{props.profile.addressShort}</span>
+              {props.profile.identityLabel !== props.profile.displayName ? (
+                <span className="tag muted">{props.profile.identityLabel}</span>
+              ) : null}
             </div>
           </div>
         </div>

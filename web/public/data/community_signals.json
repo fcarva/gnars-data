@@ -76,7 +76,7 @@
         },
         {
           "address": "0x2feb329b9289b60064904fa61fc347157a5aed6a",
-          "display_name": "0x2feb...ed6a",
+          "display_name": "zimardrp.eth",
           "received_totals": [],
           "authored_count": 1,
           "delivery_count": 0,
@@ -163,23 +163,8 @@
           ]
         },
         {
-          "address": "0x2feb329b9289b60064904fa61fc347157a5aed6a",
-          "display_name": "0x2feb...ed6a",
-          "received_totals": [],
-          "authored_count": 1,
-          "delivery_count": 0,
-          "score": 2.0,
-          "tribes": [
-            "athlete",
-            "contributor",
-            "delegate",
-            "holder",
-            "proposer"
-          ]
-        },
-        {
           "address": "0x4b5951ca3fd19897feb9e42609f252b609eae526",
-          "display_name": "0x4b59...e526",
+          "display_name": "ai.gami.eth",
           "received_totals": [],
           "authored_count": 1,
           "delivery_count": 0,
@@ -192,12 +177,27 @@
         },
         {
           "address": "0x4d16fce1bd6e327ae31398ce9a2c4e12c077ecb1",
-          "display_name": "0x4d16...ecb1",
+          "display_name": "swarthyhatter.eth",
           "received_totals": [],
           "authored_count": 1,
           "delivery_count": 0,
           "score": 2.0,
           "tribes": [
+            "contributor",
+            "delegate",
+            "holder",
+            "proposer"
+          ]
+        },
+        {
+          "address": "0x2feb329b9289b60064904fa61fc347157a5aed6a",
+          "display_name": "zimardrp.eth",
+          "received_totals": [],
+          "authored_count": 1,
+          "delivery_count": 0,
+          "score": 2.0,
+          "tribes": [
+            "athlete",
             "contributor",
             "delegate",
             "holder",
@@ -278,23 +278,8 @@
           ]
         },
         {
-          "address": "0x057cfcd04198e6d17f1bf502135d9508b6fa2fde",
-          "display_name": "0x057c...2fde",
-          "received_totals": [],
-          "authored_count": 1,
-          "delivery_count": 0,
-          "score": 2.0,
-          "tribes": [
-            "athlete",
-            "contributor",
-            "delegate",
-            "holder",
-            "proposer"
-          ]
-        },
-        {
-          "address": "0x2feb329b9289b60064904fa61fc347157a5aed6a",
-          "display_name": "0x2feb...ed6a",
+          "address": "0xd1195629d9ba1168591b8ecdec9abb1721fcc7d8",
+          "display_name": "0xd119...c7d8",
           "received_totals": [],
           "authored_count": 1,
           "delivery_count": 0,
@@ -309,7 +294,7 @@
         },
         {
           "address": "0x4b5951ca3fd19897feb9e42609f252b609eae526",
-          "display_name": "0x4b59...e526",
+          "display_name": "ai.gami.eth",
           "received_totals": [],
           "authored_count": 1,
           "delivery_count": 0,
@@ -321,8 +306,23 @@
           ]
         },
         {
+          "address": "0x057cfcd04198e6d17f1bf502135d9508b6fa2fde",
+          "display_name": "pamtech.eth",
+          "received_totals": [],
+          "authored_count": 1,
+          "delivery_count": 0,
+          "score": 2.0,
+          "tribes": [
+            "athlete",
+            "contributor",
+            "delegate",
+            "holder",
+            "proposer"
+          ]
+        },
+        {
           "address": "0x4d16fce1bd6e327ae31398ce9a2c4e12c077ecb1",
-          "display_name": "0x4d16...ecb1",
+          "display_name": "swarthyhatter.eth",
           "received_totals": [],
           "authored_count": 1,
           "delivery_count": 0,
@@ -335,8 +335,8 @@
           ]
         },
         {
-          "address": "0xd1195629d9ba1168591b8ecdec9abb1721fcc7d8",
-          "display_name": "0xd119...c7d8",
+          "address": "0x2feb329b9289b60064904fa61fc347157a5aed6a",
+          "display_name": "zimardrp.eth",
           "received_totals": [],
           "authored_count": 1,
           "delivery_count": 0,
@@ -463,7 +463,7 @@
         },
         {
           "address": "0xa903c06bf35286f6d1cdad25396748353979a44c",
-          "display_name": "0xa903...a44c",
+          "display_name": "benbodhi.eth",
           "totals_by_asset": [
             {
               "symbol": "SENDIT",
@@ -719,7 +719,7 @@
         },
         {
           "address": "0xa903c06bf35286f6d1cdad25396748353979a44c",
-          "display_name": "0xa903...a44c",
+          "display_name": "benbodhi.eth",
           "received_totals": [
             {
               "symbol": "SENDIT",
