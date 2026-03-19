@@ -9,15 +9,15 @@
       "since": "2026-03-14T00:00:00+00:00",
       "metrics": {
         "active_proposals_now": 3,
-        "proposal_count": 3,
+        "proposal_count": 2,
         "successful_proposal_count": 0,
-        "payout_count": 9,
+        "payout_count": 8,
         "delivery_count": 4,
-        "recipient_count": 5,
+        "recipient_count": 4,
         "payouts_by_asset": [
           {
             "symbol": "USDC",
-            "amount": 7470.0
+            "amount": 5900.0
           },
           {
             "symbol": "ETH",
@@ -37,16 +37,6 @@
             {
               "symbol": "ETH",
               "amount": 0.5
-            }
-          ]
-        },
-        {
-          "address": "0x25810d1a8b1affc444d5333bf0496f1202d6f89f",
-          "display_name": "0x2581...f89f",
-          "totals_by_asset": [
-            {
-              "symbol": "USDC",
-              "amount": 1570.0
             }
           ]
         },
@@ -142,18 +132,6 @@
               "amount": 0.5
             }
           ]
-        },
-        {
-          "archive_id": "gnars-base-117",
-          "proposal_number": 117,
-          "title": "Sponsor Gnars Monik Santos in QS/WSL 2026",
-          "status": "executed",
-          "totals_by_asset": [
-            {
-              "symbol": "USDC",
-              "amount": 1570.0
-            }
-          ]
         }
       ],
       "top_people": [
@@ -175,27 +153,6 @@
           "score": 2900.0,
           "tribes": [
             "contributor",
-            "recipient"
-          ]
-        },
-        {
-          "address": "0x25810d1a8b1affc444d5333bf0496f1202d6f89f",
-          "display_name": "0x2581...f89f",
-          "received_totals": [
-            {
-              "symbol": "USDC",
-              "amount": 1570.0
-            }
-          ],
-          "authored_count": 1,
-          "delivery_count": 0,
-          "score": 1572.0,
-          "tribes": [
-            "athlete",
-            "contributor",
-            "delegate",
-            "holder",
-            "proposer",
             "recipient"
           ]
         },
@@ -288,8 +245,7 @@
             "contributor",
             "delegate",
             "holder",
-            "proposer",
-            "recipient"
+            "proposer"
           ]
         }
       ]
@@ -300,15 +256,15 @@
       "since": "2026-02-19T00:00:00+00:00",
       "metrics": {
         "active_proposals_now": 3,
-        "proposal_count": 7,
+        "proposal_count": 4,
         "successful_proposal_count": 0,
-        "payout_count": 10,
+        "payout_count": 9,
         "delivery_count": 4,
-        "recipient_count": 6,
+        "recipient_count": 5,
         "payouts_by_asset": [
           {
             "symbol": "USDC",
-            "amount": 7470.0
+            "amount": 5900.0
           },
           {
             "symbol": "ETH",
@@ -328,16 +284,6 @@
             {
               "symbol": "ETH",
               "amount": 0.5
-            }
-          ]
-        },
-        {
-          "address": "0x25810d1a8b1affc444d5333bf0496f1202d6f89f",
-          "display_name": "0x2581...f89f",
-          "totals_by_asset": [
-            {
-              "symbol": "USDC",
-              "amount": 1570.0
             }
           ]
         },
@@ -441,18 +387,6 @@
             {
               "symbol": "ETH",
               "amount": 0.5
-            }
-          ]
-        },
-        {
-          "archive_id": "gnars-base-117",
-          "proposal_number": 117,
-          "title": "Sponsor Gnars Monik Santos in QS/WSL 2026",
-          "status": "executed",
-          "totals_by_asset": [
-            {
-              "symbol": "USDC",
-              "amount": 1570.0
             }
           ]
         },
@@ -492,27 +426,6 @@
           ]
         },
         {
-          "address": "0x25810d1a8b1affc444d5333bf0496f1202d6f89f",
-          "display_name": "0x2581...f89f",
-          "received_totals": [
-            {
-              "symbol": "USDC",
-              "amount": 1570.0
-            }
-          ],
-          "authored_count": 1,
-          "delivery_count": 0,
-          "score": 1572.0,
-          "tribes": [
-            "athlete",
-            "contributor",
-            "delegate",
-            "holder",
-            "proposer",
-            "recipient"
-          ]
-        },
-        {
           "address": "0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d",
           "display_name": "r4topunk",
           "received_totals": [
@@ -590,19 +503,6 @@
           ]
         },
         {
-          "address": "0x4b5951ca3fd19897feb9e42609f252b609eae526",
-          "display_name": "0x4b59...e526",
-          "received_totals": [],
-          "authored_count": 3,
-          "delivery_count": 0,
-          "score": 6.0,
-          "tribes": [
-            "athlete",
-            "contributor",
-            "proposer"
-          ]
-        },
-        {
           "address": "0x4d16fce1bd6e327ae31398ce9a2c4e12c077ecb1",
           "display_name": "0x4d16...ecb1",
           "received_totals": [
@@ -634,8 +534,20 @@
             "contributor",
             "delegate",
             "holder",
-            "proposer",
-            "recipient"
+            "proposer"
+          ]
+        },
+        {
+          "address": "0x4b5951ca3fd19897feb9e42609f252b609eae526",
+          "display_name": "0x4b59...e526",
+          "received_totals": [],
+          "authored_count": 1,
+          "delivery_count": 0,
+          "score": 2.0,
+          "tribes": [
+            "athlete",
+            "contributor",
+            "proposer"
           ]
         }
       ]
@@ -646,19 +558,19 @@
       "since": "2025-12-21T00:00:00+00:00",
       "metrics": {
         "active_proposals_now": 3,
-        "proposal_count": 11,
+        "proposal_count": 7,
         "successful_proposal_count": 0,
-        "payout_count": 14,
+        "payout_count": 12,
         "delivery_count": 4,
-        "recipient_count": 8,
+        "recipient_count": 6,
         "payouts_by_asset": [
           {
             "symbol": "USDC",
-            "amount": 8982.0
+            "amount": 7412.0
           },
           {
             "symbol": "ETH",
-            "amount": 2.75
+            "amount": 2.65
           }
         ]
       },
@@ -674,16 +586,6 @@
             {
               "symbol": "ETH",
               "amount": 0.5
-            }
-          ]
-        },
-        {
-          "address": "0x25810d1a8b1affc444d5333bf0496f1202d6f89f",
-          "display_name": "0x2581...f89f",
-          "totals_by_asset": [
-            {
-              "symbol": "USDC",
-              "amount": 1570.0
             }
           ]
         },
@@ -746,16 +648,6 @@
             {
               "symbol": "ETH",
               "amount": 0.4
-            }
-          ]
-        },
-        {
-          "address": "0x225e9b54f41f44f42150b6aaa730da5f2d23faf2",
-          "display_name": "0x225e...faf2",
-          "totals_by_asset": [
-            {
-              "symbol": "ETH",
-              "amount": 0.1
             }
           ]
         }
@@ -826,18 +718,6 @@
           ]
         },
         {
-          "archive_id": "gnars-base-117",
-          "proposal_number": 117,
-          "title": "Sponsor Gnars Monik Santos in QS/WSL 2026",
-          "status": "executed",
-          "totals_by_asset": [
-            {
-              "symbol": "USDC",
-              "amount": 1570.0
-            }
-          ]
-        },
-        {
           "archive_id": "gnars-base-111",
           "proposal_number": 111,
           "title": "Gnars Revamp: Docs and Governance",
@@ -876,18 +756,6 @@
               "amount": 0.4
             }
           ]
-        },
-        {
-          "archive_id": "gnars-base-109",
-          "proposal_number": 109,
-          "title": "Funding Luke Dixon—the best amateur kitesurfer in South Africa",
-          "status": "defeated",
-          "totals_by_asset": [
-            {
-              "symbol": "ETH",
-              "amount": 0.1
-            }
-          ]
         }
       ],
       "top_people": [
@@ -909,27 +777,6 @@
           "score": 2900.0,
           "tribes": [
             "contributor",
-            "recipient"
-          ]
-        },
-        {
-          "address": "0x25810d1a8b1affc444d5333bf0496f1202d6f89f",
-          "display_name": "0x2581...f89f",
-          "received_totals": [
-            {
-              "symbol": "USDC",
-              "amount": 1570.0
-            }
-          ],
-          "authored_count": 1,
-          "delivery_count": 0,
-          "score": 1572.0,
-          "tribes": [
-            "athlete",
-            "contributor",
-            "delegate",
-            "holder",
-            "proposer",
             "recipient"
           ]
         },
@@ -1032,19 +879,6 @@
           ]
         },
         {
-          "address": "0x4b5951ca3fd19897feb9e42609f252b609eae526",
-          "display_name": "0x4b59...e526",
-          "received_totals": [],
-          "authored_count": 3,
-          "delivery_count": 0,
-          "score": 6.0,
-          "tribes": [
-            "athlete",
-            "contributor",
-            "proposer"
-          ]
-        },
-        {
           "address": "0x4d16fce1bd6e327ae31398ce9a2c4e12c077ecb1",
           "display_name": "0x4d16...ecb1",
           "received_totals": [
@@ -1065,27 +899,6 @@
           ]
         },
         {
-          "address": "0x225e9b54f41f44f42150b6aaa730da5f2d23faf2",
-          "display_name": "0x225e...faf2",
-          "received_totals": [
-            {
-              "symbol": "ETH",
-              "amount": 0.1
-            }
-          ],
-          "authored_count": 1,
-          "delivery_count": 0,
-          "score": 2.1,
-          "tribes": [
-            "athlete",
-            "contributor",
-            "delegate",
-            "holder",
-            "proposer",
-            "recipient"
-          ]
-        },
-        {
           "address": "0x2feb329b9289b60064904fa61fc347157a5aed6a",
           "display_name": "0x2feb...ed6a",
           "received_totals": [],
@@ -1097,8 +910,35 @@
             "contributor",
             "delegate",
             "holder",
-            "proposer",
-            "recipient"
+            "proposer"
+          ]
+        },
+        {
+          "address": "0x4b5951ca3fd19897feb9e42609f252b609eae526",
+          "display_name": "0x4b59...e526",
+          "received_totals": [],
+          "authored_count": 1,
+          "delivery_count": 0,
+          "score": 2.0,
+          "tribes": [
+            "athlete",
+            "contributor",
+            "proposer"
+          ]
+        },
+        {
+          "address": "0xd1195629d9ba1168591b8ecdec9abb1721fcc7d8",
+          "display_name": "0xd119...c7d8",
+          "received_totals": [],
+          "authored_count": 1,
+          "delivery_count": 0,
+          "score": 2.0,
+          "tribes": [
+            "athlete",
+            "contributor",
+            "delegate",
+            "holder",
+            "proposer"
           ]
         }
       ]
@@ -1109,19 +949,15 @@
       "since": null,
       "metrics": {
         "active_proposals_now": 3,
-        "proposal_count": 217,
+        "proposal_count": 193,
         "successful_proposal_count": 90,
-        "payout_count": 96,
+        "payout_count": 81,
         "delivery_count": 4,
-        "recipient_count": 59,
+        "recipient_count": 47,
         "payouts_by_asset": [
           {
             "symbol": "SENDIT",
             "amount": 3.426086350572531e+26
-          },
-          {
-            "symbol": "0X4F6047",
-            "amount": 2.06232e+20
           },
           {
             "symbol": "0X09E938",
@@ -1129,11 +965,11 @@
           },
           {
             "symbol": "USDC",
-            "amount": 247754.0
+            "amount": 194246.0
           },
           {
             "symbol": "ETH",
-            "amount": 19.18149871
+            "amount": 25.81838154
           }
         ]
       },
@@ -1159,10 +995,6 @@
             {
               "symbol": "SENDIT",
               "amount": 8.58799e+25
-            },
-            {
-              "symbol": "0X4F6047",
-              "amount": 2.06232e+20
             },
             {
               "symbol": "USDC",
@@ -1234,7 +1066,7 @@
           "totals_by_asset": [
             {
               "symbol": "USDC",
-              "amount": 33465.0
+              "amount": 24915.0
             },
             {
               "symbol": "ETH",
@@ -1349,18 +1181,6 @@
           ]
         },
         {
-          "archive_id": "gnars-base-91",
-          "proposal_number": 91,
-          "title": "IPFS Reimbursement and Advance for Shared IPFS Infrastructure",
-          "status": "executed",
-          "totals_by_asset": [
-            {
-              "symbol": "0X4F6047",
-              "amount": 2.06232e+20
-            }
-          ]
-        },
-        {
           "archive_id": "gnars-base-36",
           "proposal_number": 36,
           "title": "Maryhill Fall RVOD Freeride Sponsorship",
@@ -1377,6 +1197,18 @@
           "proposal_number": 35,
           "title": "Salt Spring Slasher Sponsorship",
           "status": "executed",
+          "totals_by_asset": [
+            {
+              "symbol": "0X09E938",
+              "amount": 625000000.0
+            }
+          ]
+        },
+        {
+          "archive_id": "gnars-base-34",
+          "proposal_number": 34,
+          "title": "Salt Spring Slasher Sponsorship",
+          "status": "cancelled",
           "totals_by_asset": [
             {
               "symbol": "0X09E938",
@@ -1416,15 +1248,11 @@
               "amount": 8.58799e+25
             },
             {
-              "symbol": "0X4F6047",
-              "amount": 2.06232e+20
-            },
-            {
               "symbol": "USDC",
               "amount": 400.0
             }
           ],
-          "authored_count": 22,
+          "authored_count": 20,
           "delivery_count": 0,
           "score": 8.58799e+25,
           "tribes": [
@@ -1540,7 +1368,7 @@
           "received_totals": [
             {
               "symbol": "USDC",
-              "amount": 33465.0
+              "amount": 24915.0
             },
             {
               "symbol": "ETH",
@@ -1549,7 +1377,7 @@
           ],
           "authored_count": 0,
           "delivery_count": 0,
-          "score": 33465.0,
+          "score": 24915.0,
           "tribes": [
             "contributor",
             "recipient"
