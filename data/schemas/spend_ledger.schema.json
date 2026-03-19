@@ -4,12 +4,16 @@
   "required": [
     "dataset",
     "as_of",
+    "analytics_as_of",
     "version",
     "records"
   ],
   "properties": {
     "dataset": {
       "const": "spend_ledger"
+    },
+    "analytics_as_of": {
+      "type": "string"
     },
     "as_of": {
       "type": "string"

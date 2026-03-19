@@ -1,4 +1,5 @@
 import { useDeferredValue, useEffect, useState } from "react";
+import { formatLabel } from "../lib/format";
 import type { SearchEntry } from "../types";
 
 export function SearchBox() {
@@ -50,7 +51,7 @@ export function SearchBox() {
         <div className="searchbox-results">
           {results.map((entry) => (
             <a key={`${entry.kind}:${entry.href}`} className="searchbox-item" href={entry.href}>
-              <span className="searchbox-kind">{entry.kind}</span>
+              <span className="searchbox-kind">{formatLabel(entry.kind)}</span>
               <strong>{entry.title}</strong>
               <span>{entry.summary}</span>
             </a>

@@ -38,6 +38,12 @@ export type SearchEntry = {
   summary: string;
 };
 
+export type FacetBucket = {
+  value: string;
+  label: string;
+  count: number;
+};
+
 export type PersonRecord = {
   person_id: string;
   slug: string;
@@ -88,6 +94,31 @@ export type PersonRecord = {
     related_updates: string[];
   };
   notes: string;
+  tribes: string[];
+  headline: string;
+  history_short: string;
+  history_long: string;
+  successful_authored_count: number;
+  successful_authored_proposals: string[];
+  budget_managed_by_asset: AssetAmount[];
+  treasury_route_count: number;
+  delivery_count: number;
+  proof_count: number;
+  proof_coverage_pct: number | null;
+  network_degree: number;
+  first_seen_at: string | null;
+  last_seen_at: string | null;
+  references: ReferenceLink[];
+  media_references: {
+    proof_id: string;
+    title: string;
+    url: string;
+    kind: string;
+    date: string;
+  }[];
+  proposal_editorial_labels: string[];
+  treasury_totals: AssetAmount[];
+  project_count: number;
 };
 
 export type SpendLedgerRecord = {
@@ -167,6 +198,44 @@ export type ProjectRollupRecord = {
   outputs: string[];
   kpis: string[];
   notes: string;
+  proposal_lineage: string[];
+  scope_labels: string[];
+  branding_tags: string[];
+  contributor_addresses: string[];
+  delivery_count: number;
+  proof_count: number;
+  proof_coverage_pct: number | null;
+  related_proof_ids: string[];
+};
+
+export type ProposalTransactionRecord = {
+  index: number;
+  kind: string;
+  target: string;
+  value_wei: string;
+  calldata: string;
+  selector?: string;
+  token_contract?: string;
+  recipient?: string;
+  amount_raw?: string;
+  amount_normalized?: number;
+  sender?: string;
+  token_id?: string;
+  amount_eth?: number;
+};
+
+export type ProposalVoteRecord = {
+  voter: string;
+  choice: string;
+  reason: string | null;
+  voterEnsName?: string | null;
+  votes?: string;
+  transactionHash?: string;
+  timestamp?: number;
+  vp?: number;
+  vp_by_strategy?: number[];
+  created?: number;
+  ipfs?: string;
 };
 
 export type ProposalArchiveRecord = {
@@ -192,8 +261,8 @@ export type ProposalArchiveRecord = {
   content_markdown: string;
   content_summary: string;
   cover_image_url: string | null;
-  transactions: Record<string, unknown>[];
-  votes: Record<string, unknown>[];
+  transactions: ProposalTransactionRecord[];
+  votes: ProposalVoteRecord[];
   links: {
     source_url: string;
     canonical_url: string;
@@ -468,6 +537,7 @@ export type GraphEdge = {
 
 export type NetworkGraphData = {
   dataset: "network_graph";
+  analytics_as_of?: string;
   as_of: string;
   version: number;
   nodes: GraphNode[];
@@ -508,6 +578,190 @@ export type NetworkViewData = {
     assets: string[];
     statuses: string[];
   };
+};
+
+export type ProposalEnrichedRecord = {
+  archive_id: string;
+  proposal_key: string;
+  proposal_number: number | null;
+  title: string;
+  status: string;
+  platform: string;
+  chain: string;
+  proposer: string;
+  proposer_label: string | null;
+  created_at: string | null;
+  start_at: string | null;
+  end_at: string | null;
+  date: string;
+  successful: boolean;
+  hot: boolean;
+  closing_soon: boolean;
+  is_active: boolean;
+  is_terminal: boolean;
+  outcome_group: string;
+  category: string;
+  summary_short: string;
+  requested_total_display: string;
+  routed_total_display: string;
+  proposal_type: string;
+  delivery_stage: string;
+  proof_strength: string;
+  lineage_strength: string;
+  reference_channels: string[];
+  primary_recipients: string[];
+  editorial_labels: string[];
+  status_labels: string[];
+  funding_labels: string[];
+  relationship_labels: string[];
+  platform_labels: string[];
+  lifecycle_labels: string[];
+  proof_labels: string[];
+  project_ids: string[];
+  recipient_addresses: string[];
+  recipient_count: number;
+  requested_by_asset: AssetAmount[];
+  routed_by_asset: AssetAmount[];
+  transaction_kinds: string[];
+  transaction_count: number;
+  nft_transfer_count: number;
+  vote_count: number;
+  scores_total: number;
+  quorum: number;
+  quorum_met: boolean;
+  proof_count: number;
+  related_proof_ids: string[];
+  reference_urls: string[];
+  summary: string;
+  href: string;
+};
+
+export type ProposalEnrichedData = {
+  dataset: "proposals_enriched";
+  analytics_as_of: string;
+  as_of: string;
+  version: number;
+  taxonomy: string[];
+  records: ProposalEnrichedRecord[];
+};
+
+export type MediaProofRecord = {
+  proof_id: string;
+  date: string;
+  title: string;
+  status: string;
+  source_kind: string;
+  proof_kind: string;
+  reference_kind: string;
+  url: string;
+  domain: string;
+  project_id: string | null;
+  archive_id: string | null;
+  related_proposals: string[];
+  people_addresses: string[];
+  summary: string;
+  thumbnail_url: string | null;
+};
+
+export type MediaProofData = {
+  dataset: "media_proof";
+  analytics_as_of: string;
+  as_of: string;
+  version: number;
+  records: MediaProofRecord[];
+};
+
+export type FeedStreamItem = {
+  item_id: string;
+  kind: string;
+  date: string;
+  status: string;
+  title: string;
+  summary: string;
+  labels: string[];
+  editorial_labels: string[];
+  status_labels: string[];
+  funding_labels: string[];
+  relationship_labels: string[];
+  platform_labels: string[];
+  lifecycle_labels: string[];
+  proof_labels: string[];
+  source_labels: string[];
+  linked_people: string[];
+  linked_projects: string[];
+  linked_proposals: string[];
+  linked_assets: string[];
+  primary_href: string;
+};
+
+export type FeedStreamData = {
+  dataset: "feed_stream";
+  analytics_as_of: string;
+  as_of: string;
+  version: number;
+  records: FeedStreamItem[];
+};
+
+export type InsightsData = {
+  dataset: "insights";
+  analytics_as_of: string;
+  as_of: string;
+  version: number;
+  treasury_breakdown: {
+    assets: {
+      symbol: string;
+      name: string;
+      amount: number;
+      value_usd: number;
+    }[];
+  };
+  spending_by_category: {
+    category: string;
+    totals_by_asset: AssetAmount[];
+    route_count: number;
+    proposal_count: number;
+  }[];
+  proposal_status_breakdown: {
+    status: string;
+    count: number;
+  }[];
+  proposal_success_by_category: {
+    category: string;
+    proposal_count: number;
+    successful_count: number;
+    success_rate_pct: number | null;
+  }[];
+  recipient_concentration: {
+    symbol: string;
+    total_amount: number;
+    top5_share_pct: number | null;
+    top10_share_pct: number | null;
+    top_recipients: {
+      display_name: string;
+      slug: string;
+      amount: number;
+    }[];
+  }[];
+  workstream_performance: {
+    project_id: string;
+    name: string;
+    category: string;
+    budget_by_asset: AssetAmount[];
+    spent_by_asset: AssetAmount[];
+    delivery_count: number;
+    proof_count: number;
+    proof_coverage_pct: number | null;
+  }[];
+  top_recipients_over_time: TreasuryFlowsData["windows"];
+  signal_windows: CommunitySignalsData["windows"];
+};
+
+export type FilterFacetsData = {
+  dataset: "filter_facets";
+  analytics_as_of: string;
+  as_of: string;
+  version: number;
+  surfaces: Record<string, Record<string, FacetBucket[]>>;
 };
 
 export type TreasuryViewScene = {
@@ -583,6 +837,13 @@ export type CommunityCard = {
   approvedProposals: number;
   budgetManagedLabel: string;
   featured: boolean;
+  status: string;
+  ethReceived: number;
+  usdcReceived: number;
+  budgetManagedPrimary: number;
+  proofCount: number;
+  lastSeenAt: string | null;
+  searchText: string;
 };
 
 export type ProjectCard = {
@@ -595,6 +856,12 @@ export type ProjectCard = {
   proposalTag: string;
   budgetLabel: string;
   updatedAt: string;
+  spentLabel: string;
+  statusKey: string;
+  categoryKey: string;
+  proofCount: number;
+  deliveryCount: number;
+  searchText: string;
 };
 
 export type ProposalCard = {
@@ -607,10 +874,19 @@ export type ProposalCard = {
   budgetLabel: string;
   summary: string;
   projectLabel: string | null;
+  date: string;
+  category: string;
+  statusKey: string;
+  routedValue: number;
+  voteCount: number;
+  hot: boolean;
+  labels: string[];
+  searchText: string;
 };
 
 export type TimelineCard = {
   eventId: string;
+  date: string;
   kind: string;
   status: string;
   dateLabel: string;
@@ -623,6 +899,7 @@ export type TimelineCard = {
 
 export type HomePageProps = {
   asOf: string;
+  analyticsAsOf: string;
   metrics: {
     label: string;
     value: string;
@@ -637,6 +914,9 @@ export type HomePageProps = {
   treasuryScene: TreasuryViewScene;
   signalWindow: CommunitySignalsData["windows"][number];
   fieldNotes: CommunitySignalsData["field_notes"];
+  feed: FeedStreamItem[];
+  facets: FilterFacetsData["surfaces"]["home"];
+  insights: InsightsData;
   featuredCommunity: CommunityCard[];
   featuredProjects: ProjectCard[];
   governance: ProposalCard[];
@@ -653,6 +933,7 @@ export type HomePageProps = {
 
 export type CommunityIndexPageProps = {
   filters: string[];
+  facets: FilterFacetsData["surfaces"]["community"];
   people: CommunityCard[];
   economicMap: NetworkViewData;
 };
@@ -705,11 +986,13 @@ export type CommunityProfilePageProps = {
     kind: string;
     relationship: string;
     valueLabel: string;
+    numericValue?: number;
   }[];
 };
 
 export type ProjectsPageProps = {
   filters: string[];
+  facets: FilterFacetsData["surfaces"]["projects"];
   projects: ProjectCard[];
   featuredLineage: TreasuryViewScene;
 };
@@ -740,6 +1023,7 @@ export type ProjectDetailPageProps = {
 export type ProposalsPageProps = {
   proposals: ProposalCard[];
   signals: CommunitySignalsData["windows"][number];
+  facets: FilterFacetsData["surfaces"]["proposals"];
 };
 
 export type ProposalDetailPageProps = {
@@ -783,6 +1067,8 @@ export type TreasuryPageProps = {
   treasuryScene: TreasuryViewData;
   windows: TreasuryFlowsData["windows"];
   proposalRoutes: TreasuryFlowsData["proposal_routes"];
+  insights: InsightsData;
+  facets: FilterFacetsData["surfaces"]["treasury"];
 };
 
 export type NotesPageProps = {

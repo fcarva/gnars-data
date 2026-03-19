@@ -1,0 +1,132 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["dataset", "analytics_as_of", "as_of", "version", "treasury_breakdown", "spending_by_category", "proposal_status_breakdown", "proposal_success_by_category", "recipient_concentration", "workstream_performance", "top_recipients_over_time", "signal_windows"],
+  "properties": {
+    "dataset": { "const": "insights" },
+    "analytics_as_of": { "type": "string" },
+    "as_of": { "type": "string" },
+    "version": { "type": "integer" },
+    "treasury_breakdown": {
+      "type": "object",
+      "required": ["assets"],
+      "properties": {
+        "assets": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/assetHolding" }
+        }
+      },
+      "additionalProperties": false
+    },
+    "spending_by_category": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["category", "totals_by_asset", "route_count", "proposal_count"],
+        "properties": {
+          "category": { "type": "string" },
+          "totals_by_asset": { "type": "array", "items": { "$ref": "#/$defs/assetAmount" } },
+          "route_count": { "type": "integer" },
+          "proposal_count": { "type": "integer" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "proposal_status_breakdown": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["status", "count"],
+        "properties": {
+          "status": { "type": "string" },
+          "count": { "type": "integer" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "proposal_success_by_category": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["category", "proposal_count", "successful_count", "success_rate_pct"],
+        "properties": {
+          "category": { "type": "string" },
+          "proposal_count": { "type": "integer" },
+          "successful_count": { "type": "integer" },
+          "success_rate_pct": { "type": ["number", "null"] }
+        },
+        "additionalProperties": false
+      }
+    },
+    "recipient_concentration": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["symbol", "total_amount", "top5_share_pct", "top10_share_pct", "top_recipients"],
+        "properties": {
+          "symbol": { "type": "string" },
+          "total_amount": { "type": "number" },
+          "top5_share_pct": { "type": ["number", "null"] },
+          "top10_share_pct": { "type": ["number", "null"] },
+          "top_recipients": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["display_name", "slug", "amount"],
+              "properties": {
+                "display_name": { "type": "string" },
+                "slug": { "type": "string" },
+                "amount": { "type": "number" }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "workstream_performance": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["project_id", "name", "category", "budget_by_asset", "spent_by_asset", "delivery_count", "proof_count", "proof_coverage_pct"],
+        "properties": {
+          "project_id": { "type": "string" },
+          "name": { "type": "string" },
+          "category": { "type": "string" },
+          "budget_by_asset": { "type": "array", "items": { "$ref": "#/$defs/assetAmount" } },
+          "spent_by_asset": { "type": "array", "items": { "$ref": "#/$defs/assetAmount" } },
+          "delivery_count": { "type": "integer" },
+          "proof_count": { "type": "integer" },
+          "proof_coverage_pct": { "type": ["number", "null"] }
+        },
+        "additionalProperties": false
+      }
+    },
+    "top_recipients_over_time": { "type": "array" },
+    "signal_windows": { "type": "array" }
+  },
+  "$defs": {
+    "assetAmount": {
+      "type": "object",
+      "required": ["symbol", "amount"],
+      "properties": {
+        "symbol": { "type": "string" },
+        "amount": { "type": "number" }
+      },
+      "additionalProperties": false
+    },
+    "assetHolding": {
+      "type": "object",
+      "required": ["symbol", "name", "amount", "value_usd"],
+      "properties": {
+        "symbol": { "type": "string" },
+        "name": { "type": "string" },
+        "amount": { "type": "number" },
+        "value_usd": { "type": "number" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

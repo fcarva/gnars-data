@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["dataset", "analytics_as_of", "as_of", "version", "records"],
+  "properties": {
+    "dataset": { "const": "feed_stream" },
+    "analytics_as_of": { "type": "string" },
+    "as_of": { "type": "string" },
+    "version": { "type": "integer" },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["item_id", "kind", "date", "status", "title", "summary", "labels", "editorial_labels", "status_labels", "funding_labels", "relationship_labels", "platform_labels", "lifecycle_labels", "proof_labels", "source_labels", "linked_people", "linked_projects", "linked_proposals", "linked_assets", "primary_href"],
+        "properties": {
+          "item_id": { "type": "string" },
+          "kind": { "type": "string" },
+          "date": { "type": "string" },
+          "status": { "type": "string" },
+          "title": { "type": "string" },
+          "summary": { "type": "string" },
+          "labels": { "type": "array", "items": { "type": "string" } },
+          "editorial_labels": { "type": "array", "items": { "type": "string" } },
+          "status_labels": { "type": "array", "items": { "type": "string" } },
+          "funding_labels": { "type": "array", "items": { "type": "string" } },
+          "relationship_labels": { "type": "array", "items": { "type": "string" } },
+          "platform_labels": { "type": "array", "items": { "type": "string" } },
+          "lifecycle_labels": { "type": "array", "items": { "type": "string" } },
+          "proof_labels": { "type": "array", "items": { "type": "string" } },
+          "source_labels": { "type": "array", "items": { "type": "string" } },
+          "linked_people": { "type": "array", "items": { "type": "string" } },
+          "linked_projects": { "type": "array", "items": { "type": "string" } },
+          "linked_proposals": { "type": "array", "items": { "type": "string" } },
+          "linked_assets": { "type": "array", "items": { "type": "string" } },
+          "primary_href": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

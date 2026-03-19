@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["dataset", "analytics_as_of", "as_of", "version", "surfaces"],
+  "properties": {
+    "dataset": { "const": "filter_facets" },
+    "analytics_as_of": { "type": "string" },
+    "as_of": { "type": "string" },
+    "version": { "type": "integer" },
+    "surfaces": {
+      "type": "object",
+      "required": ["home", "proposals", "community", "projects", "treasury", "timeline"],
+      "properties": {
+        "home": { "$ref": "#/$defs/facetSurface" },
+        "proposals": { "$ref": "#/$defs/facetSurface" },
+        "community": { "$ref": "#/$defs/facetSurface" },
+        "projects": { "$ref": "#/$defs/facetSurface" },
+        "treasury": { "$ref": "#/$defs/facetSurface" },
+        "timeline": { "$ref": "#/$defs/facetSurface" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "$defs": {
+    "facetItem": {
+      "type": "object",
+      "required": ["value", "label", "count"],
+      "properties": {
+        "value": { "type": "string" },
+        "label": { "type": "string" },
+        "count": { "type": "integer" }
+      },
+      "additionalProperties": false
+    },
+    "facetGroup": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/facetItem" }
+    },
+    "facetSurface": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/facetGroup" }
+    }
+  },
+  "additionalProperties": false
+}

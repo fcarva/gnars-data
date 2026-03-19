@@ -1,9 +1,10 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "type": "object",
-  "required": ["dataset", "as_of", "version", "granularity", "records"],
+  "required": ["dataset", "as_of", "analytics_as_of", "version", "granularity", "records"],
   "properties": {
     "dataset": { "const": "activity_timeseries" },
+    "analytics_as_of": { "type": "string" },
     "as_of": { "type": "string" },
     "version": { "type": "integer" },
     "granularity": { "type": "string" },

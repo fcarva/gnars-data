@@ -1,0 +1,1348 @@
+{
+  "dataset": "insights",
+  "analytics_as_of": "2026-03-19T03:35:14.475549Z",
+  "as_of": "2026-03-19T03:35:14.475549Z",
+  "version": 1,
+  "treasury_breakdown": {
+    "assets": [
+      {
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "amount": 21396.243942,
+        "value_usd": 21396.20114951212
+      },
+      {
+        "symbol": "SENDIT",
+        "name": "Sendit",
+        "amount": 474092937.5544444,
+        "value_usd": 4750.411234295533
+      },
+      {
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "amount": 0.02752447,
+        "value_usd": 60.65457356019999
+      },
+      {
+        "symbol": "GNARS",
+        "name": "gnars",
+        "amount": 562300.0,
+        "value_usd": 8.84
+      },
+      {
+        "symbol": "SKATEHACKER",
+        "name": "skatehacker",
+        "amount": 69400.0,
+        "value_usd": 1.91
+      },
+      {
+        "symbol": "ZIMARDRP",
+        "name": "zimardrp",
+        "amount": 111100.0,
+        "value_usd": 1.38
+      }
+    ]
+  },
+  "spending_by_category": [
+    {
+      "category": "Operations",
+      "totals_by_asset": [
+        {
+          "symbol": "USDC",
+          "amount": 18450.0
+        },
+        {
+          "symbol": "ETH",
+          "amount": 10.23730283
+        }
+      ],
+      "route_count": 4,
+      "proposal_count": 4
+    },
+    {
+      "category": "Media",
+      "totals_by_asset": [
+        {
+          "symbol": "0X09E938",
+          "amount": 1575000000.0
+        },
+        {
+          "symbol": "SENDIT",
+          "amount": 283226798.0572531
+        },
+        {
+          "symbol": "USDC",
+          "amount": 70174.0
+        },
+        {
+          "symbol": "ETH",
+          "amount": 5.27067
+        }
+      ],
+      "route_count": 29,
+      "proposal_count": 25
+    },
+    {
+      "category": "Events",
+      "totals_by_asset": [
+        {
+          "symbol": "USDC",
+          "amount": 8490.0
+        },
+        {
+          "symbol": "ETH",
+          "amount": 1.11
+        }
+      ],
+      "route_count": 4,
+      "proposal_count": 3
+    },
+    {
+      "category": "Travel",
+      "totals_by_asset": [
+        {
+          "symbol": "SENDIT",
+          "amount": 46500000.0
+        },
+        {
+          "symbol": "USDC",
+          "amount": 21958.0
+        },
+        {
+          "symbol": "ETH",
+          "amount": 1.0
+        }
+      ],
+      "route_count": 6,
+      "proposal_count": 4
+    },
+    {
+      "category": "Athlete Support",
+      "totals_by_asset": [
+        {
+          "symbol": "SENDIT",
+          "amount": 12881837.0
+        },
+        {
+          "symbol": "USDC",
+          "amount": 10042.0
+        },
+        {
+          "symbol": "ETH",
+          "amount": 1.0
+        }
+      ],
+      "route_count": 4,
+      "proposal_count": 3
+    },
+    {
+      "category": "Software",
+      "totals_by_asset": [
+        {
+          "symbol": "USDC",
+          "amount": 18969.0
+        },
+        {
+          "symbol": "ETH",
+          "amount": 0.00026671
+        }
+      ],
+      "route_count": 3,
+      "proposal_count": 3
+    },
+    {
+      "category": "Governance",
+      "totals_by_asset": [
+        {
+          "symbol": "ETH",
+          "amount": 0.4
+        }
+      ],
+      "route_count": 2,
+      "proposal_count": 1
+    }
+  ],
+  "proposal_status_breakdown": [
+    {
+      "status": "active",
+      "count": 3
+    },
+    {
+      "status": "cancelled",
+      "count": 12
+    },
+    {
+      "status": "closed",
+      "count": 101
+    },
+    {
+      "status": "defeated",
+      "count": 12
+    },
+    {
+      "status": "executed",
+      "count": 65
+    }
+  ],
+  "proposal_success_by_category": [
+    {
+      "category": "Operations",
+      "proposal_count": 14,
+      "successful_count": 10,
+      "success_rate_pct": 71.43
+    },
+    {
+      "category": "Media",
+      "proposal_count": 88,
+      "successful_count": 69,
+      "success_rate_pct": 78.41
+    },
+    {
+      "category": "Events",
+      "proposal_count": 22,
+      "successful_count": 17,
+      "success_rate_pct": 77.27
+    },
+    {
+      "category": "Travel",
+      "proposal_count": 24,
+      "successful_count": 21,
+      "success_rate_pct": 87.5
+    },
+    {
+      "category": "Athlete Support",
+      "proposal_count": 20,
+      "successful_count": 17,
+      "success_rate_pct": 85.0
+    },
+    {
+      "category": "Software",
+      "proposal_count": 11,
+      "successful_count": 10,
+      "success_rate_pct": 90.91
+    },
+    {
+      "category": "Governance",
+      "proposal_count": 7,
+      "successful_count": 5,
+      "success_rate_pct": 71.43
+    },
+    {
+      "category": "Other",
+      "proposal_count": 7,
+      "successful_count": 6,
+      "success_rate_pct": 85.71
+    }
+  ],
+  "recipient_concentration": [
+    {
+      "symbol": "USDC",
+      "total_amount": 148083.0,
+      "top5_share_pct": 44.5,
+      "top10_share_pct": 69.54,
+      "top_recipients": [
+        {
+          "display_name": "0xe5f6...8beb",
+          "slug": "0xe5f6-8beb",
+          "amount": 19885.0
+        },
+        {
+          "display_name": "0xe1b9...9641",
+          "slug": "0xe1b9-9641",
+          "amount": 16116.0
+        },
+        {
+          "display_name": "0x3f51...f7f2",
+          "slug": "0x3f51-f7f2",
+          "amount": 12000.0
+        },
+        {
+          "display_name": "0x7351...53f8",
+          "slug": "0x7351-53f8",
+          "amount": 9900.0
+        },
+        {
+          "display_name": "0xc407...3c28",
+          "slug": "0xc407-3c28",
+          "amount": 8000.0
+        },
+        {
+          "display_name": "0xfc27...a45b",
+          "slug": "0xfc27-a45b",
+          "amount": 7888.0
+        },
+        {
+          "display_name": "0x0a7b...442e",
+          "slug": "0x0a7b-442e",
+          "amount": 7870.0
+        },
+        {
+          "display_name": "0x459b...69de",
+          "slug": "0x459b-69de",
+          "amount": 7500.0
+        },
+        {
+          "display_name": "0x9d4e...937f",
+          "slug": "0x9d4e-937f",
+          "amount": 6969.0
+        },
+        {
+          "display_name": "0xed7b...13f4",
+          "slug": "0xed7b-13f4",
+          "amount": 6850.0
+        }
+      ]
+    },
+    {
+      "symbol": "ETH",
+      "total_amount": 19.01823954,
+      "top5_share_pct": 85.96,
+      "top10_share_pct": 98.94,
+      "top_recipients": [
+        {
+          "display_name": "0x387a...fffd",
+          "slug": "0x387a-fffd",
+          "amount": 10.35730283
+        },
+        {
+          "display_name": "0xe8b2...599d",
+          "slug": "0xe8b2-599d",
+          "amount": 3.0
+        },
+        {
+          "display_name": "0x2443...5c87",
+          "slug": "0x2443-5c87",
+          "amount": 1.0
+        },
+        {
+          "display_name": "0x2897...c84f",
+          "slug": "0x2897-c84f",
+          "amount": 1.0
+        },
+        {
+          "display_name": "0x33bb...63ea",
+          "slug": "0x33bb-63ea",
+          "amount": 0.99
+        },
+        {
+          "display_name": "0x5979...8db0",
+          "slug": "0x5979-8db0",
+          "amount": 0.8
+        },
+        {
+          "display_name": "0x49d3...2176",
+          "slug": "0x49d3-2176",
+          "amount": 0.619
+        },
+        {
+          "display_name": "0xedc1...e7e1",
+          "slug": "0xedc1-e7e1",
+          "amount": 0.43
+        },
+        {
+          "display_name": "0x9ad8...e1c8",
+          "slug": "0x9ad8-e1c8",
+          "amount": 0.42
+        },
+        {
+          "display_name": "0xba6e...acf5",
+          "slug": "0xba6e-acf5",
+          "amount": 0.2
+        }
+      ]
+    },
+    {
+      "symbol": "GNARS",
+      "total_amount": 0,
+      "top5_share_pct": null,
+      "top10_share_pct": null,
+      "top_recipients": []
+    }
+  ],
+  "workstream_performance": [
+    {
+      "project_id": "operations-q1-2026",
+      "name": "Gnars Operations - Q1 2026 Workstream",
+      "category": "Operations",
+      "budget_by_asset": [
+        {
+          "symbol": "USDC",
+          "amount": 3000.0
+        },
+        {
+          "symbol": "ETH",
+          "amount": 1.5
+        }
+      ],
+      "spent_by_asset": [],
+      "delivery_count": 2,
+      "proof_count": 3,
+      "proof_coverage_pct": 100.0
+    },
+    {
+      "project_id": "docs-governance-revamp",
+      "name": "Gnars Revamp: Docs and Governance",
+      "category": "Governance",
+      "budget_by_asset": [
+        {
+          "symbol": "USDC",
+          "amount": 900.0
+        },
+        {
+          "symbol": "ETH",
+          "amount": 0.25
+        }
+      ],
+      "spent_by_asset": [],
+      "delivery_count": 1,
+      "proof_count": 1,
+      "proof_coverage_pct": 100.0
+    }
+  ],
+  "top_recipients_over_time": [
+    {
+      "window_id": "7d",
+      "label": "Last 7 Days",
+      "since": "2026-03-12T00:00:00+00:00",
+      "route_count": 0,
+      "proposal_count": 0,
+      "recipient_count": 0,
+      "project_count": 0,
+      "totals_by_asset": [],
+      "top_recipients": [],
+      "top_projects": []
+    },
+    {
+      "window_id": "30d",
+      "label": "Last 30 Days",
+      "since": "2026-02-17T00:00:00+00:00",
+      "route_count": 0,
+      "proposal_count": 0,
+      "recipient_count": 0,
+      "project_count": 0,
+      "totals_by_asset": [],
+      "top_recipients": [],
+      "top_projects": []
+    },
+    {
+      "window_id": "90d",
+      "label": "Last 90 Days",
+      "since": "2025-12-19T00:00:00+00:00",
+      "route_count": 0,
+      "proposal_count": 0,
+      "recipient_count": 0,
+      "project_count": 0,
+      "totals_by_asset": [],
+      "top_recipients": [],
+      "top_projects": []
+    },
+    {
+      "window_id": "all",
+      "label": "All Time",
+      "since": null,
+      "route_count": 52,
+      "proposal_count": 43,
+      "recipient_count": 40,
+      "project_count": 0,
+      "totals_by_asset": [
+        {
+          "symbol": "0X09E938",
+          "amount": 1575000000.0
+        },
+        {
+          "symbol": "SENDIT",
+          "amount": 342608635.0572531
+        },
+        {
+          "symbol": "USDC",
+          "amount": 148083.0
+        },
+        {
+          "symbol": "ETH",
+          "amount": 19.01823954
+        }
+      ],
+      "top_recipients": [
+        {
+          "address": "0x09e938e239803c78507abd5687a97acfea1188ea",
+          "display_name": "0x09e9...88ea",
+          "totals": [
+            {
+              "symbol": "0X09E938",
+              "amount": 1575000000.0
+            }
+          ]
+        },
+        {
+          "address": "0xbc94f5266c5f78677b98238fc93d825d25abfc12",
+          "display_name": "0xbc94...fc12",
+          "totals": [
+            {
+              "symbol": "SENDIT",
+              "amount": 119569120.28725314
+            },
+            {
+              "symbol": "USDC",
+              "amount": 2650.0
+            }
+          ]
+        },
+        {
+          "address": "0x41cb654d1f47913acab158a8199191d160dabe4a",
+          "display_name": "0x41cb...be4a",
+          "totals": [
+            {
+              "symbol": "SENDIT",
+              "amount": 85879900.0
+            }
+          ]
+        },
+        {
+          "address": "0x244306053c673b93bc9885fdacfc352032725c87",
+          "display_name": "0x2443...5c87",
+          "totals": [
+            {
+              "symbol": "SENDIT",
+              "amount": 46500000.0
+            },
+            {
+              "symbol": "USDC",
+              "amount": 3200.0
+            },
+            {
+              "symbol": "ETH",
+              "amount": 1.0
+            }
+          ]
+        },
+        {
+          "address": "0x576950a0ae9c6c134a381fb4cf245e478e82ecab",
+          "display_name": "0x5769...ecab",
+          "totals": [
+            {
+              "symbol": "SENDIT",
+              "amount": 38888888.885
+            }
+          ]
+        },
+        {
+          "address": "0xe63617c62f18dbc7eff3d7c9eb8bac4d1c2adecc",
+          "display_name": "0xe636...decc",
+          "totals": [
+            {
+              "symbol": "SENDIT",
+              "amount": 38888888.885
+            }
+          ]
+        },
+        {
+          "address": "0xa903c06bf35286f6d1cdad25396748353979a44c",
+          "display_name": "0xa903...a44c",
+          "totals": [
+            {
+              "symbol": "SENDIT",
+              "amount": 12881837.0
+            }
+          ]
+        },
+        {
+          "address": "0xe5f6202ff7ddc5273c249073865bc6f4d5d68beb",
+          "display_name": "0xe5f6...8beb",
+          "totals": [
+            {
+              "symbol": "USDC",
+              "amount": 19885.0
+            }
+          ]
+        }
+      ],
+      "top_projects": []
+    }
+  ],
+  "signal_windows": [
+    {
+      "window_id": "7d",
+      "label": "Last 7 Days",
+      "since": "2026-03-12T00:00:00+00:00",
+      "metrics": {
+        "active_proposals_now": 3,
+        "proposal_count": 2,
+        "successful_proposal_count": 0,
+        "payout_count": 0,
+        "delivery_count": 4,
+        "recipient_count": 0,
+        "project_count": 0,
+        "unique_voters_count": 26,
+        "avg_votes_per_proposal": 21.5,
+        "median_votes_per_proposal": 21.5,
+        "proposal_success_rate_pct": 0.0,
+        "payouts_per_proposal": 0.0,
+        "deliveries_per_proposal": 2.0,
+        "payouts_by_asset": []
+      },
+      "top_recipients": [],
+      "top_projects": [],
+      "top_proposals": [],
+      "top_people": [
+        {
+          "address": "0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d",
+          "display_name": "r4topunk",
+          "received_totals": [],
+          "authored_count": 1,
+          "delivery_count": 3,
+          "score": 6.5,
+          "tribes": [
+            "builder",
+            "contributor",
+            "delegate",
+            "holder",
+            "member",
+            "proposer"
+          ]
+        },
+        {
+          "address": "0xaaed9fff9858d48925904e391b77892ba5fda824",
+          "display_name": "fcarva",
+          "received_totals": [],
+          "authored_count": 0,
+          "delivery_count": 4,
+          "score": 6.0,
+          "tribes": [
+            "builder",
+            "contributor",
+            "delegate",
+            "holder",
+            "member",
+            "proposer"
+          ]
+        },
+        {
+          "address": "0x8bf5941d27176242745b716251943ae4892a3c26",
+          "display_name": "vlad",
+          "received_totals": [],
+          "authored_count": 0,
+          "delivery_count": 3,
+          "score": 4.5,
+          "tribes": [
+            "builder",
+            "contributor",
+            "delegate",
+            "holder",
+            "member"
+          ]
+        },
+        {
+          "address": "0x2feb329b9289b60064904fa61fc347157a5aed6a",
+          "display_name": "0x2feb...ed6a",
+          "received_totals": [],
+          "authored_count": 1,
+          "delivery_count": 0,
+          "score": 2.0,
+          "tribes": [
+            "athlete",
+            "contributor",
+            "delegate",
+            "holder",
+            "proposer"
+          ]
+        }
+      ]
+    },
+    {
+      "window_id": "30d",
+      "label": "Last 30 Days",
+      "since": "2026-02-17T00:00:00+00:00",
+      "metrics": {
+        "active_proposals_now": 3,
+        "proposal_count": 4,
+        "successful_proposal_count": 0,
+        "payout_count": 0,
+        "delivery_count": 4,
+        "recipient_count": 0,
+        "project_count": 0,
+        "unique_voters_count": 27,
+        "avg_votes_per_proposal": 11.75,
+        "median_votes_per_proposal": 12.5,
+        "proposal_success_rate_pct": 0.0,
+        "payouts_per_proposal": 0.0,
+        "deliveries_per_proposal": 1.0,
+        "payouts_by_asset": []
+      },
+      "top_recipients": [],
+      "top_projects": [],
+      "top_proposals": [],
+      "top_people": [
+        {
+          "address": "0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d",
+          "display_name": "r4topunk",
+          "received_totals": [],
+          "authored_count": 1,
+          "delivery_count": 3,
+          "score": 6.5,
+          "tribes": [
+            "builder",
+            "contributor",
+            "delegate",
+            "holder",
+            "member",
+            "proposer"
+          ]
+        },
+        {
+          "address": "0xaaed9fff9858d48925904e391b77892ba5fda824",
+          "display_name": "fcarva",
+          "received_totals": [],
+          "authored_count": 0,
+          "delivery_count": 4,
+          "score": 6.0,
+          "tribes": [
+            "builder",
+            "contributor",
+            "delegate",
+            "holder",
+            "member",
+            "proposer"
+          ]
+        },
+        {
+          "address": "0x8bf5941d27176242745b716251943ae4892a3c26",
+          "display_name": "vlad",
+          "received_totals": [],
+          "authored_count": 0,
+          "delivery_count": 3,
+          "score": 4.5,
+          "tribes": [
+            "builder",
+            "contributor",
+            "delegate",
+            "holder",
+            "member"
+          ]
+        },
+        {
+          "address": "0x2feb329b9289b60064904fa61fc347157a5aed6a",
+          "display_name": "0x2feb...ed6a",
+          "received_totals": [],
+          "authored_count": 1,
+          "delivery_count": 0,
+          "score": 2.0,
+          "tribes": [
+            "athlete",
+            "contributor",
+            "delegate",
+            "holder",
+            "proposer"
+          ]
+        },
+        {
+          "address": "0x4b5951ca3fd19897feb9e42609f252b609eae526",
+          "display_name": "0x4b59...e526",
+          "received_totals": [],
+          "authored_count": 1,
+          "delivery_count": 0,
+          "score": 2.0,
+          "tribes": [
+            "athlete",
+            "contributor",
+            "proposer"
+          ]
+        },
+        {
+          "address": "0x4d16fce1bd6e327ae31398ce9a2c4e12c077ecb1",
+          "display_name": "0x4d16...ecb1",
+          "received_totals": [],
+          "authored_count": 1,
+          "delivery_count": 0,
+          "score": 2.0,
+          "tribes": [
+            "contributor",
+            "delegate",
+            "holder",
+            "proposer"
+          ]
+        }
+      ]
+    },
+    {
+      "window_id": "90d",
+      "label": "Last 90 Days",
+      "since": "2025-12-19T00:00:00+00:00",
+      "metrics": {
+        "active_proposals_now": 3,
+        "proposal_count": 7,
+        "successful_proposal_count": 1,
+        "payout_count": 0,
+        "delivery_count": 4,
+        "recipient_count": 0,
+        "project_count": 0,
+        "unique_voters_count": 43,
+        "avg_votes_per_proposal": 14.29,
+        "median_votes_per_proposal": 15.0,
+        "proposal_success_rate_pct": 14.29,
+        "payouts_per_proposal": 0.0,
+        "deliveries_per_proposal": 0.571,
+        "payouts_by_asset": []
+      },
+      "top_recipients": [],
+      "top_projects": [],
+      "top_proposals": [],
+      "top_people": [
+        {
+          "address": "0xaaed9fff9858d48925904e391b77892ba5fda824",
+          "display_name": "fcarva",
+          "received_totals": [],
+          "authored_count": 1,
+          "delivery_count": 4,
+          "score": 8.0,
+          "tribes": [
+            "builder",
+            "contributor",
+            "delegate",
+            "holder",
+            "member",
+            "proposer"
+          ]
+        },
+        {
+          "address": "0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d",
+          "display_name": "r4topunk",
+          "received_totals": [],
+          "authored_count": 1,
+          "delivery_count": 3,
+          "score": 6.5,
+          "tribes": [
+            "builder",
+            "contributor",
+            "delegate",
+            "holder",
+            "member",
+            "proposer"
+          ]
+        },
+        {
+          "address": "0x8bf5941d27176242745b716251943ae4892a3c26",
+          "display_name": "vlad",
+          "received_totals": [],
+          "authored_count": 0,
+          "delivery_count": 3,
+          "score": 4.5,
+          "tribes": [
+            "builder",
+            "contributor",
+            "delegate",
+            "holder",
+            "member"
+          ]
+        },
+        {
+          "address": "0x057cfcd04198e6d17f1bf502135d9508b6fa2fde",
+          "display_name": "0x057c...2fde",
+          "received_totals": [],
+          "authored_count": 1,
+          "delivery_count": 0,
+          "score": 2.0,
+          "tribes": [
+            "athlete",
+            "contributor",
+            "delegate",
+            "holder",
+            "proposer"
+          ]
+        },
+        {
+          "address": "0x2feb329b9289b60064904fa61fc347157a5aed6a",
+          "display_name": "0x2feb...ed6a",
+          "received_totals": [],
+          "authored_count": 1,
+          "delivery_count": 0,
+          "score": 2.0,
+          "tribes": [
+            "athlete",
+            "contributor",
+            "delegate",
+            "holder",
+            "proposer"
+          ]
+        },
+        {
+          "address": "0x4b5951ca3fd19897feb9e42609f252b609eae526",
+          "display_name": "0x4b59...e526",
+          "received_totals": [],
+          "authored_count": 1,
+          "delivery_count": 0,
+          "score": 2.0,
+          "tribes": [
+            "athlete",
+            "contributor",
+            "proposer"
+          ]
+        },
+        {
+          "address": "0x4d16fce1bd6e327ae31398ce9a2c4e12c077ecb1",
+          "display_name": "0x4d16...ecb1",
+          "received_totals": [],
+          "authored_count": 1,
+          "delivery_count": 0,
+          "score": 2.0,
+          "tribes": [
+            "contributor",
+            "delegate",
+            "holder",
+            "proposer"
+          ]
+        },
+        {
+          "address": "0xd1195629d9ba1168591b8ecdec9abb1721fcc7d8",
+          "display_name": "0xd119...c7d8",
+          "received_totals": [],
+          "authored_count": 1,
+          "delivery_count": 0,
+          "score": 2.0,
+          "tribes": [
+            "athlete",
+            "contributor",
+            "delegate",
+            "holder",
+            "proposer"
+          ]
+        }
+      ]
+    },
+    {
+      "window_id": "all",
+      "label": "All Time",
+      "since": null,
+      "metrics": {
+        "active_proposals_now": 3,
+        "proposal_count": 193,
+        "successful_proposal_count": 155,
+        "payout_count": 52,
+        "delivery_count": 4,
+        "recipient_count": 40,
+        "project_count": 0,
+        "unique_voters_count": 436,
+        "avg_votes_per_proposal": 20.25,
+        "median_votes_per_proposal": 21.0,
+        "proposal_success_rate_pct": 80.31,
+        "payouts_per_proposal": 0.269,
+        "deliveries_per_proposal": 0.021,
+        "payouts_by_asset": [
+          {
+            "symbol": "0X09E938",
+            "amount": 1575000000.0
+          },
+          {
+            "symbol": "SENDIT",
+            "amount": 342608635.0572531
+          },
+          {
+            "symbol": "USDC",
+            "amount": 148083.0
+          },
+          {
+            "symbol": "ETH",
+            "amount": 19.01823954
+          }
+        ]
+      },
+      "top_recipients": [
+        {
+          "address": "0x09e938e239803c78507abd5687a97acfea1188ea",
+          "display_name": "0x09e9...88ea",
+          "totals_by_asset": [
+            {
+              "symbol": "0X09E938",
+              "amount": 1575000000.0
+            }
+          ]
+        },
+        {
+          "address": "0xbc94f5266c5f78677b98238fc93d825d25abfc12",
+          "display_name": "0xbc94...fc12",
+          "totals_by_asset": [
+            {
+              "symbol": "SENDIT",
+              "amount": 119569120.28725314
+            },
+            {
+              "symbol": "USDC",
+              "amount": 2650.0
+            }
+          ]
+        },
+        {
+          "address": "0x41cb654d1f47913acab158a8199191d160dabe4a",
+          "display_name": "0x41cb...be4a",
+          "totals_by_asset": [
+            {
+              "symbol": "SENDIT",
+              "amount": 85879900.0
+            }
+          ]
+        },
+        {
+          "address": "0x244306053c673b93bc9885fdacfc352032725c87",
+          "display_name": "0x2443...5c87",
+          "totals_by_asset": [
+            {
+              "symbol": "SENDIT",
+              "amount": 46500000.0
+            },
+            {
+              "symbol": "USDC",
+              "amount": 3200.0
+            },
+            {
+              "symbol": "ETH",
+              "amount": 1.0
+            }
+          ]
+        },
+        {
+          "address": "0x576950a0ae9c6c134a381fb4cf245e478e82ecab",
+          "display_name": "0x5769...ecab",
+          "totals_by_asset": [
+            {
+              "symbol": "SENDIT",
+              "amount": 38888888.885
+            }
+          ]
+        },
+        {
+          "address": "0xe63617c62f18dbc7eff3d7c9eb8bac4d1c2adecc",
+          "display_name": "0xe636...decc",
+          "totals_by_asset": [
+            {
+              "symbol": "SENDIT",
+              "amount": 38888888.885
+            }
+          ]
+        },
+        {
+          "address": "0xa903c06bf35286f6d1cdad25396748353979a44c",
+          "display_name": "0xa903...a44c",
+          "totals_by_asset": [
+            {
+              "symbol": "SENDIT",
+              "amount": 12881837.0
+            }
+          ]
+        },
+        {
+          "address": "0xe5f6202ff7ddc5273c249073865bc6f4d5d68beb",
+          "display_name": "0xe5f6...8beb",
+          "totals_by_asset": [
+            {
+              "symbol": "USDC",
+              "amount": 19885.0
+            }
+          ]
+        }
+      ],
+      "top_projects": [],
+      "top_proposals": [
+        {
+          "archive_id": "gnars-base-36",
+          "proposal_number": 36,
+          "title": "Maryhill Fall RVOD Freeride Sponsorship",
+          "status": "executed",
+          "totals_by_asset": [
+            {
+              "symbol": "0X09E938",
+              "amount": 950000000.0
+            }
+          ]
+        },
+        {
+          "archive_id": "gnars-base-35",
+          "proposal_number": 35,
+          "title": "Salt Spring Slasher Sponsorship",
+          "status": "executed",
+          "totals_by_asset": [
+            {
+              "symbol": "0X09E938",
+              "amount": 625000000.0
+            }
+          ]
+        },
+        {
+          "archive_id": "gnars-base-61",
+          "proposal_number": 61,
+          "title": "Bernardo Nassar renewal propososal V2 (Bodyboarder)",
+          "status": "executed",
+          "totals_by_asset": [
+            {
+              "symbol": "SENDIT",
+              "amount": 119569120.28725314
+            },
+            {
+              "symbol": "USDC",
+              "amount": 2650.0
+            }
+          ]
+        },
+        {
+          "archive_id": "gnars-base-57",
+          "proposal_number": 57,
+          "title": "Create a Round in Rounds.wtf for sharing Gnarly Media created in 2024",
+          "status": "executed",
+          "totals_by_asset": [
+            {
+              "symbol": "SENDIT",
+              "amount": 85879900.0
+            }
+          ]
+        },
+        {
+          "archive_id": "gnars-base-12",
+          "proposal_number": 12,
+          "title": "Fund the Community and Tech Pods with Sendit",
+          "status": "executed",
+          "totals_by_asset": [
+            {
+              "symbol": "SENDIT",
+              "amount": 77777777.77
+            }
+          ]
+        },
+        {
+          "archive_id": "gnars-base-63",
+          "proposal_number": 63,
+          "title": "Dave Bachinsky » 1 Year Sponsorship Proposal ",
+          "status": "executed",
+          "totals_by_asset": [
+            {
+              "symbol": "SENDIT",
+              "amount": 46500000.0
+            },
+            {
+              "symbol": "USDC",
+              "amount": 3200.0
+            },
+            {
+              "symbol": "ETH",
+              "amount": 1.0
+            }
+          ]
+        },
+        {
+          "archive_id": "gnars-base-65",
+          "proposal_number": 65,
+          "title": "Reimbursement Proposal for Benbodhi",
+          "status": "executed",
+          "totals_by_asset": [
+            {
+              "symbol": "SENDIT",
+              "amount": 12881837.0
+            }
+          ]
+        },
+        {
+          "archive_id": "gnars-base-32",
+          "proposal_number": 32,
+          "title": " Gnarly TPM Shredder Team",
+          "status": "executed",
+          "totals_by_asset": [
+            {
+              "symbol": "USDC",
+              "amount": 16116.0
+            }
+          ]
+        }
+      ],
+      "top_people": [
+        {
+          "address": "0x09e938e239803c78507abd5687a97acfea1188ea",
+          "display_name": "0x09e9...88ea",
+          "received_totals": [
+            {
+              "symbol": "0X09E938",
+              "amount": 1575000000.0
+            }
+          ],
+          "authored_count": 3,
+          "delivery_count": 0,
+          "score": 1575000006.0,
+          "tribes": [
+            "contributor",
+            "delegate",
+            "holder",
+            "proposer",
+            "recipient"
+          ]
+        },
+        {
+          "address": "0xbc94f5266c5f78677b98238fc93d825d25abfc12",
+          "display_name": "0xbc94...fc12",
+          "received_totals": [
+            {
+              "symbol": "SENDIT",
+              "amount": 119569120.28725314
+            },
+            {
+              "symbol": "USDC",
+              "amount": 2650.0
+            }
+          ],
+          "authored_count": 0,
+          "delivery_count": 0,
+          "score": 119569120.2873,
+          "tribes": [
+            "contributor",
+            "recipient"
+          ]
+        },
+        {
+          "address": "0x41cb654d1f47913acab158a8199191d160dabe4a",
+          "display_name": "0x41cb...be4a",
+          "received_totals": [
+            {
+              "symbol": "SENDIT",
+              "amount": 85879900.0
+            }
+          ],
+          "authored_count": 20,
+          "delivery_count": 0,
+          "score": 85879940.0,
+          "tribes": [
+            "athlete",
+            "contributor",
+            "proposer",
+            "recipient"
+          ]
+        },
+        {
+          "address": "0x244306053c673b93bc9885fdacfc352032725c87",
+          "display_name": "0x2443...5c87",
+          "received_totals": [
+            {
+              "symbol": "SENDIT",
+              "amount": 46500000.0
+            },
+            {
+              "symbol": "USDC",
+              "amount": 3200.0
+            },
+            {
+              "symbol": "ETH",
+              "amount": 1.0
+            }
+          ],
+          "authored_count": 0,
+          "delivery_count": 0,
+          "score": 46500000.0,
+          "tribes": [
+            "contributor",
+            "recipient"
+          ]
+        },
+        {
+          "address": "0x576950a0ae9c6c134a381fb4cf245e478e82ecab",
+          "display_name": "0x5769...ecab",
+          "received_totals": [
+            {
+              "symbol": "SENDIT",
+              "amount": 38888888.885
+            }
+          ],
+          "authored_count": 0,
+          "delivery_count": 0,
+          "score": 38888888.885,
+          "tribes": [
+            "contributor",
+            "delegate",
+            "holder",
+            "recipient"
+          ]
+        },
+        {
+          "address": "0xe63617c62f18dbc7eff3d7c9eb8bac4d1c2adecc",
+          "display_name": "0xe636...decc",
+          "received_totals": [
+            {
+              "symbol": "SENDIT",
+              "amount": 38888888.885
+            }
+          ],
+          "authored_count": 0,
+          "delivery_count": 0,
+          "score": 38888888.885,
+          "tribes": [
+            "contributor",
+            "delegate",
+            "holder",
+            "recipient"
+          ]
+        },
+        {
+          "address": "0xa903c06bf35286f6d1cdad25396748353979a44c",
+          "display_name": "0xa903...a44c",
+          "received_totals": [
+            {
+              "symbol": "SENDIT",
+              "amount": 12881837.0
+            }
+          ],
+          "authored_count": 0,
+          "delivery_count": 0,
+          "score": 12881837.0,
+          "tribes": [
+            "contributor",
+            "recipient"
+          ]
+        },
+        {
+          "address": "0xe5f6202ff7ddc5273c249073865bc6f4d5d68beb",
+          "display_name": "0xe5f6...8beb",
+          "received_totals": [
+            {
+              "symbol": "USDC",
+              "amount": 19885.0
+            }
+          ],
+          "authored_count": 0,
+          "delivery_count": 0,
+          "score": 19885.0,
+          "tribes": [
+            "contributor",
+            "recipient"
+          ]
+        },
+        {
+          "address": "0xe1b91eb3f3747d00485e95da79041e6d9d399641",
+          "display_name": "0xe1b9...9641",
+          "received_totals": [
+            {
+              "symbol": "USDC",
+              "amount": 16116.0
+            }
+          ],
+          "authored_count": 0,
+          "delivery_count": 0,
+          "score": 16116.0,
+          "tribes": [
+            "contributor",
+            "recipient"
+          ]
+        },
+        {
+          "address": "0x3f5111e64c0b96cc6b436151da820a3f979ef7f2",
+          "display_name": "0x3f51...f7f2",
+          "received_totals": [
+            {
+              "symbol": "USDC",
+              "amount": 12000.0
+            }
+          ],
+          "authored_count": 0,
+          "delivery_count": 0,
+          "score": 12000.0,
+          "tribes": [
+            "contributor",
+            "recipient"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -22,9 +22,21 @@ export function shortAddress(address: string): string {
 
 export function titleCase(value: string): string {
   return value
-    .split(/[\s-]+/)
+    .split(/[\s_-]+/)
     .filter(Boolean)
     .map((chunk) => chunk.charAt(0).toUpperCase() + chunk.slice(1))
+    .join(" ");
+}
+
+export function formatLabel(value: string | null | undefined): string {
+  if (!value) {
+    return "";
+  }
+  return value
+    .replace(/[_-]+/g, " ")
+    .split(/\s+/)
+    .filter(Boolean)
+    .map((chunk) => (/^[A-Z0-9]+$/.test(chunk) ? chunk : chunk.charAt(0).toUpperCase() + chunk.slice(1)))
     .join(" ");
 }
 

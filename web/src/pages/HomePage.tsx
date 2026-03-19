@@ -1,26 +1,38 @@
+import { useDeferredValue, useMemo } from "react";
 import { ActivityChart } from "../components/ActivityChart";
+import { FeedStream } from "../components/FeedStream";
+import { FilterToolbar } from "../components/FilterToolbar";
 import { NetworkMap } from "../components/NetworkMap";
 import { SiteLayout } from "../components/SiteLayout";
-import { TimelineFeed } from "../components/TimelineFeed";
+import { formatAmount, formatLabel, formatNumber } from "../lib/format";
+import { filterFeed } from "../lib/filtering";
+import { useUrlState } from "../lib/urlState";
 import type { HomePageProps, Meta } from "../types";
 
 export function HomePage({ meta, props }: { meta: Meta; props: HomePageProps }) {
+  const [filters, setFilters] = useUrlState({
+    kind: "all",
+    status: "all",
+    window: "30d",
+    search: "",
+  });
+  const deferredSearch = useDeferredValue(filters.search);
+  const feed = useMemo(
+    () => filterFeed(props.feed, { ...filters, search: deferredSearch }).slice(0, 80),
+    [deferredSearch, filters, props.feed],
+  );
+
   return (
     <SiteLayout meta={meta}>
-      <section className="hero-panel atlas-hero">
+      <section className="hero-panel compact live-hero">
         <div>
-          <span className="eyebrow">Economic Map</span>
+          <span className="eyebrow">Live Surface</span>
           <h1>{props.hero.title}</h1>
           <p>{props.hero.description}</p>
-          <div className="tag-row">
-            <span className="tag">As of {props.asOf.slice(0, 10)}</span>
-            <span className="tag">Daily Static</span>
-            <span className="tag">Lab + Field</span>
-          </div>
         </div>
-        <div className="metric-grid">
+        <div className="status-rail">
           {props.metrics.map((metric) => (
-            <article key={metric.label} className="metric-card">
+            <article key={metric.label} className="status-cell">
               <span>{metric.label}</span>
               <strong>{metric.value}</strong>
               <small>{metric.detail}</small>
@@ -29,74 +41,171 @@ export function HomePage({ meta, props }: { meta: Meta; props: HomePageProps }) 
         </div>
       </section>
 
-      <section className="section-block">
-        <div className="section-head">
-          <span className="eyebrow">Economic Map</span>
-          <h2>Treasury at the root, proposals and projects in the middle, people on the edge.</h2>
+      <FilterToolbar
+        searchValue={filters.search}
+        searchPlaceholder="search the live feed"
+        onSearchChange={(search) => setFilters({ search })}
+        groups={[
+          {
+            label: "Kind",
+            value: filters.kind,
+            options: props.facets.kind,
+            onChange: (kind) => setFilters({ kind }),
+          },
+          {
+            label: "Status",
+            value: filters.status,
+            options: props.facets.status,
+            onChange: (status) => setFilters({ status }),
+          },
+          {
+            label: "Window",
+            value: filters.window,
+            options: [
+              { value: "30d", label: "30d", count: 0 },
+              { value: "6m", label: "6m", count: 0 },
+              { value: "all", label: "All Time", count: 0 },
+            ],
+            onChange: (window) => setFilters({ window }),
+          },
+        ]}
+      />
+
+      <section className="page-main-grid">
+        <div className="page-feed-column">
+          <div className="section-head compact-head">
+            <span className="eyebrow">Live Feed</span>
+            <h2>Proposal events, treasury routes, updates, media proof, and community signals in one ordered stream.</h2>
+          </div>
+          <FeedStream items={feed} />
         </div>
-        <NetworkMap scene={props.economicMap} mode="home" />
+
+        <aside className="page-side-column">
+          <article className="leaderboard-card mini-map-panel">
+            <div className="section-head compact-head">
+              <span className="eyebrow">Map</span>
+              <h2>Treasury at the root, proposals and projects in the middle, people on the edge.</h2>
+            </div>
+            <NetworkMap scene={props.economicMap} mode="home" />
+          </article>
+
+          <article className="leaderboard-card">
+            <div className="section-head compact-head">
+              <span className="eyebrow">Signal Window</span>
+              <h2>{props.signalWindow.label}</h2>
+            </div>
+            <div className="stack-list compact">
+              <article className="mini-row static">
+                <span>Active Proposals</span>
+                <strong>{props.signalWindow.metrics.active_proposals_now}</strong>
+              </article>
+              <article className="mini-row static">
+                <span>Routed Capital</span>
+                <strong>{props.signalWindow.metrics.payouts_by_asset.map((item) => formatAmount(item.symbol, item.amount)).join(" + ") || "0"}</strong>
+              </article>
+              <article className="mini-row static">
+                <span>Delivery Signals</span>
+                <strong>{props.signalWindow.metrics.delivery_count}</strong>
+              </article>
+            </div>
+          </article>
+
+          <article className="leaderboard-card">
+            <div className="section-head compact-head">
+              <span className="eyebrow">Concentration</span>
+              <h2>Capital is broad in narrative and narrow in routing.</h2>
+            </div>
+            <div className="stack-list compact">
+              {props.insights.recipient_concentration.map((asset) => (
+                <article key={asset.symbol} className="mini-row static">
+                  <span>{asset.symbol}</span>
+                  <strong>{asset.top10_share_pct ?? 0}% top-10 share</strong>
+                </article>
+              ))}
+            </div>
+          </article>
+
+          <ActivityChart
+            scene={props.activity}
+            title="Signal Curve"
+            detail="Governance, treasury routes, and deliveries on one shared clock."
+          />
+        </aside>
       </section>
 
-      <section className="section-block two-up">
+      <section className="section-block dense-two-up">
         <div>
-          <div className="section-head">
-            <span className="eyebrow">Signals</span>
-            <h2>Recent activity windows, proposal momentum, and routed capital.</h2>
+          <div className="section-head compact-head">
+            <span className="eyebrow">Top People</span>
+            <h2>Operators, athletes, and builders with visible routing and proof.</h2>
           </div>
-          <div className="signal-grid">
-            <article className="list-card">
-              <div className="timeline-meta">
-                <span>{props.signalWindow.label}</span>
-                <span>{props.signalWindow.metrics.active_proposals_now} active now</span>
-              </div>
-              <h3>{props.signalWindow.metrics.payout_count} treasury routes</h3>
-              <p>
-                {props.signalWindow.metrics.payouts_by_asset.map((item) => `${item.amount} ${item.symbol}`).join(" + ")} routed
-                across {props.signalWindow.metrics.recipient_count} recipients and {props.signalWindow.metrics.delivery_count} delivery signals.
-              </p>
-            </article>
-            <article className="leaderboard-card">
-              <h3>Top Recipients</h3>
-              <div className="stack-list compact">
-                {props.signalWindow.top_recipients.slice(0, 5).map((item) => (
-                  <article key={item.address} className="mini-row static">
-                    <span>{item.totals_by_asset.map((asset) => `${asset.amount} ${asset.symbol}`).join(" + ")}</span>
-                    <strong>{item.display_name}</strong>
-                  </article>
-                ))}
-              </div>
-            </article>
-            <article className="leaderboard-card">
-              <h3>Top Projects</h3>
-              <div className="stack-list compact">
-                {props.signalWindow.top_projects.slice(0, 5).map((item) => (
-                  <article key={item.project_id} className="mini-row static">
-                    <span>{item.totals_by_asset.map((asset) => `${asset.amount} ${asset.symbol}`).join(" + ")}</span>
-                    <strong>{item.project_name}</strong>
-                  </article>
-                ))}
-              </div>
-            </article>
+          <div className="stack-list compact">
+            {props.featuredCommunity.map((person) => (
+              <a key={person.slug} className="mini-row feed-link" href={person.href}>
+                <span>{person.tribes.join(" / ")}</span>
+                <strong>{person.displayName}</strong>
+              </a>
+            ))}
           </div>
         </div>
-        <ActivityChart
-          scene={props.activity}
-          title="Daily Signal Curve"
-          detail="Governance events, treasury routes, and delivery proofs on one shared timeline."
-        />
+        <div>
+          <div className="section-head compact-head">
+            <span className="eyebrow">Category Spend</span>
+            <h2>Where routed value clusters by workstream logic.</h2>
+          </div>
+          <div className="stack-list compact">
+            {props.insights.spending_by_category.slice(0, 6).map((row) => (
+              <article key={row.category} className="mini-row static">
+                <span>{row.route_count} routes</span>
+                <strong>
+                  {row.category} {row.totals_by_asset.length ? `- ${row.totals_by_asset.map((item) => formatAmount(item.symbol, item.amount)).join(" + ")}` : ""}
+                </strong>
+              </article>
+            ))}
+          </div>
+        </div>
       </section>
 
-      <section className="section-block two-up">
+      <section className="section-block dense-three-up">
+        {props.leaderboards.map((board) => (
+          <article key={board.title} className="leaderboard-card">
+            <h3>{board.title}</h3>
+            <div className="stack-list compact">
+              {board.items.map((item) => (
+                <a key={item.href} className="mini-row" href={item.href}>
+                  <span>{item.label}</span>
+                  <strong>{item.value}</strong>
+                </a>
+              ))}
+            </div>
+          </article>
+        ))}
+        <article className="leaderboard-card">
+          <h3>Proof Coverage</h3>
+          <div className="stack-list compact">
+            {props.insights.workstream_performance.slice(0, 5).map((project) => (
+              <article key={project.project_id} className="mini-row static">
+                <span>{project.delivery_count} deliveries</span>
+                <strong>
+                  {project.name} - {project.proof_coverage_pct ?? 0}%
+                </strong>
+              </article>
+            ))}
+          </div>
+        </article>
+      </section>
+
+      <section className="section-block dense-two-up">
         <div>
-          <div className="section-head">
+          <div className="section-head compact-head">
             <span className="eyebrow">Field Notes</span>
-            <h2>Editorial annotations for the public economic graph.</h2>
+            <h2>Short editorial annotations translated from the public economic graph.</h2>
           </div>
-          <div className="stack-list">
+          <div className="stack-list compact">
             {props.fieldNotes.map((note) => (
-              <article key={note.note_id} className="list-card">
+              <article key={note.note_id} className="list-card dense-card">
                 <div className="timeline-meta">
-                  <span>{note.kind}</span>
+                  <span>{formatLabel(note.kind)}</span>
                   <span>{note.window_id}</span>
                 </div>
                 <h3>{note.title}</h3>
@@ -106,105 +215,20 @@ export function HomePage({ meta, props }: { meta: Meta; props: HomePageProps }) 
           </div>
         </div>
         <div>
-          <div className="section-head">
+          <div className="section-head compact-head">
             <span className="eyebrow">Now</span>
-            <h2>A living chronology of proposals, payouts, and public proof.</h2>
+            <h2>{formatNumber(feed.length)} filtered events visible as of {props.analyticsAsOf.slice(0, 10)}.</h2>
           </div>
-          <TimelineFeed items={props.timeline} />
-        </div>
-      </section>
-
-      <section className="section-block">
-        <div className="section-head">
-          <span className="eyebrow">Community</span>
-          <h2>Profiles as economic nodes with governance history and treasury lineage.</h2>
-        </div>
-        <div className="dense-grid">
-          {props.featuredCommunity.map((person) => (
-            <a key={person.slug} className="feature-card" href={person.href}>
-              <div className="tag-row">
-                {person.tribes.map((tribe) => (
-                  <span key={tribe} className="tag">
-                    {tribe}
-                  </span>
-                ))}
-              </div>
-              <h3>{person.displayName}</h3>
-              <p>{person.subtitle}</p>
-              <div className="feature-stats">
-                <span>{person.totalReceivedLabel}</span>
-                <span>{person.approvedProposals} passed</span>
-                <span>{person.budgetManagedLabel}</span>
-              </div>
-            </a>
-          ))}
-        </div>
-      </section>
-
-      <section className="section-block two-up">
-        <div>
-          <div className="section-head">
-            <span className="eyebrow">Gnars World</span>
-            <h2>Projects are treated as delivery systems, not portfolio thumbnails.</h2>
-          </div>
-          <div className="masonry-grid">
-            {props.featuredProjects.map((project) => (
-              <a key={project.id} className="project-card" href={project.href}>
-                <span className="project-status">{project.status}</span>
-                <h3>{project.title}</h3>
-                <p>{project.summary}</p>
-                <div className="project-meta">
-                  <span>{project.category}</span>
-                  <span>{project.proposalTag}</span>
-                  <span>{project.budgetLabel}</span>
-                </div>
+          <div className="stack-list compact">
+            {props.governance.slice(0, 6).map((proposal) => (
+              <a key={proposal.archiveId} className="mini-row" href={proposal.href}>
+                <span>
+                  {formatLabel(proposal.status)} / {formatLabel(proposal.category)}
+                </span>
+                <strong>{proposal.numberLabel} - {proposal.title}</strong>
               </a>
             ))}
           </div>
-        </div>
-        <div>
-          <div className="section-head">
-            <span className="eyebrow">Governance Pulse</span>
-            <h2>Proposal history as a routing layer for capital and labor.</h2>
-          </div>
-          <div className="stack-list">
-            {props.governance.map((proposal) => (
-              <a key={proposal.archiveId} className="list-card" href={proposal.href}>
-                <div className="timeline-meta">
-                  <span>{proposal.numberLabel}</span>
-                  <span>{proposal.status}</span>
-                </div>
-                <h3>{proposal.title}</h3>
-                <p>{proposal.summary}</p>
-                <div className="feature-stats">
-                  <span>{proposal.proposerLabel}</span>
-                  <span>{proposal.budgetLabel}</span>
-                </div>
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section-block">
-        <div className="section-head">
-          <span className="eyebrow">Leaderboards</span>
-          <h2>Read treasury concentration without losing the human layer.</h2>
-        </div>
-        <div className="leaderboard-grid">
-          {props.leaderboards.map((board) => (
-            <article key={board.title} className="leaderboard-card">
-              <h3>{board.title}</h3>
-              <div className="stack-list compact">
-                {board.items.map((item) => (
-                  <a key={item.href} className="mini-row" href={item.href}>
-                    <span>{item.label}</span>
-                    <strong>{item.value}</strong>
-                  </a>
-                ))}
-              </div>
-            </article>
-          ))}
         </div>
       </section>
     </SiteLayout>

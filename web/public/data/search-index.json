@@ -1,6 +1,6 @@
 {
   "dataset": "search_index",
-  "as_of": "2026-03-19T15:52:51.223Z",
+  "as_of": "2026-03-19T17:36:47.804Z",
   "version": 1,
   "records": [
     {
@@ -28,12 +28,6 @@
       "summary": "community member"
     },
     {
-      "title": "0xbb4e...ef62",
-      "href": "/community/0xbb4e-ef62/",
-      "kind": "Community",
-      "summary": "community member"
-    },
-    {
       "title": "0x3f51...f7f2",
       "href": "/community/0x3f51-f7f2/",
       "kind": "Community",
@@ -42,24 +36,6 @@
     {
       "title": "0x7351...53f8",
       "href": "/community/0x7351-53f8/",
-      "kind": "Community",
-      "summary": "community member"
-    },
-    {
-      "title": "0x33bb...63ea",
-      "href": "/community/0x33bb-63ea/",
-      "kind": "Community",
-      "summary": "community member"
-    },
-    {
-      "title": "0xb2b7...5e9d",
-      "href": "/community/0xb2b7-5e9d/",
-      "kind": "Community",
-      "summary": "community member"
-    },
-    {
-      "title": "0x709a...a68a",
-      "href": "/community/0x709a-a68a/",
       "kind": "Community",
       "summary": "community member"
     },
@@ -100,6 +76,12 @@
       "summary": "community member"
     },
     {
+      "title": "0xbb4e...ef62",
+      "href": "/community/0xbb4e-ef62/",
+      "kind": "Community",
+      "summary": "community member"
+    },
+    {
       "title": "0xe8b2...599d",
       "href": "/community/0xe8b2-599d/",
       "kind": "Community",
@@ -112,14 +94,14 @@
       "summary": "community member"
     },
     {
-      "title": "0xca8a...e986",
-      "href": "/community/0xca8a-e986/",
+      "title": "0x709a...a68a",
+      "href": "/community/0x709a-a68a/",
       "kind": "Community",
       "summary": "community member"
     },
     {
-      "title": "0x43c3...7970",
-      "href": "/community/0x43c3-7970/",
+      "title": "0xb2b7...5e9d",
+      "href": "/community/0xb2b7-5e9d/",
       "kind": "Community",
       "summary": "community member"
     },
@@ -148,12 +130,6 @@
       "summary": "community member"
     },
     {
-      "title": "0xd2d1...b968",
-      "href": "/community/0xd2d1-b968/",
-      "kind": "Community",
-      "summary": "community member"
-    },
-    {
       "title": "0x2858...960f",
       "href": "/community/0x2858-960f/",
       "kind": "Community",
@@ -166,10 +142,10 @@
       "summary": "community member"
     },
     {
-      "title": "fcarva",
-      "href": "/community/fcarva/",
+      "title": "0x43c3...7970",
+      "href": "/community/0x43c3-7970/",
       "kind": "Community",
-      "summary": "Documentation, governance structure, QA and public data operations for Gnars DAO."
+      "summary": "community member"
     },
     {
       "title": "0xddd7...645f",
@@ -178,32 +154,14 @@
       "summary": "community member"
     },
     {
-      "title": "r4topunk",
-      "href": "/community/r4topunk/",
+      "title": "0xd2d1...b968",
+      "href": "/community/0xd2d1-b968/",
       "kind": "Community",
-      "summary": "Builds Gnars web surfaces and operational data pipelines."
-    },
-    {
-      "title": "vlad",
-      "href": "/community/vlad/",
-      "kind": "Community",
-      "summary": "Maintains AI native systems, infra and governance tooling for Gnars operations."
+      "summary": "community member"
     },
     {
       "title": "0xeed9...a282",
       "href": "/community/0xeed9-a282/",
-      "kind": "Community",
-      "summary": "community member"
-    },
-    {
-      "title": "0x057c...2fde",
-      "href": "/community/0x057c-2fde/",
-      "kind": "Community",
-      "summary": "community member"
-    },
-    {
-      "title": "0x41cb...be4a",
-      "href": "/community/0x41cb-be4a/",
       "kind": "Community",
       "summary": "community member"
     },
@@ -214,26 +172,20 @@
       "summary": "community member"
     },
     {
+      "title": "0x33bb...63ea",
+      "href": "/community/0x33bb-63ea/",
+      "kind": "Community",
+      "summary": "community member"
+    },
+    {
       "title": "0x5979...8db0",
       "href": "/community/0x5979-8db0/",
       "kind": "Community",
       "summary": "community member"
     },
     {
-      "title": "0x05c7...73bd",
-      "href": "/community/0x05c7-73bd/",
-      "kind": "Community",
-      "summary": "community member"
-    },
-    {
       "title": "0xedc1...e7e1",
       "href": "/community/0xedc1-e7e1/",
-      "kind": "Community",
-      "summary": "community member"
-    },
-    {
-      "title": "0x4d16...ecb1",
-      "href": "/community/0x4d16-ecb1/",
       "kind": "Community",
       "summary": "community member"
     },
@@ -298,6 +250,12 @@
       "summary": "community member"
     },
     {
+      "title": "vlad",
+      "href": "/community/vlad/",
+      "kind": "Community",
+      "summary": "Maintains AI native systems, infra and governance tooling for Gnars operations."
+    },
+    {
       "title": "0xdcf3...7a19",
       "href": "/community/0xdcf3-7a19/",
       "kind": "Community",
@@ -346,6 +304,12 @@
       "summary": "community member"
     },
     {
+      "title": "0x057c...2fde",
+      "href": "/community/0x057c-2fde/",
+      "kind": "Community",
+      "summary": "community member"
+    },
+    {
       "title": "0x1f5d...d8c5",
       "href": "/community/0x1f5d-d8c5/",
       "kind": "Community",
@@ -374,6 +338,12 @@
       "href": "/community/0xbfed-ea17/",
       "kind": "Community",
       "summary": "community member"
+    },
+    {
+      "title": "r4topunk",
+      "href": "/community/r4topunk/",
+      "kind": "Community",
+      "summary": "Builds Gnars web surfaces and operational data pipelines."
     },
     {
       "title": "0xdfb6...d939",
@@ -558,6 +528,12 @@
     {
       "title": "0xdb1c...2cdf",
       "href": "/community/0xdb1c-2cdf/",
+      "kind": "Community",
+      "summary": "community member"
+    },
+    {
+      "title": "0x4d16...ecb1",
+      "href": "/community/0x4d16-ecb1/",
       "kind": "Community",
       "summary": "community member"
     },
@@ -978,6 +954,12 @@
     {
       "title": "0x0495...12eb",
       "href": "/community/0x0495-12eb/",
+      "kind": "Community",
+      "summary": "community member"
+    },
+    {
+      "title": "0x05c7...73bd",
+      "href": "/community/0x05c7-73bd/",
       "kind": "Community",
       "summary": "community member"
     },
@@ -1436,6 +1418,12 @@
       "href": "/community/0xfe35-4c40/",
       "kind": "Community",
       "summary": "community member"
+    },
+    {
+      "title": "fcarva",
+      "href": "/community/fcarva/",
+      "kind": "Community",
+      "summary": "Documentation, governance structure, QA and public data operations for Gnars DAO."
     },
     {
       "title": "0x0421...5de6",
@@ -6330,6 +6318,12 @@
     {
       "title": "0x3dfd...da49",
       "href": "/community/0x3dfd-da49/",
+      "kind": "Community",
+      "summary": "community member"
+    },
+    {
+      "title": "0x41cb...be4a",
+      "href": "/community/0x41cb-be4a/",
       "kind": "Community",
       "summary": "community member"
     },

@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["dataset", "analytics_as_of", "as_of", "version", "records"],
+  "properties": {
+    "dataset": { "const": "treasury_snapshots" },
+    "analytics_as_of": { "type": "string" },
+    "as_of": { "type": "string" },
+    "version": { "type": "integer" },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["snapshot_id", "date", "wallet_address", "wallet_label", "homepage_label_usd", "total_value_usd", "display_widget_usd", "assets", "data_quality_note"],
+        "properties": {
+          "snapshot_id": { "type": "string" },
+          "date": { "type": "string" },
+          "wallet_address": { "type": "string" },
+          "wallet_label": { "type": "string" },
+          "homepage_label_usd": { "type": "number" },
+          "total_value_usd": { "type": "number" },
+          "display_widget_usd": { "type": "number" },
+          "assets": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["symbol", "amount", "value_usd"],
+              "properties": {
+                "symbol": { "type": "string" },
+                "amount": { "type": "number" },
+                "value_usd": { "type": "number" }
+              },
+              "additionalProperties": false
+            }
+          },
+          "data_quality_note": { "type": ["string", "null"] }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

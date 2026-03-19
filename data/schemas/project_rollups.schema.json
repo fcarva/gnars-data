@@ -4,12 +4,16 @@
   "required": [
     "dataset",
     "as_of",
+    "analytics_as_of",
     "version",
     "records"
   ],
   "properties": {
     "dataset": {
       "const": "project_rollups"
+    },
+    "analytics_as_of": {
+      "type": "string"
     },
     "as_of": {
       "type": "string"
@@ -121,6 +125,48 @@
           },
           "notes": {
             "type": "string"
+          },
+          "proposal_lineage": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "scope_labels": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "branding_tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "contributor_addresses": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "delivery_count": {
+            "type": "integer"
+          },
+          "proof_count": {
+            "type": "integer"
+          },
+          "proof_coverage_pct": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "related_proof_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           }
         },
         "additionalProperties": false

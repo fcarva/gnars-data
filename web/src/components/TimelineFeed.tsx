@@ -1,3 +1,4 @@
+import { formatLabel } from "../lib/format";
 import type { TimelineCard } from "../types";
 
 export function TimelineFeed({ items }: { items: TimelineCard[] }) {
@@ -7,8 +8,8 @@ export function TimelineFeed({ items }: { items: TimelineCard[] }) {
         <article key={item.eventId} className="timeline-card">
           <div className="timeline-meta">
             <span>{item.dateLabel}</span>
-            <span>{item.kind}</span>
-            <span>{item.status}</span>
+            <span>{formatLabel(item.kind)}</span>
+            <span>{formatLabel(item.status)}</span>
           </div>
           <h3>{item.title}</h3>
           <p>{item.summary}</p>

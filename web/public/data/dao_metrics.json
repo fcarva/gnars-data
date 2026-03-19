@@ -5,15 +5,15 @@
   "overview": {
     "proposal_count": 193,
     "active_proposal_count": 3,
-    "successful_proposal_count": 90,
+    "successful_proposal_count": 155,
     "closed_outcome_count": 190,
-    "proposal_success_rate_pct": 47.37,
-    "people_count": 1172,
+    "proposal_success_rate_pct": 81.58,
+    "people_count": 1171,
     "holders_count": 1011,
     "delegates_count": 992,
-    "contributors_count": 91,
+    "contributors_count": 90,
     "athletes_count": 35,
-    "recipients_count": 49,
+    "recipients_count": 42,
     "proposers_count": 68,
     "unique_voters_count": 436,
     "avg_votes_per_proposal": 20.25,
@@ -25,22 +25,22 @@
     },
     "treasury_assets_count": 6,
     "treasury_total_value_usd": 45702.279909669734,
-    "outflows_eth": 25.81838154,
-    "outflows_usdc": 194246.0,
+    "outflows_eth": 19.01823954,
+    "outflows_usdc": 148083.0,
     "outflows_gnars": 0,
-    "fungible_transfer_count": 81,
-    "nft_transfer_count": 37,
-    "routed_proposal_count": 64,
-    "routed_proposal_share_pct": 33.16,
-    "top10_recipient_concentration_usdc_pct": 63.17,
-    "top10_recipient_concentration_eth_pct": 89.15,
+    "fungible_transfer_count": 52,
+    "nft_transfer_count": 14,
+    "routed_proposal_count": 43,
+    "routed_proposal_share_pct": 22.28,
+    "top10_recipient_concentration_usdc_pct": 69.54,
+    "top10_recipient_concentration_eth_pct": 98.94,
     "proposals_30d": 4,
     "successful_proposals_30d": 0,
-    "payout_routes_30d": 9,
+    "payout_routes_30d": 0,
     "deliveries_30d": 3,
-    "active_recipients_30d": 5,
+    "active_recipients_30d": 0,
     "days_since_last_proposal": 0,
-    "days_since_last_payout": 0,
+    "days_since_last_payout": 130,
     "days_since_last_delivery": 1,
     "proposal_status_counts": {
       "active": 3,
@@ -105,24 +105,10 @@
         "label": "ETH received"
       },
       {
-        "display_name": "0x33bb...63ea",
-        "address": "0x33bbf6e27ce7b254e537bcb9f3b00cd1451563ea",
-        "slug": "0x33bb-63ea",
-        "value": 3.390042,
-        "label": "ETH received"
-      },
-      {
         "display_name": "0xe8b2...599d",
         "address": "0xe8b290f49c2fb50ab018d89626e77c2321dc599d",
         "slug": "0xe8b2-599d",
         "value": 3.0,
-        "label": "ETH received"
-      },
-      {
-        "display_name": "0xe5f6...8beb",
-        "address": "0xe5f6202ff7ddc5273c249073865bc6f4d5d68beb",
-        "slug": "0xe5f6-8beb",
-        "value": 1.5,
         "label": "ETH received"
       },
       {
@@ -140,17 +126,17 @@
         "label": "ETH received"
       },
       {
+        "display_name": "0x33bb...63ea",
+        "address": "0x33bbf6e27ce7b254e537bcb9f3b00cd1451563ea",
+        "slug": "0x33bb-63ea",
+        "value": 0.99,
+        "label": "ETH received"
+      },
+      {
         "display_name": "0x5979...8db0",
         "address": "0x597960438e28e3b529dcea95c267dc9cfc458db0",
         "slug": "0x5979-8db0",
         "value": 0.8,
-        "label": "ETH received"
-      },
-      {
-        "display_name": "0x05c7...73bd",
-        "address": "0x05c73ecef963fd68a414e713f4b28d9e792c73bd",
-        "slug": "0x05c7-73bd",
-        "value": 0.75,
         "label": "ETH received"
       },
       {
@@ -161,10 +147,24 @@
         "label": "ETH received"
       },
       {
-        "display_name": "r4topunk",
-        "address": "0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d",
-        "slug": "r4topunk",
-        "value": 0.6001,
+        "display_name": "0xedc1...e7e1",
+        "address": "0xedc1a397589a0236c4810883b7d559288a5fe7e1",
+        "slug": "0xedc1-e7e1",
+        "value": 0.43,
+        "label": "ETH received"
+      },
+      {
+        "display_name": "0x9ad8...e1c8",
+        "address": "0x9ad8d2a8ef4bf60a667dd43fcb178bdbd93ae1c8",
+        "slug": "0x9ad8-e1c8",
+        "value": 0.42,
+        "label": "ETH received"
+      },
+      {
+        "display_name": "0xba6e...acf5",
+        "address": "0xba6e1c26be2f8b46d9e7ab7573b99921ee81acf5",
+        "slug": "0xba6e-acf5",
+        "value": 0.2,
         "label": "ETH received"
       }
     ],
@@ -173,7 +173,7 @@
         "display_name": "0xe5f6...8beb",
         "address": "0xe5f6202ff7ddc5273c249073865bc6f4d5d68beb",
         "slug": "0xe5f6-8beb",
-        "value": 24915.0,
+        "value": 19885.0,
         "label": "USDC received"
       },
       {
@@ -181,13 +181,6 @@
         "address": "0xe1b91eb3f3747d00485e95da79041e6d9d399641",
         "slug": "0xe1b9-9641",
         "value": 16116.0,
-        "label": "USDC received"
-      },
-      {
-        "display_name": "0xbb4e...ef62",
-        "address": "0xbb4e936d0f29a515757c518fa883794c4048ef62",
-        "slug": "0xbb4e-ef62",
-        "value": 15964.0,
         "label": "USDC received"
       },
       {
@@ -205,27 +198,6 @@
         "label": "USDC received"
       },
       {
-        "display_name": "0x33bb...63ea",
-        "address": "0x33bbf6e27ce7b254e537bcb9f3b00cd1451563ea",
-        "slug": "0x33bb-63ea",
-        "value": 9686.0,
-        "label": "USDC received"
-      },
-      {
-        "display_name": "0xb2b7...5e9d",
-        "address": "0xb2b7d66bb56ce8ff7838dc8053ff35050ed95e9d",
-        "slug": "0xb2b7-5e9d",
-        "value": 9600.0,
-        "label": "USDC received"
-      },
-      {
-        "display_name": "0x709a...a68a",
-        "address": "0x709a480188cf171b1672438e28bbec3ba2d3a68a",
-        "slug": "0x709a-a68a",
-        "value": 8639.0,
-        "label": "USDC received"
-      },
-      {
         "display_name": "0xc407...3c28",
         "address": "0xc4079dc1f8f84711eee0942c192829f473fc3c28",
         "slug": "0xc407-3c28",
@@ -237,6 +209,34 @@
         "address": "0xfc27b375faf1fbd3f3462044cf810082f042a45b",
         "slug": "0xfc27-a45b",
         "value": 7888.0,
+        "label": "USDC received"
+      },
+      {
+        "display_name": "0x0a7b...442e",
+        "address": "0x0a7b7374d9cba3ac9d31f18b2cd45aac4b3b442e",
+        "slug": "0x0a7b-442e",
+        "value": 7870.0,
+        "label": "USDC received"
+      },
+      {
+        "display_name": "0x459b...69de",
+        "address": "0x459b40643251f10d93334d91cf256f97d31f69de",
+        "slug": "0x459b-69de",
+        "value": 7500.0,
+        "label": "USDC received"
+      },
+      {
+        "display_name": "0x9d4e...937f",
+        "address": "0x9d4e88f7f2ccbb005426c1ed91eb2bb7d235937f",
+        "slug": "0x9d4e-937f",
+        "value": 6969.0,
+        "label": "USDC received"
+      },
+      {
+        "display_name": "0xed7b...13f4",
+        "address": "0xed7be8b630924f437c28af58a99cc63fc80413f4",
+        "slug": "0xed7b-13f4",
+        "value": 6850.0,
         "label": "USDC received"
       }
     ],
@@ -547,124 +547,124 @@
     ],
     "payouts": [
       {
-        "ledger_id": "gnars-base-119:2",
-        "archive_id": "gnars-base-119",
-        "asset_symbol": "USDC",
-        "amount": 2900.0,
-        "recipient_display_name": "0xe5f6...8beb",
-        "recipient_address": "0xe5f6202ff7ddc5273c249073865bc6f4d5d68beb",
-        "project_id": null,
-        "proposal_end_at": "2026-03-21T21:37:55.000Z"
-      },
-      {
-        "ledger_id": "gnars-base-119:1",
-        "archive_id": "gnars-base-119",
+        "ledger_id": "gnars-base-104:1",
+        "archive_id": "gnars-base-104",
         "asset_symbol": "ETH",
-        "amount": 0.5,
-        "recipient_display_name": "0xe5f6...8beb",
-        "recipient_address": "0xe5f6202ff7ddc5273c249073865bc6f4d5d68beb",
+        "amount": 0.42,
+        "recipient_display_name": "0x9ad8...e1c8",
+        "recipient_address": "0x9ad8d2a8ef4bf60a667dd43fcb178bdbd93ae1c8",
         "project_id": null,
-        "proposal_end_at": "2026-03-21T21:37:55.000Z"
+        "proposal_end_at": "2025-11-09T18:49:01.000Z"
       },
       {
-        "ledger_id": "gnars-base-118:6",
-        "archive_id": "gnars-base-118",
+        "ledger_id": "gnars-base-101:2",
+        "archive_id": "gnars-base-101",
         "asset_symbol": "USDC",
-        "amount": 600.0,
-        "recipient_display_name": "fcarva",
-        "recipient_address": "0xaaed9fff9858d48925904e391b77892ba5fda824",
-        "project_id": "operations-q1-2026",
-        "proposal_end_at": "2026-03-20T17:41:11.000Z"
+        "amount": 2600.0,
+        "recipient_display_name": "0x49d3...2176",
+        "recipient_address": "0x49d31dcb59e115f5c9e505a58a323ade076f2176",
+        "project_id": null,
+        "proposal_end_at": "2025-10-14T14:45:39.000Z"
       },
       {
-        "ledger_id": "gnars-base-118:5",
-        "archive_id": "gnars-base-118",
+        "ledger_id": "gnars-base-101:1",
+        "archive_id": "gnars-base-101",
+        "asset_symbol": "ETH",
+        "amount": 0.619,
+        "recipient_display_name": "0x49d3...2176",
+        "recipient_address": "0x49d31dcb59e115f5c9e505a58a323ade076f2176",
+        "project_id": null,
+        "proposal_end_at": "2025-10-14T14:45:39.000Z"
+      },
+      {
+        "ledger_id": "gnars-base-95:1",
+        "archive_id": "gnars-base-95",
         "asset_symbol": "USDC",
         "amount": 1200.0,
-        "recipient_display_name": "vlad",
-        "recipient_address": "0x8bf5941d27176242745b716251943ae4892a3c26",
-        "project_id": "operations-q1-2026",
-        "proposal_end_at": "2026-03-20T17:41:11.000Z"
-      },
-      {
-        "ledger_id": "gnars-base-118:4",
-        "archive_id": "gnars-base-118",
-        "asset_symbol": "USDC",
-        "amount": 1200.0,
-        "recipient_display_name": "r4topunk",
-        "recipient_address": "0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d",
-        "project_id": "operations-q1-2026",
-        "proposal_end_at": "2026-03-20T17:41:11.000Z"
-      },
-      {
-        "ledger_id": "gnars-base-118:3",
-        "archive_id": "gnars-base-118",
-        "asset_symbol": "ETH",
-        "amount": 0.3,
-        "recipient_display_name": "fcarva",
-        "recipient_address": "0xaaed9fff9858d48925904e391b77892ba5fda824",
-        "project_id": "operations-q1-2026",
-        "proposal_end_at": "2026-03-20T17:41:11.000Z"
-      },
-      {
-        "ledger_id": "gnars-base-118:2",
-        "archive_id": "gnars-base-118",
-        "asset_symbol": "ETH",
-        "amount": 0.6,
-        "recipient_display_name": "vlad",
-        "recipient_address": "0x8bf5941d27176242745b716251943ae4892a3c26",
-        "project_id": "operations-q1-2026",
-        "proposal_end_at": "2026-03-20T17:41:11.000Z"
-      },
-      {
-        "ledger_id": "gnars-base-118:1",
-        "archive_id": "gnars-base-118",
-        "asset_symbol": "ETH",
-        "amount": 0.6,
-        "recipient_display_name": "r4topunk",
-        "recipient_address": "0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d",
-        "project_id": "operations-q1-2026",
-        "proposal_end_at": "2026-03-20T17:41:11.000Z"
-      },
-      {
-        "ledger_id": "gnars-base-113:1",
-        "archive_id": "gnars-base-113",
-        "asset_symbol": "ETH",
-        "amount": 0.4,
-        "recipient_display_name": "0x4d16...ecb1",
-        "recipient_address": "0x4d16fce1bd6e327ae31398ce9a2c4e12c077ecb1",
+        "recipient_display_name": "0xd2d1...b968",
+        "recipient_address": "0xd2d164aea2a354e46ee3cf207899f48e5432b968",
         "project_id": null,
-        "proposal_end_at": "2026-02-19T16:29:21.000Z"
+        "proposal_end_at": "2025-08-02T00:37:01.000Z"
       },
       {
-        "ledger_id": "gnars-base-112:1",
-        "archive_id": "gnars-base-112",
+        "ledger_id": "gnars-base-89:1",
+        "archive_id": "gnars-base-89",
         "asset_symbol": "USDC",
-        "amount": 612.0,
-        "recipient_display_name": "0x057c...2fde",
-        "recipient_address": "0x057cfcd04198e6d17f1bf502135d9508b6fa2fde",
+        "amount": 1700.0,
+        "recipient_display_name": "0x43c3...7970",
+        "recipient_address": "0x43c363f3821b4efe4f9d04df74c0e32db42a7970",
         "project_id": null,
-        "proposal_end_at": "2026-02-11T19:14:43.000Z"
+        "proposal_end_at": "2025-06-29T17:44:05.000Z"
       },
       {
-        "ledger_id": "gnars-base-111:2",
-        "archive_id": "gnars-base-111",
+        "ledger_id": "gnars-base-86:2",
+        "archive_id": "gnars-base-86",
         "asset_symbol": "USDC",
-        "amount": 900.0,
-        "recipient_display_name": "fcarva",
-        "recipient_address": "0xaaed9fff9858d48925904e391b77892ba5fda824",
-        "project_id": "docs-governance-revamp",
-        "proposal_end_at": "2026-02-09T13:43:25.000Z"
+        "amount": 8000.0,
+        "recipient_display_name": "0xc407...3c28",
+        "recipient_address": "0xc4079dc1f8f84711eee0942c192829f473fc3c28",
+        "project_id": null,
+        "proposal_end_at": "2025-05-28T21:09:35.000Z"
       },
       {
-        "ledger_id": "gnars-base-111:1",
-        "archive_id": "gnars-base-111",
+        "ledger_id": "gnars-base-86:1",
+        "archive_id": "gnars-base-86",
         "asset_symbol": "ETH",
-        "amount": 0.25,
-        "recipient_display_name": "fcarva",
-        "recipient_address": "0xaaed9fff9858d48925904e391b77892ba5fda824",
-        "project_id": "docs-governance-revamp",
-        "proposal_end_at": "2026-02-09T13:43:25.000Z"
+        "amount": 1.0,
+        "recipient_display_name": "0x2897...c84f",
+        "recipient_address": "0x289715ffbb2f4b482e2917d2f183feab564ec84f",
+        "project_id": null,
+        "proposal_end_at": "2025-05-28T21:09:35.000Z"
+      },
+      {
+        "ledger_id": "gnars-base-77:1",
+        "archive_id": "gnars-base-77",
+        "asset_symbol": "USDC",
+        "amount": 1350.0,
+        "recipient_display_name": "0xddd7...645f",
+        "recipient_address": "0xddd7c01cecdbd0ac633ef7405a60165f731e645f",
+        "project_id": null,
+        "proposal_end_at": "2025-04-19T15:22:15.000Z"
+      },
+      {
+        "ledger_id": "gnars-base-70:1",
+        "archive_id": "gnars-base-70",
+        "asset_symbol": "USDC",
+        "amount": 2042.0,
+        "recipient_display_name": "0x0020...597e",
+        "recipient_address": "0x0020d02026e6e82a8f002024a418c0f486bc597e",
+        "project_id": null,
+        "proposal_end_at": "2025-03-22T01:00:27.000Z"
+      },
+      {
+        "ledger_id": "gnars-base-65:1",
+        "archive_id": "gnars-base-65",
+        "asset_symbol": "SENDIT",
+        "amount": 12881837.0,
+        "recipient_display_name": "0xa903...a44c",
+        "recipient_address": "0xa903c06bf35286f6d1cdad25396748353979a44c",
+        "project_id": null,
+        "proposal_end_at": "2025-02-17T15:45:27.000Z"
+      },
+      {
+        "ledger_id": "gnars-base-64:1",
+        "archive_id": "gnars-base-64",
+        "asset_symbol": "USDC",
+        "amount": 2250.0,
+        "recipient_display_name": "0x2858...960f",
+        "recipient_address": "0x2858eba3985476ca81217f2f8c5e65508f34960f",
+        "project_id": null,
+        "proposal_end_at": "2025-02-17T14:07:11.000Z"
+      },
+      {
+        "ledger_id": "gnars-base-63:3",
+        "archive_id": "gnars-base-63",
+        "asset_symbol": "SENDIT",
+        "amount": 46500000.0,
+        "recipient_display_name": "0x2443...5c87",
+        "recipient_address": "0x244306053c673b93bc9885fdacfc352032725c87",
+        "project_id": null,
+        "proposal_end_at": "2025-02-07T04:00:29.000Z"
       }
     ],
     "workstreams": [
@@ -681,5 +681,6 @@
         "last_update_date": "2026-03-18"
       }
     ]
-  }
+  },
+  "analytics_as_of": "2026-03-19T03:35:14.475549Z"
 }

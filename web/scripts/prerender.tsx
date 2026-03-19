@@ -13,11 +13,16 @@ import type {
   CommunityProfilePageProps,
   CommunitySignalsData,
   DaoMetrics,
+  FeedStreamData,
+  FilterFacetsData,
+  InsightsData,
   NetworkPageProps,
   NetworkViewData,
   NotesIndexRecord,
   PagePayload,
   PersonRecord,
+  ProposalEnrichedData,
+  ProposalEnrichedRecord,
   ProjectCard,
   ProjectDetailPageProps,
   ProjectRollupRecord,
@@ -107,12 +112,13 @@ function buildCommunityCard(
   proposals: ProposalArchiveRecord[],
 ): CommunityCard {
   const economics = getAthleteEconomics(person.address, spendLedger, proposals, person.relationships.owned_projects);
+  const tribes = tribeLabels(person.tribes?.length ? person.tribes : person.tags);
   return {
     slug: person.slug,
     href: communityHref(person.slug),
     displayName: person.display_name,
-    subtitle: personSubtitle(person),
-    tribes: tribeLabels(person.tags),
+    subtitle: person.history_short || personSubtitle(person),
+    tribes,
     totalReceivedLabel: economics.totalReceivedPrimary
       ? `Received ${formatAmount(economics.totalReceivedPrimary.symbol, economics.totalReceivedPrimary.amount)}`
       : "No successful treasury flows",
@@ -121,42 +127,76 @@ function buildCommunityCard(
       ? `Managed ${economics.budgetManagedByAsset.map((item) => formatAmount(item.symbol, item.amount)).join(" + ")}`
       : "No approved managed budget",
     featured: person.tags.includes("athlete") || person.tags.includes("proposer") || person.tags.includes("recipient"),
+    status: person.status,
+    ethReceived: person.receipts.eth_received,
+    usdcReceived: person.receipts.usdc_received,
+    budgetManagedPrimary: economics.budgetManagedByAsset[0]?.amount ?? 0,
+    proofCount: person.proof_count ?? 0,
+    lastSeenAt: person.last_seen_at,
+    searchText: `${person.display_name} ${person.role} ${(person.tribes || person.tags).join(" ")} ${person.headline || ""}`,
   };
 }
 
 function buildProjectCard(project: ProjectRollupRecord): ProjectCard {
   const budgetLabel = primaryAssetLabel(projectBudgetAssets(project));
   const proposal = project.proposal_summaries[0];
+  const categoryLabel = project.scope_labels?.[0] || titleCase(project.category);
   return {
     id: project.project_id,
     href: projectHref(project.project_id),
     title: project.name,
     status: titleCase(project.status),
-    category: titleCase(project.category),
+    category: categoryLabel,
     summary: truncate(project.objective, 180),
     proposalTag: proposal?.proposal_number !== null && proposal?.proposal_number !== undefined ? `Prop #${proposal.proposal_number}` : project.origin_proposals[0] ?? "No prop",
     budgetLabel,
     updatedAt: project.last_update_date ? formatDate(project.last_update_date) : "No updates yet",
+    spentLabel: primaryAssetLabel(projectSpentAssets(project)),
+    statusKey: project.status,
+    categoryKey: categoryLabel,
+    proofCount: project.proof_count ?? 0,
+    deliveryCount: project.delivery_count ?? 0,
+    searchText: `${project.name} ${project.objective} ${project.category} ${project.status} ${(project.branding_tags ?? []).join(" ")}`,
   };
 }
 
 function buildProposalCard(
-  proposal: ProposalArchiveRecord,
-  budgetMap: Map<string, SpendLedgerRecord[]>,
+  proposal: ProposalEnrichedRecord,
   projectsByArchiveId: Map<string, ProjectRollupRecord>,
 ): ProposalCard {
-  const budgetLabel = proposalBudgetLabel(budgetMap.get(proposal.archive_id) ?? []);
+  const budgetLabel = proposal.routed_total_display !== "No direct spend"
+    ? proposal.routed_total_display
+    : proposal.requested_total_display;
   const project = projectsByArchiveId.get(proposal.archive_id);
+  const labels = Array.from(
+    new Set([
+      ...proposal.editorial_labels,
+      ...proposal.status_labels,
+      ...proposal.funding_labels,
+      ...proposal.relationship_labels,
+      ...proposal.platform_labels,
+      ...proposal.lifecycle_labels,
+      ...proposal.proof_labels,
+    ]),
+  );
   return {
     archiveId: proposal.archive_id,
     href: proposalHref(proposal.archive_id),
     numberLabel: proposal.proposal_number !== null ? `Prop #${proposal.proposal_number}` : proposal.archive_id,
     title: proposal.title,
     status: titleCase(proposal.status),
-    proposerLabel: proposal.proposer_label || proposal.proposer,
+    proposerLabel: proposal.proposer_label || proposal.proposer || "Unknown proposer",
     budgetLabel,
-    summary: truncate(proposal.content_summary, 180),
+    summary: truncate(proposal.summary_short || proposal.summary, 180),
     projectLabel: project?.name ?? null,
+    date: proposal.date,
+    category: proposal.category,
+    statusKey: proposal.status,
+    routedValue: proposal.routed_by_asset.reduce((total, item) => total + item.amount, 0),
+    voteCount: proposal.vote_count,
+    hot: proposal.hot,
+    labels,
+    searchText: `${proposal.title} ${proposal.category} ${proposal.proposer_label ?? proposal.proposer} ${proposal.summary} ${proposal.summary_short} ${proposal.primary_recipients.join(" ")} ${labels.join(" ")}`,
   };
 }
 
@@ -176,6 +216,7 @@ function buildTimelineCard(
   );
   return {
     eventId: event.event_id,
+    date: event.date,
     kind: titleCase(event.kind),
     status: titleCase(event.status),
     dateLabel: formatDate(event.date),
@@ -204,6 +245,35 @@ function assetLinksFromManifest(manifest: Record<string, { file: string; css?: s
     scriptHref: `/${entry.file}`,
     styleHrefs: (entry.css ?? []).map((css) => `/${css}`),
   };
+}
+
+function requireItem<T>(value: T | undefined, message: string): T {
+  if (value === undefined) {
+    throw new Error(message);
+  }
+  return value;
+}
+
+function assertUniquePathnames(payloads: PagePayload[]) {
+  const seen = new Set<string>();
+  for (const payload of payloads) {
+    if (seen.has(payload.meta.pathname)) {
+      throw new Error(`Duplicate prerender pathname detected: ${payload.meta.pathname}`);
+    }
+    seen.add(payload.meta.pathname);
+  }
+}
+
+function assertNetworkViewIntegrity(view: NetworkViewData) {
+  const nodeIds = new Set(view.nodes.map((node) => node.node_id));
+  for (const edge of view.edges) {
+    if (!nodeIds.has(edge.source) || !nodeIds.has(edge.target)) {
+      throw new Error(`Network edge ${edge.edge_id} references a missing node`);
+    }
+    if (edge.sourceNode.node_id !== edge.source || edge.targetNode.node_id !== edge.target) {
+      throw new Error(`Network edge ${edge.edge_id} has mismatched embedded node references`);
+    }
+  }
 }
 
 function documentHtml(payload: PagePayload, appHtml: string, assets: { scriptHref: string; styleHrefs: string[] }) {
@@ -289,8 +359,8 @@ function buildPersonActivityScene(
     }
   }
   for (const event of proofOfWork) {
-    if (event.dateLabel) {
-      touch(event.dateLabel, "deliveries", 1);
+    if (event.date) {
+      touch(event.date.slice(0, 10), "deliveries", 1);
     }
   }
 
@@ -322,9 +392,10 @@ function neighborhoodForPerson(
         kind: titleCase(node?.kind ?? "unknown"),
         relationship: titleCase(edge.kind),
         valueLabel: edge.asset_symbol ? formatAmount(edge.asset_symbol, edge.weight) : `${edge.count}`,
+        numericValue: edge.asset_symbol ? Number(edge.weight) : Number(edge.count),
       };
     })
-    .sort((left, right) => right.valueLabel.localeCompare(left.valueLabel))
+    .sort((left, right) => right.numericValue - left.numericValue || left.label.localeCompare(right.label))
     .slice(0, 12);
 }
 
@@ -333,10 +404,14 @@ async function main() {
   const spendLedgerData = await loadJson<{ records: SpendLedgerRecord[] }>("spend_ledger.json");
   const projectsData = await loadJson<{ records: ProjectRollupRecord[] }>("project_rollups.json");
   const proposalsData = await loadJson<{ records: ProposalArchiveRecord[] }>("proposals_archive.json");
+  const proposalsEnrichedData = await loadJson<ProposalEnrichedData>("proposals_enriched.json");
   const timelineData = await loadJson<{ records: TimelineEventRecord[] }>("timeline_events.json");
   const metricsData = await loadJson<DaoMetrics>("dao_metrics.json");
   const notesData = await loadJson<{ records: NotesIndexRecord[] }>("notes_index.json");
   const communitySignalsData = await loadJson<CommunitySignalsData>("community_signals.json");
+  const feedStreamData = await loadJson<FeedStreamData>("feed_stream.json");
+  const insightsData = await loadJson<InsightsData>("insights.json");
+  const filterFacetsData = await loadJson<FilterFacetsData>("filter_facets.json");
   const activityTimeseriesData = await loadJson<ActivityTimeseriesData>("activity_timeseries.json");
   const activityViewData = await loadJson<ActivityViewData>("activity_view.json");
   const treasuryFlowsData = await loadJson<TreasuryFlowsData>("treasury_flows.json");
@@ -347,11 +422,13 @@ async function main() {
   const spendLedger = spendLedgerData.records;
   const projects = projectsData.records;
   const proposals = proposalsData.records;
+  const proposalsEnriched = proposalsEnrichedData.records;
   const timeline = timelineData.records;
   const notes = notesData.records;
 
   const peopleByAddress = new Map(people.map((person) => [person.address.toLowerCase(), person]));
   const projectsById = new Map(projects.map((project) => [project.project_id, project]));
+  const proposalsEnrichedById = new Map(proposalsEnriched.map((proposal) => [proposal.archive_id, proposal]));
   const proposalsByAlias = new Map<string, ProposalArchiveRecord>();
   for (const proposal of proposals) {
     for (const alias of proposalAliases(proposal)) {
@@ -369,14 +446,25 @@ async function main() {
   const filters = ["All", ...uniqueBy(communityCards.flatMap((card) => card.tribes.map((tribe) => ({ tribe }))), (item) => item.tribe).map((item) => item.tribe)];
   const projectCards = projects.map(buildProjectCard);
   const projectFilters = ["All", ...uniqueBy(projectCards.map((project) => ({ category: project.category })), (item) => item.category).map((item) => item.category)];
-  const proposalCards = proposals
+  const proposalCards = proposalsEnriched
     .slice()
-    .sort((left, right) => `${right.end_at}${right.created_at}`.localeCompare(`${left.end_at}${left.created_at}`))
-    .map((proposal) => buildProposalCard(proposal, budgetMap, projectsByArchiveId));
+    .sort((left, right) => `${right.date}${right.archive_id}`.localeCompare(`${left.date}${left.archive_id}`))
+    .map((proposal) => buildProposalCard(proposal, projectsByArchiveId));
   const timelineCards = timeline.map((event) => buildTimelineCard(event, peopleByAddress));
-  const signalWindow = communitySignalsData.windows.find((window) => window.window_id === "30d") ?? communitySignalsData.windows[0];
-  const treasuryScene = treasuryViewData.scenes.find((scene) => scene.window_id === "30d") ?? treasuryViewData.scenes[0];
-  const activityScene = activityViewData.scenes.find((scene) => scene.window_id === "30d") ?? activityViewData.scenes[0];
+  assertNetworkViewIntegrity(networkViewData);
+
+  const signalWindow = requireItem(
+    communitySignalsData.windows.find((window) => window.window_id === "30d") ?? communitySignalsData.windows[0],
+    "Missing community signal window for prerender",
+  );
+  const treasuryScene = requireItem(
+    treasuryViewData.scenes.find((scene) => scene.window_id === "30d") ?? treasuryViewData.scenes[0],
+    "Missing treasury scene for prerender",
+  );
+  const activityScene = requireItem(
+    activityViewData.scenes.find((scene) => scene.window_id === "30d") ?? activityViewData.scenes[0],
+    "Missing activity scene for prerender",
+  );
 
   const payloads: PagePayload[] = [];
 
@@ -389,28 +477,36 @@ async function main() {
       activeNav: "home",
     },
     props: {
+      analyticsAsOf: feedStreamData.analytics_as_of,
       asOf: communitySignalsData.as_of,
       hero: {
-        title: "A daily static map of how Gnars routes capital, builds culture, and ships work.",
+        title: "A live operating surface for how Gnars routes capital, builds culture, and ships work.",
         description:
-          "Gnars Camp treats every athlete, builder, proposal, project, and treasury outflow as part of one public network. The goal is legibility: who got funded, through which proposal, for what work, and with what proof.",
+          "Read Gnars as one mixed feed: proposals, payouts, workstreams, people, and proof. The point is multiplicity without losing legibility.",
       },
       metrics: [
         { label: "People", value: String(metricsData.overview.people_count), detail: "merged identities and participants" },
         { label: "Proposals", value: String(metricsData.overview.proposal_count), detail: "archived across gnars and snapshot" },
         { label: "Treasury", value: `$${Math.round(metricsData.overview.treasury_total_value_usd).toLocaleString("en-US")}`, detail: "current holdings view" },
-        { label: "Outflows", value: `${metricsData.overview.outflows_eth.toFixed(2)} ETH`, detail: "successful treasury routes" },
+        {
+          label: "Concentration",
+          value: `${Math.round(insightsData.recipient_concentration[0]?.top10_share_pct ?? 0)}%`,
+          detail: "top-10 USDC recipient share",
+        },
       ],
       economicMap: networkViewData,
       activity: activityScene,
       treasuryScene,
       signalWindow,
       fieldNotes: communitySignalsData.field_notes,
+      feed: feedStreamData.records.slice(0, 80),
+      facets: filterFacetsData.surfaces.home,
+      insights: insightsData,
       featuredCommunity: communityCards
         .slice()
-        .sort((left, right) => Number(right.featured) - Number(left.featured) || right.approvedProposals - left.approvedProposals)
+        .sort((left, right) => Number(right.featured) - Number(left.featured) || right.proofCount - left.proofCount || right.approvedProposals - left.approvedProposals)
         .slice(0, 8),
-      featuredProjects: projectCards.slice(0, 6),
+      featuredProjects: projectCards.slice().sort((left, right) => right.proofCount - left.proofCount || right.deliveryCount - left.deliveryCount).slice(0, 6),
       governance: proposalCards.slice(0, 8),
       timeline: timelineCards.slice(0, 8),
       leaderboards: [
@@ -452,6 +548,7 @@ async function main() {
     },
     props: {
       filters,
+      facets: filterFacetsData.surfaces.community,
       people: communityCards,
       economicMap: networkViewData,
     } satisfies CommunityIndexPageProps,
@@ -513,10 +610,17 @@ async function main() {
           displayName: personLabel(person),
           address: person.address,
           addressShort: person.address_short,
-          tribes: tribeLabels(person.tags),
+          tribes: tribeLabels(person.tribes?.length ? person.tribes : person.tags),
           role: person.role,
-          bio: person.bio,
-          links: identityLinks,
+          bio: person.history_short || person.bio,
+          links: [
+            ...identityLinks,
+            ...person.media_references.slice(0, 4).map((reference) => ({
+              label: reference.title,
+              url: reference.url,
+              kind: titleCase(reference.kind),
+            })),
+          ],
           avatarUrl: person.identity.avatar_url ?? null,
         },
         economics,
@@ -563,6 +667,7 @@ async function main() {
     },
     props: {
       filters: projectFilters,
+      facets: filterFacetsData.surfaces.projects,
       projects: projectCards,
       featuredLineage: treasuryScene,
     },
@@ -628,11 +733,16 @@ async function main() {
     props: {
       proposals: proposalCards,
       signals: signalWindow,
+      facets: filterFacetsData.surfaces.proposals,
     },
   });
 
   for (const proposal of proposals) {
-    const card = buildProposalCard(proposal, budgetMap, projectsByArchiveId);
+    const enriched = proposalsEnrichedById.get(proposal.archive_id);
+    if (!enriched) {
+      continue;
+    }
+    const card = buildProposalCard(enriched, projectsByArchiveId);
     const groupedRecipients = new Map<string, SpendLedgerRecord[]>();
     for (const record of budgetMap.get(proposal.archive_id) ?? []) {
       const records = groupedRecipients.get(record.recipient_address) ?? [];
@@ -673,6 +783,10 @@ async function main() {
             { label: "Source", url: proposal.links.source_url, kind: "Source" },
             ...(proposal.links.discussion_url ? [{ label: "Discussion", url: proposal.links.discussion_url, kind: "Discussion" }] : []),
             ...(proposal.links.explorer_url ? [{ label: "Explorer", url: proposal.links.explorer_url, kind: "Explorer" }] : []),
+            ...enriched.reference_urls
+              .filter((url) => ![proposal.links.canonical_url, proposal.links.source_url, proposal.links.discussion_url, proposal.links.explorer_url].includes(url))
+              .slice(0, 4)
+              .map((url) => ({ label: url.replace(/^https?:\/\//, "").slice(0, 42), url, kind: "Reference" })),
           ],
           recipients: [...groupedRecipients.entries()].map(([address, records]) => {
             const linked = peopleByAddress.get(address.toLowerCase());
@@ -702,7 +816,10 @@ async function main() {
     },
     props: {
       timeline: timelineCards,
-      activity: activityViewData.scenes.find((scene) => scene.window_id === "90d") ?? activityScene,
+      activity: requireItem(
+        activityViewData.scenes.find((scene) => scene.window_id === "90d") ?? activityScene,
+        "Missing timeline activity scene for prerender",
+      ),
     },
   });
 
@@ -760,6 +877,8 @@ async function main() {
       treasuryScene: treasuryViewData,
       windows: treasuryFlowsData.windows,
       proposalRoutes: treasuryFlowsData.proposal_routes,
+      insights: insightsData,
+      facets: filterFacetsData.surfaces.treasury,
     } satisfies TreasuryPageProps,
   });
 
@@ -775,6 +894,8 @@ async function main() {
       notes,
     },
   });
+
+  assertUniquePathnames(payloads);
 
   const manifest = JSON.parse(await fs.readFile(path.join(distDir, ".vite", "manifest.json"), "utf8")) as Record<string, { file: string; css?: string[] }>;
   const assets = assetLinksFromManifest(manifest);

@@ -184,10 +184,23 @@ function buildNetworkView(networkGraph) {
   };
 }
 
-function buildTreasuryScene(windowId, windowLabel, routes) {
+function buildTreasuryScene(windowId, windowLabel, routes, peopleByAddress) {
   const width = 1380;
   const height = 840;
   const grouped = new Map();
+
+  if (!routes.length) {
+    return {
+      window_id: windowId,
+      label: windowLabel,
+      width,
+      height,
+      route_count: 0,
+      total_value: 0,
+      nodes: [],
+      links: [],
+    };
+  }
 
   function pushLink(source, target, value, assetSymbol, href, sourceKind, targetKind) {
     const key = `${source}|${target}|${assetSymbol}`;
@@ -214,7 +227,17 @@ function buildTreasuryScene(windowId, windowLabel, routes) {
     if (route.project_id) {
       const projectId = `project:${route.project_id}`;
       pushLink(proposalId, projectId, route.amount, asset, `/projects/${route.project_id}/`, "proposal", "project");
-      pushLink(projectId, recipientId, route.amount, asset, `/community/${route.recipient_address}/`, "project", "recipient");
+      pushLink(
+        projectId,
+        recipientId,
+        route.amount,
+        asset,
+        peopleByAddress.get(route.recipient_address)?.slug
+          ? `/community/${peopleByAddress.get(route.recipient_address).slug}/`
+          : `/community/${route.recipient_address}/`,
+        "project",
+        "recipient",
+      );
     } else {
       pushLink(proposalId, recipientId, route.amount, asset, route.proposal_href, "proposal", "recipient");
     }
@@ -253,6 +276,19 @@ function buildTreasuryScene(windowId, windowLabel, routes) {
     } else if (node.kind === "recipient") {
       node.label = recipientLabels.get(node.id) ?? node.label;
     }
+  }
+
+  if (!nodeMap.size || !links.length) {
+    return {
+      window_id: windowId,
+      label: windowLabel,
+      width,
+      height,
+      route_count: routes.length,
+      total_value: sumAmount(routes),
+      nodes: [],
+      links: [],
+    };
   }
 
   const sankeyGraph = sankey()
@@ -298,13 +334,14 @@ function buildTreasuryScene(windowId, windowLabel, routes) {
   };
 }
 
-function buildTreasuryView(treasuryFlows) {
+function buildTreasuryView(treasuryFlows, peopleData) {
+  const peopleByAddress = new Map((peopleData.records ?? []).map((record) => [record.address, record]));
   const scenes = [];
   for (const window of treasuryFlows.windows.filter((item) => ["7d", "30d", "90d", "all"].includes(item.window_id))) {
     const selected = treasuryFlows.routes.filter((route) =>
       window.since ? new Date(route.event_at) >= new Date(window.since) : true,
     );
-    scenes.push(buildTreasuryScene(window.window_id, window.label, selected));
+    scenes.push(buildTreasuryScene(window.window_id, window.label, selected, peopleByAddress));
   }
   return {
     dataset: "treasury_view",
@@ -489,16 +526,17 @@ async function main() {
     await fs.copyFile(path.join(dataDir, entry.name), path.join(publicDataDir, entry.name));
   }
 
-  const [notesIndex, networkGraph, treasuryFlows, activityTimeseries] = await Promise.all([
+  const [notesIndex, networkGraph, treasuryFlows, activityTimeseries, peopleData] = await Promise.all([
     buildNotesIndex(),
     readJson("network_graph.json"),
     readJson("treasury_flows.json"),
     readJson("activity_timeseries.json"),
+    readJson("people.json"),
   ]);
 
   const searchIndex = await buildSearchIndex(notesIndex);
   const networkView = buildNetworkView(networkGraph);
-  const treasuryView = buildTreasuryView(treasuryFlows);
+  const treasuryView = buildTreasuryView(treasuryFlows, peopleData);
   const activityView = buildActivityView(activityTimeseries);
 
   await fs.writeFile(path.join(publicDataDir, "notes_index.json"), JSON.stringify(notesIndex, null, 2));

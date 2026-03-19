@@ -20,6 +20,22 @@ export function proposalHref(archiveId: string): string {
   return `/proposals/${archiveId}/`;
 }
 
+export function timelineHrefIndex(): string {
+  return "/timeline/";
+}
+
+export function treasuryHref(): string {
+  return "/treasury/";
+}
+
+export function networkHref(): string {
+  return "/network/";
+}
+
+export function notesHref(): string {
+  return "/notes/";
+}
+
 export function tribeLabels(tags: string[]): string[] {
   const ordered = ["athlete", "filmmaker", "builder", "organizer", "delegate", "holder", "proposer", "recipient", "contributor"];
   const seen = new Set<string>();
@@ -35,7 +51,7 @@ export function tribeLabels(tags: string[]): string[] {
 }
 
 export function isSuccessfulProposal(record: ProposalArchiveRecord): boolean {
-  if (record.platform === "gnars") {
+  if (record.platform === "gnars.com" || record.platform === "gnars") {
     return record.status === "executed";
   }
   if (record.platform === "snapshot" && record.status === "closed") {

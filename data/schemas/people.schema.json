@@ -4,6 +4,7 @@
   "required": [
     "dataset",
     "as_of",
+    "analytics_as_of",
     "version",
     "source_members_snapshot",
     "records"
@@ -11,6 +12,9 @@
   "properties": {
     "dataset": {
       "const": "people"
+    },
+    "analytics_as_of": {
+      "type": "string"
     },
     "as_of": {
       "type": "string"
@@ -100,6 +104,81 @@
           },
           "notes": {
             "type": "string"
+          },
+          "tribes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "headline": {
+            "type": "string"
+          },
+          "history_short": {
+            "type": "string"
+          },
+          "history_long": {
+            "type": "string"
+          },
+          "successful_authored_count": {
+            "type": "integer"
+          },
+          "successful_authored_proposals": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "budget_managed_by_asset": {
+            "type": "array"
+          },
+          "treasury_route_count": {
+            "type": "integer"
+          },
+          "delivery_count": {
+            "type": "integer"
+          },
+          "proof_count": {
+            "type": "integer"
+          },
+          "proof_coverage_pct": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "network_degree": {
+            "type": "integer"
+          },
+          "first_seen_at": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "last_seen_at": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "references": {
+            "type": "array"
+          },
+          "media_references": {
+            "type": "array"
+          },
+          "proposal_editorial_labels": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "treasury_totals": {
+            "type": "array"
+          },
+          "project_count": {
+            "type": "integer"
           }
         },
         "additionalProperties": false

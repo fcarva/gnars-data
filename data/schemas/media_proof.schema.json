@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["dataset", "analytics_as_of", "as_of", "version", "records"],
+  "properties": {
+    "dataset": { "const": "media_proof" },
+    "analytics_as_of": { "type": "string" },
+    "as_of": { "type": "string" },
+    "version": { "type": "integer" },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["proof_id", "date", "title", "status", "source_kind", "proof_kind", "reference_kind", "url", "domain", "project_id", "archive_id", "related_proposals", "people_addresses", "summary", "thumbnail_url"],
+        "properties": {
+          "proof_id": { "type": "string" },
+          "date": { "type": "string" },
+          "title": { "type": "string" },
+          "status": { "type": "string" },
+          "source_kind": { "type": "string" },
+          "proof_kind": { "type": "string" },
+          "reference_kind": { "type": "string" },
+          "url": { "type": "string" },
+          "domain": { "type": "string" },
+          "project_id": { "type": ["string", "null"] },
+          "archive_id": { "type": ["string", "null"] },
+          "related_proposals": { "type": "array", "items": { "type": "string" } },
+          "people_addresses": { "type": "array", "items": { "type": "string" } },
+          "summary": { "type": "string" },
+          "thumbnail_url": { "type": ["string", "null"] }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

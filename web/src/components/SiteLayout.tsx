@@ -6,10 +6,10 @@ import { ThemeToggle } from "./ThemeToggle";
 const NAV_ITEMS: { href: string; label: string; key: Meta["activeNav"] }[] = [
   { href: "/", label: "Home", key: "home" },
   { href: "/community/", label: "Community", key: "community" },
-  { href: "/network/", label: "Map", key: "network" },
-  { href: "/treasury/", label: "Flows", key: "treasury" },
-  { href: "/projects/", label: "Projects", key: "projects" },
   { href: "/proposals/", label: "Governance", key: "governance" },
+  { href: "/treasury/", label: "Treasury", key: "treasury" },
+  { href: "/projects/", label: "Projects", key: "projects" },
+  { href: "/network/", label: "Map", key: "network" },
   { href: "/timeline/", label: "Timeline", key: "timeline" },
   { href: "/notes/", label: "Archive", key: "archive" },
 ];
@@ -28,7 +28,7 @@ export function SiteLayout({
           <span className="brandmark-badge">[]</span>
           <span>
             <strong>GNARS.CAMP</strong>
-            <small>lab / field / governance / treasury / delivery</small>
+            <small>live feed / community / governance / treasury</small>
           </span>
         </a>
         <nav className="top-nav" aria-label="Primary">
@@ -46,8 +46,8 @@ export function SiteLayout({
       <main className="app-main">{children}</main>
       <footer className="app-footer">
         <div>
-          <strong>Gnars Camp v3</strong>
-          <span>Static research atlas for the Gnars economic graph.</span>
+          <strong>Gnars Camp</strong>
+          <span>Static operating surface for the Gnars economic graph.</span>
         </div>
         <div>
           <a href="https://www.gnars.com/">gnars.com</a>

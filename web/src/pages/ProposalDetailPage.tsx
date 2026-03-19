@@ -1,6 +1,6 @@
 import { AssetBars } from "../components/AssetBars";
 import { SiteLayout } from "../components/SiteLayout";
-import { formatAmount } from "../lib/format";
+import { formatAmount, formatLabel } from "../lib/format";
 import type { Meta, ProposalDetailPageProps } from "../types";
 
 export function ProposalDetailPage({ meta, props }: { meta: Meta; props: ProposalDetailPageProps }) {
@@ -13,7 +13,8 @@ export function ProposalDetailPage({ meta, props }: { meta: Meta; props: Proposa
           <h1>{proposal.title}</h1>
           <p>{proposal.contentSummary}</p>
           <div className="tag-row">
-            <span className="tag">{proposal.status}</span>
+            <span className="tag">{formatLabel(proposal.status)}</span>
+            <span className="tag">{formatLabel(proposal.category)}</span>
             <span className="tag">{proposal.proposerLabel}</span>
             <span className="tag">{proposal.budgetLabel}</span>
           </div>
@@ -43,7 +44,7 @@ export function ProposalDetailPage({ meta, props }: { meta: Meta; props: Proposa
             ) : null}
             {proposal.proposalLinks.map((link) => (
               <a key={link.url} className="mini-row" href={link.url}>
-                <span>{link.kind}</span>
+                <span>{formatLabel(link.kind)}</span>
                 <strong>{link.label}</strong>
               </a>
             ))}

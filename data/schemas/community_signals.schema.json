@@ -1,13 +1,45 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "type": "object",
-  "required": ["dataset", "as_of", "version", "windows", "field_notes"],
+  "required": ["dataset", "as_of", "analytics_as_of", "version", "windows", "field_notes"],
   "properties": {
     "dataset": { "const": "community_signals" },
+    "analytics_as_of": { "type": "string" },
     "as_of": { "type": "string" },
     "version": { "type": "integer" },
-    "windows": { "type": "array", "items": { "type": "object" } },
-    "field_notes": { "type": "array", "items": { "type": "object" } }
+    "windows": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["window_id", "label", "since", "metrics", "top_recipients", "top_projects", "top_proposals", "top_people"],
+        "properties": {
+          "window_id": { "type": "string" },
+          "label": { "type": "string" },
+          "since": { "type": ["string", "null"] },
+          "metrics": { "type": "object" },
+          "top_recipients": { "type": "array" },
+          "top_projects": { "type": "array" },
+          "top_proposals": { "type": "array" },
+          "top_people": { "type": "array" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "field_notes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["note_id", "window_id", "kind", "title", "summary"],
+        "properties": {
+          "note_id": { "type": "string" },
+          "window_id": { "type": "string" },
+          "kind": { "type": "string" },
+          "title": { "type": "string" },
+          "summary": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    }
   },
   "additionalProperties": false
 }

@@ -1,14 +1,99 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "type": "object",
-  "required": ["dataset", "as_of", "version", "routes", "windows", "proposal_routes"],
+  "required": ["dataset", "as_of", "analytics_as_of", "version", "routes", "windows", "proposal_routes"],
   "properties": {
     "dataset": { "const": "treasury_flows" },
+    "analytics_as_of": { "type": "string" },
     "as_of": { "type": "string" },
     "version": { "type": "integer" },
-    "routes": { "type": "array", "items": { "type": "object" } },
-    "windows": { "type": "array", "items": { "type": "object" } },
-    "proposal_routes": { "type": "array", "items": { "type": "object" } }
+    "routes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "route_id",
+          "event_at",
+          "archive_id",
+          "proposal_key",
+          "proposal_number",
+          "proposal_title",
+          "proposal_status",
+          "proposal_chain",
+          "project_id",
+          "project_name",
+          "proposer_address",
+          "recipient_address",
+          "recipient_display_name",
+          "asset_symbol",
+          "amount",
+          "asset_kind",
+          "token_contract",
+          "proposal_href"
+        ],
+        "properties": {
+          "route_id": { "type": "string" },
+          "event_at": { "type": "string" },
+          "archive_id": { "type": "string" },
+          "proposal_key": { "type": "string" },
+          "proposal_number": { "type": ["integer", "null"] },
+          "proposal_title": { "type": "string" },
+          "proposal_status": { "type": "string" },
+          "proposal_chain": { "type": "string" },
+          "project_id": { "type": ["string", "null"] },
+          "project_name": { "type": ["string", "null"] },
+          "proposer_address": { "type": "string" },
+          "recipient_address": { "type": "string" },
+          "recipient_display_name": { "type": "string" },
+          "asset_symbol": { "type": "string" },
+          "amount": { "type": "number" },
+          "asset_kind": { "type": "string" },
+          "token_contract": { "type": ["string", "null"] },
+          "proposal_href": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "windows": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["window_id", "label", "since", "route_count", "proposal_count", "recipient_count", "project_count", "totals_by_asset", "top_recipients", "top_projects"],
+        "properties": {
+          "window_id": { "type": "string" },
+          "label": { "type": "string" },
+          "since": { "type": ["string", "null"] },
+          "route_count": { "type": "integer" },
+          "proposal_count": { "type": "integer" },
+          "recipient_count": { "type": "integer" },
+          "project_count": { "type": "integer" },
+          "totals_by_asset": { "type": "array" },
+          "top_recipients": { "type": "array" },
+          "top_projects": { "type": "array" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "proposal_routes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["archive_id", "proposal_number", "proposal_title", "proposal_status", "proposal_chain", "project_id", "project_name", "totals_by_asset", "route_count", "recipients"],
+        "properties": {
+          "archive_id": { "type": "string" },
+          "proposal_number": { "type": ["integer", "null"] },
+          "proposal_title": { "type": "string" },
+          "proposal_status": { "type": "string" },
+          "proposal_chain": { "type": "string" },
+          "project_id": { "type": ["string", "null"] },
+          "project_name": { "type": ["string", "null"] },
+          "totals_by_asset": { "type": "array" },
+          "route_count": { "type": "integer" },
+          "recipients": { "type": "array" }
+        },
+        "additionalProperties": false
+      }
+    }
   },
   "additionalProperties": false
 }

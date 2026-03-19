@@ -4,6 +4,7 @@
   "required": [
     "dataset",
     "as_of",
+    "analytics_as_of",
     "version",
     "overview",
     "treasury",
@@ -13,6 +14,9 @@
   "properties": {
     "dataset": {
       "const": "dao_metrics"
+    },
+    "analytics_as_of": {
+      "type": "string"
     },
     "as_of": {
       "type": "string"

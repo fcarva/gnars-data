@@ -1,14 +1,67 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "type": "object",
-  "required": ["dataset", "as_of", "version", "nodes", "edges", "views"],
+  "required": ["dataset", "as_of", "analytics_as_of", "version", "nodes", "edges", "views"],
   "properties": {
     "dataset": { "const": "network_graph" },
+    "analytics_as_of": { "type": "string" },
     "as_of": { "type": "string" },
     "version": { "type": "integer" },
-    "nodes": { "type": "array", "items": { "type": "object" } },
-    "edges": { "type": "array", "items": { "type": "object" } },
-    "views": { "type": "object" }
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["node_id", "kind", "label", "href", "status", "tags", "size", "metrics"],
+        "properties": {
+          "node_id": { "type": "string" },
+          "kind": { "type": "string" },
+          "label": { "type": "string" },
+          "href": { "type": "string" },
+          "status": { "type": "string" },
+          "chain": { "type": ["string", "null"] },
+          "tags": { "type": "array", "items": { "type": "string" } },
+          "address": { "type": ["string", "null"] },
+          "size": { "type": "number" },
+          "proposal_number": { "type": ["integer", "null"] },
+          "metrics": { "type": "object" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["edge_id", "source", "target", "kind", "weight", "count", "asset_symbol", "href"],
+        "properties": {
+          "edge_id": { "type": "string" },
+          "source": { "type": "string" },
+          "target": { "type": "string" },
+          "kind": { "type": "string" },
+          "weight": { "type": "number" },
+          "count": { "type": "integer" },
+          "asset_symbol": { "type": ["string", "null"] },
+          "href": { "type": ["string", "null"] }
+        },
+        "additionalProperties": false
+      }
+    },
+    "views": {
+      "type": "object",
+      "required": ["homepage"],
+      "properties": {
+        "homepage": {
+          "type": "object",
+          "required": ["node_ids", "edge_ids"],
+          "properties": {
+            "node_ids": { "type": "array", "items": { "type": "string" } },
+            "edge_ids": { "type": "array", "items": { "type": "string" } }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
   },
   "additionalProperties": false
 }

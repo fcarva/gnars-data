@@ -1,6 +1,6 @@
 {
   "dataset": "project_rollups",
-  "as_of": "2026-03-18",
+  "as_of": "2026-03-19T03:35:14.475549Z",
   "version": 1,
   "records": [
     {
@@ -32,67 +32,17 @@
         "gnars": 0.0
       },
       "spent": {
-        "eth": 1.5,
-        "usdc": 3000.0,
+        "eth": 0,
+        "usdc": 0,
         "gnars": 0
       },
       "utilization_pct": {
-        "eth": 100.0,
-        "usdc": 100.0,
+        "eth": 0.0,
+        "usdc": 0.0,
         "gnars": null
       },
-      "recipients": [
-        {
-          "address": "0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d",
-          "display_name": "r4topunk",
-          "eth_received": 0.6,
-          "usdc_received": 1200.0,
-          "gnars_received": 0.0,
-          "fungible_transfer_count": 2,
-          "nft_received_count": 5
-        },
-        {
-          "address": "0x8bf5941d27176242745b716251943ae4892a3c26",
-          "display_name": "vlad",
-          "eth_received": 0.6,
-          "usdc_received": 1200.0,
-          "gnars_received": 0.0,
-          "fungible_transfer_count": 2,
-          "nft_received_count": 5
-        },
-        {
-          "address": "0xaaed9fff9858d48925904e391b77892ba5fda824",
-          "display_name": "fcarva",
-          "eth_received": 0.3,
-          "usdc_received": 600.0,
-          "gnars_received": 0.0,
-          "fungible_transfer_count": 2,
-          "nft_received_count": 2
-        }
-      ],
-      "nft_receipts": [
-        {
-          "address": "0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d",
-          "display_name": "r4topunk",
-          "contract_label": "Gnars NFT",
-          "token_contract": "0x880fb3cf5c6cc2d7dfc13a993e839a9411200c17",
-          "count": 5
-        },
-        {
-          "address": "0x8bf5941d27176242745b716251943ae4892a3c26",
-          "display_name": "vlad",
-          "contract_label": "Gnars NFT",
-          "token_contract": "0x880fb3cf5c6cc2d7dfc13a993e839a9411200c17",
-          "count": 5
-        },
-        {
-          "address": "0xaaed9fff9858d48925904e391b77892ba5fda824",
-          "display_name": "fcarva",
-          "contract_label": "Gnars NFT",
-          "token_contract": "0x880fb3cf5c6cc2d7dfc13a993e839a9411200c17",
-          "count": 2
-        }
-      ],
+      "recipients": [],
+      "nft_receipts": [],
       "updates_count": 3,
       "update_ids": [
         "ops-q1-analytics-camp-plan",
@@ -115,7 +65,34 @@
         "Treasury reporting cadence",
         "Agent-answerable knowledge coverage"
       ],
-      "notes": "As of 2026-03-18, the live proposal page still shows this workstream as active and ending on 2026-03-20."
+      "notes": "As of 2026-03-18, the live proposal page still shows this workstream as active and ending on 2026-03-20.",
+      "proposal_lineage": [
+        "gnars-base-118"
+      ],
+      "scope_labels": [
+        "Operations",
+        "governance-active",
+        "workstream",
+        "single-recipient"
+      ],
+      "branding_tags": [
+        "governance",
+        "operations",
+        "software"
+      ],
+      "contributor_addresses": [
+        "0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d",
+        "0x8bf5941d27176242745b716251943ae4892a3c26",
+        "0xaaed9fff9858d48925904e391b77892ba5fda824"
+      ],
+      "delivery_count": 2,
+      "proof_count": 3,
+      "proof_coverage_pct": 100.0,
+      "related_proof_ids": [
+        "project-update:ops-q1-member-and-spend-views",
+        "project-update:ops-q1-data-foundation",
+        "project-update:ops-q1-analytics-camp-plan"
+      ]
     },
     {
       "project_id": "docs-governance-revamp",
@@ -144,26 +121,16 @@
         "gnars": 0.0
       },
       "spent": {
-        "eth": 0.25,
-        "usdc": 900.0,
+        "eth": 0,
+        "usdc": 0,
         "gnars": 0
       },
       "utilization_pct": {
-        "eth": 100.0,
-        "usdc": 100.0,
+        "eth": 0.0,
+        "usdc": 0.0,
         "gnars": null
       },
-      "recipients": [
-        {
-          "address": "0xaaed9fff9858d48925904e391b77892ba5fda824",
-          "display_name": "fcarva",
-          "eth_received": 0.25,
-          "usdc_received": 900.0,
-          "gnars_received": 0.0,
-          "fungible_transfer_count": 2,
-          "nft_received_count": 0
-        }
-      ],
+      "recipients": [],
       "nft_receipts": [],
       "updates_count": 1,
       "update_ids": [
@@ -184,7 +151,31 @@
         "Searchable documentation",
         "Onboarding friction reduction"
       ],
-      "notes": "Although proposal 111 was defeated, its scope became the foundation for the broader operations workstream."
+      "notes": "Although proposal 111 was defeated, its scope became the foundation for the broader operations workstream.",
+      "proposal_lineage": [
+        "gnars-base-111"
+      ],
+      "scope_labels": [
+        "Governance",
+        "superseded",
+        "workstream",
+        "single-recipient"
+      ],
+      "branding_tags": [
+        "media",
+        "governance",
+        "operations"
+      ],
+      "contributor_addresses": [
+        "0xaaed9fff9858d48925904e391b77892ba5fda824"
+      ],
+      "delivery_count": 1,
+      "proof_count": 1,
+      "proof_coverage_pct": 100.0,
+      "related_proof_ids": [
+        "project-update:docs-revamp-archive-foundation"
+      ]
     }
-  ]
+  ],
+  "analytics_as_of": "2026-03-19T03:35:14.475549Z"
 }

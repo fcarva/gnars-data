@@ -17,6 +17,7 @@ export function ProjectDetailPage({ meta, props }: { meta: Meta; props: ProjectD
             <span className="tag">{project.status}</span>
             <span className="tag">{project.category}</span>
             <span className="tag">{project.proposalTag}</span>
+            <span className="tag">{project.timeline.length} timeline items</span>
           </div>
         </div>
       </section>

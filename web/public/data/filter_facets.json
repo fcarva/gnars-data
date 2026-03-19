@@ -1,0 +1,449 @@
+{
+  "dataset": "filter_facets",
+  "analytics_as_of": "2026-03-19T03:35:14.475549Z",
+  "as_of": "2026-03-19T03:35:14.475549Z",
+  "version": 1,
+  "surfaces": {
+    "home": {
+      "kind": [
+        {
+          "value": "media_reference",
+          "label": "Media Reference",
+          "count": 1016
+        },
+        {
+          "value": "proposal",
+          "label": "Proposal",
+          "count": 193
+        },
+        {
+          "value": "community_reference",
+          "label": "Community Reference",
+          "count": 88
+        },
+        {
+          "value": "payout",
+          "label": "Payout",
+          "count": 52
+        },
+        {
+          "value": "delivery",
+          "label": "Delivery",
+          "count": 3
+        },
+        {
+          "value": "project_update",
+          "label": "Project Update",
+          "count": 1
+        }
+      ],
+      "status": [
+        {
+          "value": "closed",
+          "label": "Closed",
+          "count": 543
+        },
+        {
+          "value": "executed",
+          "label": "Executed",
+          "count": 512
+        },
+        {
+          "value": "active",
+          "label": "Active",
+          "count": 111
+        },
+        {
+          "value": "defeated",
+          "label": "Defeated",
+          "count": 101
+        },
+        {
+          "value": "cancelled",
+          "label": "Cancelled",
+          "count": 76
+        },
+        {
+          "value": "completed",
+          "label": "Completed",
+          "count": 6
+        },
+        {
+          "value": "in-progress",
+          "label": "In Progress",
+          "count": 4
+        }
+      ],
+      "category": [
+        {
+          "value": "media",
+          "label": "Media",
+          "count": 641
+        },
+        {
+          "value": "travel",
+          "label": "Travel",
+          "count": 162
+        },
+        {
+          "value": "events",
+          "label": "Events",
+          "count": 144
+        },
+        {
+          "value": "athlete-support",
+          "label": "Athlete Support",
+          "count": 117
+        },
+        {
+          "value": "operations",
+          "label": "Operations",
+          "count": 110
+        },
+        {
+          "value": "software",
+          "label": "Software",
+          "count": 51
+        },
+        {
+          "value": "governance",
+          "label": "Governance",
+          "count": 28
+        },
+        {
+          "value": "other",
+          "label": "Other",
+          "count": 11
+        }
+      ],
+      "asset": [
+        {
+          "value": "USDC",
+          "label": "USDC",
+          "count": 77
+        },
+        {
+          "value": "ETH",
+          "label": "ETH",
+          "count": 52
+        },
+        {
+          "value": "SENDIT",
+          "label": "SENDIT",
+          "count": 17
+        },
+        {
+          "value": "0X09E938",
+          "label": "0X09E938",
+          "count": 5
+        }
+      ]
+    },
+    "proposals": {
+      "status": [
+        {
+          "value": "closed",
+          "label": "Closed",
+          "count": 101
+        },
+        {
+          "value": "executed",
+          "label": "Executed",
+          "count": 65
+        },
+        {
+          "value": "cancelled",
+          "label": "Cancelled",
+          "count": 12
+        },
+        {
+          "value": "defeated",
+          "label": "Defeated",
+          "count": 12
+        },
+        {
+          "value": "active",
+          "label": "Active",
+          "count": 3
+        }
+      ],
+      "category": [
+        {
+          "value": "media",
+          "label": "Media",
+          "count": 88
+        },
+        {
+          "value": "travel",
+          "label": "Travel",
+          "count": 24
+        },
+        {
+          "value": "events",
+          "label": "Events",
+          "count": 22
+        },
+        {
+          "value": "athlete-support",
+          "label": "Athlete Support",
+          "count": 20
+        },
+        {
+          "value": "operations",
+          "label": "Operations",
+          "count": 14
+        },
+        {
+          "value": "software",
+          "label": "Software",
+          "count": 11
+        },
+        {
+          "value": "governance",
+          "label": "Governance",
+          "count": 7
+        },
+        {
+          "value": "other",
+          "label": "Other",
+          "count": 7
+        }
+      ],
+      "platform": [
+        {
+          "value": "snapshot",
+          "label": "Snapshot",
+          "count": 101
+        },
+        {
+          "value": "gnars.com",
+          "label": "Gnars.com",
+          "count": 92
+        }
+      ],
+      "chain": [
+        {
+          "value": "snapshot",
+          "label": "Snapshot",
+          "count": 104
+        },
+        {
+          "value": "base",
+          "label": "Base",
+          "count": 80
+        },
+        {
+          "value": "ethereum",
+          "label": "Ethereum",
+          "count": 9
+        }
+      ]
+    },
+    "community": {
+      "tribe": [
+        {
+          "value": "holder",
+          "label": "Holder",
+          "count": 1011
+        },
+        {
+          "value": "delegate",
+          "label": "Delegate",
+          "count": 992
+        },
+        {
+          "value": "contributor",
+          "label": "Contributor",
+          "count": 90
+        },
+        {
+          "value": "proposer",
+          "label": "Proposer",
+          "count": 68
+        },
+        {
+          "value": "recipient",
+          "label": "Recipient",
+          "count": 42
+        },
+        {
+          "value": "athlete",
+          "label": "Athlete",
+          "count": 35
+        },
+        {
+          "value": "builder",
+          "label": "Builder",
+          "count": 3
+        },
+        {
+          "value": "member",
+          "label": "Member",
+          "count": 3
+        }
+      ],
+      "status": [
+        {
+          "value": "active",
+          "label": "Active",
+          "count": 1171
+        }
+      ]
+    },
+    "projects": {
+      "category": [
+        {
+          "value": "governance",
+          "label": "Governance",
+          "count": 1
+        },
+        {
+          "value": "operations",
+          "label": "Operations",
+          "count": 1
+        }
+      ],
+      "status": [
+        {
+          "value": "governance-active",
+          "label": "Governance Active",
+          "count": 1
+        },
+        {
+          "value": "superseded",
+          "label": "Superseded",
+          "count": 1
+        }
+      ]
+    },
+    "treasury": {
+      "asset": [
+        {
+          "value": "USDC",
+          "label": "USDC",
+          "count": 26
+        },
+        {
+          "value": "ETH",
+          "label": "ETH",
+          "count": 18
+        },
+        {
+          "value": "SENDIT",
+          "label": "SENDIT",
+          "count": 6
+        },
+        {
+          "value": "0X09E938",
+          "label": "0X09E938",
+          "count": 2
+        }
+      ],
+      "status": [
+        {
+          "value": "executed",
+          "label": "Executed",
+          "count": 52
+        }
+      ],
+      "category": [
+        {
+          "value": "media",
+          "label": "Media",
+          "count": 29
+        },
+        {
+          "value": "travel",
+          "label": "Travel",
+          "count": 6
+        },
+        {
+          "value": "athlete-support",
+          "label": "Athlete Support",
+          "count": 4
+        },
+        {
+          "value": "events",
+          "label": "Events",
+          "count": 4
+        },
+        {
+          "value": "operations",
+          "label": "Operations",
+          "count": 4
+        },
+        {
+          "value": "software",
+          "label": "Software",
+          "count": 3
+        },
+        {
+          "value": "governance",
+          "label": "Governance",
+          "count": 2
+        }
+      ]
+    },
+    "timeline": {
+      "kind": [
+        {
+          "value": "proposal",
+          "label": "Proposal",
+          "count": 193
+        },
+        {
+          "value": "milestone",
+          "label": "Milestone",
+          "count": 2
+        },
+        {
+          "value": "delivery",
+          "label": "Delivery",
+          "count": 1
+        },
+        {
+          "value": "planning",
+          "label": "Planning",
+          "count": 1
+        }
+      ],
+      "status": [
+        {
+          "value": "closed",
+          "label": "Closed",
+          "count": 101
+        },
+        {
+          "value": "executed",
+          "label": "Executed",
+          "count": 65
+        },
+        {
+          "value": "cancelled",
+          "label": "Cancelled",
+          "count": 12
+        },
+        {
+          "value": "defeated",
+          "label": "Defeated",
+          "count": 12
+        },
+        {
+          "value": "active",
+          "label": "Active",
+          "count": 3
+        },
+        {
+          "value": "completed",
+          "label": "Completed",
+          "count": 2
+        },
+        {
+          "value": "in-progress",
+          "label": "In Progress",
+          "count": 2
+        }
+      ]
+    }
+  }
+}

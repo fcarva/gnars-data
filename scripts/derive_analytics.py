@@ -8,12 +8,30 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 
+from product_datasets import (
+    build_feed_stream,
+    build_filter_facets,
+    build_insights,
+    build_media_proof,
+    build_proposals_enriched,
+    build_treasury_snapshots,
+    expand_people,
+    expand_project_rollups,
+    hydrate_proposals_with_proof,
+    latest_value,
+)
+
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "data"
 RAW_API_DIR = ROOT / "raw" / "api"
 
 BASE_USDC = "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
+BASE_SENDIT = "0xba5b9b2d2d06a9021eb3190ea5fb0e02160839a4"
+TOKEN_DECIMALS_BY_ADDRESS = {
+    BASE_USDC: 6,
+    BASE_SENDIT: 18,
+}
 
 
 def load_json_path(path: Path) -> Any:
@@ -165,7 +183,7 @@ def build_window_specs(as_of_value: str) -> list[dict[str, Any]]:
 def is_successful_proposal(record: dict[str, Any]) -> bool:
     platform = str(record.get("platform") or "").strip().lower()
     status = str(record.get("status") or "").strip().lower()
-    if platform == "gnars":
+    if platform in {"gnars", "gnars.com"}:
         return status == "executed"
     if platform == "snapshot" and status == "closed":
         scores = [number_or_zero(value) for value in (record.get("scores_by_choice") or [])]
@@ -304,7 +322,18 @@ def fungible_transfer_details(
 
     if kind == "erc20_transfer":
         token_address = normalize_address(transaction.get("token_contract") or transaction.get("target"))
-        amount = number_or_zero(transaction.get("amount_normalized") or transaction.get("amount_raw"))
+        normalized_value = transaction.get("amount_normalized")
+        raw_value = transaction.get("amount_raw")
+        amount = number_or_zero(normalized_value if normalized_value not in (None, "") else raw_value)
+        if raw_value not in (None, "") and token_address in TOKEN_DECIMALS_BY_ADDRESS:
+            try:
+                raw_int = int(str(raw_value))
+            except ValueError:
+                raw_int = 0
+            normalized_text = str(normalized_value).strip() if normalized_value not in (None, "") else ""
+            raw_text = str(raw_value).strip()
+            if raw_int > 0 and (not normalized_text or normalized_text == raw_text):
+                amount = raw_int / (10 ** TOKEN_DECIMALS_BY_ADDRESS[token_address])
         if not recipient or amount <= 0:
             return None
         return {
@@ -716,6 +745,8 @@ def build_spend_and_nft_records(
     nft_records: list[dict[str, Any]] = []
 
     for proposal in archive["records"]:
+        if not is_successful_proposal(proposal):
+            continue
         project_id = related_project_id(project_lookup, proposal)
         for transaction in proposal.get("transactions") or []:
             recipient = transfer_recipient(transaction)
@@ -1994,7 +2025,15 @@ def main() -> int:
     members_seed = load_json("members")
     people_overrides = load_json("people_overrides")
     project_updates = load_json("project_updates")
+    proposal_tags = load_json("proposal_tags")
     members_snapshot = latest_members_snapshot()
+    analytics_as_of = latest_value(
+        archive.get("as_of"),
+        treasury.get("as_of"),
+        projects.get("as_of"),
+        members_seed.get("as_of"),
+        project_updates.get("as_of"),
+    )
 
     project_lookup: dict[str, str] = {}
     project_names: dict[str, str] = {}
@@ -2095,13 +2134,86 @@ def main() -> int:
         timeline_events=timeline_events,
         treasury_flows=treasury_flows,
     )
+    proposals_enriched = build_proposals_enriched(
+        archive=archive,
+        project_rollups=project_rollups,
+        spend_records=spend_records,
+        timeline_events=timeline_events,
+        proposal_tags=proposal_tags,
+        analytics_as_of=analytics_as_of,
+    )
+    media_proof = build_media_proof(
+        project_updates=project_updates,
+        archive=archive,
+        project_rollups=project_rollups,
+        analytics_as_of=analytics_as_of,
+    )
+    proposals_enriched = hydrate_proposals_with_proof(proposals_enriched, media_proof)
+    project_rollups = expand_project_rollups(
+        project_rollups=project_rollups,
+        project_updates=project_updates,
+        media_proof=media_proof,
+        analytics_as_of=analytics_as_of,
+    )
+    people = expand_people(
+        people=people,
+        archive=archive,
+        spend_records=spend_records,
+        project_updates=project_updates,
+        media_proof=media_proof,
+        network_graph=network_graph,
+        proposals_enriched=proposals_enriched,
+        analytics_as_of=analytics_as_of,
+    )
+    feed_stream = build_feed_stream(
+        proposals_enriched=proposals_enriched,
+        spend_records=spend_records,
+        project_updates=project_updates,
+        media_proof=media_proof,
+        people=people,
+        project_rollups=project_rollups,
+        analytics_as_of=analytics_as_of,
+    )
+    insights = build_insights(
+        treasury=treasury,
+        treasury_flows=treasury_flows,
+        community_signals=community_signals,
+        proposals_enriched=proposals_enriched,
+        people=people,
+        project_rollups=project_rollups,
+        analytics_as_of=analytics_as_of,
+    )
+    filter_facets = build_filter_facets(
+        feed_stream=feed_stream,
+        proposals_enriched=proposals_enriched,
+        people=people,
+        project_rollups=project_rollups,
+        treasury_flows=treasury_flows,
+        timeline_events=timeline_events,
+        analytics_as_of=analytics_as_of,
+    )
+    treasury_snapshots = build_treasury_snapshots(treasury=treasury, analytics_as_of=analytics_as_of)
+
+    for payload in (
+        people,
+        project_rollups,
+        dao_metrics,
+        timeline_events,
+        activity_timeseries,
+        treasury_flows,
+        community_signals,
+        network_graph,
+    ):
+        payload["analytics_as_of"] = analytics_as_of
+        payload["as_of"] = analytics_as_of
 
     write_json("people", people)
     write_json(
         "spend_ledger",
         {
             "dataset": "spend_ledger",
-            "as_of": archive["as_of"],
+            "analytics_as_of": analytics_as_of,
+            "as_of": analytics_as_of,
             "version": 1,
             "records": spend_records,
         },
@@ -2113,6 +2225,12 @@ def main() -> int:
     write_json("treasury_flows", treasury_flows)
     write_json("community_signals", community_signals)
     write_json("network_graph", network_graph)
+    write_json("proposals_enriched", proposals_enriched)
+    write_json("media_proof", media_proof)
+    write_json("feed_stream", feed_stream)
+    write_json("insights", insights)
+    write_json("filter_facets", filter_facets)
+    write_json("treasury_snapshots", treasury_snapshots)
     return 0
 
 

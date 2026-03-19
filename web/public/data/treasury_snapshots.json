@@ -1,0 +1,50 @@
+{
+  "dataset": "treasury_snapshots",
+  "analytics_as_of": "2026-03-19T03:35:14.475549Z",
+  "as_of": "2026-03-19T03:35:14.475549Z",
+  "version": 1,
+  "records": [
+    {
+      "snapshot_id": "2026-03-19",
+      "date": "2026-03-19",
+      "wallet_address": "0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+      "wallet_label": "Gnars DAO Treasury",
+      "homepage_label_usd": 46500.0,
+      "total_value_usd": 45702.279909669734,
+      "display_widget_usd": 0.0,
+      "assets": [
+        {
+          "symbol": "USDC",
+          "amount": 21396.243942,
+          "value_usd": 21396.20114951212
+        },
+        {
+          "symbol": "SENDIT",
+          "amount": 474092937.5544444,
+          "value_usd": 4750.411234295533
+        },
+        {
+          "symbol": "WETH",
+          "amount": 0.02752447,
+          "value_usd": 60.65457356019999
+        },
+        {
+          "symbol": "GNARS",
+          "amount": 562300.0,
+          "value_usd": 8.84
+        },
+        {
+          "symbol": "SKATEHACKER",
+          "amount": 69400.0,
+          "value_usd": 1.91
+        },
+        {
+          "symbol": "ZIMARDRP",
+          "amount": 111100.0,
+          "value_usd": 1.38
+        }
+      ],
+      "data_quality_note": "Homepage treasury label: 46500.0; treasury metric payload: 45702.28; visible treasury widget: 0.0. Use row-level holdings plus the metric payload as the reliable balance layer."
+    }
+  ]
+}
