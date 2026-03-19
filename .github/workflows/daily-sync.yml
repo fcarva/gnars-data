@@ -27,6 +27,9 @@ jobs:
           cache: npm
           cache-dependency-path: web/package-lock.json
 
+      - name: Sync Gnars web sources
+        run: python scripts/sync_gnars.py
+
       - name: Sync proposal archive
         run: python scripts/sync_proposals.py
 

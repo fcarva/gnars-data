@@ -14,7 +14,7 @@
     "proposers_count": 73,
     "workstream_count": 2,
     "treasury_assets_count": 6,
-    "treasury_total_value_usd": 45470.32754260856,
+    "treasury_total_value_usd": 45430.22496403198,
     "outflows_eth": 19.18149871,
     "outflows_usdc": 247754.0,
     "outflows_gnars": 0,
@@ -33,7 +33,7 @@
     "wallet_address": "0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
     "wallet_label": "Gnars DAO Treasury",
     "homepage_treasury_label_usd": 46500.0,
-    "treasury_page_total_value_usd": 45470.32754260856,
+    "treasury_page_total_value_usd": 45430.22496403198,
     "treasury_page_display_total_usd": 0.0,
     "assets": [
       {
@@ -46,19 +46,19 @@
         "symbol": "SENDIT",
         "name": "Sendit",
         "amount": 474092937.5544444,
-        "value_usd": 4707.742869915633
+        "value_usd": 4688.7791524134545
       },
       {
         "symbol": "WETH",
         "name": "Wrapped Ether",
         "amount": 0.02752447,
-        "value_usd": 60.3493271879
+        "value_usd": 60.65457356019999
       },
       {
         "symbol": "GNARS",
         "name": "gnars",
         "amount": 562300.0,
-        "value_usd": 8.85
+        "value_usd": 8.83
       },
       {
         "symbol": "SKATEHACKER",
@@ -70,7 +70,7 @@
         "symbol": "ZIMARDRP",
         "name": "zimardrp",
         "amount": 111100.0,
-        "value_usd": 1.39
+        "value_usd": 1.38
       }
     ]
   },

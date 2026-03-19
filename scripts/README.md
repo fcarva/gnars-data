@@ -8,6 +8,7 @@
 - `sync_treasury.py`: collect live treasury holdings and normalize the treasury dataset
 - `tag_proposals.py`: seed and maintain the proposal-tagging review queue
 - `build_site.py`: generate the `_site/` GitHub Pages artifact
+- `refresh_all.ps1`: run full local MVP refresh (sync, derive, validate, export, and web build)
 
 External operator tooling such as Herd MCP is documented in `docs/operations/` and `data/sources.json`, but is not yet automated by a local sync script.
 
@@ -18,4 +19,10 @@ python scripts\derive_analytics.py
 python scripts\validate_data.py
 python scripts\export_csv.py
 python scripts\build_site.py
+```
+
+Full local MVP refresh in one command:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts\refresh_all.ps1
 ```

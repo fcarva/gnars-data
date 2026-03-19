@@ -2,7 +2,7 @@
   "dataset": "people",
   "as_of": "2026-03-18T20:16:40.716404Z",
   "version": 1,
-  "source_members_snapshot": "20260318T175953Z-gnars-members-api.json",
+  "source_members_snapshot": "20260319T024908Z-gnars-members-api.json",
   "records": [
     {
       "person_id": "0xe5f6...8beb",
@@ -2624,8 +2624,8 @@
         "holder_token_count": 8,
         "delegated_token_count": 4,
         "active_votes": 4,
-        "votes_count": 24,
-        "attendance_pct": 23,
+        "votes_count": 25,
+        "attendance_pct": 24,
         "like_pct": 96,
         "proposals_authored_count": 1,
         "votes_cast_count": 22
@@ -2860,10 +2860,10 @@
       "status": "active",
       "role": "web development, data pipelines",
       "roles": [
-        "web development, data pipelines",
-        "operations",
         "web development",
-        "data pipelines"
+        "operations",
+        "data pipelines",
+        "web development, data pipelines"
       ],
       "tags": [
         "builder",
@@ -5614,8 +5614,8 @@
         "holder_token_count": 66,
         "delegated_token_count": 66,
         "active_votes": 66,
-        "votes_count": 5,
-        "attendance_pct": 5,
+        "votes_count": 6,
+        "attendance_pct": 6,
         "like_pct": 100,
         "proposals_authored_count": 0,
         "votes_cast_count": 9
