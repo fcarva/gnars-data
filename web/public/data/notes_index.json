@@ -1,0 +1,91 @@
+{
+  "dataset": "notes_index",
+  "as_of": "2026-03-19T01:17:53.651Z",
+  "version": 1,
+  "records": [
+    {
+      "slug": "docs-readme-md",
+      "title": "Documentation",
+      "section": "docs",
+      "href": "/notes/#docs-readme-md",
+      "excerpt": "Documentation This directory holds the human readable context around the : architecture/ explains how the repository is organized governance/ defines proposal taxonomy and governance modeling operations/ defines sync,..."
+    },
+    {
+      "slug": "docs-operations-ethskills-md",
+      "title": "ETHSkills",
+      "section": "docs",
+      "href": "/notes/#docs-operations-ethskills-md",
+      "excerpt": "ETHSkills Why it is relevant to gnars data ETHSkills is not a Gnars data source. It is a supplemental Ethereum knowledge base for agents and operators working on this repository. It is useful when the task is about: i..."
+    },
+    {
+      "slug": "docs-operations-github-pages-md",
+      "title": "GitHub Pages Publishing",
+      "section": "docs",
+      "href": "/notes/#docs-operations-github-pages-md",
+      "excerpt": "GitHub Pages Publishing This repository publishes a static vault style site built from repository markdown,  , and  . Expected public paths / /notes/ // //proposals. //proposals archive. For the fcarva/gnars data repo..."
+    },
+    {
+      "slug": "readme-md",
+      "title": "gnars-data",
+      "section": "root",
+      "href": "/notes/#readme-md",
+      "excerpt": "gnars data Canonical data repository for Gnars DAO across gnars.com , gnars.wtf , gnars.center , governance archives, and legacy community sources. Supplementary operator tooling tracked in this repo includes Dune for..."
+    },
+    {
+      "slug": "docs-governance-readme-md",
+      "title": "Governance Model",
+      "section": "docs",
+      "href": "/notes/#docs-governance-readme-md",
+      "excerpt": "Governance Model Purpose This repository should make governance legible across every Gnars era: Snapshot V1 Legacy Ethereum governance Base / current gnars.com governance Archive  data/proposals. is the curated layer ..."
+    },
+    {
+      "slug": "docs-operations-herd-mcp-md",
+      "title": "Herd MCP",
+      "section": "docs",
+      "href": "/notes/#docs-operations-herd-mcp-md",
+      "excerpt": "Herd MCP Why it matters for gnars data Herd is a useful supplement when the repo needs richer onchain context than a flat explorer or  can provide. Use it for: confirming proxy and implementation relationships decodin..."
+    },
+    {
+      "slug": "docs-operations-readme-md",
+      "title": "Operations",
+      "section": "docs",
+      "href": "/notes/#docs-operations-readme-md",
+      "excerpt": "Operations Core operating principle Treat this repository as a long lived operational system, not just a folder of files. Update cadence gnars.com dashboard and treasury: daily proposal pages and governance metadata: ..."
+    },
+    {
+      "slug": "docs-proposals-111-gnars-revamp-docs-and-governance-md",
+      "title": "Proposal 111",
+      "section": "docs",
+      "href": "/notes/#docs-proposals-111-gnars-revamp-docs-and-governance-md",
+      "excerpt": "Proposal 111 Metadata Title: Gnars Revamp: Docs and Governance Status: Defeated Proposer: fcarva Proposal URL: https://www.gnars.com/proposals/111 Explorer URL: https://basescan.org/tx/0x5033965c86a5c36a49723f823cf9e7..."
+    },
+    {
+      "slug": "docs-proposals-118-gnars-operations-q1-2026-workstream-md",
+      "title": "Proposal 118",
+      "section": "docs",
+      "href": "/notes/#docs-proposals-118-gnars-operations-q1-2026-workstream-md",
+      "excerpt": "Proposal 118 Metadata Title: Gnars Operations Q1 2026 Workstream Proposal Status on live page as of 2026 03 18 : Active Proposer: r4topunk Proposal URL: https://www.gnars.com/proposals/base/118 Explorer URL: https://b..."
+    },
+    {
+      "slug": "docs-proposals-readme-md",
+      "title": "Proposal Archive",
+      "section": "docs",
+      "href": "/notes/#docs-proposals-readme-md",
+      "excerpt": "Proposal Archive Seeded proposal docs: 111 : initial docs and governance revamp proposal 118 : Q1 2026 operations workstream proposal These docs are short archival summaries designed to sit beside the structured  data..."
+    },
+    {
+      "slug": "docs-governance-proposal-tagging-guidelines-md",
+      "title": "Proposal Tagging Guidelines",
+      "section": "docs",
+      "href": "/notes/#docs-governance-proposal-tagging-guidelines-md",
+      "excerpt": "Proposal Tagging Guidelines Use this guide to tag proposals consistently across gnars.com and Snapshot . Goal Turn unstructured proposal text into a reviewable machine layer that supports: proposal search and clusteri..."
+    },
+    {
+      "slug": "docs-architecture-repository-map-md",
+      "title": "Repository Architecture",
+      "section": "docs",
+      "href": "/notes/#docs-architecture-repository-map-md",
+      "excerpt": "Repository Architecture Layers 1. Raw capture raw/ stores untouched snapshots from public websites and APIs. This is the archival layer. 2. Structured data data/ stores normalized  records with stable fields for analy..."
+    }
+  ]
+}

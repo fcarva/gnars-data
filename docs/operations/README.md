@@ -20,6 +20,7 @@ Treat this repository as a long-lived operational system, not just a folder of f
 - Keep schemas aligned with dataset changes
 - Regenerate CSV exports after structured data changes
 - Rebuild `_site/` before publishing Pages artifacts
+- Rebuild `web/dist` before validating the Vercel frontend
 
 ## Supplemental onchain tooling
 
@@ -57,3 +58,11 @@ This repository stores the row-level holdings and explicitly records the discrep
 - `.github/workflows/daily-sync.yml` refreshes proposals, treasury, exports, and the pilot tagging queue every day
 
 See `docs/operations/github-pages.md` for the one-time repository setting that must be enabled.
+
+## Vercel frontend
+
+- `web/` contains the React + Vite static frontend for `Gnars Camp`
+- Vercel should only build the frontend from committed JSON; it should not run sync or enrichment jobs
+- Nested routes are pre-rendered at build time into `web/dist`
+
+See `docs/operations/vercel.md` for the expected Vercel project settings.

@@ -1,0 +1,73 @@
+{
+  "dataset": "projects",
+  "as_of": "2026-03-18",
+  "version": 1,
+  "records": [
+    {
+      "project_id": "docs-governance-revamp",
+      "name": "Gnars Revamp: Docs and Governance",
+      "status": "superseded",
+      "category": "governance-operations",
+      "origin_proposals": [
+        "base-111"
+      ],
+      "owner_addresses": [
+        "0xaaed9fff9858d48925904e391b77892ba5fda824"
+      ],
+      "budget": {
+        "eth": 0.25,
+        "usdc": 900
+      },
+      "objective": "Recover, structure, and unify fragmented Gnars history, governance data, documentation, and legacy media into a developer-ready repository.",
+      "outputs": [
+        "Governance archive",
+        "Documentation consolidation",
+        "Governance taxonomy",
+        "Strategic report",
+        "Data schemas"
+      ],
+      "kpis": [
+        "Proposal history coverage",
+        "Treasury spend categorization",
+        "Searchable documentation",
+        "Onboarding friction reduction"
+      ],
+      "notes": "Although proposal 111 was defeated, its scope became the foundation for the broader operations workstream."
+    },
+    {
+      "project_id": "operations-q1-2026",
+      "name": "Gnars Operations - Q1 2026 Workstream",
+      "status": "governance-active",
+      "category": "operations",
+      "origin_proposals": [
+        "base-118"
+      ],
+      "owner_addresses": [
+        "0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d",
+        "0x8bf5941d27176242745b716251943ae4892a3c26",
+        "0xaaed9fff9858d48925904e391b77892ba5fda824"
+      ],
+      "budget": {
+        "eth": 1.5,
+        "usdc": 3000
+      },
+      "objective": "Maintain Gnars infrastructure, consolidate data and governance archives, expand AI-native tooling, and support product and commerce readiness.",
+      "outputs": [
+        "Revenue and expense tracking",
+        "Unified governance archive",
+        "BI dashboard",
+        "AI knowledge base",
+        "Shop route and operational QA"
+      ],
+      "kpis": [
+        "Dashboard uptime",
+        "Archive completeness",
+        "Proposal analytics coverage",
+        "Treasury reporting cadence",
+        "Agent-answerable knowledge coverage"
+      ],
+      "notes": "As of 2026-03-18, the live proposal page still shows this workstream as active and ending on 2026-03-20."
+    }
+  ]
+}
+

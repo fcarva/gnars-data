@@ -1047,6 +1047,170 @@ tbody tr:hover {
   color: var(--warning);
 }
 
+.table-wrap {
+  overflow-x: auto;
+}
+
+.stack-list,
+.timeline-list,
+.rank-list,
+.facts {
+  display: grid;
+  gap: 12px;
+}
+
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 14px;
+}
+
+.metric-card {
+  padding: 16px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  box-shadow: var(--panel-shadow);
+}
+
+.metric-card strong {
+  display: block;
+  font-size: 1.35rem;
+  color: var(--warning);
+}
+
+.metric-card span {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.analytics-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 24px;
+}
+
+.directory-grid,
+.workstream-grid,
+.proposal-grid,
+.spotlight-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+.entity-card,
+.rank-card {
+  padding: 18px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  box-shadow: var(--panel-shadow);
+}
+
+.entity-card h3,
+.rank-card h3 {
+  margin: 0 0 8px;
+}
+
+.pill-row,
+.filter-row,
+.inline-links {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0 10px;
+  border: 1px solid var(--line-strong);
+  background: var(--surface-strong);
+  color: var(--warning);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.pill.muted {
+  color: var(--muted);
+}
+
+.filter-chip {
+  cursor: pointer;
+}
+
+.filter-chip[data-state="active"] {
+  border-color: var(--warning);
+  background: var(--probe-yellow);
+  color: #100f0f;
+}
+
+.identity-block {
+  display: grid;
+  gap: 14px;
+}
+
+.identity-meta {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.section-stack {
+  display: grid;
+  gap: 24px;
+}
+
+.panel-list {
+  display: grid;
+  gap: 14px;
+}
+
+.timeline-item,
+.fact-row,
+.rank-row {
+  display: grid;
+  gap: 6px;
+  padding: 14px 0;
+  border-top: 1px solid var(--line);
+}
+
+.timeline-item:first-child,
+.fact-row:first-child,
+.rank-row:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.timeline-date,
+.rank-value {
+  color: var(--muted);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.hero-rail {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
+
+.kicker {
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+}
+
+.entity-card[hidden] {
+  display: none !important;
+}
+
 .flash {
   color: var(--accent);
 }
@@ -1079,6 +1243,7 @@ tbody tr:hover {
 }
 
 @media (max-width: 900px) {
+  .analytics-grid,
   .note-layout,
   .split {
     grid-template-columns: 1fr;
@@ -1308,6 +1473,35 @@ SEARCH_JS = r"""
     }
   });
 })();
+
+(() => {
+  document.querySelectorAll("[data-filter-root]").forEach((root) => {
+    const cards = Array.from(root.querySelectorAll("[data-filter-tags]"));
+    const buttons = Array.from(root.querySelectorAll("[data-filter-value]"));
+    if (!cards.length || !buttons.length) return;
+
+    const applyFilter = (value) => {
+      buttons.forEach((button) => {
+        button.dataset.state = button.dataset.filterValue === value ? "active" : "idle";
+      });
+
+      cards.forEach((card) => {
+        const tags = String(card.dataset.filterTags || "")
+          .split(/\s+/)
+          .map((item) => item.trim())
+          .filter(Boolean);
+        const visible = value === "all" || tags.includes(value);
+        card.hidden = !visible;
+      });
+    };
+
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => applyFilter(button.dataset.filterValue || "all"));
+    });
+
+    applyFilter(root.dataset.defaultFilter || "all");
+  });
+})();
 """
 
 
@@ -1326,6 +1520,14 @@ def rel_href(from_page: Path, to_page: Path) -> str:
 
 def active_section(path: Path) -> str:
     relative = site_relative(path)
+    if relative.startswith("people/"):
+        return "people"
+    if relative.startswith("workstreams/"):
+        return "workstreams"
+    if relative.startswith("treasury/"):
+        return "treasury"
+    if relative.startswith("proposals/"):
+        return "proposals"
     if relative.startswith("notes/"):
         return "notes"
     if relative.startswith("datasets/"):
@@ -1340,12 +1542,15 @@ def html_document(path: Path, *, title: str, body: str, description: str = "") -
     search_js_href = rel_href(path, SITE_DIR / "assets" / "search.js")
     search_index_href = rel_href(path, SITE_DIR / "assets" / "search-index.json")
     home_href = rel_href(path, SITE_DIR / "index.html")
+    people_href = rel_href(path, people_index_path())
+    workstreams_href = rel_href(path, workstreams_index_path())
+    treasury_href = rel_href(path, treasury_page_path())
+    proposals_href = rel_href(path, proposals_index_path())
     notes_href = rel_href(path, SITE_DIR / "notes" / "index.html")
     datasets_href = rel_href(path, SITE_DIR / "datasets" / "index.html")
     media_href = rel_href(path, SITE_DIR / "media" / "index.html")
-    proposals_href = rel_href(path, SITE_DIR / "exports" / "proposals.csv")
-    tags_href = rel_href(path, SITE_DIR / "exports" / "proposal_tags.csv")
-    treasury_href = rel_href(path, dataset_page_path("data", DATA_DIR / "treasury.json"))
+    people_csv_href = rel_href(path, SITE_DIR / "exports" / "people.csv")
+    spend_csv_href = rel_href(path, SITE_DIR / "exports" / "spend_ledger.csv")
     current = active_section(path)
     site_root = posixpath.relpath(".", start=site_relative(path.parent))
 
@@ -1384,31 +1589,32 @@ def html_document(path: Path, *, title: str, body: str, description: str = "") -
         <div class="toolbar">
           <div class="search-shell" data-search-root data-index-url="{search_index_href}" data-site-root="{site_root}">
             <span class="search-prompt">/</span>
-            <input class="search-input" type="search" placeholder="search notes, datasets, tags..." data-search-input />
+            <input class="search-input" type="search" placeholder="search people, workstreams, proposals, data..." data-search-input />
             <div class="search-results" data-search-results hidden></div>
           </div>
           <button class="micro theme-toggle" type="button" data-theme-toggle aria-pressed="false">Dark</button>
-          <a class="micro" href="{proposals_href}">proposals.csv</a>
-          <a class="micro" href="{tags_href}">pilot-30</a>
+          <a class="micro" href="{people_csv_href}">people.csv</a>
+          <a class="micro" href="{spend_csv_href}">spend_ledger.csv</a>
         </div>
       </div>
       <div class="tabbar">
         <div class="tabset">
-          {tab(home_href, "ALL", "home")}
+          {tab(home_href, "OVERVIEW", "home")}
+          {tab(people_href, "PEOPLE", "people")}
+          {tab(workstreams_href, "WORKSTREAMS", "workstreams")}
+          {tab(treasury_href, "TREASURY", "treasury")}
+          {tab(proposals_href, "PROPOSALS", "proposals")}
           {tab(notes_href, "NOTES", "notes")}
           {tab(datasets_href, "DATA", "datasets")}
           {tab(media_href, "MEDIA", "media")}
-          {tab(proposals_href, "PROPS")}
-          {tab(tags_href, "TAGS")}
-          {tab(treasury_href, "TREASURY")}
         </div>
       </div>
       <div class="workspace">
         {body}
       </div>
       <div class="footer">
-        <div class="subline">canonical dao archive / synced exports / public pages</div>
-        <div>tracked in <code>gnars-data</code></div>
+        <div class="subline">gnars camp / analytics-first dao archive / static pages</div>
+        <div>tracked in <code>gnars-data</code> with public csv + json endpoints</div>
       </div>
     </div>
   </div>
@@ -1421,6 +1627,63 @@ def html_document(path: Path, *, title: str, body: str, description: str = "") -
 def load_json(name: str) -> Any:
     with (DATA_DIR / f"{name}.json").open("r", encoding="utf-8") as handle:
         return json.load(handle)
+
+
+def short_address(address: str | None) -> str:
+    if not address:
+        return "unknown"
+    if len(address) < 12:
+        return address
+    return f"{address[:6]}...{address[-4:]}"
+
+
+def format_number(value: Any, digits: int = 0) -> str:
+    if value in (None, ""):
+        return "n/a"
+    if digits == 0:
+        return f"{float(value):,.0f}"
+    return f"{float(value):,.{digits}f}"
+
+
+def format_pct(value: Any) -> str:
+    if value in (None, ""):
+        return "n/a"
+    return f"{float(value):.0f}%"
+
+
+def format_asset(value: Any, symbol: str, digits: int = 2) -> str:
+    if value in (None, ""):
+        return f"0 {symbol}"
+    return f"{float(value):,.{digits}f} {symbol}"
+
+
+def normalize_address(address: str | None) -> str:
+    return (address or "").strip().lower()
+
+
+def join_pills(values: list[str], *, muted: bool = False) -> str:
+    if not values:
+        return '<span class="pill muted">none</span>' if muted else ""
+    return "".join(
+        f'<span class="pill{" muted" if muted else ""}">{html.escape(str(value))}</span>'
+        for value in values
+        if str(value).strip()
+    )
+
+
+def table_panel(title: str, headers: list[str], rows: list[dict[str, Any]], meta: str = "") -> str:
+    meta_html = f'<span class="meta">{html.escape(meta)}</span>' if meta else ""
+    return f"""
+    <div class="panel">
+      <div class="section-head">
+        <h2>{html.escape(title)}</h2>
+        {meta_html}
+      </div>
+      <div class="table-wrap">
+        {render_table(headers, rows)}
+      </div>
+    </div>
+    """
 
 
 def truncate(value: str, limit: int = 160) -> str:
@@ -1786,6 +2049,34 @@ def dataset_page_path(kind: str, path: Path) -> Path:
     return SITE_DIR / "datasets" / kind / path.stem / "index.html"
 
 
+def people_index_path() -> Path:
+    return SITE_DIR / "people" / "index.html"
+
+
+def person_page_path(slug: str) -> Path:
+    return SITE_DIR / "people" / slug / "index.html"
+
+
+def workstreams_index_path() -> Path:
+    return SITE_DIR / "workstreams" / "index.html"
+
+
+def workstream_page_path(slug: str) -> Path:
+    return SITE_DIR / "workstreams" / slug / "index.html"
+
+
+def treasury_page_path() -> Path:
+    return SITE_DIR / "treasury" / "index.html"
+
+
+def proposals_index_path() -> Path:
+    return SITE_DIR / "proposals" / "index.html"
+
+
+def proposal_page_path(archive_id: str) -> Path:
+    return SITE_DIR / "proposals" / archive_id / "index.html"
+
+
 def media_index_path() -> Path:
     return SITE_DIR / "media" / "index.html"
 
@@ -1860,7 +2151,34 @@ def discover_media_library() -> dict[str, Any]:
     }
 
 
-def build_search_index(notes: list[dict[str, Any]], media_library: dict[str, Any]) -> list[dict[str, str]]:
+def load_analytics() -> dict[str, Any]:
+    analytics = {
+        "people": load_json("people"),
+        "project_updates": load_json("project_updates"),
+        "project_rollups": load_json("project_rollups"),
+        "spend_ledger": load_json("spend_ledger"),
+        "dao_metrics": load_json("dao_metrics"),
+        "proposals_archive": load_json("proposals_archive"),
+        "treasury": load_json("treasury"),
+        "proposal_tags": load_json("proposal_tags"),
+    }
+    analytics["people_by_address"] = {
+        normalize_address(record["address"]): record for record in analytics["people"]["records"]
+    }
+    analytics["project_by_id"] = {
+        record["project_id"]: record for record in analytics["project_rollups"]["records"]
+    }
+    analytics["proposal_by_archive_id"] = {
+        record["archive_id"]: record for record in analytics["proposals_archive"]["records"]
+    }
+    return analytics
+
+
+def build_search_index(
+    notes: list[dict[str, Any]],
+    media_library: dict[str, Any],
+    analytics: dict[str, Any],
+) -> list[dict[str, str]]:
     entries: list[dict[str, str]] = []
 
     for note in notes:
@@ -1914,77 +2232,186 @@ def build_search_index(notes: list[dict[str, Any]], media_library: dict[str, Any
             }
         )
 
+    for person in analytics["people"]["records"]:
+        entries.append(
+            {
+                "type": "person",
+                "title": person["display_name"],
+                "summary": clamp_text(
+                    f"{person['role']} | {', '.join(person['tags'][:4])} | ETH {person['receipts']['eth_received']} | USDC {person['receipts']['usdc_received']}",
+                    limit=160,
+                ),
+                "href": site_relative(person_page_path(person["slug"])),
+                "path": f"people/{person['slug']}",
+                "search_text": " ".join(
+                    [
+                        person["display_name"],
+                        person["address"],
+                        person["role"],
+                        " ".join(person["tags"]),
+                        " ".join(person["domains"]),
+                    ]
+                ).strip(),
+            }
+        )
+
+    for project in analytics["project_rollups"]["records"]:
+        entries.append(
+            {
+                "type": "workstream",
+                "title": project["name"],
+                "summary": clamp_text(
+                    f"{project['status']} | spent {project['spent']['eth']} ETH / {project['spent']['usdc']} USDC | {project['updates_count']} updates",
+                    limit=160,
+                ),
+                "href": site_relative(workstream_page_path(project["slug"])),
+                "path": f"workstreams/{project['slug']}",
+                "search_text": " ".join(
+                    [
+                        project["name"],
+                        project["project_id"],
+                        project["category"],
+                        " ".join(project["origin_proposals"]),
+                        " ".join(project["outputs"]),
+                    ]
+                ).strip(),
+            }
+        )
+
+    for proposal in analytics["proposals_archive"]["records"]:
+        entries.append(
+            {
+                "type": "proposal",
+                "title": proposal_display_title(proposal),
+                "summary": clamp_text(
+                    f"{proposal['status']} | proposer {proposal.get('proposer_label') or short_address(proposal.get('proposer'))} | votes {len(proposal['votes'])}",
+                    limit=160,
+                ),
+                "href": site_relative(proposal_page_path(proposal["archive_id"])),
+                "path": f"proposals/{proposal['archive_id']}",
+                "search_text": " ".join(
+                    [
+                        proposal_display_title(proposal),
+                        proposal["archive_id"],
+                        str(proposal.get("proposal_number") or ""),
+                        proposal["status"],
+                        str(proposal.get("proposer") or ""),
+                    ]
+                ).strip(),
+            }
+        )
+
     return entries
 
 
-def build_home(notes: list[dict[str, Any]], media_library: dict[str, Any]) -> None:
-    archive = load_json("proposals_archive")
-    treasury = load_json("treasury")
-    members = load_json("members")
-    contracts = load_json("contracts")
-    proposal_tags = load_json("proposal_tags")
+def build_home(notes: list[dict[str, Any]], media_library: dict[str, Any], analytics: dict[str, Any]) -> None:
+    metrics = analytics["dao_metrics"]
+    overview = metrics["overview"]
+    people = analytics["people"]["records"]
+    workstreams = analytics["project_rollups"]["records"]
 
-    proposal_count = len(archive["records"])
-    vote_count = sum(len(record["votes"]) for record in archive["records"])
-    tx_count = sum(len(record["transactions"]) for record in archive["records"])
-    pilot_count = len(proposal_tags["records"])
-
-    latest_rows = [
+    recent_proposal_rows = [
         {
-            "archive_id": record["archive_id"],
-            "platform": record["platform"],
-            "proposal_number": record["proposal_number"],
-            "title": proposal_display_title(record),
+            "proposal": f"P{record['proposal_number']}" if record.get("proposal_number") is not None else record["archive_id"],
+            "title": proposal_display_title(analytics["proposal_by_archive_id"].get(record["archive_id"], record)),
             "status": record["status"],
+            "end_at": record["end_at"],
         }
-        for record in archive["records"][:5]
+        for record in metrics["recent"]["proposals"][:6]
     ]
-    latest_headers = ["archive_id", "platform", "proposal_number", "title", "status"]
-    latest_table = render_table(latest_headers, latest_rows)
-    feed_rows = []
-    for record in archive["records"][:6]:
-        label = f"P{record['proposal_number']}" if record.get("proposal_number") is not None else record["platform"].upper()
-        feed_rows.append(
+    recent_payout_rows = [
+        {
+            "recipient": record["recipient_display_name"],
+            "asset": record["asset_symbol"],
+            "amount": record["amount"],
+            "project": record["project_id"] or "unassigned",
+        }
+        for record in metrics["recent"]["payouts"][:6]
+    ]
+
+    leaderboard_cards = []
+    leaderboard_map = [
+        ("USDC received", metrics["leaderboards"]["usdc_received"][:5], "USDC"),
+        ("ETH received", metrics["leaderboards"]["eth_received"][:5], "ETH"),
+        ("Active votes", metrics["leaderboards"]["active_votes"][:5], "votes"),
+    ]
+    for label, rows, suffix in leaderboard_map:
+        items = []
+        for row in rows:
+            href = rel_href(SITE_DIR / "index.html", person_page_path(row["slug"]))
+            value = format_number(row["value"], 2 if suffix in {"USDC", "ETH"} else 0)
+            items.append(
+                f"""
+                <div class="rank-row">
+                  <a href="{href}"><strong>{html.escape(row['display_name'])}</strong></a>
+                  <span class="rank-value">{value} {html.escape(suffix)}</span>
+                </div>
+                """
+            )
+        leaderboard_cards.append(
             f"""
-            <div class="feed-row">
-              <div class="feed-time">{html.escape(label)}</div>
-              <div class="feed-body">
-                <strong>{html.escape(proposal_display_title(record))}</strong><br />
-                <span class="muted">{html.escape(record['platform'])} / {html.escape(record['status'])} / {html.escape(record.get('end_at') or 'no end date')}</span>
+            <div class="panel">
+              <div class="section-head">
+                <h2>{html.escape(label)}</h2>
+                <span class="meta">top 5</span>
+              </div>
+              <div class="rank-list">
+                {''.join(items) or '<p class="muted">No rows yet.</p>'}
               </div>
             </div>
             """
         )
 
-    latest_note_cards = []
-    for note in notes[:6]:
+    spotlight_cards = []
+    for row in metrics["leaderboards"]["usdc_received"][:4]:
+        person = analytics["people_by_address"].get(normalize_address(row["address"]))
+        if not person:
+            continue
+        href = rel_href(SITE_DIR / "index.html", person_page_path(person["slug"]))
+        spotlight_cards.append(
+            f"""
+            <article class="entity-card">
+              <div class="kicker">Recipient</div>
+              <h3><a href="{href}">{html.escape(person['display_name'])}</a></h3>
+              <p class="muted">{html.escape(person['role'])}</p>
+              <div class="pill-row">{join_pills(person['tags'][:4], muted=True)}</div>
+              <div class="identity-meta">
+                <span>{format_asset(person['receipts']['eth_received'], 'ETH')}</span>
+                <span>{format_asset(person['receipts']['usdc_received'], 'USDC')}</span>
+                <span>{person['governance']['active_votes']} active votes</span>
+              </div>
+            </article>
+            """
+        )
+
+    workstream_cards = []
+    for project in workstreams[:4]:
+        href = rel_href(SITE_DIR / "index.html", workstream_page_path(project["slug"]))
+        workstream_cards.append(
+            f"""
+            <article class="entity-card">
+              <div class="kicker">{html.escape(project['category'])}</div>
+              <h3><a href="{href}">{html.escape(project['name'])}</a></h3>
+              <p class="muted">{html.escape(project['objective'])}</p>
+              <div class="identity-meta">
+                <span>{format_asset(project['spent']['eth'], 'ETH')}</span>
+                <span>{format_asset(project['spent']['usdc'], 'USDC')}</span>
+                <span>{project['updates_count']} updates</span>
+              </div>
+            </article>
+            """
+        )
+
+    note_cards = []
+    for note in notes[:4]:
         href = rel_href(SITE_DIR / "index.html", note["output"])
-        latest_note_cards.append(
+        note_cards.append(
             f"""
-            <div class="dataset-card">
-              <div class="eyebrow">{html.escape(note['relative_source'].split('/')[0])}</div>
-              <h3>{html.escape(note['title'])}</h3>
+            <article class="entity-card">
+              <div class="kicker">{html.escape(note['relative_source'].split('/')[0])}</div>
+              <h3><a href="{href}">{html.escape(note['title'])}</a></h3>
               <p class="muted">{html.escape(note['summary'])}</p>
-              <div class="links"><a href="{href}">Open note</a></div>
-            </div>
-            """
-        )
-
-    exports_panel = []
-    for path in sorted(EXPORTS_DIR.glob("*.csv"))[:6]:
-        href = rel_href(SITE_DIR / "index.html", SITE_DIR / "exports" / path.name)
-        preview_href = rel_href(SITE_DIR / "index.html", dataset_page_path("exports", path))
-        exports_panel.append(
-            f"""
-            <div class="dataset-card">
-              <div class="eyebrow">Export</div>
-              <h3>{html.escape(path.name)}</h3>
-              <p class="muted">Flat file for downloads, spreadsheets, BI, and automation.</p>
-              <div class="links">
-                <a href="{href}">Download</a>
-                <a href="{preview_href}">Preview</a>
-              </div>
-            </div>
+            </article>
             """
         )
 
@@ -1992,106 +2419,156 @@ def build_home(notes: list[dict[str, Any]], media_library: dict[str, Any]) -> No
     for category in media_library["categories"]:
         media_cards.append(
             f"""
-            <div class="dataset-card">
-              <div class="eyebrow">{html.escape(category['title'])}</div>
-              <h3>{category['count']} item{'s' if category['count'] != 1 else ''}</h3>
+            <article class="entity-card">
+              <div class="kicker">{html.escape(category['title'])}</div>
+              <h3>{category['count']} items</h3>
               <p class="muted">{html.escape(category['summary'])}</p>
-              <div class="links">
-                <a href="{rel_href(SITE_DIR / 'index.html', media_index_path())}#{html.escape(category['slug'])}">Open section</a>
+              <div class="inline-links">
+                <a href="{rel_href(SITE_DIR / 'index.html', media_index_path())}#{html.escape(category['slug'])}">Open media</a>
               </div>
-            </div>
+            </article>
+            """
+        )
+
+    exports_panel = []
+    for filename in ["people.csv", "spend_ledger.csv", "project_rollups.csv", "dao_metrics.csv", "proposals_archive.csv"]:
+        path = EXPORTS_DIR / filename
+        if not path.exists():
+            continue
+        href = rel_href(SITE_DIR / "index.html", SITE_DIR / "exports" / filename)
+        preview_href = rel_href(SITE_DIR / "index.html", dataset_page_path("exports", path))
+        exports_panel.append(
+            f"""
+            <article class="entity-card">
+              <div class="kicker">Export</div>
+              <h3>{html.escape(filename)}</h3>
+              <div class="inline-links">
+                <a href="{preview_href}">Preview</a>
+                <a href="{href}">Download</a>
+              </div>
+            </article>
             """
         )
 
     body = f"""
     <div class="hero">
-      <div class="eyebrow">Noun Terminal Mode</div>
-      <h1>Gnars DAO data, notes, and exports in one terminal-style public base.</h1>
-      <p class="lede">A public console for the Gnars archive: governance records, treasury state, contract registry, proposal tags, and direct machine-download endpoints.</p>
-      <div class="command">curl https://fcarva.github.io/gnars-data/exports/proposals.csv</div>
-      <div class="links">
-        <a class="button" href="{rel_href(SITE_DIR / 'index.html', SITE_DIR / 'exports' / 'proposals.csv')}">Download `proposals.csv`</a>
-        <a class="button secondary" href="{rel_href(SITE_DIR / 'index.html', SITE_DIR / 'notes' / 'index.html')}">Browse notes</a>
-        <a class="button secondary" href="{rel_href(SITE_DIR / 'index.html', SITE_DIR / 'datasets' / 'index.html')}">Browse datasets</a>
-        <a class="button secondary" href="{rel_href(SITE_DIR / 'index.html', media_index_path())}">Browse media</a>
+      <div class="eyebrow">Gnars Camp</div>
+      <h1>DAO analytics, people, workstreams and treasury in a public terminal vault.</h1>
+      <p class="lede">A nouns.camp-style surface for Gnars DAO that keeps the Quartz notes base intact while promoting real governance, budget, recipient and member analytics to the front page.</p>
+      <div class="command">open /people /workstreams /treasury /proposals</div>
+      <div class="hero-rail">
+        <a class="button" href="{rel_href(SITE_DIR / 'index.html', people_index_path())}">Explore people</a>
+        <a class="button secondary" href="{rel_href(SITE_DIR / 'index.html', workstreams_index_path())}">View workstreams</a>
+        <a class="button secondary" href="{rel_href(SITE_DIR / 'index.html', treasury_page_path())}">Open treasury</a>
+        <a class="button secondary" href="{rel_href(SITE_DIR / 'index.html', proposals_index_path())}">Browse proposals</a>
       </div>
     </div>
 
-    <div class="grid stats">
-      <div class="stat"><strong>{proposal_count}</strong><span class="muted">proposal records indexed</span></div>
-      <div class="stat"><strong>{vote_count}</strong><span class="muted">votes archived</span></div>
-      <div class="stat"><strong>{tx_count}</strong><span class="muted">decoded governance transactions</span></div>
-      <div class="stat"><strong>{len(members['records'])}</strong><span class="muted">member records seeded</span></div>
-      <div class="stat"><strong>{len(contracts['records'])}</strong><span class="muted">verified contracts</span></div>
-      <div class="stat"><strong>{pilot_count}</strong><span class="muted">proposal-tag pilot queue</span></div>
-      <div class="stat"><strong>{len(treasury['records'])}</strong><span class="muted">treasury assets tracked</span></div>
-      <div class="stat"><strong>${treasury['overview']['treasury_page_total_value_usd']:.0f}</strong><span class="muted">treasury metric payload</span></div>
+    <div class="metric-grid">
+      <div class="metric-card"><strong>{overview['proposal_count']}</strong><span>proposals indexed</span></div>
+      <div class="metric-card"><strong>{overview['people_count']}</strong><span>people in the unified directory</span></div>
+      <div class="metric-card"><strong>{overview['workstream_count']}</strong><span>tracked workstreams</span></div>
+      <div class="metric-card"><strong>${format_number(overview['treasury_total_value_usd'])}</strong><span>treasury holdings snapshot</span></div>
+      <div class="metric-card"><strong>{format_asset(overview['outflows_eth'], 'ETH')}</strong><span>fungible ETH outflows</span></div>
+      <div class="metric-card"><strong>{format_asset(overview['outflows_usdc'], 'USDC')}</strong><span>fungible USDC outflows</span></div>
+      <div class="metric-card"><strong>{overview['contributors_count']}</strong><span>contributors / recipients</span></div>
+      <div class="metric-card"><strong>{overview['athletes_count']}</strong><span>athlete-tagged profiles</span></div>
     </div>
 
-    <div class="split">
+    <div class="analytics-grid" style="margin-top: 24px;">
+      <div class="section-stack">
+        {table_panel("Recent proposals", ["proposal", "title", "status", "end_at"], recent_proposal_rows, "activity lane")}
+        {table_panel("Recent payouts", ["recipient", "asset", "amount", "project"], recent_payout_rows, "fungible transfers only")}
+      </div>
+      <div class="section-stack">
+        {''.join(leaderboard_cards)}
+      </div>
+    </div>
+
+    <div class="panel" style="margin-top: 24px;">
+      <div class="section-head">
+        <h2>People spotlight</h2>
+        <span class="meta">top recipients and active operators</span>
+      </div>
+      <div class="spotlight-grid">
+        {''.join(spotlight_cards)}
+      </div>
+    </div>
+
+    <div class="panel" style="margin-top: 24px;">
+      <div class="section-head">
+        <h2>Workstreams</h2>
+        <span class="meta">budget vs spent, recipients and updates</span>
+      </div>
+      <div class="workstream-grid">
+        {''.join(workstream_cards)}
+      </div>
+    </div>
+
+    <div class="split" style="margin-top: 24px;">
       <div class="panel">
         <div class="section-head">
-          <h2>Latest proposals</h2>
-          <span class="meta">source: data/proposals_archive.json</span>
+          <h2>Treasury snapshot</h2>
+          <span class="meta">{overview['treasury_assets_count']} assets</span>
         </div>
-        {latest_table}
+        <div class="facts">
+          {''.join(
+              f'<div class="fact-row"><strong>{html.escape(asset["symbol"])}</strong><span>{html.escape(asset["name"])} | ${format_number(asset["value_usd"])}</span></div>'
+              for asset in metrics["treasury"]["assets"][:6]
+          )}
+        </div>
       </div>
       <div class="panel">
         <div class="section-head">
-          <h2>Live feed</h2>
-          <span class="meta">recent proposal lane</span>
+          <h2>Publishing utility</h2>
+          <span class="meta">downloads and machine endpoints</span>
         </div>
-        <div class="feed">
-          {''.join(feed_rows)}
+        <div class="panel-list">
+          <div><a href="{rel_href(SITE_DIR / 'index.html', SITE_DIR / 'exports' / 'people.csv')}">/exports/people.csv</a></div>
+          <div><a href="{rel_href(SITE_DIR / 'index.html', SITE_DIR / 'exports' / 'spend_ledger.csv')}">/exports/spend_ledger.csv</a></div>
+          <div><a href="{rel_href(SITE_DIR / 'index.html', SITE_DIR / 'exports' / 'project_rollups.csv')}">/exports/project_rollups.csv</a></div>
+          <div><a href="{rel_href(SITE_DIR / 'index.html', SITE_DIR / 'data' / 'people.json')}">/data/people.json</a></div>
+          <div><a href="{rel_href(SITE_DIR / 'index.html', SITE_DIR / 'data' / 'dao_metrics.json')}">/data/dao_metrics.json</a></div>
         </div>
       </div>
     </div>
 
     <div class="panel" style="margin-top: 24px;">
       <div class="section-head">
-        <h2>Publishing endpoints</h2>
-        <span class="meta">direct file urls</span>
+        <h2>Notes</h2>
+        <span class="meta">Quartz markdown remains the long-form knowledge base</span>
       </div>
-      <div class="list-rows">
-        <div><a href="{rel_href(SITE_DIR / 'index.html', SITE_DIR / 'exports' / 'proposals.csv')}">/exports/proposals.csv</a></div>
-        <div><a href="{rel_href(SITE_DIR / 'index.html', SITE_DIR / 'exports' / 'proposals_archive.csv')}">/exports/proposals_archive.csv</a></div>
-        <div><a href="{rel_href(SITE_DIR / 'index.html', SITE_DIR / 'data' / 'proposals_archive.json')}">/data/proposals_archive.json</a></div>
-        <div><a href="{rel_href(SITE_DIR / 'index.html', SITE_DIR / 'data' / 'proposal_tags.json')}">/data/proposal_tags.json</a></div>
-        <div><a href="{rel_href(SITE_DIR / 'index.html', SITE_DIR / 'exports' / 'treasury.csv')}">/exports/treasury.csv</a></div>
+      <div class="spotlight-grid">
+        {''.join(note_cards)}
       </div>
     </div>
 
     <div class="panel" style="margin-top: 24px;">
       <div class="section-head">
-        <h2>Recent notes</h2>
-        <span class="meta">governance / operations / publishing / tagging</span>
+        <h2>Media</h2>
+        <span class="meta">{media_library['total_count']} published assets</span>
       </div>
-      <div class="grid cards">
-        {''.join(latest_note_cards)}
-      </div>
-    </div>
-
-    <div class="panel" style="margin-top: 24px;">
-      <div class="section-head">
-        <h2>Downloads</h2>
-        <span class="meta">csv and json ready for fetch</span>
-      </div>
-      <div class="grid datasets">
-        {''.join(exports_panel)}
-      </div>
-    </div>
-
-    <div class="panel" style="margin-top: 24px;">
-      <div class="section-head">
-        <h2>Media Library</h2>
-        <span class="meta">{media_library['total_count']} published asset{'s' if media_library['total_count'] != 1 else ''}</span>
-      </div>
-      <div class="grid cards">
+      <div class="spotlight-grid">
         {''.join(media_cards)}
       </div>
     </div>
+
+    <div class="panel" style="margin-top: 24px;">
+      <div class="section-head">
+        <h2>Exports</h2>
+        <span class="meta">secondary utility rail</span>
+      </div>
+      <div class="spotlight-grid">
+        {''.join(exports_panel)}
+      </div>
+    </div>
     """
-    page = html_document(SITE_DIR / "index.html", title="Gnars Data Vault", body=body, description="Public Gnars DAO data vault.")
+    page = html_document(
+        SITE_DIR / "index.html",
+        title="Gnars Camp",
+        body=body,
+        description="Analytics-first public site for Gnars DAO.",
+    )
     write_text(SITE_DIR / "index.html", page)
 
 
@@ -2164,6 +2641,582 @@ def build_note_pages(notes: list[dict[str, Any]]) -> None:
         """
         page = html_document(note["output"], title=note["title"], body=body, description=note["summary"])
         write_text(note["output"], page)
+
+
+def build_people_index(analytics: dict[str, Any]) -> None:
+    overview = analytics["dao_metrics"]["overview"]
+    cards = []
+    for person in analytics["people"]["records"]:
+        href = rel_href(people_index_path(), person_page_path(person["slug"]))
+        filter_tags = "all " + " ".join(person["tags"])
+        cards.append(
+            f"""
+            <article class="entity-card" data-filter-tags="{html.escape(filter_tags)}">
+              <div class="kicker">{html.escape(person['address_short'])}</div>
+              <h3><a href="{href}">{html.escape(person['display_name'])}</a></h3>
+              <p class="muted">{html.escape(person['role'])}</p>
+              <div class="pill-row">{join_pills(person['tags'][:5], muted=True)}</div>
+              <div class="identity-meta">
+                <span>{person['governance']['active_votes']} active votes</span>
+                <span>{format_asset(person['receipts']['eth_received'], 'ETH')}</span>
+                <span>{format_asset(person['receipts']['usdc_received'], 'USDC')}</span>
+              </div>
+            </article>
+            """
+        )
+
+    body = f"""
+    <div class="hero">
+      <div class="eyebrow">People</div>
+      <h1>Unified member, holder, delegate and contributor directory.</h1>
+      <p class="lede">A single people surface built from the member snapshot, proposals archive, project ownership and payout recipients.</p>
+      <div class="command">filter by holders / delegates / contributors / athletes / recipients / proposers</div>
+    </div>
+
+    <div class="metric-grid">
+      <div class="metric-card"><strong>{overview['people_count']}</strong><span>profiles</span></div>
+      <div class="metric-card"><strong>{overview['holders_count']}</strong><span>holders</span></div>
+      <div class="metric-card"><strong>{overview['delegates_count']}</strong><span>delegates</span></div>
+      <div class="metric-card"><strong>{overview['contributors_count']}</strong><span>contributors</span></div>
+      <div class="metric-card"><strong>{overview['athletes_count']}</strong><span>athletes</span></div>
+      <div class="metric-card"><strong>{overview['recipients_count']}</strong><span>recipients</span></div>
+    </div>
+
+    <div class="panel" style="margin-top: 24px;" data-filter-root data-default-filter="all">
+      <div class="section-head">
+        <h2>Directory</h2>
+        <span class="meta">{overview['people_count']} public profiles</span>
+      </div>
+      <div class="filter-row" style="margin-bottom: 18px;">
+        <button class="pill filter-chip" type="button" data-filter-value="all">All</button>
+        <button class="pill filter-chip" type="button" data-filter-value="holder">Holders</button>
+        <button class="pill filter-chip" type="button" data-filter-value="delegate">Delegates</button>
+        <button class="pill filter-chip" type="button" data-filter-value="contributor">Contributors</button>
+        <button class="pill filter-chip" type="button" data-filter-value="athlete">Athletes</button>
+        <button class="pill filter-chip" type="button" data-filter-value="recipient">Recipients</button>
+        <button class="pill filter-chip" type="button" data-filter-value="proposer">Proposers</button>
+      </div>
+      <div class="directory-grid">
+        {''.join(cards)}
+      </div>
+    </div>
+    """
+    page = html_document(
+        people_index_path(),
+        title="Gnars People",
+        body=body,
+        description="Unified people directory for Gnars DAO.",
+    )
+    write_text(people_index_path(), page)
+
+
+def build_people_pages(analytics: dict[str, Any]) -> None:
+    updates_by_id = {record["update_id"]: record for record in analytics["project_updates"]["records"]}
+    for person in analytics["people"]["records"]:
+        payout_rows = [
+            {
+                "proposal": record["archive_id"],
+                "asset": record["asset_symbol"],
+                "amount": record["amount"],
+                "project": record["project_id"] or "unassigned",
+            }
+            for record in analytics["spend_ledger"]["records"]
+            if normalize_address(record["recipient_address"]) == normalize_address(person["address"])
+        ][:12]
+
+        authored_rows = []
+        for archive_id in person["relationships"]["authored_proposals"][:12]:
+            proposal = analytics["proposal_by_archive_id"].get(archive_id)
+            if not proposal:
+                continue
+            authored_rows.append(
+                {
+                    "archive_id": archive_id,
+                    "title": proposal_display_title(proposal),
+                    "status": proposal["status"],
+                    "end_at": proposal["end_at"],
+                }
+            )
+
+        related_workstreams = []
+        for project_id in person["relationships"]["related_projects"]:
+            project = analytics["project_by_id"].get(project_id)
+            if not project:
+                continue
+            href = rel_href(person_page_path(person["slug"]), workstream_page_path(project["slug"]))
+            related_workstreams.append(
+                f"""
+                <div class="fact-row">
+                  <a href="{href}"><strong>{html.escape(project['name'])}</strong></a>
+                  <span>{format_asset(project['spent']['eth'], 'ETH')} / {format_asset(project['spent']['usdc'], 'USDC')}</span>
+                </div>
+                """
+            )
+
+        updates_markup = []
+        for update_id in person["relationships"]["related_updates"]:
+            update = updates_by_id.get(update_id)
+            if not update:
+                continue
+            updates_markup.append(
+                f"""
+                <div class="timeline-item">
+                  <span class="timeline-date">{html.escape(update['date'])} / {html.escape(update['status'])}</span>
+                  <strong>{html.escape(update['title'])}</strong>
+                  <span>{html.escape(update['summary'])}</span>
+                </div>
+                """
+            )
+
+        rank_rows = []
+        for label, key in [
+            ("ETH received", "eth_received"),
+            ("USDC received", "usdc_received"),
+            ("Active votes", "active_votes"),
+            ("Proposals", "proposal_count"),
+        ]:
+            rows = analytics["dao_metrics"]["leaderboards"][key]
+            for index, row in enumerate(rows, start=1):
+                if normalize_address(row["address"]) != normalize_address(person["address"]):
+                    continue
+                rank_rows.append(
+                    f'<div class="rank-row"><strong>{html.escape(label)}</strong><span class="rank-value">rank #{index} / {format_number(row["value"], 2 if key in {"eth_received", "usdc_received"} else 0)}</span></div>'
+                )
+                break
+
+        body = f"""
+        <div class="hero">
+          <div class="eyebrow">Person</div>
+          <h1>{html.escape(person['display_name'])}</h1>
+          <p class="lede">{html.escape(person['bio'] or person['role'])}</p>
+          <div class="command">{html.escape(person['address'])}</div>
+          <div class="hero-rail">
+            {join_pills(person['tags'][:6], muted=True)}
+          </div>
+        </div>
+
+        <div class="metric-grid">
+          <div class="metric-card"><strong>{person['governance']['holder_token_count']}</strong><span>held tokens</span></div>
+          <div class="metric-card"><strong>{person['governance']['active_votes']}</strong><span>active votes</span></div>
+          <div class="metric-card"><strong>{person['governance']['proposals_authored_count']}</strong><span>proposals authored</span></div>
+          <div class="metric-card"><strong>{person['governance']['votes_cast_count']}</strong><span>votes cast</span></div>
+          <div class="metric-card"><strong>{format_asset(person['receipts']['eth_received'], 'ETH')}</strong><span>ETH received</span></div>
+          <div class="metric-card"><strong>{format_asset(person['receipts']['usdc_received'], 'USDC')}</strong><span>USDC received</span></div>
+          <div class="metric-card"><strong>{format_asset(person['receipts']['gnars_received'], 'GNARS')}</strong><span>GNARS received</span></div>
+          <div class="metric-card"><strong>{person['receipts']['nft_received_count']}</strong><span>NFTs received</span></div>
+        </div>
+
+        <div class="analytics-grid" style="margin-top: 24px;">
+          <div class="section-stack">
+            {table_panel("Direct receipts", ["proposal", "asset", "amount", "project"], payout_rows, "fungible transfers only")}
+            {table_panel("Authored proposals", ["archive_id", "title", "status", "end_at"], authored_rows, "governance history")}
+          </div>
+          <div class="section-stack">
+            <div class="panel">
+              <div class="section-head"><h2>Identity</h2></div>
+              <div class="identity-block">
+                <div class="identity-meta">
+                  <span>{html.escape(person['address'])}</span>
+                  <span>attendance {format_pct(person['governance']['attendance_pct'])}</span>
+                  <span>like {format_pct(person['governance']['like_pct'])}</span>
+                </div>
+                <div class="inline-links">
+                  <a href="{html.escape(person['identity']['member_url'])}">member page</a>
+                  {f'<a href="{html.escape(person["identity"]["farcaster"])}">farcaster</a>' if person['identity']['farcaster'] else ''}
+                  {f'<a href="{html.escape(person["identity"]["github"])}">github</a>' if person['identity']['github'] else ''}
+                </div>
+                <p class="muted">{html.escape(person['notes'] or 'No editorial notes yet.')}</p>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="section-head"><h2>Rankings</h2></div>
+              <div class="rank-list">
+                {''.join(rank_rows) or '<p class="muted">No leaderboard placement in the current top slices.</p>'}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="split" style="margin-top: 24px;">
+          <div class="panel">
+            <div class="section-head"><h2>Related workstreams</h2></div>
+            <div class="facts">
+              {''.join(related_workstreams) or '<p class="muted">No linked workstreams yet.</p>'}
+            </div>
+          </div>
+          <div class="panel">
+            <div class="section-head"><h2>Updates and milestones</h2></div>
+            <div class="timeline-list">
+              {''.join(updates_markup) or '<p class="muted">No manual updates linked yet.</p>'}
+            </div>
+          </div>
+        </div>
+        """
+        page = html_document(
+            person_page_path(person["slug"]),
+            title=person["display_name"],
+            body=body,
+            description=f"Profile for {person['display_name']} in the Gnars people directory.",
+        )
+        write_text(person_page_path(person["slug"]), page)
+
+
+def build_workstreams_index(analytics: dict[str, Any]) -> None:
+    cards = []
+    for project in analytics["project_rollups"]["records"]:
+        href = rel_href(workstreams_index_path(), workstream_page_path(project["slug"]))
+        cards.append(
+            f"""
+            <article class="entity-card">
+              <div class="kicker">{html.escape(project['category'])}</div>
+              <h3><a href="{href}">{html.escape(project['name'])}</a></h3>
+              <p class="muted">{html.escape(project['objective'])}</p>
+              <div class="identity-meta">
+                <span>{html.escape(project['status'])}</span>
+                <span>{format_asset(project['spent']['eth'], 'ETH')}</span>
+                <span>{format_asset(project['spent']['usdc'], 'USDC')}</span>
+                <span>{project['updates_count']} updates</span>
+              </div>
+            </article>
+            """
+        )
+
+    body = f"""
+    <div class="hero">
+      <div class="eyebrow">Workstreams</div>
+      <h1>Budget, spend, recipients and milestones by project.</h1>
+      <p class="lede">Approved budgets from `projects.json` crossed with real fungible proposal payouts and editorial updates.</p>
+      <div class="command">compare budget vs spent by asset, not synthetic USD</div>
+    </div>
+    <div class="workstream-grid">
+      {''.join(cards)}
+    </div>
+    """
+    page = html_document(
+        workstreams_index_path(),
+        title="Gnars Workstreams",
+        body=body,
+        description="Workstreams and budget utilization for Gnars DAO.",
+    )
+    write_text(workstreams_index_path(), page)
+
+
+def build_workstream_pages(analytics: dict[str, Any]) -> None:
+    updates_by_id = {record["update_id"]: record for record in analytics["project_updates"]["records"]}
+    for project in analytics["project_rollups"]["records"]:
+        recipient_rows = [
+            {
+                "recipient": record["display_name"],
+                "eth": record["eth_received"],
+                "usdc": record["usdc_received"],
+                "gnars": record["gnars_received"],
+                "nfts": record["nft_received_count"],
+            }
+            for record in project["recipients"]
+        ]
+        proposal_rows = [
+            {
+                "proposal_key": record["proposal_key"],
+                "title": record["title"],
+                "status": record["status"],
+                "number": record["proposal_number"],
+            }
+            for record in project["proposal_summaries"]
+        ]
+        owner_links = []
+        for address in project["owner_addresses"]:
+            person = analytics["people_by_address"].get(normalize_address(address))
+            if not person:
+                owner_links.append(f"<span>{html.escape(short_address(address))}</span>")
+                continue
+            href = rel_href(workstream_page_path(project["slug"]), person_page_path(person["slug"]))
+            owner_links.append(f'<a href="{href}">{html.escape(person["display_name"])}</a>')
+
+        updates_markup = []
+        for update_id in project["update_ids"]:
+            update = updates_by_id.get(update_id)
+            if not update:
+                continue
+            updates_markup.append(
+                f"""
+                <div class="timeline-item">
+                  <span class="timeline-date">{html.escape(update['date'])} / {html.escape(update['kind'])}</span>
+                  <strong>{html.escape(update['title'])}</strong>
+                  <span>{html.escape(update['summary'])}</span>
+                </div>
+                """
+            )
+
+        body = f"""
+        <div class="hero">
+          <div class="eyebrow">Workstream</div>
+          <h1>{html.escape(project['name'])}</h1>
+          <p class="lede">{html.escape(project['objective'])}</p>
+          <div class="hero-rail">{join_pills([project['status'], project['category']], muted=True)}</div>
+        </div>
+
+        <div class="metric-grid">
+          <div class="metric-card"><strong>{format_asset(project['budget']['eth'], 'ETH')}</strong><span>approved budget</span></div>
+          <div class="metric-card"><strong>{format_asset(project['budget']['usdc'], 'USDC')}</strong><span>approved budget</span></div>
+          <div class="metric-card"><strong>{format_asset(project['spent']['eth'], 'ETH')}</strong><span>realized spend</span></div>
+          <div class="metric-card"><strong>{format_asset(project['spent']['usdc'], 'USDC')}</strong><span>realized spend</span></div>
+          <div class="metric-card"><strong>{format_pct(project['utilization_pct']['eth'])}</strong><span>ETH utilization</span></div>
+          <div class="metric-card"><strong>{format_pct(project['utilization_pct']['usdc'])}</strong><span>USDC utilization</span></div>
+          <div class="metric-card"><strong>{len(project['recipients'])}</strong><span>recipients</span></div>
+          <div class="metric-card"><strong>{project['updates_count']}</strong><span>manual updates</span></div>
+        </div>
+
+        <div class="split" style="margin-top: 24px;">
+          <div class="panel">
+            <div class="section-head"><h2>Owners</h2></div>
+            <div class="panel-list">{''.join(f'<div>{item}</div>' for item in owner_links) or '<p class="muted">No owners listed.</p>'}</div>
+          </div>
+          <div class="panel">
+            <div class="section-head"><h2>Outputs and KPIs</h2></div>
+            <div class="pill-row">{join_pills(project['outputs'], muted=True)}</div>
+            <div class="pill-row" style="margin-top: 10px;">{join_pills(project['kpis'], muted=True)}</div>
+          </div>
+        </div>
+
+        <div class="analytics-grid" style="margin-top: 24px;">
+          <div class="section-stack">
+            {table_panel("Recipients", ["recipient", "eth", "usdc", "gnars", "nfts"], recipient_rows, "per address")}
+            {table_panel("Linked proposals", ["proposal_key", "title", "status", "number"], proposal_rows, "origin proposals")}
+          </div>
+          <div class="panel">
+            <div class="section-head"><h2>Milestones and updates</h2></div>
+            <div class="timeline-list">
+              {''.join(updates_markup) or '<p class="muted">No updates recorded.</p>'}
+            </div>
+          </div>
+        </div>
+        """
+        page = html_document(
+            workstream_page_path(project["slug"]),
+            title=project["name"],
+            body=body,
+            description=f"Workstream view for {project['name']}.",
+        )
+        write_text(workstream_page_path(project["slug"]), page)
+
+
+def build_treasury_page(analytics: dict[str, Any]) -> None:
+    metrics = analytics["dao_metrics"]
+    treasury = analytics["treasury"]
+    asset_rows = [
+        {
+            "symbol": record["symbol"],
+            "name": record["name"],
+            "amount": record["amount"],
+            "value_usd": record["value_usd"],
+        }
+        for record in treasury["records"]
+    ]
+    recent_payout_rows = [
+        {
+            "proposal": record["archive_id"],
+            "recipient": record["recipient_display_name"],
+            "asset": record["asset_symbol"],
+            "amount": record["amount"],
+        }
+        for record in analytics["dao_metrics"]["recent"]["payouts"][:12]
+    ]
+    top_recipient_rows = [
+        {
+            "person": record["display_name"],
+            "amount": record["value"],
+            "address": short_address(record["address"]),
+        }
+        for record in metrics["leaderboards"]["usdc_received"][:12]
+    ]
+
+    body = f"""
+    <div class="hero">
+      <div class="eyebrow">Treasury</div>
+      <h1>Current holdings plus governance-approved outflows.</h1>
+      <p class="lede">Treasury holdings come from the live Gnars treasury surface. Spend and recipients come only from decoded governance payouts, not from a full wallet accounting ledger.</p>
+      <div class="command">{html.escape(treasury['wallet']['address'])}</div>
+    </div>
+
+    <div class="metric-grid">
+      <div class="metric-card"><strong>${format_number(metrics['treasury']['treasury_page_total_value_usd'])}</strong><span>treasury holdings</span></div>
+      <div class="metric-card"><strong>{format_asset(metrics['overview']['outflows_eth'], 'ETH')}</strong><span>decoded ETH outflows</span></div>
+      <div class="metric-card"><strong>{format_asset(metrics['overview']['outflows_usdc'], 'USDC')}</strong><span>decoded USDC outflows</span></div>
+      <div class="metric-card"><strong>{metrics['overview']['fungible_transfer_count']}</strong><span>fungible transfers</span></div>
+      <div class="metric-card"><strong>{metrics['overview']['nft_transfer_count']}</strong><span>NFT transfers</span></div>
+      <div class="metric-card"><strong>${format_number(metrics['treasury']['treasury_page_display_total_usd'])}</strong><span>visible treasury widget</span></div>
+    </div>
+
+    <div class="analytics-grid" style="margin-top: 24px;">
+      <div class="section-stack">
+        {table_panel("Holdings", ["symbol", "name", "amount", "value_usd"], asset_rows, "live treasury snapshot")}
+        {table_panel("Recent payouts", ["proposal", "recipient", "asset", "amount"], recent_payout_rows, "approved governance transfers")}
+      </div>
+      <div class="section-stack">
+        {table_panel("Top USDC recipients", ["person", "amount", "address"], top_recipient_rows, "current archive")}
+      </div>
+    </div>
+    """
+    page = html_document(
+        treasury_page_path(),
+        title="Gnars Treasury",
+        body=body,
+        description="Treasury holdings and governance-approved outflows.",
+    )
+    write_text(treasury_page_path(), page)
+
+
+def build_proposals_index(analytics: dict[str, Any]) -> None:
+    records = sorted(
+        analytics["proposals_archive"]["records"],
+        key=lambda record: (
+            record.get("proposal_number") if record.get("proposal_number") is not None else -1,
+            record.get("created_at") or "",
+        ),
+        reverse=True,
+    )
+    cards = []
+    for proposal in records:
+        href = rel_href(proposals_index_path(), proposal_page_path(proposal["archive_id"]))
+        proposer = analytics["people_by_address"].get(normalize_address(proposal.get("proposer")))
+        proposer_name = proposer["display_name"] if proposer else short_address(proposal.get("proposer"))
+        cards.append(
+            f"""
+            <article class="entity-card">
+              <div class="kicker">{html.escape(proposal['status'])}</div>
+              <h3><a href="{href}">{html.escape(proposal_display_title(proposal))}</a></h3>
+              <p class="muted">{html.escape(clamp_text(proposal['content_summary'], 180))}</p>
+              <div class="identity-meta">
+                <span>P{proposal['proposal_number'] if proposal.get('proposal_number') is not None else 'n/a'}</span>
+                <span>{html.escape(proposer_name)}</span>
+                <span>{len(proposal['votes'])} votes</span>
+              </div>
+            </article>
+            """
+        )
+
+    body = f"""
+    <div class="hero">
+      <div class="eyebrow">Proposals</div>
+      <h1>All archived proposals with linked people, workstreams and payout summaries.</h1>
+      <p class="lede">The archive page turns every proposal into a navigable object in the DAO graph instead of just a download row.</p>
+      <div class="command">proposal pages link back to people and workstreams</div>
+    </div>
+    <div class="proposal-grid">
+      {''.join(cards)}
+    </div>
+    """
+    page = html_document(
+        proposals_index_path(),
+        title="Gnars Proposals",
+        body=body,
+        description="Static proposal archive for Gnars DAO.",
+    )
+    write_text(proposals_index_path(), page)
+
+
+def build_proposal_pages(analytics: dict[str, Any]) -> None:
+    project_by_archive_id: dict[str, dict[str, Any]] = {}
+    for project in analytics["project_rollups"]["records"]:
+        for summary in project["proposal_summaries"]:
+            if summary.get("archive_id"):
+                project_by_archive_id[summary["archive_id"]] = project
+
+    for proposal in analytics["proposals_archive"]["records"]:
+        related_spend = [
+            {
+                "recipient": record["recipient_display_name"],
+                "asset": record["asset_symbol"],
+                "amount": record["amount"],
+                "project": record["project_id"] or "unassigned",
+            }
+            for record in analytics["spend_ledger"]["records"]
+            if record["archive_id"] == proposal["archive_id"]
+        ]
+        vote_rows = []
+        for vote in sorted(
+            proposal["votes"],
+            key=lambda record: float(record.get("votes") or 0),
+            reverse=True,
+        )[:12]:
+            voter = analytics["people_by_address"].get(normalize_address(vote.get("voter")))
+            vote_rows.append(
+                {
+                    "voter": voter["display_name"] if voter else short_address(vote.get("voter")),
+                    "votes": vote.get("votes"),
+                    "choice": json.dumps(vote.get("choice"), ensure_ascii=False),
+                }
+            )
+
+        proposer = analytics["people_by_address"].get(normalize_address(proposal.get("proposer")))
+        proposer_markup = short_address(proposal.get("proposer"))
+        if proposer:
+            proposer_href = rel_href(proposal_page_path(proposal["archive_id"]), person_page_path(proposer["slug"]))
+            proposer_markup = f'<a href="{proposer_href}">{html.escape(proposer["display_name"])}</a>'
+
+        related_project = project_by_archive_id.get(proposal["archive_id"])
+        related_project_markup = '<span class="muted">No linked workstream</span>'
+        if related_project:
+            project_href = rel_href(proposal_page_path(proposal["archive_id"]), workstream_page_path(related_project["slug"]))
+            related_project_markup = f'<a href="{project_href}">{html.escape(related_project["name"])}</a>'
+
+        body = f"""
+        <div class="hero">
+          <div class="eyebrow">Proposal</div>
+          <h1>{html.escape(proposal_display_title(proposal))}</h1>
+          <p class="lede">{html.escape(proposal['content_summary'])}</p>
+          <div class="hero-rail">{join_pills([proposal['status'], proposal['chain'], f'P{proposal["proposal_number"]}' if proposal.get('proposal_number') is not None else proposal['platform']], muted=True)}</div>
+        </div>
+
+        <div class="metric-grid">
+          <div class="metric-card"><strong>{len(proposal['votes'])}</strong><span>votes archived</span></div>
+          <div class="metric-card"><strong>{len(proposal['transactions'])}</strong><span>decoded txs</span></div>
+          <div class="metric-card"><strong>{format_number(proposal['scores_total'])}</strong><span>total score</span></div>
+          <div class="metric-card"><strong>{format_number(proposal['quorum'])}</strong><span>quorum</span></div>
+        </div>
+
+        <div class="split" style="margin-top: 24px;">
+          <div class="panel">
+            <div class="section-head"><h2>Properties</h2></div>
+            <div class="facts">
+              <div class="fact-row"><strong>Proposer</strong><span>{proposer_markup}</span></div>
+              <div class="fact-row"><strong>Workstream</strong><span>{related_project_markup}</span></div>
+              <div class="fact-row"><strong>Created</strong><span>{html.escape(proposal['created_at'])}</span></div>
+              <div class="fact-row"><strong>Start</strong><span>{html.escape(proposal['start_at'])}</span></div>
+              <div class="fact-row"><strong>End</strong><span>{html.escape(proposal['end_at'])}</span></div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="section-head"><h2>Links</h2></div>
+            <div class="panel-list">
+              <div><a href="{html.escape(proposal['links']['source_url'])}">source url</a></div>
+              <div><a href="{html.escape(proposal['links']['canonical_url'])}">canonical url</a></div>
+              {f'<div><a href="{html.escape(proposal["links"]["discussion_url"])}">discussion url</a></div>' if proposal['links']['discussion_url'] else ''}
+              {f'<div><a href="{html.escape(proposal["links"]["explorer_url"])}">explorer url</a></div>' if proposal['links']['explorer_url'] else ''}
+            </div>
+          </div>
+        </div>
+
+        <div class="analytics-grid" style="margin-top: 24px;">
+          <div class="section-stack">
+            {table_panel("Payout summary", ["recipient", "asset", "amount", "project"], related_spend, "fungible only")}
+            {table_panel("Top votes", ["voter", "votes", "choice"], vote_rows, "top 12 by raw voting power")}
+          </div>
+          <div class="panel">
+            <div class="section-head"><h2>Proposal body</h2></div>
+            <article class="note">
+              {render_markdown(proposal['content_markdown'])}
+            </article>
+          </div>
+        </div>
+        """
+        page = html_document(
+            proposal_page_path(proposal["archive_id"]),
+            title=proposal_display_title(proposal),
+            body=body,
+            description=proposal["content_summary"],
+        )
+        write_text(proposal_page_path(proposal["archive_id"]), page)
 
 
 def build_dataset_pages() -> None:
@@ -2381,11 +3434,11 @@ def build_media_page(media_library: dict[str, Any]) -> None:
     write_text(media_page, page)
 
 
-def write_search_assets(notes: list[dict[str, Any]], media_library: dict[str, Any]) -> None:
+def write_search_assets(notes: list[dict[str, Any]], media_library: dict[str, Any], analytics: dict[str, Any]) -> None:
     write_text(SITE_DIR / "assets" / "search.js", SEARCH_JS.strip() + "\n")
     write_text(
         SITE_DIR / "assets" / "search-index.json",
-        json.dumps(build_search_index(notes, media_library), indent=2, ensure_ascii=False) + "\n",
+        json.dumps(build_search_index(notes, media_library, analytics), indent=2, ensure_ascii=False) + "\n",
     )
 
 
@@ -2407,8 +3460,16 @@ def main() -> int:
     copy_public_directories()
     notes = discover_notes()
     media_library = discover_media_library()
-    write_search_assets(notes, media_library)
-    build_home(notes, media_library)
+    analytics = load_analytics()
+    write_search_assets(notes, media_library, analytics)
+    build_home(notes, media_library, analytics)
+    build_people_index(analytics)
+    build_people_pages(analytics)
+    build_workstreams_index(analytics)
+    build_workstream_pages(analytics)
+    build_treasury_page(analytics)
+    build_proposals_index(analytics)
+    build_proposal_pages(analytics)
     build_notes_index(notes)
     build_note_pages(notes)
     build_dataset_pages()

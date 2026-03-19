@@ -25,7 +25,8 @@ gnars-data/
 |- media/                  # Photos, videos, and brand assets
 |- raw/                    # Raw snapshots pulled from web sources / APIs
 |- reports/                # Weekly digests and narrative outputs
-`- scripts/                # Validation, export, sync, site build, and tagging automation
+|- scripts/                # Validation, export, sync, site build, and tagging automation
+`- web/                    # Vercel-targeted React static frontend
 ```
 
 ## Current seeded datasets
@@ -37,6 +38,10 @@ gnars-data/
 - `data/members.json`
 - `data/treasury.json`
 - `data/projects.json`
+- `data/project_rollups.json`
+- `data/spend_ledger.json`
+- `data/dao_metrics.json`
+- `data/timeline_events.json`
 - `data/sources.json`
 
 Each dataset is paired with a JSON Schema under `data/schemas/`.
@@ -85,6 +90,14 @@ Build the public GitHub Pages vault:
 python scripts\build_site.py
 ```
 
+Build the Vercel-targeted React frontend:
+
+```powershell
+cd web
+npm install
+npm run build
+```
+
 ## Data model conventions
 
 - `raw/` stores untouched source snapshots.
@@ -107,5 +120,6 @@ This repository now includes:
 - Herd Explorer and Herd MCP as a documented supplemental layer for onchain context on Base and Ethereum
 - ETHSkills as a documented supplemental knowledge layer for indexing, addresses, L2s, and tooling decisions
 - Quartz-style GitHub Pages publishing from `_site/`
+- React + Vite static frontend in `web/` for the Vercel rollout
 - Daily GitHub Actions sync for proposals, treasury, exports, and Pages deploy
-- Scripts for validation, exports, raw snapshot capture, treasury sync, proposal-archive sync, site build, and tagging queue seeding
+- Scripts for validation, exports, raw snapshot capture, treasury sync, proposal-archive sync, site build, timeline derivation, and tagging queue seeding

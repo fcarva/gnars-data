@@ -12,9 +12,22 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - name: Derive analytics datasets
+        run: python scripts/derive_analytics.py
       - name: Validate JSON datasets
         run: python scripts/validate_data.py
       - name: Build CSV exports
         run: python scripts/export_csv.py
       - name: Build static site
         run: python scripts/build_site.py
+      - name: Install web dependencies
+        run: npm ci
+        working-directory: web
+      - name: Build Vercel frontend
+        run: npm run build
+        working-directory: web

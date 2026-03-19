@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "dataset",
+    "as_of",
+    "version",
+    "records"
+  ],
+  "properties": {
+    "dataset": {
+      "const": "timeline_events"
+    },
+    "as_of": {
+      "type": "string"
+    },
+    "version": {
+      "type": "integer"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "event_id",
+          "date",
+          "title",
+          "summary",
+          "kind",
+          "status",
+          "project_id",
+          "project_name",
+          "archive_id",
+          "proposal_number",
+          "people_addresses",
+          "proposal_ids",
+          "links",
+          "source",
+          "thumbnail_url"
+        ],
+        "properties": {
+          "event_id": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "summary": {
+            "type": "string"
+          },
+          "kind": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "project_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "project_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "archive_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "proposal_number": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "people_addresses": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "proposal_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "links": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "source": {
+            "type": "string"
+          },
+          "thumbnail_url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

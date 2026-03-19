@@ -18,12 +18,19 @@ Current exports include:
 - `proposal_transactions.csv`
 - `proposal_votes.csv`
 - `members.csv`
+- `people.csv`
 - `projects.csv`
+- `project_updates.csv`
+- `project_rollups.csv`
+- `spend_ledger.csv`
+- `dao_metrics.csv`
+- `timeline_events.csv`
 - `treasury.csv`
 - `sources.csv`
 
 Regenerate with:
 
 ```powershell
+python scripts\derive_analytics.py
 python scripts\export_csv.py
 ```

@@ -1,0 +1,338 @@
+{
+  "dataset": "contracts",
+  "as_of": "2026-03-18",
+  "version": 1,
+  "records": [
+    {
+      "contract_id": "gnars-base-token-nft",
+      "ecosystem": "gnars",
+      "network": "base",
+      "chain_id": 8453,
+      "address": "0x880fb3cf5c6cc2d7dfc13a993e839a9411200c17",
+      "label": "Gnars NFT",
+      "kind": "erc721",
+      "status": "active",
+      "proxy_for": null,
+      "explorer_url": "https://basescan.org/address/0x880fb3cf5c6cc2d7dfc13a993e839a9411200c17",
+      "source_urls": [
+        "https://www.gnars.com/",
+        "https://basescan.org/address/0x880fb3cf5c6cc2d7dfc13a993e839a9411200c17"
+      ],
+      "notes": "Current Base NFT contract shown in the Smart Contracts table on gnars.com."
+    },
+    {
+      "contract_id": "gnars-base-token-erc20",
+      "ecosystem": "gnars",
+      "network": "base",
+      "chain_id": 8453,
+      "address": "0x0cf0c3b75d522290d7d12c74d7f1f0cc47ccb23b",
+      "label": "$GNARS",
+      "kind": "erc20",
+      "status": "active",
+      "proxy_for": null,
+      "explorer_url": "https://basescan.org/address/0x0cf0c3b75d522290d7d12c74d7f1f0cc47ccb23b",
+      "source_urls": [
+        "https://www.gnars.com/",
+        "https://basescan.org/address/0x0cf0c3b75d522290d7d12c74d7f1f0cc47ccb23b"
+      ],
+      "notes": "Base ERC20 token contract shown in the Smart Contracts table on gnars.com."
+    },
+    {
+      "contract_id": "gnars-base-auction-house",
+      "ecosystem": "gnars",
+      "network": "base",
+      "chain_id": 8453,
+      "address": "0x494eaa55ecf6310658b8fc004b0888dcb698097f",
+      "label": "Gnars Auction House",
+      "kind": "auction_house",
+      "status": "active",
+      "proxy_for": null,
+      "explorer_url": "https://basescan.org/address/0x494eaa55ecf6310658b8fc004b0888dcb698097f",
+      "source_urls": [
+        "https://www.gnars.com/",
+        "https://basescan.org/address/0x494eaa55ecf6310658b8fc004b0888dcb698097f"
+      ],
+      "notes": "Base auction house contract shown in the Smart Contracts table on gnars.com."
+    },
+    {
+      "contract_id": "gnars-base-governor",
+      "ecosystem": "gnars",
+      "network": "base",
+      "chain_id": 8453,
+      "address": "0x3dd4e53a232b7b715c9ae455f4e732465ed71b4c",
+      "label": "Gnars Governor",
+      "kind": "governor",
+      "status": "active",
+      "proxy_for": null,
+      "explorer_url": "https://basescan.org/address/0x3dd4e53a232b7b715c9ae455f4e732465ed71b4c",
+      "source_urls": [
+        "https://www.gnars.com/",
+        "https://basescan.org/address/0x3dd4e53a232b7b715c9ae455f4e732465ed71b4c"
+      ],
+      "notes": "Base governance contract shown in the Smart Contracts table on gnars.com."
+    },
+    {
+      "contract_id": "gnars-base-treasury",
+      "ecosystem": "gnars",
+      "network": "base",
+      "chain_id": 8453,
+      "address": "0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+      "label": "Gnars Treasury",
+      "kind": "treasury",
+      "status": "active",
+      "proxy_for": null,
+      "explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+      "source_urls": [
+        "https://www.gnars.com/",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ],
+      "notes": "Base treasury contract shown in the Smart Contracts table on gnars.com and reused by That's Gnarly treasury view."
+    },
+    {
+      "contract_id": "gnars-base-metadata",
+      "ecosystem": "gnars",
+      "network": "base",
+      "chain_id": 8453,
+      "address": "0xdc9799d424ebfdcf5310f3bad3ddcce3931d4b58",
+      "label": "Gnars Metadata",
+      "kind": "metadata",
+      "status": "active",
+      "proxy_for": null,
+      "explorer_url": "https://basescan.org/address/0xdc9799d424ebfdcf5310f3bad3ddcce3931d4b58",
+      "source_urls": [
+        "https://www.gnars.com/",
+        "https://basescan.org/address/0xdc9799d424ebfdcf5310f3bad3ddcce3931d4b58"
+      ],
+      "notes": "Base metadata contract shown in the Smart Contracts table on gnars.com."
+    },
+    {
+      "contract_id": "gnars-ethereum-token-v1",
+      "ecosystem": "gnars",
+      "network": "ethereum",
+      "chain_id": 1,
+      "address": "0x494715b2a3c75dadd24929835b658a1c19bd4552",
+      "label": "Gnars Token V1",
+      "kind": "erc721",
+      "status": "legacy",
+      "proxy_for": null,
+      "explorer_url": "https://etherscan.io/address/0x494715b2a3c75dadd24929835b658a1c19bd4552",
+      "source_urls": [
+        "https://www.gnars.wtf/",
+        "https://etherscan.io/address/0x494715b2a3c75dadd24929835b658a1c19bd4552"
+      ],
+      "notes": "Legacy Ethereum NFT contract referenced in legacy Gnars surfaces and Snapshot metadata."
+    },
+    {
+      "contract_id": "gnars-ethereum-token-v2",
+      "ecosystem": "gnars",
+      "network": "ethereum",
+      "chain_id": 1,
+      "address": "0x558bfff0d583416f7c4e380625c7865821b8e95c",
+      "label": "Gnars Token V2",
+      "kind": "erc721",
+      "status": "legacy",
+      "proxy_for": null,
+      "explorer_url": "https://etherscan.io/address/0x558bfff0d583416f7c4e380625c7865821b8e95c",
+      "source_urls": [
+        "https://www.gnars.wtf/",
+        "https://etherscan.io/address/0x558bfff0d583416f7c4e380625c7865821b8e95c"
+      ],
+      "notes": "Legacy Ethereum V2 NFT contract still referenced in Snapshot-safe transaction metadata."
+    },
+    {
+      "contract_id": "gnars-ethereum-dao-proxy-v2",
+      "ecosystem": "gnars",
+      "network": "ethereum",
+      "chain_id": 1,
+      "address": "0x156e94a6e16244ccfdf16e1193198ea9d80dd7e3",
+      "label": "Gnars DAO Proxy V2",
+      "kind": "governor",
+      "status": "legacy",
+      "proxy_for": "gnars-ethereum-dao-logic-v2",
+      "explorer_url": "https://etherscan.io/address/0x156e94a6e16244ccfdf16e1193198ea9d80dd7e3",
+      "source_urls": [
+        "https://etherscan.io/address/0x156e94a6e16244ccfdf16e1193198ea9d80dd7e3"
+      ],
+      "notes": "Legacy Ethereum governance proxy contract."
+    },
+    {
+      "contract_id": "gnars-ethereum-dao-logic-v2",
+      "ecosystem": "gnars",
+      "network": "ethereum",
+      "chain_id": 1,
+      "address": "0x249846ee9acfdcd7685ec7fd7ab02d536d343e3d",
+      "label": "Gnars DAO Logic V2",
+      "kind": "dao_logic",
+      "status": "legacy",
+      "proxy_for": null,
+      "explorer_url": "https://etherscan.io/address/0x249846ee9acfdcd7685ec7fd7ab02d536d343e3d",
+      "source_urls": [
+        "https://etherscan.io/address/0x249846ee9acfdcd7685ec7fd7ab02d536d343e3d"
+      ],
+      "notes": "Implementation contract behind the legacy Gnars DAO proxy on Ethereum."
+    },
+    {
+      "contract_id": "gnars-ethereum-executor-v2",
+      "ecosystem": "gnars",
+      "network": "ethereum",
+      "chain_id": 1,
+      "address": "0xa1b74d2280966a89ac7e0f3a8bc5f0867c776d98",
+      "label": "Gnars DAO Executor",
+      "kind": "executor",
+      "status": "legacy",
+      "proxy_for": null,
+      "explorer_url": "https://etherscan.io/address/0xa1b74d2280966a89ac7e0f3a8bc5f0867c776d98",
+      "source_urls": [
+        "https://etherscan.io/address/0xa1b74d2280966a89ac7e0f3a8bc5f0867c776d98"
+      ],
+      "notes": "Legacy Ethereum executor / treasury contract for Gnars DAO."
+    },
+    {
+      "contract_id": "thatsgnarly-base-culture-index-impl",
+      "ecosystem": "thatsgnarly",
+      "network": "base",
+      "chain_id": 8453,
+      "address": "0xed15505b35a347791a8a4e896826c6d8949b61f2",
+      "label": "That's Gnarly CultureIndex",
+      "kind": "culture_index",
+      "status": "active",
+      "proxy_for": null,
+      "explorer_url": "https://basescan.org/address/0xed15505b35a347791a8a4e896826c6d8949b61f2",
+      "source_urls": [
+        "https://github.com/rocketman-21/thatsgnarly-contracts/blob/main/packages/contracts/deploys/8453.txt",
+        "https://github.com/rocketman-21/thatsgnarly-contracts/blob/main/packages/contracts/script/Deploy.s.sol"
+      ],
+      "notes": "Implementation contract recorded in the official thatsgnarly-contracts Base deployment file."
+    },
+    {
+      "contract_id": "thatsgnarly-base-max-heap-impl",
+      "ecosystem": "thatsgnarly",
+      "network": "base",
+      "chain_id": 8453,
+      "address": "0x5a375daf275e2ecc1109d5fe4d3a83cbf2a69c6f",
+      "label": "That's Gnarly MaxHeap",
+      "kind": "max_heap",
+      "status": "active",
+      "proxy_for": null,
+      "explorer_url": "https://basescan.org/address/0x5a375daf275e2ecc1109d5fe4d3a83cbf2a69c6f",
+      "source_urls": [
+        "https://github.com/rocketman-21/thatsgnarly-contracts/blob/main/packages/contracts/deploys/8453.txt"
+      ],
+      "notes": "Implementation contract recorded in the official thatsgnarly-contracts Base deployment file."
+    },
+    {
+      "contract_id": "thatsgnarly-base-mint-house-impl",
+      "ecosystem": "thatsgnarly",
+      "network": "base",
+      "chain_id": 8453,
+      "address": "0xe99565d2c21d02d914af124553a375fe0e0c23a2",
+      "label": "That's Gnarly MintHouse",
+      "kind": "mint_house",
+      "status": "active",
+      "proxy_for": null,
+      "explorer_url": "https://basescan.org/address/0xe99565d2c21d02d914af124553a375fe0e0c23a2",
+      "source_urls": [
+        "https://github.com/rocketman-21/thatsgnarly-contracts/blob/main/packages/contracts/deploys/8453.txt"
+      ],
+      "notes": "Implementation contract recorded in the official thatsgnarly-contracts Base deployment file."
+    },
+    {
+      "contract_id": "thatsgnarly-base-culture-index-proxy",
+      "ecosystem": "thatsgnarly",
+      "network": "base",
+      "chain_id": 8453,
+      "address": "0x1806e0959f2b9cb487300302be7b283e31689ce2",
+      "label": "That's Gnarly CultureIndex Proxy",
+      "kind": "erc1967_proxy",
+      "status": "active",
+      "proxy_for": "thatsgnarly-base-culture-index-impl",
+      "explorer_url": "https://basescan.org/address/0x1806e0959f2b9cb487300302be7b283e31689ce2",
+      "source_urls": [
+        "https://github.com/rocketman-21/thatsgnarly-contracts/blob/main/packages/contracts/deploys/8453.txt"
+      ],
+      "notes": "Base proxy recorded in the official thatsgnarly-contracts deployment file."
+    },
+    {
+      "contract_id": "thatsgnarly-base-max-heap-proxy",
+      "ecosystem": "thatsgnarly",
+      "network": "base",
+      "chain_id": 8453,
+      "address": "0x6b3e766f05e883d7bd6044995a6e2513029c5a08",
+      "label": "That's Gnarly MaxHeap Proxy",
+      "kind": "erc1967_proxy",
+      "status": "active",
+      "proxy_for": "thatsgnarly-base-max-heap-impl",
+      "explorer_url": "https://basescan.org/address/0x6b3e766f05e883d7bd6044995a6e2513029c5a08",
+      "source_urls": [
+        "https://github.com/rocketman-21/thatsgnarly-contracts/blob/main/packages/contracts/deploys/8453.txt"
+      ],
+      "notes": "Base proxy recorded in the official thatsgnarly-contracts deployment file."
+    },
+    {
+      "contract_id": "thatsgnarly-base-mint-house-proxy",
+      "ecosystem": "thatsgnarly",
+      "network": "base",
+      "chain_id": 8453,
+      "address": "0x23a1eae6428ee2739830717b377534ceaa23c09f",
+      "label": "That's Gnarly MintHouse Proxy",
+      "kind": "erc1967_proxy",
+      "status": "active",
+      "proxy_for": "thatsgnarly-base-mint-house-impl",
+      "explorer_url": "https://basescan.org/address/0x23a1eae6428ee2739830717b377534ceaa23c09f",
+      "source_urls": [
+        "https://github.com/rocketman-21/thatsgnarly-contracts/blob/main/packages/contracts/deploys/8453.txt"
+      ],
+      "notes": "Base proxy recorded in the official thatsgnarly-contracts deployment file."
+    },
+    {
+      "contract_id": "thatsgnarly-base-zora-creator-1155",
+      "ecosystem": "thatsgnarly",
+      "network": "base",
+      "chain_id": 8453,
+      "address": "0xf9a6470c704e391a64d1565ba4d50ad9c456b1dc",
+      "label": "That's Gnarly Zora Creator 1155",
+      "kind": "zora_1155",
+      "status": "dependency",
+      "proxy_for": null,
+      "explorer_url": "https://basescan.org/address/0xf9a6470c704e391a64d1565ba4d50ad9c456b1dc",
+      "source_urls": [
+        "https://github.com/rocketman-21/thatsgnarly-contracts/blob/main/packages/contracts/script/Deploy.s.sol",
+        "https://thatsgnar.ly/"
+      ],
+      "notes": "External dependency wired in Deploy.s.sol and also surfaced through the That's Gnarly homepage's Zora link."
+    },
+    {
+      "contract_id": "thatsgnarly-base-zora-fixed-price-sale-strategy",
+      "ecosystem": "thatsgnarly",
+      "network": "base",
+      "chain_id": 8453,
+      "address": "0x04e2516a2c207e84a1839755675dfd8ef6302f0a",
+      "label": "Zora Fixed Price Sale Strategy",
+      "kind": "fixed_price_sale_strategy",
+      "status": "dependency",
+      "proxy_for": null,
+      "explorer_url": "https://basescan.org/address/0x04e2516a2c207e84a1839755675dfd8ef6302f0a",
+      "source_urls": [
+        "https://github.com/rocketman-21/thatsgnarly-contracts/blob/main/packages/contracts/script/Deploy.s.sol"
+      ],
+      "notes": "External Base dependency wired in the official That’s Gnarly deploy script."
+    },
+    {
+      "contract_id": "thatsgnarly-base-treasury",
+      "ecosystem": "thatsgnarly",
+      "network": "base",
+      "chain_id": 8453,
+      "address": "0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+      "label": "That's Gnarly Treasury Route",
+      "kind": "treasury",
+      "status": "dependency",
+      "proxy_for": null,
+      "explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+      "source_urls": [
+        "https://thatsgnar.ly/",
+        "https://github.com/rocketman-21/thatsgnarly-contracts/blob/main/packages/contracts/script/Deploy.s.sol"
+      ],
+      "notes": "That's Gnarly treasury page points to the same Base treasury address used by Gnars DAO."
+    }
+  ]
+}

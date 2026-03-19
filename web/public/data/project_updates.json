@@ -1,0 +1,85 @@
+{
+  "dataset": "project_updates",
+  "as_of": "2026-03-18",
+  "version": 1,
+  "records": [
+    {
+      "update_id": "docs-revamp-archive-foundation",
+      "project_id": "docs-governance-revamp",
+      "date": "2026-03-18",
+      "title": "Archive and taxonomy foundation consolidated",
+      "kind": "milestone",
+      "status": "completed",
+      "summary": "The repo foundation, schemas, proposal archive and publishing pipeline were consolidated as the practical continuation of proposal 111.",
+      "related_proposals": [
+        "base-111"
+      ],
+      "related_addresses": [
+        "0xaaed9fff9858d48925904e391b77892ba5fda824"
+      ],
+      "links": [
+        "https://www.gnars.com/proposals/111"
+      ],
+      "notes": "Editorial milestone seeded from the repository bootstrap."
+    },
+    {
+      "update_id": "ops-q1-data-foundation",
+      "project_id": "operations-q1-2026",
+      "date": "2026-03-18",
+      "title": "Data foundation and proposal archive published",
+      "kind": "milestone",
+      "status": "completed",
+      "summary": "Proposal archive, transaction decoding, tagging queue and public Pages publishing are live under gnars-data.",
+      "related_proposals": [
+        "base-118"
+      ],
+      "related_addresses": [
+        "0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d",
+        "0x8bf5941d27176242745b716251943ae4892a3c26",
+        "0xaaed9fff9858d48925904e391b77892ba5fda824"
+      ],
+      "links": [
+        "https://fcarva.github.io/gnars-data/"
+      ],
+      "notes": "Editorial milestone for the current operations workstream."
+    },
+    {
+      "update_id": "ops-q1-analytics-camp-plan",
+      "project_id": "operations-q1-2026",
+      "date": "2026-03-18",
+      "title": "Gnars Camp analytics layer scoped",
+      "kind": "planning",
+      "status": "in-progress",
+      "summary": "People, treasury, workstream and proposal analytics were specified to reshape the site from download-first to DAO-analytics-first.",
+      "related_proposals": [
+        "base-118"
+      ],
+      "related_addresses": [
+        "0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d",
+        "0x8bf5941d27176242745b716251943ae4892a3c26",
+        "0xaaed9fff9858d48925904e391b77892ba5fda824"
+      ],
+      "links": [],
+      "notes": "Keeps the workstream page from being a budget-only view."
+    },
+    {
+      "update_id": "ops-q1-member-and-spend-views",
+      "project_id": "operations-q1-2026",
+      "date": "2026-03-18",
+      "title": "Unified people and spend views connected to governance",
+      "kind": "delivery",
+      "status": "in-progress",
+      "summary": "People directory, recipient rankings and budget-vs-spend rollups are being connected to current workstream outputs.",
+      "related_proposals": [
+        "base-118"
+      ],
+      "related_addresses": [
+        "0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d",
+        "0x8bf5941d27176242745b716251943ae4892a3c26",
+        "0xaaed9fff9858d48925904e391b77892ba5fda824"
+      ],
+      "links": [],
+      "notes": "Seeded milestone for the analytics-first site implementation."
+    }
+  ]
+}

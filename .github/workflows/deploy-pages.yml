@@ -25,6 +25,9 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Derive analytics datasets
+        run: python scripts/derive_analytics.py
+
       - name: Validate datasets
         run: python scripts/validate_data.py
 

@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "dataset",
+    "as_of",
+    "version",
+    "source_members_snapshot",
+    "records"
+  ],
+  "properties": {
+    "dataset": {
+      "const": "people"
+    },
+    "as_of": {
+      "type": "string"
+    },
+    "version": {
+      "type": "integer"
+    },
+    "source_members_snapshot": {
+      "type": "string"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "person_id",
+          "slug",
+          "display_name",
+          "address",
+          "address_short",
+          "status",
+          "role",
+          "roles",
+          "tags",
+          "domains",
+          "bio",
+          "identity",
+          "governance",
+          "receipts",
+          "relationships",
+          "notes"
+        ],
+        "properties": {
+          "person_id": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "display_name": {
+            "type": "string"
+          },
+          "address": {
+            "type": "string"
+          },
+          "address_short": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string"
+          },
+          "roles": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "domains": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "bio": {
+            "type": "string"
+          },
+          "identity": {
+            "type": "object"
+          },
+          "governance": {
+            "type": "object"
+          },
+          "receipts": {
+            "type": "object"
+          },
+          "relationships": {
+            "type": "object"
+          },
+          "notes": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

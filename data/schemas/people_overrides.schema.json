@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "dataset",
+    "as_of",
+    "version",
+    "records"
+  ],
+  "properties": {
+    "dataset": {
+      "const": "people_overrides"
+    },
+    "as_of": {
+      "type": "string"
+    },
+    "version": {
+      "type": "integer"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "address",
+          "display_name",
+          "slug",
+          "status",
+          "role",
+          "roles",
+          "tags",
+          "bio",
+          "links",
+          "notes"
+        ],
+        "properties": {
+          "address": {
+            "type": "string"
+          },
+          "display_name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string"
+          },
+          "roles": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "bio": {
+            "type": "string"
+          },
+          "links": {
+            "type": "object"
+          },
+          "notes": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

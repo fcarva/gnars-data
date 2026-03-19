@@ -1,0 +1,91 @@
+{
+  "dataset": "people_overrides",
+  "as_of": "2026-03-18",
+  "version": 1,
+  "records": [
+    {
+      "address": "0xaaed9fff9858d48925904e391b77892ba5fda824",
+      "display_name": "fcarva",
+      "slug": "fcarva",
+      "status": "active",
+      "role": "community infrastructure, documentation, QA",
+      "roles": [
+        "community infrastructure",
+        "documentation",
+        "operations"
+      ],
+      "tags": [
+        "member",
+        "builder",
+        "contributor"
+      ],
+      "bio": "Documentation, governance structure, QA and public data operations for Gnars DAO.",
+      "links": {
+        "member_url": "https://www.gnars.com/members/0xaaed9fff9858d48925904e391b77892ba5fda824",
+        "farcaster": "https://farcaster.xyz/fcarva",
+        "github": "https://github.com/fcarva",
+        "avatar_url": null,
+        "website": null,
+        "x": null,
+        "instagram": null
+      },
+      "notes": "Seed override for the current gnars-data operator and proposal 111 author."
+    },
+    {
+      "address": "0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d",
+      "display_name": "r4topunk",
+      "slug": "r4topunk",
+      "status": "active",
+      "role": "web development, data pipelines",
+      "roles": [
+        "web development",
+        "data pipelines",
+        "operations"
+      ],
+      "tags": [
+        "member",
+        "builder",
+        "contributor"
+      ],
+      "bio": "Builds Gnars web surfaces and operational data pipelines.",
+      "links": {
+        "member_url": "https://www.gnars.com/members/0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d",
+        "farcaster": "https://farcaster.xyz/r4topunk",
+        "github": null,
+        "avatar_url": null,
+        "website": null,
+        "x": null,
+        "instagram": null
+      },
+      "notes": "Seed override for the current web and data contributor."
+    },
+    {
+      "address": "0x8bf5941d27176242745b716251943ae4892a3c26",
+      "display_name": "vlad",
+      "slug": "vlad",
+      "status": "active",
+      "role": "technical lead, AI infrastructure",
+      "roles": [
+        "AI infrastructure",
+        "technical lead",
+        "operations"
+      ],
+      "tags": [
+        "member",
+        "builder",
+        "contributor"
+      ],
+      "bio": "Maintains AI-native systems, infra and governance tooling for Gnars operations.",
+      "links": {
+        "member_url": "https://www.gnars.com/members/0x8bf5941d27176242745b716251943ae4892a3c26",
+        "farcaster": null,
+        "github": null,
+        "avatar_url": null,
+        "website": null,
+        "x": null,
+        "instagram": null
+      },
+      "notes": "Seed override for the technical lead listed in the operations workstream."
+    }
+  ]
+}

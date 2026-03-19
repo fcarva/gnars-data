@@ -1,0 +1,194 @@
+{
+  "dataset": "sources",
+  "as_of": "2026-03-18",
+  "version": 1,
+  "records": [
+    {
+      "source_id": "gnars-com",
+      "name": "gnars.com",
+      "type": "website",
+      "status": "active",
+      "url": "https://www.gnars.com",
+      "sync_mode": "html-snapshot",
+      "cadence": "daily",
+      "sections": [
+        "dashboard",
+        "proposals",
+        "members",
+        "treasury",
+        "tv"
+      ],
+      "notes": "Primary live interface for Gnars DAO on Base. Proposal records are archived via scripts/sync_proposals.py."
+    },
+    {
+      "source_id": "gnars-center",
+      "name": "gnars.center",
+      "type": "docs",
+      "status": "active",
+      "url": "https://gnars.center",
+      "sync_mode": "html-snapshot",
+      "cadence": "weekly",
+      "sections": [
+        "onboarding",
+        "tutorials",
+        "community-docs"
+      ],
+      "notes": "Community onboarding and educational documentation."
+    },
+    {
+      "source_id": "gnars-wtf",
+      "name": "gnars.wtf",
+      "type": "legacy-app",
+      "status": "legacy",
+      "url": "https://www.gnars.wtf",
+      "sync_mode": "html-snapshot",
+      "cadence": "weekly",
+      "sections": [
+        "base-jump",
+        "legacy-contracts",
+        "historical-context"
+      ],
+      "notes": "Legacy Base Jump / Gnars V2 surface that should be preserved for continuity."
+    },
+    {
+      "source_id": "snapshot-v1",
+      "name": "Snapshot V1",
+      "type": "governance-archive",
+      "status": "legacy",
+      "url": "https://v1.snapshot.box/#/gnars.eth",
+      "sync_mode": "graphql-sync",
+      "cadence": "batch",
+      "sections": [
+        "legacy-proposals",
+        "legacy-votes"
+      ],
+      "notes": "Legacy governance interface. Proposal and vote data are reconstructed through the Snapshot GraphQL hub."
+    },
+    {
+      "source_id": "snapshot-hub",
+      "name": "Snapshot GraphQL Hub",
+      "type": "api",
+      "status": "active",
+      "url": "https://hub.snapshot.org/graphql",
+      "sync_mode": "graphql-sync",
+      "cadence": "batch",
+      "sections": [
+        "legacy-proposals",
+        "legacy-votes",
+        "proposal-metadata"
+      ],
+      "notes": "Primary structured source for the gnars.eth proposal archive and vote ledger."
+    },
+    {
+      "source_id": "hive-gnars",
+      "name": "Hive / Peakd @gnars",
+      "type": "content-archive",
+      "status": "active",
+      "url": "https://peakd.com/@gnars",
+      "sync_mode": "html-snapshot",
+      "cadence": "weekly",
+      "sections": [
+        "onboarding-posts",
+        "storytelling",
+        "community-updates"
+      ],
+      "notes": "Historic narrative layer for archival and storytelling."
+    },
+    {
+      "source_id": "discord-gnars",
+      "name": "Gnars Discord",
+      "type": "community",
+      "status": "active",
+      "url": "https://discord.gg/bemDzx6NWf",
+      "sync_mode": "manual-export",
+      "cadence": "weekly",
+      "sections": [
+        "announcements",
+        "operations",
+        "governance-discussion"
+      ],
+      "notes": "Community coordination, operational context, and bot-related history."
+    },
+    {
+      "source_id": "dune-gnarsv2",
+      "name": "GnarsV2 Dune Dashboard",
+      "type": "analytics",
+      "status": "active",
+      "url": "https://dune.com/0xsatori/gnarsv2",
+      "sync_mode": "manual-export",
+      "cadence": "weekly",
+      "sections": [
+        "financial-metrics",
+        "governance-metrics"
+      ],
+      "notes": "Analytics layer for treasury and historical governance metrics."
+    },
+    {
+      "source_id": "herd-explorer",
+      "name": "Herd Explorer",
+      "type": "onchain-explorer",
+      "status": "active",
+      "url": "https://www.herd.eco/explorer",
+      "sync_mode": "manual-explorer",
+      "cadence": "ad-hoc",
+      "sections": [
+        "contract-context",
+        "proxy-history",
+        "transaction-decoding",
+        "wallet-relationships"
+      ],
+      "notes": "Supplementary onchain context layer for contract relationships, proxy implementations, and transaction traces. Best used for Base and Ethereum contract investigation, not Dune-style aggregate analytics."
+    },
+    {
+      "source_id": "herd-mcp",
+      "name": "Herd MCP",
+      "type": "mcp-tooling",
+      "status": "active",
+      "url": "https://mcp.herd.eco/v1",
+      "sync_mode": "client-oauth",
+      "cadence": "ad-hoc",
+      "sections": [
+        "contract-metadata",
+        "code-analysis",
+        "version-diffs",
+        "wallet-overview",
+        "token-activity",
+        "transaction-activity",
+        "deployed-contracts"
+      ],
+      "notes": "Official Herd MCP endpoint. As documented on 2026-03-18, supported networks are Ethereum and Base; Polygon is not listed as supported."
+    },
+    {
+      "source_id": "ethskills",
+      "name": "ETHSkills",
+      "type": "knowledge-base",
+      "status": "active",
+      "url": "https://ethskills.com/",
+      "sync_mode": "manual-reference",
+      "cadence": "ad-hoc",
+      "sections": [
+        "ethereum-build-guides",
+        "indexing-patterns",
+        "verified-address-guidance",
+        "l2-selection",
+        "tooling-playbooks"
+      ],
+      "notes": "Supplemental Ethereum knowledge base for agents. Useful for indexing design, address hygiene, L2 reasoning, and current tooling choices, but not a Gnars-specific source of truth."
+    },
+    {
+      "source_id": "thatsgnarly-contracts-github",
+      "name": "That's Gnarly Contracts Repo",
+      "type": "code",
+      "status": "active",
+      "url": "https://github.com/rocketman-21/thatsgnarly-contracts",
+      "sync_mode": "manual-registry",
+      "cadence": "batch",
+      "sections": [
+        "base-deploys",
+        "deployment-script",
+        "contract-source"
+      ],
+      "notes": "Primary source for That's Gnarly Base deployments and dependency wiring."
+    }
+  ]
+}

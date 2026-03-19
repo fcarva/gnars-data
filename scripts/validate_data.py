@@ -16,8 +16,15 @@ DATASETS = {
     "proposals_archive": "proposals_archive.schema.json",
     "proposal_tags": "proposal_tags.schema.json",
     "members": "members.schema.json",
+    "people_overrides": "people_overrides.schema.json",
+    "people": "people.schema.json",
     "treasury": "treasury.schema.json",
     "projects": "projects.schema.json",
+    "project_updates": "project_updates.schema.json",
+    "project_rollups": "project_rollups.schema.json",
+    "spend_ledger": "spend_ledger.schema.json",
+    "dao_metrics": "dao_metrics.schema.json",
+    "timeline_events": "timeline_events.schema.json",
     "sources": "sources.schema.json",
 }
 

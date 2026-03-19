@@ -1,8 +1,10 @@
 # GitHub Pages Publishing
 
-This repository publishes a static vault-style site built from repository markdown, JSON datasets, and CSV exports.
+This repository publishes the legacy static vault fallback built from repository markdown, JSON datasets, and CSV exports.
 
-## Expected public paths
+The new public frontend for `Gnars Camp` is documented separately in `docs/operations/vercel.md`.
+
+## Expected fallback public paths
 
 - `/`
 - `/notes/`
@@ -22,7 +24,7 @@ In repository settings:
 2. Under `Build and deployment`, set `Source` to `GitHub Actions`
 3. Save once
 
-After that, `.github/workflows/deploy-pages.yml` handles publication on every push to `main`.
+After that, `.github/workflows/deploy-pages.yml` handles fallback publication on every push to `main`.
 
 ## Local build
 
@@ -30,7 +32,7 @@ After that, `.github/workflows/deploy-pages.yml` handles publication on every pu
 python scripts\build_site.py
 ```
 
-The site output is generated into `_site/` and is intentionally gitignored.
+The fallback site output is generated into `_site/` and is intentionally gitignored.
 
 ## Daily automation
 

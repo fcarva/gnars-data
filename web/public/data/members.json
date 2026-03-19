@@ -1,0 +1,87 @@
+{
+  "dataset": "members",
+  "as_of": "2026-03-18",
+  "version": 1,
+  "coverage": "seed contributor directory for the operations/data workstream; full token-holder sync should be built from the live members API snapshots in raw/api/",
+  "records": [
+    {
+      "member_id": "fcarva",
+      "display_name": "fcarva",
+      "address": "0xaaed9fff9858d48925904e391b77892ba5fda824",
+      "role": "community infrastructure, documentation, QA",
+      "status": "active",
+      "domains": [
+        "governance",
+        "documentation",
+        "analytics",
+        "operations"
+      ],
+      "links": {
+        "member_url": "https://www.gnars.com/members/0xaaed9fff9858d48925904e391b77892ba5fda824",
+        "farcaster": "https://farcaster.xyz/fcarva",
+        "github": "https://github.com/fcarva"
+      },
+      "metrics": {
+        "token_count": 4,
+        "active_votes": 4,
+        "votes_count": 24,
+        "attendance_pct": 23,
+        "like_pct": 96
+      },
+      "notes": "Author of proposal 111 and contributor on the Q1 2026 operations workstream."
+    },
+    {
+      "member_id": "r4topunk",
+      "display_name": "r4topunk",
+      "address": "0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d",
+      "role": "web development, data pipelines",
+      "status": "active",
+      "domains": [
+        "web",
+        "data-pipelines",
+        "operations",
+        "governance"
+      ],
+      "links": {
+        "member_url": "https://www.gnars.com/members/0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d",
+        "farcaster": "https://farcaster.xyz/r4topunk",
+        "github": null
+      },
+      "metrics": {
+        "token_count": 41,
+        "active_votes": 41,
+        "votes_count": 70,
+        "attendance_pct": 68,
+        "like_pct": 78
+      },
+      "notes": "Technical lead for web development and governance/data pipeline infrastructure."
+    },
+    {
+      "member_id": "vlad",
+      "display_name": "vlad",
+      "address": "0x8bf5941d27176242745b716251943ae4892a3c26",
+      "role": "technical lead, AI infrastructure",
+      "status": "active",
+      "domains": [
+        "ai",
+        "infrastructure",
+        "agents",
+        "operations"
+      ],
+      "links": {
+        "member_url": "https://www.gnars.com/members/0x8bf5941d27176242745b716251943ae4892a3c26",
+        "farcaster": null,
+        "github": null
+      },
+      "metrics": {
+        "token_count": 35,
+        "active_votes": 151,
+        "votes_count": 8,
+        "attendance_pct": 8,
+        "like_pct": 63
+      },
+      "notes": "Maintains AI-native operational systems and shared infrastructure."
+    }
+  ]
+}
+

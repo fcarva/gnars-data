@@ -21,6 +21,12 @@ jobs:
         with:
           python-version: "3.11"
 
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
       - name: Sync proposal archive
         run: python scripts/sync_proposals.py
 
@@ -29,6 +35,9 @@ jobs:
 
       - name: Seed pilot tagging queue
         run: python scripts/tag_proposals.py --init-pilot 30 --scope pilot-30
+
+      - name: Derive analytics datasets
+        run: python scripts/derive_analytics.py
 
       - name: Validate datasets
         run: python scripts/validate_data.py
@@ -39,11 +48,19 @@ jobs:
       - name: Build Pages site
         run: python scripts/build_site.py
 
+      - name: Install web dependencies
+        run: npm ci
+        working-directory: web
+
+      - name: Build Vercel frontend
+        run: npm run build
+        working-directory: web
+
       - name: Commit and push changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data exports raw docs scripts .github README.md config
+          git add data exports raw docs scripts .github README.md config web
           if git diff --cached --quiet; then
             echo "No changes to commit"
             exit 0

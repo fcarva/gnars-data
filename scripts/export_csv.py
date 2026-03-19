@@ -245,6 +245,46 @@ def export_members() -> None:
     write_csv("members.csv", rows)
 
 
+def export_people() -> None:
+    data = load_json("people")
+    rows = []
+    for record in data["records"]:
+        rows.append(
+            {
+                "person_id": record["person_id"],
+                "slug": record["slug"],
+                "display_name": record["display_name"],
+                "address": record["address"],
+                "status": record["status"],
+                "role": record["role"],
+                "roles": "|".join(record["roles"]),
+                "tags": "|".join(record["tags"]),
+                "domains": "|".join(record["domains"]),
+                "holder_token_count": record["governance"]["holder_token_count"],
+                "delegated_token_count": record["governance"]["delegated_token_count"],
+                "active_votes": record["governance"]["active_votes"],
+                "votes_count": record["governance"]["votes_count"],
+                "attendance_pct": record["governance"]["attendance_pct"],
+                "like_pct": record["governance"]["like_pct"],
+                "proposals_authored_count": record["governance"]["proposals_authored_count"],
+                "votes_cast_count": record["governance"]["votes_cast_count"],
+                "eth_received": record["receipts"]["eth_received"],
+                "usdc_received": record["receipts"]["usdc_received"],
+                "gnars_received": record["receipts"]["gnars_received"],
+                "fungible_transfer_count": record["receipts"]["fungible_transfer_count"],
+                "nft_received_count": record["receipts"]["nft_received_count"],
+                "member_url": record["identity"]["member_url"],
+                "farcaster": record["identity"]["farcaster"],
+                "github": record["identity"]["github"],
+                "authored_proposals": "|".join(record["relationships"]["authored_proposals"]),
+                "owned_projects": "|".join(record["relationships"]["owned_projects"]),
+                "related_projects": "|".join(record["relationships"]["related_projects"]),
+                "notes": record["notes"],
+            }
+        )
+    write_csv("people.csv", rows)
+
+
 def export_treasury() -> None:
     data = load_json("treasury")
     rows = []
@@ -291,6 +331,152 @@ def export_projects() -> None:
     write_csv("projects.csv", rows)
 
 
+def export_project_updates() -> None:
+    data = load_json("project_updates")
+    rows = []
+    for record in data["records"]:
+        rows.append(
+            {
+                "update_id": record["update_id"],
+                "project_id": record["project_id"],
+                "date": record["date"],
+                "title": record["title"],
+                "kind": record["kind"],
+                "status": record["status"],
+                "summary": record["summary"],
+                "related_proposals": "|".join(record["related_proposals"]),
+                "related_addresses": "|".join(record["related_addresses"]),
+                "links": "|".join(record["links"]),
+                "notes": record["notes"],
+            }
+        )
+    write_csv("project_updates.csv", rows)
+
+
+def export_project_rollups() -> None:
+    data = load_json("project_rollups")
+    rows = []
+    for record in data["records"]:
+        rows.append(
+            {
+                "project_id": record["project_id"],
+                "slug": record["slug"],
+                "name": record["name"],
+                "status": record["status"],
+                "category": record["category"],
+                "origin_proposals": "|".join(record["origin_proposals"]),
+                "owner_addresses": "|".join(record["owner_addresses"]),
+                "budget_eth": record["budget"]["eth"],
+                "budget_usdc": record["budget"]["usdc"],
+                "budget_gnars": record["budget"]["gnars"],
+                "spent_eth": record["spent"]["eth"],
+                "spent_usdc": record["spent"]["usdc"],
+                "spent_gnars": record["spent"]["gnars"],
+                "utilization_eth_pct": record["utilization_pct"]["eth"],
+                "utilization_usdc_pct": record["utilization_pct"]["usdc"],
+                "utilization_gnars_pct": record["utilization_pct"]["gnars"],
+                "updates_count": record["updates_count"],
+                "last_update_date": record["last_update_date"],
+                "recipient_count": len(record["recipients"]),
+                "nft_receipt_count": len(record["nft_receipts"]),
+                "objective": record["objective"],
+                "outputs": "|".join(record["outputs"]),
+                "kpis": "|".join(record["kpis"]),
+                "notes": record["notes"],
+            }
+        )
+    write_csv("project_rollups.csv", rows)
+
+
+def export_spend_ledger() -> None:
+    data = load_json("spend_ledger")
+    rows = []
+    for record in data["records"]:
+        rows.append(
+            {
+                "ledger_id": record["ledger_id"],
+                "archive_id": record["archive_id"],
+                "proposal_key": record["proposal_key"],
+                "proposal_number": record["proposal_number"],
+                "title": record["title"],
+                "status": record["status"],
+                "chain": record["chain"],
+                "project_id": record["project_id"],
+                "project_name": record["project_name"],
+                "proposer": record["proposer"],
+                "proposal_end_at": record["proposal_end_at"],
+                "proposal_created_at": record["proposal_created_at"],
+                "asset_symbol": record["asset_symbol"],
+                "asset_name": record["asset_name"],
+                "asset_kind": record["asset_kind"],
+                "token_contract": record["token_contract"],
+                "recipient_address": record["recipient_address"],
+                "recipient_display_name": record["recipient_display_name"],
+                "amount": record["amount"],
+                "source_url": record["source_url"],
+                "canonical_url": record["canonical_url"],
+            }
+        )
+    write_csv("spend_ledger.csv", rows)
+
+
+def export_dao_metrics() -> None:
+    data = load_json("dao_metrics")
+    overview = data["overview"]
+    rows = [
+        {
+            "as_of": data["as_of"],
+            "proposal_count": overview["proposal_count"],
+            "active_proposal_count": overview["active_proposal_count"],
+            "people_count": overview["people_count"],
+            "holders_count": overview["holders_count"],
+            "delegates_count": overview["delegates_count"],
+            "contributors_count": overview["contributors_count"],
+            "athletes_count": overview["athletes_count"],
+            "recipients_count": overview["recipients_count"],
+            "proposers_count": overview["proposers_count"],
+            "workstream_count": overview["workstream_count"],
+            "treasury_assets_count": overview["treasury_assets_count"],
+            "treasury_total_value_usd": overview["treasury_total_value_usd"],
+            "outflows_eth": overview["outflows_eth"],
+            "outflows_usdc": overview["outflows_usdc"],
+            "outflows_gnars": overview["outflows_gnars"],
+            "fungible_transfer_count": overview["fungible_transfer_count"],
+            "nft_transfer_count": overview["nft_transfer_count"],
+            "proposal_status_counts_json": json_cell(overview["proposal_status_counts"]),
+            "leaderboards_json": json_cell(data["leaderboards"]),
+            "recent_json": json_cell(data["recent"]),
+        }
+    ]
+    write_csv("dao_metrics.csv", rows)
+
+
+def export_timeline_events() -> None:
+    data = load_json("timeline_events")
+    rows = []
+    for record in data["records"]:
+        rows.append(
+            {
+                "event_id": record["event_id"],
+                "date": record["date"],
+                "title": record["title"],
+                "summary": record["summary"],
+                "kind": record["kind"],
+                "status": record["status"],
+                "project_id": record["project_id"],
+                "project_name": record["project_name"],
+                "archive_id": record["archive_id"],
+                "proposal_number": record["proposal_number"],
+                "people_addresses": "|".join(record["people_addresses"]),
+                "proposal_ids": "|".join(record["proposal_ids"]),
+                "links": "|".join(record["links"]),
+                "source": record["source"],
+                "thumbnail_url": record["thumbnail_url"],
+            }
+        )
+    write_csv("timeline_events.csv", rows)
+
+
 def export_sources() -> None:
     data = load_json("sources")
     rows = []
@@ -319,8 +505,14 @@ def main() -> int:
     export_proposal_transactions()
     export_proposal_votes()
     export_members()
+    export_people()
     export_treasury()
     export_projects()
+    export_project_updates()
+    export_project_rollups()
+    export_spend_ledger()
+    export_dao_metrics()
+    export_timeline_events()
     export_sources()
     return 0
 
