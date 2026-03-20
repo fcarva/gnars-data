@@ -404,6 +404,7 @@ def export_spend_ledger() -> None:
                 "project_id": record["project_id"],
                 "project_name": record["project_name"],
                 "proposer": record["proposer"],
+                "proposal_executed_at": record.get("proposal_executed_at"),
                 "proposal_end_at": record["proposal_end_at"],
                 "proposal_created_at": record["proposal_created_at"],
                 "asset_symbol": record["asset_symbol"],
@@ -413,6 +414,12 @@ def export_spend_ledger() -> None:
                 "recipient_address": record["recipient_address"],
                 "recipient_display_name": record["recipient_display_name"],
                 "amount": record["amount"],
+                "valuation_reference_at": record.get("valuation_reference_at"),
+                "valuation_date": record.get("valuation_date"),
+                "usd_price_at_execution": record.get("usd_price_at_execution"),
+                "usd_value_at_execution": record.get("usd_value_at_execution"),
+                "usd_price_source": record.get("usd_price_source"),
+                "usd_valuation_status": record.get("usd_valuation_status"),
                 "source_url": record["source_url"],
                 "canonical_url": record["canonical_url"],
             }
@@ -543,6 +550,12 @@ def export_treasury_flows() -> None:
                 "amount": record["amount"],
                 "asset_kind": record["asset_kind"],
                 "token_contract": record["token_contract"],
+                "valuation_reference_at": record.get("valuation_reference_at"),
+                "valuation_date": record.get("valuation_date"),
+                "usd_price_at_execution": record.get("usd_price_at_execution"),
+                "usd_value_at_execution": record.get("usd_value_at_execution"),
+                "usd_price_source": record.get("usd_price_source"),
+                "usd_valuation_status": record.get("usd_valuation_status"),
                 "proposal_href": record["proposal_href"],
             }
         )

@@ -1,6 +1,6 @@
 {
   "dataset": "project_rollups",
-  "as_of": "2026-03-19T03:35:14.475549Z",
+  "as_of": "2026-03-20T20:14:44.603849Z",
   "version": 1,
   "records": [
     {
@@ -18,7 +18,7 @@
           "archive_id": "gnars-base-118",
           "proposal_number": 118,
           "title": "Gnars Operations - Q1 2026 Workstream Proposal",
-          "status": "active"
+          "status": "succeeded"
         }
       ],
       "owner_addresses": [
@@ -271,5 +271,5 @@
       "reconciliation_status": "matched"
     }
   ],
-  "analytics_as_of": "2026-03-19T03:35:14.475549Z"
+  "analytics_as_of": "2026-03-20T20:14:44.603849Z"
 }

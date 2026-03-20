@@ -40,6 +40,16 @@ TOKEN_DECIMALS_BY_ADDRESS = {
     BASE_USDC: 6,
     BASE_SENDIT: 18,
 }
+COINGECKO_API_BASE = "https://api.coingecko.com/api/v3"
+COINGECKO_WEB_BASE = "https://www.coingecko.com/en/coins"
+COINGECKO_HISTORY_DIR = RAW_API_DIR / "coingecko-history"
+STABLECOIN_USD_PARITY = {
+    "USDC": 1.0,
+}
+COINGECKO_ASSET_IDS = {
+    "ETH": "ethereum",
+    "SENDIT": "sendit",
+}
 ETH_MAINNET_RPC_URL = "https://ethereum-rpc.publicnode.com"
 ETH_MAINNET_CHAIN_ID = "0x1"
 ENS_REGISTRY = "0x00000000000c2e074ec69a0dfb2997ba6c7d2e1e"
@@ -55,6 +65,22 @@ DISPLAY_NAME_PRIORITIES = {
 JSON_RPC_HEADERS = {
     "Content-Type": "application/json",
     "User-Agent": "gnars-data/ens-resolver",
+}
+HTTP_HEADERS = {
+    "Accept": "application/json",
+    "User-Agent": "gnars-data/price-audit",
+}
+HTML_HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/134.0.0.0 Safari/537.36"
+    ),
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cache-Control": "no-cache",
+    "Pragma": "no-cache",
+    "Upgrade-Insecure-Requests": "1",
 }
 
 
@@ -93,6 +119,18 @@ def write_json(name: str, payload: dict[str, Any]) -> None:
     path = DATA_DIR / f"{name}.json"
     path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(f"[ok] wrote {path.relative_to(ROOT)}")
+
+
+def fetch_json(url: str) -> Any:
+    request = urllib_request.Request(url, headers=HTTP_HEADERS)
+    with urllib_request.urlopen(request, timeout=45) as response:
+        return json.loads(response.read().decode("utf-8"))
+
+
+def fetch_text(url: str) -> str:
+    request = urllib_request.Request(url, headers=HTML_HEADERS)
+    with urllib_request.urlopen(request, timeout=45) as response:
+        return response.read().decode("utf-8", errors="ignore")
 
 
 def normalize_address(value: Any) -> str:
@@ -256,6 +294,151 @@ def parse_datetime(value: Any) -> datetime | None:
     if parsed.tzinfo is None:
         return parsed.replace(tzinfo=timezone.utc)
     return parsed.astimezone(timezone.utc)
+
+
+def historical_price_date(value: datetime) -> str:
+    return value.strftime("%d-%m-%Y")
+
+
+def proposal_execution_at(record: dict[str, Any]) -> str | None:
+    properties = record.get("properties") or {}
+    return properties.get("executedAt") or record.get("executed_at")
+
+
+def load_coingecko_history(coin_id: str, date_key: str) -> dict[str, Any] | None:
+    COINGECKO_HISTORY_DIR.mkdir(parents=True, exist_ok=True)
+    cache_path = COINGECKO_HISTORY_DIR / f"{coin_id}-{date_key}.json"
+    if cache_path.exists():
+        return load_json_path(cache_path)
+    url = f"{COINGECKO_API_BASE}/coins/{coin_id}/history?date={date_key}&localization=false"
+    try:
+        payload = fetch_json(url)
+    except Exception:
+        payload = None
+    price = number_or_zero((payload or {}).get("market_data", {}).get("current_price", {}).get("usd"))
+    if price and price > 0:
+        cache_path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+        return payload
+
+    fallback_payload = scrape_coingecko_historical_price(coin_id, date_key)
+    if fallback_payload:
+        cache_path.write_text(json.dumps(fallback_payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+        return fallback_payload
+    if payload:
+        cache_path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+        return payload
+    return None
+
+
+def scrape_coingecko_historical_price(coin_id: str, date_key: str) -> dict[str, Any] | None:
+    try:
+        target_date = datetime.strptime(date_key, "%d-%m-%Y").date().isoformat()
+    except ValueError:
+        return None
+    try:
+        from bs4 import BeautifulSoup
+    except Exception:
+        return None
+    url = f"{COINGECKO_WEB_BASE}/{coin_id}/historical_data?start={target_date}&end={target_date}"
+    try:
+        html = fetch_text(url)
+    except Exception:
+        return None
+    soup = BeautifulSoup(html, "html.parser")
+    for row in soup.select("table tbody tr"):
+        cells = [cell.get_text(" ", strip=True) for cell in row.select("td")]
+        if len(cells) < 4 or cells[0] != target_date:
+            continue
+        close_text = cells[3].replace("$", "").replace(",", "").strip()
+        if not close_text or close_text.upper() == "N/A":
+            return None
+        try:
+            price = float(close_text)
+        except ValueError:
+            return None
+        return {
+            "market_data": {
+                "current_price": {
+                    "usd": price,
+                }
+            },
+            "_price_source": "coingecko-html-historical-page",
+            "_price_url": url,
+            "_price_date": target_date,
+        }
+    return None
+
+
+def historical_usd_valuation(
+    asset_symbol: str,
+    executed_at: str | None,
+    price_cache: dict[tuple[str, str], tuple[float | None, str | None]],
+    amount: float,
+) -> dict[str, Any]:
+    executed_dt = parse_datetime(executed_at)
+    if executed_dt is None:
+        return {
+            "valuation_reference_at": None,
+            "valuation_date": None,
+            "usd_price_at_execution": None,
+            "usd_value_at_execution": None,
+            "usd_price_source": None,
+            "usd_valuation_status": "missing-date",
+        }
+
+    clean_symbol = str(asset_symbol or "").strip().upper()
+    reference_at = executed_dt.isoformat()
+    valuation_date = executed_dt.date().isoformat()
+
+    if clean_symbol in STABLECOIN_USD_PARITY:
+        price = STABLECOIN_USD_PARITY[clean_symbol]
+        return {
+            "valuation_reference_at": reference_at,
+            "valuation_date": valuation_date,
+            "usd_price_at_execution": price,
+            "usd_value_at_execution": round(amount * price, 8),
+            "usd_price_source": "stablecoin-parity",
+            "usd_valuation_status": "stablecoin-parity",
+        }
+
+    coin_id = COINGECKO_ASSET_IDS.get(clean_symbol)
+    if not coin_id:
+        return {
+            "valuation_reference_at": reference_at,
+            "valuation_date": valuation_date,
+            "usd_price_at_execution": None,
+            "usd_value_at_execution": None,
+            "usd_price_source": None,
+            "usd_valuation_status": "unpriced-asset",
+        }
+
+    date_key = historical_price_date(executed_dt)
+    cache_key = (coin_id, date_key)
+    if cache_key not in price_cache:
+        payload = load_coingecko_history(coin_id, date_key)
+        price_value = number_or_zero((payload or {}).get("market_data", {}).get("current_price", {}).get("usd"))
+        price = price_value if price_value > 0 else None
+        price_source = (payload or {}).get("_price_source") or (f"coingecko:{coin_id}" if payload else None)
+        price_cache[cache_key] = (price, price_source)
+    price, price_source = price_cache[cache_key]
+    if price is None or price <= 0:
+        return {
+            "valuation_reference_at": reference_at,
+            "valuation_date": valuation_date,
+            "usd_price_at_execution": None,
+            "usd_value_at_execution": None,
+            "usd_price_source": price_source or f"coingecko:{coin_id}",
+            "usd_valuation_status": "missing-price",
+        }
+
+    return {
+        "valuation_reference_at": reference_at,
+        "valuation_date": valuation_date,
+        "usd_price_at_execution": round(price, 12),
+        "usd_value_at_execution": round(amount * price, 8),
+        "usd_price_source": price_source or f"coingecko:{coin_id}",
+        "usd_valuation_status": "historical-price",
+    }
 
 
 def iso_day(value: Any) -> str | None:
@@ -1069,11 +1252,13 @@ def build_spend_and_nft_records(
     symbol_by_address, name_by_address, label_by_address = build_asset_indexes()
     spend_records: list[dict[str, Any]] = []
     nft_records: list[dict[str, Any]] = []
+    price_cache: dict[tuple[str, str], float | None] = {}
 
     for proposal in archive["records"]:
         if not is_successful_proposal(proposal):
             continue
         project_id = related_project_id(project_lookup, proposal)
+        executed_at = proposal_execution_at(proposal) or proposal.get("end_at") or proposal.get("created_at")
         for transaction in proposal.get("transactions") or []:
             recipient = transfer_recipient(transaction)
             person = people_by_address.get(recipient, {})
@@ -1081,6 +1266,12 @@ def build_spend_and_nft_records(
 
             fungible = fungible_transfer_details(transaction, symbol_by_address, name_by_address)
             if fungible:
+                valuation = historical_usd_valuation(
+                    fungible["asset_symbol"],
+                    executed_at,
+                    price_cache,
+                    number_or_zero(fungible["amount"]),
+                )
                 spend_records.append(
                     {
                         "ledger_id": f"{proposal['archive_id']}:{transaction.get('index')}",
@@ -1093,6 +1284,7 @@ def build_spend_and_nft_records(
                         "project_id": project_id,
                         "project_name": project_names.get(project_id),
                         "proposer": normalize_address(proposal.get("proposer")),
+                        "proposal_executed_at": executed_at,
                         "proposal_end_at": proposal.get("end_at"),
                         "proposal_created_at": proposal.get("created_at"),
                         "asset_symbol": fungible["asset_symbol"],
@@ -1102,6 +1294,12 @@ def build_spend_and_nft_records(
                         "recipient_address": fungible["recipient"],
                         "recipient_display_name": person_name,
                         "amount": round(fungible["amount"], 8),
+                        "valuation_reference_at": valuation["valuation_reference_at"],
+                        "valuation_date": valuation["valuation_date"],
+                        "usd_price_at_execution": valuation["usd_price_at_execution"],
+                        "usd_value_at_execution": valuation["usd_value_at_execution"],
+                        "usd_price_source": valuation["usd_price_source"],
+                        "usd_valuation_status": valuation["usd_valuation_status"],
                         "source_url": proposal["links"]["source_url"],
                         "canonical_url": proposal["links"]["canonical_url"],
                     }
@@ -1132,7 +1330,7 @@ def build_spend_and_nft_records(
 
     spend_records.sort(
         key=lambda record: (
-            record.get("proposal_end_at") or "",
+            record.get("proposal_executed_at") or record.get("proposal_end_at") or "",
             record["archive_id"],
             record["ledger_id"],
         ),
@@ -1329,7 +1527,11 @@ def build_dao_metrics(
     top10_eth = sum(sorted(payout_values_eth, reverse=True)[:10])
 
     recent_proposals_30d = [record for record in archive["records"] if in_window(proposal_event_at(record), by_30d)]
-    recent_spend_30d = [record for record in spend_records if in_window(record.get("proposal_end_at") or record.get("proposal_created_at"), by_30d)]
+    recent_spend_30d = [
+        record
+        for record in spend_records
+        if in_window(record.get("proposal_executed_at") or record.get("proposal_end_at") or record.get("proposal_created_at"), by_30d)
+    ]
     recent_deliveries_30d = [
         record
         for record in project_updates["records"]
@@ -1345,7 +1547,7 @@ def build_dao_metrics(
     proposal_event_days = [parse_datetime(proposal_event_at(record)) for record in archive["records"]]
     proposal_event_days = [day for day in proposal_event_days if day is not None]
     payout_event_days = [
-        parse_datetime(record.get("proposal_end_at") or record.get("proposal_created_at"))
+        parse_datetime(record.get("proposal_executed_at") or record.get("proposal_end_at") or record.get("proposal_created_at"))
         for record in spend_records
     ]
     payout_event_days = [day for day in payout_event_days if day is not None]
@@ -1388,7 +1590,10 @@ def build_dao_metrics(
     )[:12]
     recent_payouts = sorted(
         spend_records,
-        key=lambda record: (record.get("proposal_end_at") or record.get("proposal_created_at") or "", record["ledger_id"]),
+        key=lambda record: (
+            record.get("proposal_executed_at") or record.get("proposal_end_at") or record.get("proposal_created_at") or "",
+            record["ledger_id"],
+        ),
         reverse=True,
     )[:12]
 
@@ -1683,7 +1888,9 @@ def build_activity_timeseries(
             activity[ended_day]["proposals_cancelled"] += 1
 
     for record in spend_records:
-        event_at = parse_datetime(record.get("proposal_end_at") or record.get("proposal_created_at") or archive["as_of"])
+        event_at = parse_datetime(
+            record.get("proposal_executed_at") or record.get("proposal_end_at") or record.get("proposal_created_at") or archive["as_of"]
+        )
         if event_at is None:
             continue
         min_date = event_at if min_date is None else min(min_date, event_at)
@@ -1764,7 +1971,9 @@ def build_treasury_flows(
 
     for record in spend_records:
         proposal = proposals_by_id.get(record["archive_id"], {})
-        event_at = parse_datetime(record.get("proposal_end_at") or record.get("proposal_created_at") or archive["as_of"])
+        event_at = parse_datetime(
+            record.get("proposal_executed_at") or record.get("proposal_end_at") or record.get("proposal_created_at") or archive["as_of"]
+        )
         routes.append(
             {
                 "route_id": record["ledger_id"],
@@ -1784,6 +1993,12 @@ def build_treasury_flows(
                 "amount": round(number_or_zero(record["amount"]), 8),
                 "asset_kind": record["asset_kind"],
                 "token_contract": record["token_contract"],
+                "valuation_reference_at": record.get("valuation_reference_at"),
+                "valuation_date": record.get("valuation_date"),
+                "usd_price_at_execution": record.get("usd_price_at_execution"),
+                "usd_value_at_execution": record.get("usd_value_at_execution"),
+                "usd_price_source": record.get("usd_price_source"),
+                "usd_valuation_status": record.get("usd_valuation_status"),
                 "proposal_href": proposal.get("links", {}).get("canonical_url") or record["canonical_url"],
             }
         )

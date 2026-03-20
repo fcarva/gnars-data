@@ -1,7 +1,7 @@
 {
   "dataset": "filter_facets",
-  "analytics_as_of": "2026-03-19T03:35:14.475549Z",
-  "as_of": "2026-03-19T03:35:14.475549Z",
+  "analytics_as_of": "2026-03-20T20:14:44.603849Z",
+  "as_of": "2026-03-20T20:14:44.603849Z",
   "version": 1,
   "surfaces": {
     "home": {
@@ -9,22 +9,22 @@
         {
           "value": "media_reference",
           "label": "Media Reference",
-          "count": 1016
+          "count": 1195
         },
         {
           "value": "proposal",
           "label": "Proposal",
-          "count": 193
+          "count": 222
         },
         {
           "value": "community_reference",
           "label": "Community Reference",
-          "count": 88
+          "count": 96
         },
         {
           "value": "payout",
           "label": "Payout",
-          "count": 52
+          "count": 65
         },
         {
           "value": "delivery",
@@ -39,34 +39,39 @@
       ],
       "status": [
         {
+          "value": "executed",
+          "label": "Executed",
+          "count": 640
+        },
+        {
           "value": "closed",
           "label": "Closed",
           "count": 543
         },
         {
-          "value": "executed",
-          "label": "Executed",
-          "count": 512
+          "value": "defeated",
+          "label": "Defeated",
+          "count": 166
         },
         {
           "value": "active",
           "label": "Active",
-          "count": 111
-        },
-        {
-          "value": "defeated",
-          "label": "Defeated",
-          "count": 101
+          "count": 114
         },
         {
           "value": "cancelled",
           "label": "Cancelled",
-          "count": 76
+          "count": 104
         },
         {
           "value": "completed",
           "label": "Completed",
           "count": 6
+        },
+        {
+          "value": "succeeded",
+          "label": "Succeeded",
+          "count": 5
         },
         {
           "value": "in-progress",
@@ -78,32 +83,32 @@
         {
           "value": "media",
           "label": "Media",
-          "count": 641
+          "count": 780
         },
         {
           "value": "travel",
           "label": "Travel",
-          "count": 162
+          "count": 184
         },
         {
           "value": "events",
           "label": "Events",
-          "count": 144
+          "count": 162
         },
         {
           "value": "athlete-support",
           "label": "Athlete Support",
-          "count": 117
+          "count": 124
         },
         {
           "value": "operations",
           "label": "Operations",
-          "count": 110
+          "count": 116
         },
         {
           "value": "software",
           "label": "Software",
-          "count": 51
+          "count": 80
         },
         {
           "value": "governance",
@@ -120,12 +125,12 @@
         {
           "value": "USDC",
           "label": "USDC",
-          "count": 77
+          "count": 97
         },
         {
           "value": "ETH",
           "label": "ETH",
-          "count": 52
+          "count": 64
         },
         {
           "value": "SENDIT",
@@ -136,6 +141,11 @@
           "value": "TOKEN-09E938",
           "label": "TOKEN 09E938",
           "count": 5
+        },
+        {
+          "value": "TOKEN-4F6047",
+          "label": "TOKEN 4F6047",
+          "count": 3
         }
       ]
     },
@@ -149,54 +159,59 @@
         {
           "value": "executed",
           "label": "Executed",
-          "count": 65
-        },
-        {
-          "value": "cancelled",
-          "label": "Cancelled",
-          "count": 12
+          "count": 80
         },
         {
           "value": "defeated",
           "label": "Defeated",
-          "count": 12
+          "count": 22
+        },
+        {
+          "value": "cancelled",
+          "label": "Cancelled",
+          "count": 16
         },
         {
           "value": "active",
           "label": "Active",
-          "count": 3
+          "count": 2
+        },
+        {
+          "value": "succeeded",
+          "label": "Succeeded",
+          "count": 1
         }
       ],
       "category": [
         {
           "value": "media",
           "label": "Media",
-          "count": 88
+          "count": 103
         },
         {
           "value": "travel",
           "label": "Travel",
-          "count": 24
+          "count": 27
         },
         {
           "value": "events",
           "label": "Events",
-          "count": 22
+          "count": 24
         },
         {
           "value": "athlete-support",
           "label": "Athlete Support",
-          "count": 20
-        },
-        {
-          "value": "operations",
-          "label": "Operations",
-          "count": 14
+          "count": 23
         },
         {
           "value": "software",
           "label": "Software",
-          "count": 11
+          "count": 16
+        },
+        {
+          "value": "operations",
+          "label": "Operations",
+          "count": 15
         },
         {
           "value": "governance",
@@ -211,26 +226,26 @@
       ],
       "platform": [
         {
+          "value": "gnars.com",
+          "label": "Gnars.com",
+          "count": 121
+        },
+        {
           "value": "snapshot",
           "label": "Snapshot",
           "count": 101
-        },
-        {
-          "value": "gnars.com",
-          "label": "Gnars.com",
-          "count": 92
         }
       ],
       "chain": [
         {
+          "value": "base",
+          "label": "Base",
+          "count": 109
+        },
+        {
           "value": "snapshot",
           "label": "Snapshot",
           "count": 104
-        },
-        {
-          "value": "base",
-          "label": "Base",
-          "count": 80
         },
         {
           "value": "ethereum",
@@ -254,22 +269,22 @@
         {
           "value": "contributor",
           "label": "Contributor",
-          "count": 90
+          "count": 98
         },
         {
           "value": "proposer",
           "label": "Proposer",
-          "count": 68
+          "count": 73
         },
         {
           "value": "recipient",
           "label": "Recipient",
-          "count": 42
+          "count": 51
         },
         {
           "value": "athlete",
           "label": "Athlete",
-          "count": 35
+          "count": 41
         },
         {
           "value": "builder",
@@ -286,7 +301,7 @@
         {
           "value": "active",
           "label": "Active",
-          "count": 1171
+          "count": 1180
         }
       ]
     },
@@ -321,12 +336,12 @@
         {
           "value": "USDC",
           "label": "USDC",
-          "count": 26
+          "count": 34
         },
         {
           "value": "ETH",
           "label": "ETH",
-          "count": 18
+          "count": 22
         },
         {
           "value": "SENDIT",
@@ -337,24 +352,34 @@
           "value": "TOKEN-09E938",
           "label": "TOKEN 09E938",
           "count": 2
+        },
+        {
+          "value": "TOKEN-4F6047",
+          "label": "TOKEN 4F6047",
+          "count": 1
         }
       ],
       "status": [
         {
           "value": "executed",
           "label": "Executed",
-          "count": 52
+          "count": 65
         }
       ],
       "chain": [
         {
           "value": "base",
           "label": "Base",
-          "count": 51
+          "count": 63
         },
         {
           "value": "ethereum",
           "label": "Ethereum",
+          "count": 1
+        },
+        {
+          "value": "snapshot",
+          "label": "Snapshot",
           "count": 1
         }
       ],
@@ -362,12 +387,22 @@
         {
           "value": "media",
           "label": "Media",
-          "count": 29
+          "count": 37
+        },
+        {
+          "value": "software",
+          "label": "Software",
+          "count": 7
         },
         {
           "value": "travel",
           "label": "Travel",
           "count": 6
+        },
+        {
+          "value": "operations",
+          "label": "Operations",
+          "count": 5
         },
         {
           "value": "athlete-support",
@@ -378,16 +413,6 @@
           "value": "events",
           "label": "Events",
           "count": 4
-        },
-        {
-          "value": "operations",
-          "label": "Operations",
-          "count": 4
-        },
-        {
-          "value": "software",
-          "label": "Software",
-          "count": 3
         },
         {
           "value": "governance",
@@ -401,7 +426,7 @@
         {
           "value": "proposal",
           "label": "Proposal",
-          "count": 193
+          "count": 222
         },
         {
           "value": "milestone",
@@ -428,22 +453,22 @@
         {
           "value": "executed",
           "label": "Executed",
-          "count": 65
-        },
-        {
-          "value": "cancelled",
-          "label": "Cancelled",
-          "count": 12
+          "count": 80
         },
         {
           "value": "defeated",
           "label": "Defeated",
-          "count": 12
+          "count": 22
+        },
+        {
+          "value": "cancelled",
+          "label": "Cancelled",
+          "count": 16
         },
         {
           "value": "active",
           "label": "Active",
-          "count": 3
+          "count": 2
         },
         {
           "value": "completed",
@@ -454,6 +479,11 @@
           "value": "in-progress",
           "label": "In Progress",
           "count": 2
+        },
+        {
+          "value": "succeeded",
+          "label": "Succeeded",
+          "count": 1
         }
       ]
     }

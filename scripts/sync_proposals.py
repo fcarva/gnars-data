@@ -25,6 +25,7 @@ SNAPSHOT_SPACE = "gnars.eth"
 USER_AGENT = "gnars-data-sync/1.0 (+https://github.com/fcarva/gnars-data)"
 KNOWN_ERC20_DECIMALS = {
     "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913": 6,
+    "0xba5b9b2d2d06a9021eb3190ea5fb0e02160839a4": 18,
 }
 KNOWN_GNARS_NOT_FOUND_LENGTHS = {65419, 65422}
 

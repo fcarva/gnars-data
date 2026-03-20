@@ -58,7 +58,7 @@ import {
   timelineHref,
   tribeLabels,
 } from "../src/lib/selectors";
-import { assetTone, formatAmount, formatAssetDescriptor, formatAssetSymbol, formatDate, formatLabel, primaryAssetLabel, titleCase } from "../src/lib/format";
+import { assetTone, formatAmount, formatAssetDescriptor, formatAssetSymbol, formatDate, formatLabel, formatUsd, primaryAssetLabel, titleCase } from "../src/lib/format";
 
 const webRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const publicDataDir = path.join(webRoot, "public", "data");
@@ -267,6 +267,9 @@ function buildTreasuryRouteRows(
       assetDescriptor: formatAssetDescriptor(route.asset_symbol, route.asset_kind, route.token_contract),
       amount: route.amount,
       amountLabel: formatAmount(route.asset_symbol, route.amount, route.token_contract),
+      usdValueAtExecution: route.usd_value_at_execution,
+      usdValueLabel: formatUsd(route.usd_value_at_execution),
+      valuationDateLabel: route.valuation_date ? formatDate(route.valuation_date) : null,
       tokenContract: route.token_contract,
       routeKind: route.project_id ? "project-linked" : "proposal-linked",
       searchText: [
@@ -283,6 +286,8 @@ function buildTreasuryRouteRows(
         route.recipient_address,
         assetDisplaySymbol,
         route.asset_symbol,
+        route.usd_value_at_execution ?? "",
+        route.usd_valuation_status,
         route.token_contract ?? "",
         route.proposal_chain,
       ]
@@ -494,7 +499,7 @@ function buildPersonActivityScene(
     touch(proposal.end_at.slice(0, 10), "governance", 0.5);
   }
   for (const record of spendLedger.filter((item) => item.recipient_address.toLowerCase() === person.address.toLowerCase())) {
-    const day = (record.proposal_end_at || record.proposal_created_at || "").slice(0, 10);
+    const day = (record.proposal_executed_at || record.proposal_end_at || record.proposal_created_at || "").slice(0, 10);
     if (day) {
       touch(day, "treasury", 1);
     }
@@ -803,6 +808,7 @@ async function main() {
             href: record.href,
             proposalLabel: record.proposal_number !== null ? `Prop #${record.proposal_number}` : record.archive_id,
             amountLabel: formatAmount(record.asset_symbol, record.amount),
+            usdValueLabel: formatUsd(record.usd_value_at_execution ?? null),
             dateLabel: formatDate(record.date),
             projectLabel: record.project_name,
           })),

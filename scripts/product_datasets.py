@@ -33,6 +33,13 @@ TRIBE_ORDER = [
 
 URL_PATTERN = re.compile(r"https?://[^\s<>)\]]+")
 
+BASE_USDC = "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
+BASE_SENDIT = "0xba5b9b2d2d06a9021eb3190ea5fb0e02160839a4"
+TOKEN_DECIMALS_BY_ADDRESS = {
+    BASE_USDC: 6,
+    BASE_SENDIT: 18,
+}
+
 CATEGORY_ALIASES = {
     "operations": "Operations",
     "ops": "Operations",
@@ -498,10 +505,21 @@ def transaction_asset_totals(
             continue
         if kind != "erc20_transfer":
             continue
-        amount = number_or_zero(record.get("amount_normalized"))
+        normalized_value = record.get("amount_normalized")
+        raw_value = record.get("amount_raw")
+        amount = number_or_zero(normalized_value if normalized_value not in (None, "") else raw_value)
+        contract = normalize_address(record.get("token_contract") or record.get("target"))
+        if raw_value not in (None, "") and contract in TOKEN_DECIMALS_BY_ADDRESS:
+            try:
+                raw_int = int(str(raw_value))
+            except ValueError:
+                raw_int = 0
+            normalized_text = str(normalized_value).strip() if normalized_value not in (None, "") else ""
+            raw_text = str(raw_value).strip()
+            if raw_int > 0 and (not normalized_text or normalized_text == raw_text):
+                amount = raw_int / (10 ** TOKEN_DECIMALS_BY_ADDRESS[contract])
         if amount <= 0:
             continue
-        contract = normalize_address(record.get("token_contract") or record.get("target"))
         symbol = symbol_by_contract.get(contract) or short_address(contract).upper()
         totals[symbol] += amount
     return [
@@ -1451,7 +1469,7 @@ def expand_people(
             if proposal:
                 dates.append(proposal_date(proposal))
         for record in routes_by_person.get(address, []):
-            dates.append(record.get("proposal_end_at") or record.get("proposal_created_at"))
+            dates.append(record.get("proposal_executed_at") or record.get("proposal_end_at") or record.get("proposal_created_at"))
         for record in related_updates:
             dates.append(record.get("date"))
         for record in proofs:
@@ -1476,9 +1494,10 @@ def expand_people(
                 "archive_id": record["archive_id"],
                 "proposal_number": record.get("proposal_number"),
                 "proposal_title": record.get("title"),
-                "date": record.get("proposal_end_at") or record.get("proposal_created_at"),
+                "date": record.get("proposal_executed_at") or record.get("proposal_end_at") or record.get("proposal_created_at"),
                 "asset_symbol": record.get("asset_symbol"),
                 "amount": number_or_zero(record.get("amount")),
+                "usd_value_at_execution": record.get("usd_value_at_execution"),
                 "project_id": record.get("project_id"),
                 "project_name": record.get("project_name"),
                 "href": f"/proposals/{record['archive_id']}/",
@@ -1636,7 +1655,7 @@ def build_feed_stream(
                 "item_id": f"payout:{record['ledger_id']}",
                 "kind": "payout",
                 "action_label": proposal_action_label("payout", str(record.get("status") or "")),
-                "date": record.get("proposal_end_at") or record.get("proposal_created_at") or analytics_as_of,
+                "date": record.get("proposal_executed_at") or record.get("proposal_end_at") or record.get("proposal_created_at") or analytics_as_of,
                 "status": record["status"],
                 "resolved_status": record["status"],
                 "reconciliation_status": "matched",

@@ -1,0 +1,10 @@
+{
+  "market_data": {
+    "current_price": {
+      "usd": 1.581e-05
+    }
+  },
+  "_price_source": "coingecko-html-historical-page",
+  "_price_url": "https://www.coingecko.com/en/coins/sendit/historical_data?start=2025-02-09&end=2025-02-09",
+  "_price_date": "2025-02-09"
+}

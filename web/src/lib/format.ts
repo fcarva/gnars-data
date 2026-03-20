@@ -44,6 +44,20 @@ export function formatNumber(value: number): string {
   return new Intl.NumberFormat("en-US").format(value);
 }
 
+export function formatUsd(value: number | null | undefined): string | null {
+  if (value === null || value === undefined || Number.isNaN(value)) {
+    return null;
+  }
+  const absolute = Math.abs(value);
+  const decimals = absolute >= 1000 ? 0 : absolute >= 10 ? 2 : 4;
+  return new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+    minimumFractionDigits: 0,
+    maximumFractionDigits: decimals,
+  }).format(value);
+}
+
 export function formatAssetSymbol(symbol: string | null | undefined, tokenContract?: string | null): string {
   const clean = String(symbol ?? "").trim().toUpperCase();
   if (!clean) {
@@ -98,8 +112,13 @@ export function formatAssetDescriptor(
 }
 
 export function formatAmount(symbol: string, amount: number, tokenContract?: string | null): string {
-  const decimals = amount >= 100 ? 0 : amount >= 10 ? 1 : 2;
-  return `${trimZeroes(amount.toFixed(decimals))} ${formatAssetSymbol(symbol, tokenContract)}`;
+  const absolute = Math.abs(amount);
+  const decimals = absolute >= 100 ? 0 : absolute >= 10 ? 1 : absolute >= 1 ? 2 : 4;
+  const formatted = new Intl.NumberFormat("en-US", {
+    minimumFractionDigits: 0,
+    maximumFractionDigits: decimals,
+  }).format(amount);
+  return `${formatted} ${formatAssetSymbol(symbol, tokenContract)}`;
 }
 
 export function primaryAssetLabel(items: AssetAmount[]): string {

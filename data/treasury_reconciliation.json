@@ -1,35 +1,119 @@
 {
   "dataset": "treasury_reconciliation",
-  "analytics_as_of": "2026-03-19T03:35:14.475549Z",
-  "as_of": "2026-03-19T03:35:14.475549Z",
+  "analytics_as_of": "2026-03-20T20:14:44.603849Z",
+  "as_of": "2026-03-20T20:14:44.603849Z",
   "version": 1,
   "summary": {
-    "matched_count": 51,
-    "needs_review_count": 1,
+    "matched_count": 63,
+    "needs_review_count": 2,
     "window_summary": {
       "7d": {
-        "route_count": 0,
-        "proposal_count": 0,
-        "recipient_count": 0
+        "route_count": 1,
+        "proposal_count": 1,
+        "recipient_count": 1
       },
       "30d": {
-        "route_count": 0,
-        "proposal_count": 0,
-        "recipient_count": 0
+        "route_count": 1,
+        "proposal_count": 1,
+        "recipient_count": 1
       },
       "90d": {
-        "route_count": 0,
-        "proposal_count": 0,
-        "recipient_count": 0
+        "route_count": 1,
+        "proposal_count": 1,
+        "recipient_count": 1
       },
       "all": {
-        "route_count": 52,
-        "proposal_count": 43,
-        "recipient_count": 40
+        "route_count": 65,
+        "proposal_count": 55,
+        "recipient_count": 47
       }
     }
   },
   "records": [
+    {
+      "route_id": "gnars-base-117:1",
+      "archive_id": "gnars-base-117",
+      "proposal_number": 117,
+      "proposal_title": "Sponsor Gnars Monik Santos in QS/WSL 2026",
+      "chain": "base",
+      "recipient_address": "0x25810d1a8b1affc444d5333bf0496f1202d6f89f",
+      "recipient_display_name": "0x2581...f89f",
+      "asset_symbol": "USDC",
+      "amount": 1570.0,
+      "token_contract": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "asset_contract_status": "external-token",
+      "repo_value": {
+        "amount": 1570.0,
+        "asset_symbol": "USDC",
+        "recipient_address": "0x25810d1a8b1affc444d5333bf0496f1202d6f89f",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/117",
+        "canonical_url": "https://www.gnars.com/proposals/base/117"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "1,570 USDC",
+        "recipient_label": "0x2581...f89f",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/117",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-108:1",
+      "archive_id": "gnars-base-108",
+      "proposal_number": 108,
+      "proposal_title": "SKATE ACROSS AFRICA (EAST COAST - SOUTH COAST)",
+      "chain": "base",
+      "recipient_address": "0x8d2a253a5885806aa14e583c80c8833a904fb252",
+      "recipient_display_name": "0x8d2a...b252",
+      "asset_symbol": "USDC",
+      "amount": 2500.0,
+      "token_contract": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "asset_contract_status": "external-token",
+      "repo_value": {
+        "amount": 2500.0,
+        "asset_symbol": "USDC",
+        "recipient_address": "0x8d2a253a5885806aa14e583c80c8833a904fb252",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/108",
+        "canonical_url": "https://www.gnars.com/proposals/base/108"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "2,500 USDC",
+        "recipient_label": "0x8d2a...b252",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/108",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
     {
       "route_id": "gnars-base-104:1",
       "archive_id": "gnars-base-104",
@@ -51,7 +135,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/base/104",
-        "canonical_url": "https://gnars.com/proposals/base/104"
+        "canonical_url": "https://www.gnars.com/proposals/base/104"
       },
       "chain_value": {
         "treasury_contract_id": "gnars-base-treasury",
@@ -69,7 +153,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/104",
-        "https://gnars.com/proposals/base/104",
         "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
       ]
     },
@@ -94,7 +177,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/base/101",
-        "canonical_url": "https://gnars.com/proposals/base/101"
+        "canonical_url": "https://www.gnars.com/proposals/base/101"
       },
       "chain_value": {
         "treasury_contract_id": "gnars-base-treasury",
@@ -112,7 +195,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/101",
-        "https://gnars.com/proposals/base/101",
         "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
       ]
     },
@@ -137,7 +219,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/base/101",
-        "canonical_url": "https://gnars.com/proposals/base/101"
+        "canonical_url": "https://www.gnars.com/proposals/base/101"
       },
       "chain_value": {
         "treasury_contract_id": "gnars-base-treasury",
@@ -155,7 +237,132 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/101",
-        "https://gnars.com/proposals/base/101",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-99:1",
+      "archive_id": "gnars-base-99",
+      "proposal_number": 99,
+      "proposal_title": "Gnars Crew at Devconnect Buenos Aires 2025 – Skate + Hacker House",
+      "chain": "base",
+      "recipient_address": "0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d",
+      "recipient_display_name": "r4topunk",
+      "asset_symbol": "ETH",
+      "amount": 1.0,
+      "token_contract": null,
+      "asset_contract_status": "native",
+      "repo_value": {
+        "amount": 1.0,
+        "asset_symbol": "ETH",
+        "recipient_address": "0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/99",
+        "canonical_url": "https://www.gnars.com/proposals/base/99"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "1 ETH",
+        "recipient_label": "r4topunk",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/99",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-97:2",
+      "archive_id": "gnars-base-97",
+      "proposal_number": 97,
+      "proposal_title": "Pod Media Proposal 3.0",
+      "chain": "base",
+      "recipient_address": "0xe5f6202ff7ddc5273c249073865bc6f4d5d68beb",
+      "recipient_display_name": "0xe5f6...8beb",
+      "asset_symbol": "USDC",
+      "amount": 780.0,
+      "token_contract": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "asset_contract_status": "external-token",
+      "repo_value": {
+        "amount": 780.0,
+        "asset_symbol": "USDC",
+        "recipient_address": "0xe5f6202ff7ddc5273c249073865bc6f4d5d68beb",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/97",
+        "canonical_url": "https://www.gnars.com/proposals/base/97"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "780 USDC",
+        "recipient_label": "0xe5f6...8beb",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/97",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-97:1",
+      "archive_id": "gnars-base-97",
+      "proposal_number": 97,
+      "proposal_title": "Pod Media Proposal 3.0",
+      "chain": "base",
+      "recipient_address": "0xe5f6202ff7ddc5273c249073865bc6f4d5d68beb",
+      "recipient_display_name": "0xe5f6...8beb",
+      "asset_symbol": "ETH",
+      "amount": 1.0,
+      "token_contract": null,
+      "asset_contract_status": "native",
+      "repo_value": {
+        "amount": 1.0,
+        "asset_symbol": "ETH",
+        "recipient_address": "0xe5f6202ff7ddc5273c249073865bc6f4d5d68beb",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/97",
+        "canonical_url": "https://www.gnars.com/proposals/base/97"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "1 ETH",
+        "recipient_label": "0xe5f6...8beb",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/97",
         "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
       ]
     },
@@ -180,7 +387,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/base/95",
-        "canonical_url": "https://gnars.com/proposals/base/95"
+        "canonical_url": "https://www.gnars.com/proposals/base/95"
       },
       "chain_value": {
         "treasury_contract_id": "gnars-base-treasury",
@@ -198,7 +405,90 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/95",
-        "https://gnars.com/proposals/base/95",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-91:1",
+      "archive_id": "gnars-base-91",
+      "proposal_number": 91,
+      "proposal_title": "IPFS Reimbursement and Advance for Shared IPFS Infrastructure",
+      "chain": "base",
+      "recipient_address": "0x41cb654d1f47913acab158a8199191d160dabe4a",
+      "recipient_display_name": "0x41cb...be4a",
+      "asset_symbol": "TOKEN-4F6047",
+      "amount": 2.06232e+20,
+      "token_contract": "0x4f604735c1cf31399c6e711d5962b2b3e0225ad3",
+      "asset_contract_status": "external-token",
+      "repo_value": {
+        "amount": 2.06232e+20,
+        "asset_symbol": "TOKEN-4F6047",
+        "recipient_address": "0x41cb654d1f47913acab158a8199191d160dabe4a",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/91",
+        "canonical_url": "https://www.gnars.com/proposals/base/91"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "206,232,000,000,000,000,000 TOKEN-4F6047",
+        "recipient_label": "0x41cb...be4a",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/91",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-90:1",
+      "archive_id": "gnars-base-90",
+      "proposal_number": 90,
+      "proposal_title": " Transfer Correction – Proposal 70",
+      "chain": "base",
+      "recipient_address": "0x25810d1a8b1affc444d5333bf0496f1202d6f89f",
+      "recipient_display_name": "0x2581...f89f",
+      "asset_symbol": "USDC",
+      "amount": 360.0,
+      "token_contract": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "asset_contract_status": "external-token",
+      "repo_value": {
+        "amount": 360.0,
+        "asset_symbol": "USDC",
+        "recipient_address": "0x25810d1a8b1affc444d5333bf0496f1202d6f89f",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/90",
+        "canonical_url": "https://www.gnars.com/proposals/base/90"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "360 USDC",
+        "recipient_label": "0x2581...f89f",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/90",
         "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
       ]
     },
@@ -223,7 +513,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/base/89",
-        "canonical_url": "https://gnars.com/proposals/base/89"
+        "canonical_url": "https://www.gnars.com/proposals/base/89"
       },
       "chain_value": {
         "treasury_contract_id": "gnars-base-treasury",
@@ -241,7 +531,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/89",
-        "https://gnars.com/proposals/base/89",
         "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
       ]
     },
@@ -266,7 +555,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/base/86",
-        "canonical_url": "https://gnars.com/proposals/base/86"
+        "canonical_url": "https://www.gnars.com/proposals/base/86"
       },
       "chain_value": {
         "treasury_contract_id": "gnars-base-treasury",
@@ -284,7 +573,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/86",
-        "https://gnars.com/proposals/base/86",
         "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
       ]
     },
@@ -309,7 +597,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/base/86",
-        "canonical_url": "https://gnars.com/proposals/base/86"
+        "canonical_url": "https://www.gnars.com/proposals/base/86"
       },
       "chain_value": {
         "treasury_contract_id": "gnars-base-treasury",
@@ -327,7 +615,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/86",
-        "https://gnars.com/proposals/base/86",
         "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
       ]
     },
@@ -352,7 +639,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/base/77",
-        "canonical_url": "https://gnars.com/proposals/base/77"
+        "canonical_url": "https://www.gnars.com/proposals/base/77"
       },
       "chain_value": {
         "treasury_contract_id": "gnars-base-treasury",
@@ -370,7 +657,48 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/77",
-        "https://gnars.com/proposals/base/77",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-76:1",
+      "archive_id": "gnars-base-76",
+      "proposal_number": 76,
+      "proposal_title": "7CAPAS MAGAZINE & GNARS",
+      "chain": "base",
+      "recipient_address": "0x9ad8d2a8ef4bf60a667dd43fcb178bdbd93ae1c8",
+      "recipient_display_name": "7capas.eth",
+      "asset_symbol": "USDC",
+      "amount": 2500.0,
+      "token_contract": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "asset_contract_status": "external-token",
+      "repo_value": {
+        "amount": 2500.0,
+        "asset_symbol": "USDC",
+        "recipient_address": "0x9ad8d2a8ef4bf60a667dd43fcb178bdbd93ae1c8",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/76",
+        "canonical_url": "https://www.gnars.com/proposals/base/76"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "2,500 USDC",
+        "recipient_label": "7capas.eth",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/76",
         "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
       ]
     },
@@ -395,7 +723,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/base/70",
-        "canonical_url": "https://gnars.com/proposals/base/70"
+        "canonical_url": "https://www.gnars.com/proposals/base/70"
       },
       "chain_value": {
         "treasury_contract_id": "gnars-base-treasury",
@@ -413,7 +741,48 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/70",
-        "https://gnars.com/proposals/base/70",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-68:1",
+      "archive_id": "gnars-base-68",
+      "proposal_number": 68,
+      "proposal_title": "Noggles Rail in Milan - First in Italy ",
+      "chain": "base",
+      "recipient_address": "0xe61bcfe6a7e4fd33f1c439558e9fd549371d728e",
+      "recipient_display_name": "0xe61b...728e",
+      "asset_symbol": "USDC",
+      "amount": 1250.0,
+      "token_contract": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "asset_contract_status": "external-token",
+      "repo_value": {
+        "amount": 1250.0,
+        "asset_symbol": "USDC",
+        "recipient_address": "0xe61bcfe6a7e4fd33f1c439558e9fd549371d728e",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/68",
+        "canonical_url": "https://www.gnars.com/proposals/base/68"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "1,250 USDC",
+        "recipient_label": "0xe61b...728e",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/68",
         "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
       ]
     },
@@ -438,7 +807,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/base/65",
-        "canonical_url": "https://gnars.com/proposals/base/65"
+        "canonical_url": "https://www.gnars.com/proposals/base/65"
       },
       "chain_value": {
         "treasury_contract_id": "gnars-base-treasury",
@@ -456,7 +825,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/65",
-        "https://gnars.com/proposals/base/65",
         "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
       ]
     },
@@ -481,7 +849,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/base/64",
-        "canonical_url": "https://gnars.com/proposals/base/64"
+        "canonical_url": "https://www.gnars.com/proposals/base/64"
       },
       "chain_value": {
         "treasury_contract_id": "gnars-base-treasury",
@@ -499,7 +867,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/64",
-        "https://gnars.com/proposals/base/64",
         "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
       ]
     },
@@ -524,7 +891,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/base/63",
-        "canonical_url": "https://gnars.com/proposals/base/63"
+        "canonical_url": "https://www.gnars.com/proposals/base/63"
       },
       "chain_value": {
         "treasury_contract_id": "gnars-base-treasury",
@@ -542,7 +909,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/63",
-        "https://gnars.com/proposals/base/63",
         "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
       ]
     },
@@ -567,7 +933,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/base/63",
-        "canonical_url": "https://gnars.com/proposals/base/63"
+        "canonical_url": "https://www.gnars.com/proposals/base/63"
       },
       "chain_value": {
         "treasury_contract_id": "gnars-base-treasury",
@@ -585,7 +951,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/63",
-        "https://gnars.com/proposals/base/63",
         "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
       ]
     },
@@ -610,7 +975,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/base/63",
-        "canonical_url": "https://gnars.com/proposals/base/63"
+        "canonical_url": "https://www.gnars.com/proposals/base/63"
       },
       "chain_value": {
         "treasury_contract_id": "gnars-base-treasury",
@@ -628,7 +993,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/63",
-        "https://gnars.com/proposals/base/63",
         "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
       ]
     },
@@ -653,7 +1017,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/base/61",
-        "canonical_url": "https://gnars.com/proposals/base/61"
+        "canonical_url": "https://www.gnars.com/proposals/base/61"
       },
       "chain_value": {
         "treasury_contract_id": "gnars-base-treasury",
@@ -671,7 +1035,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/61",
-        "https://gnars.com/proposals/base/61",
         "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
       ]
     },
@@ -696,7 +1059,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/base/61",
-        "canonical_url": "https://gnars.com/proposals/base/61"
+        "canonical_url": "https://www.gnars.com/proposals/base/61"
       },
       "chain_value": {
         "treasury_contract_id": "gnars-base-treasury",
@@ -714,7 +1077,48 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/61",
-        "https://gnars.com/proposals/base/61",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-59:7",
+      "archive_id": "gnars-base-59",
+      "proposal_number": 59,
+      "proposal_title": "Pod Media Proposal 2.0",
+      "chain": "base",
+      "recipient_address": "0xe5f6202ff7ddc5273c249073865bc6f4d5d68beb",
+      "recipient_display_name": "0xe5f6...8beb",
+      "asset_symbol": "USDC",
+      "amount": 8550.0,
+      "token_contract": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "asset_contract_status": "external-token",
+      "repo_value": {
+        "amount": 8550.0,
+        "asset_symbol": "USDC",
+        "recipient_address": "0xe5f6202ff7ddc5273c249073865bc6f4d5d68beb",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/59",
+        "canonical_url": "https://www.gnars.com/proposals/base/59"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "8,550 USDC",
+        "recipient_label": "0xe5f6...8beb",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/59",
         "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
       ]
     },
@@ -739,7 +1143,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/base/57",
-        "canonical_url": "https://gnars.com/proposals/base/57"
+        "canonical_url": "https://www.gnars.com/proposals/base/57"
       },
       "chain_value": {
         "treasury_contract_id": "gnars-base-treasury",
@@ -757,7 +1161,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/57",
-        "https://gnars.com/proposals/base/57",
         "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
       ]
     },
@@ -782,7 +1185,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/base/53",
-        "canonical_url": "https://gnars.com/proposals/base/53"
+        "canonical_url": "https://www.gnars.com/proposals/base/53"
       },
       "chain_value": {
         "treasury_contract_id": "gnars-base-treasury",
@@ -800,7 +1203,48 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/53",
-        "https://gnars.com/proposals/base/53",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-52:1",
+      "archive_id": "gnars-base-52",
+      "proposal_number": 52,
+      "proposal_title": "Nico in GNARZARE Portugal V2",
+      "chain": "base",
+      "recipient_address": "0x4f81ca00ccadfaffa10672d863e6e6077bad3f20",
+      "recipient_display_name": "0x4f81...3f20",
+      "asset_symbol": "USDC",
+      "amount": 5100.0,
+      "token_contract": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "asset_contract_status": "external-token",
+      "repo_value": {
+        "amount": 5100.0,
+        "asset_symbol": "USDC",
+        "recipient_address": "0x4f81ca00ccadfaffa10672d863e6e6077bad3f20",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/52",
+        "canonical_url": "https://www.gnars.com/proposals/base/52"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "5,100 USDC",
+        "recipient_label": "0x4f81...3f20",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/52",
         "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
       ]
     },
@@ -825,7 +1269,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/base/48",
-        "canonical_url": "https://gnars.com/proposals/base/48"
+        "canonical_url": "https://www.gnars.com/proposals/base/48"
       },
       "chain_value": {
         "treasury_contract_id": "gnars-base-treasury",
@@ -843,7 +1287,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/48",
-        "https://gnars.com/proposals/base/48",
         "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
       ]
     },
@@ -868,7 +1311,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/base/48",
-        "canonical_url": "https://gnars.com/proposals/base/48"
+        "canonical_url": "https://www.gnars.com/proposals/base/48"
       },
       "chain_value": {
         "treasury_contract_id": "gnars-base-treasury",
@@ -886,7 +1329,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/48",
-        "https://gnars.com/proposals/base/48",
         "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
       ]
     },
@@ -911,7 +1353,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/base/47",
-        "canonical_url": "https://gnars.com/proposals/base/47"
+        "canonical_url": "https://www.gnars.com/proposals/base/47"
       },
       "chain_value": {
         "treasury_contract_id": "gnars-base-treasury",
@@ -929,7 +1371,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/47",
-        "https://gnars.com/proposals/base/47",
         "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
       ]
     },
@@ -954,7 +1395,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/base/45",
-        "canonical_url": "https://gnars.com/proposals/base/45"
+        "canonical_url": "https://www.gnars.com/proposals/base/45"
       },
       "chain_value": {
         "treasury_contract_id": "gnars-base-treasury",
@@ -972,7 +1413,48 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/45",
-        "https://gnars.com/proposals/base/45",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-42:2",
+      "archive_id": "gnars-base-42",
+      "proposal_number": 42,
+      "proposal_title": " Rodrigo Panajotti Onboarding Proposal ",
+      "chain": "base",
+      "recipient_address": "0x29c03fee4ba44aeb1bd63b95a73aefffd6e6ec66",
+      "recipient_display_name": "0x29c0...ec66",
+      "asset_symbol": "ETH",
+      "amount": 0.00042,
+      "token_contract": null,
+      "asset_contract_status": "native",
+      "repo_value": {
+        "amount": 0.00042,
+        "asset_symbol": "ETH",
+        "recipient_address": "0x29c03fee4ba44aeb1bd63b95a73aefffd6e6ec66",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/42",
+        "canonical_url": "https://www.gnars.com/proposals/base/42"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "0.00042 ETH",
+        "recipient_label": "0x29c0...ec66",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/42",
         "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
       ]
     },
@@ -997,7 +1479,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/base/41",
-        "canonical_url": "https://gnars.com/proposals/base/41"
+        "canonical_url": "https://www.gnars.com/proposals/base/41"
       },
       "chain_value": {
         "treasury_contract_id": "gnars-base-treasury",
@@ -1015,7 +1497,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/41",
-        "https://gnars.com/proposals/base/41",
         "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
       ]
     },
@@ -1040,7 +1521,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/base/40",
-        "canonical_url": "https://gnars.com/proposals/base/40"
+        "canonical_url": "https://www.gnars.com/proposals/base/40"
       },
       "chain_value": {
         "treasury_contract_id": "gnars-base-treasury",
@@ -1058,7 +1539,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/40",
-        "https://gnars.com/proposals/base/40",
         "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
       ]
     },
@@ -1083,7 +1563,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/base/39",
-        "canonical_url": "https://gnars.com/proposals/base/39"
+        "canonical_url": "https://www.gnars.com/proposals/base/39"
       },
       "chain_value": {
         "treasury_contract_id": "gnars-base-treasury",
@@ -1101,7 +1581,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/39",
-        "https://gnars.com/proposals/base/39",
         "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
       ]
     },
@@ -1126,7 +1605,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/base/38",
-        "canonical_url": "https://gnars.com/proposals/base/38"
+        "canonical_url": "https://www.gnars.com/proposals/base/38"
       },
       "chain_value": {
         "treasury_contract_id": "gnars-base-treasury",
@@ -1144,7 +1623,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/38",
-        "https://gnars.com/proposals/base/38",
         "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
       ]
     },
@@ -1169,7 +1647,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/base/37",
-        "canonical_url": "https://gnars.com/proposals/base/37"
+        "canonical_url": "https://www.gnars.com/proposals/base/37"
       },
       "chain_value": {
         "treasury_contract_id": "gnars-base-treasury",
@@ -1187,7 +1665,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/37",
-        "https://gnars.com/proposals/base/37",
         "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
       ]
     },
@@ -1212,7 +1689,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/base/36",
-        "canonical_url": "https://gnars.com/proposals/base/36"
+        "canonical_url": "https://www.gnars.com/proposals/base/36"
       },
       "chain_value": {
         "treasury_contract_id": "gnars-base-treasury",
@@ -1230,7 +1707,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/36",
-        "https://gnars.com/proposals/base/36",
         "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
       ]
     },
@@ -1255,7 +1731,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/base/35",
-        "canonical_url": "https://gnars.com/proposals/base/35"
+        "canonical_url": "https://www.gnars.com/proposals/base/35"
       },
       "chain_value": {
         "treasury_contract_id": "gnars-base-treasury",
@@ -1273,7 +1749,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/35",
-        "https://gnars.com/proposals/base/35",
         "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
       ]
     },
@@ -1298,7 +1773,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/base/33",
-        "canonical_url": "https://gnars.com/proposals/base/33"
+        "canonical_url": "https://www.gnars.com/proposals/base/33"
       },
       "chain_value": {
         "treasury_contract_id": "gnars-base-treasury",
@@ -1316,7 +1791,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/33",
-        "https://gnars.com/proposals/base/33",
         "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
       ]
     },
@@ -1341,7 +1815,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/base/33",
-        "canonical_url": "https://gnars.com/proposals/base/33"
+        "canonical_url": "https://www.gnars.com/proposals/base/33"
       },
       "chain_value": {
         "treasury_contract_id": "gnars-base-treasury",
@@ -1359,7 +1833,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/33",
-        "https://gnars.com/proposals/base/33",
         "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
       ]
     },
@@ -1384,7 +1857,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/base/32",
-        "canonical_url": "https://gnars.com/proposals/base/32"
+        "canonical_url": "https://www.gnars.com/proposals/base/32"
       },
       "chain_value": {
         "treasury_contract_id": "gnars-base-treasury",
@@ -1402,7 +1875,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/32",
-        "https://gnars.com/proposals/base/32",
         "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
       ]
     },
@@ -1427,7 +1899,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/base/31",
-        "canonical_url": "https://gnars.com/proposals/base/31"
+        "canonical_url": "https://www.gnars.com/proposals/base/31"
       },
       "chain_value": {
         "treasury_contract_id": "gnars-base-treasury",
@@ -1445,7 +1917,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/31",
-        "https://gnars.com/proposals/base/31",
         "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
       ]
     },
@@ -1470,7 +1941,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/base/29",
-        "canonical_url": "https://gnars.com/proposals/base/29"
+        "canonical_url": "https://www.gnars.com/proposals/base/29"
       },
       "chain_value": {
         "treasury_contract_id": "gnars-base-treasury",
@@ -1488,7 +1959,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/29",
-        "https://gnars.com/proposals/base/29",
         "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
       ]
     },
@@ -1513,7 +1983,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/base/29",
-        "canonical_url": "https://gnars.com/proposals/base/29"
+        "canonical_url": "https://www.gnars.com/proposals/base/29"
       },
       "chain_value": {
         "treasury_contract_id": "gnars-base-treasury",
@@ -1531,50 +2001,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/29",
-        "https://gnars.com/proposals/base/29",
-        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
-      ]
-    },
-    {
-      "route_id": "gnars-base-28:1",
-      "archive_id": "gnars-base-28",
-      "proposal_number": 28,
-      "proposal_title": "Travel Grant Proposal - IndoGNARS 2",
-      "chain": "base",
-      "recipient_address": "0xfc27b375faf1fbd3f3462044cf810082f042a45b",
-      "recipient_display_name": "luizhadad.eth",
-      "asset_symbol": "USDC",
-      "amount": 7888.0,
-      "token_contract": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
-      "asset_contract_status": "external-token",
-      "repo_value": {
-        "amount": 7888.0,
-        "asset_symbol": "USDC",
-        "recipient_address": "0xfc27b375faf1fbd3f3462044cf810082f042a45b",
-        "proposal_status": "executed"
-      },
-      "site_value": {
-        "proposal_status": "executed",
-        "source_url": "https://www.gnars.com/proposals/base/28",
-        "canonical_url": "https://gnars.com/proposals/base/28"
-      },
-      "chain_value": {
-        "treasury_contract_id": "gnars-base-treasury",
-        "treasury_contract_label": "Gnars Treasury",
-        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
-        "token_contract_id": null,
-        "token_explorer_url": null
-      },
-      "resolved_value": {
-        "amount_label": "7,888 USDC",
-        "recipient_label": "luizhadad.eth",
-        "treasury_source_label": "Gnars Treasury"
-      },
-      "reconciliation_status": "matched",
-      "mismatch_fields": [],
-      "evidence_urls": [
-        "https://www.gnars.com/proposals/base/28",
-        "https://gnars.com/proposals/base/28",
         "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
       ]
     },
@@ -1599,7 +2025,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/base/27",
-        "canonical_url": "https://gnars.com/proposals/base/27"
+        "canonical_url": "https://www.gnars.com/proposals/base/27"
       },
       "chain_value": {
         "treasury_contract_id": "gnars-base-treasury",
@@ -1617,7 +2043,48 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/27",
-        "https://gnars.com/proposals/base/27",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-28:1",
+      "archive_id": "gnars-base-28",
+      "proposal_number": 28,
+      "proposal_title": "Travel Grant Proposal - IndoGNARS 2",
+      "chain": "base",
+      "recipient_address": "0xfc27b375faf1fbd3f3462044cf810082f042a45b",
+      "recipient_display_name": "luizhadad.eth",
+      "asset_symbol": "USDC",
+      "amount": 7888.0,
+      "token_contract": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "asset_contract_status": "external-token",
+      "repo_value": {
+        "amount": 7888.0,
+        "asset_symbol": "USDC",
+        "recipient_address": "0xfc27b375faf1fbd3f3462044cf810082f042a45b",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/28",
+        "canonical_url": "https://www.gnars.com/proposals/base/28"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "7,888 USDC",
+        "recipient_label": "luizhadad.eth",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/28",
         "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
       ]
     },
@@ -1642,7 +2109,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/base/26",
-        "canonical_url": "https://gnars.com/proposals/base/26"
+        "canonical_url": "https://www.gnars.com/proposals/base/26"
       },
       "chain_value": {
         "treasury_contract_id": "gnars-base-treasury",
@@ -1660,7 +2127,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/26",
-        "https://gnars.com/proposals/base/26",
         "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
       ]
     },
@@ -1685,7 +2151,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/base/25",
-        "canonical_url": "https://gnars.com/proposals/base/25"
+        "canonical_url": "https://www.gnars.com/proposals/base/25"
       },
       "chain_value": {
         "treasury_contract_id": "gnars-base-treasury",
@@ -1703,7 +2169,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/25",
-        "https://gnars.com/proposals/base/25",
         "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
       ]
     },
@@ -1728,7 +2193,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/base/24",
-        "canonical_url": "https://gnars.com/proposals/base/24"
+        "canonical_url": "https://www.gnars.com/proposals/base/24"
       },
       "chain_value": {
         "treasury_contract_id": "gnars-base-treasury",
@@ -1746,7 +2211,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/24",
-        "https://gnars.com/proposals/base/24",
         "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
       ]
     },
@@ -1771,7 +2235,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/base/23",
-        "canonical_url": "https://gnars.com/proposals/base/23"
+        "canonical_url": "https://www.gnars.com/proposals/base/23"
       },
       "chain_value": {
         "treasury_contract_id": "gnars-base-treasury",
@@ -1789,7 +2253,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/23",
-        "https://gnars.com/proposals/base/23",
         "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
       ]
     },
@@ -1814,7 +2277,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/base/22",
-        "canonical_url": "https://gnars.com/proposals/base/22"
+        "canonical_url": "https://www.gnars.com/proposals/base/22"
       },
       "chain_value": {
         "treasury_contract_id": "gnars-base-treasury",
@@ -1832,7 +2295,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/22",
-        "https://gnars.com/proposals/base/22",
         "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
       ]
     },
@@ -1857,7 +2319,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/base/21",
-        "canonical_url": "https://gnars.com/proposals/base/21"
+        "canonical_url": "https://www.gnars.com/proposals/base/21"
       },
       "chain_value": {
         "treasury_contract_id": "gnars-base-treasury",
@@ -1875,7 +2337,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/21",
-        "https://gnars.com/proposals/base/21",
         "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
       ]
     },
@@ -1900,7 +2361,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/base/20",
-        "canonical_url": "https://gnars.com/proposals/base/20"
+        "canonical_url": "https://www.gnars.com/proposals/base/20"
       },
       "chain_value": {
         "treasury_contract_id": "gnars-base-treasury",
@@ -1918,7 +2379,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/20",
-        "https://gnars.com/proposals/base/20",
         "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
       ]
     },
@@ -1943,7 +2403,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/base/19",
-        "canonical_url": "https://gnars.com/proposals/base/19"
+        "canonical_url": "https://www.gnars.com/proposals/base/19"
       },
       "chain_value": {
         "treasury_contract_id": "gnars-base-treasury",
@@ -1961,7 +2421,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/19",
-        "https://gnars.com/proposals/base/19",
         "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
       ]
     },
@@ -1986,7 +2445,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/base/18",
-        "canonical_url": "https://gnars.com/proposals/base/18"
+        "canonical_url": "https://www.gnars.com/proposals/base/18"
       },
       "chain_value": {
         "treasury_contract_id": "gnars-base-treasury",
@@ -2004,7 +2463,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/18",
-        "https://gnars.com/proposals/base/18",
         "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
       ]
     },
@@ -2029,7 +2487,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/base/17",
-        "canonical_url": "https://gnars.com/proposals/base/17"
+        "canonical_url": "https://www.gnars.com/proposals/base/17"
       },
       "chain_value": {
         "treasury_contract_id": "gnars-base-treasury",
@@ -2047,7 +2505,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/17",
-        "https://gnars.com/proposals/base/17",
         "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
       ]
     },
@@ -2072,7 +2529,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/base/16",
-        "canonical_url": "https://gnars.com/proposals/base/16"
+        "canonical_url": "https://www.gnars.com/proposals/base/16"
       },
       "chain_value": {
         "treasury_contract_id": "gnars-base-treasury",
@@ -2090,7 +2547,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/16",
-        "https://gnars.com/proposals/base/16",
         "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
       ]
     },
@@ -2115,7 +2571,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/base/14",
-        "canonical_url": "https://gnars.com/proposals/base/14"
+        "canonical_url": "https://www.gnars.com/proposals/base/14"
       },
       "chain_value": {
         "treasury_contract_id": "gnars-base-treasury",
@@ -2133,7 +2589,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/14",
-        "https://gnars.com/proposals/base/14",
         "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
       ]
     },
@@ -2158,7 +2613,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/base/12",
-        "canonical_url": "https://gnars.com/proposals/base/12"
+        "canonical_url": "https://www.gnars.com/proposals/base/12"
       },
       "chain_value": {
         "treasury_contract_id": "gnars-base-treasury",
@@ -2176,7 +2631,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/12",
-        "https://gnars.com/proposals/base/12",
         "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
       ]
     },
@@ -2201,7 +2655,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/base/12",
-        "canonical_url": "https://gnars.com/proposals/base/12"
+        "canonical_url": "https://www.gnars.com/proposals/base/12"
       },
       "chain_value": {
         "treasury_contract_id": "gnars-base-treasury",
@@ -2219,7 +2673,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/12",
-        "https://gnars.com/proposals/base/12",
         "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
       ]
     },
@@ -2244,7 +2697,7 @@
       "site_value": {
         "proposal_status": "executed",
         "source_url": "https://www.gnars.com/proposals/ethereum/38",
-        "canonical_url": "https://gnars.com/proposals/ethereum/38"
+        "canonical_url": "https://www.gnars.com/proposals/ethereum/38"
       },
       "chain_value": {
         "treasury_contract_id": null,
@@ -2263,8 +2716,50 @@
         "treasury-contract"
       ],
       "evidence_urls": [
-        "https://www.gnars.com/proposals/ethereum/38",
-        "https://gnars.com/proposals/ethereum/38"
+        "https://www.gnars.com/proposals/ethereum/38"
+      ]
+    },
+    {
+      "route_id": "gnars-snapshot-101:1",
+      "archive_id": "gnars-snapshot-101",
+      "proposal_number": 101,
+      "proposal_title": "Refund Support for Film Ode to Skate with 0,253ETH -  U$1000",
+      "chain": "snapshot",
+      "recipient_address": "0xc2691f9994af90711d67286be558f4fa631667fd",
+      "recipient_display_name": "0xc269...67fd",
+      "asset_symbol": "ETH",
+      "amount": 0.253,
+      "token_contract": null,
+      "asset_contract_status": "native",
+      "repo_value": {
+        "amount": 0.253,
+        "asset_symbol": "ETH",
+        "recipient_address": "0xc2691f9994af90711d67286be558f4fa631667fd",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/snapshot/101",
+        "canonical_url": "https://www.gnars.com/proposals/snapshot/101"
+      },
+      "chain_value": {
+        "treasury_contract_id": null,
+        "treasury_contract_label": null,
+        "treasury_explorer_url": null,
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "0.253 ETH",
+        "recipient_label": "0xc269...67fd",
+        "treasury_source_label": "Snapshot Treasury"
+      },
+      "reconciliation_status": "needs-review",
+      "mismatch_fields": [
+        "treasury-contract"
+      ],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/snapshot/101"
       ]
     }
   ]

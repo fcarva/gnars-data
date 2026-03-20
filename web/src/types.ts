@@ -119,6 +119,7 @@ export type PersonRecord = {
     date: string | null;
     asset_symbol: string;
     amount: number;
+    usd_value_at_execution?: number | null;
     project_id: string | null;
     project_name: string | null;
     href: string;
@@ -153,6 +154,7 @@ export type SpendLedgerRecord = {
   project_id: string | null;
   project_name: string | null;
   proposer: string;
+  proposal_executed_at: string | null;
   proposal_end_at: string | null;
   proposal_created_at: string | null;
   asset_symbol: string;
@@ -162,6 +164,12 @@ export type SpendLedgerRecord = {
   recipient_address: string;
   recipient_display_name: string;
   amount: number;
+  valuation_reference_at: string | null;
+  valuation_date: string | null;
+  usd_price_at_execution: number | null;
+  usd_value_at_execution: number | null;
+  usd_price_source: string | null;
+  usd_valuation_status: string;
   source_url: string;
   canonical_url: string;
 };
@@ -450,6 +458,12 @@ export type TreasuryFlowRoute = {
   amount: number;
   asset_kind: string;
   token_contract: string | null;
+  valuation_reference_at: string | null;
+  valuation_date: string | null;
+  usd_price_at_execution: number | null;
+  usd_value_at_execution: number | null;
+  usd_price_source: string | null;
+  usd_valuation_status: string;
   proposal_href: string;
 };
 
@@ -990,6 +1004,9 @@ export type TreasuryRouteRow = {
   assetDescriptor: string;
   amount: number;
   amountLabel: string;
+  usdValueAtExecution: number | null;
+  usdValueLabel: string | null;
+  valuationDateLabel: string | null;
   tokenContract: string | null;
   routeKind: "project-linked" | "proposal-linked";
   searchText: string;
@@ -1193,6 +1210,7 @@ export type CommunityProfilePageProps = {
       href: string;
       proposalLabel: string;
       amountLabel: string;
+      usdValueLabel: string | null;
       dateLabel: string;
       projectLabel: string | null;
     }[];

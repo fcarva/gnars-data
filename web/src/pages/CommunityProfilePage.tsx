@@ -114,6 +114,7 @@ export function CommunityProfilePage({ meta, props }: { meta: Meta; props: Commu
                     <a key={`${row.href}:${row.dateLabel}:${row.amountLabel}`} className="mini-row" href={row.href}>
                       <span>{row.dateLabel} {row.projectLabel ? `/ ${row.projectLabel}` : ""}</span>
                       <strong>{row.proposalLabel} / {row.amountLabel}</strong>
+                      {row.usdValueLabel ? <span>{row.usdValueLabel} at execution</span> : null}
                     </a>
                   ))
                 ) : (

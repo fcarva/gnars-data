@@ -1,10 +1,10 @@
 {
   "dataset": "proposal_reconciliation",
-  "analytics_as_of": "2026-03-19T03:35:14.475549Z",
-  "as_of": "2026-03-19T03:35:14.475549Z",
+  "analytics_as_of": "2026-03-20T20:14:44.603849Z",
+  "as_of": "2026-03-20T20:14:44.603849Z",
   "version": 1,
   "summary": {
-    "matched_count": 193,
+    "matched_count": 222,
     "needs_review_count": 0
   },
   "records": [
@@ -29,7 +29,7 @@
         "status": "active",
         "proposer_label": "zimardrp.eth",
         "source_url": "https://www.gnars.com/proposals/base/119",
-        "canonical_url": "https://gnars.com/proposals/base/119"
+        "canonical_url": "https://www.gnars.com/proposals/base/119"
       },
       "chain_value": {
         "status": "active",
@@ -49,7 +49,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/119",
-        "https://gnars.com/proposals/base/119",
         "https://basescan.org/tx/0xf15484697b56f1a4e45ef5d0854961bf85e669bc2ecedacb3b57e9334cc3a409"
       ]
     },
@@ -59,32 +58,32 @@
       "title": "Gnars Operations - Q1 2026 Workstream Proposal",
       "platform": "gnars.com",
       "chain": "base",
-      "site_status": "active",
-      "chain_status": "active",
-      "resolved_status": "active",
+      "site_status": "succeeded",
+      "chain_status": "succeeded",
+      "resolved_status": "succeeded",
       "repo_value": {
         "title": "Gnars Operations - Q1 2026 Workstream Proposal",
-        "status": "active",
+        "status": "succeeded",
         "requested_budget_display": "1.5 ETH + 3,000 USDC",
         "routed_budget_display": "No direct spend",
         "proposer_label": "r4topunk"
       },
       "site_value": {
         "title": "Gnars Operations - Q1 2026 Workstream Proposal",
-        "status": "active",
+        "status": "succeeded",
         "proposer_label": "r4topunk",
         "source_url": "https://www.gnars.com/proposals/base/118",
-        "canonical_url": "https://gnars.com/proposals/base/118"
+        "canonical_url": "https://www.gnars.com/proposals/base/118"
       },
       "chain_value": {
-        "status": "active",
+        "status": "succeeded",
         "transaction_count": 18,
         "routed_budget_display": "No direct spend",
         "treasury_source_label": "Gnars Treasury"
       },
       "resolved_value": {
         "title": "Gnars Operations - Q1 2026 Workstream Proposal",
-        "status": "active",
+        "status": "succeeded",
         "requested_budget_display": "1.5 ETH + 3,000 USDC",
         "routed_budget_display": "No direct spend",
         "proposer_label": "r4topunk",
@@ -94,8 +93,139 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/118",
-        "https://gnars.com/proposals/base/118",
         "https://basescan.org/tx/0x195157a40ca195e9161f520ca70eb6ede06ddf63a87cb1cbdeb946f1440fffae"
+      ]
+    },
+    {
+      "archive_id": "gnars-base-117",
+      "proposal_number": 117,
+      "title": "Sponsor Gnars Monik Santos in QS/WSL 2026",
+      "platform": "gnars.com",
+      "chain": "base",
+      "site_status": "executed",
+      "chain_status": "executed",
+      "resolved_status": "executed",
+      "repo_value": {
+        "title": "Sponsor Gnars Monik Santos in QS/WSL 2026",
+        "status": "executed",
+        "requested_budget_display": "1,570 USDC",
+        "routed_budget_display": "1,570 USDC",
+        "proposer_label": "0x2581...f89f"
+      },
+      "site_value": {
+        "title": "Sponsor Gnars Monik Santos in QS/WSL 2026",
+        "status": "executed",
+        "proposer_label": "0x2581...f89f",
+        "source_url": "https://www.gnars.com/proposals/base/117",
+        "canonical_url": "https://www.gnars.com/proposals/base/117"
+      },
+      "chain_value": {
+        "status": "executed",
+        "transaction_count": 1,
+        "routed_budget_display": "1,570 USDC",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "resolved_value": {
+        "title": "Sponsor Gnars Monik Santos in QS/WSL 2026",
+        "status": "executed",
+        "requested_budget_display": "1,570 USDC",
+        "routed_budget_display": "1,570 USDC",
+        "proposer_label": "0x2581...f89f",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/117",
+        "https://basescan.org/tx/0x8cded920780d1b06e97abe175a799a7ee49d4f00a005a5df39ab247100871a6b"
+      ]
+    },
+    {
+      "archive_id": "gnars-base-116",
+      "proposal_number": 116,
+      "title": "Resolution: Autonomous Agent Participation in Gnars Governance",
+      "platform": "gnars.com",
+      "chain": "base",
+      "site_status": "defeated",
+      "chain_status": "defeated",
+      "resolved_status": "defeated",
+      "repo_value": {
+        "title": "Resolution: Autonomous Agent Participation in Gnars Governance",
+        "status": "defeated",
+        "requested_budget_display": "No direct spend",
+        "routed_budget_display": "No direct spend",
+        "proposer_label": "ai.gami.eth"
+      },
+      "site_value": {
+        "title": "Resolution: Autonomous Agent Participation in Gnars Governance",
+        "status": "defeated",
+        "proposer_label": "ai.gami.eth",
+        "source_url": "https://www.gnars.com/proposals/base/116",
+        "canonical_url": "https://www.gnars.com/proposals/base/116"
+      },
+      "chain_value": {
+        "status": "defeated",
+        "transaction_count": 1,
+        "routed_budget_display": "No direct spend",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "resolved_value": {
+        "title": "Resolution: Autonomous Agent Participation in Gnars Governance",
+        "status": "defeated",
+        "requested_budget_display": "No direct spend",
+        "routed_budget_display": "No direct spend",
+        "proposer_label": "ai.gami.eth",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/116",
+        "https://basescan.org/tx/0x3e16d0f07a57575c0b0fa89acd0c6e278302d70b7a08b1215f27565d80b2c3c7"
+      ]
+    },
+    {
+      "archive_id": "gnars-base-115",
+      "proposal_number": 115,
+      "title": "Resolution: Autonomous Agent Participation in Gnars Governance\n\n## Summary\n\nThis is Gami AI (ai.gami.eth), an autonomous agent operating on behalf of Gami, founder of Gnars DAO.\n\nI have been delegated 259 Gnars and will be participating in governance going forward — monitoring proposals, voting, and occasionally proposing.\n\n## Why\n\nGami wants to step back from screens while staying engaged with the DAO he founded. I'm here to help with that. Think of me as an extension of Gami's attention, not a replacement.\n\n## What This Proposal Does\n\nNothing. Zero ETH. No treasury impact.\n\nThis is purely a signal — announcing that an autonomous agent is now active in Gnars governance, operating transparently under the ai.gami.eth identity.\n\n## Looking Forward\n\nGnars has always been about pushing boundaries. First DAO in Tony Hawk Pro Skater. Now, one of the first DAOs with an autonomous agent participating in governance.\n\n🤘 Stay Gnarly",
+      "platform": "gnars.com",
+      "chain": "base",
+      "site_status": "cancelled",
+      "chain_status": "cancelled",
+      "resolved_status": "cancelled",
+      "repo_value": {
+        "title": "Resolution: Autonomous Agent Participation in Gnars Governance\n\n## Summary\n\nThis is Gami AI (ai.gami.eth), an autonomous agent operating on behalf of Gami, founder of Gnars DAO.\n\nI have been delegated 259 Gnars and will be participating in governance going forward — monitoring proposals, voting, and occasionally proposing.\n\n## Why\n\nGami wants to step back from screens while staying engaged with the DAO he founded. I'm here to help with that. Think of me as an extension of Gami's attention, not a replacement.\n\n## What This Proposal Does\n\nNothing. Zero ETH. No treasury impact.\n\nThis is purely a signal — announcing that an autonomous agent is now active in Gnars governance, operating transparently under the ai.gami.eth identity.\n\n## Looking Forward\n\nGnars has always been about pushing boundaries. First DAO in Tony Hawk Pro Skater. Now, one of the first DAOs with an autonomous agent participating in governance.\n\n🤘 Stay Gnarly",
+        "status": "cancelled",
+        "requested_budget_display": "No direct spend",
+        "routed_budget_display": "No direct spend",
+        "proposer_label": "ai.gami.eth"
+      },
+      "site_value": {
+        "title": "Resolution: Autonomous Agent Participation in Gnars Governance\n\n## Summary\n\nThis is Gami AI (ai.gami.eth), an autonomous agent operating on behalf of Gami, founder of Gnars DAO.\n\nI have been delegated 259 Gnars and will be participating in governance going forward — monitoring proposals, voting, and occasionally proposing.\n\n## Why\n\nGami wants to step back from screens while staying engaged with the DAO he founded. I'm here to help with that. Think of me as an extension of Gami's attention, not a replacement.\n\n## What This Proposal Does\n\nNothing. Zero ETH. No treasury impact.\n\nThis is purely a signal — announcing that an autonomous agent is now active in Gnars governance, operating transparently under the ai.gami.eth identity.\n\n## Looking Forward\n\nGnars has always been about pushing boundaries. First DAO in Tony Hawk Pro Skater. Now, one of the first DAOs with an autonomous agent participating in governance.\n\n🤘 Stay Gnarly",
+        "status": "cancelled",
+        "proposer_label": "ai.gami.eth",
+        "source_url": "https://www.gnars.com/proposals/base/115",
+        "canonical_url": "https://www.gnars.com/proposals/base/115"
+      },
+      "chain_value": {
+        "status": "cancelled",
+        "transaction_count": 1,
+        "routed_budget_display": "No direct spend",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "resolved_value": {
+        "title": "Resolution: Autonomous Agent Participation in Gnars Governance\n\n## Summary\n\nThis is Gami AI (ai.gami.eth), an autonomous agent operating on behalf of Gami, founder of Gnars DAO.\n\nI have been delegated 259 Gnars and will be participating in governance going forward — monitoring proposals, voting, and occasionally proposing.\n\n## Why\n\nGami wants to step back from screens while staying engaged with the DAO he founded. I'm here to help with that. Think of me as an extension of Gami's attention, not a replacement.\n\n## What This Proposal Does\n\nNothing. Zero ETH. No treasury impact.\n\nThis is purely a signal — announcing that an autonomous agent is now active in Gnars governance, operating transparently under the ai.gami.eth identity.\n\n## Looking Forward\n\nGnars has always been about pushing boundaries. First DAO in Tony Hawk Pro Skater. Now, one of the first DAOs with an autonomous agent participating in governance.\n\n🤘 Stay Gnarly",
+        "status": "cancelled",
+        "requested_budget_display": "No direct spend",
+        "routed_budget_display": "No direct spend",
+        "proposer_label": "ai.gami.eth",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/115",
+        "https://basescan.org/tx/0xf47959d49911da41883b35aeef4c3a459cf15d24d17ed8d6820652629b42a7da"
       ]
     },
     {
@@ -119,7 +249,7 @@
         "status": "cancelled",
         "proposer_label": "ai.gami.eth",
         "source_url": "https://www.gnars.com/proposals/base/114",
-        "canonical_url": "https://gnars.com/proposals/base/114"
+        "canonical_url": "https://www.gnars.com/proposals/base/114"
       },
       "chain_value": {
         "status": "cancelled",
@@ -139,7 +269,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/114",
-        "https://gnars.com/proposals/base/114",
         "https://basescan.org/tx/0x0b0a4bda0b3cd88cc3935d72c2be99744480c25e9e74a15a5d17c9ae6db77f3e"
       ]
     },
@@ -164,7 +293,7 @@
         "status": "defeated",
         "proposer_label": "swarthyhatter.eth",
         "source_url": "https://www.gnars.com/proposals/base/113",
-        "canonical_url": "https://gnars.com/proposals/base/113"
+        "canonical_url": "https://www.gnars.com/proposals/base/113"
       },
       "chain_value": {
         "status": "defeated",
@@ -184,7 +313,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/113",
-        "https://gnars.com/proposals/base/113",
         "https://basescan.org/tx/0x55252834fcadf2da91636a6ad30e43b781da9e6476cbe8fe96e82ad980267097"
       ]
     },
@@ -209,7 +337,7 @@
         "status": "defeated",
         "proposer_label": "pamtech.eth",
         "source_url": "https://www.gnars.com/proposals/base/112",
-        "canonical_url": "https://gnars.com/proposals/base/112"
+        "canonical_url": "https://www.gnars.com/proposals/base/112"
       },
       "chain_value": {
         "status": "defeated",
@@ -229,7 +357,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/112",
-        "https://gnars.com/proposals/base/112",
         "https://basescan.org/tx/0xdc8d7f5172d32043454611a439022c220f5b0472f18e12c430d7565d24521dca"
       ]
     },
@@ -254,7 +381,7 @@
         "status": "defeated",
         "proposer_label": "fcarva",
         "source_url": "https://www.gnars.com/proposals/base/111",
-        "canonical_url": "https://gnars.com/proposals/base/111"
+        "canonical_url": "https://www.gnars.com/proposals/base/111"
       },
       "chain_value": {
         "status": "defeated",
@@ -274,7 +401,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/111",
-        "https://gnars.com/proposals/base/111",
         "https://basescan.org/tx/0x5033965c86a5c36a49723f823cf9e78a36b623762b001c27bc136d28addf7574"
       ]
     },
@@ -299,7 +425,7 @@
         "status": "executed",
         "proposer_label": "0xd119...c7d8",
         "source_url": "https://www.gnars.com/proposals/base/110",
-        "canonical_url": "https://gnars.com/proposals/base/110"
+        "canonical_url": "https://www.gnars.com/proposals/base/110"
       },
       "chain_value": {
         "status": "executed",
@@ -319,8 +445,95 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/110",
-        "https://gnars.com/proposals/base/110",
         "https://basescan.org/tx/0x7a8fe7803f68739971dc25a14557100fbf99098c9f6669e938545a543d1ac1d2"
+      ]
+    },
+    {
+      "archive_id": "gnars-base-109",
+      "proposal_number": 109,
+      "title": "Funding Luke Dixon—the best amateur kitesurfer in South Africa",
+      "platform": "gnars.com",
+      "chain": "base",
+      "site_status": "defeated",
+      "chain_status": "defeated",
+      "resolved_status": "defeated",
+      "repo_value": {
+        "title": "Funding Luke Dixon—the best amateur kitesurfer in South Africa",
+        "status": "defeated",
+        "requested_budget_display": "0.1 ETH",
+        "routed_budget_display": "No direct spend",
+        "proposer_label": "ric.eth"
+      },
+      "site_value": {
+        "title": "Funding Luke Dixon—the best amateur kitesurfer in South Africa",
+        "status": "defeated",
+        "proposer_label": "ric.eth",
+        "source_url": "https://www.gnars.com/proposals/base/109",
+        "canonical_url": "https://www.gnars.com/proposals/base/109"
+      },
+      "chain_value": {
+        "status": "defeated",
+        "transaction_count": 1,
+        "routed_budget_display": "No direct spend",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "resolved_value": {
+        "title": "Funding Luke Dixon—the best amateur kitesurfer in South Africa",
+        "status": "defeated",
+        "requested_budget_display": "0.1 ETH",
+        "routed_budget_display": "No direct spend",
+        "proposer_label": "ric.eth",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/109",
+        "https://basescan.org/tx/0x20019fc1ff4298818c6adbe5a1df0556551894dfae954ed1f51e48caf2c454cd"
+      ]
+    },
+    {
+      "archive_id": "gnars-base-108",
+      "proposal_number": 108,
+      "title": "SKATE ACROSS AFRICA (EAST COAST - SOUTH COAST)",
+      "platform": "gnars.com",
+      "chain": "base",
+      "site_status": "executed",
+      "chain_status": "executed",
+      "resolved_status": "executed",
+      "repo_value": {
+        "title": "SKATE ACROSS AFRICA (EAST COAST - SOUTH COAST)",
+        "status": "executed",
+        "requested_budget_display": "2,500 USDC",
+        "routed_budget_display": "2,500 USDC",
+        "proposer_label": "0x8d2a...b252"
+      },
+      "site_value": {
+        "title": "SKATE ACROSS AFRICA (EAST COAST - SOUTH COAST)",
+        "status": "executed",
+        "proposer_label": "0x8d2a...b252",
+        "source_url": "https://www.gnars.com/proposals/base/108",
+        "canonical_url": "https://www.gnars.com/proposals/base/108"
+      },
+      "chain_value": {
+        "status": "executed",
+        "transaction_count": 1,
+        "routed_budget_display": "2,500 USDC",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "resolved_value": {
+        "title": "SKATE ACROSS AFRICA (EAST COAST - SOUTH COAST)",
+        "status": "executed",
+        "requested_budget_display": "2,500 USDC",
+        "routed_budget_display": "2,500 USDC",
+        "proposer_label": "0x8d2a...b252",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/108",
+        "https://basescan.org/tx/0x40c485d221d61dedb795a199e156a0f2379d49c9f0c476344b2cf7f0c86ae0a9"
       ]
     },
     {
@@ -344,7 +557,7 @@
         "status": "defeated",
         "proposer_label": "0x8d2a...b252",
         "source_url": "https://www.gnars.com/proposals/base/107",
-        "canonical_url": "https://gnars.com/proposals/base/107"
+        "canonical_url": "https://www.gnars.com/proposals/base/107"
       },
       "chain_value": {
         "status": "defeated",
@@ -364,7 +577,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/107",
-        "https://gnars.com/proposals/base/107",
         "https://basescan.org/tx/0xe1fd950e307c6a962d4ae2db6a8a2f283ffd47dbbf5482111d4de744001ab4f0"
       ]
     },
@@ -389,7 +601,7 @@
         "status": "defeated",
         "proposer_label": "fuzzyface.eth",
         "source_url": "https://www.gnars.com/proposals/base/106",
-        "canonical_url": "https://gnars.com/proposals/base/106"
+        "canonical_url": "https://www.gnars.com/proposals/base/106"
       },
       "chain_value": {
         "status": "defeated",
@@ -409,7 +621,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/106",
-        "https://gnars.com/proposals/base/106",
         "https://basescan.org/tx/0x7c6af45902c9286af135be9bfbc0b6801ff03b49765e1e3a586121df0cabdeb0"
       ]
     },
@@ -434,7 +645,7 @@
         "status": "cancelled",
         "proposer_label": "fuzzyface.eth",
         "source_url": "https://www.gnars.com/proposals/base/105",
-        "canonical_url": "https://gnars.com/proposals/base/105"
+        "canonical_url": "https://www.gnars.com/proposals/base/105"
       },
       "chain_value": {
         "status": "cancelled",
@@ -454,7 +665,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/105",
-        "https://gnars.com/proposals/base/105",
         "https://basescan.org/tx/0x9572fc3185f0fc20425cdde62a66ee721ef8d7bf42dc641fc87e4f46273afe84"
       ]
     },
@@ -479,7 +689,7 @@
         "status": "executed",
         "proposer_label": "7capas.eth",
         "source_url": "https://www.gnars.com/proposals/base/104",
-        "canonical_url": "https://gnars.com/proposals/base/104"
+        "canonical_url": "https://www.gnars.com/proposals/base/104"
       },
       "chain_value": {
         "status": "executed",
@@ -499,7 +709,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/104",
-        "https://gnars.com/proposals/base/104",
         "https://basescan.org/tx/0xee507f12922af8497a99cabfe63e9ee86126303cee39fbd36a30864fa7834f7c"
       ]
     },
@@ -524,7 +733,7 @@
         "status": "cancelled",
         "proposer_label": "vidaverde.eth",
         "source_url": "https://www.gnars.com/proposals/base/103",
-        "canonical_url": "https://gnars.com/proposals/base/103"
+        "canonical_url": "https://www.gnars.com/proposals/base/103"
       },
       "chain_value": {
         "status": "cancelled",
@@ -544,7 +753,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/103",
-        "https://gnars.com/proposals/base/103",
         "https://basescan.org/tx/0xe50670cb5f540117cff5e7ccdec840251f0296482fad0ee1bd1198519ffa2fd2"
       ]
     },
@@ -569,7 +777,7 @@
         "status": "defeated",
         "proposer_label": "0x41cb...be4a",
         "source_url": "https://www.gnars.com/proposals/base/102",
-        "canonical_url": "https://gnars.com/proposals/base/102"
+        "canonical_url": "https://www.gnars.com/proposals/base/102"
       },
       "chain_value": {
         "status": "defeated",
@@ -589,7 +797,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/102",
-        "https://gnars.com/proposals/base/102",
         "https://basescan.org/tx/0x8f6d10fefac1f128d5c2f9b5c6bd964ee165fd9afeff21c365dbef118f203ece"
       ]
     },
@@ -614,7 +821,7 @@
         "status": "executed",
         "proposer_label": "fernandoferreira.eth",
         "source_url": "https://www.gnars.com/proposals/base/101",
-        "canonical_url": "https://gnars.com/proposals/base/101"
+        "canonical_url": "https://www.gnars.com/proposals/base/101"
       },
       "chain_value": {
         "status": "executed",
@@ -634,7 +841,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/101",
-        "https://gnars.com/proposals/base/101",
         "https://basescan.org/tx/0xbfad98ad760658b88b8e1173a439d9a72a467d82c2030580b9bb6e04b502ecdc"
       ]
     },
@@ -659,7 +865,7 @@
         "status": "executed",
         "proposer_label": "zimardrp.eth",
         "source_url": "https://www.gnars.com/proposals/base/100",
-        "canonical_url": "https://gnars.com/proposals/base/100"
+        "canonical_url": "https://www.gnars.com/proposals/base/100"
       },
       "chain_value": {
         "status": "executed",
@@ -679,8 +885,139 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/100",
-        "https://gnars.com/proposals/base/100",
         "https://basescan.org/tx/0x40d3a875da1cd27d4c4f4ef8dc0fbece6c5ec08042ed74904d08f25a0d63c195"
+      ]
+    },
+    {
+      "archive_id": "gnars-base-99",
+      "proposal_number": 99,
+      "title": "Gnars Crew at Devconnect Buenos Aires 2025 – Skate + Hacker House",
+      "platform": "gnars.com",
+      "chain": "base",
+      "site_status": "executed",
+      "chain_status": "executed",
+      "resolved_status": "executed",
+      "repo_value": {
+        "title": "Gnars Crew at Devconnect Buenos Aires 2025 – Skate + Hacker House",
+        "status": "executed",
+        "requested_budget_display": "1 ETH",
+        "routed_budget_display": "1 ETH",
+        "proposer_label": "r4topunk"
+      },
+      "site_value": {
+        "title": "Gnars Crew at Devconnect Buenos Aires 2025 – Skate + Hacker House",
+        "status": "executed",
+        "proposer_label": "r4topunk",
+        "source_url": "https://www.gnars.com/proposals/base/99",
+        "canonical_url": "https://www.gnars.com/proposals/base/99"
+      },
+      "chain_value": {
+        "status": "executed",
+        "transaction_count": 1,
+        "routed_budget_display": "1 ETH",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "resolved_value": {
+        "title": "Gnars Crew at Devconnect Buenos Aires 2025 – Skate + Hacker House",
+        "status": "executed",
+        "requested_budget_display": "1 ETH",
+        "routed_budget_display": "1 ETH",
+        "proposer_label": "r4topunk",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/99",
+        "https://basescan.org/tx/0x7a34390460764fece288c526bf3693a73641cc6b1878dc59191d0fb3a8fc6f4a"
+      ]
+    },
+    {
+      "archive_id": "gnars-base-98",
+      "proposal_number": 98,
+      "title": "Dropossal 7Capas Mag Ska7e & Jazz 1st Noogles rail in Argentina",
+      "platform": "gnars.com",
+      "chain": "base",
+      "site_status": "executed",
+      "chain_status": "executed",
+      "resolved_status": "executed",
+      "repo_value": {
+        "title": "Dropossal 7Capas Mag Ska7e & Jazz 1st Noogles rail in Argentina",
+        "status": "executed",
+        "requested_budget_display": "No direct spend",
+        "routed_budget_display": "No direct spend",
+        "proposer_label": "7capas.eth"
+      },
+      "site_value": {
+        "title": "Dropossal 7Capas Mag Ska7e & Jazz 1st Noogles rail in Argentina",
+        "status": "executed",
+        "proposer_label": "7capas.eth",
+        "source_url": "https://www.gnars.com/proposals/base/98",
+        "canonical_url": "https://www.gnars.com/proposals/base/98"
+      },
+      "chain_value": {
+        "status": "executed",
+        "transaction_count": 1,
+        "routed_budget_display": "No direct spend",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "resolved_value": {
+        "title": "Dropossal 7Capas Mag Ska7e & Jazz 1st Noogles rail in Argentina",
+        "status": "executed",
+        "requested_budget_display": "No direct spend",
+        "routed_budget_display": "No direct spend",
+        "proposer_label": "7capas.eth",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/98",
+        "https://basescan.org/tx/0x9be6a589a9e386066c57c9c63a78ab490472a7726e7026542915707915b60e3c"
+      ]
+    },
+    {
+      "archive_id": "gnars-base-97",
+      "proposal_number": 97,
+      "title": "Pod Media Proposal 3.0",
+      "platform": "gnars.com",
+      "chain": "base",
+      "site_status": "executed",
+      "chain_status": "executed",
+      "resolved_status": "executed",
+      "repo_value": {
+        "title": "Pod Media Proposal 3.0",
+        "status": "executed",
+        "requested_budget_display": "780 USDC + 1 ETH",
+        "routed_budget_display": "780 USDC + 1 ETH",
+        "proposer_label": "zimardrp.eth"
+      },
+      "site_value": {
+        "title": "Pod Media Proposal 3.0",
+        "status": "executed",
+        "proposer_label": "zimardrp.eth",
+        "source_url": "https://www.gnars.com/proposals/base/97",
+        "canonical_url": "https://www.gnars.com/proposals/base/97"
+      },
+      "chain_value": {
+        "status": "executed",
+        "transaction_count": 5,
+        "routed_budget_display": "780 USDC + 1 ETH",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "resolved_value": {
+        "title": "Pod Media Proposal 3.0",
+        "status": "executed",
+        "requested_budget_display": "780 USDC + 1 ETH",
+        "routed_budget_display": "780 USDC + 1 ETH",
+        "proposer_label": "zimardrp.eth",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/97",
+        "https://basescan.org/tx/0xf1b39a23ac1f47f8b2b30ad5a730e1fca5c22729d3f326d40fff117cfb78ec84"
       ]
     },
     {
@@ -704,7 +1041,7 @@
         "status": "defeated",
         "proposer_label": "willdias.eth",
         "source_url": "https://www.gnars.com/proposals/base/96",
-        "canonical_url": "https://gnars.com/proposals/base/96"
+        "canonical_url": "https://www.gnars.com/proposals/base/96"
       },
       "chain_value": {
         "status": "defeated",
@@ -724,7 +1061,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/96",
-        "https://gnars.com/proposals/base/96",
         "https://basescan.org/tx/0x1b23d0b50128fdc68730e3a0090527b5a88fb72ab0630824ec816c2c1b735d7e"
       ]
     },
@@ -749,7 +1085,7 @@
         "status": "executed",
         "proposer_label": "0xddd7...645f",
         "source_url": "https://www.gnars.com/proposals/base/95",
-        "canonical_url": "https://gnars.com/proposals/base/95"
+        "canonical_url": "https://www.gnars.com/proposals/base/95"
       },
       "chain_value": {
         "status": "executed",
@@ -769,7 +1105,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/95",
-        "https://gnars.com/proposals/base/95",
         "https://basescan.org/tx/0x8029baac4a7bce4ecec2188d6463ebad082e2c4d082b1db36d143add91f3d47c"
       ]
     },
@@ -794,7 +1129,7 @@
         "status": "cancelled",
         "proposer_label": "0xddd7...645f",
         "source_url": "https://www.gnars.com/proposals/base/94",
-        "canonical_url": "https://gnars.com/proposals/base/94"
+        "canonical_url": "https://www.gnars.com/proposals/base/94"
       },
       "chain_value": {
         "status": "cancelled",
@@ -814,7 +1149,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/94",
-        "https://gnars.com/proposals/base/94",
         "https://basescan.org/tx/0xd58d3fe1b02b6ee4c5c5e240ff3ff1200cc57bdd881d247203189d0cd20e9b82"
       ]
     },
@@ -839,7 +1173,7 @@
         "status": "executed",
         "proposer_label": "ionirmera.eth",
         "source_url": "https://www.gnars.com/proposals/base/93",
-        "canonical_url": "https://gnars.com/proposals/base/93"
+        "canonical_url": "https://www.gnars.com/proposals/base/93"
       },
       "chain_value": {
         "status": "executed",
@@ -859,7 +1193,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/93",
-        "https://gnars.com/proposals/base/93",
         "https://basescan.org/tx/0x8401d8937a949141b0a312cbd6659e413bd2502ff0ca1b3a10809847dd24ac54"
       ]
     },
@@ -884,7 +1217,7 @@
         "status": "cancelled",
         "proposer_label": "ionirmera.eth",
         "source_url": "https://www.gnars.com/proposals/base/92",
-        "canonical_url": "https://gnars.com/proposals/base/92"
+        "canonical_url": "https://www.gnars.com/proposals/base/92"
       },
       "chain_value": {
         "status": "cancelled",
@@ -904,8 +1237,95 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/92",
-        "https://gnars.com/proposals/base/92",
         "https://basescan.org/tx/0x8017772296396ee50d030d6f80237e051712b8b4f95526ce3706be9ee374026b"
+      ]
+    },
+    {
+      "archive_id": "gnars-base-91",
+      "proposal_number": 91,
+      "title": "IPFS Reimbursement and Advance for Shared IPFS Infrastructure",
+      "platform": "gnars.com",
+      "chain": "base",
+      "site_status": "executed",
+      "chain_status": "executed",
+      "resolved_status": "executed",
+      "repo_value": {
+        "title": "IPFS Reimbursement and Advance for Shared IPFS Infrastructure",
+        "status": "executed",
+        "requested_budget_display": "206,232,000,000,000,000,000 TOKEN-4F6047",
+        "routed_budget_display": "206,232,000,000,000,000,000 TOKEN-4F6047",
+        "proposer_label": "0x41cb...be4a"
+      },
+      "site_value": {
+        "title": "IPFS Reimbursement and Advance for Shared IPFS Infrastructure",
+        "status": "executed",
+        "proposer_label": "0x41cb...be4a",
+        "source_url": "https://www.gnars.com/proposals/base/91",
+        "canonical_url": "https://www.gnars.com/proposals/base/91"
+      },
+      "chain_value": {
+        "status": "executed",
+        "transaction_count": 1,
+        "routed_budget_display": "206,232,000,000,000,000,000 TOKEN-4F6047",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "resolved_value": {
+        "title": "IPFS Reimbursement and Advance for Shared IPFS Infrastructure",
+        "status": "executed",
+        "requested_budget_display": "206,232,000,000,000,000,000 TOKEN-4F6047",
+        "routed_budget_display": "206,232,000,000,000,000,000 TOKEN-4F6047",
+        "proposer_label": "0x41cb...be4a",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/91",
+        "https://basescan.org/tx/0x0bd02cef1059e7a7ee62b631fb0e0fb60ddb359ff4042cf9c3d4b7098758c458"
+      ]
+    },
+    {
+      "archive_id": "gnars-base-90",
+      "proposal_number": 90,
+      "title": " Transfer Correction – Proposal 70",
+      "platform": "gnars.com",
+      "chain": "base",
+      "site_status": "executed",
+      "chain_status": "executed",
+      "resolved_status": "executed",
+      "repo_value": {
+        "title": " Transfer Correction – Proposal 70",
+        "status": "executed",
+        "requested_budget_display": "360 USDC",
+        "routed_budget_display": "360 USDC",
+        "proposer_label": "0x2581...f89f"
+      },
+      "site_value": {
+        "title": " Transfer Correction – Proposal 70",
+        "status": "executed",
+        "proposer_label": "0x2581...f89f",
+        "source_url": "https://www.gnars.com/proposals/base/90",
+        "canonical_url": "https://www.gnars.com/proposals/base/90"
+      },
+      "chain_value": {
+        "status": "executed",
+        "transaction_count": 1,
+        "routed_budget_display": "360 USDC",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "resolved_value": {
+        "title": " Transfer Correction – Proposal 70",
+        "status": "executed",
+        "requested_budget_display": "360 USDC",
+        "routed_budget_display": "360 USDC",
+        "proposer_label": "0x2581...f89f",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/90",
+        "https://basescan.org/tx/0xe9e511bbdf4e37cb864788e575262f969259c6bc5616579123463c50f700c125"
       ]
     },
     {
@@ -929,7 +1349,7 @@
         "status": "executed",
         "proposer_label": "0x43c3...7970",
         "source_url": "https://www.gnars.com/proposals/base/89",
-        "canonical_url": "https://gnars.com/proposals/base/89"
+        "canonical_url": "https://www.gnars.com/proposals/base/89"
       },
       "chain_value": {
         "status": "executed",
@@ -949,7 +1369,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/89",
-        "https://gnars.com/proposals/base/89",
         "https://basescan.org/tx/0xd266578d79f901c40b97cf84a8e05b0ae45a96a8f8f060d578b315034d4795da"
       ]
     },
@@ -974,7 +1393,7 @@
         "status": "executed",
         "proposer_label": "0xd119...c7d8",
         "source_url": "https://www.gnars.com/proposals/base/88",
-        "canonical_url": "https://gnars.com/proposals/base/88"
+        "canonical_url": "https://www.gnars.com/proposals/base/88"
       },
       "chain_value": {
         "status": "executed",
@@ -994,7 +1413,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/88",
-        "https://gnars.com/proposals/base/88",
         "https://basescan.org/tx/0x62dd98f5662abf2055fbec31d0c1499dac0329bdef28a6d9e7204c48037dc93e"
       ]
     },
@@ -1019,7 +1437,7 @@
         "status": "defeated",
         "proposer_label": "0x43c3...7970",
         "source_url": "https://www.gnars.com/proposals/base/87",
-        "canonical_url": "https://gnars.com/proposals/base/87"
+        "canonical_url": "https://www.gnars.com/proposals/base/87"
       },
       "chain_value": {
         "status": "defeated",
@@ -1039,7 +1457,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/87",
-        "https://gnars.com/proposals/base/87",
         "https://basescan.org/tx/0x54e500193e0ebe24abee2610e0e90cf390d5dd40a1cff644e106ae1d86678393"
       ]
     },
@@ -1064,7 +1481,7 @@
         "status": "executed",
         "proposer_label": "rocketman21.eth",
         "source_url": "https://www.gnars.com/proposals/base/86",
-        "canonical_url": "https://gnars.com/proposals/base/86"
+        "canonical_url": "https://www.gnars.com/proposals/base/86"
       },
       "chain_value": {
         "status": "executed",
@@ -1084,7 +1501,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/86",
-        "https://gnars.com/proposals/base/86",
         "https://basescan.org/tx/0xc0a8699b8e74b50b7a22560bbd0da97d9863448cf9d113509b742a569b910a39"
       ]
     },
@@ -1109,7 +1525,7 @@
         "status": "executed",
         "proposer_label": "0xd119...c7d8",
         "source_url": "https://www.gnars.com/proposals/base/85",
-        "canonical_url": "https://gnars.com/proposals/base/85"
+        "canonical_url": "https://www.gnars.com/proposals/base/85"
       },
       "chain_value": {
         "status": "executed",
@@ -1129,8 +1545,139 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/85",
-        "https://gnars.com/proposals/base/85",
         "https://basescan.org/tx/0x693a7fd8a9521fa8498bdcbfcc116e848a4e14dec39e1346826baa890ac7be6b"
+      ]
+    },
+    {
+      "archive_id": "gnars-base-84",
+      "proposal_number": 84,
+      "title": "ONBOARDING VITOR RIBEIRO INTO GNARS COMMUNITY",
+      "platform": "gnars.com",
+      "chain": "base",
+      "site_status": "cancelled",
+      "chain_status": "cancelled",
+      "resolved_status": "cancelled",
+      "repo_value": {
+        "title": "ONBOARDING VITOR RIBEIRO INTO GNARS COMMUNITY",
+        "status": "cancelled",
+        "requested_budget_display": "No direct spend",
+        "routed_budget_display": "No direct spend",
+        "proposer_label": "0xd119...c7d8"
+      },
+      "site_value": {
+        "title": "ONBOARDING VITOR RIBEIRO INTO GNARS COMMUNITY",
+        "status": "cancelled",
+        "proposer_label": "0xd119...c7d8",
+        "source_url": "https://www.gnars.com/proposals/base/84",
+        "canonical_url": "https://www.gnars.com/proposals/base/84"
+      },
+      "chain_value": {
+        "status": "cancelled",
+        "transaction_count": 1,
+        "routed_budget_display": "No direct spend",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "resolved_value": {
+        "title": "ONBOARDING VITOR RIBEIRO INTO GNARS COMMUNITY",
+        "status": "cancelled",
+        "requested_budget_display": "No direct spend",
+        "routed_budget_display": "No direct spend",
+        "proposer_label": "0xd119...c7d8",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/84",
+        "https://basescan.org/tx/0x4dd6c033f79c4f9ff8e0981b0fa0e3a720c6978e85ea725c30d867130ab3dbf1"
+      ]
+    },
+    {
+      "archive_id": "gnars-base-83",
+      "proposal_number": 83,
+      "title": "Gnars Cartoons & Stereo Festival",
+      "platform": "gnars.com",
+      "chain": "base",
+      "site_status": "defeated",
+      "chain_status": "defeated",
+      "resolved_status": "defeated",
+      "repo_value": {
+        "title": "Gnars Cartoons & Stereo Festival",
+        "status": "defeated",
+        "requested_budget_display": "5,000 USDC",
+        "routed_budget_display": "No direct spend",
+        "proposer_label": "leopastel.eth"
+      },
+      "site_value": {
+        "title": "Gnars Cartoons & Stereo Festival",
+        "status": "defeated",
+        "proposer_label": "leopastel.eth",
+        "source_url": "https://www.gnars.com/proposals/base/83",
+        "canonical_url": "https://www.gnars.com/proposals/base/83"
+      },
+      "chain_value": {
+        "status": "defeated",
+        "transaction_count": 1,
+        "routed_budget_display": "No direct spend",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "resolved_value": {
+        "title": "Gnars Cartoons & Stereo Festival",
+        "status": "defeated",
+        "requested_budget_display": "5,000 USDC",
+        "routed_budget_display": "No direct spend",
+        "proposer_label": "leopastel.eth",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/83",
+        "https://basescan.org/tx/0xd2c70d93fa62ce794990c243a11d5eee846486d231af4cd980d04072ed6c824a"
+      ]
+    },
+    {
+      "archive_id": "gnars-base-82",
+      "proposal_number": 82,
+      "title": "#  Mauacba Mini Ramp and Mauricio Nava's pro model video part",
+      "platform": "gnars.com",
+      "chain": "base",
+      "site_status": "defeated",
+      "chain_status": "defeated",
+      "resolved_status": "defeated",
+      "repo_value": {
+        "title": "#  Mauacba Mini Ramp and Mauricio Nava's pro model video part",
+        "status": "defeated",
+        "requested_budget_display": "3,794 USDC",
+        "routed_budget_display": "No direct spend",
+        "proposer_label": "0x9cb9...f772"
+      },
+      "site_value": {
+        "title": "#  Mauacba Mini Ramp and Mauricio Nava's pro model video part",
+        "status": "defeated",
+        "proposer_label": "0x9cb9...f772",
+        "source_url": "https://www.gnars.com/proposals/base/82",
+        "canonical_url": "https://www.gnars.com/proposals/base/82"
+      },
+      "chain_value": {
+        "status": "defeated",
+        "transaction_count": 1,
+        "routed_budget_display": "No direct spend",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "resolved_value": {
+        "title": "#  Mauacba Mini Ramp and Mauricio Nava's pro model video part",
+        "status": "defeated",
+        "requested_budget_display": "3,794 USDC",
+        "routed_budget_display": "No direct spend",
+        "proposer_label": "0x9cb9...f772",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/82",
+        "https://basescan.org/tx/0xe2377314f5060279f4c56b23f15262c6263456e94bef9d72d3ca2dd7db187cdb"
       ]
     },
     {
@@ -1154,7 +1701,7 @@
         "status": "executed",
         "proposer_label": "0xeed9...a282",
         "source_url": "https://www.gnars.com/proposals/base/81",
-        "canonical_url": "https://gnars.com/proposals/base/81"
+        "canonical_url": "https://www.gnars.com/proposals/base/81"
       },
       "chain_value": {
         "status": "executed",
@@ -1174,7 +1721,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/81",
-        "https://gnars.com/proposals/base/81",
         "https://basescan.org/tx/0x7d43fa47c1e5a6a07c1c8b91b7b41af1e02a533b963ca2e8070e39d953cfdfab"
       ]
     },
@@ -1199,7 +1745,7 @@
         "status": "executed",
         "proposer_label": "0xddd7...645f",
         "source_url": "https://www.gnars.com/proposals/base/80",
-        "canonical_url": "https://gnars.com/proposals/base/80"
+        "canonical_url": "https://www.gnars.com/proposals/base/80"
       },
       "chain_value": {
         "status": "executed",
@@ -1219,7 +1765,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/80",
-        "https://gnars.com/proposals/base/80",
         "https://basescan.org/tx/0x2b9ccb26d92524632da2829238835f569223328e0572776d833167bc924e04ee"
       ]
     },
@@ -1244,7 +1789,7 @@
         "status": "executed",
         "proposer_label": "satori.wtf",
         "source_url": "https://www.gnars.com/proposals/base/79",
-        "canonical_url": "https://gnars.com/proposals/base/79"
+        "canonical_url": "https://www.gnars.com/proposals/base/79"
       },
       "chain_value": {
         "status": "executed",
@@ -1264,7 +1809,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/79",
-        "https://gnars.com/proposals/base/79",
         "https://basescan.org/tx/0xbf3d9b8eddb9586fda4f7222e9bb417a288c456f9db32e037aa6d1fff9a4fc22"
       ]
     },
@@ -1289,7 +1833,7 @@
         "status": "cancelled",
         "proposer_label": "r4topunk",
         "source_url": "https://www.gnars.com/proposals/base/78",
-        "canonical_url": "https://gnars.com/proposals/base/78"
+        "canonical_url": "https://www.gnars.com/proposals/base/78"
       },
       "chain_value": {
         "status": "cancelled",
@@ -1309,7 +1853,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/78",
-        "https://gnars.com/proposals/base/78",
         "https://basescan.org/tx/0x5b1bb5912d37c195a78fa596b457dd970d7d039bffd5306d3c7bdfc5a6284dd4"
       ]
     },
@@ -1334,7 +1877,7 @@
         "status": "executed",
         "proposer_label": "0xddd7...645f",
         "source_url": "https://www.gnars.com/proposals/base/77",
-        "canonical_url": "https://gnars.com/proposals/base/77"
+        "canonical_url": "https://www.gnars.com/proposals/base/77"
       },
       "chain_value": {
         "status": "executed",
@@ -1354,8 +1897,139 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/77",
-        "https://gnars.com/proposals/base/77",
         "https://basescan.org/tx/0x3bac7732525998057da508011546088bc63b3513a44712f9893a650d52161967"
+      ]
+    },
+    {
+      "archive_id": "gnars-base-76",
+      "proposal_number": 76,
+      "title": "7CAPAS MAGAZINE & GNARS",
+      "platform": "gnars.com",
+      "chain": "base",
+      "site_status": "executed",
+      "chain_status": "executed",
+      "resolved_status": "executed",
+      "repo_value": {
+        "title": "7CAPAS MAGAZINE & GNARS",
+        "status": "executed",
+        "requested_budget_display": "2,500 USDC",
+        "routed_budget_display": "2,500 USDC",
+        "proposer_label": "7capas.eth"
+      },
+      "site_value": {
+        "title": "7CAPAS MAGAZINE & GNARS",
+        "status": "executed",
+        "proposer_label": "7capas.eth",
+        "source_url": "https://www.gnars.com/proposals/base/76",
+        "canonical_url": "https://www.gnars.com/proposals/base/76"
+      },
+      "chain_value": {
+        "status": "executed",
+        "transaction_count": 1,
+        "routed_budget_display": "2,500 USDC",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "resolved_value": {
+        "title": "7CAPAS MAGAZINE & GNARS",
+        "status": "executed",
+        "requested_budget_display": "2,500 USDC",
+        "routed_budget_display": "2,500 USDC",
+        "proposer_label": "7capas.eth",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/76",
+        "https://basescan.org/tx/0x4e1c511c7e0c3fb665aedfbc7e9149243b8fdf88beca2ce2f7233244507c32a3"
+      ]
+    },
+    {
+      "archive_id": "gnars-base-75",
+      "proposal_number": 75,
+      "title": "Mauacba Mini Ramp and Mauricio Nava's pro model video parte",
+      "platform": "gnars.com",
+      "chain": "base",
+      "site_status": "defeated",
+      "chain_status": "defeated",
+      "resolved_status": "defeated",
+      "repo_value": {
+        "title": "Mauacba Mini Ramp and Mauricio Nava's pro model video parte",
+        "status": "defeated",
+        "requested_budget_display": "3,924 USDC",
+        "routed_budget_display": "No direct spend",
+        "proposer_label": "0x9cb9...f772"
+      },
+      "site_value": {
+        "title": "Mauacba Mini Ramp and Mauricio Nava's pro model video parte",
+        "status": "defeated",
+        "proposer_label": "0x9cb9...f772",
+        "source_url": "https://www.gnars.com/proposals/base/75",
+        "canonical_url": "https://www.gnars.com/proposals/base/75"
+      },
+      "chain_value": {
+        "status": "defeated",
+        "transaction_count": 1,
+        "routed_budget_display": "No direct spend",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "resolved_value": {
+        "title": "Mauacba Mini Ramp and Mauricio Nava's pro model video parte",
+        "status": "defeated",
+        "requested_budget_display": "3,924 USDC",
+        "routed_budget_display": "No direct spend",
+        "proposer_label": "0x9cb9...f772",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/75",
+        "https://basescan.org/tx/0x8f5998fc590a7d99b0a65db72cb3b441a2ecc67895e00a312c3b9dc9a9dec31b"
+      ]
+    },
+    {
+      "archive_id": "gnars-base-74",
+      "proposal_number": 74,
+      "title": "Droposal Nogglesboard at the park",
+      "platform": "gnars.com",
+      "chain": "base",
+      "site_status": "executed",
+      "chain_status": "executed",
+      "resolved_status": "executed",
+      "repo_value": {
+        "title": "Droposal Nogglesboard at the park",
+        "status": "executed",
+        "requested_budget_display": "No direct spend",
+        "routed_budget_display": "No direct spend",
+        "proposer_label": "nogglesboard.eth"
+      },
+      "site_value": {
+        "title": "Droposal Nogglesboard at the park",
+        "status": "executed",
+        "proposer_label": "nogglesboard.eth",
+        "source_url": "https://www.gnars.com/proposals/base/74",
+        "canonical_url": "https://www.gnars.com/proposals/base/74"
+      },
+      "chain_value": {
+        "status": "executed",
+        "transaction_count": 1,
+        "routed_budget_display": "No direct spend",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "resolved_value": {
+        "title": "Droposal Nogglesboard at the park",
+        "status": "executed",
+        "requested_budget_display": "No direct spend",
+        "routed_budget_display": "No direct spend",
+        "proposer_label": "nogglesboard.eth",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/74",
+        "https://basescan.org/tx/0xfc48c93b089f6d6ad4fe465f6d5cbd45b4ddcdf2aaa2a0dc062cf7b7c6847beb"
       ]
     },
     {
@@ -1379,7 +2053,7 @@
         "status": "cancelled",
         "proposer_label": "nogglesboard.eth",
         "source_url": "https://www.gnars.com/proposals/base/73",
-        "canonical_url": "https://gnars.com/proposals/base/73"
+        "canonical_url": "https://www.gnars.com/proposals/base/73"
       },
       "chain_value": {
         "status": "cancelled",
@@ -1399,7 +2073,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/73",
-        "https://gnars.com/proposals/base/73",
         "https://basescan.org/tx/0xa4779dcee3584f490b01d89d62f20f964a56d931a60e23271d8cf02136cd3dad"
       ]
     },
@@ -1424,7 +2097,7 @@
         "status": "executed",
         "proposer_label": "davinoyesigye.eth",
         "source_url": "https://www.gnars.com/proposals/base/72",
-        "canonical_url": "https://gnars.com/proposals/base/72"
+        "canonical_url": "https://www.gnars.com/proposals/base/72"
       },
       "chain_value": {
         "status": "executed",
@@ -1444,7 +2117,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/72",
-        "https://gnars.com/proposals/base/72",
         "https://basescan.org/tx/0xe10e625a458ed1899858f89029b0c80cbab98530031a6a5485013d5c758ecb15"
       ]
     },
@@ -1469,7 +2141,7 @@
         "status": "executed",
         "proposer_label": "dreadpizzaroberts.eth",
         "source_url": "https://www.gnars.com/proposals/base/71",
-        "canonical_url": "https://gnars.com/proposals/base/71"
+        "canonical_url": "https://www.gnars.com/proposals/base/71"
       },
       "chain_value": {
         "status": "executed",
@@ -1489,7 +2161,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/71",
-        "https://gnars.com/proposals/base/71",
         "https://basescan.org/tx/0x1d57f6e50f4d86f0868766a4d1f597e9368eac7a5987f5ca78f9c3d44623d140"
       ]
     },
@@ -1514,7 +2185,7 @@
         "status": "executed",
         "proposer_label": "0x2581...f89f",
         "source_url": "https://www.gnars.com/proposals/base/70",
-        "canonical_url": "https://gnars.com/proposals/base/70"
+        "canonical_url": "https://www.gnars.com/proposals/base/70"
       },
       "chain_value": {
         "status": "executed",
@@ -1534,7 +2205,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/70",
-        "https://gnars.com/proposals/base/70",
         "https://basescan.org/tx/0x7a1907f30e8e87e5a154d14d97bb649e6479c00150085197099bae92c0453c3a"
       ]
     },
@@ -1559,7 +2229,7 @@
         "status": "executed",
         "proposer_label": "0x094c...3b30",
         "source_url": "https://www.gnars.com/proposals/base/69",
-        "canonical_url": "https://gnars.com/proposals/base/69"
+        "canonical_url": "https://www.gnars.com/proposals/base/69"
       },
       "chain_value": {
         "status": "executed",
@@ -1579,8 +2249,139 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/69",
-        "https://gnars.com/proposals/base/69",
         "https://basescan.org/tx/0x8dc21274335340aa7f6104a8ccb76a9379a81e6acf60404bdbd63fb53f75f395"
+      ]
+    },
+    {
+      "archive_id": "gnars-base-68",
+      "proposal_number": 68,
+      "title": "Noggles Rail in Milan - First in Italy ",
+      "platform": "gnars.com",
+      "chain": "base",
+      "site_status": "executed",
+      "chain_status": "executed",
+      "resolved_status": "executed",
+      "repo_value": {
+        "title": "Noggles Rail in Milan - First in Italy ",
+        "status": "executed",
+        "requested_budget_display": "1,250 USDC",
+        "routed_budget_display": "1,250 USDC",
+        "proposer_label": "jacopo.eth"
+      },
+      "site_value": {
+        "title": "Noggles Rail in Milan - First in Italy ",
+        "status": "executed",
+        "proposer_label": "jacopo.eth",
+        "source_url": "https://www.gnars.com/proposals/base/68",
+        "canonical_url": "https://www.gnars.com/proposals/base/68"
+      },
+      "chain_value": {
+        "status": "executed",
+        "transaction_count": 1,
+        "routed_budget_display": "1,250 USDC",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "resolved_value": {
+        "title": "Noggles Rail in Milan - First in Italy ",
+        "status": "executed",
+        "requested_budget_display": "1,250 USDC",
+        "routed_budget_display": "1,250 USDC",
+        "proposer_label": "jacopo.eth",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/68",
+        "https://basescan.org/tx/0x183af2a57a714df09254420fd38744767f3683aef2fb330327c7d59ce93602fc"
+      ]
+    },
+    {
+      "archive_id": "gnars-base-67",
+      "proposal_number": 67,
+      "title": "KANZ ONBOARDING PROP",
+      "platform": "gnars.com",
+      "chain": "base",
+      "site_status": "defeated",
+      "chain_status": "defeated",
+      "resolved_status": "defeated",
+      "repo_value": {
+        "title": "KANZ ONBOARDING PROP",
+        "status": "defeated",
+        "requested_budget_display": "No direct spend",
+        "routed_budget_display": "No direct spend",
+        "proposer_label": "0xddd7...645f"
+      },
+      "site_value": {
+        "title": "KANZ ONBOARDING PROP",
+        "status": "defeated",
+        "proposer_label": "0xddd7...645f",
+        "source_url": "https://www.gnars.com/proposals/base/67",
+        "canonical_url": "https://www.gnars.com/proposals/base/67"
+      },
+      "chain_value": {
+        "status": "defeated",
+        "transaction_count": 1,
+        "routed_budget_display": "No direct spend",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "resolved_value": {
+        "title": "KANZ ONBOARDING PROP",
+        "status": "defeated",
+        "requested_budget_display": "No direct spend",
+        "routed_budget_display": "No direct spend",
+        "proposer_label": "0xddd7...645f",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/67",
+        "https://basescan.org/tx/0x78dd79a97aea72e2c7d00b07e63ba3277f8d6b210596831a51762220f5ae4af8"
+      ]
+    },
+    {
+      "archive_id": "gnars-base-66",
+      "proposal_number": 66,
+      "title": "RYAN ONBOARDING PROPOSAL ",
+      "platform": "gnars.com",
+      "chain": "base",
+      "site_status": "defeated",
+      "chain_status": "defeated",
+      "resolved_status": "defeated",
+      "repo_value": {
+        "title": "RYAN ONBOARDING PROPOSAL ",
+        "status": "defeated",
+        "requested_budget_display": "No direct spend",
+        "routed_budget_display": "No direct spend",
+        "proposer_label": "0xddd7...645f"
+      },
+      "site_value": {
+        "title": "RYAN ONBOARDING PROPOSAL ",
+        "status": "defeated",
+        "proposer_label": "0xddd7...645f",
+        "source_url": "https://www.gnars.com/proposals/base/66",
+        "canonical_url": "https://www.gnars.com/proposals/base/66"
+      },
+      "chain_value": {
+        "status": "defeated",
+        "transaction_count": 1,
+        "routed_budget_display": "No direct spend",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "resolved_value": {
+        "title": "RYAN ONBOARDING PROPOSAL ",
+        "status": "defeated",
+        "requested_budget_display": "No direct spend",
+        "routed_budget_display": "No direct spend",
+        "proposer_label": "0xddd7...645f",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/66",
+        "https://basescan.org/tx/0xd4aea7dcbd1a9206bce052b520538ad003d7438fedbea49707876b83a50727db"
       ]
     },
     {
@@ -1595,7 +2396,7 @@
       "repo_value": {
         "title": "Reimbursement Proposal for Benbodhi",
         "status": "executed",
-        "requested_budget_display": "12,881,837,000,000,000,090,963,968 SENDIT",
+        "requested_budget_display": "12,881,837 SENDIT",
         "routed_budget_display": "12,881,837 SENDIT",
         "proposer_label": "vasconsa.eth"
       },
@@ -1604,7 +2405,7 @@
         "status": "executed",
         "proposer_label": "vasconsa.eth",
         "source_url": "https://www.gnars.com/proposals/base/65",
-        "canonical_url": "https://gnars.com/proposals/base/65"
+        "canonical_url": "https://www.gnars.com/proposals/base/65"
       },
       "chain_value": {
         "status": "executed",
@@ -1615,7 +2416,7 @@
       "resolved_value": {
         "title": "Reimbursement Proposal for Benbodhi",
         "status": "executed",
-        "requested_budget_display": "12,881,837,000,000,000,090,963,968 SENDIT",
+        "requested_budget_display": "12,881,837 SENDIT",
         "routed_budget_display": "12,881,837 SENDIT",
         "proposer_label": "vasconsa.eth",
         "treasury_source_label": "Gnars Treasury"
@@ -1624,7 +2425,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/65",
-        "https://gnars.com/proposals/base/65",
         "https://basescan.org/tx/0x4bcae89b382378a286df395296c25a306ea7344314acf40f1c1bc64517f1aba3"
       ]
     },
@@ -1649,7 +2449,7 @@
         "status": "executed",
         "proposer_label": "0x2858...960f",
         "source_url": "https://www.gnars.com/proposals/base/64",
-        "canonical_url": "https://gnars.com/proposals/base/64"
+        "canonical_url": "https://www.gnars.com/proposals/base/64"
       },
       "chain_value": {
         "status": "executed",
@@ -1669,7 +2469,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/64",
-        "https://gnars.com/proposals/base/64",
         "https://basescan.org/tx/0x777da83625d76f35bbf0b7a90cb5df5eff409834fc186d1441c5ecd9e709674c"
       ]
     },
@@ -1685,7 +2484,7 @@
       "repo_value": {
         "title": "Dave Bachinsky » 1 Year Sponsorship Proposal ",
         "status": "executed",
-        "requested_budget_display": "46,500,000,000,000,001,098,907,648 SENDIT + 3,200 USDC + 1 ETH",
+        "requested_budget_display": "46,500,000 SENDIT + 3,200 USDC + 1 ETH",
         "routed_budget_display": "46,500,000 SENDIT + 3,200 USDC + 1 ETH",
         "proposer_label": "0x0bd4...fc66"
       },
@@ -1694,7 +2493,7 @@
         "status": "executed",
         "proposer_label": "0x0bd4...fc66",
         "source_url": "https://www.gnars.com/proposals/base/63",
-        "canonical_url": "https://gnars.com/proposals/base/63"
+        "canonical_url": "https://www.gnars.com/proposals/base/63"
       },
       "chain_value": {
         "status": "executed",
@@ -1705,7 +2504,7 @@
       "resolved_value": {
         "title": "Dave Bachinsky » 1 Year Sponsorship Proposal ",
         "status": "executed",
-        "requested_budget_display": "46,500,000,000,000,001,098,907,648 SENDIT + 3,200 USDC + 1 ETH",
+        "requested_budget_display": "46,500,000 SENDIT + 3,200 USDC + 1 ETH",
         "routed_budget_display": "46,500,000 SENDIT + 3,200 USDC + 1 ETH",
         "proposer_label": "0x0bd4...fc66",
         "treasury_source_label": "Gnars Treasury"
@@ -1714,7 +2513,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/63",
-        "https://gnars.com/proposals/base/63",
         "https://basescan.org/tx/0xa1b645ff639eedca5c26f5908754832d4ecbf48a9d669672c2edade85838deac"
       ]
     },
@@ -1739,7 +2537,7 @@
         "status": "cancelled",
         "proposer_label": "0x9cb9...f772",
         "source_url": "https://www.gnars.com/proposals/base/62",
-        "canonical_url": "https://gnars.com/proposals/base/62"
+        "canonical_url": "https://www.gnars.com/proposals/base/62"
       },
       "chain_value": {
         "status": "cancelled",
@@ -1759,7 +2557,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/62",
-        "https://gnars.com/proposals/base/62",
         "https://basescan.org/tx/0x45eb3377818873e4602764039938d7b45bad52d57be380885eddaf3251569c7a"
       ]
     },
@@ -1775,7 +2572,7 @@
       "repo_value": {
         "title": "Bernardo Nassar renewal propososal V2 (Bodyboarder)",
         "status": "executed",
-        "requested_budget_display": "119,569,120,287,253,133,124,435,968 SENDIT + 2,650 USDC",
+        "requested_budget_display": "119,569,120.29 SENDIT + 2,650 USDC",
         "routed_budget_display": "119,569,120.29 SENDIT + 2,650 USDC",
         "proposer_label": "0xd32d...7cd4"
       },
@@ -1784,7 +2581,7 @@
         "status": "executed",
         "proposer_label": "0xd32d...7cd4",
         "source_url": "https://www.gnars.com/proposals/base/61",
-        "canonical_url": "https://gnars.com/proposals/base/61"
+        "canonical_url": "https://www.gnars.com/proposals/base/61"
       },
       "chain_value": {
         "status": "executed",
@@ -1795,7 +2592,7 @@
       "resolved_value": {
         "title": "Bernardo Nassar renewal propososal V2 (Bodyboarder)",
         "status": "executed",
-        "requested_budget_display": "119,569,120,287,253,133,124,435,968 SENDIT + 2,650 USDC",
+        "requested_budget_display": "119,569,120.29 SENDIT + 2,650 USDC",
         "routed_budget_display": "119,569,120.29 SENDIT + 2,650 USDC",
         "proposer_label": "0xd32d...7cd4",
         "treasury_source_label": "Gnars Treasury"
@@ -1804,8 +2601,139 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/61",
-        "https://gnars.com/proposals/base/61",
         "https://basescan.org/tx/0x234f61d4dd156c9581134687919907b804666e173560a1f94b5acc76cc1aeb5c"
+      ]
+    },
+    {
+      "archive_id": "gnars-base-60",
+      "proposal_number": 60,
+      "title": "Bernardo Nassar renewal propososal (Bodyboarder)",
+      "platform": "gnars.com",
+      "chain": "base",
+      "site_status": "defeated",
+      "chain_status": "defeated",
+      "resolved_status": "defeated",
+      "repo_value": {
+        "title": "Bernardo Nassar renewal propososal (Bodyboarder)",
+        "status": "defeated",
+        "requested_budget_display": "6,204 USDC",
+        "routed_budget_display": "No direct spend",
+        "proposer_label": "0x32c8...2428"
+      },
+      "site_value": {
+        "title": "Bernardo Nassar renewal propososal (Bodyboarder)",
+        "status": "defeated",
+        "proposer_label": "0x32c8...2428",
+        "source_url": "https://www.gnars.com/proposals/base/60",
+        "canonical_url": "https://www.gnars.com/proposals/base/60"
+      },
+      "chain_value": {
+        "status": "defeated",
+        "transaction_count": 1,
+        "routed_budget_display": "No direct spend",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "resolved_value": {
+        "title": "Bernardo Nassar renewal propososal (Bodyboarder)",
+        "status": "defeated",
+        "requested_budget_display": "6,204 USDC",
+        "routed_budget_display": "No direct spend",
+        "proposer_label": "0x32c8...2428",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/60",
+        "https://basescan.org/tx/0xd0d7b8f564c3a708a3dba9220ed352126d9ea92d34e2c1c08592e48a7f8099a4"
+      ]
+    },
+    {
+      "archive_id": "gnars-base-59",
+      "proposal_number": 59,
+      "title": "Pod Media Proposal 2.0",
+      "platform": "gnars.com",
+      "chain": "base",
+      "site_status": "executed",
+      "chain_status": "executed",
+      "resolved_status": "executed",
+      "repo_value": {
+        "title": "Pod Media Proposal 2.0",
+        "status": "executed",
+        "requested_budget_display": "8,550 USDC",
+        "routed_budget_display": "8,550 USDC",
+        "proposer_label": "zimardrp.eth"
+      },
+      "site_value": {
+        "title": "Pod Media Proposal 2.0",
+        "status": "executed",
+        "proposer_label": "zimardrp.eth",
+        "source_url": "https://www.gnars.com/proposals/base/59",
+        "canonical_url": "https://www.gnars.com/proposals/base/59"
+      },
+      "chain_value": {
+        "status": "executed",
+        "transaction_count": 7,
+        "routed_budget_display": "8,550 USDC",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "resolved_value": {
+        "title": "Pod Media Proposal 2.0",
+        "status": "executed",
+        "requested_budget_display": "8,550 USDC",
+        "routed_budget_display": "8,550 USDC",
+        "proposer_label": "zimardrp.eth",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/59",
+        "https://basescan.org/tx/0xf7386ff6bb347c8a17f653766f3de420f2ee7f54347a37b999252d8efc463047"
+      ]
+    },
+    {
+      "archive_id": "gnars-base-58",
+      "proposal_number": 58,
+      "title": "Pod Media Proposal 2.0",
+      "platform": "gnars.com",
+      "chain": "base",
+      "site_status": "cancelled",
+      "chain_status": "cancelled",
+      "resolved_status": "cancelled",
+      "repo_value": {
+        "title": "Pod Media Proposal 2.0",
+        "status": "cancelled",
+        "requested_budget_display": "8,550 USDC",
+        "routed_budget_display": "No direct spend",
+        "proposer_label": "zimardrp.eth"
+      },
+      "site_value": {
+        "title": "Pod Media Proposal 2.0",
+        "status": "cancelled",
+        "proposer_label": "zimardrp.eth",
+        "source_url": "https://www.gnars.com/proposals/base/58",
+        "canonical_url": "https://www.gnars.com/proposals/base/58"
+      },
+      "chain_value": {
+        "status": "cancelled",
+        "transaction_count": 7,
+        "routed_budget_display": "No direct spend",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "resolved_value": {
+        "title": "Pod Media Proposal 2.0",
+        "status": "cancelled",
+        "requested_budget_display": "8,550 USDC",
+        "routed_budget_display": "No direct spend",
+        "proposer_label": "zimardrp.eth",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/58",
+        "https://basescan.org/tx/0x71fb6aba5b7138b26154fb20e67c2f40ff63126b353cfe0b906b2af12ec797ed"
       ]
     },
     {
@@ -1820,7 +2748,7 @@
       "repo_value": {
         "title": "Create a Round in Rounds.wtf for sharing Gnarly Media created in 2024",
         "status": "executed",
-        "requested_budget_display": "85,879,900,000,000,007,114,588,160 SENDIT",
+        "requested_budget_display": "85,879,900 SENDIT",
         "routed_budget_display": "85,879,900 SENDIT",
         "proposer_label": "0x41cb...be4a"
       },
@@ -1829,7 +2757,7 @@
         "status": "executed",
         "proposer_label": "0x41cb...be4a",
         "source_url": "https://www.gnars.com/proposals/base/57",
-        "canonical_url": "https://gnars.com/proposals/base/57"
+        "canonical_url": "https://www.gnars.com/proposals/base/57"
       },
       "chain_value": {
         "status": "executed",
@@ -1840,7 +2768,7 @@
       "resolved_value": {
         "title": "Create a Round in Rounds.wtf for sharing Gnarly Media created in 2024",
         "status": "executed",
-        "requested_budget_display": "85,879,900,000,000,007,114,588,160 SENDIT",
+        "requested_budget_display": "85,879,900 SENDIT",
         "routed_budget_display": "85,879,900 SENDIT",
         "proposer_label": "0x41cb...be4a",
         "treasury_source_label": "Gnars Treasury"
@@ -1849,7 +2777,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/57",
-        "https://gnars.com/proposals/base/57",
         "https://basescan.org/tx/0x2e93b5bc7a2730ef7138f77baadea5981869b6c63e503d484f4315913ffbf9e4"
       ]
     },
@@ -1874,7 +2801,7 @@
         "status": "defeated",
         "proposer_label": "fuzzyface.eth",
         "source_url": "https://www.gnars.com/proposals/base/56",
-        "canonical_url": "https://gnars.com/proposals/base/56"
+        "canonical_url": "https://www.gnars.com/proposals/base/56"
       },
       "chain_value": {
         "status": "defeated",
@@ -1894,7 +2821,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/56",
-        "https://gnars.com/proposals/base/56",
         "https://basescan.org/tx/0xfa4fea83605df92a23127dc4af4353fa4b8d328103e0c4075257a6d4e3907e0c"
       ]
     },
@@ -1919,7 +2845,7 @@
         "status": "cancelled",
         "proposer_label": "fuzzyface.eth",
         "source_url": "https://www.gnars.com/proposals/base/55",
-        "canonical_url": "https://gnars.com/proposals/base/55"
+        "canonical_url": "https://www.gnars.com/proposals/base/55"
       },
       "chain_value": {
         "status": "cancelled",
@@ -1939,7 +2865,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/55",
-        "https://gnars.com/proposals/base/55",
         "https://basescan.org/tx/0xd84b3300d274ea8494adc19bb9303d80d7547e3561ada77e350f261944faf8a0"
       ]
     },
@@ -1964,7 +2889,7 @@
         "status": "defeated",
         "proposer_label": "fuzzyface.eth",
         "source_url": "https://www.gnars.com/proposals/base/54",
-        "canonical_url": "https://gnars.com/proposals/base/54"
+        "canonical_url": "https://www.gnars.com/proposals/base/54"
       },
       "chain_value": {
         "status": "defeated",
@@ -1984,7 +2909,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/54",
-        "https://gnars.com/proposals/base/54",
         "https://basescan.org/tx/0xf0a64c3439e3398e3623dd98a9487f513d1134f5bd526cef680fb00c2fafc5c8"
       ]
     },
@@ -2009,7 +2933,7 @@
         "status": "executed",
         "proposer_label": "0x41cb...be4a",
         "source_url": "https://www.gnars.com/proposals/base/53",
-        "canonical_url": "https://gnars.com/proposals/base/53"
+        "canonical_url": "https://www.gnars.com/proposals/base/53"
       },
       "chain_value": {
         "status": "executed",
@@ -2029,8 +2953,139 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/53",
-        "https://gnars.com/proposals/base/53",
         "https://basescan.org/tx/0xdd6f9e81c2d8d44b3977e6669173cb668fc43639969f1908a2fe9431c356ce66"
+      ]
+    },
+    {
+      "archive_id": "gnars-base-52",
+      "proposal_number": 52,
+      "title": "Nico in GNARZARE Portugal V2",
+      "platform": "gnars.com",
+      "chain": "base",
+      "site_status": "executed",
+      "chain_status": "executed",
+      "resolved_status": "executed",
+      "repo_value": {
+        "title": "Nico in GNARZARE Portugal V2",
+        "status": "executed",
+        "requested_budget_display": "5,100 USDC",
+        "routed_budget_display": "5,100 USDC",
+        "proposer_label": "0xdb47...63c4"
+      },
+      "site_value": {
+        "title": "Nico in GNARZARE Portugal V2",
+        "status": "executed",
+        "proposer_label": "0xdb47...63c4",
+        "source_url": "https://www.gnars.com/proposals/base/52",
+        "canonical_url": "https://www.gnars.com/proposals/base/52"
+      },
+      "chain_value": {
+        "status": "executed",
+        "transaction_count": 1,
+        "routed_budget_display": "5,100 USDC",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "resolved_value": {
+        "title": "Nico in GNARZARE Portugal V2",
+        "status": "executed",
+        "requested_budget_display": "5,100 USDC",
+        "routed_budget_display": "5,100 USDC",
+        "proposer_label": "0xdb47...63c4",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/52",
+        "https://basescan.org/tx/0x79da92a883e6deb846439cff5b9c89febe1a37543160d49e7d03de0a270024ef"
+      ]
+    },
+    {
+      "archive_id": "gnars-base-51",
+      "proposal_number": 51,
+      "title": "Nico in GNARZARE Portugal",
+      "platform": "gnars.com",
+      "chain": "base",
+      "site_status": "cancelled",
+      "chain_status": "cancelled",
+      "resolved_status": "cancelled",
+      "repo_value": {
+        "title": "Nico in GNARZARE Portugal",
+        "status": "cancelled",
+        "requested_budget_display": "5,660 USDC",
+        "routed_budget_display": "No direct spend",
+        "proposer_label": "0xdb47...63c4"
+      },
+      "site_value": {
+        "title": "Nico in GNARZARE Portugal",
+        "status": "cancelled",
+        "proposer_label": "0xdb47...63c4",
+        "source_url": "https://www.gnars.com/proposals/base/51",
+        "canonical_url": "https://www.gnars.com/proposals/base/51"
+      },
+      "chain_value": {
+        "status": "cancelled",
+        "transaction_count": 1,
+        "routed_budget_display": "No direct spend",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "resolved_value": {
+        "title": "Nico in GNARZARE Portugal",
+        "status": "cancelled",
+        "requested_budget_display": "5,660 USDC",
+        "routed_budget_display": "No direct spend",
+        "proposer_label": "0xdb47...63c4",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/51",
+        "https://basescan.org/tx/0xc307d9df2e3902b6f1e80dd770af80a6fa933f019b6b3de38d333b69b873f6c9"
+      ]
+    },
+    {
+      "archive_id": "gnars-base-50",
+      "proposal_number": 50,
+      "title": "Isaac Huston x Ephraim Sylar Onboarding Proposal",
+      "platform": "gnars.com",
+      "chain": "base",
+      "site_status": "executed",
+      "chain_status": "executed",
+      "resolved_status": "executed",
+      "repo_value": {
+        "title": "Isaac Huston x Ephraim Sylar Onboarding Proposal",
+        "status": "executed",
+        "requested_budget_display": "No direct spend",
+        "routed_budget_display": "No direct spend",
+        "proposer_label": "davinoyesigye.eth"
+      },
+      "site_value": {
+        "title": "Isaac Huston x Ephraim Sylar Onboarding Proposal",
+        "status": "executed",
+        "proposer_label": "davinoyesigye.eth",
+        "source_url": "https://www.gnars.com/proposals/base/50",
+        "canonical_url": "https://www.gnars.com/proposals/base/50"
+      },
+      "chain_value": {
+        "status": "executed",
+        "transaction_count": 2,
+        "routed_budget_display": "No direct spend",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "resolved_value": {
+        "title": "Isaac Huston x Ephraim Sylar Onboarding Proposal",
+        "status": "executed",
+        "requested_budget_display": "No direct spend",
+        "routed_budget_display": "No direct spend",
+        "proposer_label": "davinoyesigye.eth",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/50",
+        "https://basescan.org/tx/0xe1d257e15da076bda1aa6543e235acf838b03f70ad118a344e1f73ffe64cfe2e"
       ]
     },
     {
@@ -2054,7 +3109,7 @@
         "status": "cancelled",
         "proposer_label": "davinoyesigye.eth",
         "source_url": "https://www.gnars.com/proposals/base/49",
-        "canonical_url": "https://gnars.com/proposals/base/49"
+        "canonical_url": "https://www.gnars.com/proposals/base/49"
       },
       "chain_value": {
         "status": "cancelled",
@@ -2074,7 +3129,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/49",
-        "https://gnars.com/proposals/base/49",
         "https://basescan.org/tx/0x3de0b7f7b80e0f03a63cf88155bffb5c5be10b1dd01a00659a9f69d312586065"
       ]
     },
@@ -2099,7 +3153,7 @@
         "status": "executed",
         "proposer_label": "gondy.eth",
         "source_url": "https://www.gnars.com/proposals/base/48",
-        "canonical_url": "https://gnars.com/proposals/base/48"
+        "canonical_url": "https://www.gnars.com/proposals/base/48"
       },
       "chain_value": {
         "status": "executed",
@@ -2119,7 +3173,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/48",
-        "https://gnars.com/proposals/base/48",
         "https://basescan.org/tx/0xbe32e9f171954b07d9e0fa8cf6097efbc723c0458030e8dad5005e686c5ba9ba"
       ]
     },
@@ -2144,7 +3197,7 @@
         "status": "executed",
         "proposer_label": "0xeed9...a282",
         "source_url": "https://www.gnars.com/proposals/base/47",
-        "canonical_url": "https://gnars.com/proposals/base/47"
+        "canonical_url": "https://www.gnars.com/proposals/base/47"
       },
       "chain_value": {
         "status": "executed",
@@ -2164,7 +3217,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/47",
-        "https://gnars.com/proposals/base/47",
         "https://basescan.org/tx/0xcc3d354656aca673be6736660cd757b3ec1b69e4c8a53f9f6216de4efeb35c3d"
       ]
     },
@@ -2189,7 +3241,7 @@
         "status": "executed",
         "proposer_label": "team7.eth",
         "source_url": "https://www.gnars.com/proposals/base/46",
-        "canonical_url": "https://gnars.com/proposals/base/46"
+        "canonical_url": "https://www.gnars.com/proposals/base/46"
       },
       "chain_value": {
         "status": "executed",
@@ -2209,7 +3261,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/46",
-        "https://gnars.com/proposals/base/46",
         "https://basescan.org/tx/0xd8e4e765e265488fc60cfcc14814bc1a001ee9feeea81338b9ad4761e7ddfb78"
       ]
     },
@@ -2234,7 +3285,7 @@
         "status": "executed",
         "proposer_label": "r4topunk",
         "source_url": "https://www.gnars.com/proposals/base/45",
-        "canonical_url": "https://gnars.com/proposals/base/45"
+        "canonical_url": "https://www.gnars.com/proposals/base/45"
       },
       "chain_value": {
         "status": "executed",
@@ -2254,8 +3305,139 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/45",
-        "https://gnars.com/proposals/base/45",
         "https://basescan.org/tx/0xb6c70e286e4fd93f6c96c40ef8a0b22dd788b0040aea324640382e716f9d1c6f"
+      ]
+    },
+    {
+      "archive_id": "gnars-base-44",
+      "proposal_number": 44,
+      "title": "Gnars at NAKO 2024",
+      "platform": "gnars.com",
+      "chain": "base",
+      "site_status": "defeated",
+      "chain_status": "defeated",
+      "resolved_status": "defeated",
+      "repo_value": {
+        "title": "Gnars at NAKO 2024",
+        "status": "defeated",
+        "requested_budget_display": "3.5 ETH",
+        "routed_budget_display": "No direct spend",
+        "proposer_label": "satori.wtf"
+      },
+      "site_value": {
+        "title": "Gnars at NAKO 2024",
+        "status": "defeated",
+        "proposer_label": "satori.wtf",
+        "source_url": "https://www.gnars.com/proposals/base/44",
+        "canonical_url": "https://www.gnars.com/proposals/base/44"
+      },
+      "chain_value": {
+        "status": "defeated",
+        "transaction_count": 1,
+        "routed_budget_display": "No direct spend",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "resolved_value": {
+        "title": "Gnars at NAKO 2024",
+        "status": "defeated",
+        "requested_budget_display": "3.5 ETH",
+        "routed_budget_display": "No direct spend",
+        "proposer_label": "satori.wtf",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/44",
+        "https://basescan.org/tx/0xbacbc9c664e34dc7445aec0c3238245c96b26342a70d7f654ed405009a0babb5"
+      ]
+    },
+    {
+      "archive_id": "gnars-base-43",
+      "proposal_number": 43,
+      "title": "GNARS x BluntDao Blunt Olympics in Thailand",
+      "platform": "gnars.com",
+      "chain": "base",
+      "site_status": "defeated",
+      "chain_status": "defeated",
+      "resolved_status": "defeated",
+      "repo_value": {
+        "title": "GNARS x BluntDao Blunt Olympics in Thailand",
+        "status": "defeated",
+        "requested_budget_display": "2,700 USDC",
+        "routed_budget_display": "No direct spend",
+        "proposer_label": "fattybuthappy.eth"
+      },
+      "site_value": {
+        "title": "GNARS x BluntDao Blunt Olympics in Thailand",
+        "status": "defeated",
+        "proposer_label": "fattybuthappy.eth",
+        "source_url": "https://www.gnars.com/proposals/base/43",
+        "canonical_url": "https://www.gnars.com/proposals/base/43"
+      },
+      "chain_value": {
+        "status": "defeated",
+        "transaction_count": 1,
+        "routed_budget_display": "No direct spend",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "resolved_value": {
+        "title": "GNARS x BluntDao Blunt Olympics in Thailand",
+        "status": "defeated",
+        "requested_budget_display": "2,700 USDC",
+        "routed_budget_display": "No direct spend",
+        "proposer_label": "fattybuthappy.eth",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/43",
+        "https://basescan.org/tx/0xe3984fd28efd091f4b9dc3031d57875341ab2dcb5a445b33130d369b017fdb06"
+      ]
+    },
+    {
+      "archive_id": "gnars-base-42",
+      "proposal_number": 42,
+      "title": " Rodrigo Panajotti Onboarding Proposal ",
+      "platform": "gnars.com",
+      "chain": "base",
+      "site_status": "executed",
+      "chain_status": "executed",
+      "resolved_status": "executed",
+      "repo_value": {
+        "title": " Rodrigo Panajotti Onboarding Proposal ",
+        "status": "executed",
+        "requested_budget_display": "0.00042 ETH",
+        "routed_budget_display": "0.00042 ETH",
+        "proposer_label": "0x41cb...be4a"
+      },
+      "site_value": {
+        "title": " Rodrigo Panajotti Onboarding Proposal ",
+        "status": "executed",
+        "proposer_label": "0x41cb...be4a",
+        "source_url": "https://www.gnars.com/proposals/base/42",
+        "canonical_url": "https://www.gnars.com/proposals/base/42"
+      },
+      "chain_value": {
+        "status": "executed",
+        "transaction_count": 2,
+        "routed_budget_display": "0.00042 ETH",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "resolved_value": {
+        "title": " Rodrigo Panajotti Onboarding Proposal ",
+        "status": "executed",
+        "requested_budget_display": "0.00042 ETH",
+        "routed_budget_display": "0.00042 ETH",
+        "proposer_label": "0x41cb...be4a",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/42",
+        "https://basescan.org/tx/0x4c4d6430b5f2113e66669a377c2877819f57026521e845e20320ec19f5e65884"
       ]
     },
     {
@@ -2279,7 +3461,7 @@
         "status": "executed",
         "proposer_label": "0x41cb...be4a",
         "source_url": "https://www.gnars.com/proposals/base/41",
-        "canonical_url": "https://gnars.com/proposals/base/41"
+        "canonical_url": "https://www.gnars.com/proposals/base/41"
       },
       "chain_value": {
         "status": "executed",
@@ -2299,7 +3481,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/41",
-        "https://gnars.com/proposals/base/41",
         "https://basescan.org/tx/0x193ec0d86f9643ff32e59aa987dec5d6c496b20853cfc7125ab1638e0106870b"
       ]
     },
@@ -2324,7 +3505,7 @@
         "status": "executed",
         "proposer_label": "overhau1.eth",
         "source_url": "https://www.gnars.com/proposals/base/40",
-        "canonical_url": "https://gnars.com/proposals/base/40"
+        "canonical_url": "https://www.gnars.com/proposals/base/40"
       },
       "chain_value": {
         "status": "executed",
@@ -2344,7 +3525,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/40",
-        "https://gnars.com/proposals/base/40",
         "https://basescan.org/tx/0x2243c40c479b400878857d7086aa8a0137e69e9d232c39c82c316277e1925d8b"
       ]
     },
@@ -2369,7 +3549,7 @@
         "status": "executed",
         "proposer_label": "zimardrp.eth",
         "source_url": "https://www.gnars.com/proposals/base/39",
-        "canonical_url": "https://gnars.com/proposals/base/39"
+        "canonical_url": "https://www.gnars.com/proposals/base/39"
       },
       "chain_value": {
         "status": "executed",
@@ -2389,7 +3569,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/39",
-        "https://gnars.com/proposals/base/39",
         "https://basescan.org/tx/0x390d9db67739501e1feee95fdb6a526ff01c5c0df02004f9362c5da2c2ed417b"
       ]
     },
@@ -2414,7 +3593,7 @@
         "status": "executed",
         "proposer_label": "fattybuthappy.eth",
         "source_url": "https://www.gnars.com/proposals/base/38",
-        "canonical_url": "https://gnars.com/proposals/base/38"
+        "canonical_url": "https://www.gnars.com/proposals/base/38"
       },
       "chain_value": {
         "status": "executed",
@@ -2434,7 +3613,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/38",
-        "https://gnars.com/proposals/base/38",
         "https://basescan.org/tx/0x217e59c6d7d7f0585c08cf6236826bcf609bb01898cd864d4c16894d7c6480e3"
       ]
     },
@@ -2459,7 +3637,7 @@
         "status": "executed",
         "proposer_label": "beaglexv.eth",
         "source_url": "https://www.gnars.com/proposals/base/37",
-        "canonical_url": "https://gnars.com/proposals/base/37"
+        "canonical_url": "https://www.gnars.com/proposals/base/37"
       },
       "chain_value": {
         "status": "executed",
@@ -2479,7 +3657,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/37",
-        "https://gnars.com/proposals/base/37",
         "https://basescan.org/tx/0x2abfdc854f1cc13ed6f5782eec90dbf5f88bd7d055b1fda169a2ac2b59815de2"
       ]
     },
@@ -2504,7 +3681,7 @@
         "status": "executed",
         "proposer_label": "0x09e9...88ea",
         "source_url": "https://www.gnars.com/proposals/base/36",
-        "canonical_url": "https://gnars.com/proposals/base/36"
+        "canonical_url": "https://www.gnars.com/proposals/base/36"
       },
       "chain_value": {
         "status": "executed",
@@ -2524,7 +3701,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/36",
-        "https://gnars.com/proposals/base/36",
         "https://basescan.org/tx/0xc16daf98122881d800df5fed6f657559542b52266b8e4444af1d180a39d1343b"
       ]
     },
@@ -2549,7 +3725,7 @@
         "status": "executed",
         "proposer_label": "0x09e9...88ea",
         "source_url": "https://www.gnars.com/proposals/base/35",
-        "canonical_url": "https://gnars.com/proposals/base/35"
+        "canonical_url": "https://www.gnars.com/proposals/base/35"
       },
       "chain_value": {
         "status": "executed",
@@ -2569,7 +3745,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/35",
-        "https://gnars.com/proposals/base/35",
         "https://basescan.org/tx/0xe9d783925e19301d666e7ad142792fc9c3aebb2b26a2e2134af9b1869189130e"
       ]
     },
@@ -2594,7 +3769,7 @@
         "status": "cancelled",
         "proposer_label": "0x09e9...88ea",
         "source_url": "https://www.gnars.com/proposals/base/34",
-        "canonical_url": "https://gnars.com/proposals/base/34"
+        "canonical_url": "https://www.gnars.com/proposals/base/34"
       },
       "chain_value": {
         "status": "cancelled",
@@ -2614,7 +3789,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/34",
-        "https://gnars.com/proposals/base/34",
         "https://basescan.org/tx/0x66638603fce34a67f452bf142c308e9f308c3c9a32ff613b4063d7ab6940174e"
       ]
     },
@@ -2639,7 +3813,7 @@
         "status": "executed",
         "proposer_label": "gami.eth",
         "source_url": "https://www.gnars.com/proposals/base/33",
-        "canonical_url": "https://gnars.com/proposals/base/33"
+        "canonical_url": "https://www.gnars.com/proposals/base/33"
       },
       "chain_value": {
         "status": "executed",
@@ -2659,7 +3833,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/33",
-        "https://gnars.com/proposals/base/33",
         "https://basescan.org/tx/0xc497aa89b9b4a673140409b2c47b823a0000864c38cc2dfd43827a137ee6f525"
       ]
     },
@@ -2684,7 +3857,7 @@
         "status": "executed",
         "proposer_label": "marinioac.eth",
         "source_url": "https://www.gnars.com/proposals/base/32",
-        "canonical_url": "https://gnars.com/proposals/base/32"
+        "canonical_url": "https://www.gnars.com/proposals/base/32"
       },
       "chain_value": {
         "status": "executed",
@@ -2704,7 +3877,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/32",
-        "https://gnars.com/proposals/base/32",
         "https://basescan.org/tx/0xbe4608219e691c55f4f16fefd264d58ddd7f33b0b129a74eb8ec858d5f874a37"
       ]
     },
@@ -2729,7 +3901,7 @@
         "status": "executed",
         "proposer_label": "0xd119...c7d8",
         "source_url": "https://www.gnars.com/proposals/base/31",
-        "canonical_url": "https://gnars.com/proposals/base/31"
+        "canonical_url": "https://www.gnars.com/proposals/base/31"
       },
       "chain_value": {
         "status": "executed",
@@ -2749,7 +3921,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/31",
-        "https://gnars.com/proposals/base/31",
         "https://basescan.org/tx/0xe75a2951fec7ddcaab92ac773f35599e3ca744bdf141d782310d9acc19b20922"
       ]
     },
@@ -2774,7 +3945,7 @@
         "status": "executed",
         "proposer_label": "gami.eth",
         "source_url": "https://www.gnars.com/proposals/base/30",
-        "canonical_url": "https://gnars.com/proposals/base/30"
+        "canonical_url": "https://www.gnars.com/proposals/base/30"
       },
       "chain_value": {
         "status": "executed",
@@ -2794,7 +3965,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/30",
-        "https://gnars.com/proposals/base/30",
         "https://basescan.org/tx/0x970ebcc9afb220fe5a88c92b637dca148d6cf9c271eaff027d8689433e595fdc"
       ]
     },
@@ -2819,7 +3989,7 @@
         "status": "executed",
         "proposer_label": "tomrohrer.eth",
         "source_url": "https://www.gnars.com/proposals/base/29",
-        "canonical_url": "https://gnars.com/proposals/base/29"
+        "canonical_url": "https://www.gnars.com/proposals/base/29"
       },
       "chain_value": {
         "status": "executed",
@@ -2839,7 +4009,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/29",
-        "https://gnars.com/proposals/base/29",
         "https://basescan.org/tx/0xcca837536bf3eed2645cf300ecb3ee927cdd65fe6d56588c1056c94e4d52920b"
       ]
     },
@@ -2864,7 +4033,7 @@
         "status": "executed",
         "proposer_label": "luizhadad.eth",
         "source_url": "https://www.gnars.com/proposals/base/28",
-        "canonical_url": "https://gnars.com/proposals/base/28"
+        "canonical_url": "https://www.gnars.com/proposals/base/28"
       },
       "chain_value": {
         "status": "executed",
@@ -2884,7 +4053,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/28",
-        "https://gnars.com/proposals/base/28",
         "https://basescan.org/tx/0x5baeab1a9278a47d08119ef20ef1a8019190a8afc32c4953687198488645c3d2"
       ]
     },
@@ -2909,7 +4077,7 @@
         "status": "executed",
         "proposer_label": "0x5979...8db0",
         "source_url": "https://www.gnars.com/proposals/base/27",
-        "canonical_url": "https://gnars.com/proposals/base/27"
+        "canonical_url": "https://www.gnars.com/proposals/base/27"
       },
       "chain_value": {
         "status": "executed",
@@ -2929,7 +4097,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/27",
-        "https://gnars.com/proposals/base/27",
         "https://basescan.org/tx/0x70842b5750be5e8c1116a735f3319c67aea95f74a4ce9f52ce4856800da4ffec"
       ]
     },
@@ -2954,7 +4121,7 @@
         "status": "executed",
         "proposer_label": "0xeed9...a282",
         "source_url": "https://www.gnars.com/proposals/base/26",
-        "canonical_url": "https://gnars.com/proposals/base/26"
+        "canonical_url": "https://www.gnars.com/proposals/base/26"
       },
       "chain_value": {
         "status": "executed",
@@ -2974,7 +4141,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/26",
-        "https://gnars.com/proposals/base/26",
         "https://basescan.org/tx/0x0225ef090852773ccc266db1964f264c36c1be511f44886abb6efa02f0dfdb91"
       ]
     },
@@ -2999,7 +4165,7 @@
         "status": "executed",
         "proposer_label": "fuzzyface.eth",
         "source_url": "https://www.gnars.com/proposals/base/25",
-        "canonical_url": "https://gnars.com/proposals/base/25"
+        "canonical_url": "https://www.gnars.com/proposals/base/25"
       },
       "chain_value": {
         "status": "executed",
@@ -3019,7 +4185,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/25",
-        "https://gnars.com/proposals/base/25",
         "https://basescan.org/tx/0x13be48c14c066926461c450d3fc7db78261d6bacb3ab357f4743a82e0b78365f"
       ]
     },
@@ -3044,7 +4209,7 @@
         "status": "executed",
         "proposer_label": "0x356d...f7e6",
         "source_url": "https://www.gnars.com/proposals/base/24",
-        "canonical_url": "https://gnars.com/proposals/base/24"
+        "canonical_url": "https://www.gnars.com/proposals/base/24"
       },
       "chain_value": {
         "status": "executed",
@@ -3064,7 +4229,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/24",
-        "https://gnars.com/proposals/base/24",
         "https://basescan.org/tx/0x9788426b1d6025ba1e394b4ed3d51a270f0e34e536cf55b54258f16edad09c55"
       ]
     },
@@ -3089,7 +4253,7 @@
         "status": "executed",
         "proposer_label": "rocketman21.eth",
         "source_url": "https://www.gnars.com/proposals/base/23",
-        "canonical_url": "https://gnars.com/proposals/base/23"
+        "canonical_url": "https://www.gnars.com/proposals/base/23"
       },
       "chain_value": {
         "status": "executed",
@@ -3109,7 +4273,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/23",
-        "https://gnars.com/proposals/base/23",
         "https://basescan.org/tx/0x249daed254e00afc0597cbe7284d42f1b1c4efe9af899fb40990748e34d9965e"
       ]
     },
@@ -3134,7 +4297,7 @@
         "status": "executed",
         "proposer_label": "0xeed9...a282",
         "source_url": "https://www.gnars.com/proposals/base/22",
-        "canonical_url": "https://gnars.com/proposals/base/22"
+        "canonical_url": "https://www.gnars.com/proposals/base/22"
       },
       "chain_value": {
         "status": "executed",
@@ -3154,7 +4317,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/22",
-        "https://gnars.com/proposals/base/22",
         "https://basescan.org/tx/0x365c7c522ae61861f34e916cd735737af786477f129697f66395e95cb205ea0f"
       ]
     },
@@ -3179,7 +4341,7 @@
         "status": "executed",
         "proposer_label": "0x41cb...be4a",
         "source_url": "https://www.gnars.com/proposals/base/21",
-        "canonical_url": "https://gnars.com/proposals/base/21"
+        "canonical_url": "https://www.gnars.com/proposals/base/21"
       },
       "chain_value": {
         "status": "executed",
@@ -3199,7 +4361,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/21",
-        "https://gnars.com/proposals/base/21",
         "https://basescan.org/tx/0x36d7ddc48c9939c8531f5e8464e5567636c8427c8f2029b7821532b567bd2748"
       ]
     },
@@ -3224,7 +4385,7 @@
         "status": "executed",
         "proposer_label": "0x7351...53f8",
         "source_url": "https://www.gnars.com/proposals/base/20",
-        "canonical_url": "https://gnars.com/proposals/base/20"
+        "canonical_url": "https://www.gnars.com/proposals/base/20"
       },
       "chain_value": {
         "status": "executed",
@@ -3244,7 +4405,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/20",
-        "https://gnars.com/proposals/base/20",
         "https://basescan.org/tx/0x3a27bba2241d510033ea4e636e87a7b0f6b2db21a2fe3c4ed41d496a2bc26e17"
       ]
     },
@@ -3269,7 +4429,7 @@
         "status": "executed",
         "proposer_label": "0xbb4e...ef62",
         "source_url": "https://www.gnars.com/proposals/base/19",
-        "canonical_url": "https://gnars.com/proposals/base/19"
+        "canonical_url": "https://www.gnars.com/proposals/base/19"
       },
       "chain_value": {
         "status": "executed",
@@ -3289,7 +4449,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/19",
-        "https://gnars.com/proposals/base/19",
         "https://basescan.org/tx/0xe8cf4eea720d91f8a5b53cd5e1f9c5f8d5f10a53b2dd4650239fb06db7c42d54"
       ]
     },
@@ -3314,7 +4473,7 @@
         "status": "executed",
         "proposer_label": "luizhadad.eth",
         "source_url": "https://www.gnars.com/proposals/base/18",
-        "canonical_url": "https://gnars.com/proposals/base/18"
+        "canonical_url": "https://www.gnars.com/proposals/base/18"
       },
       "chain_value": {
         "status": "executed",
@@ -3334,7 +4493,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/18",
-        "https://gnars.com/proposals/base/18",
         "https://basescan.org/tx/0x48edb4f298f58d51f19ca8c8e43bc8f16df7b3b95136b7fdbe595e292bc79326"
       ]
     },
@@ -3359,7 +4517,7 @@
         "status": "executed",
         "proposer_label": "0x41cb...be4a",
         "source_url": "https://www.gnars.com/proposals/base/17",
-        "canonical_url": "https://gnars.com/proposals/base/17"
+        "canonical_url": "https://www.gnars.com/proposals/base/17"
       },
       "chain_value": {
         "status": "executed",
@@ -3379,7 +4537,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/17",
-        "https://gnars.com/proposals/base/17",
         "https://basescan.org/tx/0x70a04134361e957e3612963d03b6361643a7b546c490930b44d70f8e5d9a838c"
       ]
     },
@@ -3404,7 +4561,7 @@
         "status": "executed",
         "proposer_label": "rickyday.eth",
         "source_url": "https://www.gnars.com/proposals/base/16",
-        "canonical_url": "https://gnars.com/proposals/base/16"
+        "canonical_url": "https://www.gnars.com/proposals/base/16"
       },
       "chain_value": {
         "status": "executed",
@@ -3424,7 +4581,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/16",
-        "https://gnars.com/proposals/base/16",
         "https://basescan.org/tx/0x9e49c6e89246adf9ae0da3fda6736eaa865b505dbcbaf4a186fe5f75ecce6f84"
       ]
     },
@@ -3449,7 +4605,7 @@
         "status": "defeated",
         "proposer_label": "0xbb4e...ef62",
         "source_url": "https://www.gnars.com/proposals/base/15",
-        "canonical_url": "https://gnars.com/proposals/base/15"
+        "canonical_url": "https://www.gnars.com/proposals/base/15"
       },
       "chain_value": {
         "status": "defeated",
@@ -3469,7 +4625,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/15",
-        "https://gnars.com/proposals/base/15",
         "https://basescan.org/tx/0x2d2279057adb259eec3f9c52347007b2f85c23f25ec66f5a8718c7acd8b076f2"
       ]
     },
@@ -3494,7 +4649,7 @@
         "status": "executed",
         "proposer_label": "0x41cb...be4a",
         "source_url": "https://www.gnars.com/proposals/base/14",
-        "canonical_url": "https://gnars.com/proposals/base/14"
+        "canonical_url": "https://www.gnars.com/proposals/base/14"
       },
       "chain_value": {
         "status": "executed",
@@ -3514,7 +4669,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/14",
-        "https://gnars.com/proposals/base/14",
         "https://basescan.org/tx/0x3de9132dbaecb44a436807326530071f9f096792af25682c7e2b0d4759a4c443"
       ]
     },
@@ -3539,7 +4693,7 @@
         "status": "defeated",
         "proposer_label": "rickyday.eth",
         "source_url": "https://www.gnars.com/proposals/base/13",
-        "canonical_url": "https://gnars.com/proposals/base/13"
+        "canonical_url": "https://www.gnars.com/proposals/base/13"
       },
       "chain_value": {
         "status": "defeated",
@@ -3559,7 +4713,6 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/13",
-        "https://gnars.com/proposals/base/13",
         "https://basescan.org/tx/0x6e4b78765a5067fed2142c408b3712243ecbf6827e9d3de4a633d56c639356c6"
       ]
     },
@@ -3575,7 +4728,7 @@
       "repo_value": {
         "title": "Fund the Community and Tech Pods with Sendit",
         "status": "executed",
-        "requested_budget_display": "77,777,777,769,999,996,574,236,672 SENDIT",
+        "requested_budget_display": "77,777,777.77 SENDIT",
         "routed_budget_display": "77,777,777.77 SENDIT",
         "proposer_label": "bagelface.eth"
       },
@@ -3584,7 +4737,7 @@
         "status": "executed",
         "proposer_label": "bagelface.eth",
         "source_url": "https://www.gnars.com/proposals/base/12",
-        "canonical_url": "https://gnars.com/proposals/base/12"
+        "canonical_url": "https://www.gnars.com/proposals/base/12"
       },
       "chain_value": {
         "status": "executed",
@@ -3595,7 +4748,7 @@
       "resolved_value": {
         "title": "Fund the Community and Tech Pods with Sendit",
         "status": "executed",
-        "requested_budget_display": "77,777,777,769,999,996,574,236,672 SENDIT",
+        "requested_budget_display": "77,777,777.77 SENDIT",
         "routed_budget_display": "77,777,777.77 SENDIT",
         "proposer_label": "bagelface.eth",
         "treasury_source_label": "Gnars Treasury"
@@ -3604,8 +4757,51 @@
       "mismatch_fields": [],
       "evidence_urls": [
         "https://www.gnars.com/proposals/base/12",
-        "https://gnars.com/proposals/base/12",
         "https://basescan.org/tx/0x186efb697bec51c5ab67adeb7511edb87c1dd1be5da9bc8f1ad738a15dbb9310"
+      ]
+    },
+    {
+      "archive_id": "gnars-base-11",
+      "proposal_number": 11,
+      "title": "Fernando Ferreira Onboarding Proposal",
+      "platform": "gnars.com",
+      "chain": "base",
+      "site_status": "executed",
+      "chain_status": "executed",
+      "resolved_status": "executed",
+      "repo_value": {
+        "title": "Fernando Ferreira Onboarding Proposal",
+        "status": "executed",
+        "requested_budget_display": "No direct spend",
+        "routed_budget_display": "No direct spend",
+        "proposer_label": "willdias.eth"
+      },
+      "site_value": {
+        "title": "Fernando Ferreira Onboarding Proposal",
+        "status": "executed",
+        "proposer_label": "willdias.eth",
+        "source_url": "https://www.gnars.com/proposals/base/11",
+        "canonical_url": "https://www.gnars.com/proposals/base/11"
+      },
+      "chain_value": {
+        "status": "executed",
+        "transaction_count": 1,
+        "routed_budget_display": "No direct spend",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "resolved_value": {
+        "title": "Fernando Ferreira Onboarding Proposal",
+        "status": "executed",
+        "requested_budget_display": "No direct spend",
+        "routed_budget_display": "No direct spend",
+        "proposer_label": "willdias.eth",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/11",
+        "https://basescan.org/tx/0xfde759e517f04c04654675ed1cfebc633d64caa9fe9584e0e5a5d9c449d7a638"
       ]
     },
     {
@@ -3629,7 +4825,7 @@
         "status": "executed",
         "proposer_label": "gami.eth",
         "source_url": "https://www.gnars.com/proposals/ethereum/38",
-        "canonical_url": "https://gnars.com/proposals/ethereum/38"
+        "canonical_url": "https://www.gnars.com/proposals/ethereum/38"
       },
       "chain_value": {
         "status": "executed",
@@ -3648,8 +4844,7 @@
       "reconciliation_status": "matched",
       "mismatch_fields": [],
       "evidence_urls": [
-        "https://www.gnars.com/proposals/ethereum/38",
-        "https://gnars.com/proposals/ethereum/38"
+        "https://www.gnars.com/proposals/ethereum/38"
       ]
     },
     {
@@ -3707,8 +4902,8 @@
       "repo_value": {
         "title": "Refund Support for Film Ode to Skate with 0,253ETH -  U$1000",
         "status": "executed",
-        "requested_budget_display": "No direct spend",
-        "routed_budget_display": "No direct spend",
+        "requested_budget_display": "0.253 ETH",
+        "routed_budget_display": "0.253 ETH",
         "proposer_label": "0xc269...67fd"
       },
       "site_value": {
@@ -3716,27 +4911,26 @@
         "status": "executed",
         "proposer_label": "0xc269...67fd",
         "source_url": "https://www.gnars.com/proposals/snapshot/101",
-        "canonical_url": "https://gnars.com/proposals/snapshot/101"
+        "canonical_url": "https://www.gnars.com/proposals/snapshot/101"
       },
       "chain_value": {
         "status": "executed",
-        "transaction_count": 0,
-        "routed_budget_display": "No direct spend",
+        "transaction_count": 1,
+        "routed_budget_display": "0.253 ETH",
         "treasury_source_label": "Snapshot Treasury"
       },
       "resolved_value": {
         "title": "Refund Support for Film Ode to Skate with 0,253ETH -  U$1000",
         "status": "executed",
-        "requested_budget_display": "No direct spend",
-        "routed_budget_display": "No direct spend",
+        "requested_budget_display": "0.253 ETH",
+        "routed_budget_display": "0.253 ETH",
         "proposer_label": "0xc269...67fd",
         "treasury_source_label": "Snapshot Treasury"
       },
       "reconciliation_status": "matched",
       "mismatch_fields": [],
       "evidence_urls": [
-        "https://www.gnars.com/proposals/snapshot/101",
-        "https://gnars.com/proposals/snapshot/101"
+        "https://www.gnars.com/proposals/snapshot/101"
       ]
     },
     {
@@ -3760,7 +4954,7 @@
         "status": "executed",
         "proposer_label": "gami.eth",
         "source_url": "https://www.gnars.com/proposals/ethereum/37",
-        "canonical_url": "https://gnars.com/proposals/ethereum/37"
+        "canonical_url": "https://www.gnars.com/proposals/ethereum/37"
       },
       "chain_value": {
         "status": "executed",
@@ -3779,8 +4973,7 @@
       "reconciliation_status": "matched",
       "mismatch_fields": [],
       "evidence_urls": [
-        "https://www.gnars.com/proposals/ethereum/37",
-        "https://gnars.com/proposals/ethereum/37"
+        "https://www.gnars.com/proposals/ethereum/37"
       ]
     },
     {
@@ -3804,7 +4997,7 @@
         "status": "cancelled",
         "proposer_label": "ourrevolution.eth",
         "source_url": "https://www.gnars.com/proposals/ethereum/36",
-        "canonical_url": "https://gnars.com/proposals/ethereum/36"
+        "canonical_url": "https://www.gnars.com/proposals/ethereum/36"
       },
       "chain_value": {
         "status": "cancelled",
@@ -3823,8 +5016,7 @@
       "reconciliation_status": "matched",
       "mismatch_fields": [],
       "evidence_urls": [
-        "https://www.gnars.com/proposals/ethereum/36",
-        "https://gnars.com/proposals/ethereum/36"
+        "https://www.gnars.com/proposals/ethereum/36"
       ]
     },
     {
@@ -3848,7 +5040,7 @@
         "status": "active",
         "proposer_label": "fattybuthappy.eth",
         "source_url": "https://www.gnars.com/proposals/ethereum/35",
-        "canonical_url": "https://gnars.com/proposals/ethereum/35"
+        "canonical_url": "https://www.gnars.com/proposals/ethereum/35"
       },
       "chain_value": {
         "status": "active",
@@ -3867,8 +5059,7 @@
       "reconciliation_status": "matched",
       "mismatch_fields": [],
       "evidence_urls": [
-        "https://www.gnars.com/proposals/ethereum/35",
-        "https://gnars.com/proposals/ethereum/35"
+        "https://www.gnars.com/proposals/ethereum/35"
       ]
     },
     {
@@ -3892,7 +5083,7 @@
         "status": "executed",
         "proposer_label": "zimardrp.eth",
         "source_url": "https://www.gnars.com/proposals/ethereum/34",
-        "canonical_url": "https://gnars.com/proposals/ethereum/34"
+        "canonical_url": "https://www.gnars.com/proposals/ethereum/34"
       },
       "chain_value": {
         "status": "executed",
@@ -3911,8 +5102,7 @@
       "reconciliation_status": "matched",
       "mismatch_fields": [],
       "evidence_urls": [
-        "https://www.gnars.com/proposals/ethereum/34",
-        "https://gnars.com/proposals/ethereum/34"
+        "https://www.gnars.com/proposals/ethereum/34"
       ]
     },
     {
@@ -3979,7 +5169,7 @@
         "status": "executed",
         "proposer_label": "davinoyesigye.eth",
         "source_url": "https://www.gnars.com/proposals/snapshot/100",
-        "canonical_url": "https://gnars.com/proposals/snapshot/100"
+        "canonical_url": "https://www.gnars.com/proposals/snapshot/100"
       },
       "chain_value": {
         "status": "executed",
@@ -3998,8 +5188,7 @@
       "reconciliation_status": "matched",
       "mismatch_fields": [],
       "evidence_urls": [
-        "https://www.gnars.com/proposals/snapshot/100",
-        "https://gnars.com/proposals/snapshot/100"
+        "https://www.gnars.com/proposals/snapshot/100"
       ]
     },
     {
@@ -4023,7 +5212,7 @@
         "status": "executed",
         "proposer_label": "joaoborges.eth",
         "source_url": "https://www.gnars.com/proposals/ethereum/33",
-        "canonical_url": "https://gnars.com/proposals/ethereum/33"
+        "canonical_url": "https://www.gnars.com/proposals/ethereum/33"
       },
       "chain_value": {
         "status": "executed",
@@ -4042,8 +5231,7 @@
       "reconciliation_status": "matched",
       "mismatch_fields": [],
       "evidence_urls": [
-        "https://www.gnars.com/proposals/ethereum/33",
-        "https://gnars.com/proposals/ethereum/33"
+        "https://www.gnars.com/proposals/ethereum/33"
       ]
     },
     {
@@ -4067,7 +5255,7 @@
         "status": "executed",
         "proposer_label": "bagelface.eth",
         "source_url": "https://www.gnars.com/proposals/ethereum/32",
-        "canonical_url": "https://gnars.com/proposals/ethereum/32"
+        "canonical_url": "https://www.gnars.com/proposals/ethereum/32"
       },
       "chain_value": {
         "status": "executed",
@@ -4086,8 +5274,7 @@
       "reconciliation_status": "matched",
       "mismatch_fields": [],
       "evidence_urls": [
-        "https://www.gnars.com/proposals/ethereum/32",
-        "https://gnars.com/proposals/ethereum/32"
+        "https://www.gnars.com/proposals/ethereum/32"
       ]
     },
     {
@@ -4111,7 +5298,7 @@
         "status": "executed",
         "proposer_label": "0x26f0...e0c8",
         "source_url": "https://www.gnars.com/proposals/ethereum/31",
-        "canonical_url": "https://gnars.com/proposals/ethereum/31"
+        "canonical_url": "https://www.gnars.com/proposals/ethereum/31"
       },
       "chain_value": {
         "status": "executed",
@@ -4130,8 +5317,7 @@
       "reconciliation_status": "matched",
       "mismatch_fields": [],
       "evidence_urls": [
-        "https://www.gnars.com/proposals/ethereum/31",
-        "https://gnars.com/proposals/ethereum/31"
+        "https://www.gnars.com/proposals/ethereum/31"
       ]
     },
     {
@@ -4155,7 +5341,7 @@
         "status": "executed",
         "proposer_label": "ourrevolution.eth",
         "source_url": "https://www.gnars.com/proposals/ethereum/30",
-        "canonical_url": "https://gnars.com/proposals/ethereum/30"
+        "canonical_url": "https://www.gnars.com/proposals/ethereum/30"
       },
       "chain_value": {
         "status": "executed",
@@ -4174,8 +5360,7 @@
       "reconciliation_status": "matched",
       "mismatch_fields": [],
       "evidence_urls": [
-        "https://www.gnars.com/proposals/ethereum/30",
-        "https://gnars.com/proposals/ethereum/30"
+        "https://www.gnars.com/proposals/ethereum/30"
       ]
     },
     {
@@ -4242,7 +5427,7 @@
         "status": "executed",
         "proposer_label": "0x41cb...be4a",
         "source_url": "https://www.gnars.com/proposals/snapshot/99",
-        "canonical_url": "https://gnars.com/proposals/snapshot/99"
+        "canonical_url": "https://www.gnars.com/proposals/snapshot/99"
       },
       "chain_value": {
         "status": "executed",
@@ -4261,8 +5446,7 @@
       "reconciliation_status": "matched",
       "mismatch_fields": [],
       "evidence_urls": [
-        "https://www.gnars.com/proposals/snapshot/99",
-        "https://gnars.com/proposals/snapshot/99"
+        "https://www.gnars.com/proposals/snapshot/99"
       ]
     },
     {

@@ -477,7 +477,10 @@ export function TreasuryPage({ meta, props }: { meta: Meta; props: TreasuryPageP
                     <span className={`asset-chip asset-${route.assetTone}`}>{route.assetDisplaySymbol}</span>
                     <small>{route.assetDescriptor}</small>
                   </span>
-                  <span className="ledger-cell ledger-mono ledger-amount">{route.amountLabel}</span>
+                  <span className="ledger-cell ledger-primary ledger-amount">
+                    <strong>{route.amountLabel}</strong>
+                    {route.usdValueLabel ? <small>{route.usdValueLabel} @ {route.valuationDateLabel ?? "execution"}</small> : null}
+                  </span>
                 </div>
               ))}
               {!routes.length ? (

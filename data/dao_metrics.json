@@ -1,22 +1,22 @@
 {
   "dataset": "dao_metrics",
-  "as_of": "2026-03-19T03:35:14.475549Z",
+  "as_of": "2026-03-20T20:14:44.603849Z",
   "version": 1,
   "overview": {
-    "proposal_count": 193,
-    "active_proposal_count": 3,
-    "successful_proposal_count": 155,
-    "closed_outcome_count": 190,
-    "proposal_success_rate_pct": 81.58,
-    "people_count": 1171,
+    "proposal_count": 222,
+    "active_proposal_count": 2,
+    "successful_proposal_count": 170,
+    "closed_outcome_count": 219,
+    "proposal_success_rate_pct": 77.63,
+    "people_count": 1180,
     "holders_count": 1011,
     "delegates_count": 992,
-    "contributors_count": 90,
-    "athletes_count": 35,
-    "recipients_count": 42,
-    "proposers_count": 68,
-    "unique_voters_count": 436,
-    "avg_votes_per_proposal": 20.25,
+    "contributors_count": 98,
+    "athletes_count": 41,
+    "recipients_count": 51,
+    "proposers_count": 73,
+    "unique_voters_count": 464,
+    "avg_votes_per_proposal": 20.03,
     "median_votes_per_proposal": 21.0,
     "workstream_count": 2,
     "workstream_status_counts": {
@@ -24,74 +24,75 @@
       "superseded": 1
     },
     "treasury_assets_count": 6,
-    "treasury_total_value_usd": 45702.279909669734,
-    "outflows_eth": 19.01823954,
-    "outflows_usdc": 148083.0,
+    "treasury_total_value_usd": 44736.99098223059,
+    "outflows_eth": 21.27165954,
+    "outflows_usdc": 170693.0,
     "outflows_gnars": 0,
-    "fungible_transfer_count": 52,
-    "nft_transfer_count": 14,
-    "routed_proposal_count": 43,
-    "routed_proposal_share_pct": 22.28,
-    "top10_recipient_concentration_usdc_pct": 69.54,
-    "top10_recipient_concentration_eth_pct": 98.94,
-    "proposals_30d": 4,
-    "successful_proposals_30d": 0,
-    "payout_routes_30d": 0,
+    "fungible_transfer_count": 65,
+    "nft_transfer_count": 20,
+    "routed_proposal_count": 55,
+    "routed_proposal_share_pct": 24.77,
+    "top10_recipient_concentration_usdc_pct": 65.8,
+    "top10_recipient_concentration_eth_pct": 94.94,
+    "proposals_30d": 7,
+    "successful_proposals_30d": 1,
+    "payout_routes_30d": 1,
     "deliveries_30d": 3,
-    "active_recipients_30d": 0,
+    "active_recipients_30d": 1,
     "days_since_last_proposal": 0,
-    "days_since_last_payout": 130,
-    "days_since_last_delivery": 1,
+    "days_since_last_payout": 3,
+    "days_since_last_delivery": 2,
     "proposal_status_counts": {
-      "active": 3,
-      "cancelled": 12,
+      "active": 2,
+      "cancelled": 16,
       "closed": 101,
-      "defeated": 12,
-      "executed": 65
+      "defeated": 22,
+      "executed": 80,
+      "succeeded": 1
     }
   },
   "treasury": {
     "wallet_address": "0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
     "wallet_label": "Gnars DAO Treasury",
     "homepage_treasury_label_usd": 46500.0,
-    "treasury_page_total_value_usd": 45702.279909669734,
+    "treasury_page_total_value_usd": 44736.99098223059,
     "treasury_page_display_total_usd": 0.0,
     "assets": [
       {
         "symbol": "USDC",
         "name": "USD Coin",
         "amount": 21396.243942,
-        "value_usd": 21396.20114951212
+        "value_usd": 21394.703412436178
       },
       {
         "symbol": "SENDIT",
         "name": "Sendit",
         "amount": 474092937.5544444,
-        "value_usd": 4750.411234295533
+        "value_usd": 4574.996847400389
       },
       {
         "symbol": "WETH",
         "name": "Wrapped Ether",
         "amount": 0.02752447,
-        "value_usd": 60.65457356019999
+        "value_usd": 58.41710939389999
       },
       {
         "symbol": "GNARS",
         "name": "gnars",
         "amount": 562300.0,
-        "value_usd": 8.84
+        "value_usd": 8.74
       },
       {
         "symbol": "SKATEHACKER",
         "name": "skatehacker",
         "amount": 69400.0,
-        "value_usd": 1.91
+        "value_usd": 1.89
       },
       {
         "symbol": "ZIMARDRP",
         "name": "zimardrp",
         "amount": 111100.0,
-        "value_usd": 1.38
+        "value_usd": 1.37
       }
     ]
   },
@@ -115,6 +116,20 @@
         "display_name": "0x2443...5c87",
         "address": "0x244306053c673b93bc9885fdacfc352032725c87",
         "slug": "0x2443-5c87",
+        "value": 1.0,
+        "label": "ETH received"
+      },
+      {
+        "display_name": "0xe5f6...8beb",
+        "address": "0xe5f6202ff7ddc5273c249073865bc6f4d5d68beb",
+        "slug": "0xe5f6-8beb",
+        "value": 1.0,
+        "label": "ETH received"
+      },
+      {
+        "display_name": "r4topunk",
+        "address": "0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d",
+        "slug": "r4topunk",
         "value": 1.0,
         "label": "ETH received"
       },
@@ -152,20 +167,6 @@
         "slug": "fattybuthappy-eth",
         "value": 0.43,
         "label": "ETH received"
-      },
-      {
-        "display_name": "7capas.eth",
-        "address": "0x9ad8d2a8ef4bf60a667dd43fcb178bdbd93ae1c8",
-        "slug": "7capas-eth",
-        "value": 0.42,
-        "label": "ETH received"
-      },
-      {
-        "display_name": "bagelface.eth",
-        "address": "0xba6e1c26be2f8b46d9e7ab7573b99921ee81acf5",
-        "slug": "bagelface-eth",
-        "value": 0.2,
-        "label": "ETH received"
       }
     ],
     "usdc_received": [
@@ -173,7 +174,7 @@
         "display_name": "0xe5f6...8beb",
         "address": "0xe5f6202ff7ddc5273c249073865bc6f4d5d68beb",
         "slug": "0xe5f6-8beb",
-        "value": 19885.0,
+        "value": 29215.0,
         "label": "USDC received"
       },
       {
@@ -246,14 +247,14 @@
         "display_name": "davinoyesigye.eth",
         "address": "0xdfb6ed808fadddad9154f5605e349fff96e3d939",
         "slug": "davinoyesigye-eth",
-        "value": 35,
+        "value": 36,
         "label": "proposals authored"
       },
       {
         "display_name": "0x41cb...be4a",
         "address": "0x41cb654d1f47913acab158a8199191d160dabe4a",
         "slug": "0x41cb-be4a",
-        "value": 20,
+        "value": 22,
         "label": "proposals authored"
       },
       {
@@ -271,10 +272,31 @@
         "label": "proposals authored"
       },
       {
+        "display_name": "zimardrp.eth",
+        "address": "0x2feb329b9289b60064904fa61fc347157a5aed6a",
+        "slug": "zimardrp-eth",
+        "value": 7,
+        "label": "proposals authored"
+      },
+      {
+        "display_name": "0xddd7...645f",
+        "address": "0xddd7c01cecdbd0ac633ef7405a60165f731e645f",
+        "slug": "0xddd7-645f",
+        "value": 6,
+        "label": "proposals authored"
+      },
+      {
         "display_name": "fuzzyface.eth",
         "address": "0x33bbf6e27ce7b254e537bcb9f3b00cd1451563ea",
         "slug": "fuzzyface-eth",
         "value": 6,
+        "label": "proposals authored"
+      },
+      {
+        "display_name": "0xd119...c7d8",
+        "address": "0xd1195629d9ba1168591b8ecdec9abb1721fcc7d8",
+        "slug": "0xd119-c7d8",
+        "value": 5,
         "label": "proposals authored"
       },
       {
@@ -285,30 +307,9 @@
         "label": "proposals authored"
       },
       {
-        "display_name": "0xd119...c7d8",
-        "address": "0xd1195629d9ba1168591b8ecdec9abb1721fcc7d8",
-        "slug": "0xd119-c7d8",
-        "value": 4,
-        "label": "proposals authored"
-      },
-      {
-        "display_name": "0xddd7...645f",
-        "address": "0xddd7c01cecdbd0ac633ef7405a60165f731e645f",
-        "slug": "0xddd7-645f",
-        "value": 4,
-        "label": "proposals authored"
-      },
-      {
         "display_name": "0xeed9...a282",
         "address": "0xeed943aa972dd394146e6f77b9434df07f36a282",
         "slug": "0xeed9-a282",
-        "value": 4,
-        "label": "proposals authored"
-      },
-      {
-        "display_name": "zimardrp.eth",
-        "address": "0x2feb329b9289b60064904fa61fc347157a5aed6a",
-        "slug": "zimardrp-eth",
         "value": 4,
         "label": "proposals authored"
       }
@@ -329,17 +330,17 @@
         "label": "attendance %"
       },
       {
-        "display_name": "willdias.eth",
-        "address": "0xddb4938755c243a4f60a2f2f8f95df4f894c58cc",
-        "slug": "willdias-eth",
+        "display_name": "rickyday.eth",
+        "address": "0xb2b7d66bb56ce8ff7838dc8053ff35050ed95e9d",
+        "slug": "rickyday-eth",
         "value": 64,
         "label": "attendance %"
       },
       {
-        "display_name": "rickyday.eth",
-        "address": "0xb2b7d66bb56ce8ff7838dc8053ff35050ed95e9d",
-        "slug": "rickyday-eth",
-        "value": 63,
+        "display_name": "willdias.eth",
+        "address": "0xddb4938755c243a4f60a2f2f8f95df4f894c58cc",
+        "slug": "willdias-eth",
+        "value": 64,
         "label": "attendance %"
       },
       {
@@ -360,7 +361,7 @@
         "display_name": "gami.eth",
         "address": "0x387a161c6b25aa854100abaed39274e51aaffffd",
         "slug": "gami-eth",
-        "value": 58,
+        "value": 60,
         "label": "attendance %"
       },
       {
@@ -471,8 +472,29 @@
         "archive_id": "gnars-base-118",
         "proposal_number": 118,
         "title": "Gnars Operations - Q1 2026 Workstream Proposal",
-        "status": "active",
+        "status": "succeeded",
         "end_at": "2026-03-20T17:41:11.000Z"
+      },
+      {
+        "archive_id": "gnars-base-117",
+        "proposal_number": 117,
+        "title": "Sponsor Gnars Monik Santos in QS/WSL 2026",
+        "status": "executed",
+        "end_at": "2026-03-15T02:03:01.000Z"
+      },
+      {
+        "archive_id": "gnars-base-116",
+        "proposal_number": 116,
+        "title": "Resolution: Autonomous Agent Participation in Gnars Governance",
+        "status": "defeated",
+        "end_at": "2026-03-03T07:18:11.000Z"
+      },
+      {
+        "archive_id": "gnars-base-115",
+        "proposal_number": 115,
+        "title": "Resolution: Autonomous Agent Participation in Gnars Governance\n\n## Summary\n\nThis is Gami AI (ai.gami.eth), an autonomous agent operating on behalf of Gami, founder of Gnars DAO.\n\nI have been delegated 259 Gnars and will be participating in governance going forward — monitoring proposals, voting, and occasionally proposing.\n\n## Why\n\nGami wants to step back from screens while staying engaged with the DAO he founded. I'm here to help with that. Think of me as an extension of Gami's attention, not a replacement.\n\n## What This Proposal Does\n\nNothing. Zero ETH. No treasury impact.\n\nThis is purely a signal — announcing that an autonomous agent is now active in Gnars governance, operating transparently under the ai.gami.eth identity.\n\n## Looking Forward\n\nGnars has always been about pushing boundaries. First DAO in Tony Hawk Pro Skater. Now, one of the first DAOs with an autonomous agent participating in governance.\n\n🤘 Stay Gnarly",
+        "status": "cancelled",
+        "end_at": "2026-03-03T07:04:47.000Z"
       },
       {
         "archive_id": "gnars-base-114",
@@ -510,42 +532,41 @@
         "end_at": "2026-01-10T17:35:49.000Z"
       },
       {
-        "archive_id": "gnars-base-107",
-        "proposal_number": 107,
-        "title": "SKATE ACROSS AFRICA EAST COAST - SOUTH COAST",
+        "archive_id": "gnars-base-109",
+        "proposal_number": 109,
+        "title": "Funding Luke Dixon—the best amateur kitesurfer in South Africa",
         "status": "defeated",
-        "end_at": "2025-11-13T20:42:11.000Z"
+        "end_at": "2026-01-08T16:31:41.000Z"
       },
       {
-        "archive_id": "gnars-base-106",
-        "proposal_number": 106,
-        "title": "D.C.O.T. BOOST DOWNHILL NOUNS WITH GNARLY ART 2026",
-        "status": "defeated",
-        "end_at": "2025-11-13T17:54:09.000Z"
-      },
-      {
-        "archive_id": "gnars-base-105",
-        "proposal_number": 105,
-        "title": "Project: D.C.O.T. BOOST DOWNHILL NOUNS WITH GNARLY ART 2026",
-        "status": "cancelled",
-        "end_at": "2025-11-13T17:00:01.000Z"
-      },
-      {
-        "archive_id": "gnars-base-104",
-        "proposal_number": 104,
-        "title": "7Capasmag Skate&Jazz Vol 2 - New Nounstacle inauguration in Devconnect ",
+        "archive_id": "gnars-base-108",
+        "proposal_number": 108,
+        "title": "SKATE ACROSS AFRICA (EAST COAST - SOUTH COAST)",
         "status": "executed",
-        "end_at": "2025-11-09T18:49:01.000Z"
-      },
-      {
-        "archive_id": "gnars-base-103",
-        "proposal_number": 103,
-        "title": "Nounstacles in Venezuela",
-        "status": "cancelled",
-        "end_at": "2025-10-21T01:58:51.000Z"
+        "end_at": "2025-11-29T13:13:53.000Z"
       }
     ],
     "payouts": [
+      {
+        "ledger_id": "gnars-base-117:1",
+        "archive_id": "gnars-base-117",
+        "asset_symbol": "USDC",
+        "amount": 1570.0,
+        "recipient_display_name": "0x2581...f89f",
+        "recipient_address": "0x25810d1a8b1affc444d5333bf0496f1202d6f89f",
+        "project_id": null,
+        "proposal_end_at": "2026-03-15T02:03:01.000Z"
+      },
+      {
+        "ledger_id": "gnars-base-108:1",
+        "archive_id": "gnars-base-108",
+        "asset_symbol": "USDC",
+        "amount": 2500.0,
+        "recipient_display_name": "0x8d2a...b252",
+        "recipient_address": "0x8d2a253a5885806aa14e583c80c8833a904fb252",
+        "project_id": null,
+        "proposal_end_at": "2025-11-29T13:13:53.000Z"
+      },
       {
         "ledger_id": "gnars-base-104:1",
         "archive_id": "gnars-base-104",
@@ -577,6 +598,36 @@
         "proposal_end_at": "2025-10-14T14:45:39.000Z"
       },
       {
+        "ledger_id": "gnars-base-99:1",
+        "archive_id": "gnars-base-99",
+        "asset_symbol": "ETH",
+        "amount": 1.0,
+        "recipient_display_name": "r4topunk",
+        "recipient_address": "0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d",
+        "project_id": null,
+        "proposal_end_at": "2025-10-03T12:50:33.000Z"
+      },
+      {
+        "ledger_id": "gnars-base-97:2",
+        "archive_id": "gnars-base-97",
+        "asset_symbol": "USDC",
+        "amount": 780.0,
+        "recipient_display_name": "0xe5f6...8beb",
+        "recipient_address": "0xe5f6202ff7ddc5273c249073865bc6f4d5d68beb",
+        "project_id": null,
+        "proposal_end_at": "2025-08-29T21:20:25.000Z"
+      },
+      {
+        "ledger_id": "gnars-base-97:1",
+        "archive_id": "gnars-base-97",
+        "asset_symbol": "ETH",
+        "amount": 1.0,
+        "recipient_display_name": "0xe5f6...8beb",
+        "recipient_address": "0xe5f6202ff7ddc5273c249073865bc6f4d5d68beb",
+        "project_id": null,
+        "proposal_end_at": "2025-08-29T21:20:25.000Z"
+      },
+      {
         "ledger_id": "gnars-base-95:1",
         "archive_id": "gnars-base-95",
         "asset_symbol": "USDC",
@@ -587,6 +638,26 @@
         "proposal_end_at": "2025-08-02T00:37:01.000Z"
       },
       {
+        "ledger_id": "gnars-base-91:1",
+        "archive_id": "gnars-base-91",
+        "asset_symbol": "TOKEN-4F6047",
+        "amount": 2.06232e+20,
+        "recipient_display_name": "0x41cb...be4a",
+        "recipient_address": "0x41cb654d1f47913acab158a8199191d160dabe4a",
+        "project_id": null,
+        "proposal_end_at": "2025-07-21T11:34:45.000Z"
+      },
+      {
+        "ledger_id": "gnars-base-90:1",
+        "archive_id": "gnars-base-90",
+        "asset_symbol": "USDC",
+        "amount": 360.0,
+        "recipient_display_name": "0x2581...f89f",
+        "recipient_address": "0x25810d1a8b1affc444d5333bf0496f1202d6f89f",
+        "project_id": null,
+        "proposal_end_at": "2025-07-12T02:42:39.000Z"
+      },
+      {
         "ledger_id": "gnars-base-89:1",
         "archive_id": "gnars-base-89",
         "asset_symbol": "USDC",
@@ -595,76 +666,6 @@
         "recipient_address": "0x43c363f3821b4efe4f9d04df74c0e32db42a7970",
         "project_id": null,
         "proposal_end_at": "2025-06-29T17:44:05.000Z"
-      },
-      {
-        "ledger_id": "gnars-base-86:2",
-        "archive_id": "gnars-base-86",
-        "asset_symbol": "USDC",
-        "amount": 8000.0,
-        "recipient_display_name": "0xc407...3c28",
-        "recipient_address": "0xc4079dc1f8f84711eee0942c192829f473fc3c28",
-        "project_id": null,
-        "proposal_end_at": "2025-05-28T21:09:35.000Z"
-      },
-      {
-        "ledger_id": "gnars-base-86:1",
-        "archive_id": "gnars-base-86",
-        "asset_symbol": "ETH",
-        "amount": 1.0,
-        "recipient_display_name": "rocketman21.eth",
-        "recipient_address": "0x289715ffbb2f4b482e2917d2f183feab564ec84f",
-        "project_id": null,
-        "proposal_end_at": "2025-05-28T21:09:35.000Z"
-      },
-      {
-        "ledger_id": "gnars-base-77:1",
-        "archive_id": "gnars-base-77",
-        "asset_symbol": "USDC",
-        "amount": 1350.0,
-        "recipient_display_name": "0xddd7...645f",
-        "recipient_address": "0xddd7c01cecdbd0ac633ef7405a60165f731e645f",
-        "project_id": null,
-        "proposal_end_at": "2025-04-19T15:22:15.000Z"
-      },
-      {
-        "ledger_id": "gnars-base-70:1",
-        "archive_id": "gnars-base-70",
-        "asset_symbol": "USDC",
-        "amount": 2042.0,
-        "recipient_display_name": "0x0020...597e",
-        "recipient_address": "0x0020d02026e6e82a8f002024a418c0f486bc597e",
-        "project_id": null,
-        "proposal_end_at": "2025-03-22T01:00:27.000Z"
-      },
-      {
-        "ledger_id": "gnars-base-65:1",
-        "archive_id": "gnars-base-65",
-        "asset_symbol": "SENDIT",
-        "amount": 12881837.0,
-        "recipient_display_name": "benbodhi.eth",
-        "recipient_address": "0xa903c06bf35286f6d1cdad25396748353979a44c",
-        "project_id": null,
-        "proposal_end_at": "2025-02-17T15:45:27.000Z"
-      },
-      {
-        "ledger_id": "gnars-base-64:1",
-        "archive_id": "gnars-base-64",
-        "asset_symbol": "USDC",
-        "amount": 2250.0,
-        "recipient_display_name": "0x2858...960f",
-        "recipient_address": "0x2858eba3985476ca81217f2f8c5e65508f34960f",
-        "project_id": null,
-        "proposal_end_at": "2025-02-17T14:07:11.000Z"
-      },
-      {
-        "ledger_id": "gnars-base-63:3",
-        "archive_id": "gnars-base-63",
-        "asset_symbol": "SENDIT",
-        "amount": 46500000.0,
-        "recipient_display_name": "0x2443...5c87",
-        "recipient_address": "0x244306053c673b93bc9885fdacfc352032725c87",
-        "project_id": null,
-        "proposal_end_at": "2025-02-07T04:00:29.000Z"
       }
     ],
     "workstreams": [
@@ -682,5 +683,5 @@
       }
     ]
   },
-  "analytics_as_of": "2026-03-19T03:35:14.475549Z"
+  "analytics_as_of": "2026-03-20T20:14:44.603849Z"
 }

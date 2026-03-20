@@ -29,6 +29,12 @@
           "amount",
           "asset_kind",
           "token_contract",
+          "valuation_reference_at",
+          "valuation_date",
+          "usd_price_at_execution",
+          "usd_value_at_execution",
+          "usd_price_source",
+          "usd_valuation_status",
           "proposal_href"
         ],
         "properties": {
@@ -49,6 +55,12 @@
           "amount": { "type": "number" },
           "asset_kind": { "type": "string" },
           "token_contract": { "type": ["string", "null"] },
+          "valuation_reference_at": { "type": ["string", "null"] },
+          "valuation_date": { "type": ["string", "null"] },
+          "usd_price_at_execution": { "type": ["number", "null"] },
+          "usd_value_at_execution": { "type": ["number", "null"] },
+          "usd_price_source": { "type": ["string", "null"] },
+          "usd_valuation_status": { "type": "string" },
           "proposal_href": { "type": "string" }
         },
         "additionalProperties": false

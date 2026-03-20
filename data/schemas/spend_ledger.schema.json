@@ -36,6 +36,7 @@
           "project_id",
           "project_name",
           "proposer",
+          "proposal_executed_at",
           "proposal_end_at",
           "proposal_created_at",
           "asset_symbol",
@@ -45,6 +46,12 @@
           "recipient_address",
           "recipient_display_name",
           "amount",
+          "valuation_reference_at",
+          "valuation_date",
+          "usd_price_at_execution",
+          "usd_value_at_execution",
+          "usd_price_source",
+          "usd_valuation_status",
           "source_url",
           "canonical_url"
         ],
@@ -88,6 +95,12 @@
           "proposer": {
             "type": "string"
           },
+          "proposal_executed_at": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
           "proposal_end_at": {
             "type": [
               "string",
@@ -123,6 +136,39 @@
           },
           "amount": {
             "type": "number"
+          },
+          "valuation_reference_at": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "valuation_date": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "usd_price_at_execution": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "usd_value_at_execution": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "usd_price_source": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "usd_valuation_status": {
+            "type": "string"
           },
           "source_url": {
             "type": "string"

@@ -1,32 +1,82 @@
 {
   "dataset": "community_signals",
-  "as_of": "2026-03-19T03:35:14.475549Z",
+  "as_of": "2026-03-20T20:14:44.603849Z",
   "version": 1,
   "windows": [
     {
       "window_id": "7d",
       "label": "Last 7 Days",
-      "since": "2026-03-12T00:00:00+00:00",
+      "since": "2026-03-13T00:00:00+00:00",
       "metrics": {
-        "active_proposals_now": 3,
-        "proposal_count": 2,
-        "successful_proposal_count": 0,
-        "payout_count": 0,
+        "active_proposals_now": 2,
+        "proposal_count": 3,
+        "successful_proposal_count": 1,
+        "payout_count": 1,
         "delivery_count": 4,
-        "recipient_count": 0,
+        "recipient_count": 1,
         "project_count": 0,
-        "unique_voters_count": 26,
-        "avg_votes_per_proposal": 21.5,
-        "median_votes_per_proposal": 21.5,
-        "proposal_success_rate_pct": 0.0,
-        "payouts_per_proposal": 0.0,
-        "deliveries_per_proposal": 2.0,
-        "payouts_by_asset": []
+        "unique_voters_count": 37,
+        "avg_votes_per_proposal": 24.0,
+        "median_votes_per_proposal": 24.0,
+        "proposal_success_rate_pct": 33.33,
+        "payouts_per_proposal": 0.333,
+        "deliveries_per_proposal": 1.333,
+        "payouts_by_asset": [
+          {
+            "symbol": "USDC",
+            "amount": 1570.0
+          }
+        ]
       },
-      "top_recipients": [],
+      "top_recipients": [
+        {
+          "address": "0x25810d1a8b1affc444d5333bf0496f1202d6f89f",
+          "display_name": "0x2581...f89f",
+          "totals_by_asset": [
+            {
+              "symbol": "USDC",
+              "amount": 1570.0
+            }
+          ]
+        }
+      ],
       "top_projects": [],
-      "top_proposals": [],
+      "top_proposals": [
+        {
+          "archive_id": "gnars-base-117",
+          "proposal_number": 117,
+          "title": "Sponsor Gnars Monik Santos in QS/WSL 2026",
+          "status": "executed",
+          "totals_by_asset": [
+            {
+              "symbol": "USDC",
+              "amount": 1570.0
+            }
+          ]
+        }
+      ],
       "top_people": [
+        {
+          "address": "0x25810d1a8b1affc444d5333bf0496f1202d6f89f",
+          "display_name": "0x2581...f89f",
+          "received_totals": [
+            {
+              "symbol": "USDC",
+              "amount": 1570.0
+            }
+          ],
+          "authored_count": 1,
+          "delivery_count": 0,
+          "score": 1572.0,
+          "tribes": [
+            "athlete",
+            "contributor",
+            "delegate",
+            "holder",
+            "proposer",
+            "recipient"
+          ]
+        },
         {
           "address": "0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d",
           "display_name": "r4topunk",
@@ -35,12 +85,14 @@
           "delivery_count": 3,
           "score": 6.5,
           "tribes": [
+            "athlete",
             "builder",
             "contributor",
             "delegate",
             "holder",
             "member",
-            "proposer"
+            "proposer",
+            "recipient"
           ]
         },
         {
@@ -86,7 +138,8 @@
             "contributor",
             "delegate",
             "holder",
-            "proposer"
+            "proposer",
+            "recipient"
           ]
         }
       ]
@@ -94,27 +147,77 @@
     {
       "window_id": "30d",
       "label": "Last 30 Days",
-      "since": "2026-02-17T00:00:00+00:00",
+      "since": "2026-02-18T00:00:00+00:00",
       "metrics": {
-        "active_proposals_now": 3,
-        "proposal_count": 4,
-        "successful_proposal_count": 0,
-        "payout_count": 0,
+        "active_proposals_now": 2,
+        "proposal_count": 7,
+        "successful_proposal_count": 1,
+        "payout_count": 1,
         "delivery_count": 4,
-        "recipient_count": 0,
+        "recipient_count": 1,
         "project_count": 0,
-        "unique_voters_count": 27,
-        "avg_votes_per_proposal": 11.75,
-        "median_votes_per_proposal": 12.5,
-        "proposal_success_rate_pct": 0.0,
-        "payouts_per_proposal": 0.0,
-        "deliveries_per_proposal": 1.0,
-        "payouts_by_asset": []
+        "unique_voters_count": 38,
+        "avg_votes_per_proposal": 11.86,
+        "median_votes_per_proposal": 7.0,
+        "proposal_success_rate_pct": 14.29,
+        "payouts_per_proposal": 0.143,
+        "deliveries_per_proposal": 0.571,
+        "payouts_by_asset": [
+          {
+            "symbol": "USDC",
+            "amount": 1570.0
+          }
+        ]
       },
-      "top_recipients": [],
+      "top_recipients": [
+        {
+          "address": "0x25810d1a8b1affc444d5333bf0496f1202d6f89f",
+          "display_name": "0x2581...f89f",
+          "totals_by_asset": [
+            {
+              "symbol": "USDC",
+              "amount": 1570.0
+            }
+          ]
+        }
+      ],
       "top_projects": [],
-      "top_proposals": [],
+      "top_proposals": [
+        {
+          "archive_id": "gnars-base-117",
+          "proposal_number": 117,
+          "title": "Sponsor Gnars Monik Santos in QS/WSL 2026",
+          "status": "executed",
+          "totals_by_asset": [
+            {
+              "symbol": "USDC",
+              "amount": 1570.0
+            }
+          ]
+        }
+      ],
       "top_people": [
+        {
+          "address": "0x25810d1a8b1affc444d5333bf0496f1202d6f89f",
+          "display_name": "0x2581...f89f",
+          "received_totals": [
+            {
+              "symbol": "USDC",
+              "amount": 1570.0
+            }
+          ],
+          "authored_count": 1,
+          "delivery_count": 0,
+          "score": 1572.0,
+          "tribes": [
+            "athlete",
+            "contributor",
+            "delegate",
+            "holder",
+            "proposer",
+            "recipient"
+          ]
+        },
         {
           "address": "0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d",
           "display_name": "r4topunk",
@@ -123,11 +226,26 @@
           "delivery_count": 3,
           "score": 6.5,
           "tribes": [
+            "athlete",
             "builder",
             "contributor",
             "delegate",
             "holder",
             "member",
+            "proposer",
+            "recipient"
+          ]
+        },
+        {
+          "address": "0x4b5951ca3fd19897feb9e42609f252b609eae526",
+          "display_name": "ai.gami.eth",
+          "received_totals": [],
+          "authored_count": 3,
+          "delivery_count": 0,
+          "score": 6.0,
+          "tribes": [
+            "athlete",
+            "contributor",
             "proposer"
           ]
         },
@@ -160,19 +278,6 @@
             "delegate",
             "holder",
             "member"
-          ]
-        },
-        {
-          "address": "0x4b5951ca3fd19897feb9e42609f252b609eae526",
-          "display_name": "ai.gami.eth",
-          "received_totals": [],
-          "authored_count": 1,
-          "delivery_count": 0,
-          "score": 2.0,
-          "tribes": [
-            "athlete",
-            "contributor",
-            "proposer"
           ]
         },
         {
@@ -201,7 +306,8 @@
             "contributor",
             "delegate",
             "holder",
-            "proposer"
+            "proposer",
+            "recipient"
           ]
         }
       ]
@@ -209,27 +315,77 @@
     {
       "window_id": "90d",
       "label": "Last 90 Days",
-      "since": "2025-12-19T00:00:00+00:00",
+      "since": "2025-12-20T00:00:00+00:00",
       "metrics": {
-        "active_proposals_now": 3,
-        "proposal_count": 7,
-        "successful_proposal_count": 1,
-        "payout_count": 0,
+        "active_proposals_now": 2,
+        "proposal_count": 11,
+        "successful_proposal_count": 2,
+        "payout_count": 1,
         "delivery_count": 4,
-        "recipient_count": 0,
+        "recipient_count": 1,
         "project_count": 0,
-        "unique_voters_count": 43,
-        "avg_votes_per_proposal": 14.29,
-        "median_votes_per_proposal": 15.0,
-        "proposal_success_rate_pct": 14.29,
-        "payouts_per_proposal": 0.0,
-        "deliveries_per_proposal": 0.571,
-        "payouts_by_asset": []
+        "unique_voters_count": 52,
+        "avg_votes_per_proposal": 13.27,
+        "median_votes_per_proposal": 11.0,
+        "proposal_success_rate_pct": 18.18,
+        "payouts_per_proposal": 0.091,
+        "deliveries_per_proposal": 0.364,
+        "payouts_by_asset": [
+          {
+            "symbol": "USDC",
+            "amount": 1570.0
+          }
+        ]
       },
-      "top_recipients": [],
+      "top_recipients": [
+        {
+          "address": "0x25810d1a8b1affc444d5333bf0496f1202d6f89f",
+          "display_name": "0x2581...f89f",
+          "totals_by_asset": [
+            {
+              "symbol": "USDC",
+              "amount": 1570.0
+            }
+          ]
+        }
+      ],
       "top_projects": [],
-      "top_proposals": [],
+      "top_proposals": [
+        {
+          "archive_id": "gnars-base-117",
+          "proposal_number": 117,
+          "title": "Sponsor Gnars Monik Santos in QS/WSL 2026",
+          "status": "executed",
+          "totals_by_asset": [
+            {
+              "symbol": "USDC",
+              "amount": 1570.0
+            }
+          ]
+        }
+      ],
       "top_people": [
+        {
+          "address": "0x25810d1a8b1affc444d5333bf0496f1202d6f89f",
+          "display_name": "0x2581...f89f",
+          "received_totals": [
+            {
+              "symbol": "USDC",
+              "amount": 1570.0
+            }
+          ],
+          "authored_count": 1,
+          "delivery_count": 0,
+          "score": 1572.0,
+          "tribes": [
+            "athlete",
+            "contributor",
+            "delegate",
+            "holder",
+            "proposer",
+            "recipient"
+          ]
+        },
         {
           "address": "0xaaed9fff9858d48925904e391b77892ba5fda824",
           "display_name": "fcarva",
@@ -254,11 +410,26 @@
           "delivery_count": 3,
           "score": 6.5,
           "tribes": [
+            "athlete",
             "builder",
             "contributor",
             "delegate",
             "holder",
             "member",
+            "proposer",
+            "recipient"
+          ]
+        },
+        {
+          "address": "0x4b5951ca3fd19897feb9e42609f252b609eae526",
+          "display_name": "ai.gami.eth",
+          "received_totals": [],
+          "authored_count": 3,
+          "delivery_count": 0,
+          "score": 6.0,
+          "tribes": [
+            "athlete",
+            "contributor",
             "proposer"
           ]
         },
@@ -293,8 +464,8 @@
           ]
         },
         {
-          "address": "0x4b5951ca3fd19897feb9e42609f252b609eae526",
-          "display_name": "ai.gami.eth",
+          "address": "0x057cfcd04198e6d17f1bf502135d9508b6fa2fde",
+          "display_name": "pamtech.eth",
           "received_totals": [],
           "authored_count": 1,
           "delivery_count": 0,
@@ -302,12 +473,14 @@
           "tribes": [
             "athlete",
             "contributor",
+            "delegate",
+            "holder",
             "proposer"
           ]
         },
         {
-          "address": "0x057cfcd04198e6d17f1bf502135d9508b6fa2fde",
-          "display_name": "pamtech.eth",
+          "address": "0x225e9b54f41f44f42150b6aaa730da5f2d23faf2",
+          "display_name": "ric.eth",
           "received_totals": [],
           "authored_count": 1,
           "delivery_count": 0,
@@ -346,7 +519,8 @@
             "contributor",
             "delegate",
             "holder",
-            "proposer"
+            "proposer",
+            "recipient"
           ]
         }
       ]
@@ -356,20 +530,24 @@
       "label": "All Time",
       "since": null,
       "metrics": {
-        "active_proposals_now": 3,
-        "proposal_count": 193,
-        "successful_proposal_count": 155,
-        "payout_count": 52,
+        "active_proposals_now": 2,
+        "proposal_count": 222,
+        "successful_proposal_count": 170,
+        "payout_count": 65,
         "delivery_count": 4,
-        "recipient_count": 40,
+        "recipient_count": 47,
         "project_count": 0,
-        "unique_voters_count": 436,
-        "avg_votes_per_proposal": 20.25,
+        "unique_voters_count": 464,
+        "avg_votes_per_proposal": 20.03,
         "median_votes_per_proposal": 21.0,
-        "proposal_success_rate_pct": 80.31,
-        "payouts_per_proposal": 0.269,
-        "deliveries_per_proposal": 0.021,
+        "proposal_success_rate_pct": 76.58,
+        "payouts_per_proposal": 0.293,
+        "deliveries_per_proposal": 0.018,
         "payouts_by_asset": [
+          {
+            "symbol": "TOKEN-4F6047",
+            "amount": 2.06232e+20
+          },
           {
             "symbol": "TOKEN-09E938",
             "amount": 1575000000.0
@@ -380,15 +558,29 @@
           },
           {
             "symbol": "USDC",
-            "amount": 148083.0
+            "amount": 170693.0
           },
           {
             "symbol": "ETH",
-            "amount": 19.01823954
+            "amount": 21.27165954
           }
         ]
       },
       "top_recipients": [
+        {
+          "address": "0x41cb654d1f47913acab158a8199191d160dabe4a",
+          "display_name": "0x41cb...be4a",
+          "totals_by_asset": [
+            {
+              "symbol": "TOKEN-4F6047",
+              "amount": 2.06232e+20
+            },
+            {
+              "symbol": "SENDIT",
+              "amount": 85879900.0
+            }
+          ]
+        },
         {
           "address": "0x09e938e239803c78507abd5687a97acfea1188ea",
           "display_name": "0x09e9...88ea",
@@ -410,16 +602,6 @@
             {
               "symbol": "USDC",
               "amount": 2650.0
-            }
-          ]
-        },
-        {
-          "address": "0x41cb654d1f47913acab158a8199191d160dabe4a",
-          "display_name": "0x41cb...be4a",
-          "totals_by_asset": [
-            {
-              "symbol": "SENDIT",
-              "amount": 85879900.0
             }
           ]
         },
@@ -477,13 +659,29 @@
           "totals_by_asset": [
             {
               "symbol": "USDC",
-              "amount": 19885.0
+              "amount": 29215.0
+            },
+            {
+              "symbol": "ETH",
+              "amount": 1.0
             }
           ]
         }
       ],
       "top_projects": [],
       "top_proposals": [
+        {
+          "archive_id": "gnars-base-91",
+          "proposal_number": 91,
+          "title": "IPFS Reimbursement and Advance for Shared IPFS Infrastructure",
+          "status": "executed",
+          "totals_by_asset": [
+            {
+              "symbol": "TOKEN-4F6047",
+              "amount": 2.06232e+20
+            }
+          ]
+        },
         {
           "archive_id": "gnars-base-36",
           "proposal_number": 36,
@@ -579,21 +777,32 @@
               "amount": 12881837.0
             }
           ]
-        },
-        {
-          "archive_id": "gnars-base-32",
-          "proposal_number": 32,
-          "title": " Gnarly TPM Shredder Team",
-          "status": "executed",
-          "totals_by_asset": [
-            {
-              "symbol": "USDC",
-              "amount": 16116.0
-            }
-          ]
         }
       ],
       "top_people": [
+        {
+          "address": "0x41cb654d1f47913acab158a8199191d160dabe4a",
+          "display_name": "0x41cb...be4a",
+          "received_totals": [
+            {
+              "symbol": "TOKEN-4F6047",
+              "amount": 2.06232e+20
+            },
+            {
+              "symbol": "SENDIT",
+              "amount": 85879900.0
+            }
+          ],
+          "authored_count": 22,
+          "delivery_count": 0,
+          "score": 2.06232e+20,
+          "tribes": [
+            "athlete",
+            "contributor",
+            "proposer",
+            "recipient"
+          ]
+        },
         {
           "address": "0x09e938e239803c78507abd5687a97acfea1188ea",
           "display_name": "0x09e9...88ea",
@@ -632,25 +841,6 @@
           "score": 119569120.2873,
           "tribes": [
             "contributor",
-            "recipient"
-          ]
-        },
-        {
-          "address": "0x41cb654d1f47913acab158a8199191d160dabe4a",
-          "display_name": "0x41cb...be4a",
-          "received_totals": [
-            {
-              "symbol": "SENDIT",
-              "amount": 85879900.0
-            }
-          ],
-          "authored_count": 20,
-          "delivery_count": 0,
-          "score": 85879940.0,
-          "tribes": [
-            "athlete",
-            "contributor",
-            "proposer",
             "recipient"
           ]
         },
@@ -740,12 +930,16 @@
           "received_totals": [
             {
               "symbol": "USDC",
-              "amount": 19885.0
+              "amount": 29215.0
+            },
+            {
+              "symbol": "ETH",
+              "amount": 1.0
             }
           ],
           "authored_count": 0,
           "delivery_count": 0,
-          "score": 19885.0,
+          "score": 29215.0,
           "tribes": [
             "contributor",
             "recipient"
@@ -794,7 +988,7 @@
       "window_id": "30d",
       "kind": "treasury",
       "title": "Capital flows concentrate around visible operators.",
-      "summary": "In the latest active window, routed value is dominated by capital flows, with core contributors appearing as the top recipient cluster."
+      "summary": "In the latest active window, routed value is dominated by USDC flows, with 0x2581...f89f appearing as the top recipient cluster."
     },
     {
       "note_id": "field-note-delivery",
@@ -811,5 +1005,5 @@
       "summary": "Proposal history is most useful when it is read alongside recipients, workstreams, and public proof, rather than as an isolated voting log."
     }
   ],
-  "analytics_as_of": "2026-03-19T03:35:14.475549Z"
+  "analytics_as_of": "2026-03-20T20:14:44.603849Z"
 }
