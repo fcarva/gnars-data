@@ -133,8 +133,8 @@
           "count": 17
         },
         {
-          "value": "0X09E938",
-          "label": "0X09E938",
+          "value": "TOKEN-09E938",
+          "label": "TOKEN 09E938",
           "count": 5
         }
       ]
@@ -334,8 +334,8 @@
           "count": 6
         },
         {
-          "value": "0X09E938",
-          "label": "0X09E938",
+          "value": "TOKEN-09E938",
+          "label": "TOKEN 09E938",
           "count": 2
         }
       ],
@@ -344,6 +344,18 @@
           "value": "executed",
           "label": "Executed",
           "count": 52
+        }
+      ],
+      "chain": [
+        {
+          "value": "base",
+          "label": "Base",
+          "count": 51
+        },
+        {
+          "value": "ethereum",
+          "label": "Ethereum",
+          "count": 1
         }
       ],
       "category": [

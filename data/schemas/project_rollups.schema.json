@@ -132,6 +132,18 @@
               "type": "string"
             }
           },
+          "recipient_addresses": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "budget_by_asset": {
+            "type": "array"
+          },
+          "routed_by_asset": {
+            "type": "array"
+          },
           "scope_labels": {
             "type": "array",
             "items": {
@@ -167,6 +179,15 @@
             "items": {
               "type": "string"
             }
+          },
+          "delivery_updates": {
+            "type": "array"
+          },
+          "proof_links": {
+            "type": "array"
+          },
+          "reconciliation_status": {
+            "type": "string"
           }
         },
         "additionalProperties": false

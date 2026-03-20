@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["dataset", "analytics_as_of", "as_of", "version", "summary", "records"],
+  "properties": {
+    "dataset": { "const": "proposal_reconciliation" },
+    "analytics_as_of": { "type": "string" },
+    "as_of": { "type": "string" },
+    "version": { "type": "integer" },
+    "summary": { "type": "object" },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["archive_id", "proposal_number", "title", "platform", "chain", "site_status", "chain_status", "resolved_status", "repo_value", "site_value", "chain_value", "resolved_value", "reconciliation_status", "mismatch_fields", "evidence_urls"],
+        "properties": {
+          "archive_id": { "type": "string" },
+          "proposal_number": { "type": ["integer", "null"] },
+          "title": { "type": "string" },
+          "platform": { "type": "string" },
+          "chain": { "type": "string" },
+          "site_status": { "type": "string" },
+          "chain_status": { "type": "string" },
+          "resolved_status": { "type": "string" },
+          "repo_value": { "type": "object" },
+          "site_value": { "type": "object" },
+          "chain_value": { "type": "object" },
+          "resolved_value": { "type": "object" },
+          "reconciliation_status": { "type": "string" },
+          "mismatch_fields": { "type": "array", "items": { "type": "string" } },
+          "evidence_urls": { "type": "array", "items": { "type": "string" } }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

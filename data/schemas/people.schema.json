@@ -57,6 +57,12 @@
           "display_name": {
             "type": "string"
           },
+          "display_name_source": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
           "address": {
             "type": "string"
           },
@@ -120,6 +126,18 @@
           "history_long": {
             "type": "string"
           },
+          "identity_source": {
+            "type": "string"
+          },
+          "identity_confidence": {
+            "type": "string"
+          },
+          "member_url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
           "successful_authored_count": {
             "type": "integer"
           },
@@ -132,8 +150,20 @@
           "budget_managed_by_asset": {
             "type": "array"
           },
+          "received_by_asset": {
+            "type": "array"
+          },
+          "proposal_roles": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
           "treasury_route_count": {
             "type": "integer"
+          },
+          "treasury_route_ledger": {
+            "type": "array"
           },
           "delivery_count": {
             "type": "integer"

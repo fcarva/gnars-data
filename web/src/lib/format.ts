@@ -44,9 +44,62 @@ export function formatNumber(value: number): string {
   return new Intl.NumberFormat("en-US").format(value);
 }
 
-export function formatAmount(symbol: string, amount: number): string {
+export function formatAssetSymbol(symbol: string | null | undefined, tokenContract?: string | null): string {
+  const clean = String(symbol ?? "").trim().toUpperCase();
+  if (!clean) {
+    return tokenContract ? `TOKEN ${shortAddress(tokenContract).replace("...", " ")}` : "UNKNOWN";
+  }
+  const tokenMatch = clean.match(/^TOKEN-([A-Z0-9]{4,})$/);
+  if (tokenMatch) {
+    return `TOKEN ${tokenMatch[1]}`;
+  }
+  if (/^0X[A-F0-9]{6,}$/.test(clean)) {
+    return `TOKEN ${clean.slice(2, 8)}`;
+  }
+  return clean;
+}
+
+export function assetTone(symbol: string | null | undefined): string {
+  const clean = String(symbol ?? "").trim().toUpperCase();
+  if (clean === "ETH") {
+    return "eth";
+  }
+  if (clean === "USDC") {
+    return "usdc";
+  }
+  if (clean === "GNARS") {
+    return "gnars";
+  }
+  if (clean === "SENDIT") {
+    return "sendit";
+  }
+  if (clean.startsWith("TOKEN-") || /^0X[A-F0-9]{6,}$/.test(clean)) {
+    return "token";
+  }
+  return clean.toLowerCase().replace(/[^a-z0-9]+/g, "-") || "unknown";
+}
+
+export function formatAssetDescriptor(
+  symbol: string | null | undefined,
+  assetKind?: string | null,
+  tokenContract?: string | null,
+): string {
+  const tone = assetTone(symbol);
+  if (assetKind === "native") {
+    return "Native";
+  }
+  if (assetKind === "erc20") {
+    if (tone === "token") {
+      return tokenContract ? `Unverified ERC-20 · ${shortAddress(tokenContract)}` : "Unverified ERC-20";
+    }
+    return tokenContract ? `ERC-20 · ${shortAddress(tokenContract)}` : "ERC-20";
+  }
+  return tokenContract ? shortAddress(tokenContract) : "";
+}
+
+export function formatAmount(symbol: string, amount: number, tokenContract?: string | null): string {
   const decimals = amount >= 100 ? 0 : amount >= 10 ? 1 : 2;
-  return `${trimZeroes(amount.toFixed(decimals))} ${symbol}`;
+  return `${trimZeroes(amount.toFixed(decimals))} ${formatAssetSymbol(symbol, tokenContract)}`;
 }
 
 export function primaryAssetLabel(items: AssetAmount[]): string {

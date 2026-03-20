@@ -48,6 +48,7 @@ export type PersonRecord = {
   person_id: string;
   slug: string;
   display_name: string;
+  display_name_source?: string | null;
   address: string;
   address_short: string;
   status: string;
@@ -101,10 +102,27 @@ export type PersonRecord = {
   headline: string;
   history_short: string;
   history_long: string;
+  identity_source?: string;
+  identity_confidence?: string;
+  member_url?: string | null;
   successful_authored_count: number;
   successful_authored_proposals: string[];
   budget_managed_by_asset: AssetAmount[];
+  received_by_asset?: AssetAmount[];
+  proposal_roles?: string[];
   treasury_route_count: number;
+  treasury_route_ledger?: {
+    ledger_id: string;
+    archive_id: string;
+    proposal_number: number | null;
+    proposal_title: string;
+    date: string | null;
+    asset_symbol: string;
+    amount: number;
+    project_id: string | null;
+    project_name: string | null;
+    href: string;
+  }[];
   delivery_count: number;
   proof_count: number;
   proof_coverage_pct: number | null;
@@ -202,6 +220,9 @@ export type ProjectRollupRecord = {
   kpis: string[];
   notes: string;
   proposal_lineage: string[];
+  recipient_addresses?: string[];
+  budget_by_asset?: AssetAmount[];
+  routed_by_asset?: AssetAmount[];
   scope_labels: string[];
   branding_tags: string[];
   contributor_addresses: string[];
@@ -209,6 +230,21 @@ export type ProjectRollupRecord = {
   proof_count: number;
   proof_coverage_pct: number | null;
   related_proof_ids: string[];
+  delivery_updates?: {
+    update_id: string;
+    date: string | null;
+    title: string;
+    status: string;
+    links: string[];
+  }[];
+  proof_links?: {
+    proof_id: string;
+    title: string;
+    url: string;
+    kind: string;
+    date: string;
+  }[];
+  reconciliation_status?: string;
 };
 
 export type ProposalTransactionRecord = {
@@ -589,6 +625,9 @@ export type ProposalEnrichedRecord = {
   proposal_number: number | null;
   title: string;
   status: string;
+  site_status: string;
+  chain_status: string;
+  resolved_status: string;
   platform: string;
   chain: string;
   proposer: string;
@@ -606,11 +645,19 @@ export type ProposalEnrichedRecord = {
   category: string;
   summary_short: string;
   requested_total_display: string;
+  requested_budget_display: string;
   routed_total_display: string;
+  routed_budget_display: string;
   proposal_type: string;
   delivery_stage: string;
   proof_strength: string;
   lineage_strength: string;
+  contributor_roles: { name: string; role: string; budget: string }[];
+  why_vote_yes: string;
+  proposed_transactions_summary: string;
+  treasury_source_label: string;
+  proof_expectations: string;
+  reconciliation_status: string;
   reference_channels: string[];
   primary_recipients: string[];
   editorial_labels: string[];
@@ -677,10 +724,17 @@ export type MediaProofData = {
 export type FeedStreamItem = {
   item_id: string;
   kind: string;
+  action_label: string;
   date: string;
   status: string;
+  resolved_status: string;
+  reconciliation_status: string;
   title: string;
   summary: string;
+  requested_budget_display: string;
+  routed_budget_display: string;
+  chain: string;
+  proposer_label: string;
   labels: string[];
   editorial_labels: string[];
   status_labels: string[];
@@ -703,6 +757,110 @@ export type FeedStreamData = {
   as_of: string;
   version: number;
   records: FeedStreamItem[];
+};
+
+export type ProposalReconciliationData = {
+  dataset: "proposal_reconciliation";
+  analytics_as_of: string;
+  as_of: string;
+  version: number;
+  summary: {
+    matched_count: number;
+    needs_review_count: number;
+  };
+  records: {
+    archive_id: string;
+    proposal_number: number | null;
+    title: string;
+    platform: string;
+    chain: string;
+    site_status: string;
+    chain_status: string;
+    resolved_status: string;
+    repo_value: Record<string, unknown>;
+    site_value: Record<string, unknown>;
+    chain_value: Record<string, unknown>;
+    resolved_value: Record<string, unknown>;
+    reconciliation_status: string;
+    mismatch_fields: string[];
+    evidence_urls: string[];
+  }[];
+};
+
+export type PersonReconciliationData = {
+  dataset: "person_reconciliation";
+  analytics_as_of: string;
+  as_of: string;
+  version: number;
+  summary: Record<string, number>;
+  records: {
+    address: string;
+    slug: string;
+    display_name: string;
+    identity_source: string;
+    identity_confidence: string;
+    repo_value: Record<string, unknown>;
+    site_value: Record<string, unknown>;
+    chain_value: Record<string, unknown>;
+    resolved_value: Record<string, unknown>;
+    reconciliation_status: string;
+    evidence_urls: string[];
+  }[];
+};
+
+export type ContractReconciliationData = {
+  dataset: "contract_reconciliation";
+  analytics_as_of: string;
+  as_of: string;
+  version: number;
+  summary: Record<string, number>;
+  records: {
+    contract_id: string;
+    ecosystem: string;
+    network: string;
+    address: string;
+    kind: string;
+    label: string;
+    status: string;
+    repo_value: Record<string, unknown>;
+    site_value: Record<string, unknown>;
+    chain_value: Record<string, unknown>;
+    resolved_value: Record<string, unknown>;
+    reconciliation_status: string;
+    evidence_urls: string[];
+  }[];
+};
+
+export type TreasuryReconciliationData = {
+  dataset: "treasury_reconciliation";
+  analytics_as_of: string;
+  as_of: string;
+  version: number;
+  summary: {
+    matched_count: number;
+    needs_review_count: number;
+    window_summary: Record<string, { route_count: number; proposal_count: number; recipient_count: number }>;
+  };
+  records: {
+    route_id: string;
+    archive_id: string;
+    proposal_number: number | null;
+    proposal_title: string;
+    chain: string;
+    recipient_address: string;
+    recipient_display_name: string;
+    asset_symbol: string;
+    amount: number;
+    token_contract: string | null;
+    asset_contract_status: string;
+    repo_value: Record<string, unknown>;
+    site_value: Record<string, unknown>;
+    chain_value: Record<string, unknown>;
+    resolved_value: Record<string, unknown>;
+    reconciliation_status: string;
+    mismatch_fields: string[];
+    evidence_urls: string[];
+  }[];
 };
 
 export type InsightsData = {
@@ -803,6 +961,65 @@ export type TreasuryViewData = {
   scenes: TreasuryViewScene[];
 };
 
+export type TreasuryRouteRow = {
+  routeId: string;
+  eventAt: string;
+  dateLabel: string;
+  proposalHref: string;
+  proposalNumberLabel: string;
+  proposalTitle: string;
+  proposalStatus: string;
+  proposalStatusKey: string;
+  proposalChain: string;
+  proposerLabel: string;
+  proposerSecondaryLabel: string;
+  proposerHref: string | null;
+  category: string;
+  categoryKey: string;
+  projectLabel: string | null;
+  projectHref: string | null;
+  recipientLabel: string;
+  recipientSecondaryLabel: string;
+  recipientHref: string | null;
+  recipientIdentityStatus: "ens" | "named" | "address";
+  recipientAddress: string;
+  assetSymbol: string;
+  assetDisplaySymbol: string;
+  assetTone: string;
+  assetKind: string;
+  assetDescriptor: string;
+  amount: number;
+  amountLabel: string;
+  tokenContract: string | null;
+  routeKind: "project-linked" | "proposal-linked";
+  searchText: string;
+};
+
+export type TreasuryProposalRow = {
+  archiveId: string;
+  href: string;
+  date: string | null;
+  numberLabel: string;
+  title: string;
+  status: string;
+  statusKey: string;
+  category: string;
+  categoryKey: string;
+  proposerLabel: string;
+  proposerHref: string | null;
+  proposalChain: string;
+  projectLabel: string | null;
+  projectHref: string | null;
+  requestedLabel: string;
+  routedLabel: string;
+  totalsByAsset: AssetAmount[];
+  routeCount: number;
+  recipientCount: number;
+  proofCount: number;
+  zeroRoute: boolean;
+  searchText: string;
+};
+
 export type ActivityViewScene = {
   window_id: string;
   label: string;
@@ -834,6 +1051,9 @@ export type CommunityCard = {
   slug: string;
   href: string;
   displayName: string;
+  identityLabel: string;
+  identitySource: string;
+  identityConfidence: string;
   subtitle: string;
   tribes: string[];
   totalReceivedLabel: string;
@@ -854,6 +1074,7 @@ export type ProjectCard = {
   href: string;
   title: string;
   status: string;
+  reconciliationStatus: string;
   category: string;
   summary: string;
   proposalTag: string;
@@ -873,8 +1094,14 @@ export type ProposalCard = {
   numberLabel: string;
   title: string;
   status: string;
+  resolvedStatus: string;
+  reconciliationStatus: string;
+  chain: string;
   proposerLabel: string;
+  proposerSecondaryLabel: string;
   budgetLabel: string;
+  requestedLabel: string;
+  routedLabel: string;
   summary: string;
   projectLabel: string | null;
   date: string;
@@ -882,6 +1109,7 @@ export type ProposalCard = {
   statusKey: string;
   routedValue: number;
   voteCount: number;
+  quorumLabel: string;
   hot: boolean;
   labels: string[];
   searchText: string;
@@ -947,6 +1175,8 @@ export type CommunityProfilePageProps = {
     address: string;
     addressShort: string;
     identityLabel: string;
+    identitySource: string;
+    identityConfidence: string;
     ens: string | null;
     tribes: string[];
     role: string;
@@ -959,6 +1189,13 @@ export type CommunityProfilePageProps = {
     totalReceivedByAsset: AssetAmount[];
     approvedProposals: number;
     budgetManagedByAsset: AssetAmount[];
+    treasuryLedger: {
+      href: string;
+      proposalLabel: string;
+      amountLabel: string;
+      dateLabel: string;
+      projectLabel: string | null;
+    }[];
   };
   governanceMetrics: {
     activeVotes: number;
@@ -967,6 +1204,11 @@ export type CommunityProfilePageProps = {
     likePct: number | null;
     proposalSuccessRate: number;
     deliveryCount: number;
+    authoredSplit: {
+      successful: number;
+      active: number;
+      closed: number;
+    };
   };
   governanceLog: {
     href: string;
@@ -1038,6 +1280,18 @@ export type ProposalDetailPageProps = {
     choices: string[];
     scoresByChoice: number[];
     contentSummary: string;
+    whyVoteYes: string;
+    proofExpectations: string;
+    proposedTransactionsSummary: string;
+    treasurySourceLabel: string;
+    contributorRoles: { name: string; role: string; budget: string }[];
+    reconciliation: {
+      siteStatus: string;
+      chainStatus: string;
+      resolvedStatus: string;
+      status: string;
+      evidenceUrls: string[];
+    };
     proposalLinks: ReferenceLink[];
     recipients: {
       label: string;
@@ -1070,10 +1324,15 @@ export type NetworkPageProps = {
 
 export type TreasuryPageProps = {
   treasuryScene: TreasuryViewData;
+  routes: TreasuryRouteRow[];
+  proposalRows: TreasuryProposalRow[];
   windows: TreasuryFlowsData["windows"];
   proposalRoutes: TreasuryFlowsData["proposal_routes"];
   insights: InsightsData;
   facets: FilterFacetsData["surfaces"]["treasury"];
+  proposalReconciliation: ProposalReconciliationData;
+  contractReconciliation: ContractReconciliationData;
+  treasuryReconciliation: TreasuryReconciliationData;
 };
 
 export type NotesPageProps = {

@@ -1419,7 +1419,7 @@
           "target": "proposal:gnars-base-36",
           "value": 950000000,
           "width": 27.74074467918596,
-          "asset_symbol": "0X09E938",
+          "asset_symbol": "TOKEN-09E938",
           "href": "/proposals/gnars-base-36/",
           "path": "M30,440.4511583543729C356,440.4511583543729,356,449.60582252364236,682,449.60582252364236"
         },
@@ -1429,7 +1429,7 @@
           "target": "recipient:0x09e938e239803c78507abd5687a97acfea1188ea",
           "value": 950000000,
           "width": 27.74074467918596,
-          "asset_symbol": "0X09E938",
+          "asset_symbol": "TOKEN-09E938",
           "href": "https://gnars.com/proposals/base/36",
           "path": "M698,449.60582252364236C1024,449.60582252364236,1024,464.1070751635052,1350,464.1070751635052"
         },
@@ -1439,7 +1439,7 @@
           "target": "proposal:gnars-base-35",
           "value": 625000000,
           "width": 18.25048992051708,
-          "asset_symbol": "0X09E938",
+          "asset_symbol": "TOKEN-09E938",
           "href": "/proposals/gnars-base-35/",
           "path": "M30,463.4467756542245C356,463.4467756542245,356,490.6014398234937,682,490.6014398234937"
         },
@@ -1449,7 +1449,7 @@
           "target": "recipient:0x09e938e239803c78507abd5687a97acfea1188ea",
           "value": 625000000,
           "width": 18.25048992051708,
-          "asset_symbol": "0X09E938",
+          "asset_symbol": "TOKEN-09E938",
           "href": "https://gnars.com/proposals/base/35",
           "path": "M698,490.6014398234937C1024,490.6014398234937,1024,487.1026924633568,1350,487.1026924633568"
         },

@@ -6,6 +6,14 @@ import { filterProposals } from "../lib/filtering";
 import { useUrlState } from "../lib/urlState";
 import type { Meta, ProposalsPageProps } from "../types";
 
+function inWindow(date: string, days: number) {
+  const parsed = new Date(date);
+  if (Number.isNaN(parsed.getTime())) {
+    return false;
+  }
+  return parsed.getTime() >= Date.now() - days * 24 * 60 * 60 * 1000;
+}
+
 export function ProposalsPage({ meta, props }: { meta: Meta; props: ProposalsPageProps }) {
   const [filters, setFilters] = useUrlState({
     status: "all",
@@ -18,6 +26,13 @@ export function ProposalsPage({ meta, props }: { meta: Meta; props: ProposalsPag
   const proposals = useMemo(
     () => filterProposals(props.proposals, { ...filters, search: deferredSearch }),
     [deferredSearch, filters, props.proposals],
+  );
+  const windowOptions = useMemo(
+    () => [
+      { value: "30d", label: "30d", count: props.proposals.filter((proposal) => inWindow(proposal.date, 30)).length },
+      { value: "6m", label: "6m", count: props.proposals.filter((proposal) => inWindow(proposal.date, 183)).length },
+    ],
+    [props.proposals],
   );
 
   return (
@@ -57,11 +72,7 @@ export function ProposalsPage({ meta, props }: { meta: Meta; props: ProposalsPag
           {
             label: "Window",
             value: filters.window,
-            options: [
-              { value: "30d", label: "30d", count: 0 },
-              { value: "6m", label: "6m", count: 0 },
-              { value: "all", label: "All Time", count: 0 },
-            ],
+            options: windowOptions,
             onChange: (window) => setFilters({ window }),
           },
         ]}
@@ -77,26 +88,40 @@ export function ProposalsPage({ meta, props }: { meta: Meta; props: ProposalsPag
         </div>
       </section>
 
-      <section className="stack-list compact">
-        {proposals.map((proposal) => (
-          <a key={proposal.archiveId} className="directory-row" href={proposal.href}>
-            <div className="directory-main">
-              <div className="timeline-meta">
-                <span>{proposal.numberLabel}</span>
-                <span>{formatLabel(proposal.status)}</span>
-                <span>{formatLabel(proposal.category)}</span>
-                {proposal.hot ? <span>Hot</span> : null}
+      <section className="section-block">
+        <div className="ledger-table">
+          <div className="ledger-head">
+            <span>Proposal</span>
+            <span>Status / Chain</span>
+            <span>Requested</span>
+            <span>Routed</span>
+            <span>Votes</span>
+          </div>
+          <div className="ledger-body">
+            {proposals.map((proposal) => (
+              <div key={proposal.archiveId} className="ledger-row">
+                <span className="ledger-cell ledger-primary">
+                  <a href={proposal.href}>{proposal.numberLabel}</a>
+                  <strong>{proposal.title}</strong>
+                  <small>{proposal.summary}</small>
+                  <small>{proposal.proposerLabel} / {proposal.proposerSecondaryLabel}</small>
+                </span>
+                <span className="ledger-cell ledger-primary">
+                  <strong>{formatLabel(proposal.resolvedStatus || proposal.status)}</strong>
+                  <small>{formatLabel(proposal.chain)}</small>
+                  <small>{formatLabel(proposal.category)} {proposal.hot ? "/ Hot" : ""}</small>
+                  <small>{proposal.reconciliationStatus === "needs-review" ? "Needs review" : "Matched"}</small>
+                </span>
+                <span className="ledger-cell ledger-mono">{proposal.requestedLabel}</span>
+                <span className="ledger-cell ledger-mono">{proposal.routedLabel}</span>
+                <span className="ledger-cell ledger-mono">
+                  {proposal.voteCount} votes
+                  <small>{proposal.quorumLabel}</small>
+                </span>
               </div>
-              <strong>{proposal.title}</strong>
-              <p>{proposal.summary}</p>
-            </div>
-            <div className="directory-stats">
-              <span>{proposal.proposerLabel}</span>
-              <span>{proposal.budgetLabel}</span>
-              <span>{proposal.voteCount} votes</span>
-            </div>
-          </a>
-        ))}
+            ))}
+          </div>
+        </div>
       </section>
     </SiteLayout>
   );

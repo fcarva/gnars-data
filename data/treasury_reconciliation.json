@@ -1,0 +1,2271 @@
+{
+  "dataset": "treasury_reconciliation",
+  "analytics_as_of": "2026-03-19T03:35:14.475549Z",
+  "as_of": "2026-03-19T03:35:14.475549Z",
+  "version": 1,
+  "summary": {
+    "matched_count": 51,
+    "needs_review_count": 1,
+    "window_summary": {
+      "7d": {
+        "route_count": 0,
+        "proposal_count": 0,
+        "recipient_count": 0
+      },
+      "30d": {
+        "route_count": 0,
+        "proposal_count": 0,
+        "recipient_count": 0
+      },
+      "90d": {
+        "route_count": 0,
+        "proposal_count": 0,
+        "recipient_count": 0
+      },
+      "all": {
+        "route_count": 52,
+        "proposal_count": 43,
+        "recipient_count": 40
+      }
+    }
+  },
+  "records": [
+    {
+      "route_id": "gnars-base-104:1",
+      "archive_id": "gnars-base-104",
+      "proposal_number": 104,
+      "proposal_title": "7Capasmag Skate&Jazz Vol 2 - New Nounstacle inauguration in Devconnect ",
+      "chain": "base",
+      "recipient_address": "0x9ad8d2a8ef4bf60a667dd43fcb178bdbd93ae1c8",
+      "recipient_display_name": "7capas.eth",
+      "asset_symbol": "ETH",
+      "amount": 0.42,
+      "token_contract": null,
+      "asset_contract_status": "native",
+      "repo_value": {
+        "amount": 0.42,
+        "asset_symbol": "ETH",
+        "recipient_address": "0x9ad8d2a8ef4bf60a667dd43fcb178bdbd93ae1c8",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/104",
+        "canonical_url": "https://gnars.com/proposals/base/104"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "0.42 ETH",
+        "recipient_label": "7capas.eth",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/104",
+        "https://gnars.com/proposals/base/104",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-101:2",
+      "archive_id": "gnars-base-101",
+      "proposal_number": 101,
+      "proposal_title": "Gnars India Initiative: Building Bridges Through Skateboarding",
+      "chain": "base",
+      "recipient_address": "0x49d31dcb59e115f5c9e505a58a323ade076f2176",
+      "recipient_display_name": "fernandoferreira.eth",
+      "asset_symbol": "USDC",
+      "amount": 2600.0,
+      "token_contract": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "asset_contract_status": "external-token",
+      "repo_value": {
+        "amount": 2600.0,
+        "asset_symbol": "USDC",
+        "recipient_address": "0x49d31dcb59e115f5c9e505a58a323ade076f2176",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/101",
+        "canonical_url": "https://gnars.com/proposals/base/101"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "2,600 USDC",
+        "recipient_label": "fernandoferreira.eth",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/101",
+        "https://gnars.com/proposals/base/101",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-101:1",
+      "archive_id": "gnars-base-101",
+      "proposal_number": 101,
+      "proposal_title": "Gnars India Initiative: Building Bridges Through Skateboarding",
+      "chain": "base",
+      "recipient_address": "0x49d31dcb59e115f5c9e505a58a323ade076f2176",
+      "recipient_display_name": "fernandoferreira.eth",
+      "asset_symbol": "ETH",
+      "amount": 0.619,
+      "token_contract": null,
+      "asset_contract_status": "native",
+      "repo_value": {
+        "amount": 0.619,
+        "asset_symbol": "ETH",
+        "recipient_address": "0x49d31dcb59e115f5c9e505a58a323ade076f2176",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/101",
+        "canonical_url": "https://gnars.com/proposals/base/101"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "0.619 ETH",
+        "recipient_label": "fernandoferreira.eth",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/101",
+        "https://gnars.com/proposals/base/101",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-95:1",
+      "archive_id": "gnars-base-95",
+      "proposal_number": 95,
+      "proposal_title": "Funding Katwe Parkour Culture to make the DIY Parkour Equipments",
+      "chain": "base",
+      "recipient_address": "0xd2d164aea2a354e46ee3cf207899f48e5432b968",
+      "recipient_display_name": "0xd2d1...b968",
+      "asset_symbol": "USDC",
+      "amount": 1200.0,
+      "token_contract": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "asset_contract_status": "external-token",
+      "repo_value": {
+        "amount": 1200.0,
+        "asset_symbol": "USDC",
+        "recipient_address": "0xd2d164aea2a354e46ee3cf207899f48e5432b968",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/95",
+        "canonical_url": "https://gnars.com/proposals/base/95"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "1,200 USDC",
+        "recipient_label": "0xd2d1...b968",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/95",
+        "https://gnars.com/proposals/base/95",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-89:1",
+      "archive_id": "gnars-base-89",
+      "proposal_number": 89,
+      "proposal_title": "Noggle Rail - Itapetininga Skate Park ⌐◨-◨",
+      "chain": "base",
+      "recipient_address": "0x43c363f3821b4efe4f9d04df74c0e32db42a7970",
+      "recipient_display_name": "0x43c3...7970",
+      "asset_symbol": "USDC",
+      "amount": 1700.0,
+      "token_contract": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "asset_contract_status": "external-token",
+      "repo_value": {
+        "amount": 1700.0,
+        "asset_symbol": "USDC",
+        "recipient_address": "0x43c363f3821b4efe4f9d04df74c0e32db42a7970",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/89",
+        "canonical_url": "https://gnars.com/proposals/base/89"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "1,700 USDC",
+        "recipient_label": "0x43c3...7970",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/89",
+        "https://gnars.com/proposals/base/89",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-86:2",
+      "archive_id": "gnars-base-86",
+      "proposal_number": 86,
+      "proposal_title": "Gnars Flows",
+      "chain": "base",
+      "recipient_address": "0xc4079dc1f8f84711eee0942c192829f473fc3c28",
+      "recipient_display_name": "0xc407...3c28",
+      "asset_symbol": "USDC",
+      "amount": 8000.0,
+      "token_contract": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "asset_contract_status": "external-token",
+      "repo_value": {
+        "amount": 8000.0,
+        "asset_symbol": "USDC",
+        "recipient_address": "0xc4079dc1f8f84711eee0942c192829f473fc3c28",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/86",
+        "canonical_url": "https://gnars.com/proposals/base/86"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "8,000 USDC",
+        "recipient_label": "0xc407...3c28",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/86",
+        "https://gnars.com/proposals/base/86",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-86:1",
+      "archive_id": "gnars-base-86",
+      "proposal_number": 86,
+      "proposal_title": "Gnars Flows",
+      "chain": "base",
+      "recipient_address": "0x289715ffbb2f4b482e2917d2f183feab564ec84f",
+      "recipient_display_name": "rocketman21.eth",
+      "asset_symbol": "ETH",
+      "amount": 1.0,
+      "token_contract": null,
+      "asset_contract_status": "native",
+      "repo_value": {
+        "amount": 1.0,
+        "asset_symbol": "ETH",
+        "recipient_address": "0x289715ffbb2f4b482e2917d2f183feab564ec84f",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/86",
+        "canonical_url": "https://gnars.com/proposals/base/86"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "1 ETH",
+        "recipient_label": "rocketman21.eth",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/86",
+        "https://gnars.com/proposals/base/86",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-77:1",
+      "archive_id": "gnars-base-77",
+      "proposal_number": 77,
+      "proposal_title": "THE GLOBAL PREMIERE OF UGANDA CONNECTION DOCUMENTARY",
+      "chain": "base",
+      "recipient_address": "0xddd7c01cecdbd0ac633ef7405a60165f731e645f",
+      "recipient_display_name": "0xddd7...645f",
+      "asset_symbol": "USDC",
+      "amount": 1350.0,
+      "token_contract": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "asset_contract_status": "external-token",
+      "repo_value": {
+        "amount": 1350.0,
+        "asset_symbol": "USDC",
+        "recipient_address": "0xddd7c01cecdbd0ac633ef7405a60165f731e645f",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/77",
+        "canonical_url": "https://gnars.com/proposals/base/77"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "1,350 USDC",
+        "recipient_label": "0xddd7...645f",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/77",
+        "https://gnars.com/proposals/base/77",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-70:1",
+      "archive_id": "gnars-base-70",
+      "proposal_number": 70,
+      "proposal_title": "Sponsor Gnars Athlete Monik Santos to Compete in Brazil’s Main Surf Event",
+      "chain": "base",
+      "recipient_address": "0x0020d02026e6e82a8f002024a418c0f486bc597e",
+      "recipient_display_name": "0x0020...597e",
+      "asset_symbol": "USDC",
+      "amount": 2042.0,
+      "token_contract": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "asset_contract_status": "external-token",
+      "repo_value": {
+        "amount": 2042.0,
+        "asset_symbol": "USDC",
+        "recipient_address": "0x0020d02026e6e82a8f002024a418c0f486bc597e",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/70",
+        "canonical_url": "https://gnars.com/proposals/base/70"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "2,042 USDC",
+        "recipient_label": "0x0020...597e",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/70",
+        "https://gnars.com/proposals/base/70",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-65:1",
+      "archive_id": "gnars-base-65",
+      "proposal_number": 65,
+      "proposal_title": "Reimbursement Proposal for Benbodhi",
+      "chain": "base",
+      "recipient_address": "0xa903c06bf35286f6d1cdad25396748353979a44c",
+      "recipient_display_name": "benbodhi.eth",
+      "asset_symbol": "SENDIT",
+      "amount": 12881837.0,
+      "token_contract": "0xba5b9b2d2d06a9021eb3190ea5fb0e02160839a4",
+      "asset_contract_status": "external-token",
+      "repo_value": {
+        "amount": 12881837.0,
+        "asset_symbol": "SENDIT",
+        "recipient_address": "0xa903c06bf35286f6d1cdad25396748353979a44c",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/65",
+        "canonical_url": "https://gnars.com/proposals/base/65"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "12,881,837 SENDIT",
+        "recipient_label": "benbodhi.eth",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/65",
+        "https://gnars.com/proposals/base/65",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-64:1",
+      "archive_id": "gnars-base-64",
+      "proposal_number": 64,
+      "proposal_title": "Shredding into DeSci: GNARS X BluntDAO x DeSCI World",
+      "chain": "base",
+      "recipient_address": "0x2858eba3985476ca81217f2f8c5e65508f34960f",
+      "recipient_display_name": "0x2858...960f",
+      "asset_symbol": "USDC",
+      "amount": 2250.0,
+      "token_contract": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "asset_contract_status": "external-token",
+      "repo_value": {
+        "amount": 2250.0,
+        "asset_symbol": "USDC",
+        "recipient_address": "0x2858eba3985476ca81217f2f8c5e65508f34960f",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/64",
+        "canonical_url": "https://gnars.com/proposals/base/64"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "2,250 USDC",
+        "recipient_label": "0x2858...960f",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/64",
+        "https://gnars.com/proposals/base/64",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-63:3",
+      "archive_id": "gnars-base-63",
+      "proposal_number": 63,
+      "proposal_title": "Dave Bachinsky » 1 Year Sponsorship Proposal ",
+      "chain": "base",
+      "recipient_address": "0x244306053c673b93bc9885fdacfc352032725c87",
+      "recipient_display_name": "0x2443...5c87",
+      "asset_symbol": "SENDIT",
+      "amount": 46500000.0,
+      "token_contract": "0xba5b9b2d2d06a9021eb3190ea5fb0e02160839a4",
+      "asset_contract_status": "external-token",
+      "repo_value": {
+        "amount": 46500000.0,
+        "asset_symbol": "SENDIT",
+        "recipient_address": "0x244306053c673b93bc9885fdacfc352032725c87",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/63",
+        "canonical_url": "https://gnars.com/proposals/base/63"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "46,500,000 SENDIT",
+        "recipient_label": "0x2443...5c87",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/63",
+        "https://gnars.com/proposals/base/63",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-63:2",
+      "archive_id": "gnars-base-63",
+      "proposal_number": 63,
+      "proposal_title": "Dave Bachinsky » 1 Year Sponsorship Proposal ",
+      "chain": "base",
+      "recipient_address": "0x244306053c673b93bc9885fdacfc352032725c87",
+      "recipient_display_name": "0x2443...5c87",
+      "asset_symbol": "ETH",
+      "amount": 1.0,
+      "token_contract": null,
+      "asset_contract_status": "native",
+      "repo_value": {
+        "amount": 1.0,
+        "asset_symbol": "ETH",
+        "recipient_address": "0x244306053c673b93bc9885fdacfc352032725c87",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/63",
+        "canonical_url": "https://gnars.com/proposals/base/63"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "1 ETH",
+        "recipient_label": "0x2443...5c87",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/63",
+        "https://gnars.com/proposals/base/63",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-63:1",
+      "archive_id": "gnars-base-63",
+      "proposal_number": 63,
+      "proposal_title": "Dave Bachinsky » 1 Year Sponsorship Proposal ",
+      "chain": "base",
+      "recipient_address": "0x244306053c673b93bc9885fdacfc352032725c87",
+      "recipient_display_name": "0x2443...5c87",
+      "asset_symbol": "USDC",
+      "amount": 3200.0,
+      "token_contract": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "asset_contract_status": "external-token",
+      "repo_value": {
+        "amount": 3200.0,
+        "asset_symbol": "USDC",
+        "recipient_address": "0x244306053c673b93bc9885fdacfc352032725c87",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/63",
+        "canonical_url": "https://gnars.com/proposals/base/63"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "3,200 USDC",
+        "recipient_label": "0x2443...5c87",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/63",
+        "https://gnars.com/proposals/base/63",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-61:2",
+      "archive_id": "gnars-base-61",
+      "proposal_number": 61,
+      "proposal_title": "Bernardo Nassar renewal propososal V2 (Bodyboarder)",
+      "chain": "base",
+      "recipient_address": "0xbc94f5266c5f78677b98238fc93d825d25abfc12",
+      "recipient_display_name": "0xbc94...fc12",
+      "asset_symbol": "SENDIT",
+      "amount": 119569120.28725314,
+      "token_contract": "0xba5b9b2d2d06a9021eb3190ea5fb0e02160839a4",
+      "asset_contract_status": "external-token",
+      "repo_value": {
+        "amount": 119569120.28725314,
+        "asset_symbol": "SENDIT",
+        "recipient_address": "0xbc94f5266c5f78677b98238fc93d825d25abfc12",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/61",
+        "canonical_url": "https://gnars.com/proposals/base/61"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "119,569,120.29 SENDIT",
+        "recipient_label": "0xbc94...fc12",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/61",
+        "https://gnars.com/proposals/base/61",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-61:1",
+      "archive_id": "gnars-base-61",
+      "proposal_number": 61,
+      "proposal_title": "Bernardo Nassar renewal propososal V2 (Bodyboarder)",
+      "chain": "base",
+      "recipient_address": "0xbc94f5266c5f78677b98238fc93d825d25abfc12",
+      "recipient_display_name": "0xbc94...fc12",
+      "asset_symbol": "USDC",
+      "amount": 2650.0,
+      "token_contract": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "asset_contract_status": "external-token",
+      "repo_value": {
+        "amount": 2650.0,
+        "asset_symbol": "USDC",
+        "recipient_address": "0xbc94f5266c5f78677b98238fc93d825d25abfc12",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/61",
+        "canonical_url": "https://gnars.com/proposals/base/61"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "2,650 USDC",
+        "recipient_label": "0xbc94...fc12",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/61",
+        "https://gnars.com/proposals/base/61",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-57:1",
+      "archive_id": "gnars-base-57",
+      "proposal_number": 57,
+      "proposal_title": "Create a Round in Rounds.wtf for sharing Gnarly Media created in 2024",
+      "chain": "base",
+      "recipient_address": "0x41cb654d1f47913acab158a8199191d160dabe4a",
+      "recipient_display_name": "0x41cb...be4a",
+      "asset_symbol": "SENDIT",
+      "amount": 85879900.0,
+      "token_contract": "0xba5b9b2d2d06a9021eb3190ea5fb0e02160839a4",
+      "asset_contract_status": "external-token",
+      "repo_value": {
+        "amount": 85879900.0,
+        "asset_symbol": "SENDIT",
+        "recipient_address": "0x41cb654d1f47913acab158a8199191d160dabe4a",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/57",
+        "canonical_url": "https://gnars.com/proposals/base/57"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "85,879,900 SENDIT",
+        "recipient_label": "0x41cb...be4a",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/57",
+        "https://gnars.com/proposals/base/57",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-53:1",
+      "archive_id": "gnars-base-53",
+      "proposal_number": 53,
+      "proposal_title": "Sponsor Kampala Skateboard Initiative and Bring then Online and Onchain",
+      "chain": "base",
+      "recipient_address": "0x709a480188cf171b1672438e28bbec3ba2d3a68a",
+      "recipient_display_name": "0x709a...a68a",
+      "asset_symbol": "USDC",
+      "amount": 4139.0,
+      "token_contract": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "asset_contract_status": "external-token",
+      "repo_value": {
+        "amount": 4139.0,
+        "asset_symbol": "USDC",
+        "recipient_address": "0x709a480188cf171b1672438e28bbec3ba2d3a68a",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/53",
+        "canonical_url": "https://gnars.com/proposals/base/53"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "4,139 USDC",
+        "recipient_label": "0x709a...a68a",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/53",
+        "https://gnars.com/proposals/base/53",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-48:2",
+      "archive_id": "gnars-base-48",
+      "proposal_number": 48,
+      "proposal_title": "Pay Millz and Bagelface for their time and energy spent working on base migration and gnars frontend",
+      "chain": "base",
+      "recipient_address": "0xc2e3df2748e4ef6e1a8322772fd7d962410c721a",
+      "recipient_display_name": "millz.eth",
+      "asset_symbol": "ETH",
+      "amount": 0.2,
+      "token_contract": null,
+      "asset_contract_status": "native",
+      "repo_value": {
+        "amount": 0.2,
+        "asset_symbol": "ETH",
+        "recipient_address": "0xc2e3df2748e4ef6e1a8322772fd7d962410c721a",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/48",
+        "canonical_url": "https://gnars.com/proposals/base/48"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "0.2 ETH",
+        "recipient_label": "millz.eth",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/48",
+        "https://gnars.com/proposals/base/48",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-48:1",
+      "archive_id": "gnars-base-48",
+      "proposal_number": 48,
+      "proposal_title": "Pay Millz and Bagelface for their time and energy spent working on base migration and gnars frontend",
+      "chain": "base",
+      "recipient_address": "0xba6e1c26be2f8b46d9e7ab7573b99921ee81acf5",
+      "recipient_display_name": "bagelface.eth",
+      "asset_symbol": "ETH",
+      "amount": 0.2,
+      "token_contract": null,
+      "asset_contract_status": "native",
+      "repo_value": {
+        "amount": 0.2,
+        "asset_symbol": "ETH",
+        "recipient_address": "0xba6e1c26be2f8b46d9e7ab7573b99921ee81acf5",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/48",
+        "canonical_url": "https://gnars.com/proposals/base/48"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "0.2 ETH",
+        "recipient_label": "bagelface.eth",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/48",
+        "https://gnars.com/proposals/base/48",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-47:2",
+      "archive_id": "gnars-base-47",
+      "proposal_number": 47,
+      "proposal_title": "Droposal Uganda Connection",
+      "chain": "base",
+      "recipient_address": "0xeed943aa972dd394146e6f77b9434df07f36a282",
+      "recipient_display_name": "0xeed9...a282",
+      "asset_symbol": "USDC",
+      "amount": 1000.0,
+      "token_contract": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "asset_contract_status": "external-token",
+      "repo_value": {
+        "amount": 1000.0,
+        "asset_symbol": "USDC",
+        "recipient_address": "0xeed943aa972dd394146e6f77b9434df07f36a282",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/47",
+        "canonical_url": "https://gnars.com/proposals/base/47"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "1,000 USDC",
+        "recipient_label": "0xeed9...a282",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/47",
+        "https://gnars.com/proposals/base/47",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-45:1",
+      "archive_id": "gnars-base-45",
+      "proposal_number": 45,
+      "proposal_title": "Launch a Comprehensive Gnars Community Platform",
+      "chain": "base",
+      "recipient_address": "0x9d4e88f7f2ccbb005426c1ed91eb2bb7d235937f",
+      "recipient_display_name": "0x9d4e...937f",
+      "asset_symbol": "USDC",
+      "amount": 6969.0,
+      "token_contract": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "asset_contract_status": "external-token",
+      "repo_value": {
+        "amount": 6969.0,
+        "asset_symbol": "USDC",
+        "recipient_address": "0x9d4e88f7f2ccbb005426c1ed91eb2bb7d235937f",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/45",
+        "canonical_url": "https://gnars.com/proposals/base/45"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "6,969 USDC",
+        "recipient_label": "0x9d4e...937f",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/45",
+        "https://gnars.com/proposals/base/45",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-41:1",
+      "archive_id": "gnars-base-41",
+      "proposal_number": 41,
+      "proposal_title": "SKATE AND JAZZ - 1st Noggles Rail in Argentina",
+      "chain": "base",
+      "recipient_address": "0x9ad8d2a8ef4bf60a667dd43fcb178bdbd93ae1c8",
+      "recipient_display_name": "7capas.eth",
+      "asset_symbol": "USDC",
+      "amount": 3000.0,
+      "token_contract": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "asset_contract_status": "external-token",
+      "repo_value": {
+        "amount": 3000.0,
+        "asset_symbol": "USDC",
+        "recipient_address": "0x9ad8d2a8ef4bf60a667dd43fcb178bdbd93ae1c8",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/41",
+        "canonical_url": "https://gnars.com/proposals/base/41"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "3,000 USDC",
+        "recipient_label": "7capas.eth",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/41",
+        "https://gnars.com/proposals/base/41",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-40:1",
+      "archive_id": "gnars-base-40",
+      "proposal_number": 40,
+      "proposal_title": "Gnars Wakeboarding Culture",
+      "chain": "base",
+      "recipient_address": "0xed7be8b630924f437c28af58a99cc63fc80413f4",
+      "recipient_display_name": "overhau1.eth",
+      "asset_symbol": "USDC",
+      "amount": 6850.0,
+      "token_contract": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "asset_contract_status": "external-token",
+      "repo_value": {
+        "amount": 6850.0,
+        "asset_symbol": "USDC",
+        "recipient_address": "0xed7be8b630924f437c28af58a99cc63fc80413f4",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/40",
+        "canonical_url": "https://gnars.com/proposals/base/40"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "6,850 USDC",
+        "recipient_label": "overhau1.eth",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/40",
+        "https://gnars.com/proposals/base/40",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-39:1",
+      "archive_id": "gnars-base-39",
+      "proposal_number": 39,
+      "proposal_title": "Gnars in DEVcon Thai Adventure ",
+      "chain": "base",
+      "recipient_address": "0xe5f6202ff7ddc5273c249073865bc6f4d5d68beb",
+      "recipient_display_name": "0xe5f6...8beb",
+      "asset_symbol": "USDC",
+      "amount": 11800.0,
+      "token_contract": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "asset_contract_status": "external-token",
+      "repo_value": {
+        "amount": 11800.0,
+        "asset_symbol": "USDC",
+        "recipient_address": "0xe5f6202ff7ddc5273c249073865bc6f4d5d68beb",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/39",
+        "canonical_url": "https://gnars.com/proposals/base/39"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "11,800 USDC",
+        "recipient_label": "0xe5f6...8beb",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/39",
+        "https://gnars.com/proposals/base/39",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-38:1",
+      "archive_id": "gnars-base-38",
+      "proposal_number": 38,
+      "proposal_title": "Retro ramp of Mexico can be gnarlier",
+      "chain": "base",
+      "recipient_address": "0xedc1a397589a0236c4810883b7d559288a5fe7e1",
+      "recipient_display_name": "fattybuthappy.eth",
+      "asset_symbol": "ETH",
+      "amount": 0.43,
+      "token_contract": null,
+      "asset_contract_status": "native",
+      "repo_value": {
+        "amount": 0.43,
+        "asset_symbol": "ETH",
+        "recipient_address": "0xedc1a397589a0236c4810883b7d559288a5fe7e1",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/38",
+        "canonical_url": "https://gnars.com/proposals/base/38"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "0.43 ETH",
+        "recipient_label": "fattybuthappy.eth",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/38",
+        "https://gnars.com/proposals/base/38",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-37:2",
+      "archive_id": "gnars-base-37",
+      "proposal_number": 37,
+      "proposal_title": "Fund Travel Costs to Deliver 6K in Donated Skateboarding Materials to Uganda Skateboarding Collectives  --No Funds Spent on Donations-- ",
+      "chain": "base",
+      "recipient_address": "0x0a7b7374d9cba3ac9d31f18b2cd45aac4b3b442e",
+      "recipient_display_name": "0x0a7b...442e",
+      "asset_symbol": "USDC",
+      "amount": 7870.0,
+      "token_contract": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "asset_contract_status": "external-token",
+      "repo_value": {
+        "amount": 7870.0,
+        "asset_symbol": "USDC",
+        "recipient_address": "0x0a7b7374d9cba3ac9d31f18b2cd45aac4b3b442e",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/37",
+        "canonical_url": "https://gnars.com/proposals/base/37"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "7,870 USDC",
+        "recipient_label": "0x0a7b...442e",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/37",
+        "https://gnars.com/proposals/base/37",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-36:1",
+      "archive_id": "gnars-base-36",
+      "proposal_number": 36,
+      "proposal_title": "Maryhill Fall RVOD Freeride Sponsorship",
+      "chain": "base",
+      "recipient_address": "0x09e938e239803c78507abd5687a97acfea1188ea",
+      "recipient_display_name": "0x09e9...88ea",
+      "asset_symbol": "TOKEN-09E938",
+      "amount": 950000000.0,
+      "token_contract": "0x09e938e239803c78507abd5687a97acfea1188ea",
+      "asset_contract_status": "external-token",
+      "repo_value": {
+        "amount": 950000000.0,
+        "asset_symbol": "TOKEN-09E938",
+        "recipient_address": "0x09e938e239803c78507abd5687a97acfea1188ea",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/36",
+        "canonical_url": "https://gnars.com/proposals/base/36"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "950,000,000 TOKEN-09E938",
+        "recipient_label": "0x09e9...88ea",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/36",
+        "https://gnars.com/proposals/base/36",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-35:1",
+      "archive_id": "gnars-base-35",
+      "proposal_number": 35,
+      "proposal_title": "Salt Spring Slasher Sponsorship",
+      "chain": "base",
+      "recipient_address": "0x09e938e239803c78507abd5687a97acfea1188ea",
+      "recipient_display_name": "0x09e9...88ea",
+      "asset_symbol": "TOKEN-09E938",
+      "amount": 625000000.0,
+      "token_contract": "0x09e938e239803c78507abd5687a97acfea1188ea",
+      "asset_contract_status": "external-token",
+      "repo_value": {
+        "amount": 625000000.0,
+        "asset_symbol": "TOKEN-09E938",
+        "recipient_address": "0x09e938e239803c78507abd5687a97acfea1188ea",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/35",
+        "canonical_url": "https://gnars.com/proposals/base/35"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "625,000,000 TOKEN-09E938",
+        "recipient_label": "0x09e9...88ea",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/35",
+        "https://gnars.com/proposals/base/35",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-33:2",
+      "archive_id": "gnars-base-33",
+      "proposal_number": 33,
+      "proposal_title": "Noggles Rail debut in London UK",
+      "chain": "base",
+      "recipient_address": "0x387a161c6b25aa854100abaed39274e51aaffffd",
+      "recipient_display_name": "gami.eth",
+      "asset_symbol": "USDC",
+      "amount": 4500.0,
+      "token_contract": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "asset_contract_status": "external-token",
+      "repo_value": {
+        "amount": 4500.0,
+        "asset_symbol": "USDC",
+        "recipient_address": "0x387a161c6b25aa854100abaed39274e51aaffffd",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/33",
+        "canonical_url": "https://gnars.com/proposals/base/33"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "4,500 USDC",
+        "recipient_label": "gami.eth",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/33",
+        "https://gnars.com/proposals/base/33",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-33:1",
+      "archive_id": "gnars-base-33",
+      "proposal_number": 33,
+      "proposal_title": "Noggles Rail debut in London UK",
+      "chain": "base",
+      "recipient_address": "0x387a161c6b25aa854100abaed39274e51aaffffd",
+      "recipient_display_name": "gami.eth",
+      "asset_symbol": "ETH",
+      "amount": 0.12,
+      "token_contract": null,
+      "asset_contract_status": "native",
+      "repo_value": {
+        "amount": 0.12,
+        "asset_symbol": "ETH",
+        "recipient_address": "0x387a161c6b25aa854100abaed39274e51aaffffd",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/33",
+        "canonical_url": "https://gnars.com/proposals/base/33"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "0.12 ETH",
+        "recipient_label": "gami.eth",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/33",
+        "https://gnars.com/proposals/base/33",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-32:1",
+      "archive_id": "gnars-base-32",
+      "proposal_number": 32,
+      "proposal_title": " Gnarly TPM Shredder Team",
+      "chain": "base",
+      "recipient_address": "0xe1b91eb3f3747d00485e95da79041e6d9d399641",
+      "recipient_display_name": "0xe1b9...9641",
+      "asset_symbol": "USDC",
+      "amount": 16116.0,
+      "token_contract": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "asset_contract_status": "external-token",
+      "repo_value": {
+        "amount": 16116.0,
+        "asset_symbol": "USDC",
+        "recipient_address": "0xe1b91eb3f3747d00485e95da79041e6d9d399641",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/32",
+        "canonical_url": "https://gnars.com/proposals/base/32"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "16,116 USDC",
+        "recipient_label": "0xe1b9...9641",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/32",
+        "https://gnars.com/proposals/base/32",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-31:1",
+      "archive_id": "gnars-base-31",
+      "proposal_number": 31,
+      "proposal_title": "Onboarding Humberto Peres with 1 airdropped gnar",
+      "chain": "base",
+      "recipient_address": "0x3a7b8d37cb2da4c3b7c897421d90f42cc015d68d",
+      "recipient_display_name": "0x3a7b...d68d",
+      "asset_symbol": "ETH",
+      "amount": 0.0004,
+      "token_contract": null,
+      "asset_contract_status": "native",
+      "repo_value": {
+        "amount": 0.0004,
+        "asset_symbol": "ETH",
+        "recipient_address": "0x3a7b8d37cb2da4c3b7c897421d90f42cc015d68d",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/31",
+        "canonical_url": "https://gnars.com/proposals/base/31"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "0.0004 ETH",
+        "recipient_label": "0x3a7b...d68d",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/31",
+        "https://gnars.com/proposals/base/31",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-29:2",
+      "archive_id": "gnars-base-29",
+      "proposal_number": 29,
+      "proposal_title": "1 Year Sponsorship for Tom Rohrer - Toms Tutorials",
+      "chain": "base",
+      "recipient_address": "0xe8b290f49c2fb50ab018d89626e77c2321dc599d",
+      "recipient_display_name": "0xe8b2...599d",
+      "asset_symbol": "USDC",
+      "amount": 5500.0,
+      "token_contract": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "asset_contract_status": "external-token",
+      "repo_value": {
+        "amount": 5500.0,
+        "asset_symbol": "USDC",
+        "recipient_address": "0xe8b290f49c2fb50ab018d89626e77c2321dc599d",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/29",
+        "canonical_url": "https://gnars.com/proposals/base/29"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "5,500 USDC",
+        "recipient_label": "0xe8b2...599d",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/29",
+        "https://gnars.com/proposals/base/29",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-29:1",
+      "archive_id": "gnars-base-29",
+      "proposal_number": 29,
+      "proposal_title": "1 Year Sponsorship for Tom Rohrer - Toms Tutorials",
+      "chain": "base",
+      "recipient_address": "0xe8b290f49c2fb50ab018d89626e77c2321dc599d",
+      "recipient_display_name": "0xe8b2...599d",
+      "asset_symbol": "ETH",
+      "amount": 3.0,
+      "token_contract": null,
+      "asset_contract_status": "native",
+      "repo_value": {
+        "amount": 3.0,
+        "asset_symbol": "ETH",
+        "recipient_address": "0xe8b290f49c2fb50ab018d89626e77c2321dc599d",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/29",
+        "canonical_url": "https://gnars.com/proposals/base/29"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "3 ETH",
+        "recipient_label": "0xe8b2...599d",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/29",
+        "https://gnars.com/proposals/base/29",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-28:1",
+      "archive_id": "gnars-base-28",
+      "proposal_number": 28,
+      "proposal_title": "Travel Grant Proposal - IndoGNARS 2",
+      "chain": "base",
+      "recipient_address": "0xfc27b375faf1fbd3f3462044cf810082f042a45b",
+      "recipient_display_name": "luizhadad.eth",
+      "asset_symbol": "USDC",
+      "amount": 7888.0,
+      "token_contract": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "asset_contract_status": "external-token",
+      "repo_value": {
+        "amount": 7888.0,
+        "asset_symbol": "USDC",
+        "recipient_address": "0xfc27b375faf1fbd3f3462044cf810082f042a45b",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/28",
+        "canonical_url": "https://gnars.com/proposals/base/28"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "7,888 USDC",
+        "recipient_label": "luizhadad.eth",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/28",
+        "https://gnars.com/proposals/base/28",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-27:1",
+      "archive_id": "gnars-base-27",
+      "proposal_number": 27,
+      "proposal_title": "PATINAJE TOTAL Y GNARS AT WRG 2024 ITALY",
+      "chain": "base",
+      "recipient_address": "0x597960438e28e3b529dcea95c267dc9cfc458db0",
+      "recipient_display_name": "0x5979...8db0",
+      "asset_symbol": "ETH",
+      "amount": 0.8,
+      "token_contract": null,
+      "asset_contract_status": "native",
+      "repo_value": {
+        "amount": 0.8,
+        "asset_symbol": "ETH",
+        "recipient_address": "0x597960438e28e3b529dcea95c267dc9cfc458db0",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/27",
+        "canonical_url": "https://gnars.com/proposals/base/27"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "0.8 ETH",
+        "recipient_label": "0x5979...8db0",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/27",
+        "https://gnars.com/proposals/base/27",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-26:1",
+      "archive_id": "gnars-base-26",
+      "proposal_number": 26,
+      "proposal_title": "Establish the Pod Media",
+      "chain": "base",
+      "recipient_address": "0xe5f6202ff7ddc5273c249073865bc6f4d5d68beb",
+      "recipient_display_name": "0xe5f6...8beb",
+      "asset_symbol": "USDC",
+      "amount": 8085.0,
+      "token_contract": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "asset_contract_status": "external-token",
+      "repo_value": {
+        "amount": 8085.0,
+        "asset_symbol": "USDC",
+        "recipient_address": "0xe5f6202ff7ddc5273c249073865bc6f4d5d68beb",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/26",
+        "canonical_url": "https://gnars.com/proposals/base/26"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "8,085 USDC",
+        "recipient_label": "0xe5f6...8beb",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/26",
+        "https://gnars.com/proposals/base/26",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-25:1",
+      "archive_id": "gnars-base-25",
+      "proposal_number": 25,
+      "proposal_title": "Sculpture NOGGLES RAIL at Medellin Colombia",
+      "chain": "base",
+      "recipient_address": "0x33bbf6e27ce7b254e537bcb9f3b00cd1451563ea",
+      "recipient_display_name": "fuzzyface.eth",
+      "asset_symbol": "ETH",
+      "amount": 0.99,
+      "token_contract": null,
+      "asset_contract_status": "native",
+      "repo_value": {
+        "amount": 0.99,
+        "asset_symbol": "ETH",
+        "recipient_address": "0x33bbf6e27ce7b254e537bcb9f3b00cd1451563ea",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/25",
+        "canonical_url": "https://gnars.com/proposals/base/25"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "0.99 ETH",
+        "recipient_label": "fuzzyface.eth",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/25",
+        "https://gnars.com/proposals/base/25",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-24:1",
+      "archive_id": "gnars-base-24",
+      "proposal_number": 24,
+      "proposal_title": "Make Bless The First Skateshop Gnarly ",
+      "chain": "base",
+      "recipient_address": "0x3f5111e64c0b96cc6b436151da820a3f979ef7f2",
+      "recipient_display_name": "0x3f51...f7f2",
+      "asset_symbol": "USDC",
+      "amount": 12000.0,
+      "token_contract": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "asset_contract_status": "external-token",
+      "repo_value": {
+        "amount": 12000.0,
+        "asset_symbol": "USDC",
+        "recipient_address": "0x3f5111e64c0b96cc6b436151da820a3f979ef7f2",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/24",
+        "canonical_url": "https://gnars.com/proposals/base/24"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "12,000 USDC",
+        "recipient_label": "0x3f51...f7f2",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/24",
+        "https://gnars.com/proposals/base/24",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-23:1",
+      "archive_id": "gnars-base-23",
+      "proposal_number": 23,
+      "proposal_title": "Bring Thats Gnarly Onchain",
+      "chain": "base",
+      "recipient_address": "0x459b40643251f10d93334d91cf256f97d31f69de",
+      "recipient_display_name": "0x459b...69de",
+      "asset_symbol": "USDC",
+      "amount": 7500.0,
+      "token_contract": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "asset_contract_status": "external-token",
+      "repo_value": {
+        "amount": 7500.0,
+        "asset_symbol": "USDC",
+        "recipient_address": "0x459b40643251f10d93334d91cf256f97d31f69de",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/23",
+        "canonical_url": "https://gnars.com/proposals/base/23"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "7,500 USDC",
+        "recipient_label": "0x459b...69de",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/23",
+        "https://gnars.com/proposals/base/23",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-22:2",
+      "archive_id": "gnars-base-22",
+      "proposal_number": 22,
+      "proposal_title": "Onboarding Arthur Guedes",
+      "chain": "base",
+      "recipient_address": "0x10c3a08e1cdd302eefb4d2c1a9a7779aa4ded7b3",
+      "recipient_display_name": "0x10c3...d7b3",
+      "asset_symbol": "ETH",
+      "amount": 0.00034,
+      "token_contract": null,
+      "asset_contract_status": "native",
+      "repo_value": {
+        "amount": 0.00034,
+        "asset_symbol": "ETH",
+        "recipient_address": "0x10c3a08e1cdd302eefb4d2c1a9a7779aa4ded7b3",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/22",
+        "canonical_url": "https://gnars.com/proposals/base/22"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "0.00034 ETH",
+        "recipient_label": "0x10c3...d7b3",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/22",
+        "https://gnars.com/proposals/base/22",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-21:1",
+      "archive_id": "gnars-base-21",
+      "proposal_number": 21,
+      "proposal_title": "Mauricio Nava Onboarding ",
+      "chain": "base",
+      "recipient_address": "0x9cb927c5632685c4365b734cfb01249d4637f772",
+      "recipient_display_name": "0x9cb9...f772",
+      "asset_symbol": "ETH",
+      "amount": 0.00028,
+      "token_contract": null,
+      "asset_contract_status": "native",
+      "repo_value": {
+        "amount": 0.00028,
+        "asset_symbol": "ETH",
+        "recipient_address": "0x9cb927c5632685c4365b734cfb01249d4637f772",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/21",
+        "canonical_url": "https://gnars.com/proposals/base/21"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "0.00028 ETH",
+        "recipient_label": "0x9cb9...f772",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/21",
+        "https://gnars.com/proposals/base/21",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-20:2",
+      "archive_id": "gnars-base-20",
+      "proposal_number": 20,
+      "proposal_title": "Fund the Creation of Nounstacles",
+      "chain": "base",
+      "recipient_address": "0x735135ff4152b3ae255ca708eb37d83b0a8853f8",
+      "recipient_display_name": "0x7351...53f8",
+      "asset_symbol": "USDC",
+      "amount": 9900.0,
+      "token_contract": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "asset_contract_status": "external-token",
+      "repo_value": {
+        "amount": 9900.0,
+        "asset_symbol": "USDC",
+        "recipient_address": "0x735135ff4152b3ae255ca708eb37d83b0a8853f8",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/20",
+        "canonical_url": "https://gnars.com/proposals/base/20"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "9,900 USDC",
+        "recipient_label": "0x7351...53f8",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/20",
+        "https://gnars.com/proposals/base/20",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-19:1",
+      "archive_id": "gnars-base-19",
+      "proposal_number": 19,
+      "proposal_title": "Bernardo Nassar Sponsorship Proposal",
+      "chain": "base",
+      "recipient_address": "0xbb4e936d0f29a515757c518fa883794c4048ef62",
+      "recipient_display_name": "0xbb4e...ef62",
+      "asset_symbol": "USDC",
+      "amount": 5984.0,
+      "token_contract": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "asset_contract_status": "external-token",
+      "repo_value": {
+        "amount": 5984.0,
+        "asset_symbol": "USDC",
+        "recipient_address": "0xbb4e936d0f29a515757c518fa883794c4048ef62",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/19",
+        "canonical_url": "https://gnars.com/proposals/base/19"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "5,984 USDC",
+        "recipient_label": "0xbb4e...ef62",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/19",
+        "https://gnars.com/proposals/base/19",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-18:2",
+      "archive_id": "gnars-base-18",
+      "proposal_number": 18,
+      "proposal_title": "Estagirons Onboarding proposal",
+      "chain": "base",
+      "recipient_address": "0x1f3903417cf35dea83f6a2797e89e78c7d380d2b",
+      "recipient_display_name": "0x1f39...0d2b",
+      "asset_symbol": "ETH",
+      "amount": 0.00025,
+      "token_contract": null,
+      "asset_contract_status": "native",
+      "repo_value": {
+        "amount": 0.00025,
+        "asset_symbol": "ETH",
+        "recipient_address": "0x1f3903417cf35dea83f6a2797e89e78c7d380d2b",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/18",
+        "canonical_url": "https://gnars.com/proposals/base/18"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "0.00025 ETH",
+        "recipient_label": "0x1f39...0d2b",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/18",
+        "https://gnars.com/proposals/base/18",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-17:2",
+      "archive_id": "gnars-base-17",
+      "proposal_number": 17,
+      "proposal_title": "Pharra Onboarding Proposal",
+      "chain": "base",
+      "recipient_address": "0x735135ff4152b3ae255ca708eb37d83b0a8853f8",
+      "recipient_display_name": "0x7351...53f8",
+      "asset_symbol": "ETH",
+      "amount": 0.00026671,
+      "token_contract": null,
+      "asset_contract_status": "native",
+      "repo_value": {
+        "amount": 0.00026671,
+        "asset_symbol": "ETH",
+        "recipient_address": "0x735135ff4152b3ae255ca708eb37d83b0a8853f8",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/17",
+        "canonical_url": "https://gnars.com/proposals/base/17"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "0.000267 ETH",
+        "recipient_label": "0x7351...53f8",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/17",
+        "https://gnars.com/proposals/base/17",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-16:1",
+      "archive_id": "gnars-base-16",
+      "proposal_number": 16,
+      "proposal_title": " V2 Gnars Sunset IRL Docuseries Premiere Event",
+      "chain": "base",
+      "recipient_address": "0xb2b7d66bb56ce8ff7838dc8053ff35050ed95e9d",
+      "recipient_display_name": "rickyday.eth",
+      "asset_symbol": "USDC",
+      "amount": 3990.0,
+      "token_contract": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "asset_contract_status": "external-token",
+      "repo_value": {
+        "amount": 3990.0,
+        "asset_symbol": "USDC",
+        "recipient_address": "0xb2b7d66bb56ce8ff7838dc8053ff35050ed95e9d",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/16",
+        "canonical_url": "https://gnars.com/proposals/base/16"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "3,990 USDC",
+        "recipient_label": "rickyday.eth",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/16",
+        "https://gnars.com/proposals/base/16",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-14:2",
+      "archive_id": "gnars-base-14",
+      "proposal_number": 14,
+      "proposal_title": "Renan Carvalho onboarding proposal",
+      "chain": "base",
+      "recipient_address": "0xeed943aa972dd394146e6f77b9434df07f36a282",
+      "recipient_display_name": "0xeed9...a282",
+      "asset_symbol": "ETH",
+      "amount": 0.0004,
+      "token_contract": null,
+      "asset_contract_status": "native",
+      "repo_value": {
+        "amount": 0.0004,
+        "asset_symbol": "ETH",
+        "recipient_address": "0xeed943aa972dd394146e6f77b9434df07f36a282",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/14",
+        "canonical_url": "https://gnars.com/proposals/base/14"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "0.0004 ETH",
+        "recipient_label": "0xeed9...a282",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/14",
+        "https://gnars.com/proposals/base/14",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-12:2",
+      "archive_id": "gnars-base-12",
+      "proposal_number": 12,
+      "proposal_title": "Fund the Community and Tech Pods with Sendit",
+      "chain": "base",
+      "recipient_address": "0xe63617c62f18dbc7eff3d7c9eb8bac4d1c2adecc",
+      "recipient_display_name": "0xe636...decc",
+      "asset_symbol": "SENDIT",
+      "amount": 38888888.885,
+      "token_contract": "0xba5b9b2d2d06a9021eb3190ea5fb0e02160839a4",
+      "asset_contract_status": "external-token",
+      "repo_value": {
+        "amount": 38888888.885,
+        "asset_symbol": "SENDIT",
+        "recipient_address": "0xe63617c62f18dbc7eff3d7c9eb8bac4d1c2adecc",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/12",
+        "canonical_url": "https://gnars.com/proposals/base/12"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "38,888,888.88 SENDIT",
+        "recipient_label": "0xe636...decc",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/12",
+        "https://gnars.com/proposals/base/12",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-base-12:1",
+      "archive_id": "gnars-base-12",
+      "proposal_number": 12,
+      "proposal_title": "Fund the Community and Tech Pods with Sendit",
+      "chain": "base",
+      "recipient_address": "0x576950a0ae9c6c134a381fb4cf245e478e82ecab",
+      "recipient_display_name": "0x5769...ecab",
+      "asset_symbol": "SENDIT",
+      "amount": 38888888.885,
+      "token_contract": "0xba5b9b2d2d06a9021eb3190ea5fb0e02160839a4",
+      "asset_contract_status": "external-token",
+      "repo_value": {
+        "amount": 38888888.885,
+        "asset_symbol": "SENDIT",
+        "recipient_address": "0x576950a0ae9c6c134a381fb4cf245e478e82ecab",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/base/12",
+        "canonical_url": "https://gnars.com/proposals/base/12"
+      },
+      "chain_value": {
+        "treasury_contract_id": "gnars-base-treasury",
+        "treasury_contract_label": "Gnars Treasury",
+        "treasury_explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "38,888,888.88 SENDIT",
+        "recipient_label": "0x5769...ecab",
+        "treasury_source_label": "Gnars Treasury"
+      },
+      "reconciliation_status": "matched",
+      "mismatch_fields": [],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/base/12",
+        "https://gnars.com/proposals/base/12",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "route_id": "gnars-ethereum-38:1",
+      "archive_id": "gnars-ethereum-38",
+      "proposal_number": 38,
+      "proposal_title": "Base Jump 4 of 4 (proposals 2-3 not required)",
+      "chain": "ethereum",
+      "recipient_address": "0x387a161c6b25aa854100abaed39274e51aaffffd",
+      "recipient_display_name": "gami.eth",
+      "asset_symbol": "ETH",
+      "amount": 10.23730283,
+      "token_contract": null,
+      "asset_contract_status": "native",
+      "repo_value": {
+        "amount": 10.23730283,
+        "asset_symbol": "ETH",
+        "recipient_address": "0x387a161c6b25aa854100abaed39274e51aaffffd",
+        "proposal_status": "executed"
+      },
+      "site_value": {
+        "proposal_status": "executed",
+        "source_url": "https://www.gnars.com/proposals/ethereum/38",
+        "canonical_url": "https://gnars.com/proposals/ethereum/38"
+      },
+      "chain_value": {
+        "treasury_contract_id": null,
+        "treasury_contract_label": null,
+        "treasury_explorer_url": null,
+        "token_contract_id": null,
+        "token_explorer_url": null
+      },
+      "resolved_value": {
+        "amount_label": "10.2373 ETH",
+        "recipient_label": "gami.eth",
+        "treasury_source_label": "Ethereum Treasury"
+      },
+      "reconciliation_status": "needs-review",
+      "mismatch_fields": [
+        "treasury-contract"
+      ],
+      "evidence_urls": [
+        "https://www.gnars.com/proposals/ethereum/38",
+        "https://gnars.com/proposals/ethereum/38"
+      ]
+    }
+  ]
+}

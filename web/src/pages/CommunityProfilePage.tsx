@@ -26,6 +26,9 @@ export function CommunityProfilePage({ meta, props }: { meta: Meta; props: Commu
               {props.profile.identityLabel !== props.profile.displayName ? (
                 <span className="tag muted">{props.profile.identityLabel}</span>
               ) : null}
+              <span className={`tag ${props.profile.identityConfidence === "high" ? "tag-ok" : props.profile.identityConfidence === "medium" ? "tag-info" : "tag-warn"}`}>
+                {props.profile.identitySource}
+              </span>
             </div>
           </div>
         </div>
@@ -77,6 +80,12 @@ export function CommunityProfilePage({ meta, props }: { meta: Meta; props: Commu
               </div>
               <div className="stack-list compact">
                 <article className="mini-row static">
+                  <span>Authored Split</span>
+                  <strong>
+                    {props.governanceMetrics.authoredSplit.successful} ok / {props.governanceMetrics.authoredSplit.active} active / {props.governanceMetrics.authoredSplit.closed} closed
+                  </strong>
+                </article>
+                <article className="mini-row static">
                   <span>Active Votes</span>
                   <strong>{props.governanceMetrics.activeVotes}</strong>
                 </article>
@@ -92,6 +101,27 @@ export function CommunityProfilePage({ meta, props }: { meta: Meta; props: Commu
                   <span>Like Rate</span>
                   <strong>{props.governanceMetrics.likePct ?? "n/a"}%</strong>
                 </article>
+              </div>
+            </article>
+            <article className="list-card">
+              <div className="timeline-meta">
+                <span>Treasury Ledger</span>
+                <span>{props.economics.treasuryLedger.length} latest recipient routes</span>
+              </div>
+              <div className="stack-list compact">
+                {props.economics.treasuryLedger.length ? (
+                  props.economics.treasuryLedger.map((row) => (
+                    <a key={`${row.href}:${row.dateLabel}:${row.amountLabel}`} className="mini-row" href={row.href}>
+                      <span>{row.dateLabel} {row.projectLabel ? `/ ${row.projectLabel}` : ""}</span>
+                      <strong>{row.proposalLabel} / {row.amountLabel}</strong>
+                    </a>
+                  ))
+                ) : (
+                  <article className="mini-row static">
+                    <span>Treasury</span>
+                    <strong>No successful direct recipient routes yet</strong>
+                  </article>
+                )}
               </div>
             </article>
           </div>
@@ -160,10 +190,14 @@ export function CommunityProfilePage({ meta, props }: { meta: Meta; props: Commu
         </div>
         <div>
           <div className="section-head">
-            <span className="eyebrow">References</span>
-            <h2>Identity links, participation, and related workstreams.</h2>
+            <span className="eyebrow">Identity & References</span>
+            <h2>Identity provenance, participation, and related workstreams.</h2>
           </div>
           <div className="stack-list compact">
+            <article className="mini-row static">
+              <span>Identity</span>
+              <strong>{props.profile.identitySource} / {props.profile.identityConfidence}</strong>
+            </article>
             {props.profile.links.map((link) => (
               <a key={link.url} className="mini-row" href={link.url}>
                 <span>{link.kind}</span>

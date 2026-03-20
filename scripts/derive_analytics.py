@@ -13,11 +13,15 @@ from urllib import request as urllib_request
 from Crypto.Hash import keccak
 
 from product_datasets import (
+    build_contract_reconciliation,
     build_feed_stream,
     build_filter_facets,
     build_insights,
     build_media_proof,
+    build_person_reconciliation,
+    build_proposal_reconciliation,
     build_proposals_enriched,
+    build_treasury_reconciliation,
     build_treasury_snapshots,
     expand_people,
     expand_project_rollups,
@@ -521,6 +525,8 @@ def contract_symbol(value: str) -> str:
     cleaned = re.sub(r"[^A-Za-z0-9]+", "", value or "").upper()
     if cleaned == "GNARS":
         return "GNARS"
+    if cleaned.startswith("0X") and len(cleaned) >= 8:
+        return f"TOKEN-{cleaned[2:8]}"
     return cleaned or "TOKEN"
 
 
@@ -615,7 +621,7 @@ def fungible_transfer_details(
         if not recipient or amount <= 0:
             return None
         return {
-            "asset_symbol": symbol_by_address.get(token_address, contract_symbol(token_address[:8])),
+            "asset_symbol": symbol_by_address.get(token_address, contract_symbol(token_address)),
             "asset_name": name_by_address.get(token_address, token_address or "ERC20"),
             "asset_kind": "erc20",
             "token_contract": token_address or None,
@@ -646,6 +652,7 @@ def empty_person(address: str) -> dict[str, Any]:
     return {
         "address": address,
         "display_name": None,
+        "display_name_source": None,
         "display_name_priority": 0,
         "slug": None,
         "status": "active",
@@ -730,6 +737,7 @@ def set_preferred_display_name(
     current_priority = int(person.get("display_name_priority") or 0)
     if priority >= current_priority:
         person["display_name"] = text
+        person["display_name_source"] = source
         person["display_name_priority"] = priority
 
 
@@ -968,6 +976,7 @@ def build_people_dataset(
                 "person_id": display_name.lower().replace(" ", "-"),
                 "slug": person["slug"] or slugify(display_name),
                 "display_name": display_name,
+                "display_name_source": person.get("display_name_source"),
                 "address": address,
                 "address_short": short_address(address),
                 "status": person["status"],
@@ -2337,6 +2346,7 @@ def build_network_graph(
 
 def main() -> int:
     archive = load_json("proposals_archive")
+    contracts = load_json("contracts")
     treasury = load_json("treasury")
     projects = load_json("projects")
     members_seed = load_json("members")
@@ -2346,6 +2356,7 @@ def main() -> int:
     members_snapshot = latest_members_snapshot()
     analytics_as_of = latest_value(
         archive.get("as_of"),
+        contracts.get("as_of"),
         treasury.get("as_of"),
         projects.get("as_of"),
         members_seed.get("as_of"),
@@ -2475,6 +2486,7 @@ def main() -> int:
         spend_records=spend_records,
         timeline_events=timeline_events,
         proposal_tags=proposal_tags,
+        contracts=contracts,
         analytics_as_of=analytics_as_of,
     )
     media_proof = build_media_proof(
@@ -2528,6 +2540,21 @@ def main() -> int:
         analytics_as_of=analytics_as_of,
     )
     treasury_snapshots = build_treasury_snapshots(treasury=treasury, analytics_as_of=analytics_as_of)
+    proposal_reconciliation = build_proposal_reconciliation(
+        archive=archive,
+        proposals_enriched=proposals_enriched,
+        analytics_as_of=analytics_as_of,
+    )
+    person_reconciliation = build_person_reconciliation(people=people, analytics_as_of=analytics_as_of)
+    contract_reconciliation = build_contract_reconciliation(contracts=contracts, analytics_as_of=analytics_as_of)
+    treasury_reconciliation = build_treasury_reconciliation(
+        spend_records=spend_records,
+        treasury_flows=treasury_flows,
+        proposals_enriched=proposals_enriched,
+        people=people,
+        contracts=contracts,
+        analytics_as_of=analytics_as_of,
+    )
 
     for payload in (
         people,
@@ -2566,6 +2593,10 @@ def main() -> int:
     write_json("insights", insights)
     write_json("filter_facets", filter_facets)
     write_json("treasury_snapshots", treasury_snapshots)
+    write_json("proposal_reconciliation", proposal_reconciliation)
+    write_json("person_reconciliation", person_reconciliation)
+    write_json("contract_reconciliation", contract_reconciliation)
+    write_json("treasury_reconciliation", treasury_reconciliation)
     return 0
 
 

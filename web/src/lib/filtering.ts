@@ -1,4 +1,4 @@
-import type { CommunityCard, FeedStreamItem, ProjectCard, ProposalCard } from "../types";
+import type { CommunityCard, FeedStreamItem, ProjectCard, ProposalCard, TreasuryProposalRow, TreasuryRouteRow } from "../types";
 
 function isAll(value: string) {
   return !value || value === "all";
@@ -143,6 +143,94 @@ export function filterProjects(
       case "date_desc":
       default:
         return String(right.updatedAt).localeCompare(String(left.updatedAt)) || right.title.localeCompare(left.title);
+    }
+  });
+}
+
+export function filterTreasuryRoutes(
+  routes: TreasuryRouteRow[],
+  filters: { asset: string; status: string; category: string; chain: string; window: string; search: string; sort: string },
+) {
+  const search = filters.search.trim().toLowerCase();
+  const filtered = routes.filter((route) => {
+    if (!isAll(filters.asset) && route.assetSymbol.toLowerCase() !== filters.asset.toLowerCase()) {
+      return false;
+    }
+    if (!isAll(filters.status) && route.proposalStatusKey !== filters.status) {
+      return false;
+    }
+    if (!isAll(filters.category) && route.categoryKey !== filters.category) {
+      return false;
+    }
+    if (!isAll(filters.chain) && route.proposalChain !== filters.chain) {
+      return false;
+    }
+    if (!inWindow(route.eventAt, filters.window)) {
+      return false;
+    }
+    if (search && !route.searchText.toLowerCase().includes(search)) {
+      return false;
+    }
+    return true;
+  });
+
+  return filtered.sort((left, right) => {
+    switch (filters.sort) {
+      case "amount_desc":
+      case "routed_value_desc":
+        return right.amount - left.amount || right.eventAt.localeCompare(left.eventAt);
+      case "recipient_asc":
+        return left.recipientLabel.localeCompare(right.recipientLabel) || right.amount - left.amount;
+      case "proposal_asc":
+        return left.proposalTitle.localeCompare(right.proposalTitle) || right.amount - left.amount;
+      case "date_desc":
+      default:
+        return right.eventAt.localeCompare(left.eventAt) || right.amount - left.amount;
+    }
+  });
+}
+
+export function filterTreasuryProposalRows(
+  rows: TreasuryProposalRow[],
+  filters: { status: string; category: string; chain: string; window: string; search: string; sort: string },
+) {
+  const search = filters.search.trim().toLowerCase();
+  const filtered = rows.filter((row) => {
+    if (!isAll(filters.status) && row.statusKey !== filters.status) {
+      return false;
+    }
+    if (!isAll(filters.category) && row.categoryKey !== filters.category) {
+      return false;
+    }
+    if (!isAll(filters.chain) && row.proposalChain !== filters.chain) {
+      return false;
+    }
+    if (!inWindow(row.date, filters.window)) {
+      return false;
+    }
+    if (search && !row.searchText.toLowerCase().includes(search)) {
+      return false;
+    }
+    return true;
+  });
+
+  return filtered.sort((left, right) => {
+    switch (filters.sort) {
+      case "amount_desc":
+      case "routed_value_desc": {
+        const leftValue = left.totalsByAsset.reduce((total, item) => total + item.amount, 0);
+        const rightValue = right.totalsByAsset.reduce((total, item) => total + item.amount, 0);
+        return rightValue - leftValue || left.title.localeCompare(right.title);
+      }
+      case "route_count_desc":
+        return right.routeCount - left.routeCount || String(right.date ?? "").localeCompare(String(left.date ?? ""));
+      case "recipient_asc":
+        return left.proposerLabel.localeCompare(right.proposerLabel) || left.title.localeCompare(right.title);
+      case "proposal_asc":
+        return left.title.localeCompare(right.title);
+      case "date_desc":
+      default:
+        return String(right.date ?? "").localeCompare(String(left.date ?? "")) || left.title.localeCompare(right.title);
     }
   });
 }

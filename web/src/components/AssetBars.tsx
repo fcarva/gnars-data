@@ -1,4 +1,4 @@
-import { formatAmount } from "../lib/format";
+import { formatAmount, formatAssetSymbol } from "../lib/format";
 import type { AssetAmount } from "../types";
 
 export function AssetBars({
@@ -19,7 +19,7 @@ export function AssetBars({
       {items.map((item) => (
         <div key={`${item.symbol}:${item.amount}`} className="bar-row">
           <div className="bar-meta">
-            <span>{item.symbol}</span>
+            <span>{formatAssetSymbol(item.symbol)}</span>
             <strong>{formatAmount(item.symbol, item.amount)}</strong>
           </div>
           <div className="bar-track">

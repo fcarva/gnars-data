@@ -371,7 +371,7 @@
         "deliveries_per_proposal": 0.021,
         "payouts_by_asset": [
           {
-            "symbol": "0X09E938",
+            "symbol": "TOKEN-09E938",
             "amount": 1575000000.0
           },
           {
@@ -394,7 +394,7 @@
           "display_name": "0x09e9...88ea",
           "totals_by_asset": [
             {
-              "symbol": "0X09E938",
+              "symbol": "TOKEN-09E938",
               "amount": 1575000000.0
             }
           ]
@@ -491,7 +491,7 @@
           "status": "executed",
           "totals_by_asset": [
             {
-              "symbol": "0X09E938",
+              "symbol": "TOKEN-09E938",
               "amount": 950000000.0
             }
           ]
@@ -503,7 +503,7 @@
           "status": "executed",
           "totals_by_asset": [
             {
-              "symbol": "0X09E938",
+              "symbol": "TOKEN-09E938",
               "amount": 625000000.0
             }
           ]
@@ -599,7 +599,7 @@
           "display_name": "0x09e9...88ea",
           "received_totals": [
             {
-              "symbol": "0X09E938",
+              "symbol": "TOKEN-09E938",
               "amount": 1575000000.0
             }
           ],

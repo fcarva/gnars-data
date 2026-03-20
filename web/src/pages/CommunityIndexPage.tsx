@@ -25,7 +25,7 @@ export function CommunityIndexPage({ meta, props }: { meta: Meta; props: Communi
         <div>
           <span className="eyebrow">Community</span>
           <h1>People are readable as operators, athletes, delegates, recipients, and collaborators, not just wallets.</h1>
-          <p>The directory is dense on purpose: labels, receipts, proposal history, and proof all stay visible.</p>
+          <p>The directory is a public operating ledger: identity provenance, treasury lineage, proposal activity, and proof stay visible in one row.</p>
         </div>
       </section>
 
@@ -44,7 +44,7 @@ export function CommunityIndexPage({ meta, props }: { meta: Meta; props: Communi
         onSelectChange={(sort) => setFilters({ sort })}
         groups={[
           {
-            label: "Tribe",
+            label: "Role",
             value: filters.tribe,
             options: props.facets.tribe,
             onChange: (tribe) => setFilters({ tribe }),
@@ -66,24 +66,56 @@ export function CommunityIndexPage({ meta, props }: { meta: Meta; props: Communi
           </div>
           <NetworkMap scene={props.economicMap} mode="full" />
         </article>
-        <div className="stack-list compact">
-          {people.slice(0, 36).map((person) => (
-            <a key={person.slug} className="directory-row" href={person.href}>
-              <div className="directory-main">
-                <div className="timeline-meta">
-                  <span>{person.tribes.join(" / ")}</span>
-                  <span>{person.status}</span>
-                </div>
-                <strong>{person.displayName}</strong>
-                <p>{person.subtitle}</p>
+        <article className="leaderboard-card">
+          <div className="section-head compact-head">
+            <span className="eyebrow">Identity Read</span>
+            <h2>{people.length} rows in the current filter state, ranked by activity and treasury context.</h2>
+          </div>
+          <div className="stack-list compact">
+            <article className="mini-row static">
+              <span>High confidence identities</span>
+              <strong>{people.filter((person) => person.identityConfidence === "high").length}</strong>
+            </article>
+            <article className="mini-row static">
+              <span>Recipient rows</span>
+              <strong>{people.filter((person) => person.totalReceivedLabel !== "No successful treasury flows").length}</strong>
+            </article>
+            <article className="mini-row static">
+              <span>Rows with proof</span>
+              <strong>{people.filter((person) => person.proofCount > 0).length}</strong>
+            </article>
+          </div>
+        </article>
+      </section>
+
+      <section className="section-block">
+        <div className="ledger-table">
+          <div className="ledger-head">
+            <span>Identity</span>
+            <span>Role / Provenance</span>
+            <span>Received</span>
+            <span>Managed</span>
+            <span>Proof</span>
+          </div>
+          <div className="ledger-body">
+            {people.slice(0, 72).map((person) => (
+              <div key={person.slug} className="ledger-row">
+                <span className="ledger-cell ledger-primary">
+                  <a href={person.href}>{person.displayName}</a>
+                  <small>{person.identityLabel}</small>
+                  <small>{person.subtitle}</small>
+                </span>
+                <span className="ledger-cell ledger-primary">
+                  <strong>{person.tribes.join(" / ")}</strong>
+                  <small>{person.status}</small>
+                  <small>{person.identitySource} / {person.identityConfidence}</small>
+                </span>
+                <span className="ledger-cell ledger-mono">{person.totalReceivedLabel}</span>
+                <span className="ledger-cell ledger-mono">{person.budgetManagedLabel}</span>
+                <span className="ledger-cell ledger-mono">{person.proofCount} proofs</span>
               </div>
-              <div className="directory-stats">
-                <span>{person.totalReceivedLabel}</span>
-                <span>{person.budgetManagedLabel}</span>
-                <span>{person.proofCount} proofs</span>
-              </div>
-            </a>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
     </SiteLayout>

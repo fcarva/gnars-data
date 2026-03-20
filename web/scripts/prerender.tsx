@@ -12,6 +12,7 @@ import type {
   CommunityIndexPageProps,
   CommunityProfilePageProps,
   CommunitySignalsData,
+  ContractReconciliationData,
   DaoMetrics,
   FeedStreamData,
   FilterFacetsData,
@@ -21,8 +22,10 @@ import type {
   NotesIndexRecord,
   PagePayload,
   PersonRecord,
+  PersonReconciliationData,
   ProposalEnrichedData,
   ProposalEnrichedRecord,
+  ProposalReconciliationData,
   ProjectCard,
   ProjectDetailPageProps,
   ProjectRollupRecord,
@@ -32,6 +35,9 @@ import type {
   SpendLedgerRecord,
   TimelineCard,
   TimelineEventRecord,
+  TreasuryProposalRow,
+  TreasuryReconciliationData,
+  TreasuryRouteRow,
   TreasuryFlowsData,
   TreasuryPageProps,
   TreasuryViewData,
@@ -52,7 +58,7 @@ import {
   timelineHref,
   tribeLabels,
 } from "../src/lib/selectors";
-import { formatAmount, formatDate, primaryAssetLabel, titleCase } from "../src/lib/format";
+import { assetTone, formatAmount, formatAssetDescriptor, formatAssetSymbol, formatDate, formatLabel, primaryAssetLabel, titleCase } from "../src/lib/format";
 
 const webRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const publicDataDir = path.join(webRoot, "public", "data");
@@ -118,6 +124,9 @@ function buildCommunityCard(
     slug: person.slug,
     href: communityHref(person.slug),
     displayName: personLabel(person),
+    identityLabel: personIdentityLabel(person),
+    identitySource: person.identity_source ?? "derived",
+    identityConfidence: person.identity_confidence ?? "low",
     subtitle: person.history_short || personSubtitle(person),
     tribes,
     totalReceivedLabel: economics.totalReceivedPrimary
@@ -134,7 +143,7 @@ function buildCommunityCard(
     budgetManagedPrimary: economics.budgetManagedByAsset[0]?.amount ?? 0,
     proofCount: person.proof_count ?? 0,
     lastSeenAt: person.last_seen_at,
-    searchText: `${personLabel(person)} ${person.identity.ens ?? ""} ${person.role} ${(person.tribes || person.tags).join(" ")} ${person.headline || ""}`,
+    searchText: `${personLabel(person)} ${person.identity.ens ?? ""} ${person.role} ${(person.tribes || person.tags).join(" ")} ${person.headline || ""} ${(person.proposal_roles || []).join(" ")} ${person.identity_source ?? ""}`,
   };
 }
 
@@ -147,6 +156,7 @@ function buildProjectCard(project: ProjectRollupRecord): ProjectCard {
     href: projectHref(project.project_id),
     title: project.name,
     status: titleCase(project.status),
+    reconciliationStatus: project.reconciliation_status ?? "matched",
     category: categoryLabel,
     summary: truncate(project.objective, 180),
     proposalTag: proposal?.proposal_number !== null && proposal?.proposal_number !== undefined ? `Prop #${proposal.proposal_number}` : project.origin_proposals[0] ?? "No prop",
@@ -186,8 +196,14 @@ function buildProposalCard(
     numberLabel: proposal.proposal_number !== null ? `Prop #${proposal.proposal_number}` : proposal.archive_id,
     title: proposal.title,
     status: titleCase(proposal.status),
+    resolvedStatus: titleCase(proposal.resolved_status),
+    reconciliationStatus: proposal.reconciliation_status,
+    chain: proposal.chain,
     proposerLabel: proposal.proposer_label || proposal.proposer || "Unknown proposer",
+    proposerSecondaryLabel: proposal.proposer,
     budgetLabel,
+    requestedLabel: proposal.requested_budget_display || proposal.requested_total_display,
+    routedLabel: proposal.routed_budget_display || proposal.routed_total_display,
     summary: truncate(proposal.summary_short || proposal.summary, 180),
     projectLabel: project?.name ?? null,
     date: proposal.date,
@@ -195,10 +211,134 @@ function buildProposalCard(
     statusKey: proposal.status,
     routedValue: proposal.routed_by_asset.reduce((total, item) => total + item.amount, 0),
     voteCount: proposal.vote_count,
+    quorumLabel: proposal.quorum ? `${Math.round(proposal.scores_total)}/${Math.round(proposal.quorum)}` : `${Math.round(proposal.scores_total)}`,
     hot: proposal.hot,
     labels,
-    searchText: `${proposal.title} ${proposal.category} ${proposal.proposer_label ?? proposal.proposer} ${proposal.summary} ${proposal.summary_short} ${proposal.primary_recipients.join(" ")} ${labels.join(" ")}`,
+    searchText: `${proposal.title} ${proposal.category} ${proposal.chain} ${proposal.proposer_label ?? proposal.proposer} ${proposal.summary} ${proposal.summary_short} ${proposal.primary_recipients.join(" ")} ${proposal.requested_budget_display} ${proposal.routed_budget_display} ${labels.join(" ")}`,
   };
+}
+
+function identityStatus(person: PersonRecord | undefined): "ens" | "named" | "address" {
+  if (person?.identity?.ens) {
+    return "ens";
+  }
+  if (person?.display_name && person.display_name !== person.address_short) {
+    return "named";
+  }
+  return "address";
+}
+
+function buildTreasuryRouteRows(
+  routes: TreasuryFlowsData["routes"],
+  peopleByAddress: Map<string, PersonRecord>,
+  proposalsEnrichedById: Map<string, ProposalEnrichedRecord>,
+): TreasuryRouteRow[] {
+  return routes.map((route) => {
+    const recipient = peopleByAddress.get(route.recipient_address.toLowerCase());
+    const proposer = peopleByAddress.get(route.proposer_address.toLowerCase());
+    const proposal = proposalsEnrichedById.get(route.archive_id);
+    const assetDisplaySymbol = formatAssetSymbol(route.asset_symbol, route.token_contract);
+    return {
+      routeId: route.route_id,
+      eventAt: route.event_at,
+      dateLabel: formatDate(route.event_at),
+      proposalHref: proposalHref(route.archive_id),
+      proposalNumberLabel: route.proposal_number !== null ? `Prop #${route.proposal_number}` : route.archive_id,
+      proposalTitle: route.proposal_title,
+      proposalStatus: formatLabel(route.proposal_status),
+      proposalStatusKey: route.proposal_status,
+      proposalChain: route.proposal_chain,
+      proposerLabel: proposer ? personLabel(proposer) : proposal?.proposer_label || route.proposer_address,
+      proposerSecondaryLabel: proposer ? personIdentityLabel(proposer) : route.proposer_address,
+      proposerHref: proposer ? communityHref(proposer.slug) : null,
+      category: proposal?.category ?? "Other",
+      categoryKey: (proposal?.category ?? "Other").toLowerCase().replace(/[^a-z0-9]+/g, "-"),
+      projectLabel: route.project_name,
+      projectHref: route.project_id ? projectHref(route.project_id) : null,
+      recipientLabel: recipient ? personLabel(recipient) : route.recipient_display_name,
+      recipientSecondaryLabel: recipient ? personIdentityLabel(recipient) : route.recipient_address,
+      recipientHref: recipient ? communityHref(recipient.slug) : null,
+      recipientIdentityStatus: identityStatus(recipient),
+      recipientAddress: route.recipient_address,
+      assetSymbol: route.asset_symbol,
+      assetDisplaySymbol,
+      assetTone: assetTone(route.asset_symbol),
+      assetKind: route.asset_kind,
+      assetDescriptor: formatAssetDescriptor(route.asset_symbol, route.asset_kind, route.token_contract),
+      amount: route.amount,
+      amountLabel: formatAmount(route.asset_symbol, route.amount, route.token_contract),
+      tokenContract: route.token_contract,
+      routeKind: route.project_id ? "project-linked" : "proposal-linked",
+      searchText: [
+        route.proposal_title,
+        route.proposal_number !== null ? `prop ${route.proposal_number}` : "",
+        route.proposal_status,
+        proposal?.category ?? "",
+        proposer ? personLabel(proposer) : proposal?.proposer_label || route.proposer_address,
+        proposer ? personIdentityLabel(proposer) : route.proposer_address,
+        route.proposer_address,
+        route.project_name ?? "",
+        recipient ? personLabel(recipient) : route.recipient_display_name,
+        recipient ? personIdentityLabel(recipient) : route.recipient_address,
+        route.recipient_address,
+        assetDisplaySymbol,
+        route.asset_symbol,
+        route.token_contract ?? "",
+        route.proposal_chain,
+      ]
+        .filter(Boolean)
+        .join(" "),
+    };
+  });
+}
+
+function buildTreasuryProposalRows(
+  proposals: ProposalEnrichedRecord[],
+  peopleByAddress: Map<string, PersonRecord>,
+  projectsByArchiveId: Map<string, ProjectRollupRecord>,
+  routeStatsByArchiveId: Map<string, { routeCount: number; recipientCount: number }>,
+): TreasuryProposalRow[] {
+  return proposals.map((proposal) => {
+    const proposer = peopleByAddress.get(proposal.proposer.toLowerCase());
+    const linkedProject = projectsByArchiveId.get(proposal.archive_id);
+    const stats = routeStatsByArchiveId.get(proposal.archive_id);
+    return {
+      archiveId: proposal.archive_id,
+      href: proposalHref(proposal.archive_id),
+      date: proposal.date || null,
+      numberLabel: proposal.proposal_number !== null ? `Prop #${proposal.proposal_number}` : proposal.archive_id,
+      title: proposal.title,
+      status: formatLabel(proposal.status),
+      statusKey: proposal.status,
+      category: proposal.category,
+      categoryKey: proposal.category.toLowerCase().replace(/[^a-z0-9]+/g, "-"),
+      proposerLabel: proposer ? personLabel(proposer) : proposal.proposer_label || proposal.proposer,
+      proposerHref: proposer ? communityHref(proposer.slug) : null,
+      proposalChain: proposal.chain,
+      projectLabel: linkedProject?.name ?? null,
+      projectHref: linkedProject ? projectHref(linkedProject.project_id) : null,
+      requestedLabel: proposal.requested_total_display,
+      routedLabel: proposal.routed_total_display,
+      totalsByAsset: proposal.routed_by_asset,
+      routeCount: stats?.routeCount ?? 0,
+      recipientCount: stats?.recipientCount ?? proposal.recipient_count,
+      proofCount: proposal.proof_count,
+      zeroRoute: proposal.routed_by_asset.length === 0,
+      searchText: [
+        proposal.title,
+        proposal.proposal_number !== null ? `prop ${proposal.proposal_number}` : "",
+        proposal.category,
+        proposal.status,
+        proposer ? personLabel(proposer) : proposal.proposer_label || proposal.proposer,
+        proposer ? personIdentityLabel(proposer) : proposal.proposer,
+        proposal.proposer,
+        ...(proposal.primary_recipients ?? []),
+        ...(proposal.reference_channels ?? []),
+      ]
+        .filter(Boolean)
+        .join(" "),
+    };
+  });
 }
 
 function buildTimelineCard(
@@ -413,6 +553,10 @@ async function main() {
   const feedStreamData = await loadJson<FeedStreamData>("feed_stream.json");
   const insightsData = await loadJson<InsightsData>("insights.json");
   const filterFacetsData = await loadJson<FilterFacetsData>("filter_facets.json");
+  const proposalReconciliationData = await loadJson<ProposalReconciliationData>("proposal_reconciliation.json");
+  const personReconciliationData = await loadJson<PersonReconciliationData>("person_reconciliation.json");
+  const contractReconciliationData = await loadJson<ContractReconciliationData>("contract_reconciliation.json");
+  const treasuryReconciliationData = await loadJson<TreasuryReconciliationData>("treasury_reconciliation.json");
   const activityTimeseriesData = await loadJson<ActivityTimeseriesData>("activity_timeseries.json");
   const activityViewData = await loadJson<ActivityViewData>("activity_view.json");
   const treasuryFlowsData = await loadJson<TreasuryFlowsData>("treasury_flows.json");
@@ -430,6 +574,8 @@ async function main() {
   const peopleByAddress = new Map(people.map((person) => [person.address.toLowerCase(), person]));
   const projectsById = new Map(projects.map((project) => [project.project_id, project]));
   const proposalsEnrichedById = new Map(proposalsEnriched.map((proposal) => [proposal.archive_id, proposal]));
+  const proposalReconciliationById = new Map(proposalReconciliationData.records.map((record) => [record.archive_id, record]));
+  const personReconciliationByAddress = new Map(personReconciliationData.records.map((record) => [record.address.toLowerCase(), record]));
   const proposalsByAlias = new Map<string, ProposalArchiveRecord>();
   for (const proposal of proposals) {
     for (const alias of proposalAliases(proposal)) {
@@ -451,6 +597,27 @@ async function main() {
     .slice()
     .sort((left, right) => `${right.date}${right.archive_id}`.localeCompare(`${left.date}${left.archive_id}`))
     .map((proposal) => buildProposalCard(proposal, projectsByArchiveId));
+  const treasuryRouteRows = buildTreasuryRouteRows(treasuryFlowsData.routes, peopleByAddress, proposalsEnrichedById);
+  const treasuryRouteStatsByArchiveId = new Map(
+    treasuryFlowsData.proposal_routes.map((record) => [
+      record.archive_id,
+      {
+        routeCount: record.route_count,
+        recipientCount: record.recipients.length,
+      },
+    ]),
+  );
+  const treasuryProposalRows = buildTreasuryProposalRows(
+    proposalsEnriched,
+    peopleByAddress,
+    projectsByArchiveId,
+    treasuryRouteStatsByArchiveId,
+  )
+    .sort((left, right) => {
+      const leftValue = left.totalsByAsset.reduce((total, item) => total + item.amount, 0);
+      const rightValue = right.totalsByAsset.reduce((total, item) => total + item.amount, 0);
+      return rightValue - leftValue || String(right.date ?? "").localeCompare(String(left.date ?? ""));
+    });
   const timelineCards = timeline.map((event) => buildTimelineCard(event, peopleByAddress));
   assertNetworkViewIntegrity(networkViewData);
 
@@ -459,7 +626,7 @@ async function main() {
     "Missing community signal window for prerender",
   );
   const treasuryScene = requireItem(
-    treasuryViewData.scenes.find((scene) => scene.window_id === "30d") ?? treasuryViewData.scenes[0],
+    treasuryViewData.scenes.find((scene) => scene.route_count > 0) ?? treasuryViewData.scenes[0],
     "Missing treasury scene for prerender",
   );
   const activityScene = requireItem(
@@ -568,6 +735,7 @@ async function main() {
       (proposal) => proposal.archive_id,
     );
     const economics = getAthleteEconomics(person.address, spendLedger, proposals, person.relationships.owned_projects);
+    const personReconciliation = personReconciliationByAddress.get(person.address.toLowerCase());
     const relatedProjects = uniqueBy(
       [...person.relationships.owned_projects, ...person.relationships.related_projects]
         .map((projectId) => projectsById.get(projectId))
@@ -613,6 +781,8 @@ async function main() {
           address: person.address,
           addressShort: person.address_short,
           identityLabel: personIdentityLabel(person),
+          identitySource: person.identity_source ?? personReconciliation?.identity_source ?? "derived",
+          identityConfidence: person.identity_confidence ?? personReconciliation?.identity_confidence ?? "low",
           ens: person.identity.ens ?? null,
           tribes: tribeLabels(person.tribes?.length ? person.tribes : person.tags),
           role: person.role,
@@ -627,7 +797,16 @@ async function main() {
           ],
           avatarUrl: person.identity.avatar_url ?? null,
         },
-        economics,
+        economics: {
+          ...economics,
+          treasuryLedger: (person.treasury_route_ledger ?? []).slice(0, 12).map((record) => ({
+            href: record.href,
+            proposalLabel: record.proposal_number !== null ? `Prop #${record.proposal_number}` : record.archive_id,
+            amountLabel: formatAmount(record.asset_symbol, record.amount),
+            dateLabel: formatDate(record.date),
+            projectLabel: record.project_name,
+          })),
+        },
         governanceMetrics: {
           activeVotes: person.governance.active_votes,
           votesCast: person.governance.votes_cast_count,
@@ -637,6 +816,11 @@ async function main() {
             ? Math.round((authored.filter((proposal) => isSuccessfulProposal(proposal)).length / authored.length) * 100)
             : 0,
           deliveryCount: proofOfWork.length,
+          authoredSplit: {
+            successful: authored.filter((proposal) => isSuccessfulProposal(proposal)).length,
+            active: authored.filter((proposal) => proposal.status === "active").length,
+            closed: authored.filter((proposal) => proposal.status !== "active").length,
+          },
         },
         governanceLog: authored.map((proposal) => ({
           href: proposalHref(proposal.archive_id),
@@ -746,6 +930,7 @@ async function main() {
     if (!enriched) {
       continue;
     }
+    const proposalReconciliation = proposalReconciliationById.get(proposal.archive_id);
     const card = buildProposalCard(enriched, projectsByArchiveId);
     const groupedRecipients = new Map<string, SpendLedgerRecord[]>();
     for (const record of budgetMap.get(proposal.archive_id) ?? []) {
@@ -774,15 +959,27 @@ async function main() {
         pathname: proposalHref(proposal.archive_id),
         activeNav: "governance",
       },
-      props: {
-        proposal: {
-          ...card,
-          createdAt: formatDate(proposal.created_at),
-          endAt: formatDate(proposal.end_at),
-          choices: proposal.choices,
-          scoresByChoice: proposal.scores_by_choice,
-          contentSummary: proposal.content_summary,
-          proposalLinks: [
+        props: {
+          proposal: {
+            ...card,
+            createdAt: formatDate(proposal.created_at),
+            endAt: formatDate(proposal.end_at),
+            choices: proposal.choices,
+            scoresByChoice: proposal.scores_by_choice,
+            contentSummary: proposal.content_summary,
+            whyVoteYes: enriched.why_vote_yes,
+            proofExpectations: enriched.proof_expectations,
+            proposedTransactionsSummary: enriched.proposed_transactions_summary,
+            treasurySourceLabel: enriched.treasury_source_label,
+            contributorRoles: enriched.contributor_roles,
+            reconciliation: {
+              siteStatus: enriched.site_status,
+              chainStatus: enriched.chain_status,
+              resolvedStatus: enriched.resolved_status,
+              status: proposalReconciliation?.reconciliation_status ?? enriched.reconciliation_status,
+              evidenceUrls: proposalReconciliation?.evidence_urls ?? [],
+            },
+            proposalLinks: [
             { label: "Canonical", url: proposal.links.canonical_url, kind: "Web" },
             { label: "Source", url: proposal.links.source_url, kind: "Source" },
             ...(proposal.links.discussion_url ? [{ label: "Discussion", url: proposal.links.discussion_url, kind: "Discussion" }] : []),
@@ -865,6 +1062,26 @@ async function main() {
             href: proposalHref(item.archive_id),
           })),
         },
+        {
+          title: "Reconciliation",
+          items: [
+            {
+              label: `${treasuryReconciliationData.summary.matched_count} matched routes`,
+              detail: `${treasuryReconciliationData.summary.needs_review_count} need review`,
+              href: "/treasury/?tab=reconciliation",
+            },
+            {
+              label: `${proposalReconciliationData.summary.matched_count} matched proposals`,
+              detail: `${proposalReconciliationData.summary.needs_review_count} proposal mismatches`,
+              href: "/treasury/?tab=reconciliation",
+            },
+            {
+              label: `${contractReconciliationData.summary.matched ?? contractReconciliationData.summary.matched_count ?? 0} contracts on-site`,
+              detail: `${contractReconciliationData.summary["chain_only_count"] ?? 0} chain-only contracts`,
+              href: "/treasury/?tab=reconciliation",
+            },
+          ],
+        },
       ],
     } satisfies NetworkPageProps,
   });
@@ -879,10 +1096,15 @@ async function main() {
     },
     props: {
       treasuryScene: treasuryViewData,
+      routes: treasuryRouteRows,
+      proposalRows: treasuryProposalRows,
       windows: treasuryFlowsData.windows,
       proposalRoutes: treasuryFlowsData.proposal_routes,
       insights: insightsData,
       facets: filterFacetsData.surfaces.treasury,
+      proposalReconciliation: proposalReconciliationData,
+      contractReconciliation: contractReconciliationData,
+      treasuryReconciliation: treasuryReconciliationData,
     } satisfies TreasuryPageProps,
   });
 

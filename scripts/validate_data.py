@@ -37,6 +37,10 @@ DATASETS = {
     "insights": "insights.schema.json",
     "filter_facets": "filter_facets.schema.json",
     "treasury_snapshots": "treasury_snapshots.schema.json",
+    "proposal_reconciliation": "proposal_reconciliation.schema.json",
+    "person_reconciliation": "person_reconciliation.schema.json",
+    "contract_reconciliation": "contract_reconciliation.schema.json",
+    "treasury_reconciliation": "treasury_reconciliation.schema.json",
     "sources": "sources.schema.json",
 }
 
@@ -112,6 +116,11 @@ def validate_references(datasets: dict[str, Any]) -> list[str]:
     media_proof = datasets.get("media_proof", {}).get("records", [])
     feed_stream = datasets.get("feed_stream", {}).get("records", [])
     treasury_flows = datasets.get("treasury_flows", {})
+    proposal_reconciliation = datasets.get("proposal_reconciliation", {}).get("records", [])
+    person_reconciliation = datasets.get("person_reconciliation", {}).get("records", [])
+    contract_reconciliation = datasets.get("contract_reconciliation", {}).get("records", [])
+    treasury_reconciliation = datasets.get("treasury_reconciliation", {}).get("records", [])
+    contracts = datasets.get("contracts", {}).get("records", [])
     network_graph = datasets.get("network_graph", {})
     filter_facets = datasets.get("filter_facets", {})
 
@@ -122,6 +131,7 @@ def validate_references(datasets: dict[str, Any]) -> list[str]:
     archive_ids = {record["archive_id"] for record in proposals}
     enriched_ids = {record["archive_id"] for record in proposals_enriched}
     proof_ids = {record["proof_id"] for record in media_proof}
+    contract_ids = {record["contract_id"] for record in contracts}
 
     if len(people_slugs) != len(set(people_slugs)):
         failures.append("data/people.json: duplicate slugs detected")
@@ -213,6 +223,30 @@ def validate_references(datasets: dict[str, Any]) -> list[str]:
             grouped_labels.update(label for label in (record.get(key) or []) if label not in (None, ""))
         if not grouped_labels.issubset(set(record.get("labels", []))):
             failures.append(f"data/feed_stream.json: labels do not cover grouped labels in {record['item_id']}")
+
+    if {record["archive_id"] for record in proposal_reconciliation} != archive_ids:
+        failures.append("data/proposal_reconciliation.json: archive coverage diverges from proposals_archive")
+    if {record["address"] for record in person_reconciliation} != set(people_by_address):
+        failures.append("data/person_reconciliation.json: address coverage diverges from people")
+    if {record["contract_id"] for record in contract_reconciliation} != contract_ids:
+        failures.append("data/contract_reconciliation.json: contract coverage diverges from contracts")
+    if {record["route_id"] for record in treasury_reconciliation} != {record["ledger_id"] for record in datasets.get("spend_ledger", {}).get("records", [])}:
+        failures.append("data/treasury_reconciliation.json: route coverage diverges from spend_ledger")
+
+    for record in proposal_reconciliation:
+        if record["archive_id"] not in archive_ids:
+            failures.append(f"data/proposal_reconciliation.json: unknown archive_id {record['archive_id']}")
+    for record in person_reconciliation:
+        if record["address"] not in people_by_address:
+            failures.append(f"data/person_reconciliation.json: unknown address {record['address']}")
+    for record in contract_reconciliation:
+        if record["contract_id"] not in contract_ids:
+            failures.append(f"data/contract_reconciliation.json: unknown contract_id {record['contract_id']}")
+    for record in treasury_reconciliation:
+        if record["archive_id"] not in archive_ids:
+            failures.append(f"data/treasury_reconciliation.json: unknown archive_id {record['archive_id']} in {record['route_id']}")
+        if record["recipient_address"] not in people_by_address:
+            failures.append(f"data/treasury_reconciliation.json: unknown recipient {record['recipient_address']} in {record['route_id']}")
 
     node_ids = [record["node_id"] for record in network_graph.get("nodes", [])]
     node_id_set = set(node_ids)

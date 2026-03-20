@@ -508,6 +508,24 @@ img {
   color: var(--muted);
 }
 
+.tag.tag-ok {
+  border-color: color-mix(in srgb, var(--accent) 55%, var(--line-strong));
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+  color: var(--accent);
+}
+
+.tag.tag-info {
+  border-color: color-mix(in srgb, var(--accent-blue) 45%, var(--line-strong));
+  background: color-mix(in srgb, var(--accent-blue) 10%, transparent);
+  color: var(--accent-blue);
+}
+
+.tag.tag-warn {
+  border-color: color-mix(in srgb, var(--accent-orange) 45%, var(--line-strong));
+  background: color-mix(in srgb, var(--accent-orange) 10%, transparent);
+  color: var(--accent-orange);
+}
+
 .tag.muted {
   color: var(--accent-blue);
   background: rgba(67, 133, 190, 0.08);
@@ -604,6 +622,11 @@ img {
 .filter-pill {
   cursor: pointer;
   min-height: 38px;
+}
+
+.filter-pill:disabled {
+  cursor: not-allowed;
+  opacity: 0.46;
 }
 
 .leaderboard-grid {
@@ -713,6 +736,81 @@ img {
   gap: 6px;
 }
 
+.section-anchor-row {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.treasury-hero {
+  padding-bottom: 12px;
+}
+
+.treasury-status-rail {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  margin-bottom: 8px;
+}
+
+.treasury-main-grid {
+  grid-template-columns: minmax(0, 1.2fr) minmax(360px, 0.8fr);
+  align-items: start;
+}
+
+.chart-toolbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.treasury-legend span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  padding: 0 8px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-tight);
+  background: var(--surface-strong);
+}
+
+.treasury-legend .eth {
+  color: var(--accent-yellow);
+}
+
+.treasury-legend .usdc {
+  color: var(--accent-blue);
+}
+
+.treasury-legend .gnars {
+  color: var(--accent);
+}
+
+.treasury-legend .sendit {
+  color: var(--accent-orange);
+}
+
+.treasury-legend .token {
+  color: var(--muted);
+}
+
+.chart-empty {
+  display: grid;
+  gap: 6px;
+  min-height: 220px;
+  place-items: center;
+  padding: 18px;
+  border: 1px dashed var(--line-strong);
+  border-radius: var(--radius-tight);
+  background: var(--surface-strong);
+  text-align: center;
+}
+
+.chart-empty span,
+.treasury-note,
+.treasury-note-box span {
+  color: var(--muted);
+}
+
 .network-edge {
   stroke: var(--line-strong);
   opacity: 0.32;
@@ -770,6 +868,7 @@ img {
   fill: none;
   stroke: var(--line-strong);
   opacity: 0.4;
+  transition: opacity 120ms ease;
 }
 
 .sankey-link.asset-eth {
@@ -782,6 +881,14 @@ img {
 
 .sankey-link.asset-gnars {
   stroke: var(--accent);
+}
+
+.sankey-link.asset-sendit {
+  stroke: var(--accent-orange);
+}
+
+.sankey-link.asset-token {
+  stroke: var(--muted);
 }
 
 .sankey-node rect {
@@ -809,6 +916,16 @@ img {
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 0.04em;
+}
+
+.sankey-link.is-dimmed,
+.sankey-node.is-dimmed rect,
+.sankey-node.is-dimmed text {
+  opacity: 0.16;
+}
+
+.treasury-sankey {
+  min-height: 360px;
 }
 
 .bar-stack {
@@ -1012,6 +1129,16 @@ img {
   gap: 6px;
 }
 
+.feed-inline-detail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  color: var(--subtle);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
 .feed-body strong,
 .directory-main strong {
   font-size: 1.02rem;
@@ -1057,6 +1184,140 @@ img {
 
 .dense-card {
   padding: 14px;
+}
+
+.treasury-ledger-card {
+  display: grid;
+  gap: 12px;
+}
+
+.ledger-table {
+  display: grid;
+  gap: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-tight);
+  overflow: hidden;
+  background: color-mix(in srgb, var(--surface) 94%, transparent);
+}
+
+.ledger-head,
+.ledger-row {
+  display: grid;
+  grid-template-columns: minmax(84px, 0.8fr) minmax(220px, 1.7fr) minmax(220px, 1.6fr) minmax(92px, 0.7fr) minmax(130px, 0.9fr);
+  gap: 12px;
+  align-items: start;
+  padding: 10px 12px;
+}
+
+.compact-ledger .ledger-head,
+.compact-ledger .ledger-row {
+  grid-template-columns: minmax(220px, 1.8fr) minmax(160px, 1.2fr) minmax(90px, 0.7fr) minmax(90px, 0.7fr);
+}
+
+.ledger-head {
+  border-bottom: 1px solid var(--line);
+  background: var(--surface-strong);
+  color: var(--muted);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.ledger-body {
+  display: grid;
+}
+
+.ledger-row {
+  border-bottom: 1px solid var(--line);
+}
+
+.ledger-row:last-child {
+  border-bottom: none;
+}
+
+.ledger-cell {
+  min-width: 0;
+  font-size: 12px;
+}
+
+.ledger-cell a,
+.ledger-cell strong {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.ledger-primary {
+  display: grid;
+  gap: 3px;
+}
+
+.ledger-primary small {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
+
+.ledger-mono,
+.ledger-amount {
+  font-family: var(--mono);
+}
+
+.ledger-amount {
+  text-align: right;
+}
+
+.ledger-empty,
+.treasury-note-box {
+  display: grid;
+  gap: 6px;
+  padding: 14px 12px;
+  border-top: 1px solid var(--line);
+}
+
+.asset-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 24px;
+  padding: 0 8px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: var(--surface-strong);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.asset-chip.asset-eth {
+  color: var(--accent-yellow);
+}
+
+.asset-chip.asset-usdc {
+  color: var(--accent-blue);
+}
+
+.asset-chip.asset-gnars {
+  color: var(--accent);
+}
+
+.asset-chip.asset-sendit {
+  color: var(--accent-orange);
+}
+
+.asset-chip.asset-token {
+  color: var(--muted);
+}
+
+.treasury-note-box {
+  margin-top: 10px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-tight);
+  background: color-mix(in srgb, var(--surface) 94%, transparent);
+}
+
+.treasury-quality-box {
+  margin-top: -2px;
+  margin-bottom: 2px;
 }
 
 .feed-link strong {
@@ -1183,6 +1444,26 @@ img {
   .feed-row,
   .directory-row {
     grid-template-columns: 1fr;
+  }
+
+  .ledger-head {
+    display: none;
+  }
+
+  .ledger-head,
+  .ledger-row,
+  .compact-ledger .ledger-head,
+  .compact-ledger .ledger-row {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .ledger-row {
+    padding: 12px;
+  }
+
+  .ledger-amount {
+    text-align: left;
   }
 
   .feed-labels {

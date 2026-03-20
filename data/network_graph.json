@@ -29325,23 +29325,23 @@
       "href": "/community/gami-eth/"
     },
     {
-      "edge_id": "funded:proposal:gnars-base-35:person:0x09e938e239803c78507abd5687a97acfea1188ea:0X09E938",
+      "edge_id": "funded:proposal:gnars-base-35:person:0x09e938e239803c78507abd5687a97acfea1188ea:TOKEN-09E938",
       "source": "proposal:gnars-base-35",
       "target": "person:0x09e938e239803c78507abd5687a97acfea1188ea",
       "kind": "funded",
       "weight": 625000000.0,
       "count": 1,
-      "asset_symbol": "0X09E938",
+      "asset_symbol": "TOKEN-09E938",
       "href": "/community/0x09e9-88ea/"
     },
     {
-      "edge_id": "funded:proposal:gnars-base-36:person:0x09e938e239803c78507abd5687a97acfea1188ea:0X09E938",
+      "edge_id": "funded:proposal:gnars-base-36:person:0x09e938e239803c78507abd5687a97acfea1188ea:TOKEN-09E938",
       "source": "proposal:gnars-base-36",
       "target": "person:0x09e938e239803c78507abd5687a97acfea1188ea",
       "kind": "funded",
       "weight": 950000000.0,
       "count": 1,
-      "asset_symbol": "0X09E938",
+      "asset_symbol": "TOKEN-09E938",
       "href": "/community/0x09e9-88ea/"
     },
     {
@@ -29835,23 +29835,23 @@
       "href": "/proposals/gnars-base-33/"
     },
     {
-      "edge_id": "funded:treasury:gnars:proposal:gnars-base-35:0X09E938",
+      "edge_id": "funded:treasury:gnars:proposal:gnars-base-35:TOKEN-09E938",
       "source": "treasury:gnars",
       "target": "proposal:gnars-base-35",
       "kind": "funded",
       "weight": 625000000.0,
       "count": 1,
-      "asset_symbol": "0X09E938",
+      "asset_symbol": "TOKEN-09E938",
       "href": "/proposals/gnars-base-35/"
     },
     {
-      "edge_id": "funded:treasury:gnars:proposal:gnars-base-36:0X09E938",
+      "edge_id": "funded:treasury:gnars:proposal:gnars-base-36:TOKEN-09E938",
       "source": "treasury:gnars",
       "target": "proposal:gnars-base-36",
       "kind": "funded",
       "weight": 950000000.0,
       "count": 1,
-      "asset_symbol": "0X09E938",
+      "asset_symbol": "TOKEN-09E938",
       "href": "/proposals/gnars-base-36/"
     },
     {
@@ -70869,8 +70869,8 @@
         "funded:treasury:gnars:proposal:gnars-base-24:USDC",
         "funded:treasury:gnars:proposal:gnars-base-26:USDC",
         "funded:treasury:gnars:proposal:gnars-base-32:USDC",
-        "funded:treasury:gnars:proposal:gnars-base-35:0X09E938",
-        "funded:treasury:gnars:proposal:gnars-base-36:0X09E938",
+        "funded:treasury:gnars:proposal:gnars-base-35:TOKEN-09E938",
+        "funded:treasury:gnars:proposal:gnars-base-36:TOKEN-09E938",
         "funded:treasury:gnars:proposal:gnars-base-39:USDC",
         "funded:treasury:gnars:proposal:gnars-base-57:SENDIT",
         "funded:treasury:gnars:proposal:gnars-base-61:SENDIT",

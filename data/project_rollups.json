@@ -85,6 +85,18 @@
         "0x8bf5941d27176242745b716251943ae4892a3c26",
         "0xaaed9fff9858d48925904e391b77892ba5fda824"
       ],
+      "recipient_addresses": [],
+      "budget_by_asset": [
+        {
+          "symbol": "ETH",
+          "amount": 1.5
+        },
+        {
+          "symbol": "USDC",
+          "amount": 3000.0
+        }
+      ],
+      "routed_by_asset": [],
       "delivery_count": 2,
       "proof_count": 3,
       "proof_coverage_pct": 100.0,
@@ -92,7 +104,56 @@
         "project-update:ops-q1-member-and-spend-views",
         "project-update:ops-q1-data-foundation",
         "project-update:ops-q1-analytics-camp-plan"
-      ]
+      ],
+      "delivery_updates": [
+        {
+          "update_id": "ops-q1-data-foundation",
+          "date": "2026-03-18",
+          "title": "Data foundation and proposal archive published",
+          "status": "completed",
+          "links": [
+            "https://fcarva.github.io/gnars-data/"
+          ]
+        },
+        {
+          "update_id": "ops-q1-analytics-camp-plan",
+          "date": "2026-03-18",
+          "title": "Gnars Camp analytics layer scoped",
+          "status": "in-progress",
+          "links": []
+        },
+        {
+          "update_id": "ops-q1-member-and-spend-views",
+          "date": "2026-03-18",
+          "title": "Unified people and spend views connected to governance",
+          "status": "in-progress",
+          "links": []
+        }
+      ],
+      "proof_links": [
+        {
+          "proof_id": "project-update:ops-q1-member-and-spend-views",
+          "title": "Unified people and spend views connected to governance",
+          "url": "/projects/operations-q1-2026/",
+          "kind": "internal",
+          "date": "2026-03-18"
+        },
+        {
+          "proof_id": "project-update:ops-q1-data-foundation",
+          "title": "Data foundation and proposal archive published",
+          "url": "https://fcarva.github.io/gnars-data/",
+          "kind": "web",
+          "date": "2026-03-18"
+        },
+        {
+          "proof_id": "project-update:ops-q1-analytics-camp-plan",
+          "title": "Gnars Camp analytics layer scoped",
+          "url": "/projects/operations-q1-2026/",
+          "kind": "internal",
+          "date": "2026-03-18"
+        }
+      ],
+      "reconciliation_status": "matched"
     },
     {
       "project_id": "docs-governance-revamp",
@@ -169,12 +230,45 @@
       "contributor_addresses": [
         "0xaaed9fff9858d48925904e391b77892ba5fda824"
       ],
+      "recipient_addresses": [],
+      "budget_by_asset": [
+        {
+          "symbol": "ETH",
+          "amount": 0.25
+        },
+        {
+          "symbol": "USDC",
+          "amount": 900.0
+        }
+      ],
+      "routed_by_asset": [],
       "delivery_count": 1,
       "proof_count": 1,
       "proof_coverage_pct": 100.0,
       "related_proof_ids": [
         "project-update:docs-revamp-archive-foundation"
-      ]
+      ],
+      "delivery_updates": [
+        {
+          "update_id": "docs-revamp-archive-foundation",
+          "date": "2026-03-18",
+          "title": "Archive and taxonomy foundation consolidated",
+          "status": "completed",
+          "links": [
+            "https://www.gnars.com/proposals/111"
+          ]
+        }
+      ],
+      "proof_links": [
+        {
+          "proof_id": "project-update:docs-revamp-archive-foundation",
+          "title": "Archive and taxonomy foundation consolidated",
+          "url": "https://www.gnars.com/proposals/111",
+          "kind": "web",
+          "date": "2026-03-18"
+        }
+      ],
+      "reconciliation_status": "matched"
     }
   ],
   "analytics_as_of": "2026-03-19T03:35:14.475549Z"

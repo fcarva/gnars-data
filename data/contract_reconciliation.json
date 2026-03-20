@@ -1,0 +1,726 @@
+{
+  "dataset": "contract_reconciliation",
+  "analytics_as_of": "2026-03-19T03:35:14.475549Z",
+  "as_of": "2026-03-19T03:35:14.475549Z",
+  "version": 1,
+  "summary": {
+    "matched_count": 6,
+    "needs_review_count": 0,
+    "chain_only_count": 14,
+    "site_only_count": 0
+  },
+  "records": [
+    {
+      "contract_id": "gnars-base-token-nft",
+      "ecosystem": "gnars",
+      "network": "base",
+      "address": "0x880fb3cf5c6cc2d7dfc13a993e839a9411200c17",
+      "kind": "erc721",
+      "label": "Gnars NFT",
+      "status": "active",
+      "repo_value": {
+        "address": "0x880fb3cf5c6cc2d7dfc13a993e839a9411200c17",
+        "label": "Gnars NFT",
+        "kind": "erc721",
+        "network": "base",
+        "status": "active"
+      },
+      "site_value": {
+        "present_on_site": true,
+        "source_urls": [
+          "https://www.gnars.com/"
+        ]
+      },
+      "chain_value": {
+        "address": "0x880fb3cf5c6cc2d7dfc13a993e839a9411200c17",
+        "explorer_url": "https://basescan.org/address/0x880fb3cf5c6cc2d7dfc13a993e839a9411200c17"
+      },
+      "resolved_value": {
+        "label": "Gnars NFT",
+        "address": "0x880fb3cf5c6cc2d7dfc13a993e839a9411200c17",
+        "kind": "erc721",
+        "network": "base"
+      },
+      "reconciliation_status": "matched",
+      "evidence_urls": [
+        "https://www.gnars.com/",
+        "https://basescan.org/address/0x880fb3cf5c6cc2d7dfc13a993e839a9411200c17"
+      ]
+    },
+    {
+      "contract_id": "gnars-base-token-erc20",
+      "ecosystem": "gnars",
+      "network": "base",
+      "address": "0x0cf0c3b75d522290d7d12c74d7f1f0cc47ccb23b",
+      "kind": "erc20",
+      "label": "$GNARS",
+      "status": "active",
+      "repo_value": {
+        "address": "0x0cf0c3b75d522290d7d12c74d7f1f0cc47ccb23b",
+        "label": "$GNARS",
+        "kind": "erc20",
+        "network": "base",
+        "status": "active"
+      },
+      "site_value": {
+        "present_on_site": true,
+        "source_urls": [
+          "https://www.gnars.com/"
+        ]
+      },
+      "chain_value": {
+        "address": "0x0cf0c3b75d522290d7d12c74d7f1f0cc47ccb23b",
+        "explorer_url": "https://basescan.org/address/0x0cf0c3b75d522290d7d12c74d7f1f0cc47ccb23b"
+      },
+      "resolved_value": {
+        "label": "$GNARS",
+        "address": "0x0cf0c3b75d522290d7d12c74d7f1f0cc47ccb23b",
+        "kind": "erc20",
+        "network": "base"
+      },
+      "reconciliation_status": "matched",
+      "evidence_urls": [
+        "https://www.gnars.com/",
+        "https://basescan.org/address/0x0cf0c3b75d522290d7d12c74d7f1f0cc47ccb23b"
+      ]
+    },
+    {
+      "contract_id": "gnars-base-auction-house",
+      "ecosystem": "gnars",
+      "network": "base",
+      "address": "0x494eaa55ecf6310658b8fc004b0888dcb698097f",
+      "kind": "auction_house",
+      "label": "Gnars Auction House",
+      "status": "active",
+      "repo_value": {
+        "address": "0x494eaa55ecf6310658b8fc004b0888dcb698097f",
+        "label": "Gnars Auction House",
+        "kind": "auction_house",
+        "network": "base",
+        "status": "active"
+      },
+      "site_value": {
+        "present_on_site": true,
+        "source_urls": [
+          "https://www.gnars.com/"
+        ]
+      },
+      "chain_value": {
+        "address": "0x494eaa55ecf6310658b8fc004b0888dcb698097f",
+        "explorer_url": "https://basescan.org/address/0x494eaa55ecf6310658b8fc004b0888dcb698097f"
+      },
+      "resolved_value": {
+        "label": "Gnars Auction House",
+        "address": "0x494eaa55ecf6310658b8fc004b0888dcb698097f",
+        "kind": "auction_house",
+        "network": "base"
+      },
+      "reconciliation_status": "matched",
+      "evidence_urls": [
+        "https://www.gnars.com/",
+        "https://basescan.org/address/0x494eaa55ecf6310658b8fc004b0888dcb698097f"
+      ]
+    },
+    {
+      "contract_id": "gnars-base-governor",
+      "ecosystem": "gnars",
+      "network": "base",
+      "address": "0x3dd4e53a232b7b715c9ae455f4e732465ed71b4c",
+      "kind": "governor",
+      "label": "Gnars Governor",
+      "status": "active",
+      "repo_value": {
+        "address": "0x3dd4e53a232b7b715c9ae455f4e732465ed71b4c",
+        "label": "Gnars Governor",
+        "kind": "governor",
+        "network": "base",
+        "status": "active"
+      },
+      "site_value": {
+        "present_on_site": true,
+        "source_urls": [
+          "https://www.gnars.com/"
+        ]
+      },
+      "chain_value": {
+        "address": "0x3dd4e53a232b7b715c9ae455f4e732465ed71b4c",
+        "explorer_url": "https://basescan.org/address/0x3dd4e53a232b7b715c9ae455f4e732465ed71b4c"
+      },
+      "resolved_value": {
+        "label": "Gnars Governor",
+        "address": "0x3dd4e53a232b7b715c9ae455f4e732465ed71b4c",
+        "kind": "governor",
+        "network": "base"
+      },
+      "reconciliation_status": "matched",
+      "evidence_urls": [
+        "https://www.gnars.com/",
+        "https://basescan.org/address/0x3dd4e53a232b7b715c9ae455f4e732465ed71b4c"
+      ]
+    },
+    {
+      "contract_id": "gnars-base-treasury",
+      "ecosystem": "gnars",
+      "network": "base",
+      "address": "0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+      "kind": "treasury",
+      "label": "Gnars Treasury",
+      "status": "active",
+      "repo_value": {
+        "address": "0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "label": "Gnars Treasury",
+        "kind": "treasury",
+        "network": "base",
+        "status": "active"
+      },
+      "site_value": {
+        "present_on_site": true,
+        "source_urls": [
+          "https://www.gnars.com/"
+        ]
+      },
+      "chain_value": {
+        "address": "0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      },
+      "resolved_value": {
+        "label": "Gnars Treasury",
+        "address": "0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "kind": "treasury",
+        "network": "base"
+      },
+      "reconciliation_status": "matched",
+      "evidence_urls": [
+        "https://www.gnars.com/",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    },
+    {
+      "contract_id": "gnars-base-metadata",
+      "ecosystem": "gnars",
+      "network": "base",
+      "address": "0xdc9799d424ebfdcf5310f3bad3ddcce3931d4b58",
+      "kind": "metadata",
+      "label": "Gnars Metadata",
+      "status": "active",
+      "repo_value": {
+        "address": "0xdc9799d424ebfdcf5310f3bad3ddcce3931d4b58",
+        "label": "Gnars Metadata",
+        "kind": "metadata",
+        "network": "base",
+        "status": "active"
+      },
+      "site_value": {
+        "present_on_site": true,
+        "source_urls": [
+          "https://www.gnars.com/"
+        ]
+      },
+      "chain_value": {
+        "address": "0xdc9799d424ebfdcf5310f3bad3ddcce3931d4b58",
+        "explorer_url": "https://basescan.org/address/0xdc9799d424ebfdcf5310f3bad3ddcce3931d4b58"
+      },
+      "resolved_value": {
+        "label": "Gnars Metadata",
+        "address": "0xdc9799d424ebfdcf5310f3bad3ddcce3931d4b58",
+        "kind": "metadata",
+        "network": "base"
+      },
+      "reconciliation_status": "matched",
+      "evidence_urls": [
+        "https://www.gnars.com/",
+        "https://basescan.org/address/0xdc9799d424ebfdcf5310f3bad3ddcce3931d4b58"
+      ]
+    },
+    {
+      "contract_id": "gnars-ethereum-token-v1",
+      "ecosystem": "gnars",
+      "network": "ethereum",
+      "address": "0x494715b2a3c75dadd24929835b658a1c19bd4552",
+      "kind": "erc721",
+      "label": "Gnars Token V1",
+      "status": "legacy",
+      "repo_value": {
+        "address": "0x494715b2a3c75dadd24929835b658a1c19bd4552",
+        "label": "Gnars Token V1",
+        "kind": "erc721",
+        "network": "ethereum",
+        "status": "legacy"
+      },
+      "site_value": {
+        "present_on_site": false,
+        "source_urls": []
+      },
+      "chain_value": {
+        "address": "0x494715b2a3c75dadd24929835b658a1c19bd4552",
+        "explorer_url": "https://etherscan.io/address/0x494715b2a3c75dadd24929835b658a1c19bd4552"
+      },
+      "resolved_value": {
+        "label": "Gnars Token V1",
+        "address": "0x494715b2a3c75dadd24929835b658a1c19bd4552",
+        "kind": "erc721",
+        "network": "ethereum"
+      },
+      "reconciliation_status": "chain-only",
+      "evidence_urls": [
+        "https://www.gnars.wtf/",
+        "https://etherscan.io/address/0x494715b2a3c75dadd24929835b658a1c19bd4552"
+      ]
+    },
+    {
+      "contract_id": "gnars-ethereum-token-v2",
+      "ecosystem": "gnars",
+      "network": "ethereum",
+      "address": "0x558bfff0d583416f7c4e380625c7865821b8e95c",
+      "kind": "erc721",
+      "label": "Gnars Token V2",
+      "status": "legacy",
+      "repo_value": {
+        "address": "0x558bfff0d583416f7c4e380625c7865821b8e95c",
+        "label": "Gnars Token V2",
+        "kind": "erc721",
+        "network": "ethereum",
+        "status": "legacy"
+      },
+      "site_value": {
+        "present_on_site": false,
+        "source_urls": []
+      },
+      "chain_value": {
+        "address": "0x558bfff0d583416f7c4e380625c7865821b8e95c",
+        "explorer_url": "https://etherscan.io/address/0x558bfff0d583416f7c4e380625c7865821b8e95c"
+      },
+      "resolved_value": {
+        "label": "Gnars Token V2",
+        "address": "0x558bfff0d583416f7c4e380625c7865821b8e95c",
+        "kind": "erc721",
+        "network": "ethereum"
+      },
+      "reconciliation_status": "chain-only",
+      "evidence_urls": [
+        "https://www.gnars.wtf/",
+        "https://etherscan.io/address/0x558bfff0d583416f7c4e380625c7865821b8e95c"
+      ]
+    },
+    {
+      "contract_id": "gnars-ethereum-dao-proxy-v2",
+      "ecosystem": "gnars",
+      "network": "ethereum",
+      "address": "0x156e94a6e16244ccfdf16e1193198ea9d80dd7e3",
+      "kind": "governor",
+      "label": "Gnars DAO Proxy V2",
+      "status": "legacy",
+      "repo_value": {
+        "address": "0x156e94a6e16244ccfdf16e1193198ea9d80dd7e3",
+        "label": "Gnars DAO Proxy V2",
+        "kind": "governor",
+        "network": "ethereum",
+        "status": "legacy"
+      },
+      "site_value": {
+        "present_on_site": false,
+        "source_urls": []
+      },
+      "chain_value": {
+        "address": "0x156e94a6e16244ccfdf16e1193198ea9d80dd7e3",
+        "explorer_url": "https://etherscan.io/address/0x156e94a6e16244ccfdf16e1193198ea9d80dd7e3"
+      },
+      "resolved_value": {
+        "label": "Gnars DAO Proxy V2",
+        "address": "0x156e94a6e16244ccfdf16e1193198ea9d80dd7e3",
+        "kind": "governor",
+        "network": "ethereum"
+      },
+      "reconciliation_status": "chain-only",
+      "evidence_urls": [
+        "https://etherscan.io/address/0x156e94a6e16244ccfdf16e1193198ea9d80dd7e3"
+      ]
+    },
+    {
+      "contract_id": "gnars-ethereum-dao-logic-v2",
+      "ecosystem": "gnars",
+      "network": "ethereum",
+      "address": "0x249846ee9acfdcd7685ec7fd7ab02d536d343e3d",
+      "kind": "dao_logic",
+      "label": "Gnars DAO Logic V2",
+      "status": "legacy",
+      "repo_value": {
+        "address": "0x249846ee9acfdcd7685ec7fd7ab02d536d343e3d",
+        "label": "Gnars DAO Logic V2",
+        "kind": "dao_logic",
+        "network": "ethereum",
+        "status": "legacy"
+      },
+      "site_value": {
+        "present_on_site": false,
+        "source_urls": []
+      },
+      "chain_value": {
+        "address": "0x249846ee9acfdcd7685ec7fd7ab02d536d343e3d",
+        "explorer_url": "https://etherscan.io/address/0x249846ee9acfdcd7685ec7fd7ab02d536d343e3d"
+      },
+      "resolved_value": {
+        "label": "Gnars DAO Logic V2",
+        "address": "0x249846ee9acfdcd7685ec7fd7ab02d536d343e3d",
+        "kind": "dao_logic",
+        "network": "ethereum"
+      },
+      "reconciliation_status": "chain-only",
+      "evidence_urls": [
+        "https://etherscan.io/address/0x249846ee9acfdcd7685ec7fd7ab02d536d343e3d"
+      ]
+    },
+    {
+      "contract_id": "gnars-ethereum-executor-v2",
+      "ecosystem": "gnars",
+      "network": "ethereum",
+      "address": "0xa1b74d2280966a89ac7e0f3a8bc5f0867c776d98",
+      "kind": "executor",
+      "label": "Gnars DAO Executor",
+      "status": "legacy",
+      "repo_value": {
+        "address": "0xa1b74d2280966a89ac7e0f3a8bc5f0867c776d98",
+        "label": "Gnars DAO Executor",
+        "kind": "executor",
+        "network": "ethereum",
+        "status": "legacy"
+      },
+      "site_value": {
+        "present_on_site": false,
+        "source_urls": []
+      },
+      "chain_value": {
+        "address": "0xa1b74d2280966a89ac7e0f3a8bc5f0867c776d98",
+        "explorer_url": "https://etherscan.io/address/0xa1b74d2280966a89ac7e0f3a8bc5f0867c776d98"
+      },
+      "resolved_value": {
+        "label": "Gnars DAO Executor",
+        "address": "0xa1b74d2280966a89ac7e0f3a8bc5f0867c776d98",
+        "kind": "executor",
+        "network": "ethereum"
+      },
+      "reconciliation_status": "chain-only",
+      "evidence_urls": [
+        "https://etherscan.io/address/0xa1b74d2280966a89ac7e0f3a8bc5f0867c776d98"
+      ]
+    },
+    {
+      "contract_id": "thatsgnarly-base-culture-index-impl",
+      "ecosystem": "thatsgnarly",
+      "network": "base",
+      "address": "0xed15505b35a347791a8a4e896826c6d8949b61f2",
+      "kind": "culture_index",
+      "label": "That's Gnarly CultureIndex",
+      "status": "active",
+      "repo_value": {
+        "address": "0xed15505b35a347791a8a4e896826c6d8949b61f2",
+        "label": "That's Gnarly CultureIndex",
+        "kind": "culture_index",
+        "network": "base",
+        "status": "active"
+      },
+      "site_value": {
+        "present_on_site": false,
+        "source_urls": []
+      },
+      "chain_value": {
+        "address": "0xed15505b35a347791a8a4e896826c6d8949b61f2",
+        "explorer_url": "https://basescan.org/address/0xed15505b35a347791a8a4e896826c6d8949b61f2"
+      },
+      "resolved_value": {
+        "label": "That's Gnarly CultureIndex",
+        "address": "0xed15505b35a347791a8a4e896826c6d8949b61f2",
+        "kind": "culture_index",
+        "network": "base"
+      },
+      "reconciliation_status": "chain-only",
+      "evidence_urls": [
+        "https://github.com/rocketman-21/thatsgnarly-contracts/blob/main/packages/contracts/deploys/8453.txt",
+        "https://github.com/rocketman-21/thatsgnarly-contracts/blob/main/packages/contracts/script/Deploy.s.sol",
+        "https://basescan.org/address/0xed15505b35a347791a8a4e896826c6d8949b61f2"
+      ]
+    },
+    {
+      "contract_id": "thatsgnarly-base-max-heap-impl",
+      "ecosystem": "thatsgnarly",
+      "network": "base",
+      "address": "0x5a375daf275e2ecc1109d5fe4d3a83cbf2a69c6f",
+      "kind": "max_heap",
+      "label": "That's Gnarly MaxHeap",
+      "status": "active",
+      "repo_value": {
+        "address": "0x5a375daf275e2ecc1109d5fe4d3a83cbf2a69c6f",
+        "label": "That's Gnarly MaxHeap",
+        "kind": "max_heap",
+        "network": "base",
+        "status": "active"
+      },
+      "site_value": {
+        "present_on_site": false,
+        "source_urls": []
+      },
+      "chain_value": {
+        "address": "0x5a375daf275e2ecc1109d5fe4d3a83cbf2a69c6f",
+        "explorer_url": "https://basescan.org/address/0x5a375daf275e2ecc1109d5fe4d3a83cbf2a69c6f"
+      },
+      "resolved_value": {
+        "label": "That's Gnarly MaxHeap",
+        "address": "0x5a375daf275e2ecc1109d5fe4d3a83cbf2a69c6f",
+        "kind": "max_heap",
+        "network": "base"
+      },
+      "reconciliation_status": "chain-only",
+      "evidence_urls": [
+        "https://github.com/rocketman-21/thatsgnarly-contracts/blob/main/packages/contracts/deploys/8453.txt",
+        "https://basescan.org/address/0x5a375daf275e2ecc1109d5fe4d3a83cbf2a69c6f"
+      ]
+    },
+    {
+      "contract_id": "thatsgnarly-base-mint-house-impl",
+      "ecosystem": "thatsgnarly",
+      "network": "base",
+      "address": "0xe99565d2c21d02d914af124553a375fe0e0c23a2",
+      "kind": "mint_house",
+      "label": "That's Gnarly MintHouse",
+      "status": "active",
+      "repo_value": {
+        "address": "0xe99565d2c21d02d914af124553a375fe0e0c23a2",
+        "label": "That's Gnarly MintHouse",
+        "kind": "mint_house",
+        "network": "base",
+        "status": "active"
+      },
+      "site_value": {
+        "present_on_site": false,
+        "source_urls": []
+      },
+      "chain_value": {
+        "address": "0xe99565d2c21d02d914af124553a375fe0e0c23a2",
+        "explorer_url": "https://basescan.org/address/0xe99565d2c21d02d914af124553a375fe0e0c23a2"
+      },
+      "resolved_value": {
+        "label": "That's Gnarly MintHouse",
+        "address": "0xe99565d2c21d02d914af124553a375fe0e0c23a2",
+        "kind": "mint_house",
+        "network": "base"
+      },
+      "reconciliation_status": "chain-only",
+      "evidence_urls": [
+        "https://github.com/rocketman-21/thatsgnarly-contracts/blob/main/packages/contracts/deploys/8453.txt",
+        "https://basescan.org/address/0xe99565d2c21d02d914af124553a375fe0e0c23a2"
+      ]
+    },
+    {
+      "contract_id": "thatsgnarly-base-culture-index-proxy",
+      "ecosystem": "thatsgnarly",
+      "network": "base",
+      "address": "0x1806e0959f2b9cb487300302be7b283e31689ce2",
+      "kind": "erc1967_proxy",
+      "label": "That's Gnarly CultureIndex Proxy",
+      "status": "active",
+      "repo_value": {
+        "address": "0x1806e0959f2b9cb487300302be7b283e31689ce2",
+        "label": "That's Gnarly CultureIndex Proxy",
+        "kind": "erc1967_proxy",
+        "network": "base",
+        "status": "active"
+      },
+      "site_value": {
+        "present_on_site": false,
+        "source_urls": []
+      },
+      "chain_value": {
+        "address": "0x1806e0959f2b9cb487300302be7b283e31689ce2",
+        "explorer_url": "https://basescan.org/address/0x1806e0959f2b9cb487300302be7b283e31689ce2"
+      },
+      "resolved_value": {
+        "label": "That's Gnarly CultureIndex Proxy",
+        "address": "0x1806e0959f2b9cb487300302be7b283e31689ce2",
+        "kind": "erc1967_proxy",
+        "network": "base"
+      },
+      "reconciliation_status": "chain-only",
+      "evidence_urls": [
+        "https://github.com/rocketman-21/thatsgnarly-contracts/blob/main/packages/contracts/deploys/8453.txt",
+        "https://basescan.org/address/0x1806e0959f2b9cb487300302be7b283e31689ce2"
+      ]
+    },
+    {
+      "contract_id": "thatsgnarly-base-max-heap-proxy",
+      "ecosystem": "thatsgnarly",
+      "network": "base",
+      "address": "0x6b3e766f05e883d7bd6044995a6e2513029c5a08",
+      "kind": "erc1967_proxy",
+      "label": "That's Gnarly MaxHeap Proxy",
+      "status": "active",
+      "repo_value": {
+        "address": "0x6b3e766f05e883d7bd6044995a6e2513029c5a08",
+        "label": "That's Gnarly MaxHeap Proxy",
+        "kind": "erc1967_proxy",
+        "network": "base",
+        "status": "active"
+      },
+      "site_value": {
+        "present_on_site": false,
+        "source_urls": []
+      },
+      "chain_value": {
+        "address": "0x6b3e766f05e883d7bd6044995a6e2513029c5a08",
+        "explorer_url": "https://basescan.org/address/0x6b3e766f05e883d7bd6044995a6e2513029c5a08"
+      },
+      "resolved_value": {
+        "label": "That's Gnarly MaxHeap Proxy",
+        "address": "0x6b3e766f05e883d7bd6044995a6e2513029c5a08",
+        "kind": "erc1967_proxy",
+        "network": "base"
+      },
+      "reconciliation_status": "chain-only",
+      "evidence_urls": [
+        "https://github.com/rocketman-21/thatsgnarly-contracts/blob/main/packages/contracts/deploys/8453.txt",
+        "https://basescan.org/address/0x6b3e766f05e883d7bd6044995a6e2513029c5a08"
+      ]
+    },
+    {
+      "contract_id": "thatsgnarly-base-mint-house-proxy",
+      "ecosystem": "thatsgnarly",
+      "network": "base",
+      "address": "0x23a1eae6428ee2739830717b377534ceaa23c09f",
+      "kind": "erc1967_proxy",
+      "label": "That's Gnarly MintHouse Proxy",
+      "status": "active",
+      "repo_value": {
+        "address": "0x23a1eae6428ee2739830717b377534ceaa23c09f",
+        "label": "That's Gnarly MintHouse Proxy",
+        "kind": "erc1967_proxy",
+        "network": "base",
+        "status": "active"
+      },
+      "site_value": {
+        "present_on_site": false,
+        "source_urls": []
+      },
+      "chain_value": {
+        "address": "0x23a1eae6428ee2739830717b377534ceaa23c09f",
+        "explorer_url": "https://basescan.org/address/0x23a1eae6428ee2739830717b377534ceaa23c09f"
+      },
+      "resolved_value": {
+        "label": "That's Gnarly MintHouse Proxy",
+        "address": "0x23a1eae6428ee2739830717b377534ceaa23c09f",
+        "kind": "erc1967_proxy",
+        "network": "base"
+      },
+      "reconciliation_status": "chain-only",
+      "evidence_urls": [
+        "https://github.com/rocketman-21/thatsgnarly-contracts/blob/main/packages/contracts/deploys/8453.txt",
+        "https://basescan.org/address/0x23a1eae6428ee2739830717b377534ceaa23c09f"
+      ]
+    },
+    {
+      "contract_id": "thatsgnarly-base-zora-creator-1155",
+      "ecosystem": "thatsgnarly",
+      "network": "base",
+      "address": "0xf9a6470c704e391a64d1565ba4d50ad9c456b1dc",
+      "kind": "zora_1155",
+      "label": "That's Gnarly Zora Creator 1155",
+      "status": "dependency",
+      "repo_value": {
+        "address": "0xf9a6470c704e391a64d1565ba4d50ad9c456b1dc",
+        "label": "That's Gnarly Zora Creator 1155",
+        "kind": "zora_1155",
+        "network": "base",
+        "status": "dependency"
+      },
+      "site_value": {
+        "present_on_site": false,
+        "source_urls": []
+      },
+      "chain_value": {
+        "address": "0xf9a6470c704e391a64d1565ba4d50ad9c456b1dc",
+        "explorer_url": "https://basescan.org/address/0xf9a6470c704e391a64d1565ba4d50ad9c456b1dc"
+      },
+      "resolved_value": {
+        "label": "That's Gnarly Zora Creator 1155",
+        "address": "0xf9a6470c704e391a64d1565ba4d50ad9c456b1dc",
+        "kind": "zora_1155",
+        "network": "base"
+      },
+      "reconciliation_status": "chain-only",
+      "evidence_urls": [
+        "https://github.com/rocketman-21/thatsgnarly-contracts/blob/main/packages/contracts/script/Deploy.s.sol",
+        "https://thatsgnar.ly/",
+        "https://basescan.org/address/0xf9a6470c704e391a64d1565ba4d50ad9c456b1dc"
+      ]
+    },
+    {
+      "contract_id": "thatsgnarly-base-zora-fixed-price-sale-strategy",
+      "ecosystem": "thatsgnarly",
+      "network": "base",
+      "address": "0x04e2516a2c207e84a1839755675dfd8ef6302f0a",
+      "kind": "fixed_price_sale_strategy",
+      "label": "Zora Fixed Price Sale Strategy",
+      "status": "dependency",
+      "repo_value": {
+        "address": "0x04e2516a2c207e84a1839755675dfd8ef6302f0a",
+        "label": "Zora Fixed Price Sale Strategy",
+        "kind": "fixed_price_sale_strategy",
+        "network": "base",
+        "status": "dependency"
+      },
+      "site_value": {
+        "present_on_site": false,
+        "source_urls": []
+      },
+      "chain_value": {
+        "address": "0x04e2516a2c207e84a1839755675dfd8ef6302f0a",
+        "explorer_url": "https://basescan.org/address/0x04e2516a2c207e84a1839755675dfd8ef6302f0a"
+      },
+      "resolved_value": {
+        "label": "Zora Fixed Price Sale Strategy",
+        "address": "0x04e2516a2c207e84a1839755675dfd8ef6302f0a",
+        "kind": "fixed_price_sale_strategy",
+        "network": "base"
+      },
+      "reconciliation_status": "chain-only",
+      "evidence_urls": [
+        "https://github.com/rocketman-21/thatsgnarly-contracts/blob/main/packages/contracts/script/Deploy.s.sol",
+        "https://basescan.org/address/0x04e2516a2c207e84a1839755675dfd8ef6302f0a"
+      ]
+    },
+    {
+      "contract_id": "thatsgnarly-base-treasury",
+      "ecosystem": "thatsgnarly",
+      "network": "base",
+      "address": "0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+      "kind": "treasury",
+      "label": "That's Gnarly Treasury Route",
+      "status": "dependency",
+      "repo_value": {
+        "address": "0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "label": "That's Gnarly Treasury Route",
+        "kind": "treasury",
+        "network": "base",
+        "status": "dependency"
+      },
+      "site_value": {
+        "present_on_site": false,
+        "source_urls": []
+      },
+      "chain_value": {
+        "address": "0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "explorer_url": "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      },
+      "resolved_value": {
+        "label": "That's Gnarly Treasury Route",
+        "address": "0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88",
+        "kind": "treasury",
+        "network": "base"
+      },
+      "reconciliation_status": "chain-only",
+      "evidence_urls": [
+        "https://thatsgnar.ly/",
+        "https://github.com/rocketman-21/thatsgnarly-contracts/blob/main/packages/contracts/script/Deploy.s.sol",
+        "https://basescan.org/address/0x72ad986ebac0246d2b3c565ab2a1ce3a14ce6f88"
+      ]
+    }
+  ]
+}

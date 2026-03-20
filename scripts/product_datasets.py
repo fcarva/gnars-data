@@ -158,6 +158,21 @@ REFERENCE_CHANNEL_PATTERNS = {
     "ipfs": ("ipfs.", "ipfs/", "ipfs"),
 }
 
+SECTION_HEADING_ALIASES = {
+    "why-vote-yes": {"why-vote-yes", "why-this-matters-now", "why-this-proposal", "why-it-matters", "why"},
+    "proof": {
+        "proof-of-work",
+        "deliverables",
+        "expected-outputs",
+        "outputs",
+        "reporting",
+        "timeline",
+        "kpis",
+        "success-metrics",
+        "milestones",
+    },
+}
+
 
 def number_or_zero(value: Any) -> float:
     if value in (None, ""):
@@ -316,6 +331,157 @@ def reference_channel(url: str) -> str:
 
 def reference_channels_from_urls(urls: list[str]) -> list[str]:
     return unique_strings(reference_channel(url) for url in urls if url)
+
+
+def markdown_heading_key(value: Any) -> str:
+    return slug_label(re.sub(r"[*_`~]+", "", str(value or "")))
+
+
+def extract_markdown_section(markdown: Any, heading_aliases: set[str]) -> str:
+    lines = str(markdown or "").splitlines()
+    if not lines:
+        return ""
+    capture = False
+    captured: list[str] = []
+    active_level = 0
+    for line in lines:
+        heading = re.match(r"^\s{0,3}(#{1,6})\s+(.+?)\s*$", line)
+        if heading:
+            level = len(heading.group(1))
+            key = markdown_heading_key(heading.group(2))
+            if capture and level <= active_level:
+                break
+            if key in heading_aliases:
+                capture = True
+                captured = []
+                active_level = level
+                continue
+        if capture:
+            captured.append(line)
+    return clean_text("\n".join(captured))
+
+
+def markdown_table_rows(markdown: Any) -> list[dict[str, str]]:
+    lines = [line.strip() for line in str(markdown or "").splitlines()]
+    tables: list[dict[str, str]] = []
+    index = 0
+    while index < len(lines) - 2:
+        header = lines[index]
+        separator = lines[index + 1]
+        if "|" not in header or "|" not in separator:
+            index += 1
+            continue
+        separator_clean = separator.replace("|", "").replace(":", "").replace("-", "").strip()
+        if separator_clean:
+            index += 1
+            continue
+        headers = [markdown_heading_key(cell) for cell in header.strip("|").split("|")]
+        name_index = next((i for i, cell in enumerate(headers) if cell in {"contributor", "person", "member", "owner", "name"}), None)
+        role_index = next((i for i, cell in enumerate(headers) if cell in {"role", "responsibility", "scope"}), None)
+        budget_index = next((i for i, cell in enumerate(headers) if cell in {"budget", "allocation", "amount"}), None)
+        if name_index is None and role_index is None and budget_index is None:
+            index += 1
+            continue
+
+        index += 2
+        while index < len(lines):
+            row = lines[index]
+            if "|" not in row or row.startswith("#"):
+                break
+            values = [clean_text(cell) for cell in row.strip("|").split("|")]
+            if len(values) != len(headers):
+                break
+            tables.append(
+                {
+                    "name": values[name_index] if name_index is not None else "",
+                    "role": values[role_index] if role_index is not None else "",
+                    "budget": values[budget_index] if budget_index is not None else "",
+                }
+            )
+            index += 1
+        continue
+    return [row for row in tables if any(row.values())]
+
+
+def contributor_roles_from_markdown(markdown: Any) -> list[dict[str, str]]:
+    roles: list[dict[str, str]] = []
+    seen: set[str] = set()
+    for row in markdown_table_rows(markdown):
+        key = "|".join([row.get("name") or "", row.get("role") or "", row.get("budget") or ""])
+        if not key.strip("|") or key in seen:
+            continue
+        seen.add(key)
+        roles.append(
+            {
+                "name": row.get("name") or "Contributor",
+                "role": row.get("role") or "Contributor",
+                "budget": row.get("budget") or "",
+            }
+        )
+        if len(roles) >= 12:
+            break
+    return roles
+
+
+def contract_lookup(contracts: dict[str, Any]) -> dict[tuple[str, str, str], dict[str, Any]]:
+    lookup: dict[tuple[str, str, str], dict[str, Any]] = {}
+    for record in contracts.get("records") or []:
+        key = (
+            slug_label(record.get("ecosystem")),
+            slug_label(record.get("network")),
+            slug_label(record.get("kind")),
+        )
+        lookup[key] = record
+    return lookup
+
+
+def treasury_contract_for_chain(contracts: dict[str, Any], chain: str, ecosystem: str = "gnars") -> dict[str, Any] | None:
+    return contract_lookup(contracts).get((slug_label(ecosystem), slug_label(chain), "treasury"))
+
+
+def identity_source(record: dict[str, Any]) -> str:
+    source = str(record.get("display_name_source") or "").strip().lower()
+    if source == "override":
+        return "override"
+    if record.get("identity", {}).get("ens"):
+        return "ens-verified"
+    if record.get("identity", {}).get("member_url") and source in {"seed", "proposal_label", "archive_vote_ens"}:
+        return "gnars-member"
+    if source in {"seed", "farcaster", "proposal_label", "archive_vote_ens"}:
+        return source
+    if record.get("display_name") and record.get("display_name") != record.get("address_short"):
+        return "derived"
+    return "address-only"
+
+
+def identity_confidence(record: dict[str, Any]) -> str:
+    source = identity_source(record)
+    if source in {"override", "ens-verified"}:
+        return "high"
+    if source in {"gnars-member", "seed", "farcaster"}:
+        return "medium"
+    return "low"
+
+
+def proposal_action_label(kind: str, status: str) -> str:
+    if kind == "payout":
+        return "Funded"
+    if kind == "delivery":
+        return "Delivery"
+    if kind == "project_update":
+        return "Update"
+    if kind == "media_reference":
+        return "Proof"
+    if kind == "community_reference":
+        return "Community"
+    normalized = slug_label(status)
+    if normalized in {"active", "pending"}:
+        return "Vote"
+    if normalized in {"executed", "closed-passed"}:
+        return "Funded"
+    if normalized in {"defeated", "cancelled", "closed-not-passed"}:
+        return "Closed"
+    return "Governance"
 
 
 def transaction_asset_totals(
@@ -709,6 +875,7 @@ def build_proposals_enriched(
     spend_records: list[dict[str, Any]],
     timeline_events: dict[str, Any],
     proposal_tags: dict[str, Any],
+    contracts: dict[str, Any],
     analytics_as_of: str,
 ) -> dict[str, Any]:
     project_by_archive: dict[str, dict[str, Any]] = {}
@@ -774,6 +941,16 @@ def build_proposals_enriched(
         )
         reference_channels = reference_channels_from_urls(reference_urls)
         transaction_records = proposal.get("transactions") or []
+        contributor_roles = contributor_roles_from_markdown(content_markdown)
+        if not contributor_roles and linked_project:
+            contributor_roles = [
+                {
+                    "name": short_address(address),
+                    "role": "Workstream owner",
+                    "budget": "",
+                }
+                for address in unique_addresses(linked_project.get("owner_addresses") or [])
+            ][:6]
         requested_by_asset = (
             [
                 {"symbol": "ETH", "amount": number_or_zero(linked_project.get("budget", {}).get("eth"))},
@@ -838,12 +1015,46 @@ def build_proposals_enriched(
         summary_short = summarize_text(content_summary or content_markdown or title)
         requested_total_display = asset_display(requested_by_asset)
         routed_total_display = asset_display(routed_by_asset)
+        why_vote_yes = summarize_text(
+            extract_markdown_section(content_markdown, SECTION_HEADING_ALIASES["why-vote-yes"])
+            or extract_markdown_section(content_markdown, {"tl-dr"})
+            or content_summary
+        )
+        proof_expectation_source = extract_markdown_section(content_markdown, SECTION_HEADING_ALIASES["proof"])
+        if not proof_expectation_source and linked_project:
+            proof_expectation_source = str(linked_project.get("objective") or "")
+        proof_expectations = summarize_text(proof_expectation_source)
+        treasury_contract = treasury_contract_for_chain(contracts, str(proposal.get("chain") or ""))
+        treasury_source_label = (
+            str(treasury_contract.get("label") or "").strip()
+            if treasury_contract
+            else f"{label_display(proposal.get('chain'))} Treasury".strip()
+        )
+        proposed_transactions_summary = " | ".join(
+            part
+            for part in [
+                f"{len(transaction_records)} proposed transaction{'s' if len(transaction_records) != 1 else ''}" if transaction_records else "",
+                f"{len(recipient_addresses)} recipient{'s' if len(recipient_addresses) != 1 else ''}" if recipient_addresses else "",
+                f"{len(transaction_kind_values)} action lane{'s' if len(transaction_kind_values) != 1 else ''}" if transaction_kind_values else "",
+                routed_total_display if routed_total_display != "No direct spend" else requested_total_display,
+            ]
+            if part
+        )
         lineage_strength = derive_lineage_strength(
             archive_id=archive_id,
             linked_project=linked_project,
             routed_by_asset=routed_by_asset,
             proof_count=initial_proof_count,
         )
+        site_status = str(proposal.get("status") or "").strip().lower()
+        chain_status = site_status
+        resolved_status = chain_status or site_status or str(proposal.get("status") or "")
+        mismatch_fields = []
+        if site_status and chain_status and site_status != chain_status:
+            mismatch_fields.append("status")
+        if not (proposal.get("links", {}).get("source_url") or proposal.get("links", {}).get("canonical_url")):
+            mismatch_fields.append("site-evidence")
+        reconciliation_status = "needs-review" if mismatch_fields else "matched"
 
         records.append(
             {
@@ -852,6 +1063,9 @@ def build_proposals_enriched(
                 "proposal_number": proposal.get("proposal_number"),
                 "title": proposal["title"],
                 "status": proposal["status"],
+                "site_status": site_status,
+                "chain_status": chain_status,
+                "resolved_status": resolved_status,
                 "platform": proposal["platform"],
                 "chain": proposal["chain"],
                 "proposer": normalize_address(proposal.get("proposer")),
@@ -869,11 +1083,19 @@ def build_proposals_enriched(
                 "category": category,
                 "summary_short": summary_short,
                 "requested_total_display": requested_total_display,
+                "requested_budget_display": requested_total_display,
                 "routed_total_display": routed_total_display,
+                "routed_budget_display": routed_total_display,
                 "proposal_type": proposal_type_value,
                 "delivery_stage": delivery_stage_value,
                 "proof_strength": "none",
                 "lineage_strength": lineage_strength,
+                "contributor_roles": contributor_roles,
+                "why_vote_yes": why_vote_yes,
+                "proposed_transactions_summary": proposed_transactions_summary,
+                "treasury_source_label": treasury_source_label,
+                "proof_expectations": proof_expectations,
+                "reconciliation_status": reconciliation_status,
                 "reference_channels": reference_channels,
                 "primary_recipients": primary_recipients,
                 "editorial_labels": editorial_labels,
@@ -1110,6 +1332,16 @@ def expand_project_rollups(
                 *(address for update in updates for address in (update.get("related_addresses") or [])),
             ]
         )
+        budget_by_asset = [
+            {"symbol": "ETH", "amount": number_or_zero(project.get("budget", {}).get("eth"))},
+            {"symbol": "USDC", "amount": number_or_zero(project.get("budget", {}).get("usdc"))},
+            {"symbol": "GNARS", "amount": number_or_zero(project.get("budget", {}).get("gnars"))},
+        ]
+        routed_by_asset = [
+            {"symbol": "ETH", "amount": number_or_zero(project.get("spent", {}).get("eth"))},
+            {"symbol": "USDC", "amount": number_or_zero(project.get("spent", {}).get("usdc"))},
+            {"symbol": "GNARS", "amount": number_or_zero(project.get("spent", {}).get("gnars"))},
+        ]
         project["proposal_lineage"] = unique_strings(
             [summary.get("archive_id") for summary in project.get("proposal_summaries") or [] if summary.get("archive_id")]
         )
@@ -1123,10 +1355,34 @@ def expand_project_rollups(
         )
         project["branding_tags"] = branding_tags_from_text(project.get("name"), project.get("objective"), *(project.get("outputs") or []))
         project["contributor_addresses"] = contributor_addresses
+        project["recipient_addresses"] = unique_addresses(recipient.get("address") for recipient in (project.get("recipients") or []))
+        project["budget_by_asset"] = [item for item in budget_by_asset if item["amount"] > 0]
+        project["routed_by_asset"] = [item for item in routed_by_asset if item["amount"] > 0]
         project["delivery_count"] = delivery_count
         project["proof_count"] = len(proof_evidence)
         project["proof_coverage_pct"] = percent(len(delivery_proofs), delivery_count or max(1, len(updates)))
         project["related_proof_ids"] = [record["proof_id"] for record in proof_evidence[:24]]
+        project["delivery_updates"] = [
+            {
+                "update_id": update.get("update_id"),
+                "date": update.get("date"),
+                "title": update.get("title"),
+                "status": update.get("status"),
+                "links": unique_strings(update.get("links") or []),
+            }
+            for update in updates[:12]
+        ]
+        project["proof_links"] = [
+            {
+                "proof_id": record["proof_id"],
+                "title": record.get("title"),
+                "url": record.get("url"),
+                "kind": record.get("reference_kind"),
+                "date": record.get("date"),
+            }
+            for record in proof_evidence[:12]
+        ]
+        project["reconciliation_status"] = "matched" if project["proposal_lineage"] else "needs-review"
 
     project_rollups["analytics_as_of"] = analytics_as_of
     project_rollups["as_of"] = analytics_as_of
@@ -1214,14 +1470,43 @@ def expand_people(
                 person.get("identity", {}).get("instagram"),
             ]
         )
+        treasury_route_ledger = [
+            {
+                "ledger_id": record["ledger_id"],
+                "archive_id": record["archive_id"],
+                "proposal_number": record.get("proposal_number"),
+                "proposal_title": record.get("title"),
+                "date": record.get("proposal_end_at") or record.get("proposal_created_at"),
+                "asset_symbol": record.get("asset_symbol"),
+                "amount": number_or_zero(record.get("amount")),
+                "project_id": record.get("project_id"),
+                "project_name": record.get("project_name"),
+                "href": f"/proposals/{record['archive_id']}/",
+            }
+            for record in routes_by_person.get(address, [])[:24]
+        ]
+        proposal_roles = unique_strings(
+            [
+                "proposer" if person.get("relationships", {}).get("authored_proposals") else "",
+                "voter" if person.get("relationships", {}).get("voted_proposals") else "",
+                "recipient" if routes_by_person.get(address) else "",
+                "project-owner" if person.get("relationships", {}).get("owned_projects") else "",
+            ]
+        )
         person["tribes"] = tribes
         person["headline"] = person.get("bio") or person.get("role") or "Gnars community operator"
         person["history_short"] = person.get("bio") or person.get("role") or "Community participant in the Gnars network."
         person["history_long"] = person.get("notes") or person.get("bio") or person.get("role") or ""
+        person["identity_source"] = identity_source(person)
+        person["identity_confidence"] = identity_confidence(person)
+        person["member_url"] = person.get("identity", {}).get("member_url")
         person["successful_authored_count"] = len(successful_authored)
         person["successful_authored_proposals"] = [record["archive_id"] for record in successful_authored]
         person["budget_managed_by_asset"] = asset_totals(managed_records)
+        person["received_by_asset"] = person.get("receipts", {}).get("by_asset") or []
+        person["proposal_roles"] = proposal_roles
         person["treasury_route_count"] = len(routes_by_person.get(address, []))
+        person["treasury_route_ledger"] = treasury_route_ledger
         person["delivery_count"] = delivery_count
         person["proof_count"] = len(proofs)
         person["proof_coverage_pct"] = percent(len(proofs), delivery_count or max(1, len(related_updates)))
@@ -1291,10 +1576,17 @@ def build_feed_stream(
             {
                 "item_id": f"proposal:{proposal['archive_id']}",
                 "kind": "proposal",
+                "action_label": proposal_action_label("proposal", str(proposal.get("resolved_status") or proposal.get("status") or "")),
                 "date": proposal["date"],
                 "status": proposal["status"],
+                "resolved_status": proposal.get("resolved_status") or proposal["status"],
+                "reconciliation_status": proposal.get("reconciliation_status") or "matched",
                 "title": proposal["title"],
                 "summary": proposal["summary_short"] or proposal["summary"],
+                "requested_budget_display": proposal.get("requested_budget_display") or proposal.get("requested_total_display") or "",
+                "routed_budget_display": proposal.get("routed_budget_display") or proposal.get("routed_total_display") or "",
+                "chain": proposal.get("chain") or "",
+                "proposer_label": proposal.get("proposer_label") or "",
                 "labels": labels,
                 "editorial_labels": proposal.get("editorial_labels") or [],
                 "status_labels": proposal.get("status_labels") or [],
@@ -1343,10 +1635,20 @@ def build_feed_stream(
             {
                 "item_id": f"payout:{record['ledger_id']}",
                 "kind": "payout",
+                "action_label": proposal_action_label("payout", str(record.get("status") or "")),
                 "date": record.get("proposal_end_at") or record.get("proposal_created_at") or analytics_as_of,
                 "status": record["status"],
+                "resolved_status": record["status"],
+                "reconciliation_status": "matched",
                 "title": f"{record['recipient_display_name']} received {round(number_or_zero(record['amount']), 2)} {record['asset_symbol']}",
                 "summary": f"Routed through {record['title']} on {record['chain']}.",
+                "requested_budget_display": proposal.get("requested_budget_display") or proposal.get("requested_total_display") or "",
+                "routed_budget_display": asset_display(
+                    [{"symbol": record.get("asset_symbol"), "amount": number_or_zero(record.get("amount"))}],
+                    empty_label="0",
+                ),
+                "chain": record.get("chain") or "",
+                "proposer_label": proposal.get("proposer_label") or "",
                 "labels": labels,
                 "editorial_labels": editorial_labels,
                 "status_labels": status_labels,
@@ -1392,10 +1694,22 @@ def build_feed_stream(
                 "kind": "delivery"
                 if str(record.get("status") or "").strip().lower() == "completed" or str(record.get("kind") or "").strip().lower() in {"delivery", "milestone"}
                 else "project_update",
+                "action_label": proposal_action_label(
+                    "delivery"
+                    if str(record.get("status") or "").strip().lower() == "completed" or str(record.get("kind") or "").strip().lower() in {"delivery", "milestone"}
+                    else "project_update",
+                    str(record.get("status") or ""),
+                ),
                 "date": record["date"],
                 "status": record["status"],
+                "resolved_status": record["status"],
+                "reconciliation_status": "matched",
                 "title": record["title"],
                 "summary": record["summary"],
+                "requested_budget_display": "",
+                "routed_budget_display": "",
+                "chain": "",
+                "proposer_label": "",
                 "labels": labels,
                 "editorial_labels": editorial_labels,
                 "status_labels": status_labels,
@@ -1447,10 +1761,17 @@ def build_feed_stream(
             {
                 "item_id": f"proof:{record['proof_id']}",
                 "kind": "media_reference",
+                "action_label": proposal_action_label("media_reference", str(record.get("status") or "")),
                 "date": record["date"],
                 "status": record["status"],
+                "resolved_status": record["status"],
+                "reconciliation_status": linked_proposal.get("reconciliation_status") or "matched",
                 "title": record["title"],
                 "summary": record["summary"],
+                "requested_budget_display": linked_proposal.get("requested_budget_display") or linked_proposal.get("requested_total_display") or "",
+                "routed_budget_display": linked_proposal.get("routed_budget_display") or linked_proposal.get("routed_total_display") or "",
+                "chain": linked_proposal.get("chain") or "",
+                "proposer_label": linked_proposal.get("proposer_label") or "",
                 "labels": labels,
                 "editorial_labels": editorial_labels,
                 "status_labels": status_labels,
@@ -1494,10 +1815,17 @@ def build_feed_stream(
             {
                 "item_id": f"community:{person['slug']}",
                 "kind": "community_reference",
+                "action_label": proposal_action_label("community_reference", str(person.get("status") or "")),
                 "date": last_seen,
                 "status": person["status"],
+                "resolved_status": person["status"],
+                "reconciliation_status": "matched" if person.get("identity_confidence") != "low" else "needs-review",
                 "title": person["display_name"],
                 "summary": f"{person.get('headline') or person.get('role')}. {person.get('successful_authored_count', 0)} passed authored proposals, {person.get('treasury_route_count', 0)} treasury routes, {person.get('proof_count', 0)} proof records.",
+                "requested_budget_display": "",
+                "routed_budget_display": "",
+                "chain": "",
+                "proposer_label": person["display_name"],
                 "labels": labels,
                 "editorial_labels": editorial_labels,
                 "status_labels": status_labels,
@@ -1704,6 +2032,7 @@ def build_filter_facets(
             "treasury": {
                 "asset": _facet_records([record.get("asset_symbol") for record in treasury_routes]),
                 "status": _facet_records([record.get("proposal_status") for record in treasury_routes]),
+                "chain": _facet_records([record.get("proposal_chain") for record in treasury_routes]),
                 "category": _facet_records(
                     [
                         slug_label(
@@ -1750,4 +2079,329 @@ def build_treasury_snapshots(treasury: dict[str, Any], analytics_as_of: str) -> 
                 "data_quality_note": treasury["overview"].get("data_quality_note"),
             }
         ],
+    }
+
+
+def build_proposal_reconciliation(
+    archive: dict[str, Any],
+    proposals_enriched: dict[str, Any],
+    analytics_as_of: str,
+) -> dict[str, Any]:
+    archive_by_id = {record["archive_id"]: record for record in archive.get("records") or []}
+    records: list[dict[str, Any]] = []
+    status_counts: Counter[str] = Counter()
+    for proposal in proposals_enriched.get("records") or []:
+        source = archive_by_id.get(proposal["archive_id"], {})
+        site_status = str(proposal.get("site_status") or source.get("status") or "").strip().lower()
+        chain_status = str(proposal.get("chain_status") or site_status or "").strip().lower()
+        resolved_status = str(proposal.get("resolved_status") or chain_status or site_status or "").strip().lower()
+        mismatch_fields: list[str] = []
+        if site_status and chain_status and site_status != chain_status:
+            mismatch_fields.append("status")
+        if clean_text(source.get("title")) and clean_text(source.get("title")) != clean_text(proposal.get("title")):
+            mismatch_fields.append("title")
+        if not (source.get("links", {}).get("canonical_url") or source.get("links", {}).get("source_url")):
+            mismatch_fields.append("site-evidence")
+        reconciliation_status = "needs-review" if mismatch_fields else str(proposal.get("reconciliation_status") or "matched")
+        status_counts[reconciliation_status] += 1
+        records.append(
+            {
+                "archive_id": proposal["archive_id"],
+                "proposal_number": proposal.get("proposal_number"),
+                "title": proposal.get("title"),
+                "platform": proposal.get("platform"),
+                "chain": proposal.get("chain"),
+                "site_status": site_status,
+                "chain_status": chain_status,
+                "resolved_status": resolved_status,
+                "repo_value": {
+                    "title": proposal.get("title"),
+                    "status": proposal.get("status"),
+                    "requested_budget_display": proposal.get("requested_budget_display") or proposal.get("requested_total_display"),
+                    "routed_budget_display": proposal.get("routed_budget_display") or proposal.get("routed_total_display"),
+                    "proposer_label": proposal.get("proposer_label"),
+                },
+                "site_value": {
+                    "title": source.get("title"),
+                    "status": source.get("status"),
+                    "proposer_label": source.get("proposer_label"),
+                    "source_url": source.get("links", {}).get("source_url"),
+                    "canonical_url": source.get("links", {}).get("canonical_url"),
+                },
+                "chain_value": {
+                    "status": chain_status,
+                    "transaction_count": proposal.get("transaction_count"),
+                    "routed_budget_display": proposal.get("routed_budget_display") or proposal.get("routed_total_display"),
+                    "treasury_source_label": proposal.get("treasury_source_label"),
+                },
+                "resolved_value": {
+                    "title": proposal.get("title"),
+                    "status": resolved_status,
+                    "requested_budget_display": proposal.get("requested_budget_display") or proposal.get("requested_total_display"),
+                    "routed_budget_display": proposal.get("routed_budget_display") or proposal.get("routed_total_display"),
+                    "proposer_label": proposal.get("proposer_label"),
+                    "treasury_source_label": proposal.get("treasury_source_label"),
+                },
+                "reconciliation_status": reconciliation_status,
+                "mismatch_fields": mismatch_fields,
+                "evidence_urls": unique_strings(
+                    [
+                        source.get("links", {}).get("source_url"),
+                        source.get("links", {}).get("canonical_url"),
+                        source.get("links", {}).get("explorer_url"),
+                    ]
+                ),
+            }
+        )
+
+    return {
+        "dataset": "proposal_reconciliation",
+        "analytics_as_of": analytics_as_of,
+        "as_of": analytics_as_of,
+        "version": 1,
+        "summary": {
+            "matched_count": status_counts.get("matched", 0),
+            "needs_review_count": status_counts.get("needs-review", 0),
+        },
+        "records": records,
+    }
+
+
+def build_person_reconciliation(people: dict[str, Any], analytics_as_of: str) -> dict[str, Any]:
+    status_counts: Counter[str] = Counter()
+    records: list[dict[str, Any]] = []
+    for person in people.get("records") or []:
+        source = str(person.get("identity_source") or identity_source(person))
+        confidence = str(person.get("identity_confidence") or identity_confidence(person))
+        ens = person.get("identity", {}).get("ens")
+        member_url = person.get("identity", {}).get("member_url")
+        display_name = person.get("display_name")
+        if confidence == "low" and not ens and not member_url:
+            reconciliation_status = "needs-review"
+        elif ens and not member_url:
+            reconciliation_status = "chain-only"
+        elif member_url:
+            reconciliation_status = "matched"
+        else:
+            reconciliation_status = "site-only"
+        status_counts[reconciliation_status] += 1
+        records.append(
+            {
+                "address": person.get("address"),
+                "slug": person.get("slug"),
+                "display_name": display_name,
+                "identity_source": source,
+                "identity_confidence": confidence,
+                "repo_value": {
+                    "display_name": display_name,
+                    "member_url": member_url,
+                },
+                "site_value": {
+                    "display_name": display_name if member_url else None,
+                    "member_url": member_url,
+                },
+                "chain_value": {
+                    "ens": ens,
+                    "ens_verified_at": person.get("identity", {}).get("ens_verified_at"),
+                },
+                "resolved_value": {
+                    "display_name": display_name,
+                    "identity_label": ens or display_name or person.get("address_short"),
+                },
+                "reconciliation_status": reconciliation_status,
+                "evidence_urls": unique_strings(
+                    [
+                        member_url,
+                        f"https://app.ens.domains/{ens}" if ens else None,
+                    ]
+                ),
+            }
+        )
+
+    return {
+        "dataset": "person_reconciliation",
+        "analytics_as_of": analytics_as_of,
+        "as_of": analytics_as_of,
+        "version": 1,
+        "summary": {
+            "matched_count": status_counts.get("matched", 0),
+            "needs_review_count": status_counts.get("needs-review", 0),
+            "chain_only_count": status_counts.get("chain-only", 0),
+            "site_only_count": status_counts.get("site-only", 0),
+        },
+        "records": records,
+    }
+
+
+def build_contract_reconciliation(contracts: dict[str, Any], analytics_as_of: str) -> dict[str, Any]:
+    status_counts: Counter[str] = Counter()
+    records: list[dict[str, Any]] = []
+    for contract in contracts.get("records") or []:
+        source_urls = unique_strings(contract.get("source_urls") or [])
+        present_on_site = any("gnars.com" in url for url in source_urls)
+        has_chain_evidence = bool(contract.get("explorer_url"))
+        if present_on_site and has_chain_evidence:
+            reconciliation_status = "matched"
+        elif present_on_site:
+            reconciliation_status = "site-only"
+        elif has_chain_evidence:
+            reconciliation_status = "chain-only"
+        else:
+            reconciliation_status = "needs-review"
+        status_counts[reconciliation_status] += 1
+        records.append(
+            {
+                "contract_id": contract.get("contract_id"),
+                "ecosystem": contract.get("ecosystem"),
+                "network": contract.get("network"),
+                "address": contract.get("address"),
+                "kind": contract.get("kind"),
+                "label": contract.get("label"),
+                "status": contract.get("status"),
+                "repo_value": {
+                    "address": contract.get("address"),
+                    "label": contract.get("label"),
+                    "kind": contract.get("kind"),
+                    "network": contract.get("network"),
+                    "status": contract.get("status"),
+                },
+                "site_value": {
+                    "present_on_site": present_on_site,
+                    "source_urls": [url for url in source_urls if "gnars.com" in url],
+                },
+                "chain_value": {
+                    "address": contract.get("address"),
+                    "explorer_url": contract.get("explorer_url"),
+                },
+                "resolved_value": {
+                    "label": contract.get("label"),
+                    "address": contract.get("address"),
+                    "kind": contract.get("kind"),
+                    "network": contract.get("network"),
+                },
+                "reconciliation_status": reconciliation_status,
+                "evidence_urls": unique_strings([*source_urls, contract.get("explorer_url")]),
+            }
+        )
+
+    return {
+        "dataset": "contract_reconciliation",
+        "analytics_as_of": analytics_as_of,
+        "as_of": analytics_as_of,
+        "version": 1,
+        "summary": {
+            "matched_count": status_counts.get("matched", 0),
+            "needs_review_count": status_counts.get("needs-review", 0),
+            "chain_only_count": status_counts.get("chain-only", 0),
+            "site_only_count": status_counts.get("site-only", 0),
+        },
+        "records": records,
+    }
+
+
+def build_treasury_reconciliation(
+    spend_records: list[dict[str, Any]],
+    treasury_flows: dict[str, Any],
+    proposals_enriched: dict[str, Any],
+    people: dict[str, Any],
+    contracts: dict[str, Any],
+    analytics_as_of: str,
+) -> dict[str, Any]:
+    proposals_by_id = {record["archive_id"]: record for record in proposals_enriched.get("records") or []}
+    people_by_address = {record["address"]: record for record in people.get("records") or []}
+    contract_by_address = {
+        normalize_address(record.get("address")): record
+        for record in contracts.get("records") or []
+        if record.get("address")
+    }
+    status_counts: Counter[str] = Counter()
+    records: list[dict[str, Any]] = []
+    for route in spend_records:
+        proposal = proposals_by_id.get(route["archive_id"], {})
+        recipient = people_by_address.get(normalize_address(route.get("recipient_address")))
+        treasury_contract = treasury_contract_for_chain(contracts, str(route.get("chain") or ""))
+        token_contract = normalize_address(route.get("token_contract"))
+        token_match = contract_by_address.get(token_contract) if token_contract else None
+        asset_contract_status = "native" if route.get("asset_kind") == "native" else "tracked-contract" if token_match else "external-token"
+        mismatch_fields: list[str] = []
+        if not proposal:
+            mismatch_fields.append("proposal")
+        if not recipient:
+            mismatch_fields.append("recipient")
+        if not treasury_contract:
+            mismatch_fields.append("treasury-contract")
+        reconciliation_status = "needs-review" if mismatch_fields else "matched"
+        status_counts[reconciliation_status] += 1
+        records.append(
+            {
+                "route_id": route["ledger_id"],
+                "archive_id": route["archive_id"],
+                "proposal_number": route.get("proposal_number"),
+                "proposal_title": route.get("title"),
+                "chain": route.get("chain"),
+                "recipient_address": route.get("recipient_address"),
+                "recipient_display_name": route.get("recipient_display_name"),
+                "asset_symbol": route.get("asset_symbol"),
+                "amount": number_or_zero(route.get("amount")),
+                "token_contract": route.get("token_contract"),
+                "asset_contract_status": asset_contract_status,
+                "repo_value": {
+                    "amount": number_or_zero(route.get("amount")),
+                    "asset_symbol": route.get("asset_symbol"),
+                    "recipient_address": route.get("recipient_address"),
+                    "proposal_status": route.get("status"),
+                },
+                "site_value": {
+                    "proposal_status": route.get("status"),
+                    "source_url": route.get("source_url"),
+                    "canonical_url": route.get("canonical_url"),
+                },
+                "chain_value": {
+                    "treasury_contract_id": treasury_contract.get("contract_id") if treasury_contract else None,
+                    "treasury_contract_label": treasury_contract.get("label") if treasury_contract else None,
+                    "treasury_explorer_url": treasury_contract.get("explorer_url") if treasury_contract else None,
+                    "token_contract_id": token_match.get("contract_id") if token_match else None,
+                    "token_explorer_url": token_match.get("explorer_url") if token_match else None,
+                },
+                "resolved_value": {
+                    "amount_label": asset_display(
+                        [{"symbol": route.get("asset_symbol"), "amount": number_or_zero(route.get("amount"))}],
+                        empty_label="0",
+                    ),
+                    "recipient_label": recipient.get("display_name") if recipient else route.get("recipient_display_name"),
+                    "treasury_source_label": treasury_contract.get("label") if treasury_contract else f"{label_display(route.get('chain'))} Treasury",
+                },
+                "reconciliation_status": reconciliation_status,
+                "mismatch_fields": mismatch_fields,
+                "evidence_urls": unique_strings(
+                    [
+                        route.get("source_url"),
+                        route.get("canonical_url"),
+                        treasury_contract.get("explorer_url") if treasury_contract else None,
+                        token_match.get("explorer_url") if token_match else None,
+                    ]
+                ),
+            }
+        )
+
+    window_summary = {
+        record["window_id"]: {
+            "route_count": record.get("route_count", 0),
+            "proposal_count": record.get("proposal_count", 0),
+            "recipient_count": record.get("recipient_count", 0),
+        }
+        for record in treasury_flows.get("windows") or []
+    }
+
+    return {
+        "dataset": "treasury_reconciliation",
+        "analytics_as_of": analytics_as_of,
+        "as_of": analytics_as_of,
+        "version": 1,
+        "summary": {
+            "matched_count": status_counts.get("matched", 0),
+            "needs_review_count": status_counts.get("needs-review", 0),
+            "window_summary": window_summary,
+        },
+        "records": records,
     }

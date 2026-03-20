@@ -9,6 +9,14 @@ import { filterFeed } from "../lib/filtering";
 import { useUrlState } from "../lib/urlState";
 import type { HomePageProps, Meta } from "../types";
 
+function inWindow(date: string, days: number) {
+  const parsed = new Date(date);
+  if (Number.isNaN(parsed.getTime())) {
+    return false;
+  }
+  return parsed.getTime() >= Date.now() - days * 24 * 60 * 60 * 1000;
+}
+
 export function HomePage({ meta, props }: { meta: Meta; props: HomePageProps }) {
   const [filters, setFilters] = useUrlState({
     kind: "all",
@@ -20,6 +28,13 @@ export function HomePage({ meta, props }: { meta: Meta; props: HomePageProps }) 
   const feed = useMemo(
     () => filterFeed(props.feed, { ...filters, search: deferredSearch }).slice(0, 80),
     [deferredSearch, filters, props.feed],
+  );
+  const windowOptions = useMemo(
+    () => [
+      { value: "30d", label: "30d", count: props.feed.filter((item) => inWindow(item.date, 30)).length },
+      { value: "6m", label: "6m", count: props.feed.filter((item) => inWindow(item.date, 183)).length },
+    ],
+    [props.feed],
   );
 
   return (
@@ -61,11 +76,7 @@ export function HomePage({ meta, props }: { meta: Meta; props: HomePageProps }) 
           {
             label: "Window",
             value: filters.window,
-            options: [
-              { value: "30d", label: "30d", count: 0 },
-              { value: "6m", label: "6m", count: 0 },
-              { value: "all", label: "All Time", count: 0 },
-            ],
+            options: windowOptions,
             onChange: (window) => setFilters({ window }),
           },
         ]}

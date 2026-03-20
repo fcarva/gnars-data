@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["dataset", "analytics_as_of", "as_of", "version", "summary", "records"],
+  "properties": {
+    "dataset": { "const": "treasury_reconciliation" },
+    "analytics_as_of": { "type": "string" },
+    "as_of": { "type": "string" },
+    "version": { "type": "integer" },
+    "summary": { "type": "object" },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["route_id", "archive_id", "proposal_number", "proposal_title", "chain", "recipient_address", "recipient_display_name", "asset_symbol", "amount", "token_contract", "asset_contract_status", "repo_value", "site_value", "chain_value", "resolved_value", "reconciliation_status", "mismatch_fields", "evidence_urls"],
+        "properties": {
+          "route_id": { "type": "string" },
+          "archive_id": { "type": "string" },
+          "proposal_number": { "type": ["integer", "null"] },
+          "proposal_title": { "type": "string" },
+          "chain": { "type": "string" },
+          "recipient_address": { "type": "string" },
+          "recipient_display_name": { "type": "string" },
+          "asset_symbol": { "type": "string" },
+          "amount": { "type": "number" },
+          "token_contract": { "type": ["string", "null"] },
+          "asset_contract_status": { "type": "string" },
+          "repo_value": { "type": "object" },
+          "site_value": { "type": "object" },
+          "chain_value": { "type": "object" },
+          "resolved_value": { "type": "object" },
+          "reconciliation_status": { "type": "string" },
+          "mismatch_fields": { "type": "array", "items": { "type": "string" } },
+          "evidence_urls": { "type": "array", "items": { "type": "string" } }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
