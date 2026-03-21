@@ -12,5 +12,3 @@ __pycache__/
 *.pyc
 temp/
 reports/
-scripts/
-docs/
