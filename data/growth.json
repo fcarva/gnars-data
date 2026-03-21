@@ -1,0 +1,719 @@
+{
+  "dataset": "growth",
+  "as_of": "2026-03-21T00:16:14.482799Z",
+  "version": 1,
+  "overview": {
+    "holders_count": 1011,
+    "unique_voters_total": 464,
+    "active_voter_pct": 45.8952,
+    "proposers_total": 73
+  },
+  "timeseries": [
+    {
+      "month": "2022-03",
+      "active_voters": 15,
+      "new_voters": 15,
+      "retained_voters": 0,
+      "retention_pct": null,
+      "unique_proposers": 1
+    },
+    {
+      "month": "2022-06",
+      "active_voters": 20,
+      "new_voters": 14,
+      "retained_voters": 6,
+      "retention_pct": 40.0,
+      "unique_proposers": 1
+    },
+    {
+      "month": "2022-07",
+      "active_voters": 34,
+      "new_voters": 26,
+      "retained_voters": 8,
+      "retention_pct": 40.0,
+      "unique_proposers": 2
+    },
+    {
+      "month": "2022-08",
+      "active_voters": 41,
+      "new_voters": 22,
+      "retained_voters": 19,
+      "retention_pct": 55.8824,
+      "unique_proposers": 2
+    },
+    {
+      "month": "2022-09",
+      "active_voters": 73,
+      "new_voters": 43,
+      "retained_voters": 30,
+      "retention_pct": 73.1707,
+      "unique_proposers": 2
+    },
+    {
+      "month": "2022-10",
+      "active_voters": 79,
+      "new_voters": 36,
+      "retained_voters": 43,
+      "retention_pct": 58.9041,
+      "unique_proposers": 4
+    },
+    {
+      "month": "2022-11",
+      "active_voters": 68,
+      "new_voters": 21,
+      "retained_voters": 47,
+      "retention_pct": 59.4937,
+      "unique_proposers": 4
+    },
+    {
+      "month": "2022-12",
+      "active_voters": 77,
+      "new_voters": 42,
+      "retained_voters": 35,
+      "retention_pct": 51.4706,
+      "unique_proposers": 4
+    },
+    {
+      "month": "2023-01",
+      "active_voters": 108,
+      "new_voters": 59,
+      "retained_voters": 49,
+      "retention_pct": 63.6364,
+      "unique_proposers": 9
+    },
+    {
+      "month": "2023-02",
+      "active_voters": 55,
+      "new_voters": 9,
+      "retained_voters": 46,
+      "retention_pct": 42.5926,
+      "unique_proposers": 4
+    },
+    {
+      "month": "2023-03",
+      "active_voters": 71,
+      "new_voters": 36,
+      "retained_voters": 35,
+      "retention_pct": 63.6364,
+      "unique_proposers": 3
+    },
+    {
+      "month": "2023-04",
+      "active_voters": 64,
+      "new_voters": 20,
+      "retained_voters": 44,
+      "retention_pct": 61.9718,
+      "unique_proposers": 8
+    },
+    {
+      "month": "2023-05",
+      "active_voters": 49,
+      "new_voters": 20,
+      "retained_voters": 29,
+      "retention_pct": 45.3125,
+      "unique_proposers": 3
+    },
+    {
+      "month": "2023-06",
+      "active_voters": 40,
+      "new_voters": 21,
+      "retained_voters": 19,
+      "retention_pct": 38.7755,
+      "unique_proposers": 4
+    },
+    {
+      "month": "2023-07",
+      "active_voters": 21,
+      "new_voters": 9,
+      "retained_voters": 12,
+      "retention_pct": 30.0,
+      "unique_proposers": 1
+    },
+    {
+      "month": "2023-08",
+      "active_voters": 10,
+      "new_voters": 5,
+      "retained_voters": 5,
+      "retention_pct": 23.8095,
+      "unique_proposers": 1
+    },
+    {
+      "month": "2023-11",
+      "active_voters": 24,
+      "new_voters": 16,
+      "retained_voters": 8,
+      "retention_pct": 80.0,
+      "unique_proposers": 2
+    },
+    {
+      "month": "2023-12",
+      "active_voters": 16,
+      "new_voters": 4,
+      "retained_voters": 12,
+      "retention_pct": 50.0,
+      "unique_proposers": 1
+    },
+    {
+      "month": "2024-01",
+      "active_voters": 44,
+      "new_voters": 33,
+      "retained_voters": 11,
+      "retention_pct": 68.75,
+      "unique_proposers": 6
+    },
+    {
+      "month": "2024-02",
+      "active_voters": 6,
+      "new_voters": 1,
+      "retained_voters": 5,
+      "retention_pct": 11.3636,
+      "unique_proposers": 5
+    },
+    {
+      "month": "2024-03",
+      "active_voters": 25,
+      "new_voters": 22,
+      "retained_voters": 3,
+      "retention_pct": 50.0,
+      "unique_proposers": 2
+    },
+    {
+      "month": "2024-04",
+      "active_voters": 48,
+      "new_voters": 37,
+      "retained_voters": 11,
+      "retention_pct": 44.0,
+      "unique_proposers": 2
+    },
+    {
+      "month": "2024-05",
+      "active_voters": 86,
+      "new_voters": 56,
+      "retained_voters": 30,
+      "retention_pct": 62.5,
+      "unique_proposers": 4
+    },
+    {
+      "month": "2024-06",
+      "active_voters": 49,
+      "new_voters": 11,
+      "retained_voters": 38,
+      "retention_pct": 44.186,
+      "unique_proposers": 3
+    },
+    {
+      "month": "2024-07",
+      "active_voters": 76,
+      "new_voters": 39,
+      "retained_voters": 37,
+      "retention_pct": 75.5102,
+      "unique_proposers": 6
+    },
+    {
+      "month": "2024-08",
+      "active_voters": 70,
+      "new_voters": 22,
+      "retained_voters": 48,
+      "retention_pct": 63.1579,
+      "unique_proposers": 9
+    },
+    {
+      "month": "2024-09",
+      "active_voters": 29,
+      "new_voters": 6,
+      "retained_voters": 23,
+      "retention_pct": 32.8571,
+      "unique_proposers": 1
+    },
+    {
+      "month": "2024-10",
+      "active_voters": 59,
+      "new_voters": 32,
+      "retained_voters": 27,
+      "retention_pct": 93.1034,
+      "unique_proposers": 8
+    },
+    {
+      "month": "2024-11",
+      "active_voters": 53,
+      "new_voters": 20,
+      "retained_voters": 33,
+      "retention_pct": 55.9322,
+      "unique_proposers": 3
+    },
+    {
+      "month": "2024-12",
+      "active_voters": 33,
+      "new_voters": 7,
+      "retained_voters": 26,
+      "retention_pct": 49.0566,
+      "unique_proposers": 2
+    },
+    {
+      "month": "2025-01",
+      "active_voters": 53,
+      "new_voters": 34,
+      "retained_voters": 19,
+      "retention_pct": 57.5758,
+      "unique_proposers": 5
+    },
+    {
+      "month": "2025-02",
+      "active_voters": 36,
+      "new_voters": 13,
+      "retained_voters": 23,
+      "retention_pct": 43.3962,
+      "unique_proposers": 3
+    },
+    {
+      "month": "2025-03",
+      "active_voters": 51,
+      "new_voters": 25,
+      "retained_voters": 26,
+      "retention_pct": 72.2222,
+      "unique_proposers": 7
+    },
+    {
+      "month": "2025-04",
+      "active_voters": 52,
+      "new_voters": 15,
+      "retained_voters": 37,
+      "retention_pct": 72.549,
+      "unique_proposers": 6
+    },
+    {
+      "month": "2025-05",
+      "active_voters": 49,
+      "new_voters": 15,
+      "retained_voters": 34,
+      "retention_pct": 65.3846,
+      "unique_proposers": 4
+    },
+    {
+      "month": "2025-06",
+      "active_voters": 29,
+      "new_voters": 5,
+      "retained_voters": 24,
+      "retention_pct": 48.9796,
+      "unique_proposers": 2
+    },
+    {
+      "month": "2025-07",
+      "active_voters": 44,
+      "new_voters": 21,
+      "retained_voters": 23,
+      "retention_pct": 79.3103,
+      "unique_proposers": 4
+    },
+    {
+      "month": "2025-08",
+      "active_voters": 36,
+      "new_voters": 11,
+      "retained_voters": 25,
+      "retention_pct": 56.8182,
+      "unique_proposers": 2
+    },
+    {
+      "month": "2025-09",
+      "active_voters": 34,
+      "new_voters": 14,
+      "retained_voters": 20,
+      "retention_pct": 55.5556,
+      "unique_proposers": 3
+    },
+    {
+      "month": "2025-10",
+      "active_voters": 28,
+      "new_voters": 10,
+      "retained_voters": 18,
+      "retention_pct": 52.9412,
+      "unique_proposers": 3
+    },
+    {
+      "month": "2025-11",
+      "active_voters": 32,
+      "new_voters": 14,
+      "retained_voters": 18,
+      "retention_pct": 64.2857,
+      "unique_proposers": 3
+    },
+    {
+      "month": "2026-01",
+      "active_voters": 29,
+      "new_voters": 11,
+      "retained_voters": 18,
+      "retention_pct": 56.25,
+      "unique_proposers": 2
+    },
+    {
+      "month": "2026-02",
+      "active_voters": 23,
+      "new_voters": 8,
+      "retained_voters": 15,
+      "retention_pct": 51.7241,
+      "unique_proposers": 4
+    },
+    {
+      "month": "2026-03",
+      "active_voters": 37,
+      "new_voters": 21,
+      "retained_voters": 16,
+      "retention_pct": 69.5652,
+      "unique_proposers": 3
+    }
+  ],
+  "cohort_retention": [
+    {
+      "cohort_month": "2022-03",
+      "cohort_size": 15,
+      "m_plus_1": null,
+      "m_plus_3": 40.0,
+      "m_plus_6": 40.0,
+      "m_plus_12": 13.3333
+    },
+    {
+      "cohort_month": "2022-06",
+      "cohort_size": 20,
+      "m_plus_1": 40.0,
+      "m_plus_3": 45.0,
+      "m_plus_6": 25.0,
+      "m_plus_12": 10.0
+    },
+    {
+      "cohort_month": "2022-07",
+      "cohort_size": 34,
+      "m_plus_1": 55.8824,
+      "m_plus_3": 29.4118,
+      "m_plus_6": 23.5294,
+      "m_plus_12": 2.9412
+    },
+    {
+      "cohort_month": "2022-08",
+      "cohort_size": 41,
+      "m_plus_1": 73.1707,
+      "m_plus_3": 29.2683,
+      "m_plus_6": 26.8293,
+      "m_plus_12": 9.7561
+    },
+    {
+      "cohort_month": "2022-09",
+      "cohort_size": 73,
+      "m_plus_1": 58.9041,
+      "m_plus_3": 47.9452,
+      "m_plus_6": 32.8767,
+      "m_plus_12": null
+    },
+    {
+      "cohort_month": "2022-10",
+      "cohort_size": 79,
+      "m_plus_1": 59.4937,
+      "m_plus_3": 53.1646,
+      "m_plus_6": 31.6456,
+      "m_plus_12": null
+    },
+    {
+      "cohort_month": "2022-11",
+      "cohort_size": 68,
+      "m_plus_1": 51.4706,
+      "m_plus_3": 38.2353,
+      "m_plus_6": 23.5294,
+      "m_plus_12": 16.1765
+    },
+    {
+      "cohort_month": "2022-12",
+      "cohort_size": 77,
+      "m_plus_1": 63.6364,
+      "m_plus_3": 36.3636,
+      "m_plus_6": 24.6753,
+      "m_plus_12": 7.7922
+    },
+    {
+      "cohort_month": "2023-01",
+      "cohort_size": 108,
+      "m_plus_1": 42.5926,
+      "m_plus_3": 34.2593,
+      "m_plus_6": 11.1111,
+      "m_plus_12": 22.2222
+    },
+    {
+      "cohort_month": "2023-02",
+      "cohort_size": 55,
+      "m_plus_1": 63.6364,
+      "m_plus_3": 43.6364,
+      "m_plus_6": 12.7273,
+      "m_plus_12": 7.2727
+    },
+    {
+      "cohort_month": "2023-03",
+      "cohort_size": 71,
+      "m_plus_1": 61.9718,
+      "m_plus_3": 35.2113,
+      "m_plus_6": null,
+      "m_plus_12": 19.7183
+    },
+    {
+      "cohort_month": "2023-04",
+      "cohort_size": 64,
+      "m_plus_1": 45.3125,
+      "m_plus_3": 21.875,
+      "m_plus_6": null,
+      "m_plus_12": 20.3125
+    },
+    {
+      "cohort_month": "2023-05",
+      "cohort_size": 49,
+      "m_plus_1": 38.7755,
+      "m_plus_3": 14.2857,
+      "m_plus_6": 24.4898,
+      "m_plus_12": 34.6939
+    },
+    {
+      "cohort_month": "2023-06",
+      "cohort_size": 40,
+      "m_plus_1": 30.0,
+      "m_plus_3": null,
+      "m_plus_6": 17.5,
+      "m_plus_12": 32.5
+    },
+    {
+      "cohort_month": "2023-07",
+      "cohort_size": 21,
+      "m_plus_1": 23.8095,
+      "m_plus_3": null,
+      "m_plus_6": 71.4286,
+      "m_plus_12": 33.3333
+    },
+    {
+      "cohort_month": "2023-08",
+      "cohort_size": 10,
+      "m_plus_1": null,
+      "m_plus_3": 80.0,
+      "m_plus_6": 20.0,
+      "m_plus_12": 60.0
+    },
+    {
+      "cohort_month": "2023-11",
+      "cohort_size": 24,
+      "m_plus_1": 50.0,
+      "m_plus_3": 16.6667,
+      "m_plus_6": 62.5,
+      "m_plus_12": 41.6667
+    },
+    {
+      "cohort_month": "2023-12",
+      "cohort_size": 16,
+      "m_plus_1": 68.75,
+      "m_plus_3": 50.0,
+      "m_plus_6": 43.75,
+      "m_plus_12": 31.25
+    },
+    {
+      "cohort_month": "2024-01",
+      "cohort_size": 44,
+      "m_plus_1": 11.3636,
+      "m_plus_3": 36.3636,
+      "m_plus_6": 45.4545,
+      "m_plus_12": 38.6364
+    },
+    {
+      "cohort_month": "2024-02",
+      "cohort_size": 6,
+      "m_plus_1": 50.0,
+      "m_plus_3": 66.6667,
+      "m_plus_6": 83.3333,
+      "m_plus_12": 83.3333
+    },
+    {
+      "cohort_month": "2024-03",
+      "cohort_size": 25,
+      "m_plus_1": 44.0,
+      "m_plus_3": 52.0,
+      "m_plus_6": 36.0,
+      "m_plus_12": 44.0
+    },
+    {
+      "cohort_month": "2024-04",
+      "cohort_size": 48,
+      "m_plus_1": 62.5,
+      "m_plus_3": 52.0833,
+      "m_plus_6": 43.75,
+      "m_plus_12": 29.1667
+    },
+    {
+      "cohort_month": "2024-05",
+      "cohort_size": 86,
+      "m_plus_1": 44.186,
+      "m_plus_3": 43.0233,
+      "m_plus_6": 32.5581,
+      "m_plus_12": 22.093
+    },
+    {
+      "cohort_month": "2024-06",
+      "cohort_size": 49,
+      "m_plus_1": 75.5102,
+      "m_plus_3": 38.7755,
+      "m_plus_6": 38.7755,
+      "m_plus_12": 28.5714
+    },
+    {
+      "cohort_month": "2024-07",
+      "cohort_size": 76,
+      "m_plus_1": 63.1579,
+      "m_plus_3": 46.0526,
+      "m_plus_6": 35.5263,
+      "m_plus_12": 31.5789
+    },
+    {
+      "cohort_month": "2024-08",
+      "cohort_size": 70,
+      "m_plus_1": 32.8571,
+      "m_plus_3": 42.8571,
+      "m_plus_6": 28.5714,
+      "m_plus_12": 25.7143
+    },
+    {
+      "cohort_month": "2024-09",
+      "cohort_size": 29,
+      "m_plus_1": 93.1034,
+      "m_plus_3": 62.069,
+      "m_plus_6": 65.5172,
+      "m_plus_12": 44.8276
+    },
+    {
+      "cohort_month": "2024-10",
+      "cohort_size": 59,
+      "m_plus_1": 55.9322,
+      "m_plus_3": 47.4576,
+      "m_plus_6": 47.4576,
+      "m_plus_12": 28.8136
+    },
+    {
+      "cohort_month": "2024-11",
+      "cohort_size": 53,
+      "m_plus_1": 49.0566,
+      "m_plus_3": 30.1887,
+      "m_plus_6": 37.7358,
+      "m_plus_12": 28.3019
+    },
+    {
+      "cohort_month": "2024-12",
+      "cohort_size": 33,
+      "m_plus_1": 57.5758,
+      "m_plus_3": 63.6364,
+      "m_plus_6": 36.3636,
+      "m_plus_12": null
+    },
+    {
+      "cohort_month": "2025-01",
+      "cohort_size": 53,
+      "m_plus_1": 43.3962,
+      "m_plus_3": 52.8302,
+      "m_plus_6": 49.0566,
+      "m_plus_12": 22.6415
+    },
+    {
+      "cohort_month": "2025-02",
+      "cohort_size": 36,
+      "m_plus_1": 72.2222,
+      "m_plus_3": 66.6667,
+      "m_plus_6": 63.8889,
+      "m_plus_12": 30.5556
+    },
+    {
+      "cohort_month": "2025-03",
+      "cohort_size": 51,
+      "m_plus_1": 72.549,
+      "m_plus_3": 37.2549,
+      "m_plus_6": 45.098,
+      "m_plus_12": 45.098
+    },
+    {
+      "cohort_month": "2025-04",
+      "cohort_size": 52,
+      "m_plus_1": 65.3846,
+      "m_plus_3": 61.5385,
+      "m_plus_6": 42.3077,
+      "m_plus_12": null
+    },
+    {
+      "cohort_month": "2025-05",
+      "cohort_size": 49,
+      "m_plus_1": 48.9796,
+      "m_plus_3": 55.102,
+      "m_plus_6": 42.8571,
+      "m_plus_12": null
+    },
+    {
+      "cohort_month": "2025-06",
+      "cohort_size": 29,
+      "m_plus_1": 79.3103,
+      "m_plus_3": 65.5172,
+      "m_plus_6": null,
+      "m_plus_12": null
+    },
+    {
+      "cohort_month": "2025-07",
+      "cohort_size": 44,
+      "m_plus_1": 56.8182,
+      "m_plus_3": 45.4545,
+      "m_plus_6": 45.4545,
+      "m_plus_12": null
+    },
+    {
+      "cohort_month": "2025-08",
+      "cohort_size": 36,
+      "m_plus_1": 55.5556,
+      "m_plus_3": 52.7778,
+      "m_plus_6": 36.1111,
+      "m_plus_12": null
+    },
+    {
+      "cohort_month": "2025-09",
+      "cohort_size": 34,
+      "m_plus_1": 52.9412,
+      "m_plus_3": null,
+      "m_plus_6": 55.8824,
+      "m_plus_12": null
+    },
+    {
+      "cohort_month": "2025-10",
+      "cohort_size": 28,
+      "m_plus_1": 64.2857,
+      "m_plus_3": 53.5714,
+      "m_plus_6": null,
+      "m_plus_12": null
+    },
+    {
+      "cohort_month": "2025-11",
+      "cohort_size": 32,
+      "m_plus_1": null,
+      "m_plus_3": 46.875,
+      "m_plus_6": null,
+      "m_plus_12": null
+    },
+    {
+      "cohort_month": "2026-01",
+      "cohort_size": 29,
+      "m_plus_1": 51.7241,
+      "m_plus_3": null,
+      "m_plus_6": null,
+      "m_plus_12": null
+    },
+    {
+      "cohort_month": "2026-02",
+      "cohort_size": 23,
+      "m_plus_1": 69.5652,
+      "m_plus_3": null,
+      "m_plus_6": null,
+      "m_plus_12": null
+    },
+    {
+      "cohort_month": "2026-03",
+      "cohort_size": 37,
+      "m_plus_1": null,
+      "m_plus_3": null,
+      "m_plus_6": null,
+      "m_plus_12": null
+    }
+  ]
+}

@@ -19,6 +19,8 @@
 - `dao_metrics.json`: high-level DAO metrics and leaderboards for the public site
 - `timeline_events.json`: merged chronology of proposals, workstream updates, and public proof links
 - `sources.json`: source registry and sync metadata
+- `funding_origins.json`: provenance ledger for treasury inflow/funding source history (including proposal revisions)
+- `funding_analysis.json`: allocation and governance efficiency layer (funding coverage, voting power timeline, and cost-per-vote)
 
 ## Rules
 

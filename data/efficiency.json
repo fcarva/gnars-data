@@ -1,0 +1,705 @@
+{
+  "dataset": "efficiency",
+  "as_of": "2026-03-21T00:16:14.485811Z",
+  "version": 1,
+  "allocation_by_proposal": [
+    {
+      "archive_id": "gnars-base-101",
+      "proposal_number": 101,
+      "title": "Gnars India Initiative: Building Bridges Through Skateboarding",
+      "executed_spend_usd": 5065.57,
+      "vote_count": 19,
+      "voting_power": 726.0,
+      "cost_per_vote_usd": 266.61,
+      "cost_per_voting_power_usd": 6.977373
+    },
+    {
+      "archive_id": "gnars-base-104",
+      "proposal_number": 104,
+      "title": "7Capasmag Skate&Jazz Vol 2 - New Nounstacle inauguration in Devconnect ",
+      "executed_spend_usd": 1432.04,
+      "vote_count": 16,
+      "voting_power": 822.0,
+      "cost_per_vote_usd": 89.5,
+      "cost_per_voting_power_usd": 1.742139
+    },
+    {
+      "archive_id": "gnars-base-108",
+      "proposal_number": 108,
+      "title": "SKATE ACROSS AFRICA (EAST COAST - SOUTH COAST)",
+      "executed_spend_usd": 2500.0,
+      "vote_count": 24,
+      "voting_power": 857.0,
+      "cost_per_vote_usd": 104.17,
+      "cost_per_voting_power_usd": 2.917153
+    },
+    {
+      "archive_id": "gnars-base-117",
+      "proposal_number": 117,
+      "title": "Sponsor Gnars Monik Santos in QS/WSL 2026",
+      "executed_spend_usd": 1570.0,
+      "vote_count": 24,
+      "voting_power": 1014.0,
+      "cost_per_vote_usd": 65.42,
+      "cost_per_voting_power_usd": 1.548323
+    },
+    {
+      "archive_id": "gnars-base-12",
+      "proposal_number": 12,
+      "title": "Fund the Community and Tech Pods with Sendit",
+      "executed_spend_usd": 11556.22,
+      "vote_count": 39,
+      "voting_power": 790.0,
+      "cost_per_vote_usd": 296.31,
+      "cost_per_voting_power_usd": 14.628129
+    },
+    {
+      "archive_id": "gnars-base-14",
+      "proposal_number": 14,
+      "title": "Renan Carvalho onboarding proposal",
+      "executed_spend_usd": 1.16,
+      "vote_count": 43,
+      "voting_power": 922.0,
+      "cost_per_vote_usd": 0.03,
+      "cost_per_voting_power_usd": 0.001263
+    },
+    {
+      "archive_id": "gnars-base-16",
+      "proposal_number": 16,
+      "title": " V2 Gnars Sunset IRL Docuseries Premiere Event",
+      "executed_spend_usd": 3990.0,
+      "vote_count": 45,
+      "voting_power": 690.0,
+      "cost_per_vote_usd": 88.67,
+      "cost_per_voting_power_usd": 5.782609
+    },
+    {
+      "archive_id": "gnars-base-17",
+      "proposal_number": 17,
+      "title": "Pharra Onboarding Proposal",
+      "executed_spend_usd": 1.02,
+      "vote_count": 30,
+      "voting_power": 910.0,
+      "cost_per_vote_usd": 0.03,
+      "cost_per_voting_power_usd": 0.001118
+    },
+    {
+      "archive_id": "gnars-base-18",
+      "proposal_number": 18,
+      "title": "Estagirons Onboarding proposal",
+      "executed_spend_usd": 0.94,
+      "vote_count": 21,
+      "voting_power": 772.0,
+      "cost_per_vote_usd": 0.04,
+      "cost_per_voting_power_usd": 0.00122
+    },
+    {
+      "archive_id": "gnars-base-19",
+      "proposal_number": 19,
+      "title": "Bernardo Nassar Sponsorship Proposal",
+      "executed_spend_usd": 5984.0,
+      "vote_count": 31,
+      "voting_power": 1028.0,
+      "cost_per_vote_usd": 193.03,
+      "cost_per_voting_power_usd": 5.821012
+    },
+    {
+      "archive_id": "gnars-base-20",
+      "proposal_number": 20,
+      "title": "Fund the Creation of Nounstacles",
+      "executed_spend_usd": 9900.0,
+      "vote_count": 33,
+      "voting_power": 901.0,
+      "cost_per_vote_usd": 300.0,
+      "cost_per_voting_power_usd": 10.987791
+    },
+    {
+      "archive_id": "gnars-base-21",
+      "proposal_number": 21,
+      "title": "Mauricio Nava Onboarding ",
+      "executed_spend_usd": 0.94,
+      "vote_count": 23,
+      "voting_power": 920.0,
+      "cost_per_vote_usd": 0.04,
+      "cost_per_voting_power_usd": 0.001022
+    },
+    {
+      "archive_id": "gnars-base-22",
+      "proposal_number": 22,
+      "title": "Onboarding Arthur Guedes",
+      "executed_spend_usd": 1.07,
+      "vote_count": 33,
+      "voting_power": 783.0,
+      "cost_per_vote_usd": 0.03,
+      "cost_per_voting_power_usd": 0.00136
+    },
+    {
+      "archive_id": "gnars-base-23",
+      "proposal_number": 23,
+      "title": "Bring Thats Gnarly Onchain",
+      "executed_spend_usd": 7500.0,
+      "vote_count": 24,
+      "voting_power": 836.0,
+      "cost_per_vote_usd": 312.5,
+      "cost_per_voting_power_usd": 8.971292
+    },
+    {
+      "archive_id": "gnars-base-24",
+      "proposal_number": 24,
+      "title": "Make Bless The First Skateshop Gnarly ",
+      "executed_spend_usd": 12000.0,
+      "vote_count": 32,
+      "voting_power": 879.0,
+      "cost_per_vote_usd": 375.0,
+      "cost_per_voting_power_usd": 13.651877
+    },
+    {
+      "archive_id": "gnars-base-25",
+      "proposal_number": 25,
+      "title": "Sculpture NOGGLES RAIL at Medellin Colombia",
+      "executed_spend_usd": 3142.02,
+      "vote_count": 30,
+      "voting_power": 1174.0,
+      "cost_per_vote_usd": 104.73,
+      "cost_per_voting_power_usd": 2.676339
+    },
+    {
+      "archive_id": "gnars-base-26",
+      "proposal_number": 26,
+      "title": "Establish the Pod Media",
+      "executed_spend_usd": 8085.0,
+      "vote_count": 33,
+      "voting_power": 1246.0,
+      "cost_per_vote_usd": 245.0,
+      "cost_per_voting_power_usd": 6.488764
+    },
+    {
+      "archive_id": "gnars-base-27",
+      "proposal_number": 27,
+      "title": "PATINAJE TOTAL Y GNARS AT WRG 2024 ITALY",
+      "executed_spend_usd": 1932.5,
+      "vote_count": 26,
+      "voting_power": 1134.0,
+      "cost_per_vote_usd": 74.33,
+      "cost_per_voting_power_usd": 1.704148
+    },
+    {
+      "archive_id": "gnars-base-28",
+      "proposal_number": 28,
+      "title": "Travel Grant Proposal - IndoGNARS 2",
+      "executed_spend_usd": 7888.0,
+      "vote_count": 32,
+      "voting_power": 1306.0,
+      "cost_per_vote_usd": 246.5,
+      "cost_per_voting_power_usd": 6.039816
+    },
+    {
+      "archive_id": "gnars-base-29",
+      "proposal_number": 29,
+      "title": "1 Year Sponsorship for Tom Rohrer - Toms Tutorials",
+      "executed_spend_usd": 13555.03,
+      "vote_count": 25,
+      "voting_power": 1300.0,
+      "cost_per_vote_usd": 542.2,
+      "cost_per_voting_power_usd": 10.426946
+    },
+    {
+      "archive_id": "gnars-base-31",
+      "proposal_number": 31,
+      "title": "Onboarding Humberto Peres with 1 airdropped gnar",
+      "executed_spend_usd": 1.07,
+      "vote_count": 17,
+      "voting_power": 862.0,
+      "cost_per_vote_usd": 0.06,
+      "cost_per_voting_power_usd": 0.001236
+    },
+    {
+      "archive_id": "gnars-base-32",
+      "proposal_number": 32,
+      "title": " Gnarly TPM Shredder Team",
+      "executed_spend_usd": 16116.0,
+      "vote_count": 23,
+      "voting_power": 1198.0,
+      "cost_per_vote_usd": 700.7,
+      "cost_per_voting_power_usd": 13.452421
+    },
+    {
+      "archive_id": "gnars-base-33",
+      "proposal_number": 33,
+      "title": "Noggles Rail debut in London UK",
+      "executed_spend_usd": 4809.08,
+      "vote_count": 22,
+      "voting_power": 1138.0,
+      "cost_per_vote_usd": 218.59,
+      "cost_per_voting_power_usd": 4.225902
+    },
+    {
+      "archive_id": "gnars-base-37",
+      "proposal_number": 37,
+      "title": "Fund Travel Costs to Deliver 6K in Donated Skateboarding Materials to Uganda Skateboarding Collectives  --No Funds Spent on Donations-- ",
+      "executed_spend_usd": 7870.0,
+      "vote_count": 30,
+      "voting_power": 1269.0,
+      "cost_per_vote_usd": 262.33,
+      "cost_per_voting_power_usd": 6.201734
+    },
+    {
+      "archive_id": "gnars-base-38",
+      "proposal_number": 38,
+      "title": "Retro ramp of Mexico can be gnarlier",
+      "executed_spend_usd": 1190.17,
+      "vote_count": 29,
+      "voting_power": 1344.0,
+      "cost_per_vote_usd": 41.04,
+      "cost_per_voting_power_usd": 0.885544
+    },
+    {
+      "archive_id": "gnars-base-39",
+      "proposal_number": 39,
+      "title": "Gnars in DEVcon Thai Adventure ",
+      "executed_spend_usd": 11800.0,
+      "vote_count": 43,
+      "voting_power": 1385.0,
+      "cost_per_vote_usd": 274.42,
+      "cost_per_voting_power_usd": 8.519856
+    },
+    {
+      "archive_id": "gnars-base-40",
+      "proposal_number": 40,
+      "title": "Gnars Wakeboarding Culture",
+      "executed_spend_usd": 6850.0,
+      "vote_count": 18,
+      "voting_power": 810.0,
+      "cost_per_vote_usd": 380.56,
+      "cost_per_voting_power_usd": 8.45679
+    },
+    {
+      "archive_id": "gnars-base-41",
+      "proposal_number": 41,
+      "title": "SKATE AND JAZZ - 1st Noggles Rail in Argentina",
+      "executed_spend_usd": 3000.0,
+      "vote_count": 24,
+      "voting_power": 678.0,
+      "cost_per_vote_usd": 125.0,
+      "cost_per_voting_power_usd": 4.424779
+    },
+    {
+      "archive_id": "gnars-base-42",
+      "proposal_number": 42,
+      "title": " Rodrigo Panajotti Onboarding Proposal ",
+      "executed_spend_usd": 1.09,
+      "vote_count": 20,
+      "voting_power": 633.0,
+      "cost_per_vote_usd": 0.05,
+      "cost_per_voting_power_usd": 0.001723
+    },
+    {
+      "archive_id": "gnars-base-45",
+      "proposal_number": 45,
+      "title": "Launch a Comprehensive Gnars Community Platform",
+      "executed_spend_usd": 6969.0,
+      "vote_count": 27,
+      "voting_power": 754.0,
+      "cost_per_vote_usd": 258.11,
+      "cost_per_voting_power_usd": 9.242706
+    },
+    {
+      "archive_id": "gnars-base-47",
+      "proposal_number": 47,
+      "title": "Droposal Uganda Connection",
+      "executed_spend_usd": 1000.0,
+      "vote_count": 30,
+      "voting_power": 1154.0,
+      "cost_per_vote_usd": 33.33,
+      "cost_per_voting_power_usd": 0.866551
+    },
+    {
+      "archive_id": "gnars-base-48",
+      "proposal_number": 48,
+      "title": "Pay Millz and Bagelface for their time and energy spent working on base migration and gnars frontend",
+      "executed_spend_usd": 1055.46,
+      "vote_count": 28,
+      "voting_power": 1190.0,
+      "cost_per_vote_usd": 37.69,
+      "cost_per_voting_power_usd": 0.886938
+    },
+    {
+      "archive_id": "gnars-base-52",
+      "proposal_number": 52,
+      "title": "Nico in GNARZARE Portugal V2",
+      "executed_spend_usd": 5100.0,
+      "vote_count": 36,
+      "voting_power": 1005.0,
+      "cost_per_vote_usd": 141.67,
+      "cost_per_voting_power_usd": 5.074627
+    },
+    {
+      "archive_id": "gnars-base-53",
+      "proposal_number": 53,
+      "title": "Sponsor Kampala Skateboard Initiative and Bring then Online and Onchain",
+      "executed_spend_usd": 4139.0,
+      "vote_count": 29,
+      "voting_power": 987.0,
+      "cost_per_vote_usd": 142.72,
+      "cost_per_voting_power_usd": 4.193516
+    },
+    {
+      "archive_id": "gnars-base-57",
+      "proposal_number": 57,
+      "title": "Create a Round in Rounds.wtf for sharing Gnarly Media created in 2024",
+      "executed_spend_usd": 2580.69,
+      "vote_count": 27,
+      "voting_power": 754.0,
+      "cost_per_vote_usd": 95.58,
+      "cost_per_voting_power_usd": 3.422667
+    },
+    {
+      "archive_id": "gnars-base-59",
+      "proposal_number": 59,
+      "title": "Pod Media Proposal 2.0",
+      "executed_spend_usd": 8550.0,
+      "vote_count": 23,
+      "voting_power": 808.0,
+      "cost_per_vote_usd": 371.74,
+      "cost_per_voting_power_usd": 10.581683
+    },
+    {
+      "archive_id": "gnars-base-61",
+      "proposal_number": 61,
+      "title": "Bernardo Nassar renewal propososal V2 (Bodyboarder)",
+      "executed_spend_usd": 4921.81,
+      "vote_count": 25,
+      "voting_power": 855.0,
+      "cost_per_vote_usd": 196.87,
+      "cost_per_voting_power_usd": 5.756507
+    },
+    {
+      "archive_id": "gnars-base-63",
+      "proposal_number": 63,
+      "title": "Dave Bachinsky » 1 Year Sponsorship Proposal ",
+      "executed_spend_usd": 6567.7,
+      "vote_count": 22,
+      "voting_power": 825.0,
+      "cost_per_vote_usd": 298.53,
+      "cost_per_voting_power_usd": 7.960855
+    },
+    {
+      "archive_id": "gnars-base-64",
+      "proposal_number": 64,
+      "title": "Shredding into DeSci: GNARS X BluntDAO x DeSCI World",
+      "executed_spend_usd": 2250.0,
+      "vote_count": 22,
+      "voting_power": 1002.0,
+      "cost_per_vote_usd": 102.27,
+      "cost_per_voting_power_usd": 2.245509
+    },
+    {
+      "archive_id": "gnars-base-65",
+      "proposal_number": 65,
+      "title": "Reimbursement Proposal for Benbodhi",
+      "executed_spend_usd": 195.68,
+      "vote_count": 21,
+      "voting_power": 1016.0,
+      "cost_per_vote_usd": 9.32,
+      "cost_per_voting_power_usd": 0.192594
+    },
+    {
+      "archive_id": "gnars-base-68",
+      "proposal_number": 68,
+      "title": "Noggles Rail in Milan - First in Italy ",
+      "executed_spend_usd": 1250.0,
+      "vote_count": 27,
+      "voting_power": 658.0,
+      "cost_per_vote_usd": 46.3,
+      "cost_per_voting_power_usd": 1.899696
+    },
+    {
+      "archive_id": "gnars-base-70",
+      "proposal_number": 70,
+      "title": "Sponsor Gnars Athlete Monik Santos to Compete in Brazil’s Main Surf Event",
+      "executed_spend_usd": 2042.0,
+      "vote_count": 20,
+      "voting_power": 1065.0,
+      "cost_per_vote_usd": 102.1,
+      "cost_per_voting_power_usd": 1.917371
+    },
+    {
+      "archive_id": "gnars-base-76",
+      "proposal_number": 76,
+      "title": "7CAPAS MAGAZINE & GNARS",
+      "executed_spend_usd": 2500.0,
+      "vote_count": 32,
+      "voting_power": 1098.0,
+      "cost_per_vote_usd": 78.12,
+      "cost_per_voting_power_usd": 2.276867
+    },
+    {
+      "archive_id": "gnars-base-77",
+      "proposal_number": 77,
+      "title": "THE GLOBAL PREMIERE OF UGANDA CONNECTION DOCUMENTARY",
+      "executed_spend_usd": 1350.0,
+      "vote_count": 21,
+      "voting_power": 766.0,
+      "cost_per_vote_usd": 64.29,
+      "cost_per_voting_power_usd": 1.762402
+    },
+    {
+      "archive_id": "gnars-base-86",
+      "proposal_number": 86,
+      "title": "Gnars Flows",
+      "executed_spend_usd": 10532.36,
+      "vote_count": 45,
+      "voting_power": 1193.0,
+      "cost_per_vote_usd": 234.05,
+      "cost_per_voting_power_usd": 8.828468
+    },
+    {
+      "archive_id": "gnars-base-89",
+      "proposal_number": 89,
+      "title": "Noggle Rail - Itapetininga Skate Park ⌐◨-◨",
+      "executed_spend_usd": 1700.0,
+      "vote_count": 20,
+      "voting_power": 788.0,
+      "cost_per_vote_usd": 85.0,
+      "cost_per_voting_power_usd": 2.15736
+    },
+    {
+      "archive_id": "gnars-base-90",
+      "proposal_number": 90,
+      "title": " Transfer Correction – Proposal 70",
+      "executed_spend_usd": 360.0,
+      "vote_count": 13,
+      "voting_power": 883.0,
+      "cost_per_vote_usd": 27.69,
+      "cost_per_voting_power_usd": 0.407701
+    },
+    {
+      "archive_id": "gnars-base-95",
+      "proposal_number": 95,
+      "title": "Funding Katwe Parkour Culture to make the DIY Parkour Equipments",
+      "executed_spend_usd": 1200.0,
+      "vote_count": 25,
+      "voting_power": 698.0,
+      "cost_per_vote_usd": 48.0,
+      "cost_per_voting_power_usd": 1.719198
+    },
+    {
+      "archive_id": "gnars-base-97",
+      "proposal_number": 97,
+      "title": "Pod Media Proposal 3.0",
+      "executed_spend_usd": 5153.36,
+      "vote_count": 31,
+      "voting_power": 901.0,
+      "cost_per_vote_usd": 166.24,
+      "cost_per_voting_power_usd": 5.719601
+    },
+    {
+      "archive_id": "gnars-base-99",
+      "proposal_number": 99,
+      "title": "Gnars Crew at Devconnect Buenos Aires 2025 – Skate + Hacker House",
+      "executed_spend_usd": 4515.32,
+      "vote_count": 19,
+      "voting_power": 615.0,
+      "cost_per_vote_usd": 237.65,
+      "cost_per_voting_power_usd": 7.341986
+    },
+    {
+      "archive_id": "gnars-ethereum-38",
+      "proposal_number": 38,
+      "title": "Base Jump 4 of 4 (proposals 2-3 not required)",
+      "executed_spend_usd": 36767.78,
+      "vote_count": 0,
+      "voting_power": 636.0,
+      "cost_per_vote_usd": null,
+      "cost_per_voting_power_usd": 57.810983
+    },
+    {
+      "archive_id": "gnars-snapshot-101",
+      "proposal_number": 101,
+      "title": "Refund Support for Film Ode to Skate with 0,253ETH -  U$1000",
+      "executed_spend_usd": 921.75,
+      "vote_count": 0,
+      "voting_power": 730.0,
+      "cost_per_vote_usd": null,
+      "cost_per_voting_power_usd": 1.262671
+    }
+  ],
+  "timeseries": [
+    {
+      "month": "2024-03",
+      "proposal_count": 2,
+      "executed_spend_usd": 37689.53,
+      "cost_per_vote_usd": null,
+      "cost_per_voting_power_usd": 27.591168,
+      "spend_velocity_usd": 37689.53
+    },
+    {
+      "month": "2024-04",
+      "proposal_count": 1,
+      "executed_spend_usd": 11556.22,
+      "cost_per_vote_usd": 296.31,
+      "cost_per_voting_power_usd": 14.628129,
+      "spend_velocity_usd": -26133.31
+    },
+    {
+      "month": "2024-05",
+      "proposal_count": 4,
+      "executed_spend_usd": 3993.12,
+      "cost_per_vote_usd": 28.73,
+      "cost_per_voting_power_usd": 1.212241,
+      "spend_velocity_usd": -7563.1
+    },
+    {
+      "month": "2024-06",
+      "proposal_count": 3,
+      "executed_spend_usd": 15884.94,
+      "cost_per_vote_usd": 182.59,
+      "cost_per_voting_power_usd": 5.57562,
+      "spend_velocity_usd": 11891.82
+    },
+    {
+      "month": "2024-07",
+      "proposal_count": 7,
+      "executed_spend_usd": 40548.59,
+      "cost_per_vote_usd": 193.09,
+      "cost_per_voting_power_usd": 5.510817,
+      "spend_velocity_usd": 24663.65
+    },
+    {
+      "month": "2024-08",
+      "proposal_count": 8,
+      "executed_spend_usd": 62191.34,
+      "cost_per_vote_usd": 300.44,
+      "cost_per_voting_power_usd": 6.68293,
+      "spend_velocity_usd": 21642.75
+    },
+    {
+      "month": "2024-09",
+      "proposal_count": 2,
+      "executed_spend_usd": 3001.09,
+      "cost_per_vote_usd": 68.21,
+      "cost_per_voting_power_usd": 2.289162,
+      "spend_velocity_usd": -59190.25
+    },
+    {
+      "month": "2024-10",
+      "proposal_count": 3,
+      "executed_spend_usd": 9024.46,
+      "cost_per_vote_usd": 106.17,
+      "cost_per_voting_power_usd": 2.912994,
+      "spend_velocity_usd": 6023.37
+    },
+    {
+      "month": "2024-11",
+      "proposal_count": 2,
+      "executed_spend_usd": 9239.0,
+      "cost_per_vote_usd": 142.14,
+      "cost_per_voting_power_usd": 4.638052,
+      "spend_velocity_usd": 214.54
+    },
+    {
+      "month": "2024-12",
+      "proposal_count": 1,
+      "executed_spend_usd": 2580.69,
+      "cost_per_vote_usd": 95.58,
+      "cost_per_voting_power_usd": 3.422667,
+      "spend_velocity_usd": -6658.31
+    },
+    {
+      "month": "2025-01",
+      "proposal_count": 3,
+      "executed_spend_usd": 20039.52,
+      "cost_per_vote_usd": 286.28,
+      "cost_per_voting_power_usd": 8.054469,
+      "spend_velocity_usd": 17458.83
+    },
+    {
+      "month": "2025-02",
+      "proposal_count": 2,
+      "executed_spend_usd": 2445.68,
+      "cost_per_vote_usd": 56.88,
+      "cost_per_voting_power_usd": 1.21193,
+      "spend_velocity_usd": -17593.84
+    },
+    {
+      "month": "2025-03",
+      "proposal_count": 2,
+      "executed_spend_usd": 3292.0,
+      "cost_per_vote_usd": 70.04,
+      "cost_per_voting_power_usd": 1.910621,
+      "spend_velocity_usd": 846.32
+    },
+    {
+      "month": "2025-04",
+      "proposal_count": 2,
+      "executed_spend_usd": 3850.0,
+      "cost_per_vote_usd": 72.64,
+      "cost_per_voting_power_usd": 2.065451,
+      "spend_velocity_usd": 558.0
+    },
+    {
+      "month": "2025-05",
+      "proposal_count": 1,
+      "executed_spend_usd": 10532.36,
+      "cost_per_vote_usd": 234.05,
+      "cost_per_voting_power_usd": 8.828468,
+      "spend_velocity_usd": 6682.36
+    },
+    {
+      "month": "2025-06",
+      "proposal_count": 1,
+      "executed_spend_usd": 1700.0,
+      "cost_per_vote_usd": 85.0,
+      "cost_per_voting_power_usd": 2.15736,
+      "spend_velocity_usd": -8832.36
+    },
+    {
+      "month": "2025-07",
+      "proposal_count": 2,
+      "executed_spend_usd": 1560.0,
+      "cost_per_vote_usd": 41.05,
+      "cost_per_voting_power_usd": 0.986717,
+      "spend_velocity_usd": -140.0
+    },
+    {
+      "month": "2025-08",
+      "proposal_count": 1,
+      "executed_spend_usd": 5153.36,
+      "cost_per_vote_usd": 166.24,
+      "cost_per_voting_power_usd": 5.719601,
+      "spend_velocity_usd": 3593.36
+    },
+    {
+      "month": "2025-09",
+      "proposal_count": 1,
+      "executed_spend_usd": 4515.32,
+      "cost_per_vote_usd": 237.65,
+      "cost_per_voting_power_usd": 7.341986,
+      "spend_velocity_usd": -638.04
+    },
+    {
+      "month": "2025-10",
+      "proposal_count": 1,
+      "executed_spend_usd": 5065.57,
+      "cost_per_vote_usd": 266.61,
+      "cost_per_voting_power_usd": 6.977373,
+      "spend_velocity_usd": 550.25
+    },
+    {
+      "month": "2025-11",
+      "proposal_count": 2,
+      "executed_spend_usd": 3932.04,
+      "cost_per_vote_usd": 98.3,
+      "cost_per_voting_power_usd": 2.341893,
+      "spend_velocity_usd": -1133.53
+    },
+    {
+      "month": "2026-03",
+      "proposal_count": 1,
+      "executed_spend_usd": 1570.0,
+      "cost_per_vote_usd": 65.42,
+      "cost_per_voting_power_usd": 1.548323,
+      "spend_velocity_usd": -2362.04
+    }
+  ]
+}

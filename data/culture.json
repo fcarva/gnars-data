@@ -1,0 +1,365 @@
+{
+  "dataset": "culture",
+  "as_of": "2026-03-21T00:16:14.504725Z",
+  "version": 1,
+  "overview": {
+    "athlete_related_proposals": 73,
+    "media_related_proposals": 17,
+    "event_related_proposals": 11,
+    "art_related_proposals": 29
+  },
+  "timeseries": [
+    {
+      "month": "2022-03",
+      "athletes": 0,
+      "media": 0,
+      "events": 0,
+      "art": 0,
+      "other": 1
+    },
+    {
+      "month": "2022-06",
+      "athletes": 0,
+      "media": 0,
+      "events": 0,
+      "art": 1,
+      "other": 0
+    },
+    {
+      "month": "2022-07",
+      "athletes": 3,
+      "media": 0,
+      "events": 0,
+      "art": 0,
+      "other": 3
+    },
+    {
+      "month": "2022-08",
+      "athletes": 3,
+      "media": 0,
+      "events": 0,
+      "art": 0,
+      "other": 0
+    },
+    {
+      "month": "2022-09",
+      "athletes": 6,
+      "media": 1,
+      "events": 0,
+      "art": 2,
+      "other": 2
+    },
+    {
+      "month": "2022-10",
+      "athletes": 3,
+      "media": 0,
+      "events": 1,
+      "art": 0,
+      "other": 1
+    },
+    {
+      "month": "2022-11",
+      "athletes": 4,
+      "media": 1,
+      "events": 1,
+      "art": 0,
+      "other": 2
+    },
+    {
+      "month": "2022-12",
+      "athletes": 5,
+      "media": 0,
+      "events": 0,
+      "art": 2,
+      "other": 1
+    },
+    {
+      "month": "2023-01",
+      "athletes": 3,
+      "media": 1,
+      "events": 1,
+      "art": 2,
+      "other": 7
+    },
+    {
+      "month": "2023-02",
+      "athletes": 1,
+      "media": 1,
+      "events": 1,
+      "art": 1,
+      "other": 5
+    },
+    {
+      "month": "2023-03",
+      "athletes": 3,
+      "media": 1,
+      "events": 0,
+      "art": 4,
+      "other": 3
+    },
+    {
+      "month": "2023-04",
+      "athletes": 5,
+      "media": 0,
+      "events": 0,
+      "art": 2,
+      "other": 4
+    },
+    {
+      "month": "2023-05",
+      "athletes": 3,
+      "media": 0,
+      "events": 1,
+      "art": 3,
+      "other": 0
+    },
+    {
+      "month": "2023-06",
+      "athletes": 1,
+      "media": 0,
+      "events": 0,
+      "art": 1,
+      "other": 2
+    },
+    {
+      "month": "2023-07",
+      "athletes": 0,
+      "media": 0,
+      "events": 0,
+      "art": 0,
+      "other": 1
+    },
+    {
+      "month": "2023-08",
+      "athletes": 1,
+      "media": 0,
+      "events": 0,
+      "art": 0,
+      "other": 0
+    },
+    {
+      "month": "2023-11",
+      "athletes": 0,
+      "media": 0,
+      "events": 0,
+      "art": 0,
+      "other": 2
+    },
+    {
+      "month": "2023-12",
+      "athletes": 0,
+      "media": 0,
+      "events": 0,
+      "art": 0,
+      "other": 1
+    },
+    {
+      "month": "2024-01",
+      "athletes": 0,
+      "media": 1,
+      "events": 0,
+      "art": 0,
+      "other": 8
+    },
+    {
+      "month": "2024-02",
+      "athletes": 1,
+      "media": 0,
+      "events": 0,
+      "art": 0,
+      "other": 5
+    },
+    {
+      "month": "2024-03",
+      "athletes": 2,
+      "media": 0,
+      "events": 0,
+      "art": 0,
+      "other": 1
+    },
+    {
+      "month": "2024-04",
+      "athletes": 0,
+      "media": 1,
+      "events": 0,
+      "art": 0,
+      "other": 1
+    },
+    {
+      "month": "2024-05",
+      "athletes": 1,
+      "media": 0,
+      "events": 2,
+      "art": 0,
+      "other": 3
+    },
+    {
+      "month": "2024-06",
+      "athletes": 1,
+      "media": 0,
+      "events": 0,
+      "art": 0,
+      "other": 2
+    },
+    {
+      "month": "2024-07",
+      "athletes": 1,
+      "media": 1,
+      "events": 0,
+      "art": 1,
+      "other": 4
+    },
+    {
+      "month": "2024-08",
+      "athletes": 6,
+      "media": 0,
+      "events": 0,
+      "art": 0,
+      "other": 6
+    },
+    {
+      "month": "2024-09",
+      "athletes": 1,
+      "media": 0,
+      "events": 0,
+      "art": 0,
+      "other": 1
+    },
+    {
+      "month": "2024-10",
+      "athletes": 1,
+      "media": 0,
+      "events": 0,
+      "art": 0,
+      "other": 8
+    },
+    {
+      "month": "2024-11",
+      "athletes": 1,
+      "media": 0,
+      "events": 0,
+      "art": 0,
+      "other": 3
+    },
+    {
+      "month": "2024-12",
+      "athletes": 0,
+      "media": 1,
+      "events": 0,
+      "art": 1,
+      "other": 0
+    },
+    {
+      "month": "2025-01",
+      "athletes": 1,
+      "media": 3,
+      "events": 0,
+      "art": 1,
+      "other": 2
+    },
+    {
+      "month": "2025-02",
+      "athletes": 1,
+      "media": 0,
+      "events": 0,
+      "art": 0,
+      "other": 3
+    },
+    {
+      "month": "2025-03",
+      "athletes": 1,
+      "media": 1,
+      "events": 1,
+      "art": 1,
+      "other": 6
+    },
+    {
+      "month": "2025-04",
+      "athletes": 0,
+      "media": 1,
+      "events": 0,
+      "art": 1,
+      "other": 6
+    },
+    {
+      "month": "2025-05",
+      "athletes": 1,
+      "media": 0,
+      "events": 0,
+      "art": 1,
+      "other": 3
+    },
+    {
+      "month": "2025-06",
+      "athletes": 1,
+      "media": 0,
+      "events": 0,
+      "art": 0,
+      "other": 1
+    },
+    {
+      "month": "2025-07",
+      "athletes": 0,
+      "media": 0,
+      "events": 0,
+      "art": 0,
+      "other": 6
+    },
+    {
+      "month": "2025-08",
+      "athletes": 0,
+      "media": 2,
+      "events": 0,
+      "art": 0,
+      "other": 0
+    },
+    {
+      "month": "2025-09",
+      "athletes": 2,
+      "media": 0,
+      "events": 1,
+      "art": 0,
+      "other": 1
+    },
+    {
+      "month": "2025-10",
+      "athletes": 2,
+      "media": 0,
+      "events": 0,
+      "art": 0,
+      "other": 1
+    },
+    {
+      "month": "2025-11",
+      "athletes": 3,
+      "media": 0,
+      "events": 1,
+      "art": 2,
+      "other": 0
+    },
+    {
+      "month": "2026-01",
+      "athletes": 1,
+      "media": 0,
+      "events": 1,
+      "art": 0,
+      "other": 0
+    },
+    {
+      "month": "2026-02",
+      "athletes": 3,
+      "media": 0,
+      "events": 0,
+      "art": 3,
+      "other": 2
+    },
+    {
+      "month": "2026-03",
+      "athletes": 1,
+      "media": 1,
+      "events": 0,
+      "art": 0,
+      "other": 1
+    }
+  ]
+}

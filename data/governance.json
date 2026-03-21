@@ -1,0 +1,322 @@
+{
+  "dataset": "governance",
+  "as_of": "2026-03-21T00:16:14.467645Z",
+  "version": 1,
+  "overview": {
+    "holders_count": 1011,
+    "proposals_total": 222,
+    "active_proposals": 2,
+    "proposal_success_rate_pct": 77.63,
+    "unique_voters_total": 464
+  },
+  "timeseries": [
+    {
+      "month": "2022-03",
+      "proposal_count": 1,
+      "unique_voters": 15,
+      "turnout_pct": 1.4837,
+      "voting_power_gini": 0.0
+    },
+    {
+      "month": "2022-06",
+      "proposal_count": 1,
+      "unique_voters": 20,
+      "turnout_pct": 1.9782,
+      "voting_power_gini": 0.0
+    },
+    {
+      "month": "2022-07",
+      "proposal_count": 6,
+      "unique_voters": 34,
+      "turnout_pct": 3.363,
+      "voting_power_gini": 0.0
+    },
+    {
+      "month": "2022-08",
+      "proposal_count": 3,
+      "unique_voters": 41,
+      "turnout_pct": 4.0554,
+      "voting_power_gini": 0.0
+    },
+    {
+      "month": "2022-09",
+      "proposal_count": 10,
+      "unique_voters": 73,
+      "turnout_pct": 7.2206,
+      "voting_power_gini": 0.0
+    },
+    {
+      "month": "2022-10",
+      "proposal_count": 4,
+      "unique_voters": 79,
+      "turnout_pct": 7.814,
+      "voting_power_gini": 0.0
+    },
+    {
+      "month": "2022-11",
+      "proposal_count": 7,
+      "unique_voters": 68,
+      "turnout_pct": 6.726,
+      "voting_power_gini": 0.0
+    },
+    {
+      "month": "2022-12",
+      "proposal_count": 8,
+      "unique_voters": 77,
+      "turnout_pct": 7.6162,
+      "voting_power_gini": 0.0
+    },
+    {
+      "month": "2023-01",
+      "proposal_count": 13,
+      "unique_voters": 108,
+      "turnout_pct": 10.6825,
+      "voting_power_gini": 0.0
+    },
+    {
+      "month": "2023-02",
+      "proposal_count": 8,
+      "unique_voters": 55,
+      "turnout_pct": 5.4402,
+      "voting_power_gini": 0.0
+    },
+    {
+      "month": "2023-03",
+      "proposal_count": 10,
+      "unique_voters": 71,
+      "turnout_pct": 7.0227,
+      "voting_power_gini": 0.0
+    },
+    {
+      "month": "2023-04",
+      "proposal_count": 10,
+      "unique_voters": 64,
+      "turnout_pct": 6.3304,
+      "voting_power_gini": 0.0
+    },
+    {
+      "month": "2023-05",
+      "proposal_count": 5,
+      "unique_voters": 49,
+      "turnout_pct": 4.8467,
+      "voting_power_gini": 0.0
+    },
+    {
+      "month": "2023-06",
+      "proposal_count": 4,
+      "unique_voters": 40,
+      "turnout_pct": 3.9565,
+      "voting_power_gini": 0.0
+    },
+    {
+      "month": "2023-07",
+      "proposal_count": 1,
+      "unique_voters": 21,
+      "turnout_pct": 2.0772,
+      "voting_power_gini": 0.0
+    },
+    {
+      "month": "2023-08",
+      "proposal_count": 1,
+      "unique_voters": 10,
+      "turnout_pct": 0.9891,
+      "voting_power_gini": 0.0
+    },
+    {
+      "month": "2023-11",
+      "proposal_count": 2,
+      "unique_voters": 24,
+      "turnout_pct": 2.3739,
+      "voting_power_gini": 0.0
+    },
+    {
+      "month": "2023-12",
+      "proposal_count": 1,
+      "unique_voters": 16,
+      "turnout_pct": 1.5826,
+      "voting_power_gini": 0.0
+    },
+    {
+      "month": "2024-01",
+      "proposal_count": 9,
+      "unique_voters": 44,
+      "turnout_pct": 4.3521,
+      "voting_power_gini": 0.0
+    },
+    {
+      "month": "2024-02",
+      "proposal_count": 6,
+      "unique_voters": 6,
+      "turnout_pct": 0.5935,
+      "voting_power_gini": 0.0
+    },
+    {
+      "month": "2024-03",
+      "proposal_count": 3,
+      "unique_voters": 25,
+      "turnout_pct": 2.4728,
+      "voting_power_gini": 0.0
+    },
+    {
+      "month": "2024-04",
+      "proposal_count": 2,
+      "unique_voters": 48,
+      "turnout_pct": 4.7478,
+      "voting_power_gini": 0.764599
+    },
+    {
+      "month": "2024-05",
+      "proposal_count": 6,
+      "unique_voters": 86,
+      "turnout_pct": 8.5064,
+      "voting_power_gini": 0.756753
+    },
+    {
+      "month": "2024-06",
+      "proposal_count": 3,
+      "unique_voters": 49,
+      "turnout_pct": 4.8467,
+      "voting_power_gini": 0.765157
+    },
+    {
+      "month": "2024-07",
+      "proposal_count": 7,
+      "unique_voters": 76,
+      "turnout_pct": 7.5173,
+      "voting_power_gini": 0.766025
+    },
+    {
+      "month": "2024-08",
+      "proposal_count": 12,
+      "unique_voters": 70,
+      "turnout_pct": 6.9238,
+      "voting_power_gini": 0.736112
+    },
+    {
+      "month": "2024-09",
+      "proposal_count": 2,
+      "unique_voters": 29,
+      "turnout_pct": 2.8684,
+      "voting_power_gini": 0.749584
+    },
+    {
+      "month": "2024-10",
+      "proposal_count": 9,
+      "unique_voters": 59,
+      "turnout_pct": 5.8358,
+      "voting_power_gini": 0.74914
+    },
+    {
+      "month": "2024-11",
+      "proposal_count": 4,
+      "unique_voters": 53,
+      "turnout_pct": 5.2423,
+      "voting_power_gini": 0.789408
+    },
+    {
+      "month": "2024-12",
+      "proposal_count": 2,
+      "unique_voters": 33,
+      "turnout_pct": 3.2641,
+      "voting_power_gini": 0.750175
+    },
+    {
+      "month": "2025-01",
+      "proposal_count": 6,
+      "unique_voters": 53,
+      "turnout_pct": 5.2423,
+      "voting_power_gini": 0.734357
+    },
+    {
+      "month": "2025-02",
+      "proposal_count": 4,
+      "unique_voters": 36,
+      "turnout_pct": 3.5608,
+      "voting_power_gini": 0.697343
+    },
+    {
+      "month": "2025-03",
+      "proposal_count": 8,
+      "unique_voters": 51,
+      "turnout_pct": 5.0445,
+      "voting_power_gini": 0.705503
+    },
+    {
+      "month": "2025-04",
+      "proposal_count": 7,
+      "unique_voters": 52,
+      "turnout_pct": 5.1434,
+      "voting_power_gini": 0.708278
+    },
+    {
+      "month": "2025-05",
+      "proposal_count": 5,
+      "unique_voters": 49,
+      "turnout_pct": 4.8467,
+      "voting_power_gini": 0.722058
+    },
+    {
+      "month": "2025-06",
+      "proposal_count": 2,
+      "unique_voters": 29,
+      "turnout_pct": 2.8684,
+      "voting_power_gini": 0.71165
+    },
+    {
+      "month": "2025-07",
+      "proposal_count": 6,
+      "unique_voters": 44,
+      "turnout_pct": 4.3521,
+      "voting_power_gini": 0.704055
+    },
+    {
+      "month": "2025-08",
+      "proposal_count": 2,
+      "unique_voters": 36,
+      "turnout_pct": 3.5608,
+      "voting_power_gini": 0.727877
+    },
+    {
+      "month": "2025-09",
+      "proposal_count": 3,
+      "unique_voters": 34,
+      "turnout_pct": 3.363,
+      "voting_power_gini": 0.69069
+    },
+    {
+      "month": "2025-10",
+      "proposal_count": 3,
+      "unique_voters": 28,
+      "turnout_pct": 2.7695,
+      "voting_power_gini": 0.713728
+    },
+    {
+      "month": "2025-11",
+      "proposal_count": 5,
+      "unique_voters": 32,
+      "turnout_pct": 3.1652,
+      "voting_power_gini": 0.714241
+    },
+    {
+      "month": "2026-01",
+      "proposal_count": 2,
+      "unique_voters": 29,
+      "turnout_pct": 2.8684,
+      "voting_power_gini": 0.678044
+    },
+    {
+      "month": "2026-02",
+      "proposal_count": 6,
+      "unique_voters": 23,
+      "turnout_pct": 2.275,
+      "voting_power_gini": 0.614965
+    },
+    {
+      "month": "2026-03",
+      "proposal_count": 3,
+      "unique_voters": 37,
+      "turnout_pct": 3.6597,
+      "voting_power_gini": 0.62701
+    }
+  ]
+}

@@ -36,17 +36,26 @@ jobs:
       - name: Sync treasury
         run: python scripts/sync_treasury.py
 
+      - name: Ingestion orchestrator
+        run: python scripts/ingest.py --skip-gnars --skip-proposals --skip-treasury
+
       - name: Seed pilot tagging queue
         run: python scripts/tag_proposals.py --init-pilot 30 --scope pilot-30
 
       - name: Derive analytics datasets
         run: python scripts/derive_analytics.py
 
+      - name: Transform layered analytics
+        run: python scripts/transform.py
+
       - name: Validate datasets
         run: python scripts/validate_data.py
 
       - name: Build CSV exports
         run: python scripts/export_csv.py
+
+      - name: Export analytics bundle
+        run: python scripts/export.py
 
       - name: Build Pages site
         run: python scripts/build_site.py

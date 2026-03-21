@@ -59,6 +59,7 @@ try {
     Invoke-Step -Name "Seed proposal tags" -Action { python scripts\tag_proposals.py --init-pilot 30 --scope pilot-30 }
 
     Invoke-Step -Name "Derive analytics datasets" -Action { python scripts\derive_analytics.py }
+    Invoke-Step -Name "Derive funding analysis" -Action { python scripts\derive_funding_analysis.py }
     Invoke-Step -Name "Validate data" -Action { python scripts\validate_data.py }
     Invoke-Step -Name "Export CSVs" -Action { python scripts\export_csv.py }
 

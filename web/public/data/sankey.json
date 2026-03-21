@@ -1,0 +1,647 @@
+{
+  "dataset": "sankey",
+  "as_of": "2026-03-21T00:16:14.510238Z",
+  "version": 1,
+  "track": "Funding source -> Proposal -> Treasury route -> Recipient cluster",
+  "nodes": [
+    {
+      "id": 0,
+      "label": "Funding: Ongoing Treasury Revenue"
+    },
+    {
+      "id": 1,
+      "label": "Proposal type: Athlete"
+    },
+    {
+      "id": 2,
+      "label": "Treasury Route: ERC20 transfer (USDC)"
+    },
+    {
+      "id": 3,
+      "label": "Recipient: Athletes"
+    },
+    {
+      "id": 4,
+      "label": "Proposal type: Events"
+    },
+    {
+      "id": 5,
+      "label": "Treasury Route: ETH route (unmatched)"
+    },
+    {
+      "id": 6,
+      "label": "Proposal: #101"
+    },
+    {
+      "id": 7,
+      "label": "Treasury Route: ERC20 transfer (ETH)"
+    },
+    {
+      "id": 8,
+      "label": "Proposal: #99"
+    },
+    {
+      "id": 9,
+      "label": "Proposal: #97"
+    },
+    {
+      "id": 10,
+      "label": "Recipient: Media Collective"
+    },
+    {
+      "id": 11,
+      "label": "Funding: Nouns Growth Track"
+    },
+    {
+      "id": 12,
+      "label": "Proposal type: Other"
+    },
+    {
+      "id": 13,
+      "label": "Recipient: Community Recipients"
+    },
+    {
+      "id": 14,
+      "label": "Proposal: #86"
+    },
+    {
+      "id": 15,
+      "label": "Treasury Route: ERC20 transfer (SENDIT)"
+    },
+    {
+      "id": 16,
+      "label": "Proposal: #63"
+    },
+    {
+      "id": 17,
+      "label": "Proposal: #61"
+    },
+    {
+      "id": 18,
+      "label": "Funding: Nouns Bootstrap"
+    },
+    {
+      "id": 19,
+      "label": "Proposal: #59"
+    },
+    {
+      "id": 20,
+      "label": "Proposal type: Media"
+    },
+    {
+      "id": 21,
+      "label": "Proposal: #53"
+    },
+    {
+      "id": 22,
+      "label": "Proposal: #52"
+    },
+    {
+      "id": 23,
+      "label": "Proposal: #45"
+    },
+    {
+      "id": 24,
+      "label": "Proposal type: Operations"
+    },
+    {
+      "id": 25,
+      "label": "Proposal: #40"
+    },
+    {
+      "id": 26,
+      "label": "Proposal: #39"
+    },
+    {
+      "id": 27,
+      "label": "Recipient: Builders"
+    },
+    {
+      "id": 28,
+      "label": "Proposal: #37"
+    },
+    {
+      "id": 29,
+      "label": "Proposal: #33"
+    },
+    {
+      "id": 30,
+      "label": "Proposal: #32"
+    },
+    {
+      "id": 31,
+      "label": "Proposal: #29"
+    },
+    {
+      "id": 32,
+      "label": "Proposal: #28"
+    },
+    {
+      "id": 33,
+      "label": "Proposal: #26"
+    },
+    {
+      "id": 34,
+      "label": "Proposal: #24"
+    },
+    {
+      "id": 35,
+      "label": "Proposal: #23"
+    },
+    {
+      "id": 36,
+      "label": "Proposal type: Art"
+    },
+    {
+      "id": 37,
+      "label": "Treasury Route: ERC721 transfer"
+    },
+    {
+      "id": 38,
+      "label": "Proposal: #20"
+    },
+    {
+      "id": 39,
+      "label": "Proposal: #19"
+    },
+    {
+      "id": 40,
+      "label": "Proposal: #12"
+    },
+    {
+      "id": 41,
+      "label": "Proposal: #38"
+    }
+  ],
+  "links": [
+    {
+      "source": 0,
+      "target": 1,
+      "value": 4991.75
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "value": 1432.04
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "value": 5065.57
+    },
+    {
+      "source": 0,
+      "target": 8,
+      "value": 4515.32
+    },
+    {
+      "source": 0,
+      "target": 9,
+      "value": 5153.36
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "value": 11020.0
+    },
+    {
+      "source": 1,
+      "target": 5,
+      "value": 921.75
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "value": 52105.0
+    },
+    {
+      "source": 2,
+      "target": 10,
+      "value": 17415.0
+    },
+    {
+      "source": 2,
+      "target": 13,
+      "value": 89373.0
+    },
+    {
+      "source": 2,
+      "target": 27,
+      "value": 11800.0
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "value": 6032.0
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "value": 1432.04
+    },
+    {
+      "source": 5,
+      "target": 3,
+      "value": 6869.11
+    },
+    {
+      "source": 5,
+      "target": 13,
+      "value": 45432.29
+    },
+    {
+      "source": 5,
+      "target": 27,
+      "value": 1190.17
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "value": 2600.0
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "value": 2465.57
+    },
+    {
+      "source": 7,
+      "target": 3,
+      "value": 13153.14
+    },
+    {
+      "source": 7,
+      "target": 10,
+      "value": 4373.36
+    },
+    {
+      "source": 7,
+      "target": 13,
+      "value": 309.08
+    },
+    {
+      "source": 8,
+      "target": 5,
+      "value": 4515.32
+    },
+    {
+      "source": 9,
+      "target": 2,
+      "value": 780.0
+    },
+    {
+      "source": 9,
+      "target": 7,
+      "value": 4373.36
+    },
+    {
+      "source": 11,
+      "target": 1,
+      "value": 3950.0
+    },
+    {
+      "source": 11,
+      "target": 4,
+      "value": 2042.0
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "value": 6855.68
+    },
+    {
+      "source": 11,
+      "target": 14,
+      "value": 10532.36
+    },
+    {
+      "source": 11,
+      "target": 16,
+      "value": 6567.7
+    },
+    {
+      "source": 11,
+      "target": 17,
+      "value": 4921.81
+    },
+    {
+      "source": 12,
+      "target": 2,
+      "value": 7660.0
+    },
+    {
+      "source": 12,
+      "target": 5,
+      "value": 7320.15
+    },
+    {
+      "source": 12,
+      "target": 15,
+      "value": 195.68
+    },
+    {
+      "source": 14,
+      "target": 2,
+      "value": 8000.0
+    },
+    {
+      "source": 14,
+      "target": 5,
+      "value": 2532.36
+    },
+    {
+      "source": 15,
+      "target": 3,
+      "value": 735.16
+    },
+    {
+      "source": 15,
+      "target": 10,
+      "value": 14136.91
+    },
+    {
+      "source": 15,
+      "target": 13,
+      "value": 2467.49
+    },
+    {
+      "source": 16,
+      "target": 2,
+      "value": 3200.0
+    },
+    {
+      "source": 16,
+      "target": 7,
+      "value": 2632.54
+    },
+    {
+      "source": 16,
+      "target": 15,
+      "value": 735.16
+    },
+    {
+      "source": 17,
+      "target": 2,
+      "value": 2650.0
+    },
+    {
+      "source": 17,
+      "target": 15,
+      "value": 2271.81
+    },
+    {
+      "source": 18,
+      "target": 1,
+      "value": 3000.0
+    },
+    {
+      "source": 18,
+      "target": 4,
+      "value": 3990.0
+    },
+    {
+      "source": 18,
+      "target": 12,
+      "value": 8320.15
+    },
+    {
+      "source": 18,
+      "target": 19,
+      "value": 8550.0
+    },
+    {
+      "source": 18,
+      "target": 20,
+      "value": 2580.69
+    },
+    {
+      "source": 18,
+      "target": 21,
+      "value": 4139.0
+    },
+    {
+      "source": 18,
+      "target": 22,
+      "value": 5100.0
+    },
+    {
+      "source": 18,
+      "target": 23,
+      "value": 6969.0
+    },
+    {
+      "source": 18,
+      "target": 24,
+      "value": 6.22
+    },
+    {
+      "source": 18,
+      "target": 25,
+      "value": 6850.0
+    },
+    {
+      "source": 18,
+      "target": 26,
+      "value": 11800.0
+    },
+    {
+      "source": 18,
+      "target": 28,
+      "value": 7870.0
+    },
+    {
+      "source": 18,
+      "target": 29,
+      "value": 4809.08
+    },
+    {
+      "source": 18,
+      "target": 30,
+      "value": 16116.0
+    },
+    {
+      "source": 18,
+      "target": 31,
+      "value": 13555.03
+    },
+    {
+      "source": 18,
+      "target": 32,
+      "value": 7888.0
+    },
+    {
+      "source": 18,
+      "target": 33,
+      "value": 8085.0
+    },
+    {
+      "source": 18,
+      "target": 34,
+      "value": 12000.0
+    },
+    {
+      "source": 18,
+      "target": 35,
+      "value": 7500.0
+    },
+    {
+      "source": 18,
+      "target": 36,
+      "value": 1.07
+    },
+    {
+      "source": 18,
+      "target": 38,
+      "value": 9900.0
+    },
+    {
+      "source": 18,
+      "target": 39,
+      "value": 5984.0
+    },
+    {
+      "source": 18,
+      "target": 40,
+      "value": 11556.22
+    },
+    {
+      "source": 18,
+      "target": 41,
+      "value": 36767.78
+    },
+    {
+      "source": 19,
+      "target": 2,
+      "value": 8550.0
+    },
+    {
+      "source": 20,
+      "target": 15,
+      "value": 2580.69
+    },
+    {
+      "source": 21,
+      "target": 2,
+      "value": 4139.0
+    },
+    {
+      "source": 22,
+      "target": 2,
+      "value": 5100.0
+    },
+    {
+      "source": 23,
+      "target": 2,
+      "value": 6969.0
+    },
+    {
+      "source": 24,
+      "target": 5,
+      "value": 2.16
+    },
+    {
+      "source": 24,
+      "target": 37,
+      "value": 4.06
+    },
+    {
+      "source": 25,
+      "target": 2,
+      "value": 6850.0
+    },
+    {
+      "source": 26,
+      "target": 2,
+      "value": 11800.0
+    },
+    {
+      "source": 28,
+      "target": 2,
+      "value": 7870.0
+    },
+    {
+      "source": 29,
+      "target": 2,
+      "value": 4500.0
+    },
+    {
+      "source": 29,
+      "target": 7,
+      "value": 309.08
+    },
+    {
+      "source": 30,
+      "target": 2,
+      "value": 16116.0
+    },
+    {
+      "source": 31,
+      "target": 2,
+      "value": 5500.0
+    },
+    {
+      "source": 31,
+      "target": 7,
+      "value": 8055.03
+    },
+    {
+      "source": 32,
+      "target": 2,
+      "value": 7888.0
+    },
+    {
+      "source": 33,
+      "target": 2,
+      "value": 8085.0
+    },
+    {
+      "source": 34,
+      "target": 2,
+      "value": 12000.0
+    },
+    {
+      "source": 35,
+      "target": 2,
+      "value": 7500.0
+    },
+    {
+      "source": 36,
+      "target": 37,
+      "value": 1.07
+    },
+    {
+      "source": 37,
+      "target": 13,
+      "value": 5.13
+    },
+    {
+      "source": 38,
+      "target": 2,
+      "value": 9900.0
+    },
+    {
+      "source": 39,
+      "target": 2,
+      "value": 5984.0
+    },
+    {
+      "source": 40,
+      "target": 15,
+      "value": 11556.22
+    },
+    {
+      "source": 41,
+      "target": 5,
+      "value": 36767.78
+    }
+  ],
+  "decoding": {
+    "matched_routes": 50,
+    "unmatched_routes": 12,
+    "selector_reference": {
+      "a9059cbb": "ERC20 transfer",
+      "23b872dd": "ERC721 transferFrom",
+      "empty": "Native transfer"
+    }
+  }
+}

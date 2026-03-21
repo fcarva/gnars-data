@@ -1,0 +1,13 @@
+const NotFound = () => {
+  return (
+    <div className="not-found-page">
+      <div className="not-found-card">
+        <h1>404</h1>
+        <p>Oops! Page not found</p>
+        <a href="/">Return to Home</a>
+      </div>
+    </div>
+  );
+};
+
+export default NotFound;

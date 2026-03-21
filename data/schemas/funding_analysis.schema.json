@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "dataset",
+    "as_of",
+    "version",
+    "summary",
+    "funding_sources",
+    "allocation_by_proposal",
+    "voting_power_timeseries",
+    "method_notes",
+    "context_sources",
+    "warnings"
+  ],
+  "properties": {
+    "dataset": {
+      "const": "funding_analysis"
+    },
+    "as_of": {
+      "type": "string"
+    },
+    "version": {
+      "type": "integer"
+    },
+    "summary": {
+      "type": "object"
+    },
+    "funding_sources": {
+      "type": "array"
+    },
+    "allocation_by_proposal": {
+      "type": "array"
+    },
+    "voting_power_timeseries": {
+      "type": "array"
+    },
+    "method_notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "context_sources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,306 @@
+{
+  "dataset": "fork_risk",
+  "as_of": "2026-03-21T00:16:23.257384Z",
+  "version": 1,
+  "overview": {
+    "latest_month": "2026-03",
+    "latest_risk_level": "medium",
+    "latest_top1_share_pct": 16.2276,
+    "latest_top3_share_pct": 46.2592,
+    "latest_gini": 0.707525
+  },
+  "timeseries": [
+    {
+      "month": "2024-04",
+      "voter_count": 48,
+      "top1_share_pct": 20.4576,
+      "top3_share_pct": 50.2692,
+      "top5_share_pct": 72.6783,
+      "hhi": 0.116385,
+      "gini": 0.770385,
+      "risk_level": "medium"
+    },
+    {
+      "month": "2024-05",
+      "voter_count": 86,
+      "top1_share_pct": 20.6199,
+      "top3_share_pct": 43.0368,
+      "top5_share_pct": 59.9057,
+      "hhi": 0.089954,
+      "gini": 0.800179,
+      "risk_level": "high"
+    },
+    {
+      "month": "2024-06",
+      "voter_count": 49,
+      "top1_share_pct": 31.59,
+      "top3_share_pct": 61.9516,
+      "top5_share_pct": 74.2015,
+      "hhi": 0.165815,
+      "gini": 0.823418,
+      "risk_level": "high"
+    },
+    {
+      "month": "2024-07",
+      "voter_count": 76,
+      "top1_share_pct": 22.9138,
+      "top3_share_pct": 54.6344,
+      "top5_share_pct": 70.2365,
+      "hhi": 0.129032,
+      "gini": 0.859605,
+      "risk_level": "high"
+    },
+    {
+      "month": "2024-08",
+      "voter_count": 70,
+      "top1_share_pct": 24.6255,
+      "top3_share_pct": 58.4475,
+      "top5_share_pct": 74.4933,
+      "hhi": 0.136757,
+      "gini": 0.861287,
+      "risk_level": "high"
+    },
+    {
+      "month": "2024-09",
+      "voter_count": 29,
+      "top1_share_pct": 43.0206,
+      "top3_share_pct": 66.5904,
+      "top5_share_pct": 79.1762,
+      "hhi": 0.226687,
+      "gini": 0.777348,
+      "risk_level": "high"
+    },
+    {
+      "month": "2024-10",
+      "voter_count": 59,
+      "top1_share_pct": 27.3521,
+      "top3_share_pct": 53.2493,
+      "top5_share_pct": 67.7401,
+      "hhi": 0.127242,
+      "gini": 0.807424,
+      "risk_level": "high"
+    },
+    {
+      "month": "2024-11",
+      "voter_count": 53,
+      "top1_share_pct": 24.7912,
+      "top3_share_pct": 60.1319,
+      "top5_share_pct": 78.5934,
+      "hhi": 0.148261,
+      "gini": 0.831317,
+      "risk_level": "high"
+    },
+    {
+      "month": "2024-12",
+      "voter_count": 32,
+      "top1_share_pct": 37.5,
+      "top3_share_pct": 65.9946,
+      "top5_share_pct": 79.6371,
+      "hhi": 0.195275,
+      "gini": 0.791079,
+      "risk_level": "high"
+    },
+    {
+      "month": "2025-01",
+      "voter_count": 50,
+      "top1_share_pct": 23.2333,
+      "top3_share_pct": 57.4333,
+      "top5_share_pct": 70.2333,
+      "hhi": 0.127397,
+      "gini": 0.799733,
+      "risk_level": "high"
+    },
+    {
+      "month": "2025-02",
+      "voter_count": 34,
+      "top1_share_pct": 18.0006,
+      "top3_share_pct": 44.7445,
+      "top5_share_pct": 59.2093,
+      "hhi": 0.095855,
+      "gini": 0.685433,
+      "risk_level": "medium"
+    },
+    {
+      "month": "2025-03",
+      "voter_count": 51,
+      "top1_share_pct": 24.0418,
+      "top3_share_pct": 51.7422,
+      "top5_share_pct": 70.1394,
+      "hhi": 0.121331,
+      "gini": 0.808342,
+      "risk_level": "high"
+    },
+    {
+      "month": "2025-04",
+      "voter_count": 52,
+      "top1_share_pct": 26.5083,
+      "top3_share_pct": 48.6688,
+      "top5_share_pct": 64.2597,
+      "hhi": 0.118368,
+      "gini": 0.801648,
+      "risk_level": "high"
+    },
+    {
+      "month": "2025-05",
+      "voter_count": 49,
+      "top1_share_pct": 30.5065,
+      "top3_share_pct": 47.7032,
+      "top5_share_pct": 58.5002,
+      "hhi": 0.125335,
+      "gini": 0.749694,
+      "risk_level": "medium"
+    },
+    {
+      "month": "2025-06",
+      "voter_count": 29,
+      "top1_share_pct": 33.5275,
+      "top3_share_pct": 61.877,
+      "top5_share_pct": 78.5113,
+      "hhi": 0.173406,
+      "gini": 0.756166,
+      "risk_level": "medium"
+    },
+    {
+      "month": "2025-07",
+      "voter_count": 44,
+      "top1_share_pct": 17.0171,
+      "top3_share_pct": 44.5138,
+      "top5_share_pct": 62.1222,
+      "hhi": 0.097231,
+      "gini": 0.751538,
+      "risk_level": "medium"
+    },
+    {
+      "month": "2025-08",
+      "voter_count": 36,
+      "top1_share_pct": 14.8816,
+      "top3_share_pct": 44.1375,
+      "top5_share_pct": 68.8275,
+      "hhi": 0.104038,
+      "gini": 0.712326,
+      "risk_level": "medium"
+    },
+    {
+      "month": "2025-09",
+      "voter_count": 34,
+      "top1_share_pct": 20.3032,
+      "top3_share_pct": 49.6481,
+      "top5_share_pct": 66.0531,
+      "hhi": 0.112676,
+      "gini": 0.731186,
+      "risk_level": "medium"
+    },
+    {
+      "month": "2025-10",
+      "voter_count": 28,
+      "top1_share_pct": 34.2191,
+      "top3_share_pct": 61.3091,
+      "top5_share_pct": 79.2612,
+      "hhi": 0.178849,
+      "gini": 0.771479,
+      "risk_level": "medium"
+    },
+    {
+      "month": "2025-11",
+      "voter_count": 32,
+      "top1_share_pct": 23.5086,
+      "top3_share_pct": 60.274,
+      "top5_share_pct": 75.1215,
+      "hhi": 0.145431,
+      "gini": 0.75562,
+      "risk_level": "medium"
+    },
+    {
+      "month": "2026-01",
+      "voter_count": 25,
+      "top1_share_pct": 17.7597,
+      "top3_share_pct": 46.4887,
+      "top5_share_pct": 71.4452,
+      "hhi": 0.116304,
+      "gini": 0.673384,
+      "risk_level": "low"
+    },
+    {
+      "month": "2026-02",
+      "voter_count": 20,
+      "top1_share_pct": 19.9205,
+      "top3_share_pct": 56.1862,
+      "top5_share_pct": 80.3632,
+      "hhi": 0.142866,
+      "gini": 0.665834,
+      "risk_level": "low"
+    },
+    {
+      "month": "2026-03",
+      "voter_count": 34,
+      "top1_share_pct": 16.2276,
+      "top3_share_pct": 46.2592,
+      "top5_share_pct": 64.3836,
+      "hhi": 0.101865,
+      "gini": 0.707525,
+      "risk_level": "medium"
+    }
+  ],
+  "alerts": [
+    {
+      "month": "2025-01",
+      "level": "high",
+      "message": "Concentration elevated: top1=23.2% top3=57.4% gini=0.799733"
+    },
+    {
+      "month": "2025-02",
+      "level": "medium",
+      "message": "Concentration elevated: top1=18.0% top3=44.7% gini=0.685433"
+    },
+    {
+      "month": "2025-03",
+      "level": "high",
+      "message": "Concentration elevated: top1=24.0% top3=51.7% gini=0.808342"
+    },
+    {
+      "month": "2025-04",
+      "level": "high",
+      "message": "Concentration elevated: top1=26.5% top3=48.7% gini=0.801648"
+    },
+    {
+      "month": "2025-05",
+      "level": "medium",
+      "message": "Concentration elevated: top1=30.5% top3=47.7% gini=0.749694"
+    },
+    {
+      "month": "2025-06",
+      "level": "medium",
+      "message": "Concentration elevated: top1=33.5% top3=61.9% gini=0.756166"
+    },
+    {
+      "month": "2025-07",
+      "level": "medium",
+      "message": "Concentration elevated: top1=17.0% top3=44.5% gini=0.751538"
+    },
+    {
+      "month": "2025-08",
+      "level": "medium",
+      "message": "Concentration elevated: top1=14.9% top3=44.1% gini=0.712326"
+    },
+    {
+      "month": "2025-09",
+      "level": "medium",
+      "message": "Concentration elevated: top1=20.3% top3=49.6% gini=0.731186"
+    },
+    {
+      "month": "2025-10",
+      "level": "medium",
+      "message": "Concentration elevated: top1=34.2% top3=61.3% gini=0.771479"
+    },
+    {
+      "month": "2025-11",
+      "level": "medium",
+      "message": "Concentration elevated: top1=23.5% top3=60.3% gini=0.75562"
+    },
+    {
+      "month": "2026-03",
+      "level": "medium",
+      "message": "Concentration elevated: top1=16.2% top3=46.3% gini=0.707525"
+    }
+  ]
+}

@@ -42,6 +42,8 @@ DATASETS = {
     "contract_reconciliation": "contract_reconciliation.schema.json",
     "treasury_reconciliation": "treasury_reconciliation.schema.json",
     "sources": "sources.schema.json",
+    "funding_origins": "funding_origins.schema.json",
+    "funding_analysis": "funding_analysis.schema.json",
 }
 
 

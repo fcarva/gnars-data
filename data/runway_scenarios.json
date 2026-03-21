@@ -1,0 +1,564 @@
+{
+  "dataset": "runway_scenarios",
+  "as_of": "2026-03-21T00:16:23.243470Z",
+  "version": 1,
+  "overview": {
+    "treasury_balance_usd": 44736.99,
+    "baseline_monthly_burn_usd": 3916.05,
+    "observation_months": [
+      "2025-07",
+      "2025-08",
+      "2025-10",
+      "2025-11",
+      "2025-12",
+      "2026-03"
+    ]
+  },
+  "scenarios": [
+    {
+      "scenario_id": "lean",
+      "label": "Lean",
+      "monthly_burn_usd": 2937.04,
+      "monthly_inflow_usd": 0.0,
+      "runway_months": 15,
+      "projection": [
+        {
+          "month": "2026-03",
+          "balance_usd": 44736.99
+        },
+        {
+          "month": "2026-04",
+          "balance_usd": 41799.95
+        },
+        {
+          "month": "2026-05",
+          "balance_usd": 38862.92
+        },
+        {
+          "month": "2026-06",
+          "balance_usd": 35925.88
+        },
+        {
+          "month": "2026-07",
+          "balance_usd": 32988.84
+        },
+        {
+          "month": "2026-08",
+          "balance_usd": 30051.81
+        },
+        {
+          "month": "2026-09",
+          "balance_usd": 27114.77
+        },
+        {
+          "month": "2026-10",
+          "balance_usd": 24177.74
+        },
+        {
+          "month": "2026-11",
+          "balance_usd": 21240.7
+        },
+        {
+          "month": "2026-12",
+          "balance_usd": 18303.66
+        },
+        {
+          "month": "2027-01",
+          "balance_usd": 15366.63
+        },
+        {
+          "month": "2027-02",
+          "balance_usd": 12429.59
+        },
+        {
+          "month": "2027-03",
+          "balance_usd": 9492.55
+        },
+        {
+          "month": "2027-04",
+          "balance_usd": 6555.52
+        },
+        {
+          "month": "2027-05",
+          "balance_usd": 3618.48
+        },
+        {
+          "month": "2027-06",
+          "balance_usd": 681.44
+        },
+        {
+          "month": "2027-07",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2027-08",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2027-09",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2027-10",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2027-11",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2027-12",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2028-01",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2028-02",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2028-03",
+          "balance_usd": 0.0
+        }
+      ]
+    },
+    {
+      "scenario_id": "baseline",
+      "label": "Baseline",
+      "monthly_burn_usd": 3916.05,
+      "monthly_inflow_usd": 0.0,
+      "runway_months": 11,
+      "projection": [
+        {
+          "month": "2026-03",
+          "balance_usd": 44736.99
+        },
+        {
+          "month": "2026-04",
+          "balance_usd": 40820.94
+        },
+        {
+          "month": "2026-05",
+          "balance_usd": 36904.89
+        },
+        {
+          "month": "2026-06",
+          "balance_usd": 32988.84
+        },
+        {
+          "month": "2026-07",
+          "balance_usd": 29072.8
+        },
+        {
+          "month": "2026-08",
+          "balance_usd": 25156.75
+        },
+        {
+          "month": "2026-09",
+          "balance_usd": 21240.7
+        },
+        {
+          "month": "2026-10",
+          "balance_usd": 17324.65
+        },
+        {
+          "month": "2026-11",
+          "balance_usd": 13408.6
+        },
+        {
+          "month": "2026-12",
+          "balance_usd": 9492.55
+        },
+        {
+          "month": "2027-01",
+          "balance_usd": 5576.5
+        },
+        {
+          "month": "2027-02",
+          "balance_usd": 1660.45
+        },
+        {
+          "month": "2027-03",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2027-04",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2027-05",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2027-06",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2027-07",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2027-08",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2027-09",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2027-10",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2027-11",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2027-12",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2028-01",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2028-02",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2028-03",
+          "balance_usd": 0.0
+        }
+      ]
+    },
+    {
+      "scenario_id": "growth",
+      "label": "Growth",
+      "monthly_burn_usd": 4895.06,
+      "monthly_inflow_usd": 0.0,
+      "runway_months": 9,
+      "projection": [
+        {
+          "month": "2026-03",
+          "balance_usd": 44736.99
+        },
+        {
+          "month": "2026-04",
+          "balance_usd": 39841.93
+        },
+        {
+          "month": "2026-05",
+          "balance_usd": 34946.87
+        },
+        {
+          "month": "2026-06",
+          "balance_usd": 30051.81
+        },
+        {
+          "month": "2026-07",
+          "balance_usd": 25156.75
+        },
+        {
+          "month": "2026-08",
+          "balance_usd": 20261.69
+        },
+        {
+          "month": "2026-09",
+          "balance_usd": 15366.63
+        },
+        {
+          "month": "2026-10",
+          "balance_usd": 10471.56
+        },
+        {
+          "month": "2026-11",
+          "balance_usd": 5576.5
+        },
+        {
+          "month": "2026-12",
+          "balance_usd": 681.44
+        },
+        {
+          "month": "2027-01",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2027-02",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2027-03",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2027-04",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2027-05",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2027-06",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2027-07",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2027-08",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2027-09",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2027-10",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2027-11",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2027-12",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2028-01",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2028-02",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2028-03",
+          "balance_usd": 0.0
+        }
+      ]
+    },
+    {
+      "scenario_id": "expansion",
+      "label": "Expansion",
+      "monthly_burn_usd": 5874.07,
+      "monthly_inflow_usd": 0.0,
+      "runway_months": 7,
+      "projection": [
+        {
+          "month": "2026-03",
+          "balance_usd": 44736.99
+        },
+        {
+          "month": "2026-04",
+          "balance_usd": 38862.92
+        },
+        {
+          "month": "2026-05",
+          "balance_usd": 32988.84
+        },
+        {
+          "month": "2026-06",
+          "balance_usd": 27114.77
+        },
+        {
+          "month": "2026-07",
+          "balance_usd": 21240.7
+        },
+        {
+          "month": "2026-08",
+          "balance_usd": 15366.63
+        },
+        {
+          "month": "2026-09",
+          "balance_usd": 9492.55
+        },
+        {
+          "month": "2026-10",
+          "balance_usd": 3618.48
+        },
+        {
+          "month": "2026-11",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2026-12",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2027-01",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2027-02",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2027-03",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2027-04",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2027-05",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2027-06",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2027-07",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2027-08",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2027-09",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2027-10",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2027-11",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2027-12",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2028-01",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2028-02",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2028-03",
+          "balance_usd": 0.0
+        }
+      ]
+    },
+    {
+      "scenario_id": "sponsored",
+      "label": "Sponsored",
+      "monthly_burn_usd": 3916.05,
+      "monthly_inflow_usd": 1500.0,
+      "runway_months": 18,
+      "projection": [
+        {
+          "month": "2026-03",
+          "balance_usd": 44736.99
+        },
+        {
+          "month": "2026-04",
+          "balance_usd": 42320.94
+        },
+        {
+          "month": "2026-05",
+          "balance_usd": 39904.89
+        },
+        {
+          "month": "2026-06",
+          "balance_usd": 37488.84
+        },
+        {
+          "month": "2026-07",
+          "balance_usd": 35072.8
+        },
+        {
+          "month": "2026-08",
+          "balance_usd": 32656.75
+        },
+        {
+          "month": "2026-09",
+          "balance_usd": 30240.7
+        },
+        {
+          "month": "2026-10",
+          "balance_usd": 27824.65
+        },
+        {
+          "month": "2026-11",
+          "balance_usd": 25408.6
+        },
+        {
+          "month": "2026-12",
+          "balance_usd": 22992.55
+        },
+        {
+          "month": "2027-01",
+          "balance_usd": 20576.5
+        },
+        {
+          "month": "2027-02",
+          "balance_usd": 18160.45
+        },
+        {
+          "month": "2027-03",
+          "balance_usd": 15744.41
+        },
+        {
+          "month": "2027-04",
+          "balance_usd": 13328.36
+        },
+        {
+          "month": "2027-05",
+          "balance_usd": 10912.31
+        },
+        {
+          "month": "2027-06",
+          "balance_usd": 8496.26
+        },
+        {
+          "month": "2027-07",
+          "balance_usd": 6080.21
+        },
+        {
+          "month": "2027-08",
+          "balance_usd": 3664.16
+        },
+        {
+          "month": "2027-09",
+          "balance_usd": 1248.11
+        },
+        {
+          "month": "2027-10",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2027-11",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2027-12",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2028-01",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2028-02",
+          "balance_usd": 0.0
+        },
+        {
+          "month": "2028-03",
+          "balance_usd": 0.0
+        }
+      ]
+    }
+  ]
+}

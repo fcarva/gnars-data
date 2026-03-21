@@ -649,6 +649,83 @@ def export_sources() -> None:
     write_csv("sources.csv", rows)
 
 
+def export_funding_origins() -> None:
+    data = load_json("funding_origins")
+    rows = []
+    for record in data["records"]:
+        rows.append(
+            {
+                "funding_source_id": record["funding_source_id"],
+                "title": record["title"],
+                "source_kind": record["source_kind"],
+                "status": record["status"],
+                "currency": record["requested_amount"]["currency"],
+                "amount": record["requested_amount"]["amount"],
+                "recipient_label": record["recipient"]["label"],
+                "recipient_address": record["recipient"]["address"],
+                "proposal_chain": "|".join(item.get("proposal_ref", "") for item in record["proposal_chain"]),
+                "proposal_urls": "|".join(item.get("url", "") for item in record["proposal_chain"]),
+                "tags": "|".join(record.get("tags", [])),
+                "notes": record["notes"],
+            }
+        )
+    write_csv("funding_origins.csv", rows)
+
+
+def export_funding_analysis() -> None:
+    data = load_json("funding_analysis")
+
+    summary = data.get("summary", {})
+    write_csv(
+        "funding_analysis_summary.csv",
+        [
+            {
+                "funding_sources": summary.get("funding_sources"),
+                "approved_funding_usd_estimate": summary.get("approved_funding_usd_estimate"),
+                "potential_funding_usd_estimate": summary.get("potential_funding_usd_estimate"),
+                "executed_spend_usd": summary.get("executed_spend_usd"),
+                "coverage_ratio_approved": summary.get("coverage_ratio_approved"),
+                "coverage_ratio_potential": summary.get("coverage_ratio_potential"),
+            }
+        ],
+    )
+
+    rows = []
+    for row in data.get("voting_power_timeseries", []):
+        rows.append(
+            {
+                "month": row.get("month"),
+                "proposal_count": row.get("proposal_count"),
+                "vote_count": row.get("vote_count"),
+                "voting_power": row.get("voting_power"),
+                "executed_spend_usd": row.get("executed_spend_usd"),
+                "cost_per_vote_usd": row.get("cost_per_vote_usd"),
+                "cost_per_voting_power_usd": row.get("cost_per_voting_power_usd"),
+            }
+        )
+    write_csv("funding_analysis_timeseries.csv", rows)
+
+    rows = []
+    for row in data.get("allocation_by_proposal", []):
+        rows.append(
+            {
+                "archive_id": row.get("archive_id"),
+                "proposal_number": row.get("proposal_number"),
+                "title": row.get("title"),
+                "status": row.get("status"),
+                "chain": row.get("chain"),
+                "created_at": row.get("created_at"),
+                "executed_spend_usd": row.get("executed_spend_usd"),
+                "vote_count": row.get("vote_count"),
+                "voting_power": row.get("voting_power"),
+                "cost_per_vote_usd": row.get("cost_per_vote_usd"),
+                "cost_per_voting_power_usd": row.get("cost_per_voting_power_usd"),
+                "source_url": row.get("source_url"),
+            }
+        )
+    write_csv("funding_analysis_proposals.csv", rows)
+
+
 def main() -> int:
     export_contracts()
     export_proposals()
@@ -670,6 +747,8 @@ def main() -> int:
     export_community_signals()
     export_network_graph()
     export_sources()
+    export_funding_origins()
+    export_funding_analysis()
     return 0
 
 
