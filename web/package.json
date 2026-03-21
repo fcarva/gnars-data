@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "node scripts/clean-dist.mjs && node scripts/prepare-data.mjs && vite build && tsx scripts/prerender.tsx",
-    "build:live": "node scripts/clean-dist.mjs && node scripts/prepare-data.mjs && vite build",
+    "build": "node scripts/clean-dist.mjs && node scripts/prepare-data.mjs && vite build",
+    "build:prerender": "node scripts/clean-dist.mjs && node scripts/prepare-data.mjs && vite build && tsx scripts/prerender.tsx",
+    "build:live": "npm run build",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit"
   },
