@@ -8,3 +8,5 @@ Thumbs.db
 _site/
 web/node_modules/
 web/dist/
+
+.vercel
