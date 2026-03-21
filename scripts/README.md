@@ -9,6 +9,10 @@
 - `sync_treasury.py`: collect live treasury holdings and normalize the treasury dataset
 - `ingest.py`: orchestrate sync scripts (`sync_gnars`, `sync_proposals`, `sync_treasury`) with optional skip flags
 - `tag_proposals.py`: seed and maintain the proposal-tagging review queue
+- `audit_gaps.py`: generate `reports/data_gaps.md` with missing-field coverage across spend/tags/members/proposals
+- `enrich_members.py`: enrich `members.json` with sport inference and funding totals per member
+- `agent_classify.py`: classify proposal semantics using Gemini (`GEMINI_API_KEY`) and enrich proposal tags
+- `enrich_spend.py`: enrich `spend_ledger.json` with project/category/sport/recipient metadata via local joins
 - `build_site.py`: generate the `_site/` GitHub Pages artifact
 - `transform.py`: generate layered analytics artifacts (`governance`, `growth`, `efficiency`, `culture`, `sankey`)
 - `export.py`: package layered analytics artifacts into `data/analytics_bundle.json`

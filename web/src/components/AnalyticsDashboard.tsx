@@ -4,23 +4,24 @@ import type {
   SankeyData,
   EfficiencyData,
   GovernanceData,
-  GrowthData,
   ActivityTimeseriesData,
   DelegationGraphData,
   RunwayScenariosData,
   ForkRiskData,
 } from "@/lib/gnars-data";
+import { fmtUSD } from "@/lib/format";
 import { ProposalStatusChart } from "@/components/ProposalStatusChart";
+import { ProposalCategoryChart } from "@/components/ProposalCategoryChart";
 import { TreasuryChart } from "@/components/TreasuryChart";
 import { LeaderboardTable } from "@/components/LeaderboardTable";
 import { AnalyticsSankey } from "@/components/AnalyticsSankey";
 import { EfficiencyTrendsChart } from "@/components/EfficiencyTrendsChart";
 import { GovernanceGiniChart } from "@/components/GovernanceGiniChart";
 import { ActivityHeatmap } from "@/components/ActivityHeatmap";
-import { CohortRetentionHeatmap } from "@/components/CohortRetentionHeatmap";
 import { DelegationForceGraph } from "@/components/DelegationForceGraph";
 import { RunwayWhatIf } from "@/components/RunwayWhatIf";
 import { ForkRiskMonitor } from "@/components/ForkRiskMonitor";
+import { SportFundingTable } from "@/components/SportFundingTable";
 
 interface AnalyticsDashboardProps {
   metrics: DaoMetrics;
@@ -28,16 +29,10 @@ interface AnalyticsDashboardProps {
   sankey: SankeyData | null;
   efficiency: EfficiencyData | null;
   governance: GovernanceData | null;
-  growth: GrowthData | null;
   activity: ActivityTimeseriesData | null;
   delegationGraph: DelegationGraphData | null;
   runwayScenarios: RunwayScenariosData | null;
   forkRisk: ForkRiskData | null;
-}
-
-function fmtUsd(value: number | null | undefined): string {
-  if (typeof value !== "number") return "-";
-  return `$${value.toLocaleString(undefined, { maximumFractionDigits: 2 })}`;
 }
 
 function fmtPct(value: number | null | undefined): string {
@@ -51,7 +46,6 @@ export function AnalyticsDashboard({
   sankey,
   efficiency,
   governance,
-  growth,
   activity,
   delegationGraph,
   runwayScenarios,
@@ -117,7 +111,10 @@ export function AnalyticsDashboard({
           <ProposalStatusChart metrics={metrics} />
         </div>
         <div className="analytics-panel">
-          <TreasuryChart metrics={metrics} />
+          <ProposalCategoryChart metrics={metrics} />
+        </div>
+        <div className="analytics-panel">
+          <TreasuryChart />
         </div>
       </div>
 
@@ -150,15 +147,15 @@ export function AnalyticsDashboard({
         <div className="analytics-overview-grid analytics-overview-grid-compact">
           <div className="analytics-overview-card">
             <div className="analytics-overview-label">APPROVED CAPACITY</div>
-            <div className="analytics-overview-value">{fmtUsd(summary?.approved_funding_usd_estimate)}</div>
+            <div className="analytics-overview-value">{fmtUSD(summary?.approved_funding_usd_estimate ?? null)}</div>
           </div>
           <div className="analytics-overview-card">
             <div className="analytics-overview-label">POTENTIAL CAPACITY</div>
-            <div className="analytics-overview-value">{fmtUsd(summary?.potential_funding_usd_estimate)}</div>
+            <div className="analytics-overview-value">{fmtUSD(summary?.potential_funding_usd_estimate ?? null)}</div>
           </div>
           <div className="analytics-overview-card">
             <div className="analytics-overview-label">EXECUTED SPEND</div>
-            <div className="analytics-overview-value">{fmtUsd(summary?.executed_spend_usd)}</div>
+            <div className="analytics-overview-value">{fmtUSD(summary?.executed_spend_usd ?? null)}</div>
           </div>
           <div className="analytics-overview-card">
             <div className="analytics-overview-label">POTENTIAL COVERAGE USED</div>
@@ -175,7 +172,7 @@ export function AnalyticsDashboard({
                   <div className="analytics-timeline-title">{row.title}</div>
                   <div className="analytics-timeline-meta">{row.chain.toUpperCase()} · {row.status}</div>
                 </div>
-                <div className="analytics-timeline-votes">{fmtUsd(row.executed_spend_usd)}</div>
+                  <div className="analytics-timeline-votes">{fmtUSD(row.executed_spend_usd)}</div>
               </a>
             ))}
           </div>
@@ -187,7 +184,7 @@ export function AnalyticsDashboard({
         <div className="analytics-overview-grid analytics-overview-grid-compact">
           <div className="analytics-overview-card">
             <div className="analytics-overview-label">MEAN COST / VOTE</div>
-            <div className="analytics-overview-value">{fmtUsd(meanCostPerVote)}</div>
+            <div className="analytics-overview-value">{fmtUSD(meanCostPerVote)}</div>
           </div>
           <div className="analytics-overview-card">
             <div className="analytics-overview-label">LATEST MONTH</div>
@@ -195,7 +192,7 @@ export function AnalyticsDashboard({
           </div>
           <div className="analytics-overview-card">
             <div className="analytics-overview-label">LATEST COST / VOTE</div>
-            <div className="analytics-overview-value">{fmtUsd(latestEfficiency?.cost_per_vote_usd)}</div>
+            <div className="analytics-overview-value">{fmtUSD(latestEfficiency?.cost_per_vote_usd ?? null)}</div>
           </div>
           <div className="analytics-overview-card">
             <div className="analytics-overview-label">LATEST COST / VOTING POWER</div>
@@ -213,9 +210,10 @@ export function AnalyticsDashboard({
         <div className="analytics-panel">
           <div className="analytics-block-title">QUALITATIVE NOTES</div>
           <ul className="analytics-notes-list">
-            <li>Funding chain is visible end-to-end from Nouns Prop 51 to Base Jump revision track.</li>
-            <li>Capacity context separates approved vs potential sources, reducing false certainty in spend analysis.</li>
-            <li>Cost-per-vote and cost-per-voting-power metrics are now consistently tracked over time.</li>
+            <li><strong>Episodic Spend:</strong> Spend is highly episodic. A large portion of months show $0 outflow, meaning treasury deployments happen in concentrated bursts rather than continuous streams.</li>
+            <li><strong>Cost Outliers:</strong> Significant cost-per-vote spikes (e.g., Aug 2024) occur when high-value proposals coincide with low voter turnout.</li>
+            <li><strong>Category Efficiency:</strong> Athlete proposals tend to be more efficient (~$61 cost/vote) compared to operational workstreams (~$144).</li>
+            <li><strong>Funding Visibility:</strong> On-chain end-to-end tracking provides complete visibility into how these episodic funds move.</li>
           </ul>
         </div>
       </div>
@@ -224,13 +222,6 @@ export function AnalyticsDashboard({
         <h3 className="analytics-section-title">GOVERNANCE CONCENTRATION</h3>
         <div className="analytics-panel">
           <GovernanceGiniChart data={governance} />
-        </div>
-      </div>
-
-      <div>
-        <h3 className="analytics-section-title">COMMUNITY RETENTION</h3>
-        <div className="analytics-panel">
-          <CohortRetentionHeatmap data={growth} />
         </div>
       </div>
 
@@ -251,21 +242,21 @@ export function AnalyticsDashboard({
       <div>
         <h3 className="analytics-section-title">RUNWAY WHAT-IF</h3>
         <div className="analytics-panel">
-          <RunwayWhatIf data={runwayScenarios} />
+          <RunwayWhatIf metrics={metrics} />
         </div>
       </div>
 
       <div>
-        <h3 className="analytics-section-title">FORK RISK</h3>
-        <div className="analytics-panel">
-          <ForkRiskMonitor data={forkRisk} />
-        </div>
-      </div>
 
-      <div>
-        <h3 className="analytics-section-title">FUNDING FLOW</h3>
         <div className="analytics-panel">
           <AnalyticsSankey data={sankey} />
+        </div>
+      </div>
+
+      <div>
+        <h3 className="analytics-section-title">ATHLETE FUNDING</h3>
+        <div className="analytics-panel">
+          <SportFundingTable />
         </div>
       </div>
 

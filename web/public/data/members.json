@@ -28,7 +28,10 @@
         "attendance_pct": 23,
         "like_pct": 96
       },
-      "notes": "Author of proposal 111 and contributor on the Q1 2026 operations workstream."
+      "notes": "Author of proposal 111 and contributor on the Q1 2026 operations workstream.",
+      "total_received_usdc": 0,
+      "total_received_eth": 0,
+      "funded_proposal_count": 0
     },
     {
       "member_id": "r4topunk",
@@ -54,7 +57,10 @@
         "attendance_pct": 68,
         "like_pct": 78
       },
-      "notes": "Technical lead for web development and governance/data pipeline infrastructure."
+      "notes": "Technical lead for web development and governance/data pipeline infrastructure.",
+      "total_received_usdc": 0,
+      "total_received_eth": 1.0,
+      "funded_proposal_count": 1
     },
     {
       "member_id": "vlad",
@@ -80,8 +86,10 @@
         "attendance_pct": 8,
         "like_pct": 63
       },
-      "notes": "Maintains AI-native operational systems and shared infrastructure."
+      "notes": "Maintains AI-native operational systems and shared infrastructure.",
+      "total_received_usdc": 0,
+      "total_received_eth": 0,
+      "funded_proposal_count": 0
     }
   ]
 }
-

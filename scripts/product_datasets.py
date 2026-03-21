@@ -938,7 +938,7 @@ def build_proposals_enriched(
             content_summary,
             content_markdown,
             linked_project.get("category") if linked_project else None,
-            tagged.get("primary_category"),
+            tagged.get("semantic_category") or tagged.get("primary_category"),
         )
         successful = is_successful_proposal(proposal)
         outcome = outcome_group(proposal, successful)

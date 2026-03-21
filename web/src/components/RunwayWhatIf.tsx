@@ -1,110 +1,114 @@
 import { useMemo, useState } from "react";
-import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
-import type { RunwayScenariosData } from "@/lib/gnars-data";
+import { CartesianGrid, Line, LineChart, ReferenceLine, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+import type { DaoMetrics } from "@/lib/gnars-data";
+import { fmtDate, fmtUSD } from "@/lib/format";
 
 interface RunwayWhatIfProps {
-  data: RunwayScenariosData | null;
+  metrics: DaoMetrics;
 }
 
-function fmtUsd(value: number): string {
-  return `$${value.toLocaleString(undefined, { maximumFractionDigits: 0 })}`;
+function nextMonths(count: number): string[] {
+  const out: string[] = [];
+  const now = new Date();
+  for (let i = 0; i < count; i += 1) {
+    const d = new Date(now.getFullYear(), now.getMonth() + i, 1);
+    out.push(`${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}`);
+  }
+  return out;
 }
 
-export function RunwayWhatIf({ data }: RunwayWhatIfProps) {
-  const [burnMultiplier, setBurnMultiplier] = useState(100);
-  const [monthlyInflow, setMonthlyInflow] = useState(0);
+export function RunwayWhatIf({ metrics }: RunwayWhatIfProps) {
+  const [simAsk, setSimAsk] = useState(5000);
+
+  const balance = typeof metrics.treasury_balance_usd === "number"
+    ? metrics.treasury_balance_usd
+    : metrics.overview.treasury_total_value_usd;
+  const burn = typeof metrics.monthly_burn_usd === "number" && metrics.monthly_burn_usd > 0
+    ? metrics.monthly_burn_usd
+    : 5300;
 
   const projection = useMemo(() => {
-    if (!data) return null;
-
-    const baseline = data.overview.baseline_monthly_burn_usd;
-    const burn = baseline * (burnMultiplier / 100);
-    let balance = data.overview.treasury_balance_usd;
-    let runway = 0;
-
-    const rows = Array.from({ length: 25 }).map((_, idx) => {
-      const month = idx === 0
-        ? data.scenarios[0]?.projection[0]?.month || "now"
-        : data.scenarios[0]?.projection[idx]?.month || `M+${idx}`;
-      if (idx > 0) {
-        balance = Math.max(0, balance + monthlyInflow - burn);
-      }
-      if (balance > 0) {
-        runway = idx;
-      }
+    const months = nextMonths(18);
+    const rows = months.map((month, idx) => {
+      const current = Math.max(0, balance - burn * idx);
+      const low = Math.max(0, balance - 3000 * idx);
+      const high = Math.max(0, balance - 8000 * idx);
       return {
         month,
-        balance_usd: Math.round(balance),
+        current,
+        low,
+        high,
       };
     });
 
-    return {
-      runway,
-      burn,
-      rows,
-    };
-  }, [burnMultiplier, data, monthlyInflow]);
+    return rows;
+  }, [balance, burn]);
 
-  if (!data || !projection) {
-    return <div className="analytics-note">No runway scenarios available.</div>;
-  }
+  const runwayMonths = Math.max(0, Math.round(balance / burn));
+  const zeroDate = metrics.projected_zero_date || (() => {
+    const d = new Date();
+    const zero = new Date(d.getFullYear(), d.getMonth() + runwayMonths, 1);
+    return `${zero.getFullYear()}-${String(zero.getMonth() + 1).padStart(2, "0")}`;
+  })();
+  const simRunway = Math.max(0, Math.round((balance - simAsk) / burn));
 
   return (
     <div className="analytics-runway-wrap">
-      <div className="analytics-runway-controls">
-        <label className="analytics-runway-control">
-          <span>Burn Multiplier: {burnMultiplier}%</span>
-          <input
-            type="range"
-            min={50}
-            max={200}
-            step={5}
-            value={burnMultiplier}
-            onChange={(event) => setBurnMultiplier(Number(event.target.value))}
-          />
-        </label>
-        <label className="analytics-runway-control">
-          <span>Monthly Inflow: {fmtUsd(monthlyInflow)}</span>
-          <input
-            type="range"
-            min={0}
-            max={4000}
-            step={100}
-            value={monthlyInflow}
-            onChange={(event) => setMonthlyInflow(Number(event.target.value))}
-          />
-        </label>
+      <div style={{ display: "flex", gap: "8px", flexWrap: "wrap", marginBottom: "8px" }}>
+        <span style={{ background: "#F2F0E5", padding: "6px 12px", borderRadius: "6px", fontFamily: "var(--mono)", fontSize: "11px" }}>
+          <strong>{runwayMonths} months</strong> at current burn
+        </span>
+        <span style={{ background: "#F2F0E5", padding: "6px 12px", borderRadius: "6px", fontFamily: "var(--mono)", fontSize: "11px" }}>
+          <strong>{fmtDate(zeroDate)}</strong> projected zero
+        </span>
+        <span style={{ background: "#F2F0E5", padding: "6px 12px", borderRadius: "6px", fontFamily: "var(--mono)", fontSize: "11px" }}>
+          <strong>{fmtUSD(burn)}</strong>/mo 30-day avg burn
+        </span>
       </div>
-
-      <div className="analytics-overview-grid analytics-overview-grid-compact">
-        <div className="analytics-overview-card">
-          <div className="analytics-overview-label">CURRENT BALANCE</div>
-          <div className="analytics-overview-value">{fmtUsd(data.overview.treasury_balance_usd)}</div>
-        </div>
-        <div className="analytics-overview-card">
-          <div className="analytics-overview-label">MONTHLY BURN</div>
-          <div className="analytics-overview-value">{fmtUsd(projection.burn)}</div>
-        </div>
-        <div className="analytics-overview-card">
-          <div className="analytics-overview-label">RUNWAY</div>
-          <div className="analytics-overview-value">{projection.runway} months</div>
-        </div>
-      </div>
-
-      <div className="analytics-timeseries-wrap">
+      <div style={{ height: "140px" }}>
         <ResponsiveContainer width="100%" height="100%">
-          <LineChart data={projection.rows} margin={{ top: 8, right: 20, left: 10, bottom: 4 }}>
+          <LineChart data={projection} margin={{ top: 8, right: 8, left: 8, bottom: 0 }}>
             <CartesianGrid strokeDasharray="3 3" stroke="var(--line)" />
-            <XAxis dataKey="month" tick={{ fill: "var(--muted)", fontSize: 10 }} tickLine={false} axisLine={{ stroke: "var(--line)" }} minTickGap={28} />
-            <YAxis tick={{ fill: "var(--muted)", fontSize: 11 }} tickFormatter={(value) => `$${Math.round(value / 1000)}k`} axisLine={{ stroke: "var(--line)" }} tickLine={false} width={52} />
+            <XAxis
+              dataKey="month"
+              tick={{ fill: "var(--muted)", fontSize: 10 }}
+              tickLine={false}
+              axisLine={{ stroke: "var(--line)" }}
+              tickFormatter={fmtDate}
+              minTickGap={28}
+            />
+            <YAxis
+              tick={{ fill: "var(--muted)", fontSize: 11 }}
+              tickFormatter={(value) => fmtUSD(Number(value))}
+              axisLine={{ stroke: "var(--line)" }}
+              tickLine={false}
+              width={60}
+              domain={[0, "auto"]}
+            />
             <Tooltip
-              formatter={(value) => [fmtUsd(Number(value ?? 0)), "Balance"]}
-              labelFormatter={(label) => `Month ${label}`}
+              formatter={(value) => [fmtUSD(Number(value ?? 0)), "Balance"]}
+              labelFormatter={(label) => fmtDate(String(label))}
               contentStyle={{ background: "var(--surface)", border: "1px solid var(--line)", borderRadius: "8px" }}
             />
-            <Line type="monotone" dataKey="balance_usd" stroke="var(--accent)" strokeWidth={2.5} dot={false} />
+            <ReferenceLine
+              y={10000}
+              stroke="#D14D41"
+              strokeOpacity={0.4}
+              label={{ value: "critical $10k", fontSize: 9, fill: "#D14D41", position: "right" }}
+            />
+            <Line type="monotone" dataKey="current" stroke="#403E3C" strokeWidth={2} dot={false} />
+            <Line type="monotone" dataKey="low" stroke="#879A39" strokeWidth={2} strokeDasharray="5 3" dot={false} />
+            <Line type="monotone" dataKey="high" stroke="#D14D41" strokeWidth={2} strokeDasharray="5 3" dot={false} />
           </LineChart>
         </ResponsiveContainer>
+      </div>
+
+      <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap", fontFamily: "var(--mono)", fontSize: "9px", color: "#6F6E69" }}>
+        <span>if next proposal asks</span>
+        <input type="range" min={1000} max={15000} step={500} value={simAsk} onChange={(e) => setSimAsk(Number(e.target.value))} />
+        <strong style={{ color: "#282726", fontWeight: 700 }}>
+          {fmtUSD(simAsk)} → runway drops to {simRunway} months
+        </strong>
       </div>
     </div>
   );

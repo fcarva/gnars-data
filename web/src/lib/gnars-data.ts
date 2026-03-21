@@ -74,6 +74,7 @@ export interface DaoMetrics {
     outflows_eth: number;
     outflows_usdc: number;
     proposal_status_counts: Record<string, number>;
+    proposal_category_counts: Record<string, number>;
   };
   treasury: {
     wallet_address: string;
@@ -589,4 +590,21 @@ export function filterEvents(events: TimelineEvent[], filter: EventFilter): Time
 
   const kinds = kindMap[filter] || [];
   return events.filter((e) => kinds.includes(e.kind));
+}
+export interface TreasurySnapshot {
+  date: string;
+  total_value_usd: number;
+}
+export interface TreasurySnapshotsData {
+  dataset: string;
+  records: TreasurySnapshot[];
+}
+export async function getTreasurySnapshots(): Promise<TreasurySnapshotsData | null> {
+  try {
+    const res = await fetch(`${BASE_URL}/treasury_snapshots.json`);
+    if (!res.ok) return null;
+    return await res.json();
+  } catch (e) {
+    return null;
+  }
 }

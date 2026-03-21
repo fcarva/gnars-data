@@ -1,6 +1,6 @@
 {
   "dataset": "efficiency",
-  "as_of": "2026-03-21T00:16:14.485811Z",
+  "as_of": "2026-03-21T20:20:37.241702Z",
   "version": 1,
   "allocation_by_proposal": [
     {
@@ -539,7 +539,7 @@
       "executed_spend_usd": 11556.22,
       "cost_per_vote_usd": 296.31,
       "cost_per_voting_power_usd": 14.628129,
-      "spend_velocity_usd": -26133.31
+      "spend_velocity_usd": 11556.22
     },
     {
       "month": "2024-05",
@@ -547,7 +547,7 @@
       "executed_spend_usd": 3993.12,
       "cost_per_vote_usd": 28.73,
       "cost_per_voting_power_usd": 1.212241,
-      "spend_velocity_usd": -7563.1
+      "spend_velocity_usd": 3993.12
     },
     {
       "month": "2024-06",
@@ -555,7 +555,7 @@
       "executed_spend_usd": 15884.94,
       "cost_per_vote_usd": 182.59,
       "cost_per_voting_power_usd": 5.57562,
-      "spend_velocity_usd": 11891.82
+      "spend_velocity_usd": 15884.94
     },
     {
       "month": "2024-07",
@@ -563,7 +563,7 @@
       "executed_spend_usd": 40548.59,
       "cost_per_vote_usd": 193.09,
       "cost_per_voting_power_usd": 5.510817,
-      "spend_velocity_usd": 24663.65
+      "spend_velocity_usd": 40548.59
     },
     {
       "month": "2024-08",
@@ -571,7 +571,7 @@
       "executed_spend_usd": 62191.34,
       "cost_per_vote_usd": 300.44,
       "cost_per_voting_power_usd": 6.68293,
-      "spend_velocity_usd": 21642.75
+      "spend_velocity_usd": 62191.34
     },
     {
       "month": "2024-09",
@@ -579,7 +579,7 @@
       "executed_spend_usd": 3001.09,
       "cost_per_vote_usd": 68.21,
       "cost_per_voting_power_usd": 2.289162,
-      "spend_velocity_usd": -59190.25
+      "spend_velocity_usd": 3001.09
     },
     {
       "month": "2024-10",
@@ -587,7 +587,7 @@
       "executed_spend_usd": 9024.46,
       "cost_per_vote_usd": 106.17,
       "cost_per_voting_power_usd": 2.912994,
-      "spend_velocity_usd": 6023.37
+      "spend_velocity_usd": 9024.46
     },
     {
       "month": "2024-11",
@@ -595,7 +595,7 @@
       "executed_spend_usd": 9239.0,
       "cost_per_vote_usd": 142.14,
       "cost_per_voting_power_usd": 4.638052,
-      "spend_velocity_usd": 214.54
+      "spend_velocity_usd": 9239.0
     },
     {
       "month": "2024-12",
@@ -603,7 +603,7 @@
       "executed_spend_usd": 2580.69,
       "cost_per_vote_usd": 95.58,
       "cost_per_voting_power_usd": 3.422667,
-      "spend_velocity_usd": -6658.31
+      "spend_velocity_usd": 2580.69
     },
     {
       "month": "2025-01",
@@ -611,7 +611,7 @@
       "executed_spend_usd": 20039.52,
       "cost_per_vote_usd": 286.28,
       "cost_per_voting_power_usd": 8.054469,
-      "spend_velocity_usd": 17458.83
+      "spend_velocity_usd": 20039.52
     },
     {
       "month": "2025-02",
@@ -619,7 +619,7 @@
       "executed_spend_usd": 2445.68,
       "cost_per_vote_usd": 56.88,
       "cost_per_voting_power_usd": 1.21193,
-      "spend_velocity_usd": -17593.84
+      "spend_velocity_usd": 2445.68
     },
     {
       "month": "2025-03",
@@ -627,7 +627,7 @@
       "executed_spend_usd": 3292.0,
       "cost_per_vote_usd": 70.04,
       "cost_per_voting_power_usd": 1.910621,
-      "spend_velocity_usd": 846.32
+      "spend_velocity_usd": 3292.0
     },
     {
       "month": "2025-04",
@@ -635,7 +635,7 @@
       "executed_spend_usd": 3850.0,
       "cost_per_vote_usd": 72.64,
       "cost_per_voting_power_usd": 2.065451,
-      "spend_velocity_usd": 558.0
+      "spend_velocity_usd": 3850.0
     },
     {
       "month": "2025-05",
@@ -643,7 +643,7 @@
       "executed_spend_usd": 10532.36,
       "cost_per_vote_usd": 234.05,
       "cost_per_voting_power_usd": 8.828468,
-      "spend_velocity_usd": 6682.36
+      "spend_velocity_usd": 10532.36
     },
     {
       "month": "2025-06",
@@ -651,7 +651,7 @@
       "executed_spend_usd": 1700.0,
       "cost_per_vote_usd": 85.0,
       "cost_per_voting_power_usd": 2.15736,
-      "spend_velocity_usd": -8832.36
+      "spend_velocity_usd": 1700.0
     },
     {
       "month": "2025-07",
@@ -659,7 +659,7 @@
       "executed_spend_usd": 1560.0,
       "cost_per_vote_usd": 41.05,
       "cost_per_voting_power_usd": 0.986717,
-      "spend_velocity_usd": -140.0
+      "spend_velocity_usd": 1560.0
     },
     {
       "month": "2025-08",
@@ -667,7 +667,7 @@
       "executed_spend_usd": 5153.36,
       "cost_per_vote_usd": 166.24,
       "cost_per_voting_power_usd": 5.719601,
-      "spend_velocity_usd": 3593.36
+      "spend_velocity_usd": 5153.36
     },
     {
       "month": "2025-09",
@@ -675,7 +675,7 @@
       "executed_spend_usd": 4515.32,
       "cost_per_vote_usd": 237.65,
       "cost_per_voting_power_usd": 7.341986,
-      "spend_velocity_usd": -638.04
+      "spend_velocity_usd": 4515.32
     },
     {
       "month": "2025-10",
@@ -683,7 +683,7 @@
       "executed_spend_usd": 5065.57,
       "cost_per_vote_usd": 266.61,
       "cost_per_voting_power_usd": 6.977373,
-      "spend_velocity_usd": 550.25
+      "spend_velocity_usd": 5065.57
     },
     {
       "month": "2025-11",
@@ -691,7 +691,7 @@
       "executed_spend_usd": 3932.04,
       "cost_per_vote_usd": 98.3,
       "cost_per_voting_power_usd": 2.341893,
-      "spend_velocity_usd": -1133.53
+      "spend_velocity_usd": 3932.04
     },
     {
       "month": "2026-03",
@@ -699,7 +699,7 @@
       "executed_spend_usd": 1570.0,
       "cost_per_vote_usd": 65.42,
       "cost_per_voting_power_usd": 1.548323,
-      "spend_velocity_usd": -2362.04
+      "spend_velocity_usd": 1570.0
     }
   ]
 }

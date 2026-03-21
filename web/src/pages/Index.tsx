@@ -14,7 +14,6 @@ import {
   fetchSankeyData,
   fetchEfficiencyData,
   fetchGovernanceData,
-  fetchGrowthData,
   fetchActivityTimeseriesData,
   fetchDelegationGraphData,
   fetchRunwayScenariosData,
@@ -26,7 +25,6 @@ import {
   type SankeyData,
   type EfficiencyData,
   type GovernanceData,
-  type GrowthData,
   type ActivityTimeseriesData,
   type DelegationGraphData,
   type RunwayScenariosData,
@@ -41,7 +39,6 @@ const Index = () => {
   const [sankeyData, setSankeyData] = useState<SankeyData | null>(null);
   const [efficiencyData, setEfficiencyData] = useState<EfficiencyData | null>(null);
   const [governanceData, setGovernanceData] = useState<GovernanceData | null>(null);
-  const [growthData, setGrowthData] = useState<GrowthData | null>(null);
   const [activityData, setActivityData] = useState<ActivityTimeseriesData | null>(null);
   const [delegationGraphData, setDelegationGraphData] = useState<DelegationGraphData | null>(null);
   const [runwayScenariosData, setRunwayScenariosData] = useState<RunwayScenariosData | null>(null);
@@ -60,7 +57,6 @@ const Index = () => {
       fetchSankeyData().then(setSankeyData),
       fetchEfficiencyData().then(setEfficiencyData),
       fetchGovernanceData().then(setGovernanceData),
-      fetchGrowthData().then(setGrowthData),
       fetchActivityTimeseriesData().then(setActivityData),
       fetchDelegationGraphData().then(setDelegationGraphData),
       fetchRunwayScenariosData().then(setRunwayScenariosData),
@@ -86,7 +82,6 @@ const Index = () => {
               sankey={sankeyData}
               efficiency={efficiencyData}
               governance={governanceData}
-              growth={growthData}
               activity={activityData}
               delegationGraph={delegationGraphData}
               runwayScenarios={runwayScenariosData}

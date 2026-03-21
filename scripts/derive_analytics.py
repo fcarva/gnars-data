@@ -50,6 +50,7 @@ COINGECKO_ASSET_IDS = {
     "ETH": "ethereum",
     "SENDIT": "sendit",
 }
+ETH_FALLBACK_USD = 2800.0
 ETH_MAINNET_RPC_URL = "https://ethereum-rpc.publicnode.com"
 ETH_MAINNET_CHAIN_ID = "0x1"
 ENS_REGISTRY = "0x00000000000c2e074ec69a0dfb2997ba6c7d2e1e"
@@ -328,6 +329,205 @@ def load_coingecko_history(coin_id: str, date_key: str) -> dict[str, Any] | None
         cache_path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
         return payload
     return None
+
+
+def usd_value_from_spend(record: dict[str, Any]) -> float:
+    usd = number_or_zero(record.get("usd_value_at_execution"))
+    if usd > 0:
+        return usd
+    symbol = str(record.get("asset_symbol") or "").upper()
+    amount = number_or_zero(record.get("amount"))
+    if symbol == "USDC":
+        return amount
+    if symbol == "ETH":
+        return amount * ETH_FALLBACK_USD
+    return 0.0
+
+
+def estimate_monthly_burn(spend_records: list[dict[str, Any]]) -> float:
+    by_month: dict[str, float] = defaultdict(float)
+    for record in spend_records:
+        dt = record.get("proposal_executed_at") or record.get("proposal_end_at") or record.get("proposal_created_at")
+        parsed = parse_datetime(dt)
+        if not parsed:
+            continue
+        month = parsed.strftime("%Y-%m")
+        by_month[month] += usd_value_from_spend(record)
+    non_zero = [value for value in by_month.values() if value > 0]
+    if not non_zero:
+        return 0.0
+    return round(sum(non_zero) / len(non_zero), 2)
+
+
+def build_semantic_sankey(
+    *,
+    spend_records: list[dict[str, Any]],
+    proposal_tags: dict[str, Any],
+    mode: str,
+    analytics_as_of: str,
+) -> dict[str, Any]:
+    tags = proposal_tags.get("records") or []
+    tag_map = {str(row.get("archive_id") or ""): row for row in tags}
+
+    if mode == "impact":
+        groups = {
+            "athletes_riders": ("athletes_riders", "Athletes & Riders", "#3AA99F", "Riders & athletes"),
+            "workstream_media": ("workstream_media", "Media", "#8B7EC8", "Content creators"),
+            "workstream_ops": ("workstream_ops", "Operations", "#DA702C", "Core contributors"),
+            "workstream_dev": ("workstream_dev", "Dev", "#4385BE", "Builders"),
+            "workstream_products": ("workstream_dev", "Dev", "#4385BE", "Builders"),
+            "irl_events": ("irl_events", "Events IRL", "#879A39", "Event organizers"),
+            "public_goods": ("public_goods", "Public Goods", "#6F6E69", "Community"),
+            "governance_policy": ("governance_policy", "Governance", "#403E3C", "DAO governance"),
+        }
+    else:
+        groups = {
+            "athletes_riders": ("athletes_riders", "Athletes WS", "#3AA99F", "Riders & athletes"),
+            "workstream_media": ("workstream_media", "Media WS", "#8B7EC8", "Content creators"),
+            "workstream_ops": ("workstream_ops", "Ops WS", "#DA702C", "Core contributors"),
+            "workstream_dev": ("workstream_dev", "Dev WS", "#4385BE", "Builders"),
+            "workstream_products": ("workstream_dev", "Dev WS", "#4385BE", "Builders"),
+            "irl_events": ("irl_events", "Events", "#879A39", "Event organizers"),
+            "public_goods": ("public_goods", "Public Goods", "#6F6E69", "Community"),
+            "governance_policy": ("governance_policy", "Governance", "#403E3C", "DAO governance"),
+        }
+
+    totals: dict[str, float] = defaultdict(float)
+    for record in spend_records:
+        archive_id = str(record.get("archive_id") or "")
+        tag = tag_map.get(archive_id, {})
+        category = (
+            tag.get("semantic_category")
+            or tag.get("primary_category")
+            or record.get("category")
+            or "uncategorized"
+        )
+        if category not in groups:
+            continue
+        key = groups[category][0]
+        totals[key] += usd_value_from_spend(record)
+
+    total_usd = sum(totals.values())
+    ordered = sorted(totals.items(), key=lambda item: -item[1])
+    cats = []
+    for key, value in ordered:
+        label, color, recipient = "", "#B7B5AC", "Recipients"
+        for source_cat, mapped in groups.items():
+            if mapped[0] == key:
+                label = mapped[1]
+                color = mapped[2]
+                recipient = mapped[3]
+                break
+        cats.append(
+            {
+                "id": key,
+                "label": label or key.replace("_", " ").title(),
+                "val": round(value / 1000, 1),
+                "pct": round((value / total_usd) * 100) if total_usd else 0,
+                "col": color,
+                "rec": recipient,
+            }
+        )
+
+    return {
+        "dataset": f"sankey_{mode}",
+        "mode": mode,
+        "as_of": analytics_as_of,
+        "version": 1,
+        "cats": cats,
+        "total_k": round(total_usd / 1000, 1),
+    }
+
+
+def build_sport_funding(
+    *,
+    spend_records: list[dict[str, Any]],
+    proposal_tags: dict[str, Any],
+    analytics_as_of: str,
+) -> dict[str, Any]:
+    tags = proposal_tags.get("records") or []
+    tag_map = {str(row.get("archive_id") or ""): row for row in tags}
+
+    palette = {
+        "sk8": {"label": "Skateboarding", "pill": "SK8", "color": "#66800B"},
+        "surf": {"label": "Surfing", "pill": "SURF", "color": "#205EA6"},
+        "bmx": {"label": "BMX / Bike", "pill": "BMX", "color": "#AD8301"},
+        "snow": {"label": "Snowboarding", "pill": "SNOW", "color": "#24837B"},
+        "multi": {"label": "Multi / Other", "pill": "MULTI", "color": "#6F6E69"},
+    }
+
+    totals: dict[str, dict[str, Any]] = defaultdict(
+        lambda: {
+            "athletes": set(),
+            "proposals": set(),
+            "usdc": 0.0,
+            "eth": 0.0,
+            "usd_equiv": 0.0,
+            "recipient_totals": defaultdict(float),
+        }
+    )
+
+    for record in spend_records:
+        archive_id = str(record.get("archive_id") or "")
+        tag = tag_map.get(archive_id, {})
+        category = tag.get("semantic_category") or tag.get("primary_category") or record.get("category")
+        if category != "athletes_riders":
+            continue
+        sport = str(tag.get("sport") or record.get("sport") or "multi").lower()
+        if sport not in palette:
+            sport = "multi"
+
+        bucket = totals[sport]
+        recipient = normalize_address(record.get("recipient_address"))
+        if recipient:
+            bucket["athletes"].add(recipient)
+        if archive_id:
+            bucket["proposals"].add(archive_id)
+        symbol = str(record.get("asset_symbol") or "").upper()
+        amount = number_or_zero(record.get("amount"))
+        if symbol == "USDC":
+            bucket["usdc"] += amount
+        elif symbol == "ETH":
+            bucket["eth"] += amount
+        usd = usd_value_from_spend(record)
+        bucket["usd_equiv"] += usd
+        recipient_name = record.get("recipient_name") or record.get("recipient_display_name") or short_address(recipient)
+        bucket["recipient_totals"][str(recipient_name)] += usd
+
+    rows = []
+    for sport, values in totals.items():
+        if values["usd_equiv"] <= 0:
+            continue
+        top_recipient = "—"
+        if values["recipient_totals"]:
+            top_recipient = max(values["recipient_totals"].items(), key=lambda item: item[1])[0]
+        rows.append(
+            {
+                "sport": sport,
+                "pill": palette[sport]["pill"],
+                "label": palette[sport]["label"],
+                "color": palette[sport]["color"],
+                "athletes": len(values["athletes"]),
+                "proposals": len(values["proposals"]),
+                "usdc": round(values["usdc"], 2),
+                "eth": round(values["eth"], 4),
+                "usd_equiv": round(values["usd_equiv"], 2),
+                "top_recipient": top_recipient,
+            }
+        )
+
+    rows.sort(key=lambda row: -number_or_zero(row.get("usd_equiv")))
+    total_usd = sum(number_or_zero(row.get("usd_equiv")) for row in rows)
+    for row in rows:
+        row["pct"] = round((number_or_zero(row.get("usd_equiv")) / total_usd) * 100) if total_usd else 0
+
+    return {
+        "dataset": "sport_funding",
+        "as_of": analytics_as_of,
+        "version": 1,
+        "rows": rows,
+        "total_usd": round(total_usd, 2),
+    }
 
 
 def scrape_coingecko_historical_price(coin_id: str, date_key: str) -> dict[str, Any] | None:
@@ -1500,9 +1700,18 @@ def build_dao_metrics(
     nft_records: list[dict[str, Any]],
     treasury: dict[str, Any],
     project_updates: dict[str, Any],
+    proposal_tags: dict[str, Any] = None,
 ) -> dict[str, Any]:
     people_records = people["records"]
     proposal_status_counts = Counter(record["status"] for record in archive["records"])
+    
+    proposal_category_counts = Counter()
+    if proposal_tags:
+        tag_map = {t["archive_id"]: t.get("semantic_category") or "uncategorized" for t in proposal_tags.get("records", [])}
+        for record in archive["records"]:
+            cat = tag_map.get(record["archive_id"], "uncategorized")
+            proposal_category_counts[cat] += 1
+
     as_of_dt = parse_datetime(archive["as_of"]) or datetime.now(timezone.utc)
     by_30d = as_of_dt - timedelta(days=30)
 
@@ -1636,12 +1845,24 @@ def build_dao_metrics(
         "days_since_last_payout": max(0, (as_of_dt.date() - max(payout_event_days).date()).days) if payout_event_days else None,
         "days_since_last_delivery": max(0, (as_of_dt.date() - max(delivery_event_days).date()).days) if delivery_event_days else None,
         "proposal_status_counts": dict(sorted(proposal_status_counts.items())),
+        "proposal_category_counts": dict(sorted(proposal_category_counts.items(), key=lambda item: -item[1])),
     }
+
+    treasury_balance_usd = number_or_zero(treasury["overview"].get("treasury_page_total_value_usd"))
+    monthly_burn_usd = estimate_monthly_burn(spend_records)
+    runway_months = round(treasury_balance_usd / monthly_burn_usd) if monthly_burn_usd > 0 else 0
+    projected_zero_date = (
+        (as_of_dt + timedelta(days=runway_months * 30)).strftime("%Y-%m") if runway_months > 0 else None
+    )
 
     return {
         "dataset": "dao_metrics",
         "as_of": archive["as_of"],
         "version": 1,
+        "treasury_balance_usd": round(treasury_balance_usd, 2),
+        "monthly_burn_usd": round(monthly_burn_usd, 2),
+        "runway_months": runway_months,
+        "projected_zero_date": projected_zero_date,
         "overview": overview,
         "treasury": {
             "wallet_address": treasury["wallet"]["address"],
@@ -2665,6 +2886,7 @@ def main() -> int:
         nft_records=nft_records,
         treasury=treasury,
         project_updates=project_updates,
+        proposal_tags=proposal_tags,
     )
     timeline_events = build_timeline_events(
         archive=archive,
@@ -2770,6 +2992,23 @@ def main() -> int:
         contracts=contracts,
         analytics_as_of=analytics_as_of,
     )
+    sankey_impact = build_semantic_sankey(
+        spend_records=spend_records,
+        proposal_tags=proposal_tags,
+        mode="impact",
+        analytics_as_of=analytics_as_of,
+    )
+    sankey_workstream = build_semantic_sankey(
+        spend_records=spend_records,
+        proposal_tags=proposal_tags,
+        mode="workstream",
+        analytics_as_of=analytics_as_of,
+    )
+    sport_funding = build_sport_funding(
+        spend_records=spend_records,
+        proposal_tags=proposal_tags,
+        analytics_as_of=analytics_as_of,
+    )
 
     for payload in (
         people,
@@ -2812,6 +3051,9 @@ def main() -> int:
     write_json("person_reconciliation", person_reconciliation)
     write_json("contract_reconciliation", contract_reconciliation)
     write_json("treasury_reconciliation", treasury_reconciliation)
+    write_json("sankey_impact", sankey_impact)
+    write_json("sankey_workstream", sankey_workstream)
+    write_json("sport_funding", sport_funding)
     return 0
 
 

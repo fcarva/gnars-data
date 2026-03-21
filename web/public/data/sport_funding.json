@@ -1,0 +1,21 @@
+{
+  "dataset": "sport_funding",
+  "as_of": "2026-03-20T20:14:44.603849Z",
+  "version": 1,
+  "rows": [
+    {
+      "sport": "multi",
+      "pill": "MULTI",
+      "label": "Multi / Other",
+      "color": "#6F6E69",
+      "athletes": 2,
+      "proposals": 2,
+      "usdc": 4070.0,
+      "eth": 0.0,
+      "usd_equiv": 4070.0,
+      "top_recipient": "0x8d2a...b252",
+      "pct": 100
+    }
+  ],
+  "total_usd": 4070.0
+}

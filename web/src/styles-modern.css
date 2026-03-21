@@ -441,6 +441,7 @@ textarea:focus {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background: #FFFCF0;
 }
 
 .feed-main,
@@ -449,6 +450,11 @@ textarea:focus {
 .analytics-dashboard {
   width: min(100%, 1400px);
   margin: 0 auto;
+}
+
+.feed-main,
+.analytics-dashboard {
+  background: #FFFCF0;
 }
 
 .feed-header {
@@ -520,7 +526,7 @@ textarea:focus {
 
 .metrics-bar {
   border-bottom: 1px solid var(--line);
-  background: color-mix(in srgb, var(--surface) 65%, transparent);
+  background: #F2F0E5;
 }
 
 .metrics-bar-inner {
@@ -671,10 +677,11 @@ textarea:focus {
 .analytics-panel {
   border: 1px solid var(--line);
   border-radius: var(--radius-tight);
-  background: color-mix(in srgb, var(--surface) 88%, transparent);
+  background: #FFFCF0;
 }
 
 .analytics-overview-card {
+  background: #F2F0E5;
   padding: 10px;
 }
 
@@ -717,7 +724,7 @@ textarea:focus {
   padding: 10px;
   border: 1px solid var(--line);
   border-radius: var(--radius-tight);
-  background: color-mix(in srgb, var(--surface) 96%, transparent);
+  background: #FFFCF0;
 }
 
 .analytics-timeline-item:hover {
@@ -992,6 +999,83 @@ textarea:focus {
   gap: 6px;
 }
 
+.at {
+  border-collapse: collapse;
+}
+
+.at th,
+.at td {
+  padding: 8px 6px;
+  border-bottom: 1px solid #ece9dc;
+  font-size: 11px;
+}
+
+.at th {
+  color: #6f6e69;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.bar-bg {
+  border-radius: 999px;
+  background: #e6e4d9;
+  overflow: hidden;
+}
+
+.bar-fg {
+  height: 100%;
+  border-radius: 999px;
+}
+
+.pill.p-sk {
+  background: #e6f6f4;
+  border-color: #8bd0ca;
+  color: #116c64;
+}
+
+.pill.p-su {
+  background: #e9f3fc;
+  border-color: #9ac5ee;
+  color: #235f97;
+}
+
+.pill.p-bm {
+  background: #fbeed9;
+  border-color: #e0b26a;
+  color: #8f5e13;
+}
+
+.pill.p-sn {
+  background: #eef0f5;
+  border-color: #b8beca;
+  color: #596172;
+}
+
+.pill.p-mx {
+  background: #f3efe7;
+  border-color: #cbc3b5;
+  color: #665f53;
+}
+
+.skt {
+  border: 1px solid #dad7c9;
+  background: #f7f4e8;
+  color: #575653;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  padding: 5px 9px;
+  cursor: pointer;
+}
+
+.skt.on {
+  border-color: #282726;
+  background: #282726;
+  color: #fffcef;
+}
+
 .analytics-table-value,
 .analytics-bar-value {
   color: var(--text);
@@ -1121,3 +1205,6 @@ textarea:focus {
     display: inline;
   }
 }
+
+.recharts-sankey-node text { fill: var(--color-tx-strong) !important; font-size: 11px !important; }
+

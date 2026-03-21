@@ -65,7 +65,10 @@
       "primary_recipients": [],
       "editorial_labels": [
         "media",
-        "branding"
+        "branding",
+        "content",
+        "media-distribution",
+        "dao-ops"
       ],
       "status_labels": [
         "active",
@@ -211,7 +214,9 @@
       ],
       "primary_recipients": [],
       "editorial_labels": [
-        "operations"
+        "operations",
+        "dao-ops",
+        "reporting"
       ],
       "status_labels": [
         "succeeded"
@@ -342,7 +347,8 @@
         "0x2581...f89f"
       ],
       "editorial_labels": [
-        "software"
+        "software",
+        "athletes"
       ],
       "status_labels": [
         "executed"
@@ -449,7 +455,7 @@
       "is_active": false,
       "is_terminal": true,
       "outcome_group": "defeated",
-      "category": "Software",
+      "category": "Governance",
       "summary_short": "Defeated | Summary This is Gami AI (ai.gami.eth), an autonomous agent operating on behalf of Gami, founder of Gnars DAO",
       "requested_total_display": "No direct spend",
       "requested_budget_display": "No direct spend",
@@ -471,8 +477,9 @@
       ],
       "primary_recipients": [],
       "editorial_labels": [
-        "software",
-        "tech"
+        "governance",
+        "tech",
+        "governance-process"
       ],
       "status_labels": [
         "defeated"
@@ -482,8 +489,7 @@
         "treasury-policy"
       ],
       "relationship_labels": [
-        "single-recipient",
-        "builder-linked"
+        "single-recipient"
       ],
       "platform_labels": [
         "gnars-com",
@@ -540,7 +546,7 @@
       "is_active": false,
       "is_terminal": true,
       "outcome_group": "cancelled",
-      "category": "Athlete Support",
+      "category": "Governance",
       "summary_short": "Cancelled |",
       "requested_total_display": "No direct spend",
       "requested_budget_display": "No direct spend",
@@ -562,9 +568,10 @@
       ],
       "primary_recipients": [],
       "editorial_labels": [
-        "athlete-support",
+        "governance",
         "branding",
-        "tech"
+        "tech",
+        "governance-process"
       ],
       "status_labels": [
         "cancelled"
@@ -574,8 +581,7 @@
         "treasury-policy"
       ],
       "relationship_labels": [
-        "single-recipient",
-        "athlete-linked"
+        "single-recipient"
       ],
       "platform_labels": [
         "gnars-com",
@@ -632,7 +638,7 @@
       "is_active": false,
       "is_terminal": true,
       "outcome_group": "cancelled",
-      "category": "Athlete Support",
+      "category": "Governance",
       "summary_short": "Cancelled |",
       "requested_total_display": "No direct spend",
       "requested_budget_display": "No direct spend",
@@ -654,7 +660,7 @@
       ],
       "primary_recipients": [],
       "editorial_labels": [
-        "athlete-support",
+        "governance",
         "branding",
         "tech"
       ],
@@ -666,8 +672,7 @@
         "treasury-policy"
       ],
       "relationship_labels": [
-        "single-recipient",
-        "athlete-linked"
+        "single-recipient"
       ],
       "platform_labels": [
         "gnars-com",
@@ -825,7 +830,7 @@
       "is_active": false,
       "is_terminal": true,
       "outcome_group": "defeated",
-      "category": "Media",
+      "category": "Events",
       "summary_short": "Game of Pam Gnars 2026 is an initiative conceived by Petterson Gomes, known in the skateboarding community as Pamtech, a pro...",
       "requested_total_display": "612 USDC",
       "requested_budget_display": "612 USDC",
@@ -849,7 +854,7 @@
       ],
       "primary_recipients": [],
       "editorial_labels": [
-        "media",
+        "events",
         "community"
       ],
       "status_labels": [
@@ -1087,7 +1092,7 @@
       "is_active": false,
       "is_terminal": true,
       "outcome_group": "executed",
-      "category": "Travel",
+      "category": "Events",
       "summary_short": "This Droposal (a proposal to mint Gnars media as canonical DAO NFTs) tells the story of Gnargentina tour, during the ¨Devco...",
       "requested_total_display": "No direct spend",
       "requested_budget_display": "No direct spend",
@@ -1112,7 +1117,7 @@
       ],
       "primary_recipients": [],
       "editorial_labels": [
-        "travel"
+        "events"
       ],
       "status_labels": [
         "executed"
@@ -1228,7 +1233,8 @@
       ],
       "primary_recipients": [],
       "editorial_labels": [
-        "travel"
+        "travel",
+        "athletes"
       ],
       "status_labels": [
         "defeated"
@@ -1339,7 +1345,9 @@
         "0x8d2a...b252"
       ],
       "editorial_labels": [
-        "media"
+        "media",
+        "irl",
+        "skate-culture"
       ],
       "status_labels": [
         "executed"
@@ -1809,7 +1817,7 @@
       "is_active": false,
       "is_terminal": true,
       "outcome_group": "executed",
-      "category": "Media",
+      "category": "Events",
       "summary_short": "Inaugurate a new Nounstacle installation in A...",
       "requested_total_display": "0.42 ETH",
       "requested_budget_display": "0.42 ETH",
@@ -1836,7 +1844,7 @@
         "7capas.eth"
       ],
       "editorial_labels": [
-        "media"
+        "events"
       ],
       "status_labels": [
         "executed"
@@ -2438,7 +2446,7 @@
       "is_active": false,
       "is_terminal": true,
       "outcome_group": "executed",
-      "category": "Software",
+      "category": "Events",
       "summary_short": "We propose allocating 1 ETH from Gnars DAO to co-host a Hacker House / Skate + Hacker Hub during Devconnect Buenos...",
       "requested_total_display": "1 ETH",
       "requested_budget_display": "1 ETH",
@@ -2463,7 +2471,9 @@
         "r4topunk"
       ],
       "editorial_labels": [
-        "software"
+        "events",
+        "irl",
+        "partner-ecosystem"
       ],
       "status_labels": [
         "executed"
@@ -2475,7 +2485,6 @@
       ],
       "relationship_labels": [
         "single-recipient",
-        "builder-linked",
         "media-proof"
       ],
       "platform_labels": [
@@ -2582,7 +2591,9 @@
       "primary_recipients": [],
       "editorial_labels": [
         "travel",
-        "branding"
+        "branding",
+        "content",
+        "skate-culture"
       ],
       "status_labels": [
         "executed"
@@ -2698,7 +2709,9 @@
         "0xe5f6...8beb"
       ],
       "editorial_labels": [
-        "media"
+        "media",
+        "content",
+        "media-distribution"
       ],
       "status_labels": [
         "executed"
@@ -3430,7 +3443,9 @@
         "0x41cb...be4a"
       ],
       "editorial_labels": [
-        "operations"
+        "operations",
+        "data",
+        "dao-ops"
       ],
       "status_labels": [
         "executed"
@@ -3524,7 +3539,7 @@
       "is_active": false,
       "is_terminal": true,
       "outcome_group": "executed",
-      "category": "Software",
+      "category": "Governance",
       "summary_short": "Executed",
       "requested_total_display": "360 USDC",
       "requested_budget_display": "360 USDC",
@@ -3549,8 +3564,9 @@
         "0x2581...f89f"
       ],
       "editorial_labels": [
-        "software",
-        "tech"
+        "governance",
+        "tech",
+        "treasury-ops"
       ],
       "status_labels": [
         "executed"
@@ -3562,7 +3578,6 @@
       ],
       "relationship_labels": [
         "single-recipient",
-        "builder-linked",
         "media-proof"
       ],
       "platform_labels": [

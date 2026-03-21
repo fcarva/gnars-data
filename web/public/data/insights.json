@@ -80,11 +80,11 @@
         },
         {
           "symbol": "ETH",
-          "amount": 6.52409
+          "amount": 6.10409
         }
       ],
-      "route_count": 37,
-      "proposal_count": 32
+      "route_count": 36,
+      "proposal_count": 31
     },
     {
       "category": "Events",
@@ -95,11 +95,11 @@
         },
         {
           "symbol": "ETH",
-          "amount": 1.11
+          "amount": 2.53
         }
       ],
-      "route_count": 4,
-      "proposal_count": 3
+      "route_count": 6,
+      "proposal_count": 5
     },
     {
       "category": "Travel",
@@ -144,26 +144,30 @@
       "totals_by_asset": [
         {
           "symbol": "USDC",
-          "amount": 22149.0
+          "amount": 21789.0
         },
         {
           "symbol": "ETH",
-          "amount": 1.00026671
+          "amount": 0.00026671
         }
       ],
-      "route_count": 7,
-      "proposal_count": 7
+      "route_count": 5,
+      "proposal_count": 5
     },
     {
       "category": "Governance",
       "totals_by_asset": [
         {
+          "symbol": "USDC",
+          "amount": 360.0
+        },
+        {
           "symbol": "ETH",
           "amount": 0.4
         }
       ],
-      "route_count": 2,
-      "proposal_count": 1
+      "route_count": 3,
+      "proposal_count": 2
     }
   ],
   "proposal_status_breakdown": [
@@ -201,39 +205,39 @@
     },
     {
       "category": "Media",
-      "proposal_count": 103,
-      "successful_count": 77,
-      "success_rate_pct": 74.76
+      "proposal_count": 101,
+      "successful_count": 76,
+      "success_rate_pct": 75.25
     },
     {
       "category": "Events",
-      "proposal_count": 24,
-      "successful_count": 17,
-      "success_rate_pct": 70.83
+      "proposal_count": 28,
+      "successful_count": 20,
+      "success_rate_pct": 71.43
     },
     {
       "category": "Travel",
-      "proposal_count": 27,
-      "successful_count": 23,
-      "success_rate_pct": 85.19
+      "proposal_count": 26,
+      "successful_count": 22,
+      "success_rate_pct": 84.62
     },
     {
       "category": "Athlete Support",
-      "proposal_count": 23,
+      "proposal_count": 21,
       "successful_count": 17,
-      "success_rate_pct": 73.91
+      "success_rate_pct": 80.95
     },
     {
       "category": "Software",
-      "proposal_count": 16,
-      "successful_count": 14,
-      "success_rate_pct": 87.5
+      "proposal_count": 13,
+      "successful_count": 12,
+      "success_rate_pct": 92.31
     },
     {
       "category": "Governance",
-      "proposal_count": 7,
-      "successful_count": 5,
-      "success_rate_pct": 71.43
+      "proposal_count": 11,
+      "successful_count": 6,
+      "success_rate_pct": 54.55
     },
     {
       "category": "Other",

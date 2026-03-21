@@ -2,6 +2,37 @@ import type { AssetAmount } from "../types";
 
 const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
+export const fmtUSD = (v: number | null): string => {
+  if (v == null) return "—";
+  if (v >= 1_000_000) return "$" + (v / 1_000_000).toFixed(2) + "M";
+  if (v >= 1_000) return "$" + (v / 1_000).toFixed(1) + "k";
+  return "$" + Math.round(v);
+};
+
+export const fmtUSDFull = (v: number): string =>
+  "$" + v.toLocaleString("en-US", { maximumFractionDigits: 0 });
+
+export const fmtDate = (iso: string): string => {
+  const dt = new Date(iso + "T00:00:00");
+  if (Number.isNaN(dt.getTime())) return iso;
+  const mo = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  return mo[dt.getMonth()] + " '" + String(dt.getFullYear()).slice(2);
+};
+
+export const fmtRelative = (iso: string): string => {
+  const diff = Date.now() - new Date(iso).getTime();
+  if (Number.isNaN(diff)) return iso;
+  const days = Math.floor(diff / 86_400_000);
+  if (days === 0) return "today";
+  if (days === 1) return "yesterday";
+  if (days < 30) return days + " days ago";
+  if (days < 365) return Math.floor(days / 30) + " mo ago";
+  return Math.floor(days / 365) + " yr ago";
+};
+
+export const fmtETH = (v: number | null): string =>
+  v == null || v === 0 ? "—" : v.toFixed(2) + " ETH";
+
 export function formatDate(value: string | null | undefined): string {
   if (!value) {
     return "Unknown date";

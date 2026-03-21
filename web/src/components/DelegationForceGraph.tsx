@@ -50,18 +50,18 @@ export function DelegationForceGraph({ data }: DelegationForceGraphProps) {
       }));
 
     const simulation = forceSimulation(nodes)
-      .force("charge", forceManyBody().strength(-55))
+      .force("charge", forceManyBody().strength(-120))
       .force("center", forceCenter(width / 2, height / 2))
       .force(
         "link",
         forceLink<SimNode, SimLink>(nodes.length > 1 ? links : [])
           .id((d) => d.id)
-          .distance(42)
-          .strength(0.26)
+          .distance(70)
+          .strength(0.3)
       )
       .stop();
 
-    for (let i = 0; i < 180; i += 1) {
+    for (let i = 0; i < 300; i += 1) {
       simulation.tick();
     }
 

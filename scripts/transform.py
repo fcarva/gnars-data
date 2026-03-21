@@ -387,14 +387,21 @@ def build_efficiency(
         vp = to_float(row.get("voting_power"))
         velocity = spend - previous_spend
         previous_spend = spend
+        
+        # Determine valid cost_per_vote and cost_per_voting_power.
+        # Null if no executed spend or no proposals
+        has_proposals = int(row.get("proposal_count") or 0) > 0
+        c_p_v = round(spend / votes, 2) if (votes and spend > 0) else None
+        c_p_vp = round(spend / vp, 6) if (vp and spend > 0) else None
+
         monthly_rows.append(
             {
                 "month": month,
                 "proposal_count": int(row.get("proposal_count") or 0),
                 "executed_spend_usd": round(spend, 2),
-                "cost_per_vote_usd": round(spend / votes, 2) if votes else None,
-                "cost_per_voting_power_usd": round(spend / vp, 6) if vp else None,
-                "spend_velocity_usd": round(velocity, 2),
+                "cost_per_vote_usd": c_p_v if has_proposals else None,
+                "cost_per_voting_power_usd": c_p_vp if has_proposals else None,
+                "spend_velocity_usd": round(max(0, spend), 2), # Actually spend velocity is just spend in that month, no negative values
             }
         )
 

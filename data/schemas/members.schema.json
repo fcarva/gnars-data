@@ -129,6 +129,9 @@
           },
           "notes": {
             "type": "string"
+          },
+          "sport": {
+            "enum": ["SK8", "SURF", "SNOW", "BMX", "MX", "OTHER"]
           }
         },
         "additionalProperties": false

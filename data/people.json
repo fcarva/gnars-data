@@ -2366,9 +2366,12 @@
         }
       ],
       "proposal_editorial_labels": [
+        "events",
         "media",
         "travel",
-        "branding"
+        "branding",
+        "content",
+        "skate-culture"
       ],
       "treasury_totals": [
         {
@@ -4182,7 +4185,9 @@
         }
       ],
       "proposal_editorial_labels": [
-        "media"
+        "media",
+        "irl",
+        "skate-culture"
       ],
       "treasury_totals": [
         {
@@ -4762,8 +4767,11 @@
       ],
       "proposal_editorial_labels": [
         "software",
+        "athletes",
         "athlete-support",
-        "tech"
+        "governance",
+        "tech",
+        "treasury-ops"
       ],
       "treasury_totals": [
         {
@@ -5868,8 +5876,8 @@
       "roles": [
         "operations",
         "web development",
-        "data pipelines",
-        "web development, data pipelines"
+        "web development, data pipelines",
+        "data pipelines"
       ],
       "tags": [
         "athlete",
@@ -6183,10 +6191,15 @@
       ],
       "proposal_editorial_labels": [
         "operations",
+        "dao-ops",
+        "reporting",
         "software",
         "tech",
         "community",
-        "other"
+        "other",
+        "events",
+        "irl",
+        "partner-ecosystem"
       ],
       "treasury_totals": [
         {
@@ -10711,6 +10724,9 @@
       "proposal_editorial_labels": [
         "media",
         "branding",
+        "content",
+        "media-distribution",
+        "dao-ops",
         "documentary"
       ],
       "treasury_totals": [],
@@ -10905,7 +10921,7 @@
         }
       ],
       "proposal_editorial_labels": [
-        "media",
+        "events",
         "community"
       ],
       "treasury_totals": [],
@@ -12040,7 +12056,8 @@
         }
       ],
       "proposal_editorial_labels": [
-        "travel"
+        "travel",
+        "athletes"
       ],
       "treasury_totals": [],
       "project_count": 0
@@ -19136,7 +19153,7 @@
         }
       ],
       "proposal_editorial_labels": [
-        "travel",
+        "events",
         "media",
         "onboarding",
         "community"
@@ -28732,10 +28749,10 @@
       "status": "active",
       "role": "community infrastructure, documentation, QA",
       "roles": [
-        "operations",
         "documentation",
+        "community infrastructure, documentation, QA",
         "community infrastructure",
-        "community infrastructure, documentation, QA"
+        "operations"
       ],
       "tags": [
         "builder",
@@ -106140,6 +106157,8 @@
         "software",
         "travel",
         "operations",
+        "data",
+        "dao-ops",
         "athlete-support",
         "tech",
         "other",
@@ -111882,10 +111901,10 @@
       ],
       "media_references": [],
       "proposal_editorial_labels": [
-        "athlete-support",
+        "governance",
         "branding",
         "tech",
-        "software"
+        "governance-process"
       ],
       "treasury_totals": [],
       "project_count": 0

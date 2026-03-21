@@ -1,0 +1,57 @@
+{
+  "dataset": "sankey_impact",
+  "mode": "impact",
+  "as_of": "2026-03-20T20:14:44.603849Z",
+  "version": 1,
+  "cats": [
+    {
+      "id": "irl_events",
+      "label": "Events IRL",
+      "val": 5.9,
+      "pct": 29,
+      "col": "#879A39",
+      "rec": "Event organizers"
+    },
+    {
+      "id": "workstream_media",
+      "label": "Media",
+      "val": 5.2,
+      "pct": 25,
+      "col": "#8B7EC8",
+      "rec": "Content creators"
+    },
+    {
+      "id": "public_goods",
+      "label": "Public Goods",
+      "val": 5.1,
+      "pct": 25,
+      "col": "#6F6E69",
+      "rec": "Community"
+    },
+    {
+      "id": "athletes_riders",
+      "label": "Athletes & Riders",
+      "val": 4.1,
+      "pct": 20,
+      "col": "#3AA99F",
+      "rec": "Riders & athletes"
+    },
+    {
+      "id": "governance_policy",
+      "label": "Governance",
+      "val": 0.4,
+      "pct": 2,
+      "col": "#403E3C",
+      "rec": "DAO governance"
+    },
+    {
+      "id": "workstream_ops",
+      "label": "Operations",
+      "val": 0.0,
+      "pct": 0,
+      "col": "#DA702C",
+      "rec": "Core contributors"
+    }
+  ],
+  "total_k": 20.6
+}

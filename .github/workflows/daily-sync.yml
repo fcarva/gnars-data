@@ -21,6 +21,9 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Install Python dependencies
+        run: pip install google-genai pydantic
+
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
@@ -47,6 +50,28 @@ jobs:
 
       - name: Transform layered analytics
         run: python scripts/transform.py
+
+      - name: Phase 0 - Audit gaps
+        run: python scripts/audit_gaps.py
+
+      - name: Phase 1 - Enrich members
+        run: python scripts/enrich_members.py
+
+      - name: Phase 2 - Classify proposals (Gemini incremental)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          if [ -z "$GEMINI_API_KEY" ]; then
+            echo "GEMINI_API_KEY not set. Skipping proposal classification."
+          else
+            python scripts/agent_classify.py
+          fi
+
+      - name: Phase 3 - Enrich spend ledger
+        run: python scripts/enrich_spend.py
+
+      - name: Phase 4 - Derive analytics datasets
+        run: python scripts/derive_analytics.py
 
       - name: Validate datasets
         run: python scripts/validate_data.py
