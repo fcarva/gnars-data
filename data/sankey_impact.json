@@ -7,59 +7,59 @@
     {
       "id": "athletes_riders",
       "label": "Athletes & Riders",
-      "val": 73.6,
-      "pct": 49,
+      "val": 90.9,
+      "pct": 35,
       "col": "#3AA99F",
       "rec": "Riders & athletes"
+    },
+    {
+      "id": "irl_events",
+      "label": "Events IRL",
+      "val": 40.3,
+      "pct": 16,
+      "col": "#879A39",
+      "rec": "Event organizers"
     },
     {
       "id": "workstream_media",
       "label": "Media",
       "val": 39.4,
-      "pct": 26,
+      "pct": 15,
       "col": "#8B7EC8",
       "rec": "Content creators"
     },
     {
-      "id": "workstream_dev",
-      "label": "Dev",
-      "val": 20.3,
-      "pct": 14,
-      "col": "#4385BE",
-      "rec": "Builders"
-    },
-    {
-      "id": "irl_events",
-      "label": "Events IRL",
-      "val": 11.3,
-      "pct": 8,
-      "col": "#879A39",
-      "rec": "Event organizers"
-    },
-    {
-      "id": "public_goods",
-      "label": "Public Goods",
-      "val": 5.1,
-      "pct": 3,
-      "col": "#6F6E69",
-      "rec": "Community"
-    },
-    {
       "id": "governance_policy",
       "label": "Governance",
-      "val": 0.4,
-      "pct": 0,
+      "val": 37.1,
+      "pct": 14,
       "col": "#403E3C",
       "rec": "DAO governance"
     },
     {
       "id": "workstream_ops",
       "label": "Operations",
-      "val": 0.2,
-      "pct": 0,
+      "val": 26.3,
+      "pct": 10,
       "col": "#DA702C",
       "rec": "Core contributors"
+    },
+    {
+      "id": "workstream_dev",
+      "label": "Dev",
+      "val": 20.3,
+      "pct": 8,
+      "col": "#4385BE",
+      "rec": "Builders"
+    },
+    {
+      "id": "public_goods",
+      "label": "Public Goods",
+      "val": 5.1,
+      "pct": 2,
+      "col": "#6F6E69",
+      "rec": "Community"
     }
   ],
-  "total_k": 150.3
+  "total_k": 259.4
 }

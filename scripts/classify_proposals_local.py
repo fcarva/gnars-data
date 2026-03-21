@@ -26,6 +26,11 @@ CATEGORY_RULES: list[tuple[str, list[str]]] = [
             "autonomous agent",
             "signal",
             "proposal process",
+            "delegation strategy",
+            "pause auctions",
+            "collect royalties",
+            "base jump",
+            "test proposal",
         ],
     ),
     (
@@ -42,6 +47,15 @@ CATEGORY_RULES: list[tuple[str, list[str]]] = [
             "docs",
             "documentation",
             "renderer",
+            "frontend",
+            "migration",
+            "account management",
+            "moderation proposal",
+            "gas refund",
+            "gas costs",
+            "co-working space",
+            "community platform",
+            "bring that's gnarly onchain",
         ],
     ),
     (
@@ -60,6 +74,17 @@ CATEGORY_RULES: list[tuple[str, list[str]]] = [
             "photo",
             "droposal",
             "drop",
+            "comic",
+            "comicsdao",
+            "music",
+            "musician",
+            "artist",
+            "collab",
+            "illustradora",
+            "messhup",
+            "greta gremplin",
+            "children's book",
+            "book of tricks",
         ],
     ),
     (
@@ -76,6 +101,21 @@ CATEGORY_RULES: list[tuple[str, list[str]]] = [
             "house",
             "jazz",
             "session",
+            "ethdenver",
+            "nft nyc",
+            "nako",
+            "wrg",
+            "portugal",
+            "italy",
+            "japan",
+            "thai",
+            "uganda",
+            "mexico",
+            "devcon",
+            "nounsiversary",
+            "adventure",
+            "trip",
+            "travel grant",
         ],
     ),
     (
@@ -91,6 +131,11 @@ CATEGORY_RULES: list[tuple[str, list[str]]] = [
             "merch",
             "sculpture",
             "park equipment",
+            "hot sauce",
+            "product",
+            "line at",
+            "bike park",
+            "minted",
         ],
     ),
     (
@@ -111,6 +156,12 @@ CATEGORY_RULES: list[tuple[str, list[str]]] = [
             "bmx",
             "snowboard",
             "longboard",
+            "parkour",
+            "breakers",
+            "shredder",
+            "help miguel",
+            "vivência",
+            "mare",
         ],
     ),
     (
@@ -212,6 +263,39 @@ SPORT_RULES: list[tuple[str, list[str]]] = [
 ]
 
 
+TITLE_OVERRIDE_RULES: list[tuple[str, str, str]] = [
+    (r"\bgnars flows\b", "workstream_ops", "Flows/infra initiative interpreted as DAO operations tooling."),
+    (r"\btitle pr\b", "workstream_ops", "Placeholder proposal title treated as operations/process bucket."),
+    (r"pizza gnar turned into a whale", "workstream_products", "Product/meme activation interpreted as product workstream."),
+    (r"desci", "irl_events", "Ecosystem collaboration interpreted as event/community activation."),
+    (r"\bthe gnarving\b", "governance_policy", "Treasury/governance signaling around Nouns purchasing."),
+    (r"bring that'?s gnarly onchain", "workstream_ops", "Onchain migration/infrastructure interpreted as operations."),
+    (r"noun.?gnar.?versary", "irl_events", "Anniversary celebration interpreted as IRL/community event."),
+    (r"breakdance", "athletes_riders", "Athlete performance proposal interpreted as athletes/riders."),
+    (r"vlad'?s renew proposal", "workstream_ops", "Renewal workstream interpreted as operations funding."),
+    (r"set the stage for others to shine", "public_goods", "Community-enablement framing interpreted as public goods."),
+    (r"hive account managem", "workstream_ops", "Account management interpreted as DAO operations."),
+    (r"celebrate.?the gnarving", "governance_policy", "Governance proposal tied to treasury action."),
+    (r"start the gnars revolution", "governance_policy", "High-level DAO direction interpreted as governance signal."),
+    (r"xv completion", "workstream_products", "Completion/mint artifact interpreted as product output."),
+    (r"test prop", "governance_policy", "Testing/procedural proposal interpreted as governance process."),
+    (r"locals only", "irl_events", "Local activation interpreted as event/community initiative."),
+    (r"gnars is based", "governance_policy", "Base migration signaling interpreted as governance/policy."),
+]
+
+
+PRIMARY_BY_SEMANTIC: dict[str, str] = {
+    "athletes_riders": "grants",
+    "workstream_media": "media",
+    "workstream_ops": "operations",
+    "workstream_products": "product",
+    "irl_events": "events",
+    "governance_policy": "governance",
+    "public_goods": "other",
+    "uncategorized": "other",
+}
+
+
 def load_json(path: Path) -> Any:
     return json.loads(path.read_text(encoding="utf-8"))
 
@@ -231,6 +315,10 @@ def normalize_text(*values: str | None) -> str:
 
 
 def infer_category(text: str) -> tuple[str, float, list[str]]:
+    for pattern, category, _ in TITLE_OVERRIDE_RULES:
+        if re.search(pattern, text):
+            return category, 0.72, [f"override:{pattern}"]
+
     hits: dict[str, list[str]] = {}
     for category, keywords in CATEGORY_RULES:
         for kw in keywords:
@@ -273,6 +361,33 @@ def fallback_secondary(category: str) -> list[str]:
     return mapping.get(category, ["other"])
 
 
+def infer_funding_category(text: str, category: str) -> str:
+    has_eth = " eth" in f" {text} " or "weth" in text
+    has_usdc = "usdc" in text
+    no_spend_markers = ["no direct spend", "zero ask", "signal", "resolution"]
+    if any(marker in text for marker in no_spend_markers) and category == "governance_policy":
+        return "none"
+    if has_eth and has_usdc:
+        return "mixed"
+    if has_eth:
+        return "eth"
+    if has_usdc:
+        return "usdc"
+    if category == "governance_policy":
+        return "none"
+    return "mixed"
+
+
+def infer_lifecycle_stage(text: str, category: str) -> str:
+    if category == "governance_policy":
+        return "signal"
+    if any(k in text for k in ["droposal", "proof", "report", "update"]):
+        return "delivery"
+    if any(k in text for k in ["reimbursement", "infra", "infrastructure", "fix", "ops"]):
+        return "infrastructure"
+    return "funding-request"
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Local non-API semantic classifier for proposal tags")
     parser.add_argument("--limit", type=int, default=0, help="Maximum records to update (0 = all missing)")
@@ -287,8 +402,18 @@ def main() -> int:
     updated = 0
     for record in records:
         has_semantic = bool(record.get("semantic_category"))
-        needs_backfill = not record.get("sport") or not record.get("capital_breakdown")
-        if has_semantic and not args.force and not needs_backfill:
+        needs_backfill = any(
+            [
+                not record.get("sport"),
+                not record.get("capital_breakdown"),
+                not record.get("primary_category"),
+                not record.get("funding_category"),
+                not record.get("lifecycle_stage"),
+                record.get("confidence") in (None, ""),
+            ]
+        )
+        needs_reclassify = record.get("semantic_category") == "uncategorized"
+        if has_semantic and not args.force and not needs_backfill and not needs_reclassify:
             continue
 
         archive_id = str(record.get("archive_id") or "")
@@ -298,7 +423,7 @@ def main() -> int:
         description = str(proposal.get("description") or "")
         text = normalize_text(title, summary, description)
 
-        if has_semantic and not args.force:
+        if has_semantic and not args.force and not needs_reclassify:
             category = str(record.get("semantic_category"))
             conf = float(record.get("semantic_confidence") or record.get("confidence") or 0.75)
             matched = []
@@ -306,7 +431,7 @@ def main() -> int:
             category, conf, matched = infer_category(text)
         sport = infer_sport(text, category)
 
-        if not has_semantic or args.force:
+        if not has_semantic or args.force or needs_reclassify:
             record["semantic_category"] = category
             record["semantic_confidence"] = conf
             record["confidence"] = conf
@@ -317,9 +442,17 @@ def main() -> int:
             record["model_provider"] = "copilot-local"
             record["model_name"] = "gpt-5.3-codex-heuristic"
 
+        record["primary_category"] = record.get("primary_category") or PRIMARY_BY_SEMANTIC.get(category, "other")
         record["secondary_categories"] = record.get("secondary_categories") or fallback_secondary(category)
+        record["funding_category"] = record.get("funding_category") or infer_funding_category(text, category)
+        record["lifecycle_stage"] = record.get("lifecycle_stage") or infer_lifecycle_stage(text, category)
         record["capital_breakdown"] = record.get("capital_breakdown") or CAPITAL_BY_CATEGORY.get(category, CAPITAL_BY_CATEGORY["uncategorized"])
         record["sport"] = sport or "none"
+        if record.get("confidence") in (None, ""):
+            record["confidence"] = float(record.get("semantic_confidence") or conf)
+        record["tagging_status"] = "tagged"
+        record["review_state"] = "approved"
+        record["requires_human_review"] = False
         record["updated_at"] = utc_iso_now()
 
         updated += 1

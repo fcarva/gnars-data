@@ -1107,6 +1107,7 @@
         "media",
         "onboarding",
         "products",
+        "events",
         "travel",
         "tech",
         "athletes"
@@ -2899,15 +2900,14 @@
         }
       ],
       "proposal_editorial_labels": [
-        "travel",
+        "governance",
         "events",
         "products",
         "operations",
         "dao-ops",
-        "media",
         "athletes",
-        "tech",
-        "governance"
+        "media",
+        "tech"
       ],
       "treasury_totals": [
         {
@@ -4399,7 +4399,7 @@
         }
       ],
       "proposal_editorial_labels": [
-        "media"
+        "events"
       ],
       "treasury_totals": [
         {
@@ -5892,9 +5892,9 @@
       "status": "active",
       "role": "web development, data pipelines",
       "roles": [
+        "web development, data pipelines",
         "operations",
         "data pipelines",
-        "web development, data pipelines",
         "web development"
       ],
       "tags": [
@@ -6211,10 +6211,8 @@
         "operations",
         "dao-ops",
         "reporting",
-        "software",
         "tech",
         "community",
-        "other",
         "events",
         "irl",
         "partner-ecosystem"
@@ -6433,8 +6431,7 @@
         }
       ],
       "proposal_editorial_labels": [
-        "media",
-        "athlete-support"
+        "operations"
       ],
       "treasury_totals": [
         {
@@ -6914,7 +6911,7 @@
         }
       ],
       "proposal_editorial_labels": [
-        "media"
+        "events"
       ],
       "treasury_totals": [
         {
@@ -9122,7 +9119,7 @@
         }
       ],
       "proposal_editorial_labels": [
-        "governance",
+        "operations",
         "tech",
         "events",
         "athletes",
@@ -9145,10 +9142,10 @@
       "status": "active",
       "role": "technical lead, AI infrastructure",
       "roles": [
-        "technical lead, AI infrastructure",
+        "AI infrastructure",
         "technical lead",
-        "operations",
-        "AI infrastructure"
+        "technical lead, AI infrastructure",
+        "operations"
       ],
       "tags": [
         "builder",
@@ -10132,8 +10129,7 @@
         }
       ],
       "proposal_editorial_labels": [
-        "events",
-        "media"
+        "events"
       ],
       "treasury_totals": [],
       "project_count": 0
@@ -10269,7 +10265,7 @@
       ],
       "media_references": [],
       "proposal_editorial_labels": [
-        "athlete-support"
+        "governance"
       ],
       "treasury_totals": [],
       "project_count": 0
@@ -10759,6 +10755,7 @@
         "content",
         "media-distribution",
         "dao-ops",
+        "events",
         "documentary"
       ],
       "treasury_totals": [],
@@ -11858,10 +11855,11 @@
         "media",
         "events",
         "contest",
+        "operations",
         "other",
         "content",
         "branding",
-        "operations"
+        "governance"
       ],
       "treasury_totals": [],
       "project_count": 0
@@ -15527,7 +15525,7 @@
       ],
       "media_references": [],
       "proposal_editorial_labels": [
-        "media"
+        "events"
       ],
       "treasury_totals": [],
       "project_count": 0
@@ -21396,7 +21394,7 @@
         }
       ],
       "proposal_editorial_labels": [
-        "software"
+        "governance"
       ],
       "treasury_totals": [],
       "project_count": 0
@@ -28801,10 +28799,10 @@
       "status": "active",
       "role": "community infrastructure, documentation, QA",
       "roles": [
-        "community infrastructure",
-        "operations",
         "documentation",
-        "community infrastructure, documentation, QA"
+        "community infrastructure, documentation, QA",
+        "operations",
+        "community infrastructure"
       ],
       "tags": [
         "builder",
@@ -29569,13 +29567,11 @@
         "events",
         "contest",
         "irl",
-        "media",
         "governance",
+        "media",
         "athletes",
         "software",
         "tech",
-        "travel",
-        "operations",
         "content"
       ],
       "treasury_totals": [],
@@ -47738,7 +47734,7 @@
       ],
       "proposal_editorial_labels": [
         "media",
-        "events"
+        "operations"
       ],
       "treasury_totals": [],
       "project_count": 0
@@ -87901,7 +87897,7 @@
         }
       ],
       "proposal_editorial_labels": [
-        "media"
+        "governance"
       ],
       "treasury_totals": [],
       "project_count": 0
@@ -107746,7 +107742,7 @@
       "proposal_editorial_labels": [
         "media",
         "content",
-        "athlete-support"
+        "operations"
       ],
       "treasury_totals": [],
       "project_count": 0
@@ -109998,7 +109994,7 @@
         }
       ],
       "proposal_editorial_labels": [
-        "media"
+        "events"
       ],
       "treasury_totals": [],
       "project_count": 0
@@ -120494,7 +120490,8 @@
       "proposal_editorial_labels": [
         "media",
         "onboarding",
-        "products"
+        "products",
+        "operations"
       ],
       "treasury_totals": [],
       "project_count": 0
@@ -121277,7 +121274,7 @@
         }
       ],
       "proposal_editorial_labels": [
-        "media"
+        "events"
       ],
       "treasury_totals": [],
       "project_count": 0

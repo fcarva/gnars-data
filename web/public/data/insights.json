@@ -57,15 +57,15 @@
         },
         {
           "symbol": "USDC",
-          "amount": 18450.0
+          "amount": 40919.0
         },
         {
           "symbol": "ETH",
-          "amount": 10.23730283
+          "amount": 1.4
         }
       ],
-      "route_count": 6,
-      "proposal_count": 6
+      "route_count": 11,
+      "proposal_count": 9
     },
     {
       "category": "Media",
@@ -80,30 +80,30 @@
         },
         {
           "symbol": "USDC",
-          "amount": 88254.0
+          "amount": 61604.0
         },
         {
           "symbol": "ETH",
-          "amount": 6.10409
+          "amount": 5.30409
         }
       ],
-      "route_count": 35,
-      "proposal_count": 30
+      "route_count": 30,
+      "proposal_count": 25
     },
     {
       "category": "Events",
       "totals_by_asset": [
         {
           "symbol": "USDC",
-          "amount": 9840.0
+          "amount": 36878.0
         },
         {
           "symbol": "ETH",
-          "amount": 2.53
+          "amount": 3.33
         }
       ],
-      "route_count": 7,
-      "proposal_count": 6
+      "route_count": 12,
+      "proposal_count": 11
     },
     {
       "category": "Travel",
@@ -114,45 +114,41 @@
         },
         {
           "symbol": "USDC",
-          "amount": 21958.0
+          "amount": 14070.0
         },
         {
           "symbol": "ETH",
           "amount": 1.0
         }
       ],
-      "route_count": 6,
-      "proposal_count": 4
+      "route_count": 5,
+      "proposal_count": 3
     },
     {
       "category": "Athlete Support",
       "totals_by_asset": [
         {
           "symbol": "USDC",
-          "amount": 10042.0
-        },
-        {
-          "symbol": "ETH",
-          "amount": 1.0
+          "amount": 2042.0
         }
       ],
-      "route_count": 3,
-      "proposal_count": 2
+      "route_count": 1,
+      "proposal_count": 1
     },
     {
       "category": "Software",
       "totals_by_asset": [
         {
           "symbol": "USDC",
-          "amount": 21789.0
+          "amount": 14820.0
         },
         {
           "symbol": "ETH",
           "amount": 0.00026671
         }
       ],
-      "route_count": 5,
-      "proposal_count": 5
+      "route_count": 4,
+      "proposal_count": 4
     },
     {
       "category": "Governance",
@@ -163,10 +159,10 @@
         },
         {
           "symbol": "ETH",
-          "amount": 0.4
+          "amount": 10.23730283
         }
       ],
-      "route_count": 3,
+      "route_count": 2,
       "proposal_count": 2
     }
   ],
@@ -199,51 +195,51 @@
   "proposal_success_by_category": [
     {
       "category": "Operations",
-      "proposal_count": 18,
-      "successful_count": 14,
-      "success_rate_pct": 77.78
+      "proposal_count": 25,
+      "successful_count": 17,
+      "success_rate_pct": 68.0
     },
     {
       "category": "Media",
-      "proposal_count": 103,
-      "successful_count": 79,
-      "success_rate_pct": 76.7
+      "proposal_count": 95,
+      "successful_count": 73,
+      "success_rate_pct": 76.84
     },
     {
       "category": "Events",
-      "proposal_count": 30,
-      "successful_count": 21,
-      "success_rate_pct": 70.0
+      "proposal_count": 39,
+      "successful_count": 30,
+      "success_rate_pct": 76.92
     },
     {
       "category": "Travel",
-      "proposal_count": 24,
-      "successful_count": 20,
-      "success_rate_pct": 83.33
+      "proposal_count": 15,
+      "successful_count": 12,
+      "success_rate_pct": 80.0
     },
     {
       "category": "Athlete Support",
-      "proposal_count": 20,
-      "successful_count": 16,
-      "success_rate_pct": 80.0
+      "proposal_count": 17,
+      "successful_count": 14,
+      "success_rate_pct": 82.35
     },
     {
       "category": "Software",
-      "proposal_count": 12,
-      "successful_count": 11,
-      "success_rate_pct": 91.67
+      "proposal_count": 10,
+      "successful_count": 10,
+      "success_rate_pct": 100.0
     },
     {
       "category": "Governance",
-      "proposal_count": 10,
-      "successful_count": 5,
-      "success_rate_pct": 50.0
+      "proposal_count": 19,
+      "successful_count": 12,
+      "success_rate_pct": 63.16
     },
     {
       "category": "Other",
-      "proposal_count": 5,
-      "successful_count": 4,
-      "success_rate_pct": 80.0
+      "proposal_count": 2,
+      "successful_count": 2,
+      "success_rate_pct": 100.0
     }
   ],
   "recipient_concentration": [

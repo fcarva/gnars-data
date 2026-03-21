@@ -3198,13 +3198,13 @@
       "is_active": false,
       "is_terminal": true,
       "outcome_group": "executed",
-      "category": "Media",
+      "category": "Governance",
       "summary_short": "Executed",
       "requested_total_display": "No direct spend",
       "requested_budget_display": "No direct spend",
       "routed_total_display": "No direct spend",
       "routed_budget_display": "No direct spend",
-      "proposal_type": "signal-only",
+      "proposal_type": "governance-change",
       "delivery_stage": "proof-linked",
       "proof_strength": "multi-proof",
       "lineage_strength": "adjacent",
@@ -3223,7 +3223,7 @@
       ],
       "primary_recipients": [],
       "editorial_labels": [
-        "media"
+        "governance"
       ],
       "status_labels": [
         "executed"
@@ -3316,13 +3316,13 @@
       "is_active": false,
       "is_terminal": true,
       "outcome_group": "cancelled",
-      "category": "Media",
+      "category": "Governance",
       "summary_short": "Cancelled",
       "requested_total_display": "No direct spend",
       "requested_budget_display": "No direct spend",
       "routed_total_display": "No direct spend",
       "routed_budget_display": "No direct spend",
-      "proposal_type": "signal-only",
+      "proposal_type": "governance-change",
       "delivery_stage": "pre-funding",
       "proof_strength": "multi-proof",
       "lineage_strength": "adjacent",
@@ -3341,7 +3341,7 @@
       ],
       "primary_recipients": [],
       "editorial_labels": [
-        "media"
+        "governance"
       ],
       "status_labels": [
         "cancelled"
@@ -4050,13 +4050,13 @@
       "is_active": false,
       "is_terminal": true,
       "outcome_group": "executed",
-      "category": "Athlete Support",
+      "category": "Operations",
       "summary_short": "Executed · 1.00 ETH allocated | rocketman and riderway propose to build out and launch Gnars Flows",
       "requested_total_display": "8,000 USDC + 1 ETH",
       "requested_budget_display": "8,000 USDC + 1 ETH",
       "routed_total_display": "8,000 USDC + 1 ETH",
       "routed_budget_display": "8,000 USDC + 1 ETH",
-      "proposal_type": "funding",
+      "proposal_type": "ops",
       "delivery_stage": "proof-linked",
       "proof_strength": "multi-proof",
       "lineage_strength": "adjacent",
@@ -4079,7 +4079,7 @@
         "rocketman21.eth"
       ],
       "editorial_labels": [
-        "athlete-support"
+        "operations"
       ],
       "status_labels": [
         "executed"
@@ -4092,7 +4092,7 @@
       ],
       "relationship_labels": [
         "multi-recipient",
-        "athlete-linked",
+        "operations-linked",
         "media-proof"
       ],
       "platform_labels": [
@@ -4992,13 +4992,13 @@
       "is_active": false,
       "is_terminal": true,
       "outcome_group": "cancelled",
-      "category": "Other",
+      "category": "Operations",
       "summary_short": "Cancelled",
       "requested_total_display": "0.0001 ETH",
       "requested_budget_display": "0.0001 ETH",
       "routed_total_display": "No direct spend",
       "routed_budget_display": "No direct spend",
-      "proposal_type": "funding",
+      "proposal_type": "ops",
       "delivery_stage": "pre-funding",
       "proof_strength": "none",
       "lineage_strength": "adjacent",
@@ -5014,7 +5014,7 @@
       ],
       "primary_recipients": [],
       "editorial_labels": [
-        "other"
+        "operations"
       ],
       "status_labels": [
         "cancelled"
@@ -5025,7 +5025,8 @@
         "single-asset"
       ],
       "relationship_labels": [
-        "single-recipient"
+        "single-recipient",
+        "operations-linked"
       ],
       "platform_labels": [
         "gnars-com",
@@ -6045,7 +6046,7 @@
       "is_active": false,
       "is_terminal": true,
       "outcome_group": "executed",
-      "category": "Media",
+      "category": "Events",
       "summary_short": "Executed | This video is from our trip to Rusutsu resort last season",
       "requested_total_display": "No direct spend",
       "requested_budget_display": "No direct spend",
@@ -6067,7 +6068,7 @@
       ],
       "primary_recipients": [],
       "editorial_labels": [
-        "media"
+        "events"
       ],
       "status_labels": [
         "executed"
@@ -6586,7 +6587,7 @@
       "is_active": false,
       "is_terminal": true,
       "outcome_group": "executed",
-      "category": "Media",
+      "category": "Events",
       "summary_short": "Executed",
       "requested_total_display": "2,250 USDC",
       "requested_budget_display": "2,250 USDC",
@@ -6611,7 +6612,7 @@
         "0x2858...960f"
       ],
       "editorial_labels": [
-        "media"
+        "events"
       ],
       "status_labels": [
         "executed"
@@ -8146,7 +8147,7 @@
       "is_active": false,
       "is_terminal": true,
       "outcome_group": "executed",
-      "category": "Media",
+      "category": "Events",
       "summary_short": "Executed",
       "requested_total_display": "5,100 USDC",
       "requested_budget_display": "5,100 USDC",
@@ -8172,7 +8173,7 @@
         "0x4f81...3f20"
       ],
       "editorial_labels": [
-        "media"
+        "events"
       ],
       "status_labels": [
         "executed"
@@ -8276,7 +8277,7 @@
       "is_active": false,
       "is_terminal": true,
       "outcome_group": "cancelled",
-      "category": "Media",
+      "category": "Events",
       "summary_short": "Cancelled",
       "requested_total_display": "5,660 USDC",
       "requested_budget_display": "5,660 USDC",
@@ -8300,7 +8301,7 @@
       ],
       "primary_recipients": [],
       "editorial_labels": [
-        "media"
+        "events"
       ],
       "status_labels": [
         "cancelled"
@@ -8627,13 +8628,13 @@
       "is_active": false,
       "is_terminal": true,
       "outcome_group": "executed",
-      "category": "Governance",
+      "category": "Operations",
       "summary_short": "Executed · 0.40 ETH allocated",
       "requested_total_display": "0.4 ETH",
       "requested_budget_display": "0.4 ETH",
       "routed_total_display": "0.4 ETH",
       "routed_budget_display": "0.4 ETH",
-      "proposal_type": "funding",
+      "proposal_type": "ops",
       "delivery_stage": "funded",
       "proof_strength": "none",
       "lineage_strength": "adjacent",
@@ -8652,7 +8653,7 @@
         "bagelface.eth"
       ],
       "editorial_labels": [
-        "governance",
+        "operations",
         "tech"
       ],
       "status_labels": [
@@ -8664,7 +8665,8 @@
         "single-asset"
       ],
       "relationship_labels": [
-        "multi-recipient"
+        "multi-recipient",
+        "operations-linked"
       ],
       "platform_labels": [
         "gnars-com",
@@ -8989,13 +8991,13 @@
       "is_active": false,
       "is_terminal": true,
       "outcome_group": "executed",
-      "category": "Software",
+      "category": "Operations",
       "summary_short": "Develop and maintain a dynamic website that consolidates functionalities from platforms like propdates.wtf, nouns.camp, and ...",
       "requested_total_display": "6,969 USDC",
       "requested_budget_display": "6,969 USDC",
       "routed_total_display": "6,969 USDC",
       "routed_budget_display": "6,969 USDC",
-      "proposal_type": "funding",
+      "proposal_type": "ops",
       "delivery_stage": "proof-linked",
       "proof_strength": "multi-proof",
       "lineage_strength": "adjacent",
@@ -9014,7 +9016,7 @@
         "0x9d4e...937f"
       ],
       "editorial_labels": [
-        "software",
+        "operations",
         "tech",
         "community"
       ],
@@ -9028,7 +9030,7 @@
       ],
       "relationship_labels": [
         "single-recipient",
-        "builder-linked",
+        "operations-linked",
         "media-proof"
       ],
       "platform_labels": [
@@ -9750,7 +9752,7 @@
       "is_active": false,
       "is_terminal": true,
       "outcome_group": "executed",
-      "category": "Media",
+      "category": "Events",
       "summary_short": "Join us in Bangkok for DEVCON 2024 as the Gnars team engages with the crypto communit...",
       "requested_total_display": "11,800 USDC",
       "requested_budget_display": "11,800 USDC",
@@ -9775,7 +9777,7 @@
         "0xe5f6...8beb"
       ],
       "editorial_labels": [
-        "media",
+        "events",
         "documentary"
       ],
       "status_labels": [
@@ -10897,13 +10899,13 @@
       "is_active": false,
       "is_terminal": true,
       "outcome_group": "executed",
-      "category": "Travel",
+      "category": "Governance",
       "summary_short": "Executed | When I first deployed Gnars DAO on mainnet, our auction house contract had \"The Gnarving\" built in",
       "requested_total_display": "No direct spend",
       "requested_budget_display": "No direct spend",
       "routed_total_display": "No direct spend",
       "routed_budget_display": "No direct spend",
-      "proposal_type": "signal-only",
+      "proposal_type": "governance-change",
       "delivery_stage": "proof-linked",
       "proof_strength": "multi-proof",
       "lineage_strength": "adjacent",
@@ -10920,7 +10922,7 @@
       ],
       "primary_recipients": [],
       "editorial_labels": [
-        "travel"
+        "governance"
       ],
       "status_labels": [
         "executed"
@@ -11146,7 +11148,7 @@
       "is_active": false,
       "is_terminal": true,
       "outcome_group": "executed",
-      "category": "Travel",
+      "category": "Events",
       "summary_short": "Intro; Reports from previous proposals",
       "requested_total_display": "7,888 USDC",
       "requested_budget_display": "7,888 USDC",
@@ -11172,7 +11174,7 @@
         "luizhadad.eth"
       ],
       "editorial_labels": [
-        "travel"
+        "events"
       ],
       "status_labels": [
         "executed"
@@ -11278,7 +11280,7 @@
       "is_active": false,
       "is_terminal": true,
       "outcome_group": "executed",
-      "category": "Media",
+      "category": "Events",
       "summary_short": "Executed · 0.80 ETH allocated | Carlos Quiroga PATINAJE TOTAL Y GNARS AT WRG 2024 ITALY",
       "requested_total_display": "0.8 ETH",
       "requested_budget_display": "0.8 ETH",
@@ -11305,7 +11307,7 @@
         "0x5979...8db0"
       ],
       "editorial_labels": [
-        "media"
+        "events"
       ],
       "status_labels": [
         "executed"
@@ -11822,13 +11824,13 @@
       "is_active": false,
       "is_terminal": true,
       "outcome_group": "executed",
-      "category": "Media",
+      "category": "Operations",
       "summary_short": "Executed | Hey Gnars-folk, rocketman here",
       "requested_total_display": "7,500 USDC",
       "requested_budget_display": "7,500 USDC",
       "routed_total_display": "7,500 USDC",
       "routed_budget_display": "7,500 USDC",
-      "proposal_type": "funding",
+      "proposal_type": "ops",
       "delivery_stage": "proof-linked",
       "proof_strength": "multi-proof",
       "lineage_strength": "adjacent",
@@ -11847,7 +11849,7 @@
         "0x459b...69de"
       ],
       "editorial_labels": [
-        "media"
+        "operations"
       ],
       "status_labels": [
         "executed"
@@ -11859,6 +11861,7 @@
       ],
       "relationship_labels": [
         "single-recipient",
+        "operations-linked",
         "media-proof"
       ],
       "platform_labels": [
@@ -13481,13 +13484,13 @@
       "is_active": false,
       "is_terminal": true,
       "outcome_group": "executed",
-      "category": "Operations",
+      "category": "Governance",
       "summary_short": "Executed · 10.24 ETH allocated",
       "requested_total_display": "10.2373 ETH",
       "requested_budget_display": "10.2373 ETH",
       "routed_total_display": "10.2373 ETH",
       "routed_budget_display": "10.2373 ETH",
-      "proposal_type": "ops",
+      "proposal_type": "funding",
       "delivery_stage": "proof-linked",
       "proof_strength": "multi-proof",
       "lineage_strength": "adjacent",
@@ -13506,7 +13509,7 @@
         "gami.eth"
       ],
       "editorial_labels": [
-        "operations"
+        "governance"
       ],
       "status_labels": [
         "executed"
@@ -13518,7 +13521,6 @@
       ],
       "relationship_labels": [
         "single-recipient",
-        "operations-linked",
         "media-proof"
       ],
       "platform_labels": [
@@ -13804,7 +13806,7 @@
       "is_active": false,
       "is_terminal": true,
       "outcome_group": "executed",
-      "category": "Operations",
+      "category": "Governance",
       "summary_short": "Executed",
       "requested_total_display": "No direct spend",
       "requested_budget_display": "No direct spend",
@@ -13828,7 +13830,7 @@
       ],
       "primary_recipients": [],
       "editorial_labels": [
-        "operations"
+        "governance"
       ],
       "status_labels": [
         "executed"
@@ -13839,7 +13841,6 @@
       ],
       "relationship_labels": [
         "single-recipient",
-        "operations-linked",
         "media-proof"
       ],
       "platform_labels": [
@@ -13919,7 +13920,7 @@
       "is_active": false,
       "is_terminal": true,
       "outcome_group": "cancelled",
-      "category": "Events",
+      "category": "Operations",
       "summary_short": "Cancelled | Bring That's Gnarly onchain Hey Gnars-folk, rocketman here",
       "requested_total_display": "No direct spend",
       "requested_budget_display": "No direct spend",
@@ -13941,7 +13942,7 @@
       ],
       "primary_recipients": [],
       "editorial_labels": [
-        "events"
+        "operations"
       ],
       "status_labels": [
         "cancelled"
@@ -13952,6 +13953,7 @@
       ],
       "relationship_labels": [
         "single-recipient",
+        "operations-linked",
         "media-proof"
       ],
       "platform_labels": [
@@ -15748,7 +15750,7 @@
       "is_active": false,
       "is_terminal": true,
       "outcome_group": "closed-not-passed",
-      "category": "Media",
+      "category": "Operations",
       "summary_short": "## Introduction",
       "requested_total_display": "No direct spend",
       "requested_budget_display": "No direct spend",
@@ -15769,7 +15771,7 @@
       ],
       "primary_recipients": [],
       "editorial_labels": [
-        "media"
+        "operations"
       ],
       "status_labels": [
         "closed",
@@ -15779,7 +15781,8 @@
         "no-direct-spend"
       ],
       "relationship_labels": [
-        "single-recipient"
+        "single-recipient",
+        "operations-linked"
       ],
       "platform_labels": [
         "snapshot"
@@ -16064,7 +16067,7 @@
       "is_active": false,
       "is_terminal": true,
       "outcome_group": "closed-passed",
-      "category": "Media",
+      "category": "Events",
       "summary_short": "![](https://ipfs.decentralized-content.com/ipfs/bafkreicnjc5oebxyrxhbepupq32777qxjn5fchttuqdrjenpowqa7ldcfy)",
       "requested_total_display": "No direct spend",
       "requested_budget_display": "No direct spend",
@@ -16087,7 +16090,7 @@
       ],
       "primary_recipients": [],
       "editorial_labels": [
-        "media"
+        "events"
       ],
       "status_labels": [
         "closed",
@@ -18147,7 +18150,7 @@
       "is_active": false,
       "is_terminal": true,
       "outcome_group": "closed-passed",
-      "category": "Media",
+      "category": "Operations",
       "summary_short": "",
       "requested_total_display": "No direct spend",
       "requested_budget_display": "No direct spend",
@@ -18172,7 +18175,7 @@
       ],
       "primary_recipients": [],
       "editorial_labels": [
-        "media"
+        "operations"
       ],
       "status_labels": [
         "closed",
@@ -18183,6 +18186,7 @@
       ],
       "relationship_labels": [
         "single-recipient",
+        "operations-linked",
         "media-proof"
       ],
       "platform_labels": [
@@ -18262,7 +18266,7 @@
       "is_active": false,
       "is_terminal": true,
       "outcome_group": "closed-passed",
-      "category": "Travel",
+      "category": "Media",
       "summary_short": "",
       "requested_total_display": "No direct spend",
       "requested_budget_display": "No direct spend",
@@ -18284,7 +18288,7 @@
       ],
       "primary_recipients": [],
       "editorial_labels": [
-        "travel"
+        "media"
       ],
       "status_labels": [
         "closed",
@@ -18463,7 +18467,7 @@
       "is_active": false,
       "is_terminal": true,
       "outcome_group": "closed-passed",
-      "category": "Travel",
+      "category": "Media",
       "summary_short": "",
       "requested_total_display": "No direct spend",
       "requested_budget_display": "No direct spend",
@@ -18485,7 +18489,7 @@
       ],
       "primary_recipients": [],
       "editorial_labels": [
-        "travel"
+        "media"
       ],
       "status_labels": [
         "closed",
@@ -18880,7 +18884,7 @@
       "is_active": false,
       "is_terminal": true,
       "outcome_group": "closed-passed",
-      "category": "Other",
+      "category": "Operations",
       "summary_short": "",
       "requested_total_display": "No direct spend",
       "requested_budget_display": "No direct spend",
@@ -18901,7 +18905,7 @@
       ],
       "primary_recipients": [],
       "editorial_labels": [
-        "other"
+        "operations"
       ],
       "status_labels": [
         "closed",
@@ -18911,7 +18915,8 @@
         "no-direct-spend"
       ],
       "relationship_labels": [
-        "single-recipient"
+        "single-recipient",
+        "operations-linked"
       ],
       "platform_labels": [
         "snapshot"
@@ -19463,7 +19468,7 @@
       "is_active": false,
       "is_terminal": true,
       "outcome_group": "closed-not-passed",
-      "category": "Travel",
+      "category": "Media",
       "summary_short": "",
       "requested_total_display": "No direct spend",
       "requested_budget_display": "No direct spend",
@@ -19486,7 +19491,7 @@
       ],
       "primary_recipients": [],
       "editorial_labels": [
-        "travel"
+        "media"
       ],
       "status_labels": [
         "closed",
@@ -19574,7 +19579,7 @@
       "is_active": false,
       "is_terminal": true,
       "outcome_group": "closed-passed",
-      "category": "Athlete Support",
+      "category": "Governance",
       "summary_short": "",
       "requested_total_display": "No direct spend",
       "requested_budget_display": "No direct spend",
@@ -19595,7 +19600,7 @@
       ],
       "primary_recipients": [],
       "editorial_labels": [
-        "athlete-support"
+        "governance"
       ],
       "status_labels": [
         "closed",
@@ -19606,8 +19611,7 @@
         "treasury-policy"
       ],
       "relationship_labels": [
-        "single-recipient",
-        "athlete-linked"
+        "single-recipient"
       ],
       "platform_labels": [
         "snapshot"
@@ -19985,7 +19989,7 @@
       "is_active": false,
       "is_terminal": true,
       "outcome_group": "closed-not-passed",
-      "category": "Athlete Support",
+      "category": "Operations",
       "summary_short": "![](https://i.imgur.com/3YlPbhX.png)",
       "requested_total_display": "No direct spend",
       "requested_budget_display": "No direct spend",
@@ -20007,7 +20011,7 @@
       ],
       "primary_recipients": [],
       "editorial_labels": [
-        "athlete-support"
+        "operations"
       ],
       "status_labels": [
         "closed",
@@ -20019,7 +20023,7 @@
       ],
       "relationship_labels": [
         "single-recipient",
-        "athlete-linked",
+        "operations-linked",
         "media-proof"
       ],
       "platform_labels": [
@@ -20197,7 +20201,7 @@
       "is_active": false,
       "is_terminal": true,
       "outcome_group": "closed-passed",
-      "category": "Travel",
+      "category": "Media",
       "summary_short": "## Introduction ##",
       "requested_total_display": "No direct spend",
       "requested_budget_display": "No direct spend",
@@ -20221,7 +20225,7 @@
       ],
       "primary_recipients": [],
       "editorial_labels": [
-        "travel"
+        "media"
       ],
       "status_labels": [
         "closed",
@@ -20303,13 +20307,13 @@
       "is_active": false,
       "is_terminal": true,
       "outcome_group": "closed-not-passed",
-      "category": "Software",
+      "category": "Governance",
       "summary_short": "![1.jpeg](ipfs://bafkreifu4sn3mbu7j2ov7bq26iew2bzatvg4dgvcbshcbhorriznf7kymm)",
       "requested_total_display": "No direct spend",
       "requested_budget_display": "No direct spend",
       "routed_total_display": "No direct spend",
       "routed_budget_display": "No direct spend",
-      "proposal_type": "signal-only",
+      "proposal_type": "governance-change",
       "delivery_stage": "pre-funding",
       "proof_strength": "multi-proof",
       "lineage_strength": "adjacent",
@@ -20324,7 +20328,7 @@
       ],
       "primary_recipients": [],
       "editorial_labels": [
-        "software"
+        "governance"
       ],
       "status_labels": [
         "closed",
@@ -20335,7 +20339,6 @@
       ],
       "relationship_labels": [
         "single-recipient",
-        "builder-linked",
         "media-proof"
       ],
       "platform_labels": [
@@ -20497,7 +20500,7 @@
       "is_active": false,
       "is_terminal": true,
       "outcome_group": "closed-passed",
-      "category": "Media",
+      "category": "Governance",
       "summary_short": "![](https://i.imgur.com/ANwjIlw.jpg)",
       "requested_total_display": "No direct spend",
       "requested_budget_display": "No direct spend",
@@ -20520,7 +20523,7 @@
       ],
       "primary_recipients": [],
       "editorial_labels": [
-        "media"
+        "governance"
       ],
       "status_labels": [
         "closed",
@@ -21358,13 +21361,13 @@
       "is_active": false,
       "is_terminal": true,
       "outcome_group": "closed-passed",
-      "category": "Other",
+      "category": "Governance",
       "summary_short": "[TEST PROP 2] - 1 Gnars NFT Request Transaction",
       "requested_total_display": "No direct spend",
       "requested_budget_display": "No direct spend",
       "routed_total_display": "No direct spend",
       "routed_budget_display": "No direct spend",
-      "proposal_type": "signal-only",
+      "proposal_type": "governance-change",
       "delivery_stage": "funded",
       "proof_strength": "none",
       "lineage_strength": "adjacent",
@@ -21379,7 +21382,7 @@
       ],
       "primary_recipients": [],
       "editorial_labels": [
-        "other"
+        "governance"
       ],
       "status_labels": [
         "closed",
@@ -22595,7 +22598,7 @@
       "is_active": false,
       "is_terminal": true,
       "outcome_group": "closed-passed",
-      "category": "Media",
+      "category": "Events",
       "summary_short": "![](https://i.imgur.com/vNxNwca.jpg)",
       "requested_total_display": "No direct spend",
       "requested_budget_display": "No direct spend",
@@ -22618,7 +22621,7 @@
       ],
       "primary_recipients": [],
       "editorial_labels": [
-        "media"
+        "events"
       ],
       "status_labels": [
         "closed",
@@ -23850,7 +23853,7 @@
       "is_active": false,
       "is_terminal": true,
       "outcome_group": "closed-passed",
-      "category": "Travel",
+      "category": "Media",
       "summary_short": "![image](ipfs://bafkreibgsvj77dfp2i4wyhvxgxi3kjncp5e2mfjrngrzwyfqziwu7kymri)",
       "requested_total_display": "No direct spend",
       "requested_budget_display": "No direct spend",
@@ -23872,7 +23875,7 @@
       ],
       "primary_recipients": [],
       "editorial_labels": [
-        "travel"
+        "media"
       ],
       "status_labels": [
         "closed",
@@ -24357,7 +24360,7 @@
       "is_active": false,
       "is_terminal": true,
       "outcome_group": "closed-passed",
-      "category": "Travel",
+      "category": "Media",
       "summary_short": "![](https://cdn.discordapp.com/attachments/1001425739977068606/1001425740635570216/IZFEL-ICON-LOUI-DA-FOU.png)",
       "requested_total_display": "No direct spend",
       "requested_budget_display": "No direct spend",
@@ -24379,7 +24382,7 @@
       ],
       "primary_recipients": [],
       "editorial_labels": [
-        "travel",
+        "media",
         "tech"
       ],
       "status_labels": [
@@ -24459,7 +24462,7 @@
       "is_active": false,
       "is_terminal": true,
       "outcome_group": "closed-passed",
-      "category": "Travel",
+      "category": "Media",
       "summary_short": "![](https://cdn.discordapp.com/attachments/1001280694783312004/1001280695756394557/greta.png)",
       "requested_total_display": "No direct spend",
       "requested_budget_display": "No direct spend",
@@ -24481,7 +24484,7 @@
       ],
       "primary_recipients": [],
       "editorial_labels": [
-        "travel",
+        "media",
         "tech"
       ],
       "status_labels": [
@@ -24931,7 +24934,7 @@
       "is_active": false,
       "is_terminal": true,
       "outcome_group": "closed-passed",
-      "category": "Media",
+      "category": "Events",
       "summary_short": "![image](ipfs://QmTkzpfa966YmNQjXdNgbZztAZEGFGCCUnwE8dQeNv3ini)",
       "requested_total_display": "No direct spend",
       "requested_budget_display": "No direct spend",
@@ -24954,7 +24957,7 @@
       ],
       "primary_recipients": [],
       "editorial_labels": [
-        "media"
+        "events"
       ],
       "status_labels": [
         "closed",
@@ -25035,13 +25038,13 @@
       "is_active": false,
       "is_terminal": true,
       "outcome_group": "closed-passed",
-      "category": "Operations",
+      "category": "Governance",
       "summary_short": "This is a test proposal to make sure the [Zodiac Reality Module integration](https://gnosis.github.io/zodiac/docs/tutorial-module-reality/get-started/) from...",
       "requested_total_display": "No direct spend",
       "requested_budget_display": "No direct spend",
       "routed_total_display": "No direct spend",
       "routed_budget_display": "No direct spend",
-      "proposal_type": "signal-only",
+      "proposal_type": "governance-change",
       "delivery_stage": "proof-linked",
       "proof_strength": "multi-proof",
       "lineage_strength": "adjacent",
@@ -25056,7 +25059,7 @@
       ],
       "primary_recipients": [],
       "editorial_labels": [
-        "operations",
+        "governance",
         "tech"
       ],
       "status_labels": [
@@ -25068,7 +25071,6 @@
       ],
       "relationship_labels": [
         "single-recipient",
-        "operations-linked",
         "media-proof"
       ],
       "platform_labels": [
