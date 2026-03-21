@@ -5,53 +5,61 @@
   "version": 1,
   "cats": [
     {
-      "id": "irl_events",
-      "label": "Events IRL",
-      "val": 5.9,
-      "pct": 29,
-      "col": "#879A39",
-      "rec": "Event organizers"
+      "id": "athletes_riders",
+      "label": "Athletes & Riders",
+      "val": 73.6,
+      "pct": 49,
+      "col": "#3AA99F",
+      "rec": "Riders & athletes"
     },
     {
       "id": "workstream_media",
       "label": "Media",
-      "val": 5.2,
-      "pct": 25,
+      "val": 39.4,
+      "pct": 26,
       "col": "#8B7EC8",
       "rec": "Content creators"
+    },
+    {
+      "id": "workstream_dev",
+      "label": "Dev",
+      "val": 20.3,
+      "pct": 14,
+      "col": "#4385BE",
+      "rec": "Builders"
+    },
+    {
+      "id": "irl_events",
+      "label": "Events IRL",
+      "val": 11.3,
+      "pct": 8,
+      "col": "#879A39",
+      "rec": "Event organizers"
     },
     {
       "id": "public_goods",
       "label": "Public Goods",
       "val": 5.1,
-      "pct": 25,
+      "pct": 3,
       "col": "#6F6E69",
       "rec": "Community"
-    },
-    {
-      "id": "athletes_riders",
-      "label": "Athletes & Riders",
-      "val": 4.1,
-      "pct": 20,
-      "col": "#3AA99F",
-      "rec": "Riders & athletes"
     },
     {
       "id": "governance_policy",
       "label": "Governance",
       "val": 0.4,
-      "pct": 2,
+      "pct": 0,
       "col": "#403E3C",
       "rec": "DAO governance"
     },
     {
       "id": "workstream_ops",
       "label": "Operations",
-      "val": 0.0,
+      "val": 0.2,
       "pct": 0,
       "col": "#DA702C",
       "rec": "Core contributors"
     }
   ],
-  "total_k": 20.6
+  "total_k": 150.3
 }

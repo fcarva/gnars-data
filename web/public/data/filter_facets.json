@@ -83,42 +83,42 @@
         {
           "value": "media",
           "label": "Media",
-          "count": 761
+          "count": 755
         },
         {
           "value": "events",
           "label": "Events",
-          "count": 197
+          "count": 214
         },
         {
           "value": "travel",
           "label": "Travel",
-          "count": 175
-        },
-        {
-          "value": "athlete-support",
-          "label": "Athlete Support",
-          "count": 122
+          "count": 167
         },
         {
           "value": "operations",
           "label": "Operations",
+          "count": 133
+        },
+        {
+          "value": "athlete-support",
+          "label": "Athlete Support",
           "count": 116
         },
         {
           "value": "software",
           "label": "Software",
-          "count": 67
+          "count": 65
         },
         {
           "value": "governance",
           "label": "Governance",
-          "count": 36
+          "count": 29
         },
         {
           "value": "other",
           "label": "Other",
-          "count": 11
+          "count": 6
         }
       ],
       "asset": [
@@ -186,42 +186,42 @@
         {
           "value": "media",
           "label": "Media",
-          "count": 101
+          "count": 103
         },
         {
           "value": "events",
           "label": "Events",
-          "count": 28
+          "count": 30
         },
         {
           "value": "travel",
           "label": "Travel",
-          "count": 26
+          "count": 24
         },
         {
           "value": "athlete-support",
           "label": "Athlete Support",
-          "count": 21
+          "count": 20
         },
         {
           "value": "operations",
           "label": "Operations",
-          "count": 15
+          "count": 18
         },
         {
           "value": "software",
           "label": "Software",
-          "count": 13
+          "count": 12
         },
         {
           "value": "governance",
           "label": "Governance",
-          "count": 11
+          "count": 10
         },
         {
           "value": "other",
           "label": "Other",
-          "count": 7
+          "count": 5
         }
       ],
       "platform": [
@@ -387,22 +387,22 @@
         {
           "value": "media",
           "label": "Media",
-          "count": 36
+          "count": 35
         },
         {
           "value": "events",
           "label": "Events",
+          "count": 7
+        },
+        {
+          "value": "operations",
+          "label": "Operations",
           "count": 6
         },
         {
           "value": "travel",
           "label": "Travel",
           "count": 6
-        },
-        {
-          "value": "operations",
-          "label": "Operations",
-          "count": 5
         },
         {
           "value": "software",
@@ -412,7 +412,7 @@
         {
           "value": "athlete-support",
           "label": "Athlete Support",
-          "count": 4
+          "count": 3
         },
         {
           "value": "governance",

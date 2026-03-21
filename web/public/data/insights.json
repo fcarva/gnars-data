@@ -52,6 +52,10 @@
           "amount": 2.06232e+20
         },
         {
+          "symbol": "SENDIT",
+          "amount": 12881837.0
+        },
+        {
           "symbol": "USDC",
           "amount": 18450.0
         },
@@ -60,8 +64,8 @@
           "amount": 10.23730283
         }
       ],
-      "route_count": 5,
-      "proposal_count": 5
+      "route_count": 6,
+      "proposal_count": 6
     },
     {
       "category": "Media",
@@ -76,30 +80,30 @@
         },
         {
           "symbol": "USDC",
-          "amount": 89604.0
+          "amount": 88254.0
         },
         {
           "symbol": "ETH",
           "amount": 6.10409
         }
       ],
-      "route_count": 36,
-      "proposal_count": 31
+      "route_count": 35,
+      "proposal_count": 30
     },
     {
       "category": "Events",
       "totals_by_asset": [
         {
           "symbol": "USDC",
-          "amount": 8490.0
+          "amount": 9840.0
         },
         {
           "symbol": "ETH",
           "amount": 2.53
         }
       ],
-      "route_count": 6,
-      "proposal_count": 5
+      "route_count": 7,
+      "proposal_count": 6
     },
     {
       "category": "Travel",
@@ -124,10 +128,6 @@
       "category": "Athlete Support",
       "totals_by_asset": [
         {
-          "symbol": "SENDIT",
-          "amount": 12881837.0
-        },
-        {
           "symbol": "USDC",
           "amount": 10042.0
         },
@@ -136,8 +136,8 @@
           "amount": 1.0
         }
       ],
-      "route_count": 4,
-      "proposal_count": 3
+      "route_count": 3,
+      "proposal_count": 2
     },
     {
       "category": "Software",
@@ -199,51 +199,51 @@
   "proposal_success_by_category": [
     {
       "category": "Operations",
-      "proposal_count": 15,
-      "successful_count": 11,
-      "success_rate_pct": 73.33
+      "proposal_count": 18,
+      "successful_count": 14,
+      "success_rate_pct": 77.78
     },
     {
       "category": "Media",
-      "proposal_count": 101,
-      "successful_count": 76,
-      "success_rate_pct": 75.25
+      "proposal_count": 103,
+      "successful_count": 79,
+      "success_rate_pct": 76.7
     },
     {
       "category": "Events",
-      "proposal_count": 28,
-      "successful_count": 20,
-      "success_rate_pct": 71.43
+      "proposal_count": 30,
+      "successful_count": 21,
+      "success_rate_pct": 70.0
     },
     {
       "category": "Travel",
-      "proposal_count": 26,
-      "successful_count": 22,
-      "success_rate_pct": 84.62
+      "proposal_count": 24,
+      "successful_count": 20,
+      "success_rate_pct": 83.33
     },
     {
       "category": "Athlete Support",
-      "proposal_count": 21,
-      "successful_count": 17,
-      "success_rate_pct": 80.95
+      "proposal_count": 20,
+      "successful_count": 16,
+      "success_rate_pct": 80.0
     },
     {
       "category": "Software",
-      "proposal_count": 13,
-      "successful_count": 12,
-      "success_rate_pct": 92.31
+      "proposal_count": 12,
+      "successful_count": 11,
+      "success_rate_pct": 91.67
     },
     {
       "category": "Governance",
-      "proposal_count": 11,
-      "successful_count": 6,
-      "success_rate_pct": 54.55
+      "proposal_count": 10,
+      "successful_count": 5,
+      "success_rate_pct": 50.0
     },
     {
       "category": "Other",
-      "proposal_count": 7,
-      "successful_count": 6,
-      "success_rate_pct": 85.71
+      "proposal_count": 5,
+      "successful_count": 4,
+      "success_rate_pct": 80.0
     }
   ],
   "recipient_concentration": [

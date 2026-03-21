@@ -55,14 +55,14 @@
       "succeeded": 1
     },
     "proposal_category_counts": {
-      "uncategorized": 198,
-      "athletes_riders": 8,
-      "governance_policy": 5,
-      "irl_events": 4,
-      "workstream_media": 3,
-      "workstream_ops": 2,
-      "public_goods": 1,
-      "workstream_products": 1
+      "athletes_riders": 72,
+      "uncategorized": 57,
+      "workstream_products": 41,
+      "workstream_media": 26,
+      "irl_events": 13,
+      "workstream_ops": 6,
+      "governance_policy": 6,
+      "public_goods": 1
     }
   },
   "treasury": {

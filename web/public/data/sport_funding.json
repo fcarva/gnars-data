@@ -8,14 +8,40 @@
       "pill": "MULTI",
       "label": "Multi / Other",
       "color": "#6F6E69",
-      "athletes": 2,
-      "proposals": 2,
-      "usdc": 4070.0,
+      "athletes": 5,
+      "proposals": 6,
+      "usdc": 21534.0,
+      "eth": 4.0,
+      "usd_equiv": 32956.74,
+      "top_recipient": "0xe8b2...599d",
+      "pct": 45
+    },
+    {
+      "sport": "sk8",
+      "pill": "SK8",
+      "label": "Skateboarding",
+      "color": "#66800B",
+      "athletes": 7,
+      "proposals": 7,
+      "usdc": 31209.0,
+      "eth": 0.253,
+      "usd_equiv": 32130.75,
+      "top_recipient": "0x3f51...f7f2",
+      "pct": 44
+    },
+    {
+      "sport": "surf",
+      "pill": "SURF",
+      "label": "Surfing",
+      "color": "#205EA6",
+      "athletes": 3,
+      "proposals": 3,
+      "usdc": 6262.0,
       "eth": 0.0,
-      "usd_equiv": 4070.0,
-      "top_recipient": "0x8d2a...b252",
-      "pct": 100
+      "usd_equiv": 8533.81,
+      "top_recipient": "0xbc94...fc12",
+      "pct": 12
     }
   ],
-  "total_usd": 4070.0
+  "total_usd": 73621.3
 }

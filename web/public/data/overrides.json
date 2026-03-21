@@ -1,0 +1,16 @@
+[
+  {
+    "proposal_id": "gnars-base-117",
+    "primary_category": "athletes_riders",
+    "sport": "surf",
+    "override_by": "fcarva",
+    "override_reason": "Monik Santos WSL sponsorship incorrectly tagged as software"
+  },
+  {
+    "proposal_id": "gnars-base-116",
+    "primary_category": "governance_policy",
+    "sport": null,
+    "override_by": "fcarva",
+    "override_reason": "Zero-ask governance signal from ai.gami.eth, not software"
+  }
+]

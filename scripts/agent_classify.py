@@ -94,22 +94,26 @@ def classify_proposal(client: genai.Client, title: str, description: str) -> Pro
         contents=prompt,
         config={
             'response_mime_type': 'application/json',
-            'response_schema': ProposalClassification,
             'temperature': 0.1,
         },
     )
-    
-    parsed: Any = response.parsed
-    if isinstance(parsed, ProposalClassification):
-        return parsed
-    if isinstance(parsed, dict):
-        return ProposalClassification.model_validate(parsed)
-    raise ValueError("Unexpected Gemini response payload")
+
+    text = getattr(response, "text", None)
+    if not text:
+        raise ValueError("Empty Gemini response payload")
+    try:
+        payload = json.loads(text)
+    except json.JSONDecodeError as exc:
+        raise ValueError(f"Invalid JSON from Gemini: {exc}") from exc
+    return ProposalClassification.model_validate(payload)
 
 def main():
     parser = argparse.ArgumentParser(description="Enrich proposal tags using an Agent (AEP)")
     parser.add_argument("--test-id", type=str, help="Run only on a specific archive_id (e.g. gnars-base-117)")
     parser.add_argument("--force", action="store_true", help="Re-classify even if semantic_category exists")
+    parser.add_argument("--incremental", action="store_true", help="Classify only records missing semantic_category (default behavior)")
+    parser.add_argument("--max-records", type=int, default=0, help="Optional cap on number of records to classify in this run")
+    parser.add_argument("--sleep-seconds", type=float, default=5.0, help="Delay between successful requests to avoid rate limits")
     args = parser.parse_args()
 
     api_key = os.getenv("GEMINI_API_KEY")
@@ -126,6 +130,7 @@ def main():
     
     records = tags_data.get("records", [])
     updated_count = 0
+    processed_count = 0
     
     for record in records:
         arch_id = record["archive_id"]
@@ -133,7 +138,8 @@ def main():
         if args.test_id and arch_id != args.test_id:
             continue
             
-        if "semantic_category" in record and not args.force and not args.test_id:
+        has_semantic = isinstance(record.get("semantic_category"), str) and record.get("semantic_category", "").strip() != ""
+        if has_semantic and not args.force and not args.test_id:
             continue
             
         proposal = archive_dict.get(arch_id)
@@ -161,9 +167,14 @@ def main():
                 if classification.capital_breakdown:
                     record["capital_breakdown"] = classification.capital_breakdown
                 updated_count += 1
+                processed_count += 1
+
+                if args.max_records > 0 and processed_count >= args.max_records:
+                    print(f"Reached --max-records limit ({args.max_records}). Stopping run.")
+                    break
                 
-                # Avoid Gemini free tier rate limit: 15 RPM for 2.5-flash / free tier usually 15 RPM (4s) -> using 15s for safety
-                time.sleep(15)
+                # Keep a small pause to reduce request bursts and avoid 429 responses.
+                time.sleep(max(0.0, args.sleep_seconds))
                 break  # Success, break the retry loop
             except Exception as e:
                 error_str = str(e)
@@ -173,6 +184,9 @@ def main():
                     time.sleep(30)
                 else:
                     break # Break on non-rate-limit errors
+
+        if args.max_records > 0 and processed_count >= args.max_records:
+            break
 
     if updated_count > 0:
         tags_data["as_of"] = isoformat_utc(utc_now())
