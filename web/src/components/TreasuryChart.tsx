@@ -1,8 +1,12 @@
 ﻿import { useEffect, useState } from "react";
-import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts";
+import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer, ReferenceLine } from "recharts";
 import { getTreasurySnapshots, type TreasurySnapshotsData } from "@/lib/gnars-data";
 
-export function TreasuryChart() {
+interface TreasuryChartProps {
+  projectedZeroDate?: string | null;
+}
+
+export function TreasuryChart({ projectedZeroDate }: TreasuryChartProps) {
   const [data, setData] = useState<TreasurySnapshotsData | null>(null);
 
   useEffect(() => {
@@ -17,6 +21,8 @@ export function TreasuryChart() {
     date: r.date,
     value: r.total_value_usd
   }));
+
+  const projectedDateTick = chartData.find((row) => row.date.startsWith(projectedZeroDate || ""))?.date;
 
   const formatter = (value: number) => {
     if (value >= 1e6) return `$${(value / 1e6).toFixed(1)}m`;
@@ -53,8 +59,8 @@ export function TreasuryChart() {
               tickLine={false}
             />
             <Tooltip
-              labelFormatter={dtFormatter}
-              formatter={(val: number) => [formatter(val), "Treasury"]}
+              labelFormatter={(label) => dtFormatter(String(label || ""))}
+              formatter={(val) => [formatter(Number(val || 0)), "Treasury"]}
               contentStyle={{
                 backgroundColor: "#282726",
                 border: "1px solid #403e3c",
@@ -64,6 +70,10 @@ export function TreasuryChart() {
                 color: "#cecdc3",
               }}
             />
+            <ReferenceLine y={10000} stroke="#DA702C" strokeDasharray="4 4" label={{ value: "$10k", position: "insideTopRight", fill: "#DA702C", fontSize: 11 }} />
+            {projectedDateTick ? (
+              <ReferenceLine x={projectedDateTick} stroke="#D14D41" strokeDasharray="5 4" label={{ value: "Projected zero", angle: -90, position: "insideTop", fill: "#D14D41", fontSize: 10 }} />
+            ) : null}
             <Line
               type="monotone"
               dataKey="value"
@@ -73,6 +83,9 @@ export function TreasuryChart() {
             />
           </LineChart>
         </ResponsiveContainer>
+      </div>
+      <div className="analytics-note" style={{ marginTop: 10 }}>
+        Runway markers: $10k threshold and projected zero date {projectedZeroDate || "unknown"}.
       </div>
     </div>
   );

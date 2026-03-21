@@ -1,5 +1,11 @@
 /* Modern Component Styles - Flexoki */
 
+:root {
+  --pp: #f9f6ea;
+  --b50: #f2efe3;
+  --b100: #e7e2d1;
+}
+
 /* Buttons & Interactive Elements */
 button,
 .btn {
@@ -677,11 +683,11 @@ textarea:focus {
 .analytics-panel {
   border: 1px solid var(--line);
   border-radius: var(--radius-tight);
-  background: #FFFCF0;
+  background: var(--pp);
 }
 
 .analytics-overview-card {
-  background: #F2F0E5;
+  background: var(--b50);
   padding: 10px;
 }
 
@@ -724,7 +730,7 @@ textarea:focus {
   padding: 10px;
   border: 1px solid var(--line);
   border-radius: var(--radius-tight);
-  background: #FFFCF0;
+  background: var(--pp);
 }
 
 .analytics-timeline-item:hover {
@@ -999,6 +1005,38 @@ textarea:focus {
   gap: 6px;
 }
 
+.search-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(180px, 240px);
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.search-wrap {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.lb-search {
+  width: 100%;
+  border: 1px solid var(--b100);
+  border-radius: 999px;
+  background: var(--pp);
+  color: var(--text);
+  font-size: 12px;
+  padding: 8px 12px;
+}
+
+.lb-search::placeholder {
+  color: var(--subtle);
+}
+
+.lb-search:focus {
+  border-color: var(--accent-blue);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent-blue) 18%, transparent);
+}
+
 .at {
   border-collapse: collapse;
 }
@@ -1196,6 +1234,10 @@ textarea:focus {
 
   .analytics-charts-grid,
   .analytics-leaderboards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .search-row {
     grid-template-columns: 1fr;
   }
 }

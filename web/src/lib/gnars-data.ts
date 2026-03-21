@@ -58,6 +58,10 @@ export interface LeaderboardEntry {
 }
 
 export interface DaoMetrics {
+  treasury_balance_usd?: number;
+  monthly_burn_usd?: number;
+  runway_months?: number;
+  projected_zero_date?: string | null;
   overview: {
     proposal_count: number;
     active_proposal_count: number;
@@ -106,6 +110,30 @@ export interface Member {
     like_pct: number;
   };
   notes: string;
+  total_received_usdc?: number;
+  total_received_eth?: number;
+  funded_proposal_count?: number;
+}
+
+export interface ProposalTagRecord {
+  archive_id: string;
+  semantic_category?: string | null;
+  primary_category?: string | null;
+}
+
+export interface CommunityFieldNote {
+  note_id: string;
+  window_id: string;
+  kind: string;
+  title: string;
+  summary: string;
+}
+
+export interface CommunitySignalsData {
+  dataset: "community_signals";
+  as_of: string;
+  version: number;
+  field_notes: CommunityFieldNote[];
 }
 
 export interface TreasuryAsset {
@@ -490,6 +518,16 @@ export async function fetchMetrics(): Promise<DaoMetrics> {
 export async function fetchMembers(): Promise<Member[]> {
   const data = await fetchJson<{ records: Member[] }>("members.json");
   return data.records;
+}
+
+export async function fetchProposalTags(): Promise<ProposalTagRecord[]> {
+  const data = await fetchJson<{ records: ProposalTagRecord[] }>("proposal_tags.json");
+  return data.records;
+}
+
+export async function fetchCommunitySignalsData(): Promise<CommunitySignalsData> {
+  const data = await fetchJson<CommunitySignalsData>("community_signals.json");
+  return data;
 }
 
 export async function fetchTreasury(): Promise<{

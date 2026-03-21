@@ -1,6 +1,9 @@
 import type {
   DaoMetrics,
   FundingAnalysis,
+  Member,
+  ProposalTagRecord,
+  CommunitySignalsData,
   SankeyData,
   EfficiencyData,
   GovernanceData,
@@ -22,10 +25,15 @@ import { DelegationForceGraph } from "@/components/DelegationForceGraph";
 import { RunwayWhatIf } from "@/components/RunwayWhatIf";
 import { ForkRiskMonitor } from "@/components/ForkRiskMonitor";
 import { SportFundingTable } from "@/components/SportFundingTable";
+import { AthletesLeaderboard } from "@/components/AthletesLeaderboard";
+import { FundingBreakdown } from "@/components/FundingBreakdown";
 
 interface AnalyticsDashboardProps {
   metrics: DaoMetrics;
   funding: FundingAnalysis | null;
+  members: Member[];
+  proposalTags: ProposalTagRecord[];
+  communitySignals: CommunitySignalsData | null;
   sankey: SankeyData | null;
   efficiency: EfficiencyData | null;
   governance: GovernanceData | null;
@@ -43,6 +51,9 @@ function fmtPct(value: number | null | undefined): string {
 export function AnalyticsDashboard({
   metrics,
   funding,
+  members,
+  proposalTags,
+  communitySignals,
   sankey,
   efficiency,
   governance,
@@ -114,7 +125,7 @@ export function AnalyticsDashboard({
           <ProposalCategoryChart metrics={metrics} />
         </div>
         <div className="analytics-panel">
-          <TreasuryChart />
+          <TreasuryChart projectedZeroDate={metrics.projected_zero_date} />
         </div>
       </div>
 
@@ -180,6 +191,13 @@ export function AnalyticsDashboard({
       </div>
 
       <div>
+        <h3 className="analytics-section-title">FUNDING BREAKDOWN</h3>
+        <div className="analytics-panel">
+          <FundingBreakdown funding={funding} />
+        </div>
+      </div>
+
+      <div>
         <h3 className="analytics-section-title">GOVERNANCE EFFICIENCY</h3>
         <div className="analytics-overview-grid analytics-overview-grid-compact">
           <div className="analytics-overview-card">
@@ -205,15 +223,15 @@ export function AnalyticsDashboard({
         </div>
         <div className="analytics-panel">
           <div className="analytics-block-title">EFFICIENCY TRENDS</div>
-          <EfficiencyTrendsChart data={efficiency} />
+          <EfficiencyTrendsChart data={efficiency} funding={funding} proposalTags={proposalTags} />
         </div>
         <div className="analytics-panel">
           <div className="analytics-block-title">QUALITATIVE NOTES</div>
           <ul className="analytics-notes-list">
-            <li><strong>Episodic Spend:</strong> Spend is highly episodic. A large portion of months show $0 outflow, meaning treasury deployments happen in concentrated bursts rather than continuous streams.</li>
-            <li><strong>Cost Outliers:</strong> Significant cost-per-vote spikes (e.g., Aug 2024) occur when high-value proposals coincide with low voter turnout.</li>
-            <li><strong>Category Efficiency:</strong> Athlete proposals tend to be more efficient (~$61 cost/vote) compared to operational workstreams (~$144).</li>
-            <li><strong>Funding Visibility:</strong> On-chain end-to-end tracking provides complete visibility into how these episodic funds move.</li>
+            {(communitySignals?.field_notes || []).map((note) => (
+              <li key={note.note_id}><strong>{note.title}</strong> {note.summary}</li>
+            ))}
+            {!communitySignals?.field_notes?.length ? <li>Loading field notes from live analytics signals...</li> : null}
           </ul>
         </div>
       </div>
@@ -257,6 +275,9 @@ export function AnalyticsDashboard({
         <h3 className="analytics-section-title">ATHLETE FUNDING</h3>
         <div className="analytics-panel">
           <SportFundingTable />
+        </div>
+        <div className="analytics-panel" style={{ marginTop: 12 }}>
+          <AthletesLeaderboard members={members} />
         </div>
       </div>
 
