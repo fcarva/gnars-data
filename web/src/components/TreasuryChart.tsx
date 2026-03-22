@@ -212,12 +212,20 @@ export function TreasuryChart({
   }
 
   const mergedData = Array.from(mergedByMonth.values()).sort((a, b) => a.date.localeCompare(b.date));
-  const chartRows = mergedData.map((row) => ({
-    month: row.date.slice(0, 7),
-    balance: row.value,
-    monthly_spend: row.proposalSpend,
-    auction_inflow: row.auctionInflow,
-  }));
+  const chartRows =
+    (data.history || []).length > 0
+      ? (data.history || []).map((row) => ({
+          month: row.month,
+          balance: row.balance,
+          monthly_spend: row.monthly_spend,
+          auction_inflow: row.auction_inflow,
+        }))
+      : mergedData.map((row) => ({
+          month: row.date.slice(0, 7),
+          balance: row.value,
+          monthly_spend: row.proposalSpend,
+          auction_inflow: row.auctionInflow,
+        }));
   const projectedDateTick = chartRows.find((row) => row.month.startsWith(projectedZeroDate || ""))?.month;
   const currentValue = chartData[chartData.length - 1]?.value || 0;
   const peakValue = chartData.reduce((max, row) => Math.max(max, row.value), 0);
@@ -301,7 +309,8 @@ export function TreasuryChart({
               stroke="#879A39"
               strokeDasharray="5 3"
               strokeWidth={1.5}
-              dot={false}
+              dot={{ r: 2.5, fill: "#879A39", strokeWidth: 0 }}
+              connectNulls={false}
             />
 
             <Line
@@ -327,7 +336,7 @@ export function TreasuryChart({
           Monthly spend
         </span>
         <span style={{ display: "flex", alignItems: "center", gap: 5, fontSize: 8.5, color: "#6F6E69" }}>
-          <span style={{ display: "inline-block", width: 14, height: 2, background: "#879A39", borderTop: "1px dashed #879A39" }} />
+          <span style={{ display: "inline-block", width: 14, height: 0, borderTop: "2px dashed #879A39" }} />
           Auction inflow
         </span>
       </div>

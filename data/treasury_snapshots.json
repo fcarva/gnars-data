@@ -46,5 +46,127 @@
       ],
       "data_quality_note": "Homepage treasury label: 46500.0; treasury metric payload: 44736.99; visible treasury widget: 0.0. Use row-level holdings plus the metric payload as the reliable balance layer."
     }
+  ],
+  "history": [
+    {
+      "month": "2024-03",
+      "balance": 266412.3,
+      "monthly_spend": 37689.53,
+      "auction_inflow": 0.0
+    },
+    {
+      "month": "2024-05",
+      "balance": 250864.91,
+      "monthly_spend": 15547.39,
+      "auction_inflow": 0.0
+    },
+    {
+      "month": "2024-06",
+      "balance": 234978.01,
+      "monthly_spend": 15886.9,
+      "auction_inflow": 0.0
+    },
+    {
+      "month": "2024-07",
+      "balance": 204249.92,
+      "monthly_spend": 30728.09,
+      "auction_inflow": 0.0
+    },
+    {
+      "month": "2024-08",
+      "balance": 139088.08,
+      "monthly_spend": 65161.85,
+      "auction_inflow": 0.0
+    },
+    {
+      "month": "2024-09",
+      "balance": 129236.99,
+      "monthly_spend": 9851.09,
+      "auction_inflow": 0.0
+    },
+    {
+      "month": "2024-10",
+      "balance": 120212.53,
+      "monthly_spend": 9024.46,
+      "auction_inflow": 0.0
+    },
+    {
+      "month": "2024-11",
+      "balance": 115112.53,
+      "monthly_spend": 5100.0,
+      "auction_inflow": 0.0
+    },
+    {
+      "month": "2024-12",
+      "balance": 108392.84,
+      "monthly_spend": 6719.69,
+      "auction_inflow": 0.0
+    },
+    {
+      "month": "2025-01",
+      "balance": 99842.84,
+      "monthly_spend": 8550.0,
+      "auction_inflow": 0.0
+    },
+    {
+      "month": "2025-02",
+      "balance": 85907.65,
+      "monthly_spend": 13935.19,
+      "auction_inflow": 0.0
+    },
+    {
+      "month": "2025-03",
+      "balance": 82615.65,
+      "monthly_spend": 3292.0,
+      "auction_inflow": 0.0
+    },
+    {
+      "month": "2025-04",
+      "balance": 78765.65,
+      "monthly_spend": 3850.0,
+      "auction_inflow": 0.0
+    },
+    {
+      "month": "2025-06",
+      "balance": 68233.28,
+      "monthly_spend": 10532.36,
+      "auction_inflow": 0.0
+    },
+    {
+      "month": "2025-07",
+      "balance": 66173.28,
+      "monthly_spend": 2060.0,
+      "auction_inflow": 0.0
+    },
+    {
+      "month": "2025-08",
+      "balance": 59819.92,
+      "monthly_spend": 6353.36,
+      "auction_inflow": 0.0
+    },
+    {
+      "month": "2025-10",
+      "balance": 50239.03,
+      "monthly_spend": 9580.89,
+      "auction_inflow": 0.0
+    },
+    {
+      "month": "2025-11",
+      "balance": 48806.99,
+      "monthly_spend": 1432.04,
+      "auction_inflow": 0.0
+    },
+    {
+      "month": "2025-12",
+      "balance": 46306.99,
+      "monthly_spend": 2500.0,
+      "auction_inflow": 0.0
+    },
+    {
+      "month": "2026-03",
+      "balance": 44736.99,
+      "monthly_spend": 1570.0,
+      "auction_inflow": 0.0
+    }
   ]
 }

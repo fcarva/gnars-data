@@ -22,34 +22,37 @@ export function FundingBreakdown({ funding, proposalTags }: FundingBreakdownProp
       color: "#879A39",
     }))
     .filter((row) => row.value > 0)
-    .sort((a, b) => b.value - a.value)
+    .sort((a, b) => {
+      if (a.key === "onchain_auction") return -1;
+      if (b.key === "onchain_auction") return 1;
+      return b.value - a.value;
+    })
     .slice(0, 4);
 
-  const tagByArchive = new Map(proposalTags.map((row) => [row.archive_id, row.semantic_category || row.primary_category || "other"]));
-  const spendTotals = new Map<string, number>();
+  const spendTotals = new Map<string, { value: number; key: string }>();
   for (const row of funding.allocation_by_proposal || []) {
-    const category = tagByArchive.get(row.archive_id) || "other";
-    let key = "Other";
-    if (category === "athletes_riders") key = "Athletes";
-    else if (category === "workstream_media") key = "Media";
-    else if (category === "workstream_ops") key = "Operations";
-    else if (category === "workstream_products" || category === "workstream_dev" || category === "irl_events") key = "Dev + Events";
-    spendTotals.set(key, (spendTotals.get(key) || 0) + (row.executed_spend_usd || 0));
+    const key = (row as unknown as { category_key?: string }).category_key || "uncategorized";
+    const label = (row as unknown as { category_label?: string }).category_label || key;
+    const current = spendTotals.get(label) || { value: 0, key };
+    current.value += row.executed_spend_usd || 0;
+    current.key = key;
+    spendTotals.set(label, current);
   }
 
   const spendRows = Array.from(spendTotals.entries())
-    .map(([label, value]) => ({
+    .map(([label, entry]) => ({
       key: label,
       label,
-      value,
+      value: entry.value,
       color:
-        label === "Athletes" ? "#3AA99F" :
-        label === "Media" ? "#8B7EC8" :
-        label === "Operations" ? "#DA702C" :
-        label === "Dev + Events" ? "#4385BE" : "#6F6E69",
+        entry.key === "athletes_riders" ? "#3AA99F" :
+        entry.key === "workstream_media" ? "#8B7EC8" :
+        entry.key === "workstream_ops" ? "#DA702C" :
+        entry.key === "workstream_dev" || entry.key === "workstream_products" ? "#4385BE" :
+        entry.key === "irl_events" ? "#879A39" : "#6F6E69",
     }))
     .sort((a, b) => b.value - a.value)
-    .slice(0, 4);
+    .slice(0, 6);
 
   const maxIn = Math.max(1, ...inflowRows.map((row) => row.value));
   const maxOut = Math.max(1, ...spendRows.map((row) => row.value));

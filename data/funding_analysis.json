@@ -1,9 +1,9 @@
 {
   "dataset": "funding_analysis",
-  "as_of": "2026-03-22T01:29:33.184652Z",
+  "as_of": "2026-03-22T06:27:33.487567Z",
   "version": 1,
   "summary": {
-    "funding_sources": 2,
+    "funding_sources": 3,
     "approved_funding_usd_estimate": 225000.0,
     "potential_funding_usd_estimate": 525000.0,
     "executed_spend_usd": 259364.84,
@@ -15,6 +15,21 @@
   },
   "auction_revenue_by_network": [],
   "funding_sources": [
+    {
+      "funding_source_id": "onchain_auction",
+      "title": "NFT Auction Revenue",
+      "status": "missing",
+      "source_date": null,
+      "requested_amount": {
+        "currency": "ETH",
+        "amount": 0,
+        "usd_estimate_hint": 0.0
+      },
+      "usd_estimate_at_source": 0.0,
+      "usd_estimate_fx": "coingecko:ethereum:spot",
+      "proposal_chain": [],
+      "source": "onchain_auction"
+    },
     {
       "funding_source_id": "nouns-bootstrap-2022",
       "title": "Gnars x Nouns Athletes",
@@ -103,7 +118,9 @@
       "voting_power": 726.0,
       "cost_per_vote_usd": 266.61,
       "cost_per_voting_power_usd": 6.977373,
-      "source_url": "https://www.gnars.com/proposals/base/101"
+      "source_url": "https://www.gnars.com/proposals/base/101",
+      "category_key": "public_goods",
+      "category_label": "Public Goods"
     },
     {
       "archive_id": "gnars-base-104",
@@ -117,7 +134,9 @@
       "voting_power": 822.0,
       "cost_per_vote_usd": 89.5,
       "cost_per_voting_power_usd": 1.742139,
-      "source_url": "https://www.gnars.com/proposals/base/104"
+      "source_url": "https://www.gnars.com/proposals/base/104",
+      "category_key": "irl_events",
+      "category_label": "Events"
     },
     {
       "archive_id": "gnars-base-108",
@@ -131,7 +150,9 @@
       "voting_power": 857.0,
       "cost_per_vote_usd": 104.17,
       "cost_per_voting_power_usd": 2.917153,
-      "source_url": "https://www.gnars.com/proposals/base/108"
+      "source_url": "https://www.gnars.com/proposals/base/108",
+      "category_key": "athletes_riders",
+      "category_label": "Athletes & Riders"
     },
     {
       "archive_id": "gnars-base-117",
@@ -145,7 +166,9 @@
       "voting_power": 1014.0,
       "cost_per_vote_usd": 65.42,
       "cost_per_voting_power_usd": 1.548323,
-      "source_url": "https://www.gnars.com/proposals/base/117"
+      "source_url": "https://www.gnars.com/proposals/base/117",
+      "category_key": "athletes_riders",
+      "category_label": "Athletes & Riders"
     },
     {
       "archive_id": "gnars-base-12",
@@ -159,7 +182,9 @@
       "voting_power": 790.0,
       "cost_per_vote_usd": 296.31,
       "cost_per_voting_power_usd": 14.628129,
-      "source_url": "https://www.gnars.com/proposals/base/12"
+      "source_url": "https://www.gnars.com/proposals/base/12",
+      "category_key": "workstream_media",
+      "category_label": "Media"
     },
     {
       "archive_id": "gnars-base-14",
@@ -173,7 +198,9 @@
       "voting_power": 922.0,
       "cost_per_vote_usd": 0.03,
       "cost_per_voting_power_usd": 0.001263,
-      "source_url": "https://www.gnars.com/proposals/base/14"
+      "source_url": "https://www.gnars.com/proposals/base/14",
+      "category_key": "workstream_products",
+      "category_label": "Dev"
     },
     {
       "archive_id": "gnars-base-16",
@@ -187,7 +214,9 @@
       "voting_power": 690.0,
       "cost_per_vote_usd": 88.67,
       "cost_per_voting_power_usd": 5.782609,
-      "source_url": "https://www.gnars.com/proposals/base/16"
+      "source_url": "https://www.gnars.com/proposals/base/16",
+      "category_key": "irl_events",
+      "category_label": "Events"
     },
     {
       "archive_id": "gnars-base-17",
@@ -201,7 +230,9 @@
       "voting_power": 910.0,
       "cost_per_vote_usd": 0.03,
       "cost_per_voting_power_usd": 0.001118,
-      "source_url": "https://www.gnars.com/proposals/base/17"
+      "source_url": "https://www.gnars.com/proposals/base/17",
+      "category_key": "workstream_products",
+      "category_label": "Dev"
     },
     {
       "archive_id": "gnars-base-18",
@@ -215,7 +246,9 @@
       "voting_power": 772.0,
       "cost_per_vote_usd": 0.04,
       "cost_per_voting_power_usd": 0.00122,
-      "source_url": "https://www.gnars.com/proposals/base/18"
+      "source_url": "https://www.gnars.com/proposals/base/18",
+      "category_key": "workstream_products",
+      "category_label": "Dev"
     },
     {
       "archive_id": "gnars-base-19",
@@ -229,7 +262,9 @@
       "voting_power": 1028.0,
       "cost_per_vote_usd": 193.03,
       "cost_per_voting_power_usd": 5.821012,
-      "source_url": "https://www.gnars.com/proposals/base/19"
+      "source_url": "https://www.gnars.com/proposals/base/19",
+      "category_key": "athletes_riders",
+      "category_label": "Athletes & Riders"
     },
     {
       "archive_id": "gnars-base-20",
@@ -243,7 +278,9 @@
       "voting_power": 901.0,
       "cost_per_vote_usd": 300.0,
       "cost_per_voting_power_usd": 10.987791,
-      "source_url": "https://www.gnars.com/proposals/base/20"
+      "source_url": "https://www.gnars.com/proposals/base/20",
+      "category_key": "workstream_products",
+      "category_label": "Dev"
     },
     {
       "archive_id": "gnars-base-21",
@@ -257,7 +294,9 @@
       "voting_power": 920.0,
       "cost_per_vote_usd": 0.04,
       "cost_per_voting_power_usd": 0.001022,
-      "source_url": "https://www.gnars.com/proposals/base/21"
+      "source_url": "https://www.gnars.com/proposals/base/21",
+      "category_key": "workstream_products",
+      "category_label": "Dev"
     },
     {
       "archive_id": "gnars-base-22",
@@ -271,7 +310,9 @@
       "voting_power": 783.0,
       "cost_per_vote_usd": 0.03,
       "cost_per_voting_power_usd": 0.00136,
-      "source_url": "https://www.gnars.com/proposals/base/22"
+      "source_url": "https://www.gnars.com/proposals/base/22",
+      "category_key": "workstream_products",
+      "category_label": "Dev"
     },
     {
       "archive_id": "gnars-base-23",
@@ -285,7 +326,9 @@
       "voting_power": 836.0,
       "cost_per_vote_usd": 312.5,
       "cost_per_voting_power_usd": 8.971292,
-      "source_url": "https://www.gnars.com/proposals/base/23"
+      "source_url": "https://www.gnars.com/proposals/base/23",
+      "category_key": "workstream_ops",
+      "category_label": "Operations"
     },
     {
       "archive_id": "gnars-base-24",
@@ -299,7 +342,9 @@
       "voting_power": 879.0,
       "cost_per_vote_usd": 375.0,
       "cost_per_voting_power_usd": 13.651877,
-      "source_url": "https://www.gnars.com/proposals/base/24"
+      "source_url": "https://www.gnars.com/proposals/base/24",
+      "category_key": "athletes_riders",
+      "category_label": "Athletes & Riders"
     },
     {
       "archive_id": "gnars-base-25",
@@ -313,7 +358,9 @@
       "voting_power": 1174.0,
       "cost_per_vote_usd": 104.73,
       "cost_per_voting_power_usd": 2.676339,
-      "source_url": "https://www.gnars.com/proposals/base/25"
+      "source_url": "https://www.gnars.com/proposals/base/25",
+      "category_key": "workstream_products",
+      "category_label": "Dev"
     },
     {
       "archive_id": "gnars-base-26",
@@ -327,7 +374,9 @@
       "voting_power": 1246.0,
       "cost_per_vote_usd": 245.0,
       "cost_per_voting_power_usd": 6.488764,
-      "source_url": "https://www.gnars.com/proposals/base/26"
+      "source_url": "https://www.gnars.com/proposals/base/26",
+      "category_key": "workstream_media",
+      "category_label": "Media"
     },
     {
       "archive_id": "gnars-base-27",
@@ -341,7 +390,9 @@
       "voting_power": 1134.0,
       "cost_per_vote_usd": 74.33,
       "cost_per_voting_power_usd": 1.704148,
-      "source_url": "https://www.gnars.com/proposals/base/27"
+      "source_url": "https://www.gnars.com/proposals/base/27",
+      "category_key": "irl_events",
+      "category_label": "Events"
     },
     {
       "archive_id": "gnars-base-28",
@@ -355,7 +406,9 @@
       "voting_power": 1306.0,
       "cost_per_vote_usd": 246.5,
       "cost_per_voting_power_usd": 6.039816,
-      "source_url": "https://www.gnars.com/proposals/base/28"
+      "source_url": "https://www.gnars.com/proposals/base/28",
+      "category_key": "irl_events",
+      "category_label": "Events"
     },
     {
       "archive_id": "gnars-base-29",
@@ -369,7 +422,9 @@
       "voting_power": 1300.0,
       "cost_per_vote_usd": 542.2,
       "cost_per_voting_power_usd": 10.426946,
-      "source_url": "https://www.gnars.com/proposals/base/29"
+      "source_url": "https://www.gnars.com/proposals/base/29",
+      "category_key": "athletes_riders",
+      "category_label": "Athletes & Riders"
     },
     {
       "archive_id": "gnars-base-31",
@@ -383,7 +438,9 @@
       "voting_power": 862.0,
       "cost_per_vote_usd": 0.06,
       "cost_per_voting_power_usd": 0.001236,
-      "source_url": "https://www.gnars.com/proposals/base/31"
+      "source_url": "https://www.gnars.com/proposals/base/31",
+      "category_key": "workstream_media",
+      "category_label": "Media"
     },
     {
       "archive_id": "gnars-base-32",
@@ -397,7 +454,9 @@
       "voting_power": 1198.0,
       "cost_per_vote_usd": 700.7,
       "cost_per_voting_power_usd": 13.452421,
-      "source_url": "https://www.gnars.com/proposals/base/32"
+      "source_url": "https://www.gnars.com/proposals/base/32",
+      "category_key": "athletes_riders",
+      "category_label": "Athletes & Riders"
     },
     {
       "archive_id": "gnars-base-33",
@@ -411,7 +470,9 @@
       "voting_power": 1138.0,
       "cost_per_vote_usd": 218.59,
       "cost_per_voting_power_usd": 4.225902,
-      "source_url": "https://www.gnars.com/proposals/base/33"
+      "source_url": "https://www.gnars.com/proposals/base/33",
+      "category_key": "workstream_products",
+      "category_label": "Dev"
     },
     {
       "archive_id": "gnars-base-37",
@@ -425,7 +486,9 @@
       "voting_power": 1269.0,
       "cost_per_vote_usd": 262.33,
       "cost_per_voting_power_usd": 6.201734,
-      "source_url": "https://www.gnars.com/proposals/base/37"
+      "source_url": "https://www.gnars.com/proposals/base/37",
+      "category_key": "athletes_riders",
+      "category_label": "Athletes & Riders"
     },
     {
       "archive_id": "gnars-base-38",
@@ -439,7 +502,9 @@
       "voting_power": 1344.0,
       "cost_per_vote_usd": 41.04,
       "cost_per_voting_power_usd": 0.885544,
-      "source_url": "https://www.gnars.com/proposals/base/38"
+      "source_url": "https://www.gnars.com/proposals/base/38",
+      "category_key": "workstream_products",
+      "category_label": "Dev"
     },
     {
       "archive_id": "gnars-base-39",
@@ -453,7 +518,9 @@
       "voting_power": 1385.0,
       "cost_per_vote_usd": 274.42,
       "cost_per_voting_power_usd": 8.519856,
-      "source_url": "https://www.gnars.com/proposals/base/39"
+      "source_url": "https://www.gnars.com/proposals/base/39",
+      "category_key": "irl_events",
+      "category_label": "Events"
     },
     {
       "archive_id": "gnars-base-40",
@@ -467,7 +534,9 @@
       "voting_power": 810.0,
       "cost_per_vote_usd": 380.56,
       "cost_per_voting_power_usd": 8.45679,
-      "source_url": "https://www.gnars.com/proposals/base/40"
+      "source_url": "https://www.gnars.com/proposals/base/40",
+      "category_key": "athletes_riders",
+      "category_label": "Athletes & Riders"
     },
     {
       "archive_id": "gnars-base-41",
@@ -481,7 +550,9 @@
       "voting_power": 678.0,
       "cost_per_vote_usd": 125.0,
       "cost_per_voting_power_usd": 4.424779,
-      "source_url": "https://www.gnars.com/proposals/base/41"
+      "source_url": "https://www.gnars.com/proposals/base/41",
+      "category_key": "athletes_riders",
+      "category_label": "Athletes & Riders"
     },
     {
       "archive_id": "gnars-base-42",
@@ -495,7 +566,9 @@
       "voting_power": 633.0,
       "cost_per_vote_usd": 0.05,
       "cost_per_voting_power_usd": 0.001723,
-      "source_url": "https://www.gnars.com/proposals/base/42"
+      "source_url": "https://www.gnars.com/proposals/base/42",
+      "category_key": "workstream_products",
+      "category_label": "Dev"
     },
     {
       "archive_id": "gnars-base-45",
@@ -509,7 +582,9 @@
       "voting_power": 754.0,
       "cost_per_vote_usd": 258.11,
       "cost_per_voting_power_usd": 9.242706,
-      "source_url": "https://www.gnars.com/proposals/base/45"
+      "source_url": "https://www.gnars.com/proposals/base/45",
+      "category_key": "workstream_ops",
+      "category_label": "Operations"
     },
     {
       "archive_id": "gnars-base-47",
@@ -523,7 +598,9 @@
       "voting_power": 1154.0,
       "cost_per_vote_usd": 33.33,
       "cost_per_voting_power_usd": 0.866551,
-      "source_url": "https://www.gnars.com/proposals/base/47"
+      "source_url": "https://www.gnars.com/proposals/base/47",
+      "category_key": "workstream_media",
+      "category_label": "Media"
     },
     {
       "archive_id": "gnars-base-48",
@@ -537,7 +614,9 @@
       "voting_power": 1190.0,
       "cost_per_vote_usd": 37.69,
       "cost_per_voting_power_usd": 0.886938,
-      "source_url": "https://www.gnars.com/proposals/base/48"
+      "source_url": "https://www.gnars.com/proposals/base/48",
+      "category_key": "workstream_ops",
+      "category_label": "Operations"
     },
     {
       "archive_id": "gnars-base-52",
@@ -551,7 +630,9 @@
       "voting_power": 1005.0,
       "cost_per_vote_usd": 141.67,
       "cost_per_voting_power_usd": 5.074627,
-      "source_url": "https://www.gnars.com/proposals/base/52"
+      "source_url": "https://www.gnars.com/proposals/base/52",
+      "category_key": "irl_events",
+      "category_label": "Events"
     },
     {
       "archive_id": "gnars-base-53",
@@ -565,7 +646,9 @@
       "voting_power": 987.0,
       "cost_per_vote_usd": 142.72,
       "cost_per_voting_power_usd": 4.193516,
-      "source_url": "https://www.gnars.com/proposals/base/53"
+      "source_url": "https://www.gnars.com/proposals/base/53",
+      "category_key": "athletes_riders",
+      "category_label": "Athletes & Riders"
     },
     {
       "archive_id": "gnars-base-57",
@@ -579,7 +662,9 @@
       "voting_power": 754.0,
       "cost_per_vote_usd": 95.58,
       "cost_per_voting_power_usd": 3.422667,
-      "source_url": "https://www.gnars.com/proposals/base/57"
+      "source_url": "https://www.gnars.com/proposals/base/57",
+      "category_key": "workstream_media",
+      "category_label": "Media"
     },
     {
       "archive_id": "gnars-base-59",
@@ -593,7 +678,9 @@
       "voting_power": 808.0,
       "cost_per_vote_usd": 371.74,
       "cost_per_voting_power_usd": 10.581683,
-      "source_url": "https://www.gnars.com/proposals/base/59"
+      "source_url": "https://www.gnars.com/proposals/base/59",
+      "category_key": "workstream_media",
+      "category_label": "Media"
     },
     {
       "archive_id": "gnars-base-61",
@@ -607,7 +694,9 @@
       "voting_power": 855.0,
       "cost_per_vote_usd": 196.87,
       "cost_per_voting_power_usd": 5.756507,
-      "source_url": "https://www.gnars.com/proposals/base/61"
+      "source_url": "https://www.gnars.com/proposals/base/61",
+      "category_key": "athletes_riders",
+      "category_label": "Athletes & Riders"
     },
     {
       "archive_id": "gnars-base-63",
@@ -621,7 +710,9 @@
       "voting_power": 825.0,
       "cost_per_vote_usd": 298.53,
       "cost_per_voting_power_usd": 7.960855,
-      "source_url": "https://www.gnars.com/proposals/base/63"
+      "source_url": "https://www.gnars.com/proposals/base/63",
+      "category_key": "athletes_riders",
+      "category_label": "Athletes & Riders"
     },
     {
       "archive_id": "gnars-base-64",
@@ -635,7 +726,9 @@
       "voting_power": 1002.0,
       "cost_per_vote_usd": 102.27,
       "cost_per_voting_power_usd": 2.245509,
-      "source_url": "https://www.gnars.com/proposals/base/64"
+      "source_url": "https://www.gnars.com/proposals/base/64",
+      "category_key": "irl_events",
+      "category_label": "Events"
     },
     {
       "archive_id": "gnars-base-65",
@@ -649,7 +742,9 @@
       "voting_power": 1016.0,
       "cost_per_vote_usd": 9.32,
       "cost_per_voting_power_usd": 0.192594,
-      "source_url": "https://www.gnars.com/proposals/base/65"
+      "source_url": "https://www.gnars.com/proposals/base/65",
+      "category_key": "workstream_ops",
+      "category_label": "Operations"
     },
     {
       "archive_id": "gnars-base-68",
@@ -663,7 +758,9 @@
       "voting_power": 658.0,
       "cost_per_vote_usd": 46.3,
       "cost_per_voting_power_usd": 1.899696,
-      "source_url": "https://www.gnars.com/proposals/base/68"
+      "source_url": "https://www.gnars.com/proposals/base/68",
+      "category_key": "workstream_products",
+      "category_label": "Dev"
     },
     {
       "archive_id": "gnars-base-70",
@@ -677,7 +774,9 @@
       "voting_power": 1065.0,
       "cost_per_vote_usd": 102.1,
       "cost_per_voting_power_usd": 1.917371,
-      "source_url": "https://www.gnars.com/proposals/base/70"
+      "source_url": "https://www.gnars.com/proposals/base/70",
+      "category_key": "athletes_riders",
+      "category_label": "Athletes & Riders"
     },
     {
       "archive_id": "gnars-base-76",
@@ -691,7 +790,9 @@
       "voting_power": 1098.0,
       "cost_per_vote_usd": 78.12,
       "cost_per_voting_power_usd": 2.276867,
-      "source_url": "https://www.gnars.com/proposals/base/76"
+      "source_url": "https://www.gnars.com/proposals/base/76",
+      "category_key": "workstream_media",
+      "category_label": "Media"
     },
     {
       "archive_id": "gnars-base-77",
@@ -705,7 +806,9 @@
       "voting_power": 766.0,
       "cost_per_vote_usd": 64.29,
       "cost_per_voting_power_usd": 1.762402,
-      "source_url": "https://www.gnars.com/proposals/base/77"
+      "source_url": "https://www.gnars.com/proposals/base/77",
+      "category_key": "irl_events",
+      "category_label": "Events"
     },
     {
       "archive_id": "gnars-base-86",
@@ -719,7 +822,9 @@
       "voting_power": 1193.0,
       "cost_per_vote_usd": 234.05,
       "cost_per_voting_power_usd": 8.828468,
-      "source_url": "https://www.gnars.com/proposals/base/86"
+      "source_url": "https://www.gnars.com/proposals/base/86",
+      "category_key": "workstream_ops",
+      "category_label": "Operations"
     },
     {
       "archive_id": "gnars-base-89",
@@ -733,7 +838,9 @@
       "voting_power": 788.0,
       "cost_per_vote_usd": 85.0,
       "cost_per_voting_power_usd": 2.15736,
-      "source_url": "https://www.gnars.com/proposals/base/89"
+      "source_url": "https://www.gnars.com/proposals/base/89",
+      "category_key": "athletes_riders",
+      "category_label": "Athletes & Riders"
     },
     {
       "archive_id": "gnars-base-90",
@@ -747,7 +854,9 @@
       "voting_power": 883.0,
       "cost_per_vote_usd": 27.69,
       "cost_per_voting_power_usd": 0.407701,
-      "source_url": "https://www.gnars.com/proposals/base/90"
+      "source_url": "https://www.gnars.com/proposals/base/90",
+      "category_key": "governance_policy",
+      "category_label": "Governance"
     },
     {
       "archive_id": "gnars-base-95",
@@ -761,7 +870,9 @@
       "voting_power": 698.0,
       "cost_per_vote_usd": 48.0,
       "cost_per_voting_power_usd": 1.719198,
-      "source_url": "https://www.gnars.com/proposals/base/95"
+      "source_url": "https://www.gnars.com/proposals/base/95",
+      "category_key": "athletes_riders",
+      "category_label": "Athletes & Riders"
     },
     {
       "archive_id": "gnars-base-97",
@@ -775,7 +886,9 @@
       "voting_power": 901.0,
       "cost_per_vote_usd": 166.24,
       "cost_per_voting_power_usd": 5.719601,
-      "source_url": "https://www.gnars.com/proposals/base/97"
+      "source_url": "https://www.gnars.com/proposals/base/97",
+      "category_key": "workstream_media",
+      "category_label": "Media"
     },
     {
       "archive_id": "gnars-base-99",
@@ -789,7 +902,9 @@
       "voting_power": 615.0,
       "cost_per_vote_usd": 237.65,
       "cost_per_voting_power_usd": 7.341986,
-      "source_url": "https://www.gnars.com/proposals/base/99"
+      "source_url": "https://www.gnars.com/proposals/base/99",
+      "category_key": "irl_events",
+      "category_label": "Events"
     },
     {
       "archive_id": "gnars-ethereum-38",
@@ -803,7 +918,9 @@
       "voting_power": 636.0,
       "cost_per_vote_usd": null,
       "cost_per_voting_power_usd": 57.810983,
-      "source_url": "https://www.gnars.com/proposals/ethereum/38"
+      "source_url": "https://www.gnars.com/proposals/ethereum/38",
+      "category_key": "governance_policy",
+      "category_label": "Governance"
     },
     {
       "archive_id": "gnars-snapshot-101",
@@ -817,216 +934,20 @@
       "voting_power": 730.0,
       "cost_per_vote_usd": null,
       "cost_per_voting_power_usd": 1.262671,
-      "source_url": "https://www.gnars.com/proposals/snapshot/101"
+      "source_url": "https://www.gnars.com/proposals/snapshot/101",
+      "category_key": "athletes_riders",
+      "category_label": "Athletes & Riders"
     }
   ],
   "voting_power_timeseries": [
     {
-      "month": "2024-03",
-      "executed_spend_usd": 37689.53,
-      "proposal_count": 2,
-      "vote_count": 0,
-      "voting_power": 1366.0,
-      "cost_per_vote_usd": null,
-      "cost_per_voting_power_usd": 27.591168
-    },
-    {
-      "month": "2024-04",
-      "executed_spend_usd": 0.0,
-      "proposal_count": 1,
-      "vote_count": 39,
-      "voting_power": 790.0,
-      "cost_per_vote_usd": 0.0,
-      "cost_per_voting_power_usd": 0.0
-    },
-    {
-      "month": "2024-05",
-      "executed_spend_usd": 15547.39,
-      "proposal_count": 4,
-      "vote_count": 139,
-      "voting_power": 3294.0,
-      "cost_per_vote_usd": 111.85,
-      "cost_per_voting_power_usd": 4.719911
-    },
-    {
-      "month": "2024-06",
-      "executed_spend_usd": 15886.9,
-      "proposal_count": 3,
-      "vote_count": 87,
-      "voting_power": 2849.0,
-      "cost_per_vote_usd": 182.61,
-      "cost_per_voting_power_usd": 5.576307
-    },
-    {
-      "month": "2024-07",
-      "executed_spend_usd": 30728.09,
-      "proposal_count": 7,
-      "vote_count": 210,
-      "voting_power": 7358.0,
-      "cost_per_vote_usd": 146.32,
-      "cost_per_voting_power_usd": 4.176147
-    },
-    {
-      "month": "2024-08",
-      "executed_spend_usd": 65161.85,
-      "proposal_count": 8,
-      "vote_count": 207,
-      "voting_power": 9306.0,
-      "cost_per_vote_usd": 314.79,
-      "cost_per_voting_power_usd": 7.002133
-    },
-    {
-      "month": "2024-09",
-      "executed_spend_usd": 9851.09,
-      "proposal_count": 2,
-      "vote_count": 44,
-      "voting_power": 1311.0,
-      "cost_per_vote_usd": 223.89,
-      "cost_per_voting_power_usd": 7.514181
-    },
-    {
-      "month": "2024-10",
-      "executed_spend_usd": 9024.46,
-      "proposal_count": 3,
-      "vote_count": 85,
-      "voting_power": 3098.0,
-      "cost_per_vote_usd": 106.17,
-      "cost_per_voting_power_usd": 2.912994
-    },
-    {
-      "month": "2024-11",
-      "executed_spend_usd": 5100.0,
-      "proposal_count": 2,
-      "vote_count": 65,
-      "voting_power": 1992.0,
-      "cost_per_vote_usd": 78.46,
-      "cost_per_voting_power_usd": 2.560241
-    },
-    {
-      "month": "2024-12",
-      "executed_spend_usd": 6719.69,
-      "proposal_count": 1,
-      "vote_count": 27,
-      "voting_power": 754.0,
-      "cost_per_vote_usd": 248.88,
-      "cost_per_voting_power_usd": 8.912057
-    },
-    {
-      "month": "2025-01",
-      "executed_spend_usd": 8550.0,
-      "proposal_count": 3,
-      "vote_count": 70,
-      "voting_power": 2488.0,
-      "cost_per_vote_usd": 122.14,
-      "cost_per_voting_power_usd": 3.436495
-    },
-    {
-      "month": "2025-02",
-      "executed_spend_usd": 13935.19,
-      "proposal_count": 2,
-      "vote_count": 43,
-      "voting_power": 2018.0,
-      "cost_per_vote_usd": 324.07,
-      "cost_per_voting_power_usd": 6.905448
-    },
-    {
-      "month": "2025-03",
-      "executed_spend_usd": 3292.0,
-      "proposal_count": 2,
-      "vote_count": 47,
-      "voting_power": 1723.0,
-      "cost_per_vote_usd": 70.04,
-      "cost_per_voting_power_usd": 1.910621
-    },
-    {
-      "month": "2025-04",
-      "executed_spend_usd": 3850.0,
-      "proposal_count": 2,
-      "vote_count": 53,
-      "voting_power": 1864.0,
-      "cost_per_vote_usd": 72.64,
-      "cost_per_voting_power_usd": 2.065451
-    },
-    {
-      "month": "2025-05",
-      "executed_spend_usd": 0.0,
-      "proposal_count": 1,
-      "vote_count": 45,
-      "voting_power": 1193.0,
-      "cost_per_vote_usd": 0.0,
-      "cost_per_voting_power_usd": 0.0
-    },
-    {
-      "month": "2025-06",
-      "executed_spend_usd": 10532.36,
-      "proposal_count": 1,
-      "vote_count": 20,
-      "voting_power": 788.0,
-      "cost_per_vote_usd": 526.62,
-      "cost_per_voting_power_usd": 13.365943
-    },
-    {
-      "month": "2025-07",
-      "executed_spend_usd": 2060.0,
-      "proposal_count": 2,
-      "vote_count": 38,
-      "voting_power": 1581.0,
-      "cost_per_vote_usd": 54.21,
-      "cost_per_voting_power_usd": 1.302973
-    },
-    {
-      "month": "2025-08",
-      "executed_spend_usd": 6353.36,
-      "proposal_count": 1,
-      "vote_count": 31,
-      "voting_power": 901.0,
-      "cost_per_vote_usd": 204.95,
-      "cost_per_voting_power_usd": 7.051454
-    },
-    {
-      "month": "2025-09",
-      "executed_spend_usd": 0.0,
-      "proposal_count": 1,
-      "vote_count": 19,
-      "voting_power": 615.0,
-      "cost_per_vote_usd": 0.0,
-      "cost_per_voting_power_usd": 0.0
-    },
-    {
-      "month": "2025-10",
-      "executed_spend_usd": 9580.89,
-      "proposal_count": 1,
-      "vote_count": 19,
-      "voting_power": 726.0,
-      "cost_per_vote_usd": 504.26,
-      "cost_per_voting_power_usd": 13.196824
-    },
-    {
-      "month": "2025-11",
-      "executed_spend_usd": 1432.04,
-      "proposal_count": 2,
-      "vote_count": 40,
-      "voting_power": 1679.0,
-      "cost_per_vote_usd": 35.8,
-      "cost_per_voting_power_usd": 0.852911
-    },
-    {
-      "month": "2025-12",
-      "executed_spend_usd": 2500.0,
-      "proposal_count": 0,
-      "vote_count": 0,
-      "voting_power": 0.0,
-      "cost_per_vote_usd": null,
-      "cost_per_voting_power_usd": null
-    },
-    {
-      "month": "2026-03",
-      "executed_spend_usd": 1570.0,
-      "proposal_count": 1,
-      "vote_count": 24,
-      "voting_power": 1014.0,
-      "cost_per_vote_usd": 65.42,
-      "cost_per_voting_power_usd": 1.548323
+      "month": null,
+      "executed_spend_usd": 259364.84,
+      "proposal_count": 52,
+      "vote_count": 1352,
+      "voting_power": 48708.0,
+      "cost_per_vote_usd": 191.84,
+      "cost_per_voting_power_usd": 5.324892
     }
   ],
   "method_notes": [

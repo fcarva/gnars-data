@@ -15,6 +15,18 @@ RAW_DIR = ROOT / "raw"
 AUCTIONS_PATH = RAW_DIR / "auctions_all.json"
 COINGECKO_API_BASE = "https://api.coingecko.com/api/v3"
 USER_AGENT = "gnars-data-funding-analysis/1.0 (+https://github.com/fcarva/gnars-data)"
+CATEGORY_LABELS = {
+    "athletes_riders": "Athletes & Riders",
+    "workstream_media": "Media",
+    "workstream_ops": "Operations",
+    "workstream_dev": "Dev",
+    "workstream_products": "Dev",
+    "irl_events": "Events",
+    "public_goods": "Public Goods",
+    "governance_policy": "Governance",
+    "uncategorized": "Other",
+    "other": "Other",
+}
 
 
 def utc_now_iso() -> str:
@@ -74,6 +86,11 @@ def fetch_eth_spot_price_usd() -> tuple[float | None, str | None]:
 def month_bucket(value: str | None) -> str:
     if not value:
         return "unknown"
+
+
+def readable_category(value: Any) -> str:
+    key = str(value or "uncategorized").strip().lower() or "uncategorized"
+    return CATEGORY_LABELS.get(key, key)
     try:
         if value.endswith("Z"):
             value = value[:-1] + "+00:00"
@@ -118,9 +135,13 @@ def main() -> int:
     funding = load_json("funding_origins")
     spend = load_json("spend_ledger")
     proposals_archive = load_json("proposals_archive")
+    proposal_tags = load_json("proposal_tags")
 
     proposal_by_archive_id: dict[str, dict[str, Any]] = {
         record["archive_id"]: record for record in proposals_archive.get("records", [])
+    }
+    proposal_tag_by_archive_id: dict[str, dict[str, Any]] = {
+        str(record.get("archive_id") or ""): record for record in proposal_tags.get("records", [])
     }
 
     warnings: list[str] = []
@@ -187,6 +208,25 @@ def main() -> int:
             }
         )
 
+    funding_sources_enriched.insert(
+        0,
+        {
+            "funding_source_id": "onchain_auction",
+            "title": "NFT Auction Revenue",
+            "status": "received" if (auction_total_usd or 0) > 0 else "missing",
+            "source_date": None,
+            "requested_amount": {
+                "currency": "ETH",
+                "amount": round(auction_total_eth, 8),
+                "usd_estimate_hint": round(auction_total_usd, 2) if auction_total_usd is not None else None,
+            },
+            "usd_estimate_at_source": round(auction_total_usd, 2) if auction_total_usd is not None else 0.0,
+            "usd_estimate_fx": "coingecko:ethereum:spot" if auction_total_usd is not None else None,
+            "proposal_chain": [],
+            "source": "onchain_auction",
+        },
+    )
+
     spend_by_archive_id: dict[str, float] = defaultdict(float)
     monthly: dict[str, dict[str, Any]] = {}
 
@@ -224,6 +264,12 @@ def main() -> int:
         proposal = proposal_by_archive_id.get(archive_id)
         if proposal is None:
             continue
+        tag = proposal_tag_by_archive_id.get(archive_id, {})
+        category_key = (
+            tag.get("semantic_category")
+            or tag.get("primary_category")
+            or "uncategorized"
+        )
         vote_count = len(proposal.get("votes", []))
         voting_power = float(proposal.get("scores_total") or 0.0)
 
@@ -262,6 +308,8 @@ def main() -> int:
                 "cost_per_vote_usd": round(spend_usd / vote_count, 2) if vote_count > 0 else None,
                 "cost_per_voting_power_usd": round(spend_usd / voting_power, 6) if voting_power > 0 else None,
                 "source_url": proposal.get("links", {}).get("source_url"),
+                "category_key": str(category_key),
+                "category_label": readable_category(category_key),
             }
         )
 

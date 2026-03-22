@@ -198,6 +198,8 @@ export interface FundingAllocation {
   cost_per_vote_usd: number | null;
   cost_per_voting_power_usd: number | null;
   source_url: string;
+  category_key?: string;
+  category_label?: string;
 }
 
 export interface FundingTimeseriesPoint {
@@ -689,9 +691,16 @@ export interface TreasurySnapshot {
   date: string;
   total_value_usd: number;
 }
+export interface TreasuryHistoryPoint {
+  month: string;
+  balance: number;
+  monthly_spend: number;
+  auction_inflow: number;
+}
 export interface TreasurySnapshotsData {
   dataset: string;
   records: TreasurySnapshot[];
+  history?: TreasuryHistoryPoint[];
 }
 export async function getTreasurySnapshots(): Promise<TreasurySnapshotsData | null> {
   try {

@@ -5,60 +5,127 @@
   "version": 1,
   "cats": [
     {
-      "id": "athletes_riders",
-      "label": "Athletes WS",
+      "id": "Athletes & Riders",
+      "label": "Athletes & Riders",
+      "category": "Athletes & Riders",
+      "val_usdc": 76321,
+      "val_eth": 4.253,
+      "val_usd_total": 90937,
       "val": 90.9,
       "pct": 35,
       "col": "#3AA99F",
-      "rec": "Riders & athletes"
+      "rec": "Riders & athletes",
+      "proposal_count": 0,
+      "top_recipients": [
+        "0xe1b9...9641",
+        "0xe8b2...599d",
+        "0x3f51...f7f2"
+      ]
     },
     {
-      "id": "irl_events",
+      "id": "Events",
       "label": "Events",
+      "category": "Events",
+      "val_usdc": 32378,
+      "val_eth": 2.22,
+      "val_usd_total": 40258,
       "val": 40.3,
       "pct": 16,
       "col": "#879A39",
-      "rec": "Event organizers"
+      "rec": "Event organizers",
+      "proposal_count": 0,
+      "top_recipients": [
+        "0xe5f6...8beb",
+        "luizhadad.eth",
+        "0x4f81...3f20"
+      ]
     },
     {
-      "id": "workstream_media",
-      "label": "Media WS",
+      "id": "Media",
+      "label": "Media",
+      "category": "Media",
+      "val_usdc": 20915,
+      "val_eth": 1.0,
+      "val_usd_total": 39426,
       "val": 39.4,
       "pct": 15,
       "col": "#8B7EC8",
-      "rec": "Content creators"
+      "rec": "Content creators",
+      "proposal_count": 0,
+      "top_recipients": [
+        "0xe5f6...8beb",
+        "0xe636...decc",
+        "0x5769...ecab"
+      ]
     },
     {
-      "id": "governance_policy",
+      "id": "Governance",
       "label": "Governance",
+      "category": "Governance",
+      "val_usdc": 360,
+      "val_eth": 10.237,
+      "val_usd_total": 37128,
       "val": 37.1,
       "pct": 14,
       "col": "#403E3C",
-      "rec": "DAO governance"
+      "rec": "DAO governance",
+      "proposal_count": 0,
+      "top_recipients": [
+        "gami.eth",
+        "0x2581...f89f"
+      ]
     },
     {
-      "id": "workstream_ops",
-      "label": "Ops WS",
+      "id": "Operations",
+      "label": "Operations",
+      "category": "Operations",
+      "val_usdc": 22469,
+      "val_eth": 1.4,
+      "val_usd_total": 26252,
       "val": 26.3,
       "pct": 10,
       "col": "#DA702C",
-      "rec": "Core contributors"
+      "rec": "Core contributors",
+      "proposal_count": 0,
+      "top_recipients": [
+        "0xc407...3c28",
+        "0x459b...69de",
+        "0x9d4e...937f"
+      ]
     },
     {
-      "id": "workstream_dev",
-      "label": "Dev WS",
+      "id": "Dev",
+      "label": "Dev",
+      "category": "Dev",
+      "val_usdc": 15650,
+      "val_eth": 1.542,
+      "val_usd_total": 20297,
       "val": 20.3,
       "pct": 8,
       "col": "#4385BE",
-      "rec": "Builders"
+      "rec": "Builders",
+      "proposal_count": 0,
+      "top_recipients": [
+        "0x7351...53f8",
+        "gami.eth",
+        "fuzzyface.eth"
+      ]
     },
     {
-      "id": "public_goods",
+      "id": "Public Goods",
       "label": "Public Goods",
+      "category": "Public Goods",
+      "val_usdc": 2600,
+      "val_eth": 0.619,
+      "val_usd_total": 5066,
       "val": 5.1,
       "pct": 2,
       "col": "#6F6E69",
-      "rec": "Community"
+      "rec": "Community",
+      "proposal_count": 0,
+      "top_recipients": [
+        "fernandoferreira.eth"
+      ]
     }
   ],
   "total_k": 259.4

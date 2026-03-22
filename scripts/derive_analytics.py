@@ -371,6 +371,102 @@ def estimate_monthly_burn(spend_records: list[dict[str, Any]]) -> float:
     return round(sum(non_zero) / len(non_zero), 2)
 
 
+def _month_from_any_timestamp(value: Any) -> str | None:
+    if value in (None, ""):
+        return None
+    if isinstance(value, (int, float)):
+        raw = float(value)
+    else:
+        text = str(value).strip()
+        if not text:
+            return None
+        if text.isdigit():
+            raw = float(text)
+        else:
+            parsed = parse_datetime(text)
+            return parsed.strftime("%Y-%m") if parsed else None
+    if raw <= 0:
+        return None
+    if raw > 1_000_000_000_000:
+        raw = raw / 1000.0
+    parsed = datetime.fromtimestamp(raw, tz=timezone.utc)
+    return parsed.strftime("%Y-%m")
+
+
+def _load_auction_rows() -> list[dict[str, Any]]:
+    for name in ("auctions_all", "auctions_base", "auctions_ethereum"):
+        path = ROOT / "raw" / f"{name}.json"
+        if not path.exists():
+            continue
+        payload = load_json_path(path)
+        if isinstance(payload, list):
+            return [row for row in payload if isinstance(row, dict)]
+        rows = payload.get("records")
+        if isinstance(rows, list):
+            return [row for row in rows if isinstance(row, dict)]
+    return []
+
+
+def _build_treasury_history(
+    *,
+    treasury_snapshots: dict[str, Any],
+    spend_records: list[dict[str, Any]],
+    analytics_as_of: str,
+) -> list[dict[str, Any]]:
+    spend_by_month: dict[str, float] = defaultdict(float)
+    for record in spend_records:
+        month = _month_from_any_timestamp(
+            record.get("proposal_executed_at")
+            or record.get("proposal_end_at")
+            or record.get("proposal_created_at")
+            or record.get("valuation_reference_at")
+        )
+        if not month:
+            continue
+        spend_by_month[month] += usd_value_from_spend(record)
+
+    inflow_by_month: dict[str, float] = defaultdict(float)
+    for row in _load_auction_rows():
+        month = _month_from_any_timestamp(
+            row.get("endTime")
+            or row.get("startTime")
+            or row.get("end_time")
+            or row.get("start_time")
+            or row.get("date")
+            or row.get("created_at")
+        )
+        if not month:
+            continue
+        amount_eth = number_or_zero(row.get("amount_eth") or row.get("amount"))
+        if amount_eth <= 0:
+            continue
+        inflow_by_month[month] += amount_eth * ETH_FALLBACK_USD
+
+    as_of_month = _month_from_any_timestamp(analytics_as_of) or datetime.now(timezone.utc).strftime("%Y-%m")
+    months = sorted(set(spend_by_month.keys()) | set(inflow_by_month.keys()) | {as_of_month})
+    if not months:
+        months = [as_of_month]
+
+    current_balance = number_or_zero(((treasury_snapshots.get("records") or [{}])[-1]).get("total_value_usd"))
+    balance_by_month: dict[str, float] = {months[-1]: current_balance}
+    for index in range(len(months) - 2, -1, -1):
+        next_month = months[index + 1]
+        month = months[index]
+        next_balance = number_or_zero(balance_by_month.get(next_month))
+        previous_balance = next_balance - number_or_zero(inflow_by_month.get(next_month)) + number_or_zero(spend_by_month.get(next_month))
+        balance_by_month[month] = max(previous_balance, 0.0)
+
+    return [
+        {
+            "month": month,
+            "balance": round(number_or_zero(balance_by_month.get(month)), 2),
+            "monthly_spend": round(number_or_zero(spend_by_month.get(month)), 2),
+            "auction_inflow": round(number_or_zero(inflow_by_month.get(month)), 2),
+        }
+        for month in months
+    ]
+
+
 def readable_category(value: str) -> str:
     key = str(value or "uncategorized").strip().lower() or "uncategorized"
     return CATEGORY_LABELS.get(key, key)
@@ -3211,6 +3307,11 @@ def main() -> int:
         analytics_as_of=analytics_as_of,
     )
     treasury_snapshots = build_treasury_snapshots(treasury=treasury, analytics_as_of=analytics_as_of)
+    treasury_snapshots["history"] = _build_treasury_history(
+        treasury_snapshots=treasury_snapshots,
+        spend_records=spend_records,
+        analytics_as_of=analytics_as_of,
+    )
     proposal_reconciliation = build_proposal_reconciliation(
         archive=archive,
         proposals_enriched=proposals_enriched,

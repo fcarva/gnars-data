@@ -6,6 +6,7 @@
   "monthly_burn_usd": 12968.24,
   "runway_months": 3,
   "projected_zero_date": "2026-06",
+  "sankey_total_k": 259.4,
   "treasury_events": [
     {
       "proposal_id": "gnars-base-117",
@@ -143,6 +144,95 @@
       "balance_after": 78765.64
     }
   ],
+  "monthly_by_category": {
+    "2024-03": {
+      "Athletes & Riders": 921.75,
+      "Governance": 36767.78
+    },
+    "2024-05": {
+      "Dev": 1.16,
+      "Events": 3990.0,
+      "Media": 11556.22
+    },
+    "2024-06": {
+      "Athletes & Riders": 5984.0,
+      "Dev": 9902.9
+    },
+    "2024-07": {
+      "Athletes & Riders": 12000.0,
+      "Dev": 3143.09,
+      "Media": 8085.0,
+      "Operations": 7500.0
+    },
+    "2024-08": {
+      "Athletes & Riders": 37541.03,
+      "Dev": 5999.25,
+      "Events": 21620.5,
+      "Media": 1.07
+    },
+    "2024-09": {
+      "Athletes & Riders": 9850.0,
+      "Dev": 1.09
+    },
+    "2024-10": {
+      "Media": 1000.0,
+      "Operations": 8024.46
+    },
+    "2024-11": {
+      "Events": 5100.0
+    },
+    "2024-12": {
+      "Athletes & Riders": 4139.0,
+      "Media": 2580.69
+    },
+    "2025-01": {
+      "Media": 8550.0
+    },
+    "2025-02": {
+      "Athletes & Riders": 11489.52,
+      "Events": 2250.0,
+      "Operations": 195.68
+    },
+    "2025-03": {
+      "Athletes & Riders": 2042.0,
+      "Dev": 1250.0
+    },
+    "2025-04": {
+      "Events": 1350.0,
+      "Media": 2500.0
+    },
+    "2025-06": {
+      "Operations": 10532.36
+    },
+    "2025-07": {
+      "Athletes & Riders": 1700.0,
+      "Governance": 360.0,
+      "Operations": 0.0
+    },
+    "2025-08": {
+      "Athletes & Riders": 1200.0,
+      "Media": 5153.36
+    },
+    "2025-10": {
+      "Events": 4515.32,
+      "Public Goods": 5065.57
+    },
+    "2025-11": {
+      "Events": 1432.04
+    },
+    "2025-12": {
+      "Athletes & Riders": 2500.0
+    },
+    "2026-03": {
+      "Athletes & Riders": 1570.0
+    }
+  },
+  "field_notes": [
+    {
+      "kind": "category",
+      "summary": "Categories are rendered with semantic labels for readability across analytics surfaces."
+    }
+  ],
   "overview": {
     "proposal_count": 222,
     "active_proposal_count": 2,
@@ -152,7 +242,7 @@
     "people_count": 1180,
     "holders_count": 1011,
     "delegates_count": 992,
-    "contributors_count": 98,
+    "contributors_count": 1180,
     "athletes_count": 41,
     "recipients_count": 51,
     "proposers_count": 73,
@@ -192,13 +282,13 @@
       "succeeded": 1
     },
     "proposal_category_counts": {
-      "athletes_riders": 79,
-      "workstream_products": 46,
-      "workstream_media": 35,
-      "irl_events": 27,
-      "governance_policy": 17,
-      "workstream_ops": 16,
-      "public_goods": 2
+      "Athletes & Riders": 79,
+      "Dev": 46,
+      "Media": 35,
+      "Events": 27,
+      "Governance": 17,
+      "Operations": 16,
+      "Public Goods": 2
     }
   },
   "treasury": {
