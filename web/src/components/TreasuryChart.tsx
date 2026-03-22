@@ -75,7 +75,9 @@ export function TreasuryChart({
   const [showHistory, setShowHistory] = useState(false);
 
   useEffect(() => {
-    getTreasurySnapshots().then(setData);
+    getTreasurySnapshots()
+      .then(setData)
+      .catch(() => setData(null));
   }, []);
 
   if (!data || !data.records.length) {
@@ -198,6 +200,11 @@ export function TreasuryChart({
   }
 
   const mergedData = Array.from(mergedByMonth.values()).sort((a, b) => a.date.localeCompare(b.date));
+  const yMax = mergedData.reduce((max, row) => {
+    const rowMax = Math.max(row.value || 0, row.proposalSpend || 0, row.auctionInflow || 0);
+    return Math.max(max, rowMax);
+  }, 0);
+  const yDomainMax = yMax > 0 ? Math.ceil(yMax * 1.1) : 350000;
   const projectedDateTick = mergedData.find((row) => row.date.startsWith(projectedZeroDate || ""))?.date;
   const currentValue = chartData[chartData.length - 1]?.value || 0;
   const peakValue = chartData.reduce((max, row) => Math.max(max, row.value), 0);
@@ -252,7 +259,7 @@ export function TreasuryChart({
               tickLine={false}
             />
             <YAxis
-              domain={[0, "auto"]}
+              domain={[0, yDomainMax]}
               tickFormatter={fmtUSD}
               width={52}
               tick={{ fill: "var(--b500)", fontSize: 9, fontFamily: "'Courier New'" }}

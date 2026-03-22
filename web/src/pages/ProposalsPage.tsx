@@ -14,11 +14,18 @@ function inWindow(date: string, days: number) {
   return parsed.getTime() >= Date.now() - days * 24 * 60 * 60 * 1000;
 }
 
-function truncateTitle(value: string, maxLength = 88) {
-  if (!value || value.length <= maxLength) {
-    return value;
+function truncateTitle(value: string | null | undefined, maxLength = 88) {
+  if (!value) {
+    return "Untitled proposal";
   }
-  return `${value.slice(0, maxLength - 1).trimEnd()}...`;
+  const clean = value
+    .replace(/^#+\s+/gm, "")
+    .replace(/\n[\s\S]*/, "")
+    .trim();
+  if (clean.length <= maxLength) {
+    return clean;
+  }
+  return `${clean.slice(0, maxLength - 1).trimEnd()}...`;
 }
 
 export function ProposalsPage({ meta, props }: { meta: Meta; props: ProposalsPageProps }) {

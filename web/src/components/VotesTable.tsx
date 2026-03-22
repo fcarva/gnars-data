@@ -29,7 +29,7 @@ function voteBadge(status: string): string {
 }
 
 function fmtUsd(value: number | null | undefined): string {
-  if (typeof value !== "number") return "-";
+  if (typeof value !== "number" || !Number.isFinite(value)) return "-";
   return `$${value.toLocaleString(undefined, { maximumFractionDigits: 2 })}`;
 }
 

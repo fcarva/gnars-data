@@ -59,24 +59,57 @@ const Index = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    Promise.all([
-      Promise.all([fetchTimeline(), fetchProposalVoteEvents(), fetchTreasuryEvents()]).then(([timeline, votes, treasuryEvents]) =>
-        setEvents(mergeEvents(timeline, votes, treasuryEvents))
-      ),
-      fetchMetrics().then(setMetrics),
-      fetchMembers().then(setMembers),
-      fetchProposalTags().then(setProposalTags),
-      fetchFundingAnalysis().then(setFundingAnalysis),
-      fetchMilestonesData().then((payload) => setMilestoneRecords(payload.records)).catch(() => setMilestoneRecords([])),
-      fetchSankeyData().then(setSankeyData),
-      fetchEfficiencyData().then(setEfficiencyData),
-      fetchGovernanceData().then(setGovernanceData),
-      fetchActivityTimeseriesData().then(setActivityData),
-      fetchDelegationGraphData().then(setDelegationGraphData),
-      fetchRunwayScenariosData().then(setRunwayScenariosData),
-      fetchForkRiskData().then(setForkRiskData),
-      fetchTreasury().then((t) => setTreasuryUsd(t.overview.treasury_page_total_value_usd)),
-    ]).finally(() => setLoading(false));
+    let cancelled = false;
+
+    const load = async () => {
+      const [timeline, votes, treasuryEvents] = await Promise.all([
+        fetchTimeline().catch(() => []),
+        fetchProposalVoteEvents().catch(() => []),
+        fetchTreasuryEvents().catch(() => []),
+      ]);
+
+      const [nextMetrics, nextMembers, nextProposalTags, nextFunding, nextMilestones, nextSankey, nextEfficiency, nextGovernance, nextActivity, nextDelegationGraph, nextRunwayScenarios, nextForkRisk, nextTreasury] = await Promise.all([
+        fetchMetrics().catch(() => null),
+        fetchMembers().catch(() => []),
+        fetchProposalTags().catch(() => []),
+        fetchFundingAnalysis().catch(() => null),
+        fetchMilestonesData().catch(() => null),
+        fetchSankeyData().catch(() => null),
+        fetchEfficiencyData().catch(() => null),
+        fetchGovernanceData().catch(() => null),
+        fetchActivityTimeseriesData().catch(() => null),
+        fetchDelegationGraphData().catch(() => null),
+        fetchRunwayScenariosData().catch(() => null),
+        fetchForkRiskData().catch(() => null),
+        fetchTreasury().catch(() => null),
+      ]);
+
+      if (cancelled) return;
+
+      setEvents(mergeEvents(timeline, votes, treasuryEvents));
+      setMetrics(nextMetrics);
+      setMembers(nextMembers);
+      setProposalTags(nextProposalTags);
+      setFundingAnalysis(nextFunding);
+      setMilestoneRecords(nextMilestones?.records || []);
+      setSankeyData(nextSankey);
+      setEfficiencyData(nextEfficiency);
+      setGovernanceData(nextGovernance);
+      setActivityData(nextActivity);
+      setDelegationGraphData(nextDelegationGraph);
+      setRunwayScenariosData(nextRunwayScenarios);
+      setForkRiskData(nextForkRisk);
+      setTreasuryUsd(nextTreasury?.overview.treasury_page_total_value_usd ?? null);
+      setLoading(false);
+    };
+
+    load().catch(() => {
+      if (!cancelled) setLoading(false);
+    });
+
+    return () => {
+      cancelled = true;
+    };
   }, []);
 
   const filtered = useMemo(() => filterEvents(events, filter), [events, filter]);

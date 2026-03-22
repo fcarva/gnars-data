@@ -13,5 +13,6 @@ export default defineConfig({
     emptyOutDir: false,
     manifest: true,
     outDir: "dist",
+    chunkSizeWarningLimit: 900,
   },
 });

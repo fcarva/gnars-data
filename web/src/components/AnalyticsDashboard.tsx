@@ -16,6 +16,7 @@ import { ProposalCategoryChart } from "@/components/ProposalCategoryChart";
 import { AnalyticsSankey } from "@/components/AnalyticsSankey";
 import { AthletesLeaderboard } from "@/components/AthletesLeaderboard";
 import { FundingBreakdown } from "@/components/FundingBreakdown";
+import { ErrorBoundary } from "@/components/ErrorBoundary";
 
 interface AnalyticsDashboardProps {
   metrics: DaoMetrics;
@@ -107,13 +108,15 @@ export function AnalyticsDashboard({
       <div>
         <h3 className="analytics-section-title">TREASURY OVER TIME</h3>
         <div className="analytics-panel">
-          <TreasuryChart
-            projectedZeroDate={metrics.projected_zero_date}
-            funding={funding}
-            proposalTags={proposalTags}
-            currentTreasuryUsd={metrics.treasury_balance_usd ?? o.treasury_total_value_usd}
-            treasuryEvents={metrics.treasury_events || []}
-          />
+          <ErrorBoundary>
+            <TreasuryChart
+              projectedZeroDate={metrics.projected_zero_date}
+              funding={funding}
+              proposalTags={proposalTags}
+              currentTreasuryUsd={metrics.treasury_balance_usd ?? o.treasury_total_value_usd}
+              treasuryEvents={metrics.treasury_events || []}
+            />
+          </ErrorBoundary>
         </div>
       </div>
 
@@ -137,7 +140,9 @@ export function AnalyticsDashboard({
       <div>
         <h3 className="analytics-section-title">CAPITAL FLOW — TREASURY TO RECIPIENTS</h3>
         <div className="analytics-panel analytics-panel-sankey">
-          <AnalyticsSankey data={sankey} />
+          <ErrorBoundary>
+            <AnalyticsSankey data={sankey} />
+          </ErrorBoundary>
         </div>
       </div>
 

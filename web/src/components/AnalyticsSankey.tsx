@@ -166,7 +166,11 @@ export function AnalyticsSankey({ data }: AnalyticsSankeyProps) {
           viewBox={`0 0 ${W} ${H}`}
           preserveAspectRatio="xMidYMin meet"
           style={{ display: "block" }}
-          onClick={() => setSelected(null)}
+          onClick={(event) => {
+            if (event.target === event.currentTarget) {
+              setSelected(null);
+            }
+          }}
         >
           <text x={c1 + BW / 2} y={8} textAnchor="middle" fontSize={7.5} fill="#6F6E69" letterSpacing="0.1em">SOURCE</text>
           <text x={c2 + BW / 2} y={8} textAnchor="middle" fontSize={7.5} fill="#6F6E69" letterSpacing="0.1em">CATEGORY</text>

@@ -99,8 +99,10 @@ def sync_source(source: dict, stamp: str) -> Path:
 
 
 def auction_subgraph_url(network: str) -> str | None:
-    env_key = f"GNARS_AUCTIONS_{network.upper()}_SUBGRAPH_URL"
-    value = os.getenv(env_key, "").strip()
+    # Preferred naming matches .env.example. Keep legacy key support for compatibility.
+    preferred_key = f"GNARS_AUCTION_SUBGRAPH_{network.upper()}_URL"
+    legacy_key = f"GNARS_AUCTIONS_{network.upper()}_SUBGRAPH_URL"
+    value = os.getenv(preferred_key, "").strip() or os.getenv(legacy_key, "").strip()
     return value or None
 
 
@@ -194,7 +196,11 @@ def sync_auctions_for_network(network: str, contracts: list[dict[str, Any]], sta
     elif not source_url:
         status = "skipped"
         warnings.append(
-            f"Missing subgraph URL for {network}. Set GNARS_AUCTIONS_{network.upper()}_SUBGRAPH_URL to enable auction sync."
+            (
+                f"Missing subgraph URL for {network}. Set "
+                f"GNARS_AUCTION_SUBGRAPH_{network.upper()}_URL "
+                f"(or legacy GNARS_AUCTIONS_{network.upper()}_SUBGRAPH_URL) to enable auction sync."
+            )
         )
     else:
         skip = 0
