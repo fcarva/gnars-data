@@ -1,0 +1,369 @@
+{
+  "fetched_at": "2026-03-22T03:47:44.520192Z",
+  "proposal_id": "0xe13a7551f6ee674f29beee0f80193c0e7540b1b9286c6d646738c01e24e0f0e7",
+  "records": [
+    {
+      "id": "0x21c0e602db4e1728614e1e1758d3d101247187ad582f11a1654a762a45811cd1",
+      "proposal": {
+        "id": "0xe13a7551f6ee674f29beee0f80193c0e7540b1b9286c6d646738c01e24e0f0e7"
+      },
+      "voter": "0xFc27B375fAf1FBd3F3462044Cf810082F042a45B",
+      "created": 1706665463,
+      "choice": 2,
+      "vp": 17,
+      "reason": "https://discord.com/channels/928811922244137020/1201578440407650314/1202065749716512850"
+    },
+    {
+      "id": "0xc3bf4cfa65c1342e52974150a7de74587baf56e66ed56d3f6efa8b4a9e7dc957",
+      "proposal": {
+        "id": "0xe13a7551f6ee674f29beee0f80193c0e7540b1b9286c6d646738c01e24e0f0e7"
+      },
+      "voter": "0x33bbf6e27ce7b254e537BCB9f3B00cD1451563eA",
+      "created": 1706664828,
+      "choice": 1,
+      "vp": 12,
+      "reason": "For now it is a good idea, I think we have to study what happens in governance in the next proposals....."
+    },
+    {
+      "id": "0xb366dd59ee84ead0e8fd75460983e4a49f3b938ab8daf34a47f901e3cf726b38",
+      "proposal": {
+        "id": "0xe13a7551f6ee674f29beee0f80193c0e7540b1b9286c6d646738c01e24e0f0e7"
+      },
+      "voter": "0xC2691f9994AF90711D67286be558F4fa631667FD",
+      "created": 1706641917,
+      "choice": 1,
+      "vp": 3,
+      "reason": ""
+    },
+    {
+      "id": "0xbcaf0eabc6f706c3d064863503989aed788e99716ff01935644e9df99005d147",
+      "proposal": {
+        "id": "0xe13a7551f6ee674f29beee0f80193c0e7540b1b9286c6d646738c01e24e0f0e7"
+      },
+      "voter": "0xEDc1a397589A0236C4810883b7d559288a5Fe7e1",
+      "created": 1706640612,
+      "choice": 2,
+      "vp": 6,
+      "reason": "IMO sets a terrible precedent of on chain peer pressure to blur decentralization value of permissionless and as rickday.eth said..."
+    },
+    {
+      "id": "0x39732fc184163a6bd2a68aaf78cf5aa325653217f1ff4649c1ea1aefe2585a30",
+      "proposal": {
+        "id": "0xe13a7551f6ee674f29beee0f80193c0e7540b1b9286c6d646738c01e24e0f0e7"
+      },
+      "voter": "0x6abaDe6569f03841a0d5233d23f175Eeeb3253c4",
+      "created": 1706636715,
+      "choice": 1,
+      "vp": 11,
+      "reason": "Users feel apathy when they see a founder voting with the biggest wallet in governance, that's all."
+    },
+    {
+      "id": "0xb60fa62741c6b9bd88b6469506c68ce0ed2e5e4f4aef2626231d45eb12ce424c",
+      "proposal": {
+        "id": "0xe13a7551f6ee674f29beee0f80193c0e7540b1b9286c6d646738c01e24e0f0e7"
+      },
+      "voter": "0xb2b7D66bb56ce8FF7838dC8053fF35050Ed95E9D",
+      "created": 1706629776,
+      "choice": 2,
+      "vp": 4,
+      "reason": "Don´t agree asking to someone to step aside, If the founders step aside,  less than 10 people will have big power, centralization continue"
+    },
+    {
+      "id": "0xf13d5e8dbb861275c0b47b03072c29ad293e3e9acbe1ad626028d46fcb302159",
+      "proposal": {
+        "id": "0xe13a7551f6ee674f29beee0f80193c0e7540b1b9286c6d646738c01e24e0f0e7"
+      },
+      "voter": "0xC2E3DF2748E4ef6E1a8322772fd7d962410C721A",
+      "created": 1706629433,
+      "choice": 1,
+      "vp": 5,
+      "reason": "No to vote.gami.eth, gami.✦hyper.eth, etc.\nHOW SHOULD I CONTACT THE FBI?\nDo not wait. Go to www.ic3.gov and click on \"file a complaint\"."
+    },
+    {
+      "id": "0x3061115f1b396e42a4dfc89bb6beead8cf27099ef9b7c1c9a5c3e6f6f797aaf8",
+      "proposal": {
+        "id": "0xe13a7551f6ee674f29beee0f80193c0e7540b1b9286c6d646738c01e24e0f0e7"
+      },
+      "voter": "0x2eE0485f71764bcD2062A84d9455688c581B90f8",
+      "created": 1706624937,
+      "choice": 2,
+      "vp": 4,
+      "reason": "Agree in principle not in execution. \n\nWe are combatting this effect with lil nouncil in lils. "
+    },
+    {
+      "id": "0xb79d00456f34730d974315df0986cd030f9b23b5c4ba3870fd0d0e4216d57ec3",
+      "proposal": {
+        "id": "0xe13a7551f6ee674f29beee0f80193c0e7540b1b9286c6d646738c01e24e0f0e7"
+      },
+      "voter": "0x0DF34E36ef3a793871442EB5a08b08adB74E7006",
+      "created": 1706623094,
+      "choice": 1,
+      "vp": 1,
+      "reason": "||This is not a Centralizad Community ! "
+    },
+    {
+      "id": "0x551a3a954ab2dacfeb3e92c164ff8825b4ba9bd15afd165c5eae5d9f576390ef",
+      "proposal": {
+        "id": "0xe13a7551f6ee674f29beee0f80193c0e7540b1b9286c6d646738c01e24e0f0e7"
+      },
+      "voter": "0xdfB6ed808fADddAd9154F5605E349fFF96E3d939",
+      "created": 1706621637,
+      "choice": 2,
+      "vp": 22,
+      "reason": "i wouldn't like it if the options presented here were given to me, as an active DAO player, telling me to stop showing up is not the way!"
+    },
+    {
+      "id": "0xd2b6c6dc89d997594747447c36175823add1bdb5efbe8b48fc39d872eb1d65ee",
+      "proposal": {
+        "id": "0xe13a7551f6ee674f29beee0f80193c0e7540b1b9286c6d646738c01e24e0f0e7"
+      },
+      "voter": "0x761b4763a572010f96Ed7c22011D0C95E2b36693",
+      "created": 1706621508,
+      "choice": 2,
+      "vp": 10,
+      "reason": "I agree with the narative but disagree with the methods. Sent my feedback to Discord discussion.\n\nKnowhow92"
+    },
+    {
+      "id": "0x8aec5db6ac2f355f389e6e8197315580f84c33c311960e86f3c7c3a56e73ecc8",
+      "proposal": {
+        "id": "0xe13a7551f6ee674f29beee0f80193c0e7540b1b9286c6d646738c01e24e0f0e7"
+      },
+      "voter": "0xF91D7656949CA73e7E2c196Aa798B04B3F4bBDAf",
+      "created": 1706618475,
+      "choice": 2,
+      "vp": 17,
+      "reason": ""
+    },
+    {
+      "id": "0x66e402c7983a8861b385882222db4840ffd6ba817acc2f29e42fac6fe503cbea",
+      "proposal": {
+        "id": "0xe13a7551f6ee674f29beee0f80193c0e7540b1b9286c6d646738c01e24e0f0e7"
+      },
+      "voter": "0xbA6E1C26bE2F8b46D9e7ab7573b99921Ee81AcF5",
+      "created": 1706596158,
+      "choice": 2,
+      "vp": 16,
+      "reason": "I would hold off on a measure like this until we see how migrating to an L2 affects the balance of power."
+    },
+    {
+      "id": "0xa1e227262324a792f5031a12b4aba3516a47a98127ef961fdd2564ea9c5b7f75",
+      "proposal": {
+        "id": "0xe13a7551f6ee674f29beee0f80193c0e7540b1b9286c6d646738c01e24e0f0e7"
+      },
+      "voter": "0xE56f08d52ca642f04B60Eb63272715E5e9ECb078",
+      "created": 1706591551,
+      "choice": 2,
+      "vp": 9,
+      "reason": ""
+    },
+    {
+      "id": "0x6ec26ff6bf73110a328f17d72f6f90d3eacd1eebd41b5e892d3daaa4c5605a04",
+      "proposal": {
+        "id": "0xe13a7551f6ee674f29beee0f80193c0e7540b1b9286c6d646738c01e24e0f0e7"
+      },
+      "voter": "0x09E938E239803C78507AbD5687A97acFeA1188ea",
+      "created": 1706587929,
+      "choice": 1,
+      "vp": 7,
+      "reason": ""
+    },
+    {
+      "id": "0xe57ecbb3831f2f3d6728fbbfdde4a3610246bd93357a6e7b75f066b2ec18561a",
+      "proposal": {
+        "id": "0xe13a7551f6ee674f29beee0f80193c0e7540b1b9286c6d646738c01e24e0f0e7"
+      },
+      "voter": "0x80eb1C0BBb63813f2eB17e0EF4b8B7caaF265bc4",
+      "created": 1706585928,
+      "choice": 1,
+      "vp": 8,
+      "reason": ""
+    },
+    {
+      "id": "0xc3d700a13f5a397822aaeef2ffc67a52e3c4a587f919e46b262c1bdef9c62323",
+      "proposal": {
+        "id": "0xe13a7551f6ee674f29beee0f80193c0e7540b1b9286c6d646738c01e24e0f0e7"
+      },
+      "voter": "0x4b5F934da25c33F130efC5DF47C91Af1375baA30",
+      "created": 1706584296,
+      "choice": 1,
+      "vp": 12,
+      "reason": "I quit voting because my 12 gnars don't make any difference and I can't afford to pay gas everytime."
+    },
+    {
+      "id": "0xde166b38bd816b610aecb507bb585c131c2c775612e08f6f63b8334a0b6f3e0e",
+      "proposal": {
+        "id": "0xe13a7551f6ee674f29beee0f80193c0e7540b1b9286c6d646738c01e24e0f0e7"
+      },
+      "voter": "0x069Da1bad547d67AbF26C42358d3A6A8A78dECa0",
+      "created": 1706582381,
+      "choice": 2,
+      "vp": 89,
+      "reason": "This feels like a complicated 'abstain'. Retain your voting rights and feel welcome to not have to be involved in everything :)"
+    },
+    {
+      "id": "0xda0d04cbb6086b1b7082e5457ce9a3271dd85ec1ab8e6da8932bd414f21f7cb2",
+      "proposal": {
+        "id": "0xe13a7551f6ee674f29beee0f80193c0e7540b1b9286c6d646738c01e24e0f0e7"
+      },
+      "voter": "0xacbCF0b4065f5039cB35821F19B2d6b380f490da",
+      "created": 1706581217,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0x9861f087a5456eea28f3d182680f8b11532fd344df25c7aefd25a1b6bfbeb39a",
+      "proposal": {
+        "id": "0xe13a7551f6ee674f29beee0f80193c0e7540b1b9286c6d646738c01e24e0f0e7"
+      },
+      "voter": "0x2473FB8eEBE46041d5F528A728505C26A81C1158",
+      "created": 1706579813,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0xeb6fd03dc088d7a3239444f89597dc9373041d23c7846da9daf441eb2bfe4912",
+      "proposal": {
+        "id": "0xe13a7551f6ee674f29beee0f80193c0e7540b1b9286c6d646738c01e24e0f0e7"
+      },
+      "voter": "0xC31dF49aD14701Ed85CBbf33236d97823af806e8",
+      "created": 1706578268,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0x753f9a1571f1f665aa0829b334fba5c4f71ce81eb3e32d5ee3f9d61f4946feea",
+      "proposal": {
+        "id": "0xe13a7551f6ee674f29beee0f80193c0e7540b1b9286c6d646738c01e24e0f0e7"
+      },
+      "voter": "0xAf32BB3892F37c518f3841275F131384a41B9b57",
+      "created": 1706577824,
+      "choice": 1,
+      "vp": 3,
+      "reason": ""
+    },
+    {
+      "id": "0xe596bf7b46e7ba55c6ff4e55ee140fe8bb3bd21bc8cae1409750e8c592da969a",
+      "proposal": {
+        "id": "0xe13a7551f6ee674f29beee0f80193c0e7540b1b9286c6d646738c01e24e0f0e7"
+      },
+      "voter": "0xd4EAa5e657C8B3349cb6BeCf8Ac097839e9e7aF5",
+      "created": 1706577377,
+      "choice": 1,
+      "vp": 10,
+      "reason": ""
+    },
+    {
+      "id": "0x2ae8e81058ef5879e93cd18f31d943b300aaa2778b8e70ca5f0f5e3d0824e99c",
+      "proposal": {
+        "id": "0xe13a7551f6ee674f29beee0f80193c0e7540b1b9286c6d646738c01e24e0f0e7"
+      },
+      "voter": "0x4DF4058cDB72c4004aE27fC09243D387F52287f2",
+      "created": 1706576053,
+      "choice": 2,
+      "vp": 61,
+      "reason": ""
+    },
+    {
+      "id": "0xcf2a0144f09915a69aebfa0fd20651569ce9a34a15f6a7f81629d3e2d052ab92",
+      "proposal": {
+        "id": "0xe13a7551f6ee674f29beee0f80193c0e7540b1b9286c6d646738c01e24e0f0e7"
+      },
+      "voter": "0x8D36BaC540C57dBd009eA9d9D8CDF9443A83E3f6",
+      "created": 1706575940,
+      "choice": 2,
+      "vp": 23,
+      "reason": ""
+    },
+    {
+      "id": "0xd4e6dbd5db2c548f8f6319ad2eb77646cf8a28a035ee8c13a35b35a7b4b4417d",
+      "proposal": {
+        "id": "0xe13a7551f6ee674f29beee0f80193c0e7540b1b9286c6d646738c01e24e0f0e7"
+      },
+      "voter": "0xf7253A0E87E39d2cD6365919D4a3D56D431D0041",
+      "created": 1706569082,
+      "choice": 1,
+      "vp": 5,
+      "reason": ""
+    },
+    {
+      "id": "0x95a6b3d71bf0df5a707006a032eb44800dd132c0c296c180d4aff2661e112d36",
+      "proposal": {
+        "id": "0xe13a7551f6ee674f29beee0f80193c0e7540b1b9286c6d646738c01e24e0f0e7"
+      },
+      "voter": "0x221d5D198F000695690809C10aF4c6B8d9577726",
+      "created": 1706568947,
+      "choice": 1,
+      "vp": 3,
+      "reason": "Delegation for descentralization! lfg!"
+    },
+    {
+      "id": "0x814235f806c5dc504324b0dac7597ba435e53c8110e11e9aabc988c024e19ef0",
+      "proposal": {
+        "id": "0xe13a7551f6ee674f29beee0f80193c0e7540b1b9286c6d646738c01e24e0f0e7"
+      },
+      "voter": "0xfCAE6D6b1517799330DF14BeE26e2DD90C6dd200",
+      "created": 1706558150,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0xe29ce2da154bddea270ab8bb320108d61c42e5bdb456bfb814b122f7b8e16682",
+      "proposal": {
+        "id": "0xe13a7551f6ee674f29beee0f80193c0e7540b1b9286c6d646738c01e24e0f0e7"
+      },
+      "voter": "0xBA7A4c521DfCD18fEB7cdA4B7CA182d739B7A6a0",
+      "created": 1706553831,
+      "choice": 1,
+      "vp": 1,
+      "reason": "decentralize it gami"
+    },
+    {
+      "id": "0x75cc7f4c13111e3d1a41bbcd98cad3c1015bea27cf6d4a4e4760f50d66d8f7c1",
+      "proposal": {
+        "id": "0xe13a7551f6ee674f29beee0f80193c0e7540b1b9286c6d646738c01e24e0f0e7"
+      },
+      "voter": "0xDdB4938755C243a4f60a2f2f8f95dF4F894c58Cc",
+      "created": 1706551810,
+      "choice": 1,
+      "vp": 7,
+      "reason": ""
+    },
+    {
+      "id": "0x228bb0be8c99f09495ad9c2f157752bd2e8a1e19471b1c3f7d7b8e9832cc81a3",
+      "proposal": {
+        "id": "0xe13a7551f6ee674f29beee0f80193c0e7540b1b9286c6d646738c01e24e0f0e7"
+      },
+      "voter": "0xD082cC50Db08B028fc12726861d5F260a786777e",
+      "created": 1706548914,
+      "choice": 1,
+      "vp": 3,
+      "reason": ""
+    },
+    {
+      "id": "0xd7f3574e665529cdd3cf3e5fda34f8013204ab51145dda6749e44ebe8b2fb01d",
+      "proposal": {
+        "id": "0xe13a7551f6ee674f29beee0f80193c0e7540b1b9286c6d646738c01e24e0f0e7"
+      },
+      "voter": "0x41CB654D1F47913ACAB158a8199191D160DAbe4A",
+      "created": 1706548494,
+      "choice": 1,
+      "vp": 62,
+      "reason": ""
+    },
+    {
+      "id": "0x7731fcd8c9efc01f4acdfd4d8740320e1c92be8e1f3102297f4f3058faeee4f7",
+      "proposal": {
+        "id": "0xe13a7551f6ee674f29beee0f80193c0e7540b1b9286c6d646738c01e24e0f0e7"
+      },
+      "voter": "0x9C87A1065994f156f0B7b87AAa8B3c5F7BD67E02",
+      "created": 1706541923,
+      "choice": 2,
+      "vp": 36,
+      "reason": ""
+    }
+  ]
+}

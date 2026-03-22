@@ -1,0 +1,237 @@
+{
+  "fetched_at": "2026-03-22T03:48:18.334265Z",
+  "proposal_id": "0x781c3062dce32c2ae1b29ad80bc95c37175c67c43ed086b196b20104669177bc",
+  "records": [
+    {
+      "id": "0xe212dbfaaf7cf28178a132ddde5d34f041c8f8c88b2d50f2d61efda369f5dd04",
+      "proposal": {
+        "id": "0x781c3062dce32c2ae1b29ad80bc95c37175c67c43ed086b196b20104669177bc"
+      },
+      "voter": "0x761b4763a572010f96Ed7c22011D0C95E2b36693",
+      "created": 1671970508,
+      "choice": 1,
+      "vp": 10,
+      "reason": ""
+    },
+    {
+      "id": "0x822a8dc3c4462ec8127704eb64aaab68288fc945658b4439368c36946470fa54",
+      "proposal": {
+        "id": "0x781c3062dce32c2ae1b29ad80bc95c37175c67c43ed086b196b20104669177bc"
+      },
+      "voter": "0x4b5F934da25c33F130efC5DF47C91Af1375baA30",
+      "created": 1671930082,
+      "choice": 3,
+      "vp": 7,
+      "reason": ""
+    },
+    {
+      "id": "0xe549d59e1d4d03f1a511b796762c30657b117c31f35bff0e1d7b06795db99ba3",
+      "proposal": {
+        "id": "0x781c3062dce32c2ae1b29ad80bc95c37175c67c43ed086b196b20104669177bc"
+      },
+      "voter": "0x897284cc981D09EF61023D2ab96C5EcFD43e85f4",
+      "created": 1671917647,
+      "choice": 1,
+      "vp": 12,
+      "reason": "yeah!!!"
+    },
+    {
+      "id": "0x4a73082df657fd4ae7a28d261ff8d3e3a10253e1e1c9fe56cf292d92bfc7e264",
+      "proposal": {
+        "id": "0x781c3062dce32c2ae1b29ad80bc95c37175c67c43ed086b196b20104669177bc"
+      },
+      "voter": "0x892Ff98a46e5bd141E2D12618f4B2Fe6284debac",
+      "created": 1671911476,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0x6b03f741fee2618e608dba41ce834f662ecdffbb58203c24b6647e1eb0e8c554",
+      "proposal": {
+        "id": "0x781c3062dce32c2ae1b29ad80bc95c37175c67c43ed086b196b20104669177bc"
+      },
+      "voter": "0x223460f2D3CB8c199CFCac7e5E32897F46EA3732",
+      "created": 1671887981,
+      "choice": 1,
+      "vp": 14,
+      "reason": ""
+    },
+    {
+      "id": "0x8231f18e49393b7b75e4d2c6dfacf1f12ea4f21d5bd2343e67f79f069bc14716",
+      "proposal": {
+        "id": "0x781c3062dce32c2ae1b29ad80bc95c37175c67c43ed086b196b20104669177bc"
+      },
+      "voter": "0x387a161C6b25aA854100aBaED39274e51aaffffd",
+      "created": 1671843275,
+      "choice": 1,
+      "vp": 131,
+      "reason": "Mari is extremely nounish"
+    },
+    {
+      "id": "0xe1121abd840ebc156ecd3556f17dee86dfc641b8e68e884dfd8095b0f70cc334",
+      "proposal": {
+        "id": "0x781c3062dce32c2ae1b29ad80bc95c37175c67c43ed086b196b20104669177bc"
+      },
+      "voter": "0xb2b7D66bb56ce8FF7838dC8053fF35050Ed95E9D",
+      "created": 1671841524,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0x160638a878a226b0cbb9e53fb89a8eabcf1f35beac6434d7b1d7faf9bbb398b0",
+      "proposal": {
+        "id": "0x781c3062dce32c2ae1b29ad80bc95c37175c67c43ed086b196b20104669177bc"
+      },
+      "voter": "0x61A05528286Dc4693Be907bE3c9efbd2742a88E4",
+      "created": 1671838867,
+      "choice": 1,
+      "vp": 50,
+      "reason": ""
+    },
+    {
+      "id": "0x615a852b378d4d1c3400e8c0f993be1fd76557eaf05064b712338d8ed4a2c437",
+      "proposal": {
+        "id": "0x781c3062dce32c2ae1b29ad80bc95c37175c67c43ed086b196b20104669177bc"
+      },
+      "voter": "0xA0eA96C0201B3D567bB29cded320Cff8F1e25Fe6",
+      "created": 1671831749,
+      "choice": 1,
+      "vp": 3,
+      "reason": ""
+    },
+    {
+      "id": "0x6d37701b7814281307e70d06ebc781f078f323476ad510306977291f7e6a2520",
+      "proposal": {
+        "id": "0x781c3062dce32c2ae1b29ad80bc95c37175c67c43ed086b196b20104669177bc"
+      },
+      "voter": "0x56b6DcDDD5d96535c35B720C96E19939920544D8",
+      "created": 1671831495,
+      "choice": 1,
+      "vp": 184,
+      "reason": ""
+    },
+    {
+      "id": "0x7a60d2ec26a9bf62d98df12da2b112f39eff37230a0829932ff0776f48abc8ea",
+      "proposal": {
+        "id": "0x781c3062dce32c2ae1b29ad80bc95c37175c67c43ed086b196b20104669177bc"
+      },
+      "voter": "0xFc27B375fAf1FBd3F3462044Cf810082F042a45B",
+      "created": 1671828525,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0x9eb3623fead11a23ee95831741094918542b339f798006972c420aea6fa13636",
+      "proposal": {
+        "id": "0x781c3062dce32c2ae1b29ad80bc95c37175c67c43ed086b196b20104669177bc"
+      },
+      "voter": "0x7B55D264e7c58D14379cf49D93D028b65eFbc490",
+      "created": 1671828508,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0xdf19bc01b1f55573665f37779340252d7187853982517a4f06459a75d8240add",
+      "proposal": {
+        "id": "0x781c3062dce32c2ae1b29ad80bc95c37175c67c43ed086b196b20104669177bc"
+      },
+      "voter": "0xd5fb864ACfD6BB2f72939f122e89fF7F475924f5",
+      "created": 1671786122,
+      "choice": 1,
+      "vp": 12,
+      "reason": "This is a great example of how to contribute to this gnarly culture, even you are not an extrem sports!"
+    },
+    {
+      "id": "0x03e2b6bd0839037762e87f299eeb4210b405ee5ad8a61be38b847068e0c17056",
+      "proposal": {
+        "id": "0x781c3062dce32c2ae1b29ad80bc95c37175c67c43ed086b196b20104669177bc"
+      },
+      "voter": "0xC23274347e8Aa82d363140d3cefb71Ff588EfFed",
+      "created": 1671777104,
+      "choice": 1,
+      "vp": 4,
+      "reason": "Good luck!"
+    },
+    {
+      "id": "0x8860cda92cfb8fc396b15f44efe0ee8176a28c0fcad3db881d69fb8df5cc2762",
+      "proposal": {
+        "id": "0x781c3062dce32c2ae1b29ad80bc95c37175c67c43ed086b196b20104669177bc"
+      },
+      "voter": "0x10fbc526876D2284a59149Ae221Fc825D0BEECFc",
+      "created": 1671776334,
+      "choice": 1,
+      "vp": 4,
+      "reason": ""
+    },
+    {
+      "id": "0x855160d7c8f0ba0d6939552b8da73b82ebe612a306c6c41e8881e5a889cb6ef6",
+      "proposal": {
+        "id": "0x781c3062dce32c2ae1b29ad80bc95c37175c67c43ed086b196b20104669177bc"
+      },
+      "voter": "0xCEEd9585854F12F81A0103861b83b995A64AD915",
+      "created": 1671772120,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0x24fdf29ff4292b5e362ab3ccc66d147e2e721088a43325f3a9796d93c890f3f2",
+      "proposal": {
+        "id": "0x781c3062dce32c2ae1b29ad80bc95c37175c67c43ed086b196b20104669177bc"
+      },
+      "voter": "0x535FDa4404cc3C07643F90edF6512D272897088b",
+      "created": 1671764324,
+      "choice": 1,
+      "vp": 2,
+      "reason": ""
+    },
+    {
+      "id": "0xecaef9bbd076cc96ca0fcb2b6bcc03dc91bc483de4568ce89ed597428f014fb5",
+      "proposal": {
+        "id": "0x781c3062dce32c2ae1b29ad80bc95c37175c67c43ed086b196b20104669177bc"
+      },
+      "voter": "0xdfB6ed808fADddAd9154F5605E349fFF96E3d939",
+      "created": 1671762618,
+      "choice": 1,
+      "vp": 16,
+      "reason": "For the Culture"
+    },
+    {
+      "id": "0x4f8137a0ea6d0030dc35d0a6577bbca180cda96d99188391e94758aec2821ec1",
+      "proposal": {
+        "id": "0x781c3062dce32c2ae1b29ad80bc95c37175c67c43ed086b196b20104669177bc"
+      },
+      "voter": "0x9C87A1065994f156f0B7b87AAa8B3c5F7BD67E02",
+      "created": 1671760042,
+      "choice": 1,
+      "vp": 29,
+      "reason": ""
+    },
+    {
+      "id": "0xf7db7f4950524ca3d77ca99a5cde711d7d39c18e70d2cd7736c433d6ac659a18",
+      "proposal": {
+        "id": "0x781c3062dce32c2ae1b29ad80bc95c37175c67c43ed086b196b20104669177bc"
+      },
+      "voter": "0x4A39aE081678f3D4ABbFbd50b3034580B8bAF48A",
+      "created": 1671760000,
+      "choice": 1,
+      "vp": 54,
+      "reason": ""
+    },
+    {
+      "id": "0x1d45839297112f27cfabdb4f520312c4d0fbafd5785e609f046e9795fa1b91c3",
+      "proposal": {
+        "id": "0x781c3062dce32c2ae1b29ad80bc95c37175c67c43ed086b196b20104669177bc"
+      },
+      "voter": "0x41CB654D1F47913ACAB158a8199191D160DAbe4A",
+      "created": 1671756873,
+      "choice": 1,
+      "vp": 13,
+      "reason": "Mari has shown to be not just gnarly as an athlete but a valuable and active dao member. "
+    }
+  ]
+}

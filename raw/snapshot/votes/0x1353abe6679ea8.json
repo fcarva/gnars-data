@@ -1,0 +1,325 @@
+{
+  "fetched_at": "2026-03-22T03:48:15.839429Z",
+  "proposal_id": "0x1353abe6679ea8aecf8505fc0a2785328adfefe358d4352d25862bd97dd2278d",
+  "records": [
+    {
+      "id": "0xf295bc971baa33f569f8929bce6ecfb4353682ce168fb7163490247afa1faa88",
+      "proposal": {
+        "id": "0x1353abe6679ea8aecf8505fc0a2785328adfefe358d4352d25862bd97dd2278d"
+      },
+      "voter": "0x05e189E1BbaF77f1654F0983872fd938AE592eDD",
+      "created": 1673739620,
+      "choice": 3,
+      "vp": 101,
+      "reason": ""
+    },
+    {
+      "id": "0x88f3ab2a6bdecdba5d81611d808d190a0cfcf267b3bb1d8463839c44d682f978",
+      "proposal": {
+        "id": "0x1353abe6679ea8aecf8505fc0a2785328adfefe358d4352d25862bd97dd2278d"
+      },
+      "voter": "0xfE473552F6bdb509C9B3F927205EEF07bFfD19Eb",
+      "created": 1673731799,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0x6d3ac07affdb8a86f1bca716598a183d265cd243a37f4fba24c6ce4e72611dc4",
+      "proposal": {
+        "id": "0x1353abe6679ea8aecf8505fc0a2785328adfefe358d4352d25862bd97dd2278d"
+      },
+      "voter": "0x9C87A1065994f156f0B7b87AAa8B3c5F7BD67E02",
+      "created": 1673686745,
+      "choice": 1,
+      "vp": 30,
+      "reason": "Extremely Nounish"
+    },
+    {
+      "id": "0x4bb4595d05a06d07229cc97a9bf67d25ebc0a5b66e301bca421f151365c5e624",
+      "proposal": {
+        "id": "0x1353abe6679ea8aecf8505fc0a2785328adfefe358d4352d25862bd97dd2278d"
+      },
+      "voter": "0x0959d32B849f65742235A4bE9B0112c87dfDfC3B",
+      "created": 1673650022,
+      "choice": 1,
+      "vp": 5,
+      "reason": ""
+    },
+    {
+      "id": "0x84b9a70c721c1194901c76b507b6bd9fc7129c0cee5c5043290f21d081fdaed8",
+      "proposal": {
+        "id": "0x1353abe6679ea8aecf8505fc0a2785328adfefe358d4352d25862bd97dd2278d"
+      },
+      "voter": "0x5451348C4EbD5F9816c19725972FF40eC23F14BC",
+      "created": 1673620556,
+      "choice": 2,
+      "vp": 6,
+      "reason": ""
+    },
+    {
+      "id": "0x85da44388c53057ae0e3ca5ab5b29b767d7fc5454481f36fb95812d9ae9ae729",
+      "proposal": {
+        "id": "0x1353abe6679ea8aecf8505fc0a2785328adfefe358d4352d25862bd97dd2278d"
+      },
+      "voter": "0x223460f2D3CB8c199CFCac7e5E32897F46EA3732",
+      "created": 1673620477,
+      "choice": 2,
+      "vp": 15,
+      "reason": ""
+    },
+    {
+      "id": "0xfed62d53d2beab81ce067a4ff72e19dcff11e55f20d8e7fa76b9d823d1aec755",
+      "proposal": {
+        "id": "0x1353abe6679ea8aecf8505fc0a2785328adfefe358d4352d25862bd97dd2278d"
+      },
+      "voter": "0x6C965b656C450259a6D4d95A2E68Fb4319EecBc0",
+      "created": 1673616071,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0x448f496fabf49a52855c2a9e421eddd5be1837fdf7c6b768fb8af105daa93e84",
+      "proposal": {
+        "id": "0x1353abe6679ea8aecf8505fc0a2785328adfefe358d4352d25862bd97dd2278d"
+      },
+      "voter": "0x2422011F4e0b66F5B78f5fCD6A80203ee57A3259",
+      "created": 1673607276,
+      "choice": 2,
+      "vp": 28,
+      "reason": ":( retroactive payments. Suggest removing that and providing detail around the work that goes into each newsletter to justify the ask"
+    },
+    {
+      "id": "0xf2cef0966ccbdcc647e6dbca4948be380901adbb94f3a4149d967e204d73e2e2",
+      "proposal": {
+        "id": "0x1353abe6679ea8aecf8505fc0a2785328adfefe358d4352d25862bd97dd2278d"
+      },
+      "voter": "0x56b6DcDDD5d96535c35B720C96E19939920544D8",
+      "created": 1673588632,
+      "choice": 1,
+      "vp": 185,
+      "reason": ""
+    },
+    {
+      "id": "0x897bc6498bb666a5cba104bba396a6c076db1be07636d9a1afccce1f71f61fcb",
+      "proposal": {
+        "id": "0x1353abe6679ea8aecf8505fc0a2785328adfefe358d4352d25862bd97dd2278d"
+      },
+      "voter": "0x4b5F934da25c33F130efC5DF47C91Af1375baA30",
+      "created": 1673581855,
+      "choice": 1,
+      "vp": 7,
+      "reason": ""
+    },
+    {
+      "id": "0x44e480690baf40e23a2d3924616a1e28d206b2cc9a3157bda63ec60f27bac439",
+      "proposal": {
+        "id": "0x1353abe6679ea8aecf8505fc0a2785328adfefe358d4352d25862bd97dd2278d"
+      },
+      "voter": "0xdFA413375306E2169AdCBbE8551f69739328E6dd",
+      "created": 1673581740,
+      "choice": 3,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0x93a34fc5dfdc1c8dfcd0db85cf898dfa450aaa34744b33c72ac0ee1b11eebf27",
+      "proposal": {
+        "id": "0x1353abe6679ea8aecf8505fc0a2785328adfefe358d4352d25862bd97dd2278d"
+      },
+      "voter": "0xdfB6ed808fADddAd9154F5605E349fFF96E3d939",
+      "created": 1673579026,
+      "choice": 1,
+      "vp": 18,
+      "reason": "Love to see this get Funded"
+    },
+    {
+      "id": "0x51df8dc83cd3d291e3daac77fe5d0d6e3b535d0ac9396d84a5184eb00c130486",
+      "proposal": {
+        "id": "0x1353abe6679ea8aecf8505fc0a2785328adfefe358d4352d25862bd97dd2278d"
+      },
+      "voter": "0x2F600423Ec00778423E7628993E0dE72Cd37959a",
+      "created": 1673575292,
+      "choice": 3,
+      "vp": 7,
+      "reason": ""
+    },
+    {
+      "id": "0xa727552fbe4be6fd70f444bc041689b9f76ce11da412d8d7ff37dd4ac1f218c6",
+      "proposal": {
+        "id": "0x1353abe6679ea8aecf8505fc0a2785328adfefe358d4352d25862bd97dd2278d"
+      },
+      "voter": "0x5bFeb4Ca066c9458842AC89b6e5cd983bd1a1034",
+      "created": 1673573777,
+      "choice": 1,
+      "vp": 4,
+      "reason": ""
+    },
+    {
+      "id": "0x049934c6b2aa1a57d3899e2555f36b5e5bcc708d2bce0ded4bce12d64ae21b5e",
+      "proposal": {
+        "id": "0x1353abe6679ea8aecf8505fc0a2785328adfefe358d4352d25862bd97dd2278d"
+      },
+      "voter": "0x7B55D264e7c58D14379cf49D93D028b65eFbc490",
+      "created": 1673564886,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0x3709c798419de959cf319458a0a3fe8ffef7c2965e1b9be73b34d952b8df624f",
+      "proposal": {
+        "id": "0x1353abe6679ea8aecf8505fc0a2785328adfefe358d4352d25862bd97dd2278d"
+      },
+      "voter": "0x387a161C6b25aA854100aBaED39274e51aaffffd",
+      "created": 1673564073,
+      "choice": 1,
+      "vp": 131,
+      "reason": ""
+    },
+    {
+      "id": "0xcf44bedcec4c8a641258006883edd79acf987b614d6a13a889eb2a2816c0be6c",
+      "proposal": {
+        "id": "0x1353abe6679ea8aecf8505fc0a2785328adfefe358d4352d25862bd97dd2278d"
+      },
+      "voter": "0xeE0f9973B2159229AaA0b5E90a704F9da72A8Da1",
+      "created": 1673562926,
+      "choice": 2,
+      "vp": 2,
+      "reason": "Retroactive payments👎\n\nAlso for the engagement provided proof you can find much cheaper prices then you’re asking for."
+    },
+    {
+      "id": "0x498d11f7165c1da63cf57be425a5a92f478d56825b602600d536e896de6d5918",
+      "proposal": {
+        "id": "0x1353abe6679ea8aecf8505fc0a2785328adfefe358d4352d25862bd97dd2278d"
+      },
+      "voter": "0x069Da1bad547d67AbF26C42358d3A6A8A78dECa0",
+      "created": 1673562885,
+      "choice": 3,
+      "vp": 50,
+      "reason": ""
+    },
+    {
+      "id": "0xd28d81ff09ee49246a2849848212d160d0087a6c34ec644716f037e82d14b8ff",
+      "proposal": {
+        "id": "0x1353abe6679ea8aecf8505fc0a2785328adfefe358d4352d25862bd97dd2278d"
+      },
+      "voter": "0xcB15649D7B7a1eb01fb1ACD14809de6cF82Aa1A0",
+      "created": 1673555333,
+      "choice": 3,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0x498b1ea51b7bdf7c11fd019d6df4f59860583c1906d0439fe239ec4b84b8cc01",
+      "proposal": {
+        "id": "0x1353abe6679ea8aecf8505fc0a2785328adfefe358d4352d25862bd97dd2278d"
+      },
+      "voter": "0xcbfb27341D60206a9C5aE92da97202077BCf450F",
+      "created": 1673548776,
+      "choice": 3,
+      "vp": 8,
+      "reason": ""
+    },
+    {
+      "id": "0x7c7b8a072d58325f97434a564686e8c70dc5ad1589e5f0b49fd17d7b42f604d4",
+      "proposal": {
+        "id": "0x1353abe6679ea8aecf8505fc0a2785328adfefe358d4352d25862bd97dd2278d"
+      },
+      "voter": "0x865c529F7053ADc50aC9d3efc54D71DB7b28907C",
+      "created": 1673547318,
+      "choice": 2,
+      "vp": 12,
+      "reason": "Generally not a fan of retroactive compensation. I like the initiative but think resources can be better allocated for proliferation atm"
+    },
+    {
+      "id": "0x72c4071a9d1021c4dd119605e11c2b6ee855f6f953bec26750997cc6d07ae3e3",
+      "proposal": {
+        "id": "0x1353abe6679ea8aecf8505fc0a2785328adfefe358d4352d25862bd97dd2278d"
+      },
+      "voter": "0x41CB654D1F47913ACAB158a8199191D160DAbe4A",
+      "created": 1673537628,
+      "choice": 1,
+      "vp": 9,
+      "reason": ""
+    },
+    {
+      "id": "0x7e7c55af7fe5142e8503c1df68a4bca617394284d441037a69aa99ceef2a660e",
+      "proposal": {
+        "id": "0x1353abe6679ea8aecf8505fc0a2785328adfefe358d4352d25862bd97dd2278d"
+      },
+      "voter": "0x761b4763a572010f96Ed7c22011D0C95E2b36693",
+      "created": 1673516352,
+      "choice": 1,
+      "vp": 10,
+      "reason": ""
+    },
+    {
+      "id": "0x47cae6fa14e856ad7e37337168bb5c7f2f9d2c8b58f0e575b764cde7f97770d5",
+      "proposal": {
+        "id": "0x1353abe6679ea8aecf8505fc0a2785328adfefe358d4352d25862bd97dd2278d"
+      },
+      "voter": "0xd5fb864ACfD6BB2f72939f122e89fF7F475924f5",
+      "created": 1673511613,
+      "choice": 3,
+      "vp": 6,
+      "reason": ""
+    },
+    {
+      "id": "0x7ce0a982dcb1dcff73732ac636e50ddeaf5d63fa079a1cc6c28b8e6cc6a41a79",
+      "proposal": {
+        "id": "0x1353abe6679ea8aecf8505fc0a2785328adfefe358d4352d25862bd97dd2278d"
+      },
+      "voter": "0xC23274347e8Aa82d363140d3cefb71Ff588EfFed",
+      "created": 1673509432,
+      "choice": 3,
+      "vp": 6,
+      "reason": ""
+    },
+    {
+      "id": "0x29fc1d6c0c2fde72c597ea1863b054723662f75cf639881ce0c9e54771117637",
+      "proposal": {
+        "id": "0x1353abe6679ea8aecf8505fc0a2785328adfefe358d4352d25862bd97dd2278d"
+      },
+      "voter": "0x2309157fb2A7a601E58269752eF7739fFd74196C",
+      "created": 1673504561,
+      "choice": 2,
+      "vp": 12,
+      "reason": ""
+    },
+    {
+      "id": "0x1301849c2206308a36ba440d7d046ae5442f3d07b208ace29d15d06883f11554",
+      "proposal": {
+        "id": "0x1353abe6679ea8aecf8505fc0a2785328adfefe358d4352d25862bd97dd2278d"
+      },
+      "voter": "0x80915E89Ffe836216866d16Ec4F693053f205179",
+      "created": 1673497601,
+      "choice": 1,
+      "vp": 3,
+      "reason": ""
+    },
+    {
+      "id": "0x0624037cf901ca3aa7574724b20cea6c918bfd88e16fc104f27f32a1ef8ddaf0",
+      "proposal": {
+        "id": "0x1353abe6679ea8aecf8505fc0a2785328adfefe358d4352d25862bd97dd2278d"
+      },
+      "voter": "0x294CD7Db1DA684d6aB241a885fd94dB07129a2CC",
+      "created": 1673491554,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0xfbaa5098edf01f5d1d086aa894185d3f051ef3eaee60b9d78036dc9257a03a79",
+      "proposal": {
+        "id": "0x1353abe6679ea8aecf8505fc0a2785328adfefe358d4352d25862bd97dd2278d"
+      },
+      "voter": "0x7ce294D2Bcb2dE76a15fcf7055b0B14253Dd3B33",
+      "created": 1673486151,
+      "choice": 1,
+      "vp": 5,
+      "reason": ""
+    }
+  ]
+}

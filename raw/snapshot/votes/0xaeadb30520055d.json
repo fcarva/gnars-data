@@ -1,0 +1,160 @@
+{
+  "fetched_at": "2026-03-22T03:48:07.897470Z",
+  "proposal_id": "0xaeadb30520055d8061f976872fc59f4b197192478ac7855671c5d7401fa250c9",
+  "records": [
+    {
+      "id": "0xac5e6186c8fbcedcdf078c44ef825de4aa45e7e1e5cd541dcc94e22d4e7f30f3",
+      "proposal": {
+        "id": "0xaeadb30520055d8061f976872fc59f4b197192478ac7855671c5d7401fa250c9"
+      },
+      "voter": "0x897284cc981D09EF61023D2ab96C5EcFD43e85f4",
+      "created": 1676739029,
+      "choice": 1,
+      "vp": 12,
+      "reason": ""
+    },
+    {
+      "id": "0xa41010deec1078e8748b104ce51cc4f6cc9386a84192ad85721ebcee6b31d864",
+      "proposal": {
+        "id": "0xaeadb30520055d8061f976872fc59f4b197192478ac7855671c5d7401fa250c9"
+      },
+      "voter": "0xBA8e0841CD9a95c80ccBD502B08F73F8e30f2186",
+      "created": 1676726797,
+      "choice": 1,
+      "vp": 2,
+      "reason": ""
+    },
+    {
+      "id": "0xb5a67de7f253d514a5ac63104be86b4e5abe157ef082f9b74f6862c31c8c19ce",
+      "proposal": {
+        "id": "0xaeadb30520055d8061f976872fc59f4b197192478ac7855671c5d7401fa250c9"
+      },
+      "voter": "0xEDc1a397589A0236C4810883b7d559288a5Fe7e1",
+      "created": 1676660017,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0xa78af91ea3afada2a9ee824d2d3511435dbd6a9b2061dd6023556d3b8fb03ed8",
+      "proposal": {
+        "id": "0xaeadb30520055d8061f976872fc59f4b197192478ac7855671c5d7401fa250c9"
+      },
+      "voter": "0x761b4763a572010f96Ed7c22011D0C95E2b36693",
+      "created": 1676655994,
+      "choice": 1,
+      "vp": 12,
+      "reason": ""
+    },
+    {
+      "id": "0x97b24c88f0bd4e82fb6b5d6e41f95d63be3cfd7c51a49d02702a54c2160c9673",
+      "proposal": {
+        "id": "0xaeadb30520055d8061f976872fc59f4b197192478ac7855671c5d7401fa250c9"
+      },
+      "voter": "0x387a161C6b25aA854100aBaED39274e51aaffffd",
+      "created": 1676617633,
+      "choice": 1,
+      "vp": 129,
+      "reason": ""
+    },
+    {
+      "id": "0xc92355e38a1ed0dc0480966c10c0f48ae2cb53e35d8dada768ba3598c19d9d41",
+      "proposal": {
+        "id": "0xaeadb30520055d8061f976872fc59f4b197192478ac7855671c5d7401fa250c9"
+      },
+      "voter": "0x4b5F934da25c33F130efC5DF47C91Af1375baA30",
+      "created": 1676601500,
+      "choice": 1,
+      "vp": 7,
+      "reason": ""
+    },
+    {
+      "id": "0x4286562c9c24d3adcf74c7654f5ba21f34a645b39419c249ec72ac2e97e38858",
+      "proposal": {
+        "id": "0xaeadb30520055d8061f976872fc59f4b197192478ac7855671c5d7401fa250c9"
+      },
+      "voter": "0xdfB6ed808fADddAd9154F5605E349fFF96E3d939",
+      "created": 1676601099,
+      "choice": 1,
+      "vp": 20,
+      "reason": ""
+    },
+    {
+      "id": "0x0a52fcdb4f94d740a3fc2743f2f31af953bbe739e98fd1b05102348d8d79a9e0",
+      "proposal": {
+        "id": "0xaeadb30520055d8061f976872fc59f4b197192478ac7855671c5d7401fa250c9"
+      },
+      "voter": "0x64c4Bffb220818F0f2ee6DAe7A2F17D92b359c5d",
+      "created": 1676563131,
+      "choice": 1,
+      "vp": 21,
+      "reason": ""
+    },
+    {
+      "id": "0xc7093ba6b04d730f8743b90b00874e2c5df2bb272381ca040aeaae380becbc2f",
+      "proposal": {
+        "id": "0xaeadb30520055d8061f976872fc59f4b197192478ac7855671c5d7401fa250c9"
+      },
+      "voter": "0xb2b7D66bb56ce8FF7838dC8053fF35050Ed95E9D",
+      "created": 1676545328,
+      "choice": 1,
+      "vp": 2,
+      "reason": ""
+    },
+    {
+      "id": "0x3ed43bf92b10961679c24d9ba5f6b201506f44835ccffdd49e4a50318ccc1e3c",
+      "proposal": {
+        "id": "0xaeadb30520055d8061f976872fc59f4b197192478ac7855671c5d7401fa250c9"
+      },
+      "voter": "0xFA2930a9d96e91B0A7e78d9fEBB7A8c744afD0da",
+      "created": 1676533734,
+      "choice": 1,
+      "vp": 3,
+      "reason": ""
+    },
+    {
+      "id": "0x1b8d4f486e6577fa9350c49145a5109d000894fe225db52ade34136390109def",
+      "proposal": {
+        "id": "0xaeadb30520055d8061f976872fc59f4b197192478ac7855671c5d7401fa250c9"
+      },
+      "voter": "0x9C87A1065994f156f0B7b87AAa8B3c5F7BD67E02",
+      "created": 1676519690,
+      "choice": 1,
+      "vp": 31,
+      "reason": ""
+    },
+    {
+      "id": "0x8a8184a78dd3d60b4ae311b999b0ebc6fdab44e799385c94fd4082e60eb1b4f1",
+      "proposal": {
+        "id": "0xaeadb30520055d8061f976872fc59f4b197192478ac7855671c5d7401fa250c9"
+      },
+      "voter": "0x7B55D264e7c58D14379cf49D93D028b65eFbc490",
+      "created": 1676514295,
+      "choice": 1,
+      "vp": 2,
+      "reason": ""
+    },
+    {
+      "id": "0xa8da045cd0c0ce40dc797d242b8efd2916146065643c884683d9c650d725ea41",
+      "proposal": {
+        "id": "0xaeadb30520055d8061f976872fc59f4b197192478ac7855671c5d7401fa250c9"
+      },
+      "voter": "0x56b6DcDDD5d96535c35B720C96E19939920544D8",
+      "created": 1676509901,
+      "choice": 1,
+      "vp": 185,
+      "reason": ""
+    },
+    {
+      "id": "0xd632e879e6df2f40f71ff5daf455354ef9b99ff9f9951a2784b37526539cb297",
+      "proposal": {
+        "id": "0xaeadb30520055d8061f976872fc59f4b197192478ac7855671c5d7401fa250c9"
+      },
+      "voter": "0x41CB654D1F47913ACAB158a8199191D160DAbe4A",
+      "created": 1676507921,
+      "choice": 1,
+      "vp": 11,
+      "reason": ""
+    }
+  ]
+}

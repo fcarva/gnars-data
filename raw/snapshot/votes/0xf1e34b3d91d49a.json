@@ -1,0 +1,237 @@
+{
+  "fetched_at": "2026-03-22T03:48:12.974333Z",
+  "proposal_id": "0xf1e34b3d91d49a2d3c83e465fb3bed3763c067d30a483ac22e98edee03709c38",
+  "records": [
+    {
+      "id": "0x15b56b21064bf9c4f7c71148b3f6ea16b3d4e02733d0c750ba5550db28bec05a",
+      "proposal": {
+        "id": "0xf1e34b3d91d49a2d3c83e465fb3bed3763c067d30a483ac22e98edee03709c38"
+      },
+      "voter": "0x4b5F934da25c33F130efC5DF47C91Af1375baA30",
+      "created": 1674787274,
+      "choice": 3,
+      "vp": 7,
+      "reason": ""
+    },
+    {
+      "id": "0xf0979f2367755c2f9ce2e88849a09d6d4a3f83132da91a2e7d9fa75f5e5004f5",
+      "proposal": {
+        "id": "0xf1e34b3d91d49a2d3c83e465fb3bed3763c067d30a483ac22e98edee03709c38"
+      },
+      "voter": "0xdcf37d8Aa17142f053AAA7dc56025aB00D897a19",
+      "created": 1674786399,
+      "choice": 3,
+      "vp": 12,
+      "reason": ""
+    },
+    {
+      "id": "0xe1687372ddae3cc841d43aaacc115d5cbf370726d78dfb93e071d9007d180a20",
+      "proposal": {
+        "id": "0xf1e34b3d91d49a2d3c83e465fb3bed3763c067d30a483ac22e98edee03709c38"
+      },
+      "voter": "0x05e189E1BbaF77f1654F0983872fd938AE592eDD",
+      "created": 1674786289,
+      "choice": 2,
+      "vp": 109,
+      "reason": ""
+    },
+    {
+      "id": "0xc544103c6ad8ea3300983e4e3ba0c3a57283107911fbd8611836f341f12b8f38",
+      "proposal": {
+        "id": "0xf1e34b3d91d49a2d3c83e465fb3bed3763c067d30a483ac22e98edee03709c38"
+      },
+      "voter": "0x387a161C6b25aA854100aBaED39274e51aaffffd",
+      "created": 1674773092,
+      "choice": 3,
+      "vp": 130,
+      "reason": "needs some refining. going to sit this one out."
+    },
+    {
+      "id": "0xdccb0fb2b8e295d499144a1abd228436d7d57f4b7bbc2b224ef81c2560bfbb25",
+      "proposal": {
+        "id": "0xf1e34b3d91d49a2d3c83e465fb3bed3763c067d30a483ac22e98edee03709c38"
+      },
+      "voter": "0x2309157fb2A7a601E58269752eF7739fFd74196C",
+      "created": 1674755184,
+      "choice": 2,
+      "vp": 12,
+      "reason": ""
+    },
+    {
+      "id": "0x020f15a17fc88729dc19978180bbea01323544ae91361aad2a1361bf83ac558b",
+      "proposal": {
+        "id": "0xf1e34b3d91d49a2d3c83e465fb3bed3763c067d30a483ac22e98edee03709c38"
+      },
+      "voter": "0x64c4Bffb220818F0f2ee6DAe7A2F17D92b359c5d",
+      "created": 1674738171,
+      "choice": 2,
+      "vp": 5,
+      "reason": ""
+    },
+    {
+      "id": "0x345b9d6e054d2aee00d98b74f8852898bbe8b56758b0f2ae1062a282af4d3f13",
+      "proposal": {
+        "id": "0xf1e34b3d91d49a2d3c83e465fb3bed3763c067d30a483ac22e98edee03709c38"
+      },
+      "voter": "0x0f7341C76bA4460736ABec4f65a1953E824658cc",
+      "created": 1674700233,
+      "choice": 2,
+      "vp": 61,
+      "reason": "I'm also with Pinpusher here. The venue rental also seems very high and probably too big! Let's refine this and bring it back to the table. "
+    },
+    {
+      "id": "0xfea4a301bc58b357b7b4b72406c1713817fa1eff2c5c68603624bf8b77a5b20b",
+      "proposal": {
+        "id": "0xf1e34b3d91d49a2d3c83e465fb3bed3763c067d30a483ac22e98edee03709c38"
+      },
+      "voter": "0x41CB654D1F47913ACAB158a8199191D160DAbe4A",
+      "created": 1674699990,
+      "choice": 2,
+      "vp": 7,
+      "reason": "I think due the current treasure status, and lack of track record, would be ideal to start with a lower amount"
+    },
+    {
+      "id": "0xfe2dd2555215ff7f3c755022cea4b6ac710ac60d2da337c3bb16a4dbc62c7355",
+      "proposal": {
+        "id": "0xf1e34b3d91d49a2d3c83e465fb3bed3763c067d30a483ac22e98edee03709c38"
+      },
+      "voter": "0xf9d71b5fB8345F2508C1302a74d4362DEAb7D104",
+      "created": 1674696907,
+      "choice": 2,
+      "vp": 7,
+      "reason": ""
+    },
+    {
+      "id": "0x74dd4bed31c381820188f9c2fc14bd505777438b19fb8dc6f42395a9dd387c7c",
+      "proposal": {
+        "id": "0xf1e34b3d91d49a2d3c83e465fb3bed3763c067d30a483ac22e98edee03709c38"
+      },
+      "voter": "0x67b21E92356b4faB606D04Af31c585F9AeBF0E47",
+      "created": 1674696783,
+      "choice": 2,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0xfe1a988679f63b1cb5069b0fc86f25a5f9da30f519ea1776791e11bb456cc5df",
+      "proposal": {
+        "id": "0xf1e34b3d91d49a2d3c83e465fb3bed3763c067d30a483ac22e98edee03709c38"
+      },
+      "voter": "0x9C87A1065994f156f0B7b87AAa8B3c5F7BD67E02",
+      "created": 1674696313,
+      "choice": 2,
+      "vp": 30,
+      "reason": "See Discord comments. Lack of current track record in Gnars but would vote \"FOR\" after more participation in the future"
+    },
+    {
+      "id": "0xe3a9068f7da31f45302e0dee1942dc96cd3e4e495fb36004260c13a6e89380da",
+      "proposal": {
+        "id": "0xf1e34b3d91d49a2d3c83e465fb3bed3763c067d30a483ac22e98edee03709c38"
+      },
+      "voter": "0xcbfb27341D60206a9C5aE92da97202077BCf450F",
+      "created": 1674666213,
+      "choice": 3,
+      "vp": 8,
+      "reason": ""
+    },
+    {
+      "id": "0x156563cdc0ec0874b52ea84c2dbe3f6fb1cf12ae78107c84246e88297ff81c83",
+      "proposal": {
+        "id": "0xf1e34b3d91d49a2d3c83e465fb3bed3763c067d30a483ac22e98edee03709c38"
+      },
+      "voter": "0x897284cc981D09EF61023D2ab96C5EcFD43e85f4",
+      "created": 1674622584,
+      "choice": 3,
+      "vp": 12,
+      "reason": "Agree with pinpusher"
+    },
+    {
+      "id": "0x329bf35a46b770f1ea4b8ae6bf1f8074f08c9fbca3cc8ecbf0e36aba63391d9b",
+      "proposal": {
+        "id": "0xf1e34b3d91d49a2d3c83e465fb3bed3763c067d30a483ac22e98edee03709c38"
+      },
+      "voter": "0xa375c6c381E7ed8fd66ad1f1f6658868c285cC3F",
+      "created": 1674612224,
+      "choice": 1,
+      "vp": 8,
+      "reason": ""
+    },
+    {
+      "id": "0x02fe2ac3ae5527fe68475ad427bab0831a06f75185e4cc84f4f99f963f83f90c",
+      "proposal": {
+        "id": "0xf1e34b3d91d49a2d3c83e465fb3bed3763c067d30a483ac22e98edee03709c38"
+      },
+      "voter": "0x536779E28C5A74401334809cA8afFA4CafCaa926",
+      "created": 1674612173,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0xe9c417c80dde9efd05072354f17482507f686840d07c5d46af0300f5897105ea",
+      "proposal": {
+        "id": "0xf1e34b3d91d49a2d3c83e465fb3bed3763c067d30a483ac22e98edee03709c38"
+      },
+      "voter": "0x5746396dfE7025190a7775dF94b6E89310DDd238",
+      "created": 1674584868,
+      "choice": 2,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0xbc3366652c12abad4f5ed4e3bc60455b7b9dc9210531e554d70b958cd15b4422",
+      "proposal": {
+        "id": "0xf1e34b3d91d49a2d3c83e465fb3bed3763c067d30a483ac22e98edee03709c38"
+      },
+      "voter": "0xdfB6ed808fADddAd9154F5605E349fFF96E3d939",
+      "created": 1674570567,
+      "choice": 1,
+      "vp": 20,
+      "reason": "Lets do some extreme proliferation in South East Asia"
+    },
+    {
+      "id": "0x3c78cae46d4519f1d0f85b622eec70a74718c69567091a86fdb29b4df8e9c0a2",
+      "proposal": {
+        "id": "0xf1e34b3d91d49a2d3c83e465fb3bed3763c067d30a483ac22e98edee03709c38"
+      },
+      "voter": "0x2F600423Ec00778423E7628993E0dE72Cd37959a",
+      "created": 1674566541,
+      "choice": 1,
+      "vp": 20,
+      "reason": ""
+    },
+    {
+      "id": "0xce1662b60d1d66832d8fd6c5a24cbe57f6a5a24550f337c1fd5c67eec05c3d20",
+      "proposal": {
+        "id": "0xf1e34b3d91d49a2d3c83e465fb3bed3763c067d30a483ac22e98edee03709c38"
+      },
+      "voter": "0x26c6562922E3595b1011f25266ad59bed7218E1D",
+      "created": 1674533933,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0x929cc70936987404754994b87728ec348ae429b929761b01c5cc9f3524861f5a",
+      "proposal": {
+        "id": "0xf1e34b3d91d49a2d3c83e465fb3bed3763c067d30a483ac22e98edee03709c38"
+      },
+      "voter": "0xFA2930a9d96e91B0A7e78d9fEBB7A8c744afD0da",
+      "created": 1674533649,
+      "choice": 1,
+      "vp": 3,
+      "reason": ""
+    },
+    {
+      "id": "0xdc6994e1af4da04e86325b22052bd9173a0fc889bcd0c2e0685a95bb13955f77",
+      "proposal": {
+        "id": "0xf1e34b3d91d49a2d3c83e465fb3bed3763c067d30a483ac22e98edee03709c38"
+      },
+      "voter": "0x4fc1b98F87764aCb52C2237Defa48B07F55A86a8",
+      "created": 1674532380,
+      "choice": 1,
+      "vp": 3,
+      "reason": ""
+    }
+  ]
+}

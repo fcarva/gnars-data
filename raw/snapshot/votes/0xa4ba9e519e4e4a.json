@@ -1,0 +1,127 @@
+{
+  "fetched_at": "2026-03-22T03:47:44.927120Z",
+  "proposal_id": "0xa4ba9e519e4e4a1788cf27989541b3f5a6f63f1902e1e5db1b98336d2741f46f",
+  "records": [
+    {
+      "id": "0x26061a4d8e4a0905118dcfb91f7baa820cf7df4d0d4ac1da8632454a7d23265f",
+      "proposal": {
+        "id": "0xa4ba9e519e4e4a1788cf27989541b3f5a6f63f1902e1e5db1b98336d2741f46f"
+      },
+      "voter": "0x7c621d5954a4AC21A0fd741ab6f302398F29d644",
+      "created": 1706349081,
+      "choice": 1,
+      "vp": 280,
+      "reason": ""
+    },
+    {
+      "id": "0x1b0075040dce8e4e447f7757b9b7fdeeb5452a45542c336dfa022721b13b7891",
+      "proposal": {
+        "id": "0xa4ba9e519e4e4a1788cf27989541b3f5a6f63f1902e1e5db1b98336d2741f46f"
+      },
+      "voter": "0xDdB4938755C243a4f60a2f2f8f95dF4F894c58Cc",
+      "created": 1706239456,
+      "choice": 2,
+      "vp": 7,
+      "reason": ""
+    },
+    {
+      "id": "0x27f5d3ea83a11a516999f589dbbf1b367a25156c4f398c8677ccd0c578eebe1a",
+      "proposal": {
+        "id": "0xa4ba9e519e4e4a1788cf27989541b3f5a6f63f1902e1e5db1b98336d2741f46f"
+      },
+      "voter": "0x2473FB8eEBE46041d5F528A728505C26A81C1158",
+      "created": 1706201850,
+      "choice": 3,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0x25a13d53e1f65e7d017c57251ffc3cdd230c625a6023b4fbdff884a674a49500",
+      "proposal": {
+        "id": "0xa4ba9e519e4e4a1788cf27989541b3f5a6f63f1902e1e5db1b98336d2741f46f"
+      },
+      "voter": "0xDB1CB916373416FC900a8533ce02AFf3faa62cdf",
+      "created": 1706198084,
+      "choice": 1,
+      "vp": 19,
+      "reason": ""
+    },
+    {
+      "id": "0x9978b65d822e6d3e94d7d5cb6c2685d13f06aad0bdc077985f0d0a7306afbea6",
+      "proposal": {
+        "id": "0xa4ba9e519e4e4a1788cf27989541b3f5a6f63f1902e1e5db1b98336d2741f46f"
+      },
+      "voter": "0xfCAE6D6b1517799330DF14BeE26e2DD90C6dd200",
+      "created": 1706196005,
+      "choice": 3,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0x35bc6fcab1c2a1a20809287ceb09c272c4c74ed3d24f222c2c0f6c3fff147654",
+      "proposal": {
+        "id": "0xa4ba9e519e4e4a1788cf27989541b3f5a6f63f1902e1e5db1b98336d2741f46f"
+      },
+      "voter": "0x98EE235244a99FDE7AaDaFB0C0fC77845D9e055A",
+      "created": 1706188088,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0xb7499cbc72e78a3291a07c6e72fa87c874ff029b394447502aa700957a97f5e9",
+      "proposal": {
+        "id": "0xa4ba9e519e4e4a1788cf27989541b3f5a6f63f1902e1e5db1b98336d2741f46f"
+      },
+      "voter": "0x761b4763a572010f96Ed7c22011D0C95E2b36693",
+      "created": 1706175014,
+      "choice": 3,
+      "vp": 10,
+      "reason": ""
+    },
+    {
+      "id": "0xcfcaea914efd5c662bb6cbf1274e7401cdb80be2227b523c1957478021fbe3e5",
+      "proposal": {
+        "id": "0xa4ba9e519e4e4a1788cf27989541b3f5a6f63f1902e1e5db1b98336d2741f46f"
+      },
+      "voter": "0xdfB6ed808fADddAd9154F5605E349fFF96E3d939",
+      "created": 1706174001,
+      "choice": 1,
+      "vp": 22,
+      "reason": "this should be easy @Vlad, its gas-less voting! I'd need like two-three weeks to explain why Josh and Trevor are the coolest Skaters i know."
+    },
+    {
+      "id": "0x60d4792eae3b278119952bd6967c5732464f3cdb21a07370e505e8bff026080b",
+      "proposal": {
+        "id": "0xa4ba9e519e4e4a1788cf27989541b3f5a6f63f1902e1e5db1b98336d2741f46f"
+      },
+      "voter": "0x41CB654D1F47913ACAB158a8199191D160DAbe4A",
+      "created": 1706116407,
+      "choice": 2,
+      "vp": 73,
+      "reason": "the proposal does not mention which gnars and why 2 gnars, instead of the normal 1 gnar, would be nice to give +1 so he choses the next onbo"
+    },
+    {
+      "id": "0xfeb3d211da7ff501c799268513b669438b439eac461171583ee50d29e7dc9759",
+      "proposal": {
+        "id": "0xa4ba9e519e4e4a1788cf27989541b3f5a6f63f1902e1e5db1b98336d2741f46f"
+      },
+      "voter": "0xdcf37d8Aa17142f053AAA7dc56025aB00D897a19",
+      "created": 1706114455,
+      "choice": 1,
+      "vp": 125,
+      "reason": ""
+    },
+    {
+      "id": "0x943c67b979c54044a8de908ceac6cb4a5274f944d7657c0d8cf8918db4be4257",
+      "proposal": {
+        "id": "0xa4ba9e519e4e4a1788cf27989541b3f5a6f63f1902e1e5db1b98336d2741f46f"
+      },
+      "voter": "0xbA6E1C26bE2F8b46D9e7ab7573b99921Ee81AcF5",
+      "created": 1706114426,
+      "choice": 1,
+      "vp": 16,
+      "reason": ""
+    }
+  ]
+}

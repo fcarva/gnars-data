@@ -1,0 +1,226 @@
+{
+  "fetched_at": "2026-03-22T03:48:23.467117Z",
+  "proposal_id": "0x8e162378aca3e306086e60566e64bcd21000c8fa464d2d1487133c8c4f0785f2",
+  "records": [
+    {
+      "id": "0x4ccfb8d3b2732f30d929c025f84aed26f56fd1443ee9dd6ab685b595f81eb079",
+      "proposal": {
+        "id": "0x8e162378aca3e306086e60566e64bcd21000c8fa464d2d1487133c8c4f0785f2"
+      },
+      "voter": "0xa54c11Dc5c04Ed8B95481D1Cd8ec07695B1D5583",
+      "created": 1669202401,
+      "choice": 2,
+      "vp": 3,
+      "reason": ""
+    },
+    {
+      "id": "0x5e50041bc2439949943abb26aadb3e8dccc30663e3c3fa5fd32b22fe3f02ff81",
+      "proposal": {
+        "id": "0x8e162378aca3e306086e60566e64bcd21000c8fa464d2d1487133c8c4f0785f2"
+      },
+      "voter": "0x05e189E1BbaF77f1654F0983872fd938AE592eDD",
+      "created": 1669160168,
+      "choice": 2,
+      "vp": 111,
+      "reason": ""
+    },
+    {
+      "id": "0x006fe41bddcafb9120dd633edc242f989cfa6dc40ec155ac6a1b3c8e11a682a8",
+      "proposal": {
+        "id": "0x8e162378aca3e306086e60566e64bcd21000c8fa464d2d1487133c8c4f0785f2"
+      },
+      "voter": "0x714842638796987014f408724e366Cb70E15E935",
+      "created": 1669138504,
+      "choice": 2,
+      "vp": 2,
+      "reason": "I like the idea and I think it could be more powerful if focused on providing more details. Happy to help "
+    },
+    {
+      "id": "0x72723334342f712877b3b0dc120f4285cd3b2fcb442c2e08ba1c2ffafb0a8747",
+      "proposal": {
+        "id": "0x8e162378aca3e306086e60566e64bcd21000c8fa464d2d1487133c8c4f0785f2"
+      },
+      "voter": "0x4A39aE081678f3D4ABbFbd50b3034580B8bAF48A",
+      "created": 1669137443,
+      "choice": 2,
+      "vp": 37,
+      "reason": ""
+    },
+    {
+      "id": "0x0051602d1cc2cfd1bf329d6caf2bd1e4edb099d209ea771b70ac08abb179e4ac",
+      "proposal": {
+        "id": "0x8e162378aca3e306086e60566e64bcd21000c8fa464d2d1487133c8c4f0785f2"
+      },
+      "voter": "0x61A05528286Dc4693Be907bE3c9efbd2742a88E4",
+      "created": 1669096847,
+      "choice": 2,
+      "vp": 50,
+      "reason": "Would prefer more details and further discussion in the forum first.  This likely turns into a 'for' vote  with some things ironed out."
+    },
+    {
+      "id": "0x0792a2063ab1ad50592814068bbf4bab255562a2823ebbd571b4da74997b9666",
+      "proposal": {
+        "id": "0x8e162378aca3e306086e60566e64bcd21000c8fa464d2d1487133c8c4f0785f2"
+      },
+      "voter": "0xFee57F81b3803e24fd74B995053CC8c24e8069BB",
+      "created": 1669085505,
+      "choice": 2,
+      "vp": 12,
+      "reason": ""
+    },
+    {
+      "id": "0x29c691c975d636d8442ca5ee0e548cf13f4cfa3e9d1beccbdc9a65ce45cd2cd3",
+      "proposal": {
+        "id": "0x8e162378aca3e306086e60566e64bcd21000c8fa464d2d1487133c8c4f0785f2"
+      },
+      "voter": "0xF0017ADa58130bC15B574fa2CFCA18D36bfdf486",
+      "created": 1669081555,
+      "choice": 2,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0x3d883faa604fc8e138d9ae9ccea8b9bfe3b4b931d468241d551353f9b28d30f4",
+      "proposal": {
+        "id": "0x8e162378aca3e306086e60566e64bcd21000c8fa464d2d1487133c8c4f0785f2"
+      },
+      "voter": "0x41CB654D1F47913ACAB158a8199191D160DAbe4A",
+      "created": 1669077227,
+      "choice": 2,
+      "vp": 13,
+      "reason": "Same reason as ⌐◨-◨.eth, we need to set an example so people follow the gov. process, I am sure we are going to exchange some ideas in forum"
+    },
+    {
+      "id": "0xf4402cf46cdadae543850e5bced3a2d42d34654823db461e8e1f110d1b103246",
+      "proposal": {
+        "id": "0x8e162378aca3e306086e60566e64bcd21000c8fa464d2d1487133c8c4f0785f2"
+      },
+      "voter": "0x215C74f2EDd519b1998dECE2A03fA3772Ecd495d",
+      "created": 1669071480,
+      "choice": 1,
+      "vp": 3,
+      "reason": ""
+    },
+    {
+      "id": "0xdc1b8a5fb0ee006c51bfcf7ce72a1b5af53dff34d9ced5f4f4baa819a52e37eb",
+      "proposal": {
+        "id": "0x8e162378aca3e306086e60566e64bcd21000c8fa464d2d1487133c8c4f0785f2"
+      },
+      "voter": "0xcbfb27341D60206a9C5aE92da97202077BCf450F",
+      "created": 1669060568,
+      "choice": 2,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0x2aec1199d75b0143bc39bdfa22547b61bf36cc1d502007fa074e207afa67b662",
+      "proposal": {
+        "id": "0x8e162378aca3e306086e60566e64bcd21000c8fa464d2d1487133c8c4f0785f2"
+      },
+      "voter": "0x9C87A1065994f156f0B7b87AAa8B3c5F7BD67E02",
+      "created": 1669057975,
+      "choice": 2,
+      "vp": 25,
+      "reason": "I like the idea but think needs a lil more discussion time to make this prop bigger/better! Jerseys, stickers, Gnar trophy for winner, etc.?"
+    },
+    {
+      "id": "0x694b758c782bac5d7acf32b60af72560573dc32484affb9c20641e14920ce356",
+      "proposal": {
+        "id": "0x8e162378aca3e306086e60566e64bcd21000c8fa464d2d1487133c8c4f0785f2"
+      },
+      "voter": "0xA3418aC70BAD35e7a3009c2c4c27120A0cbbd2dE",
+      "created": 1669055916,
+      "choice": 2,
+      "vp": 57,
+      "reason": "Unclear value in prop, plus concerns of longevity of artwork (tires, dirt, weather). Could be a yes vote with more community discussion."
+    },
+    {
+      "id": "0x4103a8ee8befcba52d996a3c740339dfc8b89d84c257bdc1d7f2f8f38c7751b2",
+      "proposal": {
+        "id": "0x8e162378aca3e306086e60566e64bcd21000c8fa464d2d1487133c8c4f0785f2"
+      },
+      "voter": "0x8D36BaC540C57dBd009eA9d9D8CDF9443A83E3f6",
+      "created": 1669055535,
+      "choice": 2,
+      "vp": 39,
+      "reason": "I like this proposal, but we don't have enough details.\nI'm voting against, but I want him to rewrite and submit again and I will vote yes!"
+    },
+    {
+      "id": "0x12b5d1d6a50a43b0dc257da062affbbb531904922d8f3bc746a331adc06a756e",
+      "proposal": {
+        "id": "0x8e162378aca3e306086e60566e64bcd21000c8fa464d2d1487133c8c4f0785f2"
+      },
+      "voter": "0x1E5b89C74Fda05BF25fF586d3cfa4fcdAFce4f94",
+      "created": 1669052655,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0xe5defcc5dd96ea20fd8e2fe774e2af1a041b91be70471377c0f0b955b3923b23",
+      "proposal": {
+        "id": "0x8e162378aca3e306086e60566e64bcd21000c8fa464d2d1487133c8c4f0785f2"
+      },
+      "voter": "0x6fD948ee06EbFBA2775841621CbcCD0C338dB7aD",
+      "created": 1669043896,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0xe19f8ac500c9805d1c731ea4f92e08fc55e64107830c8c486176bed01de664a5",
+      "proposal": {
+        "id": "0x8e162378aca3e306086e60566e64bcd21000c8fa464d2d1487133c8c4f0785f2"
+      },
+      "voter": "0x5ce561e048d2cd64523D6316228F97bd2537F92f",
+      "created": 1669027997,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0x4f3f2ef6dba299eb3743366f024cf9a455bbd8ad9d9cf4afd012b89702b04818",
+      "proposal": {
+        "id": "0x8e162378aca3e306086e60566e64bcd21000c8fa464d2d1487133c8c4f0785f2"
+      },
+      "voter": "0x5bFeb4Ca066c9458842AC89b6e5cd983bd1a1034",
+      "created": 1669000247,
+      "choice": 3,
+      "vp": 3,
+      "reason": ""
+    },
+    {
+      "id": "0x7867abd9e93401d642da4129a2770e5a95ca8861de7ecedc96197b427edb3bd8",
+      "proposal": {
+        "id": "0x8e162378aca3e306086e60566e64bcd21000c8fa464d2d1487133c8c4f0785f2"
+      },
+      "voter": "0xdfB6ed808fADddAd9154F5605E349fFF96E3d939",
+      "created": 1668987934,
+      "choice": 3,
+      "vp": 14,
+      "reason": ""
+    },
+    {
+      "id": "0x7c993848bf3ec1d7704cdecfb9984f87ca1e6f172cfb9adff4304669ac83d401",
+      "proposal": {
+        "id": "0x8e162378aca3e306086e60566e64bcd21000c8fa464d2d1487133c8c4f0785f2"
+      },
+      "voter": "0x56b6DcDDD5d96535c35B720C96E19939920544D8",
+      "created": 1668983917,
+      "choice": 1,
+      "vp": 179,
+      "reason": ""
+    },
+    {
+      "id": "0x58de3866c03b8fc924fe12fbc60e8d0ed3df5d3c14a08b355192a7b8987b0043",
+      "proposal": {
+        "id": "0x8e162378aca3e306086e60566e64bcd21000c8fa464d2d1487133c8c4f0785f2"
+      },
+      "voter": "0x897284cc981D09EF61023D2ab96C5EcFD43e85f4",
+      "created": 1668974185,
+      "choice": 1,
+      "vp": 12,
+      "reason": ""
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "fetched_at": "2026-03-22T03:48:07.485872Z",
+  "proposal_id": "0xb98dbe42c7fee10c45eee0624cfe0ee852e4d7757eacf016d07bcb39b48e5d84",
+  "records": [
+    {
+      "id": "0x9687ecdbecba9656f03c971e6222329e23bdcd48a53f6562543cf10e18265abc",
+      "proposal": {
+        "id": "0xb98dbe42c7fee10c45eee0624cfe0ee852e4d7757eacf016d07bcb39b48e5d84"
+      },
+      "voter": "0x7B55D264e7c58D14379cf49D93D028b65eFbc490",
+      "created": 1676929420,
+      "choice": 1,
+      "vp": 2,
+      "reason": ""
+    },
+    {
+      "id": "0xd74f3d78cb1f8886d23b93e117de208f7e6b94b3848fbc3a10382b3950493147",
+      "proposal": {
+        "id": "0xb98dbe42c7fee10c45eee0624cfe0ee852e4d7757eacf016d07bcb39b48e5d84"
+      },
+      "voter": "0x4322d6B24BdA8AF69dD1014C4F29138F6D794aDA",
+      "created": 1676889006,
+      "choice": 1,
+      "vp": 9,
+      "reason": ""
+    },
+    {
+      "id": "0xaf1a8002fe85cf747adef19a751d53e85c79b67dcd8758ad2b04ed80ea9be19c",
+      "proposal": {
+        "id": "0xb98dbe42c7fee10c45eee0624cfe0ee852e4d7757eacf016d07bcb39b48e5d84"
+      },
+      "voter": "0xdfB6ed808fADddAd9154F5605E349fFF96E3d939",
+      "created": 1676873288,
+      "choice": 1,
+      "vp": 20,
+      "reason": ""
+    },
+    {
+      "id": "0x5e1c9488eb2c02480cf787337e63b7d24682637cda276cadf6736b086a59986d",
+      "proposal": {
+        "id": "0xb98dbe42c7fee10c45eee0624cfe0ee852e4d7757eacf016d07bcb39b48e5d84"
+      },
+      "voter": "0x387a161C6b25aA854100aBaED39274e51aaffffd",
+      "created": 1676848219,
+      "choice": 1,
+      "vp": 130,
+      "reason": ""
+    },
+    {
+      "id": "0xc1e8d0f3a197bb322d5e58df516b4e5de7be858db905998a6c813de12127ce52",
+      "proposal": {
+        "id": "0xb98dbe42c7fee10c45eee0624cfe0ee852e4d7757eacf016d07bcb39b48e5d84"
+      },
+      "voter": "0x64c4Bffb220818F0f2ee6DAe7A2F17D92b359c5d",
+      "created": 1676778829,
+      "choice": 1,
+      "vp": 23,
+      "reason": ""
+    },
+    {
+      "id": "0x6f177c96707a6e305c0b00460f10b4dc9f18ed8ee58d6b06a4da85ae631a5805",
+      "proposal": {
+        "id": "0xb98dbe42c7fee10c45eee0624cfe0ee852e4d7757eacf016d07bcb39b48e5d84"
+      },
+      "voter": "0x897284cc981D09EF61023D2ab96C5EcFD43e85f4",
+      "created": 1676738943,
+      "choice": 1,
+      "vp": 12,
+      "reason": ""
+    },
+    {
+      "id": "0x86668a801aea0865ad59536fb7eb453d18d561cf0033e177085ba527f39533e6",
+      "proposal": {
+        "id": "0xb98dbe42c7fee10c45eee0624cfe0ee852e4d7757eacf016d07bcb39b48e5d84"
+      },
+      "voter": "0xBA8e0841CD9a95c80ccBD502B08F73F8e30f2186",
+      "created": 1676726763,
+      "choice": 1,
+      "vp": 2,
+      "reason": ""
+    },
+    {
+      "id": "0xa7f950998446a683e0636bdd916219754d7f133e50bb792e27ab96663f751cb9",
+      "proposal": {
+        "id": "0xb98dbe42c7fee10c45eee0624cfe0ee852e4d7757eacf016d07bcb39b48e5d84"
+      },
+      "voter": "0x56b6DcDDD5d96535c35B720C96E19939920544D8",
+      "created": 1676702412,
+      "choice": 1,
+      "vp": 185,
+      "reason": ""
+    },
+    {
+      "id": "0xf1ee99108d5141ebf34fd060e93542e15d8a2d190228ba97ee52d08664312bf1",
+      "proposal": {
+        "id": "0xb98dbe42c7fee10c45eee0624cfe0ee852e4d7757eacf016d07bcb39b48e5d84"
+      },
+      "voter": "0x9C87A1065994f156f0B7b87AAa8B3c5F7BD67E02",
+      "created": 1676700949,
+      "choice": 1,
+      "vp": 31,
+      "reason": ""
+    },
+    {
+      "id": "0x7d51a97f372b328bb0e2689c613e9666d16f35fd3fef1b89931ac1c246ce2512",
+      "proposal": {
+        "id": "0xb98dbe42c7fee10c45eee0624cfe0ee852e4d7757eacf016d07bcb39b48e5d84"
+      },
+      "voter": "0x09E938E239803C78507AbD5687A97acFeA1188ea",
+      "created": 1676688225,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0x369012a2b09939fc840f3fceae604ea20a8eeeaa4df18778e3acd9824a237ee0",
+      "proposal": {
+        "id": "0xb98dbe42c7fee10c45eee0624cfe0ee852e4d7757eacf016d07bcb39b48e5d84"
+      },
+      "voter": "0xFA2930a9d96e91B0A7e78d9fEBB7A8c744afD0da",
+      "created": 1676680980,
+      "choice": 1,
+      "vp": 3,
+      "reason": ""
+    }
+  ]
+}

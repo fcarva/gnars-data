@@ -1,0 +1,281 @@
+{
+  "fetched_at": "2026-03-22T03:47:42.346703Z",
+  "proposal_id": "0x0925892015b8809cc4ab3a7030c77364657c46f64ee083eba9f4fd5c61058b9b",
+  "records": [
+    {
+      "id": "0x4200e68aa834bfeb5caa1dc61094fe99ef2707a11b96347f8ff5bc4818532def",
+      "proposal": {
+        "id": "0x0925892015b8809cc4ab3a7030c77364657c46f64ee083eba9f4fd5c61058b9b"
+      },
+      "voter": "0xF91D7656949CA73e7E2c196Aa798B04B3F4bBDAf",
+      "created": 1710636556,
+      "choice": 1,
+      "vp": 17,
+      "reason": "Skate Cuida!"
+    },
+    {
+      "id": "0xf5413546ec93d96585540071fc43cc6245bbeacd565da43d3a33ef896a1c162d",
+      "proposal": {
+        "id": "0x0925892015b8809cc4ab3a7030c77364657c46f64ee083eba9f4fd5c61058b9b"
+      },
+      "voter": "0xa47f60564085b8792BaE197BE7762C7f7930eC67",
+      "created": 1710635594,
+      "choice": 1,
+      "vp": 3,
+      "reason": ""
+    },
+    {
+      "id": "0x51fe10fcc2156c72de76642e4c1a86c65b421855ebdbe19b47f0cbe2cbe1a70f",
+      "proposal": {
+        "id": "0x0925892015b8809cc4ab3a7030c77364657c46f64ee083eba9f4fd5c61058b9b"
+      },
+      "voter": "0x7c621d5954a4AC21A0fd741ab6f302398F29d644",
+      "created": 1710634884,
+      "choice": 1,
+      "vp": 299,
+      "reason": ""
+    },
+    {
+      "id": "0x8d7c4c387f00e72a088aa7fad05436c5d97cdd38bb0451204e969e5af6cc4160",
+      "proposal": {
+        "id": "0x0925892015b8809cc4ab3a7030c77364657c46f64ee083eba9f4fd5c61058b9b"
+      },
+      "voter": "0xDB1CB916373416FC900a8533ce02AFf3faa62cdf",
+      "created": 1710634692,
+      "choice": 1,
+      "vp": 19,
+      "reason": ""
+    },
+    {
+      "id": "0x1967cdfc835bbe98bf1b49c78e71c76499fb9aa1e3b29adcaf988dda349e9500",
+      "proposal": {
+        "id": "0x0925892015b8809cc4ab3a7030c77364657c46f64ee083eba9f4fd5c61058b9b"
+      },
+      "voter": "0x5746396dfE7025190a7775dF94b6E89310DDd238",
+      "created": 1710634351,
+      "choice": 1,
+      "vp": 14,
+      "reason": ""
+    },
+    {
+      "id": "0x86fdb21033b5c7519a288e39d70c2fc1c25e098e0b31298058c82b76ae84cde7",
+      "proposal": {
+        "id": "0x0925892015b8809cc4ab3a7030c77364657c46f64ee083eba9f4fd5c61058b9b"
+      },
+      "voter": "0xf7253A0E87E39d2cD6365919D4a3D56D431D0041",
+      "created": 1710634144,
+      "choice": 1,
+      "vp": 5,
+      "reason": ""
+    },
+    {
+      "id": "0x260ffd90e91e21070c98cf8347bd80470d6812153203dfe7c5d71a2f3094e36e",
+      "proposal": {
+        "id": "0x0925892015b8809cc4ab3a7030c77364657c46f64ee083eba9f4fd5c61058b9b"
+      },
+      "voter": "0x56b6DcDDD5d96535c35B720C96E19939920544D8",
+      "created": 1710623810,
+      "choice": 1,
+      "vp": 195,
+      "reason": ""
+    },
+    {
+      "id": "0x561fc0f9cad7ef85c8788a75eb8fcff773b742677a5a35937a6d0b4cc061207b",
+      "proposal": {
+        "id": "0x0925892015b8809cc4ab3a7030c77364657c46f64ee083eba9f4fd5c61058b9b"
+      },
+      "voter": "0x9C87A1065994f156f0B7b87AAa8B3c5F7BD67E02",
+      "created": 1710617130,
+      "choice": 1,
+      "vp": 36,
+      "reason": "For, but unsure why here and not a main dao prop. Imo, props should be to main dao, not snapshot. Especially since it costs cents now to do"
+    },
+    {
+      "id": "0xdb535aef216f5b4d6641a9ac72676207a8d4f1edf5552c8311f3078f28fda443",
+      "proposal": {
+        "id": "0x0925892015b8809cc4ab3a7030c77364657c46f64ee083eba9f4fd5c61058b9b"
+      },
+      "voter": "0xAf32BB3892F37c518f3841275F131384a41B9b57",
+      "created": 1710564917,
+      "choice": 1,
+      "vp": 3,
+      "reason": "ColetivoXv respects this movement"
+    },
+    {
+      "id": "0xe828195555ad03b371599b16918425d357b6d213ab0bd67308616c73a6d2777e",
+      "proposal": {
+        "id": "0x0925892015b8809cc4ab3a7030c77364657c46f64ee083eba9f4fd5c61058b9b"
+      },
+      "voter": "0x3862600cb2307375B91eF061d265A0aF0d73E44a",
+      "created": 1710548611,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0x7bbc195f02cdb8e95adaef96aad51ee35d2b65e8371ea2b9016aab0824d46f1a",
+      "proposal": {
+        "id": "0x0925892015b8809cc4ab3a7030c77364657c46f64ee083eba9f4fd5c61058b9b"
+      },
+      "voter": "0x1ab45ce3B5DC9aB6F337DAe1B886d7e54f167303",
+      "created": 1710532242,
+      "choice": 1,
+      "vp": 12,
+      "reason": ""
+    },
+    {
+      "id": "0x3c7f679bf8117541a1f68e17e228c72b8f5246749dff54d05501e7fc062573fd",
+      "proposal": {
+        "id": "0x0925892015b8809cc4ab3a7030c77364657c46f64ee083eba9f4fd5c61058b9b"
+      },
+      "voter": "0x2473FB8eEBE46041d5F528A728505C26A81C1158",
+      "created": 1710512584,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0x45e57b4a9debda54bcbce2e8c36deb53c4bc6e68a7eee0522d1f22a142cd671a",
+      "proposal": {
+        "id": "0x0925892015b8809cc4ab3a7030c77364657c46f64ee083eba9f4fd5c61058b9b"
+      },
+      "voter": "0x0DF34E36ef3a793871442EB5a08b08adB74E7006",
+      "created": 1710478988,
+      "choice": 1,
+      "vp": 1,
+      "reason": "Much Love for street warriors !!!"
+    },
+    {
+      "id": "0x405363486db092af467ab4bd51d8c5b8126112fec1fbdd5cb84102e32e1cc6f5",
+      "proposal": {
+        "id": "0x0925892015b8809cc4ab3a7030c77364657c46f64ee083eba9f4fd5c61058b9b"
+      },
+      "voter": "0xb2b7D66bb56ce8FF7838dC8053fF35050Ed95E9D",
+      "created": 1710471262,
+      "choice": 1,
+      "vp": 4,
+      "reason": ""
+    },
+    {
+      "id": "0x68f3a4f1bb31d39721aded883aee1b59a773de7c21d791693ad09f15b1c1c149",
+      "proposal": {
+        "id": "0x0925892015b8809cc4ab3a7030c77364657c46f64ee083eba9f4fd5c61058b9b"
+      },
+      "voter": "0x6DfDCA1107C5aF4B92948625105e1e87bA9b21b4",
+      "created": 1710470730,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0x3b0b212dfb2fd3176d1355a6418424ec55f41deb4c4af980d7bbe84058a682e7",
+      "proposal": {
+        "id": "0x0925892015b8809cc4ab3a7030c77364657c46f64ee083eba9f4fd5c61058b9b"
+      },
+      "voter": "0xFc27B375fAf1FBd3F3462044Cf810082F042a45B",
+      "created": 1710467381,
+      "choice": 1,
+      "vp": 17,
+      "reason": ""
+    },
+    {
+      "id": "0x630822f2e98434c329d9bc9dd0d240f94743f569c4279e2c2ccc394965766415",
+      "proposal": {
+        "id": "0x0925892015b8809cc4ab3a7030c77364657c46f64ee083eba9f4fd5c61058b9b"
+      },
+      "voter": "0x2feb329b9289b60064904Fa61Fc347157a5AEd6a",
+      "created": 1710449529,
+      "choice": 1,
+      "vp": 3,
+      "reason": "skateboard!!!!!!"
+    },
+    {
+      "id": "0xe93e4aa6aa11000b54401741faae78a434d920c430b4f315f935f937ff292f7e",
+      "proposal": {
+        "id": "0x0925892015b8809cc4ab3a7030c77364657c46f64ee083eba9f4fd5c61058b9b"
+      },
+      "voter": "0x05A1ff0a32bc24265BCB39499d0c5D9A6cb2011c",
+      "created": 1710449279,
+      "choice": 1,
+      "vp": 6,
+      "reason": ""
+    },
+    {
+      "id": "0xeb60116b89f35253ed0ff157b9ab51b2d89a3a056b1376b08db258aa62457a33",
+      "proposal": {
+        "id": "0x0925892015b8809cc4ab3a7030c77364657c46f64ee083eba9f4fd5c61058b9b"
+      },
+      "voter": "0x6abaDe6569f03841a0d5233d23f175Eeeb3253c4",
+      "created": 1710448279,
+      "choice": 1,
+      "vp": 11,
+      "reason": ""
+    },
+    {
+      "id": "0xfa8fadf4ea0cc0db9f21296175bdf1eca860bcf7f8f5bf027cdd096be560b3a2",
+      "proposal": {
+        "id": "0x0925892015b8809cc4ab3a7030c77364657c46f64ee083eba9f4fd5c61058b9b"
+      },
+      "voter": "0xD082cC50Db08B028fc12726861d5F260a786777e",
+      "created": 1710448118,
+      "choice": 1,
+      "vp": 2,
+      "reason": ""
+    },
+    {
+      "id": "0x574c9c3e34c2dc502f45cc4cfa6e945b160cab9cd704ca934efe90bd793aef5f",
+      "proposal": {
+        "id": "0x0925892015b8809cc4ab3a7030c77364657c46f64ee083eba9f4fd5c61058b9b"
+      },
+      "voter": "0xfCAE6D6b1517799330DF14BeE26e2DD90C6dd200",
+      "created": 1710448081,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0x7b073bf2a34e475c5d79d785911ebd33771c5e9591d352784af27430f7f8be35",
+      "proposal": {
+        "id": "0x0925892015b8809cc4ab3a7030c77364657c46f64ee083eba9f4fd5c61058b9b"
+      },
+      "voter": "0xdfB6ed808fADddAd9154F5605E349fFF96E3d939",
+      "created": 1710443647,
+      "choice": 1,
+      "vp": 22,
+      "reason": "Ode to Skate! "
+    },
+    {
+      "id": "0x9ef426a3ae06775afd426b2dccbf4b5c64933e5891e2a3badb03be58b26473b5",
+      "proposal": {
+        "id": "0x0925892015b8809cc4ab3a7030c77364657c46f64ee083eba9f4fd5c61058b9b"
+      },
+      "voter": "0xDdB4938755C243a4f60a2f2f8f95dF4F894c58Cc",
+      "created": 1710392420,
+      "choice": 1,
+      "vp": 7,
+      "reason": ""
+    },
+    {
+      "id": "0x8f71403a13b1d192a5ceb0d4baa7717b3e8a224c555046621af9bfdb9c3bcd4a",
+      "proposal": {
+        "id": "0x0925892015b8809cc4ab3a7030c77364657c46f64ee083eba9f4fd5c61058b9b"
+      },
+      "voter": "0xC2691f9994AF90711D67286be558F4fa631667FD",
+      "created": 1710379173,
+      "choice": 1,
+      "vp": 3,
+      "reason": ""
+    },
+    {
+      "id": "0x09f4ba2058ba9a7ee89ebae5754915eab1ebc467d30bd9c39cc3ac4a5ceb497a",
+      "proposal": {
+        "id": "0x0925892015b8809cc4ab3a7030c77364657c46f64ee083eba9f4fd5c61058b9b"
+      },
+      "voter": "0x41CB654D1F47913ACAB158a8199191D160DAbe4A",
+      "created": 1710379042,
+      "choice": 1,
+      "vp": 47,
+      "reason": "True skateboard scene must be supported. Nothing more. "
+    }
+  ]
+}

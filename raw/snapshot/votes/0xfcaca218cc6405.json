@@ -1,0 +1,72 @@
+{
+  "fetched_at": "2026-03-22T03:47:42.736973Z",
+  "proposal_id": "0xfcaca218cc64051674bf2eac535af1d863d06933fef1d88d6b5fb0398cf65cdc",
+  "records": [
+    {
+      "id": "0xb5dbc2b5b9cacbe654d17dd7ed870c64ed0717804376095af14b43ce3eaa6bca",
+      "proposal": {
+        "id": "0xfcaca218cc64051674bf2eac535af1d863d06933fef1d88d6b5fb0398cf65cdc"
+      },
+      "voter": "0xDB1CB916373416FC900a8533ce02AFf3faa62cdf",
+      "created": 1707594587,
+      "choice": 1,
+      "vp": 19,
+      "reason": ""
+    },
+    {
+      "id": "0x7362eeb0bd424e17ab0b01f2f784597bf808736c7ddd0feffb26aba29d40b625",
+      "proposal": {
+        "id": "0xfcaca218cc64051674bf2eac535af1d863d06933fef1d88d6b5fb0398cf65cdc"
+      },
+      "voter": "0x33bbf6e27ce7b254e537BCB9f3B00cD1451563eA",
+      "created": 1707578754,
+      "choice": 1,
+      "vp": 12,
+      "reason": ""
+    },
+    {
+      "id": "0x76c2b3dc8146e4c4bb21ec4976027cc648873663404da81e72dfa458841884c2",
+      "proposal": {
+        "id": "0xfcaca218cc64051674bf2eac535af1d863d06933fef1d88d6b5fb0398cf65cdc"
+      },
+      "voter": "0xEDc1a397589A0236C4810883b7d559288a5Fe7e1",
+      "created": 1707552891,
+      "choice": 1,
+      "vp": 6,
+      "reason": ""
+    },
+    {
+      "id": "0x7210abe4fa32edfc17d2793a4ff441f3d5e4c21bff8591a51af246a13e218443",
+      "proposal": {
+        "id": "0xfcaca218cc64051674bf2eac535af1d863d06933fef1d88d6b5fb0398cf65cdc"
+      },
+      "voter": "0x7e86b7bCa2a72ab392AD816CC0Bf04A5aEea4860",
+      "created": 1707438954,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0xfe902fddbba4846cbc0c0c184e140973509f85038f22cebaf4bc7d63bc8e49f7",
+      "proposal": {
+        "id": "0xfcaca218cc64051674bf2eac535af1d863d06933fef1d88d6b5fb0398cf65cdc"
+      },
+      "voter": "0x41CB654D1F47913ACAB158a8199191D160DAbe4A",
+      "created": 1707408950,
+      "choice": 1,
+      "vp": 72,
+      "reason": ""
+    },
+    {
+      "id": "0x191b7fea6d0a0e4d8ef87d0c014bf41716e6dc0af2cc993a53cd965df72221e7",
+      "proposal": {
+        "id": "0xfcaca218cc64051674bf2eac535af1d863d06933fef1d88d6b5fb0398cf65cdc"
+      },
+      "voter": "0xdfB6ed808fADddAd9154F5605E349fFF96E3d939",
+      "created": 1707408678,
+      "choice": 1,
+      "vp": 22,
+      "reason": "offchain metrics matter!"
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "fetched_at": "2026-03-22T03:47:56.187251Z",
+  "proposal_id": "0x8f8d97fccfb5dad5cec24504fecc7543833ee26f3d14ffd80db3f0f381536b20",
+  "records": [
+    {
+      "id": "0x6757ecf43d5645a5184592b1a4eb5f06f47f0a57997c3e84cff2b96d0eed5de6",
+      "proposal": {
+        "id": "0x8f8d97fccfb5dad5cec24504fecc7543833ee26f3d14ffd80db3f0f381536b20"
+      },
+      "voter": "0xFA2930a9d96e91B0A7e78d9fEBB7A8c744afD0da",
+      "created": 1681437106,
+      "choice": 1,
+      "vp": 5,
+      "reason": ""
+    },
+    {
+      "id": "0x83f8086a84b3ec33423fb88829614b7493f5bc0c07a8bcbc2513bde28f5cd67e",
+      "proposal": {
+        "id": "0x8f8d97fccfb5dad5cec24504fecc7543833ee26f3d14ffd80db3f0f381536b20"
+      },
+      "voter": "0x05e189E1BbaF77f1654F0983872fd938AE592eDD",
+      "created": 1681406454,
+      "choice": 2,
+      "vp": 181,
+      "reason": ""
+    },
+    {
+      "id": "0xeba8f1ddf8edfcf564eefd35d3500264d9a63c73a54b923df67586cc7c0732ed",
+      "proposal": {
+        "id": "0x8f8d97fccfb5dad5cec24504fecc7543833ee26f3d14ffd80db3f0f381536b20"
+      },
+      "voter": "0xdfB6ed808fADddAd9154F5605E349fFF96E3d939",
+      "created": 1681356432,
+      "choice": 1,
+      "vp": 18,
+      "reason": ""
+    },
+    {
+      "id": "0xb723c05392ff868b922fa34a6763587051312a85682d06fd47bd0e7f22cb41f1",
+      "proposal": {
+        "id": "0x8f8d97fccfb5dad5cec24504fecc7543833ee26f3d14ffd80db3f0f381536b20"
+      },
+      "voter": "0x4b5F934da25c33F130efC5DF47C91Af1375baA30",
+      "created": 1681341426,
+      "choice": 2,
+      "vp": 10,
+      "reason": ""
+    },
+    {
+      "id": "0xf04d1c907ee3fa4def02f874d173770d79161a65cb135540293003b05c0bf6be",
+      "proposal": {
+        "id": "0x8f8d97fccfb5dad5cec24504fecc7543833ee26f3d14ffd80db3f0f381536b20"
+      },
+      "voter": "0xC23274347e8Aa82d363140d3cefb71Ff588EfFed",
+      "created": 1681276969,
+      "choice": 1,
+      "vp": 12,
+      "reason": ""
+    },
+    {
+      "id": "0x14b614f80c3f15d9d917f2060328ce68a06dff2b3b4915b86c39b89089dd18bd",
+      "proposal": {
+        "id": "0x8f8d97fccfb5dad5cec24504fecc7543833ee26f3d14ffd80db3f0f381536b20"
+      },
+      "voter": "0xEDc1a397589A0236C4810883b7d559288a5Fe7e1",
+      "created": 1681253988,
+      "choice": 2,
+      "vp": 2,
+      "reason": "Just think the marketing is a lit of bit neutral and could improved to be sponsored "
+    },
+    {
+      "id": "0x62192116dbd9f4b1f645e872c338a2ac764a781da0733b0ace9d9ba90f2eb79d",
+      "proposal": {
+        "id": "0x8f8d97fccfb5dad5cec24504fecc7543833ee26f3d14ffd80db3f0f381536b20"
+      },
+      "voter": "0xFc27B375fAf1FBd3F3462044Cf810082F042a45B",
+      "created": 1681249744,
+      "choice": 2,
+      "vp": 2,
+      "reason": ""
+    },
+    {
+      "id": "0x9ffd073a06ae8d7224fd2c5d04213c3aedbe5a91e001881cd9385b335c056e00",
+      "proposal": {
+        "id": "0x8f8d97fccfb5dad5cec24504fecc7543833ee26f3d14ffd80db3f0f381536b20"
+      },
+      "voter": "0x4A39aE081678f3D4ABbFbd50b3034580B8bAF48A",
+      "created": 1681246527,
+      "choice": 2,
+      "vp": 58,
+      "reason": "This proposal would be a better fit for Nouns DAO or Nouns OTG imo"
+    },
+    {
+      "id": "0x02e1bdfc2582a604199145419320338953b6128fa9c64063563d66b6077b3248",
+      "proposal": {
+        "id": "0x8f8d97fccfb5dad5cec24504fecc7543833ee26f3d14ffd80db3f0f381536b20"
+      },
+      "voter": "0x223460f2D3CB8c199CFCac7e5E32897F46EA3732",
+      "created": 1681244153,
+      "choice": 2,
+      "vp": 12,
+      "reason": ""
+    },
+    {
+      "id": "0xbf85db5f8e07b52fd6f59d0fea75405d602480a20503097888961022a4569376",
+      "proposal": {
+        "id": "0x8f8d97fccfb5dad5cec24504fecc7543833ee26f3d14ffd80db3f0f381536b20"
+      },
+      "voter": "0x09E938E239803C78507AbD5687A97acFeA1188ea",
+      "created": 1681240621,
+      "choice": 1,
+      "vp": 9,
+      "reason": ""
+    },
+    {
+      "id": "0x8c95d23af77865807619b21f567c943be01119ffb6540e1a2b1049e74604fb63",
+      "proposal": {
+        "id": "0x8f8d97fccfb5dad5cec24504fecc7543833ee26f3d14ffd80db3f0f381536b20"
+      },
+      "voter": "0xCF93D3155d2A5f7C8d675189E8C34b04C4606F62",
+      "created": 1681224500,
+      "choice": 1,
+      "vp": 13,
+      "reason": "I see this as a good step for GnarsDAO Entering the Motorsport World. \n\n"
+    }
+  ]
+}

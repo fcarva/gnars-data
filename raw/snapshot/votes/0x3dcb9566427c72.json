@@ -1,0 +1,160 @@
+{
+  "fetched_at": "2026-03-22T03:47:44.129059Z",
+  "proposal_id": "0x3dcb9566427c72d318242451eac0e8e37ec338f63c4813ffcbf9cffc7603f188",
+  "records": [
+    {
+      "id": "0xf1e680c216f2d1263322f4c9a36e4a20649623069e15eb15c9008c8e14d61398",
+      "proposal": {
+        "id": "0x3dcb9566427c72d318242451eac0e8e37ec338f63c4813ffcbf9cffc7603f188"
+      },
+      "voter": "0xFA2930a9d96e91B0A7e78d9fEBB7A8c744afD0da",
+      "created": 1706738563,
+      "choice": 2,
+      "vp": 4,
+      "reason": "have these \"standardized practices\" passed a vote as the one and only way to onboard? how has onboarding with this been going?"
+    },
+    {
+      "id": "0x748254ecb486bdf4ea95fe75c61af9994f2f85a6c3b7d0c80488bf37d4d4dcf9",
+      "proposal": {
+        "id": "0x3dcb9566427c72d318242451eac0e8e37ec338f63c4813ffcbf9cffc7603f188"
+      },
+      "voter": "0xd4EAa5e657C8B3349cb6BeCf8Ac097839e9e7aF5",
+      "created": 1706727296,
+      "choice": 1,
+      "vp": 10,
+      "reason": ""
+    },
+    {
+      "id": "0x0fcad6422f7d8ea2aecd2f0ceb842717826482f54fb4e1cd3cfe6d3e57dfd8b8",
+      "proposal": {
+        "id": "0x3dcb9566427c72d318242451eac0e8e37ec338f63c4813ffcbf9cffc7603f188"
+      },
+      "voter": "0xfCAE6D6b1517799330DF14BeE26e2DD90C6dd200",
+      "created": 1706722392,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0xde4a2e423a1301f357f65922d84ea742751fdc556f3cae40c1987bb5b263db0e",
+      "proposal": {
+        "id": "0x3dcb9566427c72d318242451eac0e8e37ec338f63c4813ffcbf9cffc7603f188"
+      },
+      "voter": "0xC2E3DF2748E4ef6E1a8322772fd7d962410C721A",
+      "created": 1706703774,
+      "choice": 1,
+      "vp": 5,
+      "reason": "Life isn't fair but we can try our best!"
+    },
+    {
+      "id": "0x7f7ea71c071815955a803b04b3ab588bae93b42e52ea40d813f6ba3a60281235",
+      "proposal": {
+        "id": "0x3dcb9566427c72d318242451eac0e8e37ec338f63c4813ffcbf9cffc7603f188"
+      },
+      "voter": "0xEDc1a397589A0236C4810883b7d559288a5Fe7e1",
+      "created": 1706643773,
+      "choice": 1,
+      "vp": 6,
+      "reason": "Onboarding shredders is our gwei"
+    },
+    {
+      "id": "0x9e91bce384d3204535a89e67f50b60aa53e438f5abfd2d60e66ba245db72ff7c",
+      "proposal": {
+        "id": "0x3dcb9566427c72d318242451eac0e8e37ec338f63c4813ffcbf9cffc7603f188"
+      },
+      "voter": "0xbA6E1C26bE2F8b46D9e7ab7573b99921Ee81AcF5",
+      "created": 1706643614,
+      "choice": 2,
+      "vp": 16,
+      "reason": "I agree we should only be onboarding with 1 Gnar per shredder, BUT I think since the previous prop already passed, we stick to it."
+    },
+    {
+      "id": "0xa5c3a706834c11abf8a6a65613d95608da56362240c02cf4352b662232001495",
+      "proposal": {
+        "id": "0x3dcb9566427c72d318242451eac0e8e37ec338f63c4813ffcbf9cffc7603f188"
+      },
+      "voter": "0x9C87A1065994f156f0B7b87AAa8B3c5F7BD67E02",
+      "created": 1706642848,
+      "choice": 1,
+      "vp": 36,
+      "reason": "Thanks for the resubmit. Has always been 1 Gnar per shredder during onboarding and we should maintain that standard."
+    },
+    {
+      "id": "0x07f215004b2269382aa2e0937c4c86db6df63860a6d6788938fc57a415f57521",
+      "proposal": {
+        "id": "0x3dcb9566427c72d318242451eac0e8e37ec338f63c4813ffcbf9cffc7603f188"
+      },
+      "voter": "0x761b4763a572010f96Ed7c22011D0C95E2b36693",
+      "created": 1706639240,
+      "choice": 1,
+      "vp": 10,
+      "reason": ""
+    },
+    {
+      "id": "0x31ec3bde00ec98f11d9e667a2f9367d0e1595fb11952aca58af12232e7e9abbd",
+      "proposal": {
+        "id": "0x3dcb9566427c72d318242451eac0e8e37ec338f63c4813ffcbf9cffc7603f188"
+      },
+      "voter": "0x0f7341C76bA4460736ABec4f65a1953E824658cc",
+      "created": 1706633808,
+      "choice": 1,
+      "vp": 76,
+      "reason": ""
+    },
+    {
+      "id": "0xd36479566827c860744eff64600eb57e1744d085425a065a5525cf6dd6405430",
+      "proposal": {
+        "id": "0x3dcb9566427c72d318242451eac0e8e37ec338f63c4813ffcbf9cffc7603f188"
+      },
+      "voter": "0xb2b7D66bb56ce8FF7838dC8053fF35050Ed95E9D",
+      "created": 1706629422,
+      "choice": 1,
+      "vp": 4,
+      "reason": ""
+    },
+    {
+      "id": "0xef1324366b33b6d6906fe48391a255b8d3371140cba0f65d193f5a0f1442342b",
+      "proposal": {
+        "id": "0x3dcb9566427c72d318242451eac0e8e37ec338f63c4813ffcbf9cffc7603f188"
+      },
+      "voter": "0x6abaDe6569f03841a0d5233d23f175Eeeb3253c4",
+      "created": 1706627769,
+      "choice": 1,
+      "vp": 11,
+      "reason": ""
+    },
+    {
+      "id": "0xf18924153c80c84aff19419e2f78442962b95498683b3633cfda4e02b4fb9d33",
+      "proposal": {
+        "id": "0x3dcb9566427c72d318242451eac0e8e37ec338f63c4813ffcbf9cffc7603f188"
+      },
+      "voter": "0xdfB6ed808fADddAd9154F5605E349fFF96E3d939",
+      "created": 1706627198,
+      "choice": 2,
+      "vp": 22,
+      "reason": "we had no rule against number of gnars that can be given away, with over 335+ gnars in the treasury! this prop already passed.."
+    },
+    {
+      "id": "0xbfb5d306ed5e173703fbd03cca64e810888cae2f2d2c419ccb6217acdaea715e",
+      "proposal": {
+        "id": "0x3dcb9566427c72d318242451eac0e8e37ec338f63c4813ffcbf9cffc7603f188"
+      },
+      "voter": "0xDdB4938755C243a4f60a2f2f8f95dF4F894c58Cc",
+      "created": 1706626534,
+      "choice": 1,
+      "vp": 7,
+      "reason": ""
+    },
+    {
+      "id": "0x526c7eeb4998852b11aac291bd102ce380d93a4a1e8e379cc8541e408da5c135",
+      "proposal": {
+        "id": "0x3dcb9566427c72d318242451eac0e8e37ec338f63c4813ffcbf9cffc7603f188"
+      },
+      "voter": "0x41CB654D1F47913ACAB158a8199191D160DAbe4A",
+      "created": 1706623791,
+      "choice": 1,
+      "vp": 73,
+      "reason": ""
+    }
+  ]
+}

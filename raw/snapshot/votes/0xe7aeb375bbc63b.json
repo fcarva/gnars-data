@@ -1,0 +1,248 @@
+{
+  "fetched_at": "2026-03-22T03:48:14.628481Z",
+  "proposal_id": "0xe7aeb375bbc63b6a064a89924c20473ff998797cad22b68c17e14afd2923a77b",
+  "records": [
+    {
+      "id": "0xd9ffed32214fdbdb0dd54956bdf4b2cc1757e1b12a646a4edf276e80438c031b",
+      "proposal": {
+        "id": "0xe7aeb375bbc63b6a064a89924c20473ff998797cad22b68c17e14afd2923a77b"
+      },
+      "voter": "0xcbfb27341D60206a9C5aE92da97202077BCf450F",
+      "created": 1673957786,
+      "choice": 2,
+      "vp": 8,
+      "reason": ""
+    },
+    {
+      "id": "0xb8e7007a2e21f0ca3aa3df83345a00aaffdb3ec398c10ca0c55b377c6bb304d3",
+      "proposal": {
+        "id": "0xe7aeb375bbc63b6a064a89924c20473ff998797cad22b68c17e14afd2923a77b"
+      },
+      "voter": "0x376E451F04863508A7dCE0B993354520e9acEe71",
+      "created": 1673932395,
+      "choice": 1,
+      "vp": 5,
+      "reason": ""
+    },
+    {
+      "id": "0xeed0de4b847e9134fd07744713f640c71a5aeed4941f0b1467d3645b0378d794",
+      "proposal": {
+        "id": "0xe7aeb375bbc63b6a064a89924c20473ff998797cad22b68c17e14afd2923a77b"
+      },
+      "voter": "0xdfB6ed808fADddAd9154F5605E349fFF96E3d939",
+      "created": 1673909848,
+      "choice": 2,
+      "vp": 18,
+      "reason": ""
+    },
+    {
+      "id": "0x2b74e9ce4ff2f51c1f43b0275b242228fb8ab67e184f7651e3216e466de0b218",
+      "proposal": {
+        "id": "0xe7aeb375bbc63b6a064a89924c20473ff998797cad22b68c17e14afd2923a77b"
+      },
+      "voter": "0x294CD7Db1DA684d6aB241a885fd94dB07129a2CC",
+      "created": 1673875645,
+      "choice": 2,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0x7c15cc08c37189a6483e4f1fa89360d9596385a028f1fe1d949210a08c624bb0",
+      "proposal": {
+        "id": "0xe7aeb375bbc63b6a064a89924c20473ff998797cad22b68c17e14afd2923a77b"
+      },
+      "voter": "0xA45afcc43ecDD6A2E17fC249e18b7FB22C5C5D29",
+      "created": 1673848354,
+      "choice": 2,
+      "vp": 40,
+      "reason": ""
+    },
+    {
+      "id": "0x67532ce9e1233cd32e4c32bc4c391cfda9ab2e3d737e446a14d8459e3e8ab139",
+      "proposal": {
+        "id": "0xe7aeb375bbc63b6a064a89924c20473ff998797cad22b68c17e14afd2923a77b"
+      },
+      "voter": "0x8D36BaC540C57dBd009eA9d9D8CDF9443A83E3f6",
+      "created": 1673848079,
+      "choice": 2,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0x5a2bba18cd41d61c88ba7192050fb9baf4e2875f608f9eac09551f4277e50680",
+      "proposal": {
+        "id": "0xe7aeb375bbc63b6a064a89924c20473ff998797cad22b68c17e14afd2923a77b"
+      },
+      "voter": "0x7B55D264e7c58D14379cf49D93D028b65eFbc490",
+      "created": 1673847517,
+      "choice": 2,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0x6ff16a29cb1192df891ba5e2ed3a09622961308d791a7f49c068d4f45912c9f6",
+      "proposal": {
+        "id": "0xe7aeb375bbc63b6a064a89924c20473ff998797cad22b68c17e14afd2923a77b"
+      },
+      "voter": "0x387a161C6b25aA854100aBaED39274e51aaffffd",
+      "created": 1673845342,
+      "choice": 3,
+      "vp": 131,
+      "reason": ""
+    },
+    {
+      "id": "0x1c823dc75fc232fcbe75dd89bf8d8a822cd0f6fa3bc40abb52e006f725f82b8c",
+      "proposal": {
+        "id": "0xe7aeb375bbc63b6a064a89924c20473ff998797cad22b68c17e14afd2923a77b"
+      },
+      "voter": "0x0f7341C76bA4460736ABec4f65a1953E824658cc",
+      "created": 1673843273,
+      "choice": 2,
+      "vp": 59,
+      "reason": ""
+    },
+    {
+      "id": "0x23cb1c73d5895ca09b92d07a4feaf4b9a139558e2bfb1c4c7b39ecbbf66b06a5",
+      "proposal": {
+        "id": "0xe7aeb375bbc63b6a064a89924c20473ff998797cad22b68c17e14afd2923a77b"
+      },
+      "voter": "0xb2b7D66bb56ce8FF7838dC8053fF35050Ed95E9D",
+      "created": 1673821676,
+      "choice": 3,
+      "vp": 2,
+      "reason": ""
+    },
+    {
+      "id": "0x7da39124ee84e3ca57f927b7603881f060a31f2c9e904ade0ba63ef69ecd83a4",
+      "proposal": {
+        "id": "0xe7aeb375bbc63b6a064a89924c20473ff998797cad22b68c17e14afd2923a77b"
+      },
+      "voter": "0x5451348C4EbD5F9816c19725972FF40eC23F14BC",
+      "created": 1673812599,
+      "choice": 2,
+      "vp": 6,
+      "reason": ""
+    },
+    {
+      "id": "0x194dbc6a6cba72a2772c8f586c94934fe4fe912dbe6befb614c58339108fedb6",
+      "proposal": {
+        "id": "0xe7aeb375bbc63b6a064a89924c20473ff998797cad22b68c17e14afd2923a77b"
+      },
+      "voter": "0x223460f2D3CB8c199CFCac7e5E32897F46EA3732",
+      "created": 1673812512,
+      "choice": 2,
+      "vp": 15,
+      "reason": ""
+    },
+    {
+      "id": "0xe9e9432bec489e68347895821c3fcad820034428026bf4e57362bdd1543950d1",
+      "proposal": {
+        "id": "0xe7aeb375bbc63b6a064a89924c20473ff998797cad22b68c17e14afd2923a77b"
+      },
+      "voter": "0xd5fb864ACfD6BB2f72939f122e89fF7F475924f5",
+      "created": 1673788282,
+      "choice": 2,
+      "vp": 6,
+      "reason": ""
+    },
+    {
+      "id": "0x78237ad23b19c49acfe7f28d5cabf51a6e036c841d49948b16246553d2ae6b31",
+      "proposal": {
+        "id": "0xe7aeb375bbc63b6a064a89924c20473ff998797cad22b68c17e14afd2923a77b"
+      },
+      "voter": "0xaFdb99DEF38a49D24A5189D341fC96F4729f27D6",
+      "created": 1673777845,
+      "choice": 3,
+      "vp": 3,
+      "reason": ""
+    },
+    {
+      "id": "0x9245fd57f1aade89db3e6c24801717487bc57a2684135c7100c1cebdcc884b8e",
+      "proposal": {
+        "id": "0xe7aeb375bbc63b6a064a89924c20473ff998797cad22b68c17e14afd2923a77b"
+      },
+      "voter": "0x1008D62e1EaC47df9330d610c785Bbf3C321A6C3",
+      "created": 1673751653,
+      "choice": 3,
+      "vp": 2,
+      "reason": ""
+    },
+    {
+      "id": "0x2738b9c88e495b77429631b7336137b1f95eaca3a582608622af265d280395f6",
+      "proposal": {
+        "id": "0xe7aeb375bbc63b6a064a89924c20473ff998797cad22b68c17e14afd2923a77b"
+      },
+      "voter": "0x05e189E1BbaF77f1654F0983872fd938AE592eDD",
+      "created": 1673739703,
+      "choice": 2,
+      "vp": 101,
+      "reason": "Appreciate the thought, but it's too much and I'm not sure we need any Nouns at all to be completely honest."
+    },
+    {
+      "id": "0x55c9a41bccaba8c5782f634b8730d7d9e8e4a21631a46ac198d89e440413673b",
+      "proposal": {
+        "id": "0xe7aeb375bbc63b6a064a89924c20473ff998797cad22b68c17e14afd2923a77b"
+      },
+      "voter": "0xfE473552F6bdb509C9B3F927205EEF07bFfD19Eb",
+      "created": 1673731914,
+      "choice": 3,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0x59bdd4a6b7d404e825ffa2fb909d8d52bfd71d5776039d075693916870cdafbc",
+      "proposal": {
+        "id": "0xe7aeb375bbc63b6a064a89924c20473ff998797cad22b68c17e14afd2923a77b"
+      },
+      "voter": "0x2309157fb2A7a601E58269752eF7739fFd74196C",
+      "created": 1673727304,
+      "choice": 2,
+      "vp": 12,
+      "reason": ""
+    },
+    {
+      "id": "0x7a9ad16e17a545c5ceb967f4726949452e2699094675ffbb93e0aa61f80b86b7",
+      "proposal": {
+        "id": "0xe7aeb375bbc63b6a064a89924c20473ff998797cad22b68c17e14afd2923a77b"
+      },
+      "voter": "0x761b4763a572010f96Ed7c22011D0C95E2b36693",
+      "created": 1673719215,
+      "choice": 2,
+      "vp": 10,
+      "reason": "I love the idea of Gnars holding Nouns but I don't think our treasury can handle that right now. "
+    },
+    {
+      "id": "0x4d9ddfe39db77de6834d237ae19ad6fcd68d78002c499fa4a77710838feb6104",
+      "proposal": {
+        "id": "0xe7aeb375bbc63b6a064a89924c20473ff998797cad22b68c17e14afd2923a77b"
+      },
+      "voter": "0x41CB654D1F47913ACAB158a8199191D160DAbe4A",
+      "created": 1673717905,
+      "choice": 2,
+      "vp": 9,
+      "reason": ""
+    },
+    {
+      "id": "0x1b117b2df4dd942a9c14d8a2947292d35b665b9bb4749ba92a1a9cdea2af939b",
+      "proposal": {
+        "id": "0xe7aeb375bbc63b6a064a89924c20473ff998797cad22b68c17e14afd2923a77b"
+      },
+      "voter": "0x865c529F7053ADc50aC9d3efc54D71DB7b28907C",
+      "created": 1673715055,
+      "choice": 2,
+      "vp": 12,
+      "reason": ""
+    },
+    {
+      "id": "0x8328266572e48e0c7f01458cbff4d1690d393b214d52632f5934e64c65fbc96d",
+      "proposal": {
+        "id": "0xe7aeb375bbc63b6a064a89924c20473ff998797cad22b68c17e14afd2923a77b"
+      },
+      "voter": "0x9C87A1065994f156f0B7b87AAa8B3c5F7BD67E02",
+      "created": 1673712063,
+      "choice": 2,
+      "vp": 30,
+      "reason": "Treasury is not big enough to be able to do this every 1000 auctions. Does not seem like a good idea. 1st one would be 50% of treasury."
+    }
+  ]
+}

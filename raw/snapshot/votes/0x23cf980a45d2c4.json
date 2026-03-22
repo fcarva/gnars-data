@@ -1,0 +1,292 @@
+{
+  "fetched_at": "2026-03-22T03:48:11.759378Z",
+  "proposal_id": "0x23cf980a45d2c4535ee96e3803538cbe6132e2ee31873ab60143ae9e4eacc041",
+  "records": [
+    {
+      "id": "0x6c6e0508fa1806cad95696eeed44d1d5d4363e5eb8e017317229c10c546d5257",
+      "proposal": {
+        "id": "0x23cf980a45d2c4535ee96e3803538cbe6132e2ee31873ab60143ae9e4eacc041"
+      },
+      "voter": "0xdcf37d8Aa17142f053AAA7dc56025aB00D897a19",
+      "created": 1675806381,
+      "choice": 1,
+      "vp": 12,
+      "reason": ""
+    },
+    {
+      "id": "0xac0f0de1f0cdec98b287635574925e8e4127710d81cde2b6609f3cf82be777f6",
+      "proposal": {
+        "id": "0x23cf980a45d2c4535ee96e3803538cbe6132e2ee31873ab60143ae9e4eacc041"
+      },
+      "voter": "0x761b4763a572010f96Ed7c22011D0C95E2b36693",
+      "created": 1675798014,
+      "choice": 1,
+      "vp": 12,
+      "reason": ""
+    },
+    {
+      "id": "0xf9518cba97cd3312be4edbd0a943f02dfa4fde418a91ba309d4dbb410a1fca19",
+      "proposal": {
+        "id": "0x23cf980a45d2c4535ee96e3803538cbe6132e2ee31873ab60143ae9e4eacc041"
+      },
+      "voter": "0xbf0D78EbE5E2c5A8eD9DBe42D539f5E8EA115D61",
+      "created": 1675786548,
+      "choice": 1,
+      "vp": 8,
+      "reason": ""
+    },
+    {
+      "id": "0x8a37cc875ed3343308c7cce0f0dea7236787a70a0051da80596189f2e5448042",
+      "proposal": {
+        "id": "0x23cf980a45d2c4535ee96e3803538cbe6132e2ee31873ab60143ae9e4eacc041"
+      },
+      "voter": "0x2eE0485f71764bcD2062A84d9455688c581B90f8",
+      "created": 1675786354,
+      "choice": 1,
+      "vp": 9,
+      "reason": "Im pro royalties. goal is growth . royalties are the cost of buisiness."
+    },
+    {
+      "id": "0xdbb229d66a788a5e56766c164a3fd7d74ded2b1c9f94befe18f22955f8627d48",
+      "proposal": {
+        "id": "0x23cf980a45d2c4535ee96e3803538cbe6132e2ee31873ab60143ae9e4eacc041"
+      },
+      "voter": "0x5bFeb4Ca066c9458842AC89b6e5cd983bd1a1034",
+      "created": 1675778590,
+      "choice": 1,
+      "vp": 4,
+      "reason": ""
+    },
+    {
+      "id": "0x482b59413d88ec31a2fa40dec1f2dfffba86abf0a373db824d066d9e01a0a566",
+      "proposal": {
+        "id": "0x23cf980a45d2c4535ee96e3803538cbe6132e2ee31873ab60143ae9e4eacc041"
+      },
+      "voter": "0x387a161C6b25aA854100aBaED39274e51aaffffd",
+      "created": 1675751725,
+      "choice": 1,
+      "vp": 129,
+      "reason": "only ever left royalties off because i thought this should be a community decision <3"
+    },
+    {
+      "id": "0x211c896e53efdf2347b4d5e55dfc44d86c4282d703c02e8fe3b4fa5d7c56f7ec",
+      "proposal": {
+        "id": "0x23cf980a45d2c4535ee96e3803538cbe6132e2ee31873ab60143ae9e4eacc041"
+      },
+      "voter": "0x094CaeAb8E12ee7596F10c096c597eAAB05E3B30",
+      "created": 1675729401,
+      "choice": 1,
+      "vp": 2,
+      "reason": ""
+    },
+    {
+      "id": "0x9406868087c55c2fcad839f20adbe0565a42ef392d75fd2c5d879baa51248d94",
+      "proposal": {
+        "id": "0x23cf980a45d2c4535ee96e3803538cbe6132e2ee31873ab60143ae9e4eacc041"
+      },
+      "voter": "0x05e189E1BbaF77f1654F0983872fd938AE592eDD",
+      "created": 1675718557,
+      "choice": 1,
+      "vp": 109,
+      "reason": ""
+    },
+    {
+      "id": "0x39af798440b018a745a982f905ed391115d442917c7565e2f7142a80fa06ddc2",
+      "proposal": {
+        "id": "0x23cf980a45d2c4535ee96e3803538cbe6132e2ee31873ab60143ae9e4eacc041"
+      },
+      "voter": "0xdfB6ed808fADddAd9154F5605E349fFF96E3d939",
+      "created": 1675709032,
+      "choice": 1,
+      "vp": 20,
+      "reason": "GnarlyAF"
+    },
+    {
+      "id": "0xcec34d35c68a5d230c628f8e85e645311fb210627541c76be49d4340b0376846",
+      "proposal": {
+        "id": "0x23cf980a45d2c4535ee96e3803538cbe6132e2ee31873ab60143ae9e4eacc041"
+      },
+      "voter": "0x175Cae6611Ba61625d4757bD8E626f76bFD9cF30",
+      "created": 1675704727,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0xcf3e13d41f5c0d9aa7b235653a1013dda5530dfb9bdfbbe4cfb001ac127a8cc3",
+      "proposal": {
+        "id": "0x23cf980a45d2c4535ee96e3803538cbe6132e2ee31873ab60143ae9e4eacc041"
+      },
+      "voter": "0x535FDa4404cc3C07643F90edF6512D272897088b",
+      "created": 1675704693,
+      "choice": 1,
+      "vp": 3,
+      "reason": ""
+    },
+    {
+      "id": "0xfc2ab7192051f1c135f748d04a42010455c71e55537f392718c79d1725949f6f",
+      "proposal": {
+        "id": "0x23cf980a45d2c4535ee96e3803538cbe6132e2ee31873ab60143ae9e4eacc041"
+      },
+      "voter": "0xcbfb27341D60206a9C5aE92da97202077BCf450F",
+      "created": 1675703953,
+      "choice": 1,
+      "vp": 8,
+      "reason": ""
+    },
+    {
+      "id": "0x57c5f3e52c8557bb1df15630f2650a3dfaa7a65e1151813dac685a37b2014836",
+      "proposal": {
+        "id": "0x23cf980a45d2c4535ee96e3803538cbe6132e2ee31873ab60143ae9e4eacc041"
+      },
+      "voter": "0xC0EbaF72850A36a2FA04ED35e736F2F64f79e9dF",
+      "created": 1675696289,
+      "choice": 1,
+      "vp": 2,
+      "reason": ""
+    },
+    {
+      "id": "0xb5c21e23c2725c67abb9a6ba7596045ba605eed4d27efac2da7445d1bd798324",
+      "proposal": {
+        "id": "0x23cf980a45d2c4535ee96e3803538cbe6132e2ee31873ab60143ae9e4eacc041"
+      },
+      "voter": "0x2F600423Ec00778423E7628993E0dE72Cd37959a",
+      "created": 1675674796,
+      "choice": 2,
+      "vp": 21,
+      "reason": "Gnars=CC0!\nCreator earnings≠0?"
+    },
+    {
+      "id": "0x5f0ed6c2d94bc5f3bcdcff05bdecbed50bd6ec7c27aff178aaaf20f67016c99d",
+      "proposal": {
+        "id": "0x23cf980a45d2c4535ee96e3803538cbe6132e2ee31873ab60143ae9e4eacc041"
+      },
+      "voter": "0xC23274347e8Aa82d363140d3cefb71Ff588EfFed",
+      "created": 1675662963,
+      "choice": 1,
+      "vp": 6,
+      "reason": "I agree. I do not know why they do not set a secondary distribution royalty. It should be set."
+    },
+    {
+      "id": "0x6dd6967304512fd06fca758931fd7be355ddb1dfdcccad768d37e0e75bcf6d47",
+      "proposal": {
+        "id": "0x23cf980a45d2c4535ee96e3803538cbe6132e2ee31873ab60143ae9e4eacc041"
+      },
+      "voter": "0x64c4Bffb220818F0f2ee6DAe7A2F17D92b359c5d",
+      "created": 1675655922,
+      "choice": 1,
+      "vp": 17,
+      "reason": ""
+    },
+    {
+      "id": "0x70b14ac7b4d26624ea3df833d2b93b0e1f15ac34d1ac52f88e29bbcb7c786f34",
+      "proposal": {
+        "id": "0x23cf980a45d2c4535ee96e3803538cbe6132e2ee31873ab60143ae9e4eacc041"
+      },
+      "voter": "0x4A39aE081678f3D4ABbFbd50b3034580B8bAF48A",
+      "created": 1675653310,
+      "choice": 1,
+      "vp": 58,
+      "reason": ""
+    },
+    {
+      "id": "0x3e56b1469d2be69cce22167e9c264fa0d1185ace768a322444e58023952417dc",
+      "proposal": {
+        "id": "0x23cf980a45d2c4535ee96e3803538cbe6132e2ee31873ab60143ae9e4eacc041"
+      },
+      "voter": "0x2309157fb2A7a601E58269752eF7739fFd74196C",
+      "created": 1675636934,
+      "choice": 1,
+      "vp": 12,
+      "reason": ""
+    },
+    {
+      "id": "0xa78fb8a2e63cf6ed911dfcd2b9e242ce67bfd841909816fc2b5512de0258a1a5",
+      "proposal": {
+        "id": "0x23cf980a45d2c4535ee96e3803538cbe6132e2ee31873ab60143ae9e4eacc041"
+      },
+      "voter": "0xEDc1a397589A0236C4810883b7d559288a5Fe7e1",
+      "created": 1675634168,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0xcf46ddf85a634e331c3126512699000682147a8747275be4fe1938ca9e679604",
+      "proposal": {
+        "id": "0x23cf980a45d2c4535ee96e3803538cbe6132e2ee31873ab60143ae9e4eacc041"
+      },
+      "voter": "0x9C87A1065994f156f0B7b87AAa8B3c5F7BD67E02",
+      "created": 1675624521,
+      "choice": 1,
+      "vp": 31,
+      "reason": ""
+    },
+    {
+      "id": "0x5e4f197b639fb833c91cd76f6d352d4839f58318213de163db967c46fd45c306",
+      "proposal": {
+        "id": "0x23cf980a45d2c4535ee96e3803538cbe6132e2ee31873ab60143ae9e4eacc041"
+      },
+      "voter": "0x41CB654D1F47913ACAB158a8199191D160DAbe4A",
+      "created": 1675608818,
+      "choice": 1,
+      "vp": 10,
+      "reason": ""
+    },
+    {
+      "id": "0xfb3f6f91c67576c3f28d964535d4e72603f326a1ff611a70a10ad6baa710c63f",
+      "proposal": {
+        "id": "0x23cf980a45d2c4535ee96e3803538cbe6132e2ee31873ab60143ae9e4eacc041"
+      },
+      "voter": "0x2422011F4e0b66F5B78f5fCD6A80203ee57A3259",
+      "created": 1675604884,
+      "choice": 2,
+      "vp": 28,
+      "reason": "Secondary sales are slow, why would we do anything to negatively impact them when our treasury is so healthy?"
+    },
+    {
+      "id": "0xb44c439c6bd2cd7951209f395a287ef22c6ed951766b9e5a150b636cac7c328c",
+      "proposal": {
+        "id": "0x23cf980a45d2c4535ee96e3803538cbe6132e2ee31873ab60143ae9e4eacc041"
+      },
+      "voter": "0x4fc1b98F87764aCb52C2237Defa48B07F55A86a8",
+      "created": 1675601055,
+      "choice": 1,
+      "vp": 3,
+      "reason": ""
+    },
+    {
+      "id": "0x574aac14cca900557db92df35fd2b004199038288e7bafbe1b36ed2c3d72d941",
+      "proposal": {
+        "id": "0x23cf980a45d2c4535ee96e3803538cbe6132e2ee31873ab60143ae9e4eacc041"
+      },
+      "voter": "0xfffC9F45f22256580014c72a883671e61Ec0C08b",
+      "created": 1675581916,
+      "choice": 1,
+      "vp": 2,
+      "reason": ""
+    },
+    {
+      "id": "0xf2db6995700666a0b9b92f4de618d5b3fab84de840166db4a8d4b8c753722276",
+      "proposal": {
+        "id": "0x23cf980a45d2c4535ee96e3803538cbe6132e2ee31873ab60143ae9e4eacc041"
+      },
+      "voter": "0x069Da1bad547d67AbF26C42358d3A6A8A78dECa0",
+      "created": 1675580789,
+      "choice": 1,
+      "vp": 57,
+      "reason": "treasury needs more ammo"
+    },
+    {
+      "id": "0xd8963143b4e0b3456b18681515b135779b950d200697fd15a6971a45ba31c0dc",
+      "proposal": {
+        "id": "0x23cf980a45d2c4535ee96e3803538cbe6132e2ee31873ab60143ae9e4eacc041"
+      },
+      "voter": "0x0f7341C76bA4460736ABec4f65a1953E824658cc",
+      "created": 1675580083,
+      "choice": 1,
+      "vp": 61,
+      "reason": ""
+    }
+  ]
+}

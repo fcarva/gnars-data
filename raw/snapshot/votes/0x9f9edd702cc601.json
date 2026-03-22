@@ -1,0 +1,237 @@
+{
+  "fetched_at": "2026-03-22T03:47:47.831509Z",
+  "proposal_id": "0x9f9edd702cc60172453ecbb5ca1816173d474fb47ade2d00419ae9c3fa7e213f",
+  "records": [
+    {
+      "id": "0x33a1fa7893484d4a1af512c67f71c2c0165235b1661501bde054d9346b1b10a7",
+      "proposal": {
+        "id": "0x9f9edd702cc60172453ecbb5ca1816173d474fb47ade2d00419ae9c3fa7e213f"
+      },
+      "voter": "0xC5739c54Fe48F1Bc8E399b84e1b64a486c8e5881",
+      "created": 1690382674,
+      "choice": 2,
+      "vp": 13,
+      "reason": ""
+    },
+    {
+      "id": "0x2190bb16a0f73210d0081fbff4afb8d5764bfd3f92fc0d7c93f94a3b73629d7c",
+      "proposal": {
+        "id": "0x9f9edd702cc60172453ecbb5ca1816173d474fb47ade2d00419ae9c3fa7e213f"
+      },
+      "voter": "0x7c621d5954a4AC21A0fd741ab6f302398F29d644",
+      "created": 1690380233,
+      "choice": 2,
+      "vp": 231,
+      "reason": "would vote in favour as part of a prop house round to fund pods. btw this proposal doesn’t have any transactions attached. thanks jasper!"
+    },
+    {
+      "id": "0x6c52c6b36f4578992f31b96fdf7f2c69350410920adf2eb5285ce1cd6cc450f3",
+      "proposal": {
+        "id": "0x9f9edd702cc60172453ecbb5ca1816173d474fb47ade2d00419ae9c3fa7e213f"
+      },
+      "voter": "0x8D36BaC540C57dBd009eA9d9D8CDF9443A83E3f6",
+      "created": 1690374197,
+      "choice": 2,
+      "vp": 10,
+      "reason": ""
+    },
+    {
+      "id": "0x2a9426d11c19751c183afb7930eaa56feab1277197b2fe810f675c1b38ef9a55",
+      "proposal": {
+        "id": "0x9f9edd702cc60172453ecbb5ca1816173d474fb47ade2d00419ae9c3fa7e213f"
+      },
+      "voter": "0xDB1CB916373416FC900a8533ce02AFf3faa62cdf",
+      "created": 1690342063,
+      "choice": 1,
+      "vp": 15,
+      "reason": ""
+    },
+    {
+      "id": "0xead07c6cb5e981406bf8ea5e9bc04b1a066fb4af783108baabbefd315858abf5",
+      "proposal": {
+        "id": "0x9f9edd702cc60172453ecbb5ca1816173d474fb47ade2d00419ae9c3fa7e213f"
+      },
+      "voter": "0x09E938E239803C78507AbD5687A97acFeA1188ea",
+      "created": 1690305508,
+      "choice": 1,
+      "vp": 7,
+      "reason": ""
+    },
+    {
+      "id": "0x23d2fc7fbe6d701f7a47a2361532e26892f7d664e476856a05bf90cc0ad18f35",
+      "proposal": {
+        "id": "0x9f9edd702cc60172453ecbb5ca1816173d474fb47ade2d00419ae9c3fa7e213f"
+      },
+      "voter": "0x5746396dfE7025190a7775dF94b6E89310DDd238",
+      "created": 1690298537,
+      "choice": 1,
+      "vp": 11,
+      "reason": ""
+    },
+    {
+      "id": "0x320e62a95d3bbfb7464415752caff91752f7cb5176c75337a1720ff60cf38098",
+      "proposal": {
+        "id": "0x9f9edd702cc60172453ecbb5ca1816173d474fb47ade2d00419ae9c3fa7e213f"
+      },
+      "voter": "0x761b4763a572010f96Ed7c22011D0C95E2b36693",
+      "created": 1690287973,
+      "choice": 1,
+      "vp": 11,
+      "reason": "Voting for because it's a small ask for 4 months, will help us get organized and its a first step towards clear duties in the DAO"
+    },
+    {
+      "id": "0x70e8d2fd15e9b571c815408f75fdd8cad6ea81d56bf525bebfb8b25651519dd6",
+      "proposal": {
+        "id": "0x9f9edd702cc60172453ecbb5ca1816173d474fb47ade2d00419ae9c3fa7e213f"
+      },
+      "voter": "0xC31dF49aD14701Ed85CBbf33236d97823af806e8",
+      "created": 1690247146,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0xf81280a176a89ffdd9096d7a6c8b8dae34cf8961e930281034ea1db5c4a4e63f",
+      "proposal": {
+        "id": "0x9f9edd702cc60172453ecbb5ca1816173d474fb47ade2d00419ae9c3fa7e213f"
+      },
+      "voter": "0x1ab45ce3B5DC9aB6F337DAe1B886d7e54f167303",
+      "created": 1690245099,
+      "choice": 2,
+      "vp": 7,
+      "reason": ""
+    },
+    {
+      "id": "0x170dd9b530a5f0122386d1f59f42303e2a7ee61cbdfabf4225511d6a916f0002",
+      "proposal": {
+        "id": "0x9f9edd702cc60172453ecbb5ca1816173d474fb47ade2d00419ae9c3fa7e213f"
+      },
+      "voter": "0x4DF4058cDB72c4004aE27fC09243D387F52287f2",
+      "created": 1690241008,
+      "choice": 2,
+      "vp": 29,
+      "reason": ""
+    },
+    {
+      "id": "0x693cafc0cfcdd3b864ca9c75d12e276e5803e37f9dfc9bf2d9441ba59274ef3c",
+      "proposal": {
+        "id": "0x9f9edd702cc60172453ecbb5ca1816173d474fb47ade2d00419ae9c3fa7e213f"
+      },
+      "voter": "0x0f7341C76bA4460736ABec4f65a1953E824658cc",
+      "created": 1690231941,
+      "choice": 1,
+      "vp": 77,
+      "reason": ""
+    },
+    {
+      "id": "0x90ccc2a23205efcae4a47ee7cd8be5b0daa7ec6c37cf52ccdbe15e1b275f2b5d",
+      "proposal": {
+        "id": "0x9f9edd702cc60172453ecbb5ca1816173d474fb47ade2d00419ae9c3fa7e213f"
+      },
+      "voter": "0xFA2930a9d96e91B0A7e78d9fEBB7A8c744afD0da",
+      "created": 1690228805,
+      "choice": 1,
+      "vp": 3,
+      "reason": ""
+    },
+    {
+      "id": "0xa35b56ae543acc609cb16fd0618399504bf63f9bbc0ef6d152ad1b0defb6d26b",
+      "proposal": {
+        "id": "0x9f9edd702cc60172453ecbb5ca1816173d474fb47ade2d00419ae9c3fa7e213f"
+      },
+      "voter": "0xb2b7D66bb56ce8FF7838dC8053fF35050Ed95E9D",
+      "created": 1690223564,
+      "choice": 1,
+      "vp": 3,
+      "reason": ""
+    },
+    {
+      "id": "0xca8738e58b7c952d9bc7b5611ee68519c7338d1d3da80930425c7bacee2ab065",
+      "proposal": {
+        "id": "0x9f9edd702cc60172453ecbb5ca1816173d474fb47ade2d00419ae9c3fa7e213f"
+      },
+      "voter": "0x41CB654D1F47913ACAB158a8199191D160DAbe4A",
+      "created": 1690215930,
+      "choice": 1,
+      "vp": 43,
+      "reason": "https://discord.com/channels/928811922244137020/1129521522952917012/1133063418514001920"
+    },
+    {
+      "id": "0x2e0753a36b8fa4412f1adee490e30fab45f4c03950e9030d2213dd79840af61c",
+      "proposal": {
+        "id": "0x9f9edd702cc60172453ecbb5ca1816173d474fb47ade2d00419ae9c3fa7e213f"
+      },
+      "voter": "0x4212D149F77308a87ce9928F1095eDdb894f4D68",
+      "created": 1690212471,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0x5f169b375c0a752b8edc110bfc3ef9c4dfc7feddfd2d0f6fe98f6dbc82628bd1",
+      "proposal": {
+        "id": "0x9f9edd702cc60172453ecbb5ca1816173d474fb47ade2d00419ae9c3fa7e213f"
+      },
+      "voter": "0xdcf37d8Aa17142f053AAA7dc56025aB00D897a19",
+      "created": 1690209137,
+      "choice": 2,
+      "vp": 124,
+      "reason": ""
+    },
+    {
+      "id": "0xc8e97b414d5bd610aa2a49bdffaf0d3012c94f465f9f3db7143c6b789dc90c04",
+      "proposal": {
+        "id": "0x9f9edd702cc60172453ecbb5ca1816173d474fb47ade2d00419ae9c3fa7e213f"
+      },
+      "voter": "0xD082cC50Db08B028fc12726861d5F260a786777e",
+      "created": 1690206818,
+      "choice": 1,
+      "vp": 10,
+      "reason": ""
+    },
+    {
+      "id": "0x8818b057237509b9dfb400ac5180010f7b93e5d0cbb1e5a4f4ebc1e36eb81759",
+      "proposal": {
+        "id": "0x9f9edd702cc60172453ecbb5ca1816173d474fb47ade2d00419ae9c3fa7e213f"
+      },
+      "voter": "0xCfF1eBe354Aa6905b7890654D50A33218C9a820f",
+      "created": 1690205073,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0xfde9a6a154a7af4092fe7e72d815a7e273586b4e3e2906da5e7f132d17571270",
+      "proposal": {
+        "id": "0x9f9edd702cc60172453ecbb5ca1816173d474fb47ade2d00419ae9c3fa7e213f"
+      },
+      "voter": "0xacbCF0b4065f5039cB35821F19B2d6b380f490da",
+      "created": 1690204951,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0xb69bf426fbb3667e3652b6fb50b49fdb70c6c8a74c87602d1d92e0865004ceba",
+      "proposal": {
+        "id": "0x9f9edd702cc60172453ecbb5ca1816173d474fb47ade2d00419ae9c3fa7e213f"
+      },
+      "voter": "0x6abaDe6569f03841a0d5233d23f175Eeeb3253c4",
+      "created": 1690204183,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0x8652db36170266e41bafcefbbb26840c192abcbe623d96ce3bc03851a22d9542",
+      "proposal": {
+        "id": "0x9f9edd702cc60172453ecbb5ca1816173d474fb47ade2d00419ae9c3fa7e213f"
+      },
+      "voter": "0x6DfDCA1107C5aF4B92948625105e1e87bA9b21b4",
+      "created": 1690204145,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    }
+  ]
+}

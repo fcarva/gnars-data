@@ -1,0 +1,171 @@
+{
+  "fetched_at": "2026-03-22T03:47:46.622143Z",
+  "proposal_id": "0xbd104aec85af594c4fe35b826fd792dba0e860c8ee0ab0625bd6d67284ef8ad7",
+  "records": [
+    {
+      "id": "0x328d5a3468e4cfe47ae28c8cdabeaeea9b72ca5c274cc530613e0dda214a3ff9",
+      "proposal": {
+        "id": "0xbd104aec85af594c4fe35b826fd792dba0e860c8ee0ab0625bd6d67284ef8ad7"
+      },
+      "voter": "0xDdB4938755C243a4f60a2f2f8f95dF4F894c58Cc",
+      "created": 1701267969,
+      "choice": 1,
+      "vp": 7,
+      "reason": "meu parceiro de brincar de skate até não acabar mais."
+    },
+    {
+      "id": "0x980374b6bfd9b87ca950aff49d9f40522d9477af95f78109cc2426d63fb4061e",
+      "proposal": {
+        "id": "0xbd104aec85af594c4fe35b826fd792dba0e860c8ee0ab0625bd6d67284ef8ad7"
+      },
+      "voter": "0x0f7341C76bA4460736ABec4f65a1953E824658cc",
+      "created": 1701221427,
+      "choice": 1,
+      "vp": 77,
+      "reason": ""
+    },
+    {
+      "id": "0xbe1f59b330a40c109ae95e13784724a5c56782b0622dd837a0f15430f10f6417",
+      "proposal": {
+        "id": "0xbd104aec85af594c4fe35b826fd792dba0e860c8ee0ab0625bd6d67284ef8ad7"
+      },
+      "voter": "0xfCAE6D6b1517799330DF14BeE26e2DD90C6dd200",
+      "created": 1701220034,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0x05dab59e6c5cef473093c815ddd2b5da250cfa88ad40175871d15a8a1d481370",
+      "proposal": {
+        "id": "0xbd104aec85af594c4fe35b826fd792dba0e860c8ee0ab0625bd6d67284ef8ad7"
+      },
+      "voter": "0x6abaDe6569f03841a0d5233d23f175Eeeb3253c4",
+      "created": 1701172385,
+      "choice": 1,
+      "vp": 11,
+      "reason": ""
+    },
+    {
+      "id": "0x039d62572e9aaffc40e45cc67be7cef19892964bd21089325a1a598bf666d90e",
+      "proposal": {
+        "id": "0xbd104aec85af594c4fe35b826fd792dba0e860c8ee0ab0625bd6d67284ef8ad7"
+      },
+      "voter": "0xEDc1a397589A0236C4810883b7d559288a5Fe7e1",
+      "created": 1701149495,
+      "choice": 1,
+      "vp": 6,
+      "reason": ""
+    },
+    {
+      "id": "0xe260c01ebe622d8d460886e02fb16593ee244290b07387af054184023d8b8ba2",
+      "proposal": {
+        "id": "0xbd104aec85af594c4fe35b826fd792dba0e860c8ee0ab0625bd6d67284ef8ad7"
+      },
+      "voter": "0x9C87A1065994f156f0B7b87AAa8B3c5F7BD67E02",
+      "created": 1701131831,
+      "choice": 1,
+      "vp": 35,
+      "reason": ""
+    },
+    {
+      "id": "0xb97b26bfe5eed9a15296424b847525452e408b55327e1189c9d50bbb20053f83",
+      "proposal": {
+        "id": "0xbd104aec85af594c4fe35b826fd792dba0e860c8ee0ab0625bd6d67284ef8ad7"
+      },
+      "voter": "0xFc27B375fAf1FBd3F3462044Cf810082F042a45B",
+      "created": 1701128404,
+      "choice": 1,
+      "vp": 16,
+      "reason": ""
+    },
+    {
+      "id": "0xb001287b39705335dc15490d387b0d033a69fa904c1ca9711fd98f6e23546dd4",
+      "proposal": {
+        "id": "0xbd104aec85af594c4fe35b826fd792dba0e860c8ee0ab0625bd6d67284ef8ad7"
+      },
+      "voter": "0xB4964e1ecA55Db36a94e8aeFfBFBAb48529a2f6c",
+      "created": 1701121668,
+      "choice": 1,
+      "vp": 19,
+      "reason": "610 FOR | 0 AGAINST  https://snapshot.org/#/skatehive.eth/proposal/0xe1b1663cb01eb4766960bf3bbd46371a14bc09d9cf6f2f7f7533f842d3157806"
+    },
+    {
+      "id": "0x7ae1a76251cedfddab9f028543035aa690c35dd10690304ff0697d46a0721b44",
+      "proposal": {
+        "id": "0xbd104aec85af594c4fe35b826fd792dba0e860c8ee0ab0625bd6d67284ef8ad7"
+      },
+      "voter": "0xa903C06BF35286f6d1cDAD25396748353979a44C",
+      "created": 1701119235,
+      "choice": 1,
+      "vp": 6,
+      "reason": ""
+    },
+    {
+      "id": "0xbd729db6c6e550cd45cd8794207d3c17999432071af71379e91753b4b15ee4ed",
+      "proposal": {
+        "id": "0xbd104aec85af594c4fe35b826fd792dba0e860c8ee0ab0625bd6d67284ef8ad7"
+      },
+      "voter": "0x56b6DcDDD5d96535c35B720C96E19939920544D8",
+      "created": 1701119147,
+      "choice": 1,
+      "vp": 187,
+      "reason": ""
+    },
+    {
+      "id": "0xbede64e3c0b7b576888ed6725b17a0c5cb6a509e6f84ba38edbacc966167c210",
+      "proposal": {
+        "id": "0xbd104aec85af594c4fe35b826fd792dba0e860c8ee0ab0625bd6d67284ef8ad7"
+      },
+      "voter": "0xdfB6ed808fADddAd9154F5605E349fFF96E3d939",
+      "created": 1701116067,
+      "choice": 1,
+      "vp": 20,
+      "reason": "i love the new use of this channel! with over 300+ gnars left for grabs "
+    },
+    {
+      "id": "0x0f2931bbc56634d0842aaf5ccf682521ae81713ed65955c0667803210e69feff",
+      "proposal": {
+        "id": "0xbd104aec85af594c4fe35b826fd792dba0e860c8ee0ab0625bd6d67284ef8ad7"
+      },
+      "voter": "0xAf32BB3892F37c518f3841275F131384a41B9b57",
+      "created": 1701107485,
+      "choice": 1,
+      "vp": 3,
+      "reason": ""
+    },
+    {
+      "id": "0x2a25da74e8d3add71faa6671894e4ea4525cc281a023ea2762be1d7e92da34fb",
+      "proposal": {
+        "id": "0xbd104aec85af594c4fe35b826fd792dba0e860c8ee0ab0625bd6d67284ef8ad7"
+      },
+      "voter": "0xD082cC50Db08B028fc12726861d5F260a786777e",
+      "created": 1701097105,
+      "choice": 1,
+      "vp": 3,
+      "reason": ""
+    },
+    {
+      "id": "0xb3dcf9480c838de06b7a5365148fb3a71b4c39873a7c84e4190492d24dfc00f3",
+      "proposal": {
+        "id": "0xbd104aec85af594c4fe35b826fd792dba0e860c8ee0ab0625bd6d67284ef8ad7"
+      },
+      "voter": "0xdcf37d8Aa17142f053AAA7dc56025aB00D897a19",
+      "created": 1701096786,
+      "choice": 1,
+      "vp": 124,
+      "reason": ""
+    },
+    {
+      "id": "0xb2f502a4951ce1a3ec3f061b6f03095ce55842316b7c38afdc4cd9a0353caea0",
+      "proposal": {
+        "id": "0xbd104aec85af594c4fe35b826fd792dba0e860c8ee0ab0625bd6d67284ef8ad7"
+      },
+      "voter": "0x41CB654D1F47913ACAB158a8199191D160DAbe4A",
+      "created": 1701036774,
+      "choice": 1,
+      "vp": 64,
+      "reason": ""
+    }
+  ]
+}

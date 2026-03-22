@@ -1,0 +1,226 @@
+{
+  "fetched_at": "2026-03-22T03:48:06.653669Z",
+  "proposal_id": "0x75de871dc2cdfb52513789573ba4f5cd27b663122b27de157ae100593d8b916c",
+  "records": [
+    {
+      "id": "0x0441fd6b3e01fd83a6ab0951225cc3249752426693b29f00f51d1e848f0b4fe0",
+      "proposal": {
+        "id": "0x75de871dc2cdfb52513789573ba4f5cd27b663122b27de157ae100593d8b916c"
+      },
+      "voter": "0xcbfb27341D60206a9C5aE92da97202077BCf450F",
+      "created": 1677408727,
+      "choice": 2,
+      "vp": 7,
+      "reason": ""
+    },
+    {
+      "id": "0xd5456f80aa3dd8100388d50c8a4eaa39d50ead2d2a358f1545b1c923e01bd7ed",
+      "proposal": {
+        "id": "0x75de871dc2cdfb52513789573ba4f5cd27b663122b27de157ae100593d8b916c"
+      },
+      "voter": "0xdfB6ed808fADddAd9154F5605E349fFF96E3d939",
+      "created": 1677377972,
+      "choice": 1,
+      "vp": 20,
+      "reason": ""
+    },
+    {
+      "id": "0x22e4d728385ca34fcb6d7d71d3d68d9d5af11bdf11153ceb5715cb8e7d39d54d",
+      "proposal": {
+        "id": "0x75de871dc2cdfb52513789573ba4f5cd27b663122b27de157ae100593d8b916c"
+      },
+      "voter": "0xfE473552F6bdb509C9B3F927205EEF07bFfD19Eb",
+      "created": 1677368642,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0xcf94abac8fe26665b2ba867b7497b51e9fa0458d6f877a2137fbe7ffea349755",
+      "proposal": {
+        "id": "0x75de871dc2cdfb52513789573ba4f5cd27b663122b27de157ae100593d8b916c"
+      },
+      "voter": "0x4322d6B24BdA8AF69dD1014C4F29138F6D794aDA",
+      "created": 1677317129,
+      "choice": 1,
+      "vp": 18,
+      "reason": ""
+    },
+    {
+      "id": "0x061644fdc0f178a491c5ef2779efa2869ecef638bf5de8a21ec6ec9f7f55d2b6",
+      "proposal": {
+        "id": "0x75de871dc2cdfb52513789573ba4f5cd27b663122b27de157ae100593d8b916c"
+      },
+      "voter": "0x3C9001bae3f82a0B50197a5EF46B1C5A5a9D5e3B",
+      "created": 1677310873,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0x57eba8d00db08e10febdbbb06952e7a8f4ae68088d27c21d58cccfd28e596661",
+      "proposal": {
+        "id": "0x75de871dc2cdfb52513789573ba4f5cd27b663122b27de157ae100593d8b916c"
+      },
+      "voter": "0x10fbc526876D2284a59149Ae221Fc825D0BEECFc",
+      "created": 1677274136,
+      "choice": 1,
+      "vp": 13,
+      "reason": ""
+    },
+    {
+      "id": "0x9e2ab163ceae09903f4932972c3a3775d884a7782c064927428ae08aed732955",
+      "proposal": {
+        "id": "0x75de871dc2cdfb52513789573ba4f5cd27b663122b27de157ae100593d8b916c"
+      },
+      "voter": "0x09E938E239803C78507AbD5687A97acFeA1188ea",
+      "created": 1677264447,
+      "choice": 2,
+      "vp": 3,
+      "reason": "Daily Drop gas costs too high, needs  to be discussed, and Trivia is not adding value / or educating ppl. "
+    },
+    {
+      "id": "0x978b509197f5cf09b70fc7b16814183f34be17c1c2564aa982cd24165535f9e8",
+      "proposal": {
+        "id": "0x75de871dc2cdfb52513789573ba4f5cd27b663122b27de157ae100593d8b916c"
+      },
+      "voter": "0x0f7341C76bA4460736ABec4f65a1953E824658cc",
+      "created": 1677264221,
+      "choice": 2,
+      "vp": 66,
+      "reason": "These gas payments are not sustainable. Will you need 1 ETH every month? Can we afford that? The rest seems ok but too much proposed at once"
+    },
+    {
+      "id": "0x463f24b933fbfa26e3132b2838fd11058b2943a7efe8d2e2e2ce08f9f59245d0",
+      "proposal": {
+        "id": "0x75de871dc2cdfb52513789573ba4f5cd27b663122b27de157ae100593d8b916c"
+      },
+      "voter": "0x7b13c2F7AaA8C772Bd0a13A86B0CF633fAf790B0",
+      "created": 1677263824,
+      "choice": 1,
+      "vp": 7,
+      "reason": ""
+    },
+    {
+      "id": "0x6a88d827fdc6233a0dc8814e271cf1cb161c27e5df30ddc5159e9e88a5304b13",
+      "proposal": {
+        "id": "0x75de871dc2cdfb52513789573ba4f5cd27b663122b27de157ae100593d8b916c"
+      },
+      "voter": "0x64c4Bffb220818F0f2ee6DAe7A2F17D92b359c5d",
+      "created": 1677261960,
+      "choice": 1,
+      "vp": 24,
+      "reason": ""
+    },
+    {
+      "id": "0x980aae5817ffa97eb53ab45a7166ad2b3a7fca4782cae5db6a6ee9b760b51776",
+      "proposal": {
+        "id": "0x75de871dc2cdfb52513789573ba4f5cd27b663122b27de157ae100593d8b916c"
+      },
+      "voter": "0x41CB654D1F47913ACAB158a8199191D160DAbe4A",
+      "created": 1677254856,
+      "choice": 2,
+      "vp": 11,
+      "reason": "Why is the trivia payments part of that proposal? \nAnd the trivia moment is so cool, but way to much prize for 12 people in a tt spaces. "
+    },
+    {
+      "id": "0x1d171303caf4991538c3c504bfeb28365c9b627086d885aa1296cf374ac9a475",
+      "proposal": {
+        "id": "0x75de871dc2cdfb52513789573ba4f5cd27b663122b27de157ae100593d8b916c"
+      },
+      "voter": "0xCEEd9585854F12F81A0103861b83b995A64AD915",
+      "created": 1677239348,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0x5ca4cf2e1ad4fb118b941e8781531fca03935590835cf76706266b6b91d558c1",
+      "proposal": {
+        "id": "0x75de871dc2cdfb52513789573ba4f5cd27b663122b27de157ae100593d8b916c"
+      },
+      "voter": "0x387a161C6b25aA854100aBaED39274e51aaffffd",
+      "created": 1677219218,
+      "choice": 1,
+      "vp": 130,
+      "reason": ""
+    },
+    {
+      "id": "0xdbcd96125849267aa981eabed11e905180d8c6a9832f36cc4ac0f69233d20099",
+      "proposal": {
+        "id": "0x75de871dc2cdfb52513789573ba4f5cd27b663122b27de157ae100593d8b916c"
+      },
+      "voter": "0x175Cae6611Ba61625d4757bD8E626f76bFD9cF30",
+      "created": 1677212948,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0xd44344bf22e51a688caeb125bec702d63f9ff0076b785253e4540f56cddca8cf",
+      "proposal": {
+        "id": "0x75de871dc2cdfb52513789573ba4f5cd27b663122b27de157ae100593d8b916c"
+      },
+      "voter": "0xFE3A509F8E8eb59209CC8c9b90f7b352781E96f4",
+      "created": 1677207236,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0xbb264a7ee6d227fb08c1411367c0fee4b781fbb56cafdce704a8111e8e080e94",
+      "proposal": {
+        "id": "0x75de871dc2cdfb52513789573ba4f5cd27b663122b27de157ae100593d8b916c"
+      },
+      "voter": "0x535FDa4404cc3C07643F90edF6512D272897088b",
+      "created": 1677196667,
+      "choice": 1,
+      "vp": 3,
+      "reason": ""
+    },
+    {
+      "id": "0x66aab9d6f009bbbf33df4ff11840f6d11fa32e8db3406b5e46b0ec36df32e3bc",
+      "proposal": {
+        "id": "0x75de871dc2cdfb52513789573ba4f5cd27b663122b27de157ae100593d8b916c"
+      },
+      "voter": "0x56b6DcDDD5d96535c35B720C96E19939920544D8",
+      "created": 1677192462,
+      "choice": 1,
+      "vp": 185,
+      "reason": ""
+    },
+    {
+      "id": "0x1b1ea7dd81bf11725cb91c052169cb10315d1502380db8dba2b77b230d6f4a65",
+      "proposal": {
+        "id": "0x75de871dc2cdfb52513789573ba4f5cd27b663122b27de157ae100593d8b916c"
+      },
+      "voter": "0x4fc1b98F87764aCb52C2237Defa48B07F55A86a8",
+      "created": 1677189015,
+      "choice": 1,
+      "vp": 4,
+      "reason": ""
+    },
+    {
+      "id": "0x04e6c23712531c1630170c75c71ac14c96a096781d5637ff601ad31a83e05dc7",
+      "proposal": {
+        "id": "0x75de871dc2cdfb52513789573ba4f5cd27b663122b27de157ae100593d8b916c"
+      },
+      "voter": "0xb2b7D66bb56ce8FF7838dC8053fF35050Ed95E9D",
+      "created": 1677186247,
+      "choice": 1,
+      "vp": 2,
+      "reason": ""
+    },
+    {
+      "id": "0x2ab3b989335b22d4b7409fa2e566f24463c1ccfaa820bdaa75ca3fe9ad7939e8",
+      "proposal": {
+        "id": "0x75de871dc2cdfb52513789573ba4f5cd27b663122b27de157ae100593d8b916c"
+      },
+      "voter": "0x9C87A1065994f156f0B7b87AAa8B3c5F7BD67E02",
+      "created": 1677178941,
+      "choice": 1,
+      "vp": 32,
+      "reason": ""
+    }
+  ]
+}

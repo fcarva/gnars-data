@@ -1,0 +1,37 @@
+name: Weekly Snapshot Votes Sync
+
+on:
+  schedule:
+    - cron: "0 4 * * 0"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Sync Snapshot proposals and votes (force)
+        run: python scripts/sync_snapshot.py --force
+
+      - name: Commit and push snapshot updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add raw/snapshot data/snapshot_proposals.json data/snapshot_votes.json
+          if git diff --cached --quiet; then
+            echo "No snapshot updates"
+            exit 0
+          fi
+          git commit -m "chore: weekly snapshot votes sync"
+          git push origin HEAD:main

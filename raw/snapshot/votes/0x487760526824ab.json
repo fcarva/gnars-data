@@ -1,0 +1,116 @@
+{
+  "fetched_at": "2026-03-22T03:47:47.430679Z",
+  "proposal_id": "0x487760526824abbe7997ee2fe4887de10af737eb60d35a4165025b8f58148e50",
+  "records": [
+    {
+      "id": "0xc8556510070f9b2fdb19dcbffd704ce5728f3a3d0eca5a84702f1bb1752754c7",
+      "proposal": {
+        "id": "0x487760526824abbe7997ee2fe4887de10af737eb60d35a4165025b8f58148e50"
+      },
+      "voter": "0xdcf37d8Aa17142f053AAA7dc56025aB00D897a19",
+      "created": 1691411044,
+      "choice": 1,
+      "vp": 124,
+      "reason": ""
+    },
+    {
+      "id": "0x17377d60d281e2c2e0d3f67a15636a9de8fb8f5b146dec0091da17610ec60bb5",
+      "proposal": {
+        "id": "0x487760526824abbe7997ee2fe4887de10af737eb60d35a4165025b8f58148e50"
+      },
+      "voter": "0xdfB6ed808fADddAd9154F5605E349fFF96E3d939",
+      "created": 1691392309,
+      "choice": 1,
+      "vp": 21,
+      "reason": "Someone called these things Nopstacles"
+    },
+    {
+      "id": "0xcf92de1d2b69f546ca8b345734071746e09af36ae2cb4b3f195a465a349b43ee",
+      "proposal": {
+        "id": "0x487760526824abbe7997ee2fe4887de10af737eb60d35a4165025b8f58148e50"
+      },
+      "voter": "0xEDc1a397589A0236C4810883b7d559288a5Fe7e1",
+      "created": 1691390261,
+      "choice": 1,
+      "vp": 2,
+      "reason": ""
+    },
+    {
+      "id": "0x96f870740be109f07f160d08ffa0ace90aac265a70916e53d4475059f8aff7a9",
+      "proposal": {
+        "id": "0x487760526824abbe7997ee2fe4887de10af737eb60d35a4165025b8f58148e50"
+      },
+      "voter": "0x761b4763a572010f96Ed7c22011D0C95E2b36693",
+      "created": 1691257469,
+      "choice": 1,
+      "vp": 11,
+      "reason": ""
+    },
+    {
+      "id": "0xcca49dbfcd7316ddcf643dd76d730305334f540532044bb14b93ef4b9d274e9f",
+      "proposal": {
+        "id": "0x487760526824abbe7997ee2fe4887de10af737eb60d35a4165025b8f58148e50"
+      },
+      "voter": "0x6abaDe6569f03841a0d5233d23f175Eeeb3253c4",
+      "created": 1691210669,
+      "choice": 1,
+      "vp": 7,
+      "reason": ""
+    },
+    {
+      "id": "0xfaf672aaffb6f5a8b41524476364e42c9f088f653eaeb88a77ccb82345cede4f",
+      "proposal": {
+        "id": "0x487760526824abbe7997ee2fe4887de10af737eb60d35a4165025b8f58148e50"
+      },
+      "voter": "0x7c621d5954a4AC21A0fd741ab6f302398F29d644",
+      "created": 1691202381,
+      "choice": 1,
+      "vp": 230,
+      "reason": "an og skate scene i'd love to see onboard"
+    },
+    {
+      "id": "0xd0e8e029275d933a63a3b54b81ff69bbc22bdb44f78471d85cab52965af90cce",
+      "proposal": {
+        "id": "0x487760526824abbe7997ee2fe4887de10af737eb60d35a4165025b8f58148e50"
+      },
+      "voter": "0x56b6DcDDD5d96535c35B720C96E19939920544D8",
+      "created": 1691191129,
+      "choice": 1,
+      "vp": 173,
+      "reason": ""
+    },
+    {
+      "id": "0xdfb92bc4610759b1315f69a5ea1b2fceef370384b825274ff4750216ec12495e",
+      "proposal": {
+        "id": "0x487760526824abbe7997ee2fe4887de10af737eb60d35a4165025b8f58148e50"
+      },
+      "voter": "0x1Dd6844B11F9D1c7c82501C3189Ed81cbe04E05B",
+      "created": 1691176126,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0x51207d010b284f1b35e21764c4715f3f6e44cf54f83cd26ffd9ab2df9bba4927",
+      "proposal": {
+        "id": "0x487760526824abbe7997ee2fe4887de10af737eb60d35a4165025b8f58148e50"
+      },
+      "voter": "0xFA2930a9d96e91B0A7e78d9fEBB7A8c744afD0da",
+      "created": 1691175969,
+      "choice": 1,
+      "vp": 3,
+      "reason": ""
+    },
+    {
+      "id": "0x7a6cc383e1b4347e40dd966fa7a437236497b6105f7bafbd4577b86235cd03e5",
+      "proposal": {
+        "id": "0x487760526824abbe7997ee2fe4887de10af737eb60d35a4165025b8f58148e50"
+      },
+      "voter": "0x9C87A1065994f156f0B7b87AAa8B3c5F7BD67E02",
+      "created": 1691171497,
+      "choice": 1,
+      "vp": 35,
+      "reason": ""
+    }
+  ]
+}

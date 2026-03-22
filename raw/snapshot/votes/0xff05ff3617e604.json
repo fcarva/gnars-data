@@ -1,0 +1,182 @@
+{
+  "fetched_at": "2026-03-22T03:47:45.726772Z",
+  "proposal_id": "0xff05ff3617e604c701ffde6c6e34d39016bd2126f61efe66499617ea3acfd603",
+  "records": [
+    {
+      "id": "0x607ea6220c03332fb58b149c2d991ff7c17c310c8967d014f77357f2326e0092",
+      "proposal": {
+        "id": "0xff05ff3617e604c701ffde6c6e34d39016bd2126f61efe66499617ea3acfd603"
+      },
+      "voter": "0xdcf37d8Aa17142f053AAA7dc56025aB00D897a19",
+      "created": 1703432490,
+      "choice": 2,
+      "vp": 124,
+      "reason": "if it were a gnars athlete or the injury was skating I would feel differently, but I don't think this is a precedent we should set"
+    },
+    {
+      "id": "0x8820978b23898e5af5333eef9a76672642df43c9c9fbb241d05cd4c570b79889",
+      "proposal": {
+        "id": "0xff05ff3617e604c701ffde6c6e34d39016bd2126f61efe66499617ea3acfd603"
+      },
+      "voter": "0x3862600cb2307375B91eF061d265A0aF0d73E44a",
+      "created": 1703356762,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0xce79df4926e47f0b6d02bc42d48d421a0b2ba1b10c822b75bc190170ef93a431",
+      "proposal": {
+        "id": "0xff05ff3617e604c701ffde6c6e34d39016bd2126f61efe66499617ea3acfd603"
+      },
+      "voter": "0xB4964e1ecA55Db36a94e8aeFfBFBAb48529a2f6c",
+      "created": 1703354307,
+      "choice": 1,
+      "vp": 15,
+      "reason": ""
+    },
+    {
+      "id": "0x48f88da2d526d497a21f792e9e481b044bb1947d88bce5ab0c4508c428643486",
+      "proposal": {
+        "id": "0xff05ff3617e604c701ffde6c6e34d39016bd2126f61efe66499617ea3acfd603"
+      },
+      "voter": "0x2473FB8eEBE46041d5F528A728505C26A81C1158",
+      "created": 1703289574,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0xd5f4b909c94b0442306a900e6ec514e218570474bc3e254b6a304232128a63ad",
+      "proposal": {
+        "id": "0xff05ff3617e604c701ffde6c6e34d39016bd2126f61efe66499617ea3acfd603"
+      },
+      "voter": "0xDdB4938755C243a4f60a2f2f8f95dF4F894c58Cc",
+      "created": 1703283324,
+      "choice": 1,
+      "vp": 7,
+      "reason": ""
+    },
+    {
+      "id": "0x41814ff2766d8ad4d35cdd6e93120f3d23966c28cbf5b3c66072bd886c769936",
+      "proposal": {
+        "id": "0xff05ff3617e604c701ffde6c6e34d39016bd2126f61efe66499617ea3acfd603"
+      },
+      "voter": "0xfCAE6D6b1517799330DF14BeE26e2DD90C6dd200",
+      "created": 1703279441,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0x8b64ec999e370ae32d40bd55eba2d6bc89cfc348b297d7dce129360ec2bf4736",
+      "proposal": {
+        "id": "0xff05ff3617e604c701ffde6c6e34d39016bd2126f61efe66499617ea3acfd603"
+      },
+      "voter": "0x10fbc526876D2284a59149Ae221Fc825D0BEECFc",
+      "created": 1703272682,
+      "choice": 1,
+      "vp": 10,
+      "reason": "⌐◨-◨ "
+    },
+    {
+      "id": "0x5193aea0456d55f31fb388b99e94ef1c2776d493cb77652177e52c9fc640cce8",
+      "proposal": {
+        "id": "0xff05ff3617e604c701ffde6c6e34d39016bd2126f61efe66499617ea3acfd603"
+      },
+      "voter": "0x41CB654D1F47913ACAB158a8199191D160DAbe4A",
+      "created": 1703253846,
+      "choice": 1,
+      "vp": 67,
+      "reason": ""
+    },
+    {
+      "id": "0x87a032ad7d3ab2d00ebedc730bbc78bf577d324db18b0267a8611d7e295b1eb5",
+      "proposal": {
+        "id": "0xff05ff3617e604c701ffde6c6e34d39016bd2126f61efe66499617ea3acfd603"
+      },
+      "voter": "0x294CD7Db1DA684d6aB241a885fd94dB07129a2CC",
+      "created": 1703251763,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0x922e7625e6d6c4ed56cf3c4a3ac8086b5db0fc3f47cd843acf311cb2a404c8d2",
+      "proposal": {
+        "id": "0xff05ff3617e604c701ffde6c6e34d39016bd2126f61efe66499617ea3acfd603"
+      },
+      "voter": "0xDB1CB916373416FC900a8533ce02AFf3faa62cdf",
+      "created": 1703216414,
+      "choice": 1,
+      "vp": 18,
+      "reason": ""
+    },
+    {
+      "id": "0x9397058423934720eae078fa2a69789355f2e00b4200c706c9a1b1072272332e",
+      "proposal": {
+        "id": "0xff05ff3617e604c701ffde6c6e34d39016bd2126f61efe66499617ea3acfd603"
+      },
+      "voter": "0x56b6DcDDD5d96535c35B720C96E19939920544D8",
+      "created": 1703203139,
+      "choice": 1,
+      "vp": 187,
+      "reason": ""
+    },
+    {
+      "id": "0x0c3f84221c67aa7d590a515e355afa56ab066de1a397c6a39ca6789acccbefb7",
+      "proposal": {
+        "id": "0xff05ff3617e604c701ffde6c6e34d39016bd2126f61efe66499617ea3acfd603"
+      },
+      "voter": "0xa903C06BF35286f6d1cDAD25396748353979a44C",
+      "created": 1703203113,
+      "choice": 1,
+      "vp": 6,
+      "reason": ""
+    },
+    {
+      "id": "0xfbe5abf00fd54a8e7cd3211c7ee3cd2aa93bac5fb9b800082246586c98dfac9a",
+      "proposal": {
+        "id": "0xff05ff3617e604c701ffde6c6e34d39016bd2126f61efe66499617ea3acfd603"
+      },
+      "voter": "0xEDc1a397589A0236C4810883b7d559288a5Fe7e1",
+      "created": 1703195852,
+      "choice": 2,
+      "vp": 6,
+      "reason": "Unfortunatly agree with bagelface that is best if done thru thatsgnarly drops or discord kind of proposal to seek funding"
+    },
+    {
+      "id": "0xed9d29704a869f80f69c90873b936a827ccc8382909eb22cb3cde1df47ce0df9",
+      "proposal": {
+        "id": "0xff05ff3617e604c701ffde6c6e34d39016bd2126f61efe66499617ea3acfd603"
+      },
+      "voter": "0x9C87A1065994f156f0B7b87AAa8B3c5F7BD67E02",
+      "created": 1703179852,
+      "choice": 2,
+      "vp": 35,
+      "reason": "I don't think this something Gnars should compensate in this particular situation. If it's a Gnars skater who got hurt skating, absolutely"
+    },
+    {
+      "id": "0x76db83291d0b258c553956073c07612beb3356801db5318de620a81294056441",
+      "proposal": {
+        "id": "0xff05ff3617e604c701ffde6c6e34d39016bd2126f61efe66499617ea3acfd603"
+      },
+      "voter": "0xAca2F322d69E07993E073C8730180FB139cA4446",
+      "created": 1703177022,
+      "choice": 2,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0x7362398a1763136d64eb21d3a62b2bfb68f30ce6a717afaba308ac3e1cbcbf07",
+      "proposal": {
+        "id": "0xff05ff3617e604c701ffde6c6e34d39016bd2126f61efe66499617ea3acfd603"
+      },
+      "voter": "0xbA6E1C26bE2F8b46D9e7ab7573b99921Ee81AcF5",
+      "created": 1703175079,
+      "choice": 2,
+      "vp": 16,
+      "reason": "I feel for him but it's a bad precedent to set. I think posting the GFM in the Discord and asking for individual contributions is the move ❤"
+    }
+  ]
+}

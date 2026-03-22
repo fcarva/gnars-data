@@ -1,0 +1,160 @@
+{
+  "fetched_at": "2026-03-22T03:48:21.289854Z",
+  "proposal_id": "0x8c8d86e12efb449b6bd92b72be839a0d087bfc6b9130c57e325669efe1784905",
+  "records": [
+    {
+      "id": "0x478ac177fba0095896533e3d381ae9c4236405487f19bad04d8ee540e2166795",
+      "proposal": {
+        "id": "0x8c8d86e12efb449b6bd92b72be839a0d087bfc6b9130c57e325669efe1784905"
+      },
+      "voter": "0x05e189E1BbaF77f1654F0983872fd938AE592eDD",
+      "created": 1670274187,
+      "choice": 3,
+      "vp": 115,
+      "reason": "I think the idea has potential, but I'd like to see more clear deliverables. Edited content, a Gnars oriented ride/event, etc."
+    },
+    {
+      "id": "0x9e8e9ad71e43626d85edb0e8dc379a6d88a15eee5b6219f4fb10d196b00cda7a",
+      "proposal": {
+        "id": "0x8c8d86e12efb449b6bd92b72be839a0d087bfc6b9130c57e325669efe1784905"
+      },
+      "voter": "0x1E5b89C74Fda05BF25fF586d3cfa4fcdAFce4f94",
+      "created": 1670250260,
+      "choice": 2,
+      "vp": 1,
+      "reason": "I only see this proposal as marketing. But I didn't see a range predictability justifying the value of 3 eth."
+    },
+    {
+      "id": "0x06d2f1e6b76fc1bdc81aa989653055a5777cd03d1a113ceae5e9d5a29cb0a308",
+      "proposal": {
+        "id": "0x8c8d86e12efb449b6bd92b72be839a0d087bfc6b9130c57e325669efe1784905"
+      },
+      "voter": "0x9C87A1065994f156f0B7b87AAa8B3c5F7BD67E02",
+      "created": 1670215830,
+      "choice": 1,
+      "vp": 27,
+      "reason": ""
+    },
+    {
+      "id": "0x82771535a399822850dc25b6ef3c7e594ffb271e478d702894cb29e5971b5978",
+      "proposal": {
+        "id": "0x8c8d86e12efb449b6bd92b72be839a0d087bfc6b9130c57e325669efe1784905"
+      },
+      "voter": "0xf9d71b5fB8345F2508C1302a74d4362DEAb7D104",
+      "created": 1670190353,
+      "choice": 1,
+      "vp": 9,
+      "reason": ""
+    },
+    {
+      "id": "0x505d14ad09b84275daa4fc871f03a488defdeecf836ee2c6031b7b70675e8a3c",
+      "proposal": {
+        "id": "0x8c8d86e12efb449b6bd92b72be839a0d087bfc6b9130c57e325669efe1784905"
+      },
+      "voter": "0xF0017ADa58130bC15B574fa2CFCA18D36bfdf486",
+      "created": 1670177589,
+      "choice": 2,
+      "vp": 5,
+      "reason": ""
+    },
+    {
+      "id": "0x989b215724a79860354982c9715c9116716dde469cfad236830694817fcdd5c9",
+      "proposal": {
+        "id": "0x8c8d86e12efb449b6bd92b72be839a0d087bfc6b9130c57e325669efe1784905"
+      },
+      "voter": "0x069Da1bad547d67AbF26C42358d3A6A8A78dECa0",
+      "created": 1670175304,
+      "choice": 2,
+      "vp": 62,
+      "reason": "Asking for essentials and only really offering to make yourself a custom hoody. We need to find a way to help empower you without just payin"
+    },
+    {
+      "id": "0x4b3c57efd28c68e24570b62477bc5140af2278832332482ad11f70f5c141ab25",
+      "proposal": {
+        "id": "0x8c8d86e12efb449b6bd92b72be839a0d087bfc6b9130c57e325669efe1784905"
+      },
+      "voter": "0x96F6a61a562f9c5194e3Ba25e45Db796a026e7cC",
+      "created": 1670172347,
+      "choice": 2,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0xc4ebf3b4da0a99adea42a863be674925db333550e9eac6adc57a3512988fab36",
+      "proposal": {
+        "id": "0x8c8d86e12efb449b6bd92b72be839a0d087bfc6b9130c57e325669efe1784905"
+      },
+      "voter": "0x41CB654D1F47913ACAB158a8199191D160DAbe4A",
+      "created": 1670171788,
+      "choice": 2,
+      "vp": 13,
+      "reason": "I think the airbrush thing is 1/3 of the proposal budget and the same thing could be accomplished with stickers in the helmet. "
+    },
+    {
+      "id": "0x8e06fb241fa432a8a590cb4676f417692c4df462612f49fc1fc3f00c2de77ed4",
+      "proposal": {
+        "id": "0x8c8d86e12efb449b6bd92b72be839a0d087bfc6b9130c57e325669efe1784905"
+      },
+      "voter": "0xcbfb27341D60206a9C5aE92da97202077BCf450F",
+      "created": 1670159187,
+      "choice": 2,
+      "vp": 5,
+      "reason": ""
+    },
+    {
+      "id": "0xd76753ecb4bf8a83ea57933ed73dc641a297fced4faa476019212d11ca2dade9",
+      "proposal": {
+        "id": "0x8c8d86e12efb449b6bd92b72be839a0d087bfc6b9130c57e325669efe1784905"
+      },
+      "voter": "0x897284cc981D09EF61023D2ab96C5EcFD43e85f4",
+      "created": 1670131822,
+      "choice": 3,
+      "vp": 12,
+      "reason": "meeeh, not against but not conviced"
+    },
+    {
+      "id": "0xb047c0b31d94677e04a10f4e0ae1010ebd83081ef5cc4a7aaac8a08b5c12cdeb",
+      "proposal": {
+        "id": "0x8c8d86e12efb449b6bd92b72be839a0d087bfc6b9130c57e325669efe1784905"
+      },
+      "voter": "0x6ab223Aa761e64FCa5e384098f0c91C50c6eC494",
+      "created": 1670114856,
+      "choice": 2,
+      "vp": 7,
+      "reason": ""
+    },
+    {
+      "id": "0x2a75ecf2364d2c2852d89c1fbe7e56d61dad7d1b1f7ed639a24851fe19557ee4",
+      "proposal": {
+        "id": "0x8c8d86e12efb449b6bd92b72be839a0d087bfc6b9130c57e325669efe1784905"
+      },
+      "voter": "0xd5fb864ACfD6BB2f72939f122e89fF7F475924f5",
+      "created": 1670061824,
+      "choice": 2,
+      "vp": 8,
+      "reason": ""
+    },
+    {
+      "id": "0xd203e3d953939652a3801daabbc49e205e46bf915d1e5b988a56e195095cb4fa",
+      "proposal": {
+        "id": "0x8c8d86e12efb449b6bd92b72be839a0d087bfc6b9130c57e325669efe1784905"
+      },
+      "voter": "0x4A39aE081678f3D4ABbFbd50b3034580B8bAF48A",
+      "created": 1670025949,
+      "choice": 2,
+      "vp": 48,
+      "reason": "Comments available in the Prop chat in Discord"
+    },
+    {
+      "id": "0xad8a68e27394ae7df2793f5f344115bf0ef659ccc3386b1144f281dab95ba939",
+      "proposal": {
+        "id": "0x8c8d86e12efb449b6bd92b72be839a0d087bfc6b9130c57e325669efe1784905"
+      },
+      "voter": "0x2422011F4e0b66F5B78f5fCD6A80203ee57A3259",
+      "created": 1670021555,
+      "choice": 2,
+      "vp": 27,
+      "reason": "This is not the type of extreme sport that fit with the Gnars brand imo. "
+    }
+  ]
+}

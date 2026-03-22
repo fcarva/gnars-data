@@ -1,0 +1,149 @@
+{
+  "fetched_at": "2026-03-22T03:48:11.299966Z",
+  "proposal_id": "0xb0e453ea7a3a53a4613804c8a6e350f91665d31af3a89c6cc922e965f029d388",
+  "records": [
+    {
+      "id": "0xf964ece80bf5228f93e43c15d1f9dd631f267e3041c9fff99b3215ad7e435c9e",
+      "proposal": {
+        "id": "0xb0e453ea7a3a53a4613804c8a6e350f91665d31af3a89c6cc922e965f029d388"
+      },
+      "voter": "0x64c4Bffb220818F0f2ee6DAe7A2F17D92b359c5d",
+      "created": 1676032613,
+      "choice": 2,
+      "vp": 18,
+      "reason": ""
+    },
+    {
+      "id": "0x04750440a93ef29a6ea5f7982321a0ec210d100bc5c549b531caa801a89ce350",
+      "proposal": {
+        "id": "0xb0e453ea7a3a53a4613804c8a6e350f91665d31af3a89c6cc922e965f029d388"
+      },
+      "voter": "0x387a161C6b25aA854100aBaED39274e51aaffffd",
+      "created": 1676015823,
+      "choice": 2,
+      "vp": 129,
+      "reason": "i'd like to see how lil bub drop goes first. esp while our treasury is low"
+    },
+    {
+      "id": "0xed18ef18466ee18cd10e04600ab85e790e732adc6e3f56f1291a995d9e020760",
+      "proposal": {
+        "id": "0xb0e453ea7a3a53a4613804c8a6e350f91665d31af3a89c6cc922e965f029d388"
+      },
+      "voter": "0x8D36BaC540C57dBd009eA9d9D8CDF9443A83E3f6",
+      "created": 1676015039,
+      "choice": 2,
+      "vp": 2,
+      "reason": ""
+    },
+    {
+      "id": "0xecd25b3376b3dc709212b2ee73599651b8787edde638af64769b188b5daf47bd",
+      "proposal": {
+        "id": "0xb0e453ea7a3a53a4613804c8a6e350f91665d31af3a89c6cc922e965f029d388"
+      },
+      "voter": "0x41CB654D1F47913ACAB158a8199191D160DAbe4A",
+      "created": 1675982865,
+      "choice": 2,
+      "vp": 9,
+      "reason": ""
+    },
+    {
+      "id": "0x92b1eefb24763198f3b6f4690b74f7ef7af3017fde28a64a2c9909d7f1910c96",
+      "proposal": {
+        "id": "0xb0e453ea7a3a53a4613804c8a6e350f91665d31af3a89c6cc922e965f029d388"
+      },
+      "voter": "0xEDc1a397589A0236C4810883b7d559288a5Fe7e1",
+      "created": 1675903815,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0x61f40c5e244833b6766d5d34937a8713e9834f7c8f0f627f977da7a4043e9105",
+      "proposal": {
+        "id": "0xb0e453ea7a3a53a4613804c8a6e350f91665d31af3a89c6cc922e965f029d388"
+      },
+      "voter": "0xFA2930a9d96e91B0A7e78d9fEBB7A8c744afD0da",
+      "created": 1675899669,
+      "choice": 1,
+      "vp": 3,
+      "reason": ""
+    },
+    {
+      "id": "0x2b8abcaa21ea556a2713f7993dcdd4ee7c5fa22c0a56ac0b35ea0e09466e3e74",
+      "proposal": {
+        "id": "0xb0e453ea7a3a53a4613804c8a6e350f91665d31af3a89c6cc922e965f029d388"
+      },
+      "voter": "0x5451348C4EbD5F9816c19725972FF40eC23F14BC",
+      "created": 1675897486,
+      "choice": 1,
+      "vp": 6,
+      "reason": ""
+    },
+    {
+      "id": "0xa89a7ccf394ac7cb568a126a03a1568d03ec343ffa3f4e5343ff51ceb59f2e77",
+      "proposal": {
+        "id": "0xb0e453ea7a3a53a4613804c8a6e350f91665d31af3a89c6cc922e965f029d388"
+      },
+      "voter": "0x223460f2D3CB8c199CFCac7e5E32897F46EA3732",
+      "created": 1675897436,
+      "choice": 1,
+      "vp": 16,
+      "reason": ""
+    },
+    {
+      "id": "0x7cf813fc4aab71a496b2b403f725cb6d0827195d550db060ec56075cc3a301c1",
+      "proposal": {
+        "id": "0xb0e453ea7a3a53a4613804c8a6e350f91665d31af3a89c6cc922e965f029d388"
+      },
+      "voter": "0xcbfb27341D60206a9C5aE92da97202077BCf450F",
+      "created": 1675890064,
+      "choice": 2,
+      "vp": 8,
+      "reason": ""
+    },
+    {
+      "id": "0x73c62dd86baaf1a56d7783e75c2506e8c8f87221d374fc29a4b73cff13f5c164",
+      "proposal": {
+        "id": "0xb0e453ea7a3a53a4613804c8a6e350f91665d31af3a89c6cc922e965f029d388"
+      },
+      "voter": "0xdfB6ed808fADddAd9154F5605E349fFF96E3d939",
+      "created": 1675871485,
+      "choice": 1,
+      "vp": 20,
+      "reason": ""
+    },
+    {
+      "id": "0x66218d86db3c6d536dd5ee74d1a330cd4d251055753b4c9d472bf4645eb28349",
+      "proposal": {
+        "id": "0xb0e453ea7a3a53a4613804c8a6e350f91665d31af3a89c6cc922e965f029d388"
+      },
+      "voter": "0xdD8b916DE8C2ECEe69cEB1908163613f24D3C77A",
+      "created": 1675832341,
+      "choice": 1,
+      "vp": 1,
+      "reason": "Writing music for DAO funded skate videos is the convergence of all the timestreams of my life and I want this to be a thing BADLY."
+    },
+    {
+      "id": "0xd793ed49475ec88aeb6e9a35a0d145c4009fba3470cb65f2db66177989ac648f",
+      "proposal": {
+        "id": "0xb0e453ea7a3a53a4613804c8a6e350f91665d31af3a89c6cc922e965f029d388"
+      },
+      "voter": "0x4fc1b98F87764aCb52C2237Defa48B07F55A86a8",
+      "created": 1675828651,
+      "choice": 1,
+      "vp": 3,
+      "reason": ""
+    },
+    {
+      "id": "0xedde2422b80bcb5fd2f819989a1e45cc94889da60efb2f4f308f52ddda0e7576",
+      "proposal": {
+        "id": "0xb0e453ea7a3a53a4613804c8a6e350f91665d31af3a89c6cc922e965f029d388"
+      },
+      "voter": "0x2422011F4e0b66F5B78f5fCD6A80203ee57A3259",
+      "created": 1675814395,
+      "choice": 2,
+      "vp": 28,
+      "reason": ""
+    }
+  ]
+}

@@ -1,0 +1,259 @@
+{
+  "fetched_at": "2026-03-22T03:47:57.353996Z",
+  "proposal_id": "0xf9d1ed89fff9a329cb4fb25771215836f3f2ce985a086115cfe4f34ea6ef0d5c",
+  "records": [
+    {
+      "id": "0x53f64267e35ba25b880eb152acbdd897a70e9987d50cf574ef600331c38feb57",
+      "proposal": {
+        "id": "0xf9d1ed89fff9a329cb4fb25771215836f3f2ce985a086115cfe4f34ea6ef0d5c"
+      },
+      "voter": "0xdcf37d8Aa17142f053AAA7dc56025aB00D897a19",
+      "created": 1681226937,
+      "choice": 1,
+      "vp": 14,
+      "reason": ""
+    },
+    {
+      "id": "0x53d29fdd01b8873c5c51d5ba399e71cb12c723a83b08bc95d1be24080a866d9a",
+      "proposal": {
+        "id": "0xf9d1ed89fff9a329cb4fb25771215836f3f2ce985a086115cfe4f34ea6ef0d5c"
+      },
+      "voter": "0x05e189E1BbaF77f1654F0983872fd938AE592eDD",
+      "created": 1681217462,
+      "choice": 1,
+      "vp": 181,
+      "reason": "Love everything that TG/collective are doing, but agree that we should probably reconsider daily drops for the time being"
+    },
+    {
+      "id": "0xee387304503f0b13dd17308720c22189762bb2986e180d3df10af63ad693b385",
+      "proposal": {
+        "id": "0xf9d1ed89fff9a329cb4fb25771215836f3f2ce985a086115cfe4f34ea6ef0d5c"
+      },
+      "voter": "0x1ab45ce3B5DC9aB6F337DAe1B886d7e54f167303",
+      "created": 1681217154,
+      "choice": 1,
+      "vp": 2,
+      "reason": ""
+    },
+    {
+      "id": "0x016b7ee4acf2425be2d835a12e2a9ff274de660dab1ac6a4a60fbc1f09870306",
+      "proposal": {
+        "id": "0xf9d1ed89fff9a329cb4fb25771215836f3f2ce985a086115cfe4f34ea6ef0d5c"
+      },
+      "voter": "0x8d028DC71B347268d439432349B55Bc27989851E",
+      "created": 1681199754,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0x330a82cb507235d02c5079e849f2c38d59e8360fe52ab60b7274b78bf7911927",
+      "proposal": {
+        "id": "0xf9d1ed89fff9a329cb4fb25771215836f3f2ce985a086115cfe4f34ea6ef0d5c"
+      },
+      "voter": "0x8D36BaC540C57dBd009eA9d9D8CDF9443A83E3f6",
+      "created": 1681192925,
+      "choice": 2,
+      "vp": 5,
+      "reason": "Following Juxton here"
+    },
+    {
+      "id": "0x5fdc8dc08288ceb0abaacdb59cd4837a5d1bcb525f2fc734e0ab98d4269ed9c6",
+      "proposal": {
+        "id": "0xf9d1ed89fff9a329cb4fb25771215836f3f2ce985a086115cfe4f34ea6ef0d5c"
+      },
+      "voter": "0x069Da1bad547d67AbF26C42358d3A6A8A78dECa0",
+      "created": 1681160387,
+      "choice": 2,
+      "vp": 78,
+      "reason": "Bootstrapping the concept was one thing, but this needs to be autonomous now. Make recipients pay gas or mint in blocks at low tide...."
+    },
+    {
+      "id": "0x327849b7957dca91f2796df7fbc52a1a478a734693feff12a00994ec2305d7bc",
+      "proposal": {
+        "id": "0xf9d1ed89fff9a329cb4fb25771215836f3f2ce985a086115cfe4f34ea6ef0d5c"
+      },
+      "voter": "0x7b13c2F7AaA8C772Bd0a13A86B0CF633fAf790B0",
+      "created": 1681157074,
+      "choice": 1,
+      "vp": 9,
+      "reason": ""
+    },
+    {
+      "id": "0xfad274f4e0ce62647880310346d7a5ea29bce2b586ac17a468fe5b27eb79cab2",
+      "proposal": {
+        "id": "0xf9d1ed89fff9a329cb4fb25771215836f3f2ce985a086115cfe4f34ea6ef0d5c"
+      },
+      "voter": "0x761b4763a572010f96Ed7c22011D0C95E2b36693",
+      "created": 1681140205,
+      "choice": 1,
+      "vp": 11,
+      "reason": "Voting for cause I love thatsgnar.ly but expect more transparency with the community regarding costs, ideas, future plans and updates!"
+    },
+    {
+      "id": "0xbff1a653a6841bec266f4b65b15eabcac1a3d0d8fc4eb12fcc67ad37fbbd6a94",
+      "proposal": {
+        "id": "0xf9d1ed89fff9a329cb4fb25771215836f3f2ce985a086115cfe4f34ea6ef0d5c"
+      },
+      "voter": "0x41CB654D1F47913ACAB158a8199191D160DAbe4A",
+      "created": 1681137205,
+      "choice": 3,
+      "vp": 16,
+      "reason": "I think thatsgnarly should present in a better view the costs and benefits for the community on this proposal, althugh I want thatsgnarly on"
+    },
+    {
+      "id": "0x4cfd9a4d3f4d6fa2fadf1eb06b0a90fbf8d2605cef5f1fa597545934d0d7828f",
+      "proposal": {
+        "id": "0xf9d1ed89fff9a329cb4fb25771215836f3f2ce985a086115cfe4f34ea6ef0d5c"
+      },
+      "voter": "0x376E451F04863508A7dCE0B993354520e9acEe71",
+      "created": 1681126754,
+      "choice": 1,
+      "vp": 5,
+      "reason": ""
+    },
+    {
+      "id": "0xb1cebe3e407a5154237958b3659c3c3123d537ba070e8e5c5fd8269515d5cef9",
+      "proposal": {
+        "id": "0xf9d1ed89fff9a329cb4fb25771215836f3f2ce985a086115cfe4f34ea6ef0d5c"
+      },
+      "voter": "0x4A39aE081678f3D4ABbFbd50b3034580B8bAF48A",
+      "created": 1681118671,
+      "choice": 2,
+      "vp": 58,
+      "reason": "I would like a larger community discussion around cadence for drops + strategy. 1 day is too short (and $) imo + needs sustainable model"
+    },
+    {
+      "id": "0x07502762146f68b6ecc5c8e4da9c3831759a1badd67f84cf9f8942786e06d487",
+      "proposal": {
+        "id": "0xf9d1ed89fff9a329cb4fb25771215836f3f2ce985a086115cfe4f34ea6ef0d5c"
+      },
+      "voter": "0xC23274347e8Aa82d363140d3cefb71Ff588EfFed",
+      "created": 1681098630,
+      "choice": 1,
+      "vp": 12,
+      "reason": ""
+    },
+    {
+      "id": "0x8edee7d9c2f65c55b2b7ed7eb29a7cc8d998a975410dc7917971b4f7221bbaa2",
+      "proposal": {
+        "id": "0xf9d1ed89fff9a329cb4fb25771215836f3f2ce985a086115cfe4f34ea6ef0d5c"
+      },
+      "voter": "0xFA2930a9d96e91B0A7e78d9fEBB7A8c744afD0da",
+      "created": 1681096566,
+      "choice": 1,
+      "vp": 5,
+      "reason": ""
+    },
+    {
+      "id": "0x1349b78785d3edbeb6ae6371a681261d4378de03c07316f0050a3109887e2210",
+      "proposal": {
+        "id": "0xf9d1ed89fff9a329cb4fb25771215836f3f2ce985a086115cfe4f34ea6ef0d5c"
+      },
+      "voter": "0xD9e424871cdf9cA51FCdaf694495c00Aa39ceF4b",
+      "created": 1681089760,
+      "choice": 1,
+      "vp": 12,
+      "reason": ""
+    },
+    {
+      "id": "0x77196a44fc2bce2b012aa5ab291b46c1335341ba6a68f4bb1d84ea51b1aae0aa",
+      "proposal": {
+        "id": "0xf9d1ed89fff9a329cb4fb25771215836f3f2ce985a086115cfe4f34ea6ef0d5c"
+      },
+      "voter": "0x6fB5d14b61e595e6f34BAF952c5d3e60e45883b0",
+      "created": 1681063290,
+      "choice": 1,
+      "vp": 2,
+      "reason": ""
+    },
+    {
+      "id": "0xa964a9cfa2be364184cc629c2e7da04d1c9e14f2b3984d68f02e0d2486e2c983",
+      "proposal": {
+        "id": "0xf9d1ed89fff9a329cb4fb25771215836f3f2ce985a086115cfe4f34ea6ef0d5c"
+      },
+      "voter": "0xdfB6ed808fADddAd9154F5605E349fFF96E3d939",
+      "created": 1681008758,
+      "choice": 1,
+      "vp": 18,
+      "reason": ""
+    },
+    {
+      "id": "0x50afb58b009a4e81ba3b5477a117548423f6fa6c4be67b77b3ae76d7bec3a381",
+      "proposal": {
+        "id": "0xf9d1ed89fff9a329cb4fb25771215836f3f2ce985a086115cfe4f34ea6ef0d5c"
+      },
+      "voter": "0x05A1ff0a32bc24265BCB39499d0c5D9A6cb2011c",
+      "created": 1681006342,
+      "choice": 1,
+      "vp": 6,
+      "reason": ""
+    },
+    {
+      "id": "0x2ecfe99347b4a2eb6dab47b50b8d44a999ac9b753c23b72fcc14f103d6df0314",
+      "proposal": {
+        "id": "0xf9d1ed89fff9a329cb4fb25771215836f3f2ce985a086115cfe4f34ea6ef0d5c"
+      },
+      "voter": "0x387a161C6b25aA854100aBaED39274e51aaffffd",
+      "created": 1681002452,
+      "choice": 1,
+      "vp": 161,
+      "reason": ""
+    },
+    {
+      "id": "0x2deb35e72bd5120860e8d483c4c68bb1b99305bc932b6f42d75c88b24a1c8070",
+      "proposal": {
+        "id": "0xf9d1ed89fff9a329cb4fb25771215836f3f2ce985a086115cfe4f34ea6ef0d5c"
+      },
+      "voter": "0x9C87A1065994f156f0B7b87AAa8B3c5F7BD67E02",
+      "created": 1680997618,
+      "choice": 1,
+      "vp": 36,
+      "reason": ""
+    },
+    {
+      "id": "0x5b55322f28f4ed728696bc1a3aa01bdb7070d4e8b34c6b9ad99b20652e0f8c82",
+      "proposal": {
+        "id": "0xf9d1ed89fff9a329cb4fb25771215836f3f2ce985a086115cfe4f34ea6ef0d5c"
+      },
+      "voter": "0xD082cC50Db08B028fc12726861d5F260a786777e",
+      "created": 1680981577,
+      "choice": 2,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0xc1fc61f02b94dfcfbd371c1a40334fe351460705c5f8aa96e697a8d76d385b44",
+      "proposal": {
+        "id": "0xf9d1ed89fff9a329cb4fb25771215836f3f2ce985a086115cfe4f34ea6ef0d5c"
+      },
+      "voter": "0x3994537274f3fF3eefc413E0D669b05D6446D46b",
+      "created": 1680978983,
+      "choice": 1,
+      "vp": 2,
+      "reason": ""
+    },
+    {
+      "id": "0x54cf9ee09838dd54dd7abe13845f557d70aa4b0434d8df763b829dc478947275",
+      "proposal": {
+        "id": "0xf9d1ed89fff9a329cb4fb25771215836f3f2ce985a086115cfe4f34ea6ef0d5c"
+      },
+      "voter": "0x0f7341C76bA4460736ABec4f65a1953E824658cc",
+      "created": 1680978034,
+      "choice": 1,
+      "vp": 70,
+      "reason": "https://discord.com/channels/928811922244137020/946651532630310942/1094325734484480030"
+    },
+    {
+      "id": "0x097d80b9ad95ca1104c473377ec754257d0ae709c737e46a01f66d7b339ec6a8",
+      "proposal": {
+        "id": "0xf9d1ed89fff9a329cb4fb25771215836f3f2ce985a086115cfe4f34ea6ef0d5c"
+      },
+      "voter": "0x09E938E239803C78507AbD5687A97acFeA1188ea",
+      "created": 1680977566,
+      "choice": 1,
+      "vp": 9,
+      "reason": ""
+    }
+  ]
+}

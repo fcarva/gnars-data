@@ -1,0 +1,248 @@
+{
+  "fetched_at": "2026-03-22T03:48:17.974512Z",
+  "proposal_id": "0x54e14b3264825ebb86ab43768c279431aa83f6e480a86d5bff3341c42feeb4bb",
+  "records": [
+    {
+      "id": "0xb8b58e318ab057c3e9973cee4668211b0a89d482ab3b3c902de07dd38756c621",
+      "proposal": {
+        "id": "0x54e14b3264825ebb86ab43768c279431aa83f6e480a86d5bff3341c42feeb4bb"
+      },
+      "voter": "0x05e189E1BbaF77f1654F0983872fd938AE592eDD",
+      "created": 1672704525,
+      "choice": 1,
+      "vp": 114,
+      "reason": ""
+    },
+    {
+      "id": "0xc504653519f8b53f45b9869b861c564edd8ae2cb6e186e372d067c6793d4f1a7",
+      "proposal": {
+        "id": "0x54e14b3264825ebb86ab43768c279431aa83f6e480a86d5bff3341c42feeb4bb"
+      },
+      "voter": "0xe5789546C0f763f200600B370bA6E7F2ca9dC13b",
+      "created": 1672701915,
+      "choice": 2,
+      "vp": 40,
+      "reason": ""
+    },
+    {
+      "id": "0x12cf2229f44d6d60e05e01b81f5806b91cf8cf0af41d89ad74b612b56c2e537f",
+      "proposal": {
+        "id": "0x54e14b3264825ebb86ab43768c279431aa83f6e480a86d5bff3341c42feeb4bb"
+      },
+      "voter": "0x1F5df4Cd792DC3b7B19b6545d7cb33D73531d8C5",
+      "created": 1672701843,
+      "choice": 2,
+      "vp": 59,
+      "reason": ""
+    },
+    {
+      "id": "0xd772019acee7d4db14a88f88d42575b59d72d84bd296aeee4c745c5934a69cc5",
+      "proposal": {
+        "id": "0x54e14b3264825ebb86ab43768c279431aa83f6e480a86d5bff3341c42feeb4bb"
+      },
+      "voter": "0x387a161C6b25aA854100aBaED39274e51aaffffd",
+      "created": 1672701550,
+      "choice": 1,
+      "vp": 131,
+      "reason": ""
+    },
+    {
+      "id": "0xae7e385aa6eb95a1535970a9d816c6899a4a9ecadde404482992ed29342aef63",
+      "proposal": {
+        "id": "0x54e14b3264825ebb86ab43768c279431aa83f6e480a86d5bff3341c42feeb4bb"
+      },
+      "voter": "0x9C87A1065994f156f0B7b87AAa8B3c5F7BD67E02",
+      "created": 1672698615,
+      "choice": 1,
+      "vp": 30,
+      "reason": ""
+    },
+    {
+      "id": "0x76852434936ab69ee801f3442642d3b3a05dbdcc0b806af9ba10e0f2ae67c0db",
+      "proposal": {
+        "id": "0x54e14b3264825ebb86ab43768c279431aa83f6e480a86d5bff3341c42feeb4bb"
+      },
+      "voter": "0x61A05528286Dc4693Be907bE3c9efbd2742a88E4",
+      "created": 1672696673,
+      "choice": 2,
+      "vp": 50,
+      "reason": ""
+    },
+    {
+      "id": "0x78fefea00543025585a5ab59e0e9cf19964d5d14c0ce28f5bbd3bb0d9b1fab55",
+      "proposal": {
+        "id": "0x54e14b3264825ebb86ab43768c279431aa83f6e480a86d5bff3341c42feeb4bb"
+      },
+      "voter": "0xFee57F81b3803e24fd74B995053CC8c24e8069BB",
+      "created": 1672696486,
+      "choice": 2,
+      "vp": 6,
+      "reason": ""
+    },
+    {
+      "id": "0x07b2161b42b4ab63da4ef06d4962cdbb8632962b462b469e5642fb4e4b2dcdfe",
+      "proposal": {
+        "id": "0x54e14b3264825ebb86ab43768c279431aa83f6e480a86d5bff3341c42feeb4bb"
+      },
+      "voter": "0xf5a4e981BC48d47a4bc33aCf485423Ce3057DBB1",
+      "created": 1672695758,
+      "choice": 1,
+      "vp": 16,
+      "reason": ""
+    },
+    {
+      "id": "0xdac324c168133785f0a4e39edb4c20ecb6bb48bf1d858b0da609543f1dfc2c86",
+      "proposal": {
+        "id": "0x54e14b3264825ebb86ab43768c279431aa83f6e480a86d5bff3341c42feeb4bb"
+      },
+      "voter": "0x56b6DcDDD5d96535c35B720C96E19939920544D8",
+      "created": 1672692459,
+      "choice": 1,
+      "vp": 185,
+      "reason": "While significant draw on treasury, could be a powerful opportunity to reach into the skiing subculture. More benefit than buying a noun atm"
+    },
+    {
+      "id": "0x7e9ffc33f598e8b6bab8ae56c4b1eed148108e59438380d463fd42817b92e27c",
+      "proposal": {
+        "id": "0x54e14b3264825ebb86ab43768c279431aa83f6e480a86d5bff3341c42feeb4bb"
+      },
+      "voter": "0x4DF4058cDB72c4004aE27fC09243D387F52287f2",
+      "created": 1672689607,
+      "choice": 1,
+      "vp": 29,
+      "reason": ""
+    },
+    {
+      "id": "0x3b1696fd158eb95cad94b15805ff53f629d3dbacb2e8792eabb790b4fe189cd1",
+      "proposal": {
+        "id": "0x54e14b3264825ebb86ab43768c279431aa83f6e480a86d5bff3341c42feeb4bb"
+      },
+      "voter": "0xa5945dC6972cF17C8abF0a6410a799b94b189bB8",
+      "created": 1672688015,
+      "choice": 1,
+      "vp": 15,
+      "reason": ""
+    },
+    {
+      "id": "0xd8e4a6b3e041320b080bb1ea5d96dcd45e91db3c55e6c7ece24f1485436c6acd",
+      "proposal": {
+        "id": "0x54e14b3264825ebb86ab43768c279431aa83f6e480a86d5bff3341c42feeb4bb"
+      },
+      "voter": "0x2eE0485f71764bcD2062A84d9455688c581B90f8",
+      "created": 1672664712,
+      "choice": 2,
+      "vp": 9,
+      "reason": ""
+    },
+    {
+      "id": "0x6151bbe422cd417e5827dd869d4ad7e1fe19eef78682cde91bb786cad548a27b",
+      "proposal": {
+        "id": "0x54e14b3264825ebb86ab43768c279431aa83f6e480a86d5bff3341c42feeb4bb"
+      },
+      "voter": "0xd5fb864ACfD6BB2f72939f122e89fF7F475924f5",
+      "created": 1672655824,
+      "choice": 2,
+      "vp": 12,
+      "reason": "Too high ask in comparison of delivery imho."
+    },
+    {
+      "id": "0x34787c791b94dfa9b96fec0fb58c78f43dd0a0ed3ce824f1f81884c3f044dcb4",
+      "proposal": {
+        "id": "0x54e14b3264825ebb86ab43768c279431aa83f6e480a86d5bff3341c42feeb4bb"
+      },
+      "voter": "0xdfB6ed808fADddAd9154F5605E349fFF96E3d939",
+      "created": 1672640747,
+      "choice": 1,
+      "vp": 16,
+      "reason": "Mint This Content to Return back 9ETH to treasury"
+    },
+    {
+      "id": "0x182c6f5ee29bb2eeb4ede7cec261c2a21ee0baf2dd81e0331013edc0506e66b2",
+      "proposal": {
+        "id": "0x54e14b3264825ebb86ab43768c279431aa83f6e480a86d5bff3341c42feeb4bb"
+      },
+      "voter": "0xe6ad85ac47E30465067cFb59bbbb4CDC8cA26209",
+      "created": 1672519749,
+      "choice": 1,
+      "vp": 3,
+      "reason": "They have been involved in our community since September. I can't wait for their content. Let's go"
+    },
+    {
+      "id": "0x136c461f34e069e15adfd5d2c8e284215f0aad5a85b7c1e983146539cba02247",
+      "proposal": {
+        "id": "0x54e14b3264825ebb86ab43768c279431aa83f6e480a86d5bff3341c42feeb4bb"
+      },
+      "voter": "0xD6EE64B7E75B906e5428605F88f88FEAfFDf7DFF",
+      "created": 1672518164,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0x44f32de6cd6339e99e9b55f33cdcdd21487a3eec6914f2f70c5bf8cfb6a5bf69",
+      "proposal": {
+        "id": "0x54e14b3264825ebb86ab43768c279431aa83f6e480a86d5bff3341c42feeb4bb"
+      },
+      "voter": "0xDB1CB916373416FC900a8533ce02AFf3faa62cdf",
+      "created": 1672506097,
+      "choice": 2,
+      "vp": 12,
+      "reason": "asking for 14% of the treasury is too much"
+    },
+    {
+      "id": "0xc6d5c702e396f660915ab828baddef5f736c819218fc0dff11af021716a35cfd",
+      "proposal": {
+        "id": "0x54e14b3264825ebb86ab43768c279431aa83f6e480a86d5bff3341c42feeb4bb"
+      },
+      "voter": "0xcB15649D7B7a1eb01fb1ACD14809de6cF82Aa1A0",
+      "created": 1672497824,
+      "choice": 2,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0xab72f9c74748871965e13c7de590fbcf45f4d875203c295ac90fb916913ef1ca",
+      "proposal": {
+        "id": "0x54e14b3264825ebb86ab43768c279431aa83f6e480a86d5bff3341c42feeb4bb"
+      },
+      "voter": "0x865c529F7053ADc50aC9d3efc54D71DB7b28907C",
+      "created": 1672460298,
+      "choice": 1,
+      "vp": 12,
+      "reason": "I like the detail and deliverables of the proposal. Looking forward to seeing what they put out"
+    },
+    {
+      "id": "0x22b9a4612d9db4a2288fc816efeb9ada0a35c2e9c71b4f1f6540ede0bb4742a3",
+      "proposal": {
+        "id": "0x54e14b3264825ebb86ab43768c279431aa83f6e480a86d5bff3341c42feeb4bb"
+      },
+      "voter": "0x10fbc526876D2284a59149Ae221Fc825D0BEECFc",
+      "created": 1672459105,
+      "choice": 2,
+      "vp": 5,
+      "reason": ""
+    },
+    {
+      "id": "0xf9fd2351cb6fb07d54a7f7a5a345b5d24c8098b0c37c8d09b9b007b8b3e45573",
+      "proposal": {
+        "id": "0x54e14b3264825ebb86ab43768c279431aa83f6e480a86d5bff3341c42feeb4bb"
+      },
+      "voter": "0x41CB654D1F47913ACAB158a8199191D160DAbe4A",
+      "created": 1672451285,
+      "choice": 2,
+      "vp": 16,
+      "reason": ""
+    },
+    {
+      "id": "0x57d0590e83327077a28cd196120b1d57f79576f5da0c91a479a8b4c6fb82c641",
+      "proposal": {
+        "id": "0x54e14b3264825ebb86ab43768c279431aa83f6e480a86d5bff3341c42feeb4bb"
+      },
+      "voter": "0x4fc1b98F87764aCb52C2237Defa48B07F55A86a8",
+      "created": 1672446551,
+      "choice": 1,
+      "vp": 3,
+      "reason": ""
+    }
+  ]
+}

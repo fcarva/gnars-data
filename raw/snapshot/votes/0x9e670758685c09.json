@@ -1,0 +1,259 @@
+{
+  "fetched_at": "2026-03-22T03:47:54.137638Z",
+  "proposal_id": "0x9e670758685c096b923e0b9fa65e2e9cd44906983ea78fe73d750d77be7c568c",
+  "records": [
+    {
+      "id": "0xc1fde1c428541babed01a5d70579745f580e53401475990ec27a90f4e956689f",
+      "proposal": {
+        "id": "0x9e670758685c096b923e0b9fa65e2e9cd44906983ea78fe73d750d77be7c568c"
+      },
+      "voter": "0xF0017ADa58130bC15B574fa2CFCA18D36bfdf486",
+      "created": 1683479488,
+      "choice": 1,
+      "vp": 10,
+      "reason": ""
+    },
+    {
+      "id": "0x6b0376732bc9b392f02e733665396abe757db81c75ab1f2193a4f1a0d0e0c8da",
+      "proposal": {
+        "id": "0x9e670758685c096b923e0b9fa65e2e9cd44906983ea78fe73d750d77be7c568c"
+      },
+      "voter": "0x1ab45ce3B5DC9aB6F337DAe1B886d7e54f167303",
+      "created": 1683468589,
+      "choice": 1,
+      "vp": 2,
+      "reason": ""
+    },
+    {
+      "id": "0x1fee99c8648456781d4f4d934b7a802bff1dde325ba7a1e107de5bf602ccd1f9",
+      "proposal": {
+        "id": "0x9e670758685c096b923e0b9fa65e2e9cd44906983ea78fe73d750d77be7c568c"
+      },
+      "voter": "0xe5789546C0f763f200600B370bA6E7F2ca9dC13b",
+      "created": 1683440769,
+      "choice": 1,
+      "vp": 24,
+      "reason": ""
+    },
+    {
+      "id": "0x1086392c952ca685cbf098469f2789675afcf48787dc31ca967fa152b3784984",
+      "proposal": {
+        "id": "0x9e670758685c096b923e0b9fa65e2e9cd44906983ea78fe73d750d77be7c568c"
+      },
+      "voter": "0x6d37016914C5a10B9f23d8a9265c4dcf888CEE24",
+      "created": 1683440682,
+      "choice": 1,
+      "vp": 10,
+      "reason": ""
+    },
+    {
+      "id": "0x845ef534a8cbef5d6bce234ab2cba92f57f0ac29cbacce760b706689674a3245",
+      "proposal": {
+        "id": "0x9e670758685c096b923e0b9fa65e2e9cd44906983ea78fe73d750d77be7c568c"
+      },
+      "voter": "0xD9e424871cdf9cA51FCdaf694495c00Aa39ceF4b",
+      "created": 1683424994,
+      "choice": 1,
+      "vp": 12,
+      "reason": ""
+    },
+    {
+      "id": "0xc83775cdefa4340d4ea056685f89ee860bd58985e69418f71ee6b96795c5e175",
+      "proposal": {
+        "id": "0x9e670758685c096b923e0b9fa65e2e9cd44906983ea78fe73d750d77be7c568c"
+      },
+      "voter": "0xC2Ac616CD641c3beA429f5C5aAa855FAF254945b",
+      "created": 1683418365,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0x25d30a8734e060b495b9b58c3c445762ac395fcb8244871fa3e182eb18391353",
+      "proposal": {
+        "id": "0x9e670758685c096b923e0b9fa65e2e9cd44906983ea78fe73d750d77be7c568c"
+      },
+      "voter": "0x4322d6B24BdA8AF69dD1014C4F29138F6D794aDA",
+      "created": 1683417243,
+      "choice": 1,
+      "vp": 23,
+      "reason": ""
+    },
+    {
+      "id": "0x38a85ed3fb1a5d0806dd702169485fba442d5f8725d0bfedb36d2f998d0d5a51",
+      "proposal": {
+        "id": "0x9e670758685c096b923e0b9fa65e2e9cd44906983ea78fe73d750d77be7c568c"
+      },
+      "voter": "0xdcf37d8Aa17142f053AAA7dc56025aB00D897a19",
+      "created": 1683392895,
+      "choice": 1,
+      "vp": 124,
+      "reason": ""
+    },
+    {
+      "id": "0x0697d83fe28a561f6d4f5141e989624e16adc1c8209a03142ef48fac4e906db6",
+      "proposal": {
+        "id": "0x9e670758685c096b923e0b9fa65e2e9cd44906983ea78fe73d750d77be7c568c"
+      },
+      "voter": "0x3Ca92d91D27Cf725c0FD3C3929e8f5F8C56424eb",
+      "created": 1683385556,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0xadbc73ab2dad938f4befbf463d4dd7a077ef77dd22ee2ef1503d1a0cf3cc76ac",
+      "proposal": {
+        "id": "0x9e670758685c096b923e0b9fa65e2e9cd44906983ea78fe73d750d77be7c568c"
+      },
+      "voter": "0x27D14099f3B38A08f8767CCF306737da113a38a6",
+      "created": 1683380558,
+      "choice": 1,
+      "vp": 3,
+      "reason": ""
+    },
+    {
+      "id": "0xbbac3dfa98b41136ff7b4036d762a3893ec722e3deec339a9b76e513e385ba23",
+      "proposal": {
+        "id": "0x9e670758685c096b923e0b9fa65e2e9cd44906983ea78fe73d750d77be7c568c"
+      },
+      "voter": "0xD082cC50Db08B028fc12726861d5F260a786777e",
+      "created": 1683376236,
+      "choice": 1,
+      "vp": 3,
+      "reason": ""
+    },
+    {
+      "id": "0xa0d0b40d7156ce4d483452acdd38944afb1624c1e187c674f007f3f8ffb05ffb",
+      "proposal": {
+        "id": "0x9e670758685c096b923e0b9fa65e2e9cd44906983ea78fe73d750d77be7c568c"
+      },
+      "voter": "0x2afA497b8f33AF62e3003B0FE87009182f0Dd89C",
+      "created": 1683350135,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0x295f5414b91101b383da63d386eeedb46fa414d7dbcff03c9fd57583d39b9a29",
+      "proposal": {
+        "id": "0x9e670758685c096b923e0b9fa65e2e9cd44906983ea78fe73d750d77be7c568c"
+      },
+      "voter": "0x7c621d5954a4AC21A0fd741ab6f302398F29d644",
+      "created": 1683342150,
+      "choice": 1,
+      "vp": 174,
+      "reason": ""
+    },
+    {
+      "id": "0x7b82597f9ad733dd1238a2088147f5b5b1dc3fc43f2bd61aded0e0949649381a",
+      "proposal": {
+        "id": "0x9e670758685c096b923e0b9fa65e2e9cd44906983ea78fe73d750d77be7c568c"
+      },
+      "voter": "0xFA2930a9d96e91B0A7e78d9fEBB7A8c744afD0da",
+      "created": 1683337788,
+      "choice": 1,
+      "vp": 3,
+      "reason": ""
+    },
+    {
+      "id": "0x49c598e1ed96e60b121725bee6ec0f6d2386071f65fe1cc8703ebc79e6fbb980",
+      "proposal": {
+        "id": "0x9e670758685c096b923e0b9fa65e2e9cd44906983ea78fe73d750d77be7c568c"
+      },
+      "voter": "0x2422011F4e0b66F5B78f5fCD6A80203ee57A3259",
+      "created": 1683323699,
+      "choice": 1,
+      "vp": 18,
+      "reason": ""
+    },
+    {
+      "id": "0x3305d3cd82eb0a015d368ca98796874d564c6fcf72525aa5683bbd0405c6a05d",
+      "proposal": {
+        "id": "0x9e670758685c096b923e0b9fa65e2e9cd44906983ea78fe73d750d77be7c568c"
+      },
+      "voter": "0x2473FB8eEBE46041d5F528A728505C26A81C1158",
+      "created": 1683317864,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0x6d0d50b29a9d1abf9d1b3dc414797d3703162d25c896289dcfff90935fc57a15",
+      "proposal": {
+        "id": "0x9e670758685c096b923e0b9fa65e2e9cd44906983ea78fe73d750d77be7c568c"
+      },
+      "voter": "0x568f888E808621bDe2F8f6511BFcF952732AE70C",
+      "created": 1683305296,
+      "choice": 1,
+      "vp": 2,
+      "reason": ""
+    },
+    {
+      "id": "0xfce47e825117b6048abf171f55f90f098b4acc1a4e2d6d163350f45b5bc127fd",
+      "proposal": {
+        "id": "0x9e670758685c096b923e0b9fa65e2e9cd44906983ea78fe73d750d77be7c568c"
+      },
+      "voter": "0x41CB654D1F47913ACAB158a8199191D160DAbe4A",
+      "created": 1683296365,
+      "choice": 1,
+      "vp": 21,
+      "reason": ""
+    },
+    {
+      "id": "0xc4877a049f617f26e51ba87c25726b8be845ebbdeca7373ec0c279a38c197f58",
+      "proposal": {
+        "id": "0x9e670758685c096b923e0b9fa65e2e9cd44906983ea78fe73d750d77be7c568c"
+      },
+      "voter": "0x8Ea37E1f12F99c067e60b5fc080917B27CfC1846",
+      "created": 1683294808,
+      "choice": 1,
+      "vp": 1,
+      "reason": "The best prposal I've read here. Love how it incentivizes buying NFTs. "
+    },
+    {
+      "id": "0x980afb51c432fc1892a8055a53223b6f8c1a5b40282ad48bb79bf4676fc43c03",
+      "proposal": {
+        "id": "0x9e670758685c096b923e0b9fa65e2e9cd44906983ea78fe73d750d77be7c568c"
+      },
+      "voter": "0xDdB4938755C243a4f60a2f2f8f95dF4F894c58Cc",
+      "created": 1683293397,
+      "choice": 1,
+      "vp": 5,
+      "reason": ""
+    },
+    {
+      "id": "0xb2781955da25656e2d349c07ee1d9509048b3d67fb14f6a38c11f2b27eba565b",
+      "proposal": {
+        "id": "0x9e670758685c096b923e0b9fa65e2e9cd44906983ea78fe73d750d77be7c568c"
+      },
+      "voter": "0x761b4763a572010f96Ed7c22011D0C95E2b36693",
+      "created": 1683292462,
+      "choice": 1,
+      "vp": 9,
+      "reason": ""
+    },
+    {
+      "id": "0x5eafa773a44358085b02e62e7eea0f5369a3e06a734b68ef49bacf646c344dbf",
+      "proposal": {
+        "id": "0x9e670758685c096b923e0b9fa65e2e9cd44906983ea78fe73d750d77be7c568c"
+      },
+      "voter": "0xA9812354a4938d3b574AaD43354D4188F0AEE062",
+      "created": 1683286015,
+      "choice": 1,
+      "vp": 1,
+      "reason": "Surfguru is a great friend of surf, nature and web3, i have certainly that will do a good job"
+    },
+    {
+      "id": "0x358d1db53fb293a876884d90e3578fca9b49c63305bd1297814835b50dd8ed3a",
+      "proposal": {
+        "id": "0x9e670758685c096b923e0b9fa65e2e9cd44906983ea78fe73d750d77be7c568c"
+      },
+      "voter": "0xFc27B375fAf1FBd3F3462044Cf810082F042a45B",
+      "created": 1683284223,
+      "choice": 1,
+      "vp": 2,
+      "reason": ""
+    }
+  ]
+}

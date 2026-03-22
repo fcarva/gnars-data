@@ -1,0 +1,127 @@
+{
+  "fetched_at": "2026-03-22T03:47:49.441170Z",
+  "proposal_id": "0x872bfadf89dee5dcea47992b94ebff05bd24dcf9a02d3e5daac50b2ff48eb90b",
+  "records": [
+    {
+      "id": "0x5c8229d5ae2c28ad3f18dc09410081b88ce6359968480ce0bf267f8988954bb9",
+      "proposal": {
+        "id": "0x872bfadf89dee5dcea47992b94ebff05bd24dcf9a02d3e5daac50b2ff48eb90b"
+      },
+      "voter": "0x223460f2D3CB8c199CFCac7e5E32897F46EA3732",
+      "created": 1686242154,
+      "choice": 2,
+      "vp": 8,
+      "reason": ""
+    },
+    {
+      "id": "0x10385ce38c9203c8f673dbc46df42a56190a3f65935f8307782e1d2ce0380da8",
+      "proposal": {
+        "id": "0x872bfadf89dee5dcea47992b94ebff05bd24dcf9a02d3e5daac50b2ff48eb90b"
+      },
+      "voter": "0x64c4Bffb220818F0f2ee6DAe7A2F17D92b359c5d",
+      "created": 1686232246,
+      "choice": 2,
+      "vp": 33,
+      "reason": ""
+    },
+    {
+      "id": "0x5bec2d813140e9d1840fdb2ff3399b75702dbcb1d071bb031025bee508db22cf",
+      "proposal": {
+        "id": "0x872bfadf89dee5dcea47992b94ebff05bd24dcf9a02d3e5daac50b2ff48eb90b"
+      },
+      "voter": "0xed727248627fda303a1794F5da747215B6314330",
+      "created": 1686224821,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0x602d01f9bfcc25cb377ccc48b096ab67ac9e0078910a864b8fdd539054f2c166",
+      "proposal": {
+        "id": "0x872bfadf89dee5dcea47992b94ebff05bd24dcf9a02d3e5daac50b2ff48eb90b"
+      },
+      "voter": "0x56b6DcDDD5d96535c35B720C96E19939920544D8",
+      "created": 1686209601,
+      "choice": 1,
+      "vp": 148,
+      "reason": ""
+    },
+    {
+      "id": "0x12e7596b07cfa1018472597240bb99712502d319a2fd30beb53885161636a877",
+      "proposal": {
+        "id": "0x872bfadf89dee5dcea47992b94ebff05bd24dcf9a02d3e5daac50b2ff48eb90b"
+      },
+      "voter": "0x7c621d5954a4AC21A0fd741ab6f302398F29d644",
+      "created": 1686197306,
+      "choice": 1,
+      "vp": 207,
+      "reason": "pixelord has 108k followers, we only need 166 mints to break even at a 60% split, so if 0.15% of his followers mint, we gucci."
+    },
+    {
+      "id": "0x18a529ba9ea566dd174deb2abde839a05c0a5db5439da8c4fd9ce3e961a032d6",
+      "proposal": {
+        "id": "0x872bfadf89dee5dcea47992b94ebff05bd24dcf9a02d3e5daac50b2ff48eb90b"
+      },
+      "voter": "0x09E938E239803C78507AbD5687A97acFeA1188ea",
+      "created": 1686185450,
+      "choice": 3,
+      "vp": 7,
+      "reason": ""
+    },
+    {
+      "id": "0xc78bd9efec89d6110ddda51bcbb18c91c16419f0b4f2f211b3dff1ae71cb9711",
+      "proposal": {
+        "id": "0x872bfadf89dee5dcea47992b94ebff05bd24dcf9a02d3e5daac50b2ff48eb90b"
+      },
+      "voter": "0x6DfDCA1107C5aF4B92948625105e1e87bA9b21b4",
+      "created": 1686167297,
+      "choice": 3,
+      "vp": 1,
+      "reason": "I don't know if this is good or bad"
+    },
+    {
+      "id": "0xd0dbac6b229b2ca731a311e3c03ad4d97b90d7148dfdd444a34f3d729a207d20",
+      "proposal": {
+        "id": "0x872bfadf89dee5dcea47992b94ebff05bd24dcf9a02d3e5daac50b2ff48eb90b"
+      },
+      "voter": "0xdfB6ed808fADddAd9154F5605E349fFF96E3d939",
+      "created": 1686106469,
+      "choice": 1,
+      "vp": 18,
+      "reason": "Shred The Nouns"
+    },
+    {
+      "id": "0xa541c3cc2c5113fb5b53982d1075dde3ce7494c6f995c92cde1e9ee69ed3c331",
+      "proposal": {
+        "id": "0x872bfadf89dee5dcea47992b94ebff05bd24dcf9a02d3e5daac50b2ff48eb90b"
+      },
+      "voter": "0xDdB4938755C243a4f60a2f2f8f95dF4F894c58Cc",
+      "created": 1686106173,
+      "choice": 2,
+      "vp": 5,
+      "reason": ""
+    },
+    {
+      "id": "0x220c6a885416833c9a25d9c5f07216633b433922399459d2e4d368ebefd520be",
+      "proposal": {
+        "id": "0x872bfadf89dee5dcea47992b94ebff05bd24dcf9a02d3e5daac50b2ff48eb90b"
+      },
+      "voter": "0x41CB654D1F47913ACAB158a8199191D160DAbe4A",
+      "created": 1686076839,
+      "choice": 2,
+      "vp": 33,
+      "reason": "I think the # of mints goal is too high at this price. So its mathematically risk to invest on it at this treasure moment. "
+    },
+    {
+      "id": "0x309c24ef4f52e3c7167f3f2dcb3072b7d534bbe63ad1b2d06eb18f972a8c149e",
+      "proposal": {
+        "id": "0x872bfadf89dee5dcea47992b94ebff05bd24dcf9a02d3e5daac50b2ff48eb90b"
+      },
+      "voter": "0x535FDa4404cc3C07643F90edF6512D272897088b",
+      "created": 1686067139,
+      "choice": 1,
+      "vp": 2,
+      "reason": ""
+    }
+  ]
+}

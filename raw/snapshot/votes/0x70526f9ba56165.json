@@ -1,0 +1,292 @@
+{
+  "fetched_at": "2026-03-22T03:48:20.905115Z",
+  "proposal_id": "0x70526f9ba5616545ed8de674349307f6a6d671c7f9365552f457598026801d1a",
+  "records": [
+    {
+      "id": "0x419d4ecb8bec870790a690e953ad99656e5c4bbbf9e6c5addcadc1f27b6a7c39",
+      "proposal": {
+        "id": "0x70526f9ba5616545ed8de674349307f6a6d671c7f9365552f457598026801d1a"
+      },
+      "voter": "0xD00530a4530471B11f0337C8138ECA5Ef5e2ed48",
+      "created": 1670523616,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0x0e7a2d5c22c78e2c96eb841025e63b5883d82e923956b1eee39abb0cab1bf6d1",
+      "proposal": {
+        "id": "0x70526f9ba5616545ed8de674349307f6a6d671c7f9365552f457598026801d1a"
+      },
+      "voter": "0x897284cc981D09EF61023D2ab96C5EcFD43e85f4",
+      "created": 1670521772,
+      "choice": 1,
+      "vp": 12,
+      "reason": "i love this"
+    },
+    {
+      "id": "0xa243ef3427922ddd28b318d0c68a8ee7696f46f8f4d25a72226c24a3a3413270",
+      "proposal": {
+        "id": "0x70526f9ba5616545ed8de674349307f6a6d671c7f9365552f457598026801d1a"
+      },
+      "voter": "0x6ab223Aa761e64FCa5e384098f0c91C50c6eC494",
+      "created": 1670454829,
+      "choice": 1,
+      "vp": 7,
+      "reason": ""
+    },
+    {
+      "id": "0x4f442d56d5afc81b2d52bc12043ccfb51748b83bf0fccd6547145ecfc8639699",
+      "proposal": {
+        "id": "0x70526f9ba5616545ed8de674349307f6a6d671c7f9365552f457598026801d1a"
+      },
+      "voter": "0xF0017ADa58130bC15B574fa2CFCA18D36bfdf486",
+      "created": 1670442505,
+      "choice": 1,
+      "vp": 7,
+      "reason": ""
+    },
+    {
+      "id": "0x6c6d91f9b29658ad33c8a8f1e396034b7a1ee5702e4101b74bfc2c54e39e0af3",
+      "proposal": {
+        "id": "0x70526f9ba5616545ed8de674349307f6a6d671c7f9365552f457598026801d1a"
+      },
+      "voter": "0x3C9001bae3f82a0B50197a5EF46B1C5A5a9D5e3B",
+      "created": 1670433273,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0xbdd830a584f487891ebfccc711c7933e88d25ecad9b0b082f8e46b32c3e0020b",
+      "proposal": {
+        "id": "0x70526f9ba5616545ed8de674349307f6a6d671c7f9365552f457598026801d1a"
+      },
+      "voter": "0x4b5F934da25c33F130efC5DF47C91Af1375baA30",
+      "created": 1670382971,
+      "choice": 1,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0x7e08c6361de3ad94257ee91915145e3a2b4e19059ade2b36c997e43f1ab49359",
+      "proposal": {
+        "id": "0x70526f9ba5616545ed8de674349307f6a6d671c7f9365552f457598026801d1a"
+      },
+      "voter": "0x56b6DcDDD5d96535c35B720C96E19939920544D8",
+      "created": 1670365422,
+      "choice": 1,
+      "vp": 180,
+      "reason": "I fucking love hot sauce. Gnars and hot sauce is the sex."
+    },
+    {
+      "id": "0x3eb8da9e53a6ad3655264779a32bd23eaf012828f80fed2d7e68ad347e85eab2",
+      "proposal": {
+        "id": "0x70526f9ba5616545ed8de674349307f6a6d671c7f9365552f457598026801d1a"
+      },
+      "voter": "0xd5fb864ACfD6BB2f72939f122e89fF7F475924f5",
+      "created": 1670315999,
+      "choice": 1,
+      "vp": 11,
+      "reason": "Not sports, but culture! And culture is even important then sports in such a decentralised project! Love it 🤝"
+    },
+    {
+      "id": "0xf4eba86eef78f517945bc47163929e9ea7ab020a3de2b9f0db4a09f3b8035927",
+      "proposal": {
+        "id": "0x70526f9ba5616545ed8de674349307f6a6d671c7f9365552f457598026801d1a"
+      },
+      "voter": "0xdfB6ed808fADddAd9154F5605E349fFF96E3d939",
+      "created": 1670307296,
+      "choice": 1,
+      "vp": 14,
+      "reason": "upnext is gnar sausages"
+    },
+    {
+      "id": "0x4dcc2fed9789999cebba533c36bccfd0b849e1f32a132099999a1e5d82ecea50",
+      "proposal": {
+        "id": "0x70526f9ba5616545ed8de674349307f6a6d671c7f9365552f457598026801d1a"
+      },
+      "voter": "0x1A1c37C145a1EaB58C43F003EBB55C18083b5987",
+      "created": 1670298690,
+      "choice": 1,
+      "vp": 2,
+      "reason": ""
+    },
+    {
+      "id": "0xfa3c7470e003e7bd6138c19e194e117ad591054e4a48ec9828af19699f621264",
+      "proposal": {
+        "id": "0x70526f9ba5616545ed8de674349307f6a6d671c7f9365552f457598026801d1a"
+      },
+      "voter": "0xb8a9Ed8D008FA1F161809f15a11F4161FB8b717e",
+      "created": 1670294605,
+      "choice": 1,
+      "vp": 4,
+      "reason": ""
+    },
+    {
+      "id": "0xf3fc1c35ca8cda88429540e055b89c3f44b49d5731fb67753ed7dcee4735af95",
+      "proposal": {
+        "id": "0x70526f9ba5616545ed8de674349307f6a6d671c7f9365552f457598026801d1a"
+      },
+      "voter": "0x2422011F4e0b66F5B78f5fCD6A80203ee57A3259",
+      "created": 1670294400,
+      "choice": 1,
+      "vp": 27,
+      "reason": "Gnars needs to start building branded products that speak to our target audience. "
+    },
+    {
+      "id": "0xb6c55d1a917bcc052aa6654c8434bdd02309082ebb67e009546e020e13c5e502",
+      "proposal": {
+        "id": "0x70526f9ba5616545ed8de674349307f6a6d671c7f9365552f457598026801d1a"
+      },
+      "voter": "0x8d028DC71B347268d439432349B55Bc27989851E",
+      "created": 1670294051,
+      "choice": 1,
+      "vp": 1,
+      "reason": "sauce sauce sauce"
+    },
+    {
+      "id": "0xb6fe2af2934b045c1e33dc53b46a2280f6f671ad1493110c16f159dff1f8f306",
+      "proposal": {
+        "id": "0x70526f9ba5616545ed8de674349307f6a6d671c7f9365552f457598026801d1a"
+      },
+      "voter": "0x387a161C6b25aA854100aBaED39274e51aaffffd",
+      "created": 1670292426,
+      "choice": 1,
+      "vp": 117,
+      "reason": "love this saucery"
+    },
+    {
+      "id": "0x8b910c7c421ae233a62d17546106d67ecc8a0f77798d065609753781432cef16",
+      "proposal": {
+        "id": "0x70526f9ba5616545ed8de674349307f6a6d671c7f9365552f457598026801d1a"
+      },
+      "voter": "0xcb3ef6Cd3fceC94199Fc9127B9A7c5044e5c758F",
+      "created": 1670286410,
+      "choice": 1,
+      "vp": 12,
+      "reason": ""
+    },
+    {
+      "id": "0x0f511708f8ccd551b1164a860081234aafb4d57baa4f39a3885ea3ad100e2bab",
+      "proposal": {
+        "id": "0x70526f9ba5616545ed8de674349307f6a6d671c7f9365552f457598026801d1a"
+      },
+      "voter": "0x42519C03009D4148179178178980A73006837bd4",
+      "created": 1670286388,
+      "choice": 1,
+      "vp": 34,
+      "reason": ""
+    },
+    {
+      "id": "0x0197b7e28f0e3a577812e42e4a9ed12cd2be9be449f9fd323f58c8b103972cca",
+      "proposal": {
+        "id": "0x70526f9ba5616545ed8de674349307f6a6d671c7f9365552f457598026801d1a"
+      },
+      "voter": "0x61A05528286Dc4693Be907bE3c9efbd2742a88E4",
+      "created": 1670286119,
+      "choice": 1,
+      "vp": 50,
+      "reason": ""
+    },
+    {
+      "id": "0x563db209bdf367c895dc1d1ae8df68348be6e3b3441eb1c64acbd06ec61ed7f9",
+      "proposal": {
+        "id": "0x70526f9ba5616545ed8de674349307f6a6d671c7f9365552f457598026801d1a"
+      },
+      "voter": "0xFee57F81b3803e24fd74B995053CC8c24e8069BB",
+      "created": 1670286098,
+      "choice": 1,
+      "vp": 10,
+      "reason": ""
+    },
+    {
+      "id": "0xa9bc43133ad33212c4153d1b2741715010df33aee67418710e05458e8e8c9b17",
+      "proposal": {
+        "id": "0x70526f9ba5616545ed8de674349307f6a6d671c7f9365552f457598026801d1a"
+      },
+      "voter": "0xcbfb27341D60206a9C5aE92da97202077BCf450F",
+      "created": 1670280881,
+      "choice": 1,
+      "vp": 6,
+      "reason": ""
+    },
+    {
+      "id": "0x4f796d7b973f0669e689309000ac23aab84f0238e006551838427a8c7fae3897",
+      "proposal": {
+        "id": "0x70526f9ba5616545ed8de674349307f6a6d671c7f9365552f457598026801d1a"
+      },
+      "voter": "0x4A39aE081678f3D4ABbFbd50b3034580B8bAF48A",
+      "created": 1670280694,
+      "choice": 1,
+      "vp": 48,
+      "reason": ""
+    },
+    {
+      "id": "0x053edda99b05ed5af681ea3834c3a877533088374e4f825dc19c461293cc8652",
+      "proposal": {
+        "id": "0x70526f9ba5616545ed8de674349307f6a6d671c7f9365552f457598026801d1a"
+      },
+      "voter": "0x069Da1bad547d67AbF26C42358d3A6A8A78dECa0",
+      "created": 1670279954,
+      "choice": 1,
+      "vp": 71,
+      "reason": "gnarsauce™ for all!"
+    },
+    {
+      "id": "0xe4f10511793175cbfa115ed3d6fccb54fc60b390080634f07653efc9adaf4563",
+      "proposal": {
+        "id": "0x70526f9ba5616545ed8de674349307f6a6d671c7f9365552f457598026801d1a"
+      },
+      "voter": "0x0f7341C76bA4460736ABec4f65a1953E824658cc",
+      "created": 1670277091,
+      "choice": 1,
+      "vp": 48,
+      "reason": "Gnars 2767 deserves the fame. And I love the branding concept. Projects like this will help spread the love and speed up the virtuous cycle!"
+    },
+    {
+      "id": "0x1934d54ff36b9d84915b7c49ce9c55b4ee523011beb2519f4354636ac9f6acfa",
+      "proposal": {
+        "id": "0x70526f9ba5616545ed8de674349307f6a6d671c7f9365552f457598026801d1a"
+      },
+      "voter": "0x05e189E1BbaF77f1654F0983872fd938AE592eDD",
+      "created": 1670275110,
+      "choice": 1,
+      "vp": 116,
+      "reason": "Love to see new ideas explored, especially with such a low ask. "
+    },
+    {
+      "id": "0xd0aca58e8738f6348598297b198cba7808faa002a7928a205dd9c2519c63169f",
+      "proposal": {
+        "id": "0x70526f9ba5616545ed8de674349307f6a6d671c7f9365552f457598026801d1a"
+      },
+      "voter": "0x9C87A1065994f156f0B7b87AAa8B3c5F7BD67E02",
+      "created": 1670273971,
+      "choice": 1,
+      "vp": 26,
+      "reason": ""
+    },
+    {
+      "id": "0x43eb73210191d750c0cc9923c6bdca8e21ee8b96467a79e5aac66f375fb10eb7",
+      "proposal": {
+        "id": "0x70526f9ba5616545ed8de674349307f6a6d671c7f9365552f457598026801d1a"
+      },
+      "voter": "0x41CB654D1F47913ACAB158a8199191D160DAbe4A",
+      "created": 1670273493,
+      "choice": 1,
+      "vp": 13,
+      "reason": "I want athlete flavours !"
+    },
+    {
+      "id": "0xf11207b14ec6f27e0b2be3c15c7d772b9dc9ff309e061e6f7aadbef41628839b",
+      "proposal": {
+        "id": "0x70526f9ba5616545ed8de674349307f6a6d671c7f9365552f457598026801d1a"
+      },
+      "voter": "0x761b4763a572010f96Ed7c22011D0C95E2b36693",
+      "created": 1670273135,
+      "choice": 1,
+      "vp": 10,
+      "reason": ""
+    }
+  ]
+}

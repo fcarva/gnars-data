@@ -1,0 +1,94 @@
+{
+  "fetched_at": "2026-03-22T03:47:55.420845Z",
+  "proposal_id": "0xe96f074f0820aa64fda543b6b159339e38d9e94f8cdca3b72c8489ae63014029",
+  "records": [
+    {
+      "id": "0x1aee4f01ed9ef09539e7671f28f19b15643bc02fc0ade369f52906ffb181162d",
+      "proposal": {
+        "id": "0xe96f074f0820aa64fda543b6b159339e38d9e94f8cdca3b72c8489ae63014029"
+      },
+      "voter": "0xEDc1a397589A0236C4810883b7d559288a5Fe7e1",
+      "created": 1682473602,
+      "choice": 1,
+      "vp": 2,
+      "reason": "Ignore what? jajaja"
+    },
+    {
+      "id": "0xccf136552c55a18cd3ab6cee031cfdb82bb3cea0845155d5da034ba4bc9c0ee3",
+      "proposal": {
+        "id": "0xe96f074f0820aa64fda543b6b159339e38d9e94f8cdca3b72c8489ae63014029"
+      },
+      "voter": "0xF0017ADa58130bC15B574fa2CFCA18D36bfdf486",
+      "created": 1682454526,
+      "choice": 1,
+      "vp": 10,
+      "reason": ""
+    },
+    {
+      "id": "0xd1c4cee83af90b1a02035c51057f28fc5342b0ade94a6122b0f4f135a3c36d9f",
+      "proposal": {
+        "id": "0xe96f074f0820aa64fda543b6b159339e38d9e94f8cdca3b72c8489ae63014029"
+      },
+      "voter": "0x0f7341C76bA4460736ABec4f65a1953E824658cc",
+      "created": 1682359044,
+      "choice": 2,
+      "vp": 75,
+      "reason": "I CAN'T IGNORE THIS!! Also seems to be working"
+    },
+    {
+      "id": "0xfc2b76c3ea6fed3bf4e89e49542b2265a5763032827b44668c6d3a96e0f40fe1",
+      "proposal": {
+        "id": "0xe96f074f0820aa64fda543b6b159339e38d9e94f8cdca3b72c8489ae63014029"
+      },
+      "voter": "0x387a161C6b25aA854100aBaED39274e51aaffffd",
+      "created": 1682324144,
+      "choice": 1,
+      "vp": 162,
+      "reason": ""
+    },
+    {
+      "id": "0x050c5bb7b83da8749c00127f9f2bd8420bb2ec646dacf01ff3b3cf7a26b5f6f1",
+      "proposal": {
+        "id": "0xe96f074f0820aa64fda543b6b159339e38d9e94f8cdca3b72c8489ae63014029"
+      },
+      "voter": "0x36410a0C98fdf575E6204413D2bc313dea67d9a8",
+      "created": 1682322149,
+      "choice": 1,
+      "vp": 7,
+      "reason": "Go Gami!"
+    },
+    {
+      "id": "0x56777ab65a4931618a8dab1d318d0efc407cd0c9b5f489af1f3c3f1b05941a2a",
+      "proposal": {
+        "id": "0xe96f074f0820aa64fda543b6b159339e38d9e94f8cdca3b72c8489ae63014029"
+      },
+      "voter": "0x4b5F934da25c33F130efC5DF47C91Af1375baA30",
+      "created": 1682307260,
+      "choice": 1,
+      "vp": 10,
+      "reason": ""
+    },
+    {
+      "id": "0x79a1ca8c487f36a216b554f30ac667865ba2fb46b6bcf69b5fb7f91bbec86478",
+      "proposal": {
+        "id": "0xe96f074f0820aa64fda543b6b159339e38d9e94f8cdca3b72c8489ae63014029"
+      },
+      "voter": "0x8D36BaC540C57dBd009eA9d9D8CDF9443A83E3f6",
+      "created": 1682225253,
+      "choice": 1,
+      "vp": 6,
+      "reason": "⌐◨-◨"
+    },
+    {
+      "id": "0xa7ace38b6e89aba5e2a99e65a78f9045d7e430feb968e0c7979dcc48a3acdf5e",
+      "proposal": {
+        "id": "0xe96f074f0820aa64fda543b6b159339e38d9e94f8cdca3b72c8489ae63014029"
+      },
+      "voter": "0x41CB654D1F47913ACAB158a8199191D160DAbe4A",
+      "created": 1682221074,
+      "choice": 1,
+      "vp": 20,
+      "reason": "Seems to be working"
+    }
+  ]
+}

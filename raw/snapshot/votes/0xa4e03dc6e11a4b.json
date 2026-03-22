@@ -1,0 +1,193 @@
+{
+  "fetched_at": "2026-03-22T03:47:57.773537Z",
+  "proposal_id": "0xa4e03dc6e11a4b394d292d43a8f66f5b3d24e7d63c5725ceaf70ee9c23f2264c",
+  "records": [
+    {
+      "id": "0x1edb6894af97f6491dafe8398b62f7da3417f4dfaf6084543b5227c19d6696ea",
+      "proposal": {
+        "id": "0xa4e03dc6e11a4b394d292d43a8f66f5b3d24e7d63c5725ceaf70ee9c23f2264c"
+      },
+      "voter": "0x069Da1bad547d67AbF26C42358d3A6A8A78dECa0",
+      "created": 1681159979,
+      "choice": 2,
+      "vp": 77,
+      "reason": "I believe it is our mission to help bring attention and emphasize athletes, not pay their travel fees. We can't afford everyone, so no."
+    },
+    {
+      "id": "0x3a89b2ae625df980d1d4931805b4257ceee3ea95f2c9a95452e146a0b78035fb",
+      "proposal": {
+        "id": "0xa4e03dc6e11a4b394d292d43a8f66f5b3d24e7d63c5725ceaf70ee9c23f2264c"
+      },
+      "voter": "0x7b13c2F7AaA8C772Bd0a13A86B0CF633fAf790B0",
+      "created": 1681157031,
+      "choice": 3,
+      "vp": 9,
+      "reason": ""
+    },
+    {
+      "id": "0xd9ad939e5579c80af62e2303f6cbe5e68bb3f251eae4fbf421aae7db9212424f",
+      "proposal": {
+        "id": "0xa4e03dc6e11a4b394d292d43a8f66f5b3d24e7d63c5725ceaf70ee9c23f2264c"
+      },
+      "voter": "0x394C480EB109f3C213E2A4aB24ACa5D394A387CA",
+      "created": 1681155856,
+      "choice": 1,
+      "vp": 4,
+      "reason": ""
+    },
+    {
+      "id": "0x5078149840d789732c3d631153f23a19fd20586dec014a7bb51b48a4fc9c0463",
+      "proposal": {
+        "id": "0xa4e03dc6e11a4b394d292d43a8f66f5b3d24e7d63c5725ceaf70ee9c23f2264c"
+      },
+      "voter": "0x376E451F04863508A7dCE0B993354520e9acEe71",
+      "created": 1681126898,
+      "choice": 3,
+      "vp": 5,
+      "reason": ""
+    },
+    {
+      "id": "0x2bb353852967a4e724924f0c9eff7e7be226f455a54caca26ced07bc11f2a7de",
+      "proposal": {
+        "id": "0xa4e03dc6e11a4b394d292d43a8f66f5b3d24e7d63c5725ceaf70ee9c23f2264c"
+      },
+      "voter": "0x387a161C6b25aA854100aBaED39274e51aaffffd",
+      "created": 1681120451,
+      "choice": 3,
+      "vp": 161,
+      "reason": "would like to know what deliverables gnars dao could expect to see"
+    },
+    {
+      "id": "0x5bed7293c7148faf0e6fa45b969be02ab45451f23b8c2657fb333f3c47b9af7b",
+      "proposal": {
+        "id": "0xa4e03dc6e11a4b394d292d43a8f66f5b3d24e7d63c5725ceaf70ee9c23f2264c"
+      },
+      "voter": "0x4A39aE081678f3D4ABbFbd50b3034580B8bAF48A",
+      "created": 1681118915,
+      "choice": 2,
+      "vp": 58,
+      "reason": "I'd like to see specifics on deliverables for Gnars DAO - what content will be produced for Gnars. This shouldn't be simply retro funding"
+    },
+    {
+      "id": "0x016f1555a6a40aa41fd98fb48b06d76a040c8d158d00f57f205dbeefbc87ea06",
+      "proposal": {
+        "id": "0xa4e03dc6e11a4b394d292d43a8f66f5b3d24e7d63c5725ceaf70ee9c23f2264c"
+      },
+      "voter": "0xC23274347e8Aa82d363140d3cefb71Ff588EfFed",
+      "created": 1681098664,
+      "choice": 1,
+      "vp": 12,
+      "reason": ""
+    },
+    {
+      "id": "0xb6c7a137607e07e30b3afc6d592b0916468b674b9e53a0053010b890fde591fd",
+      "proposal": {
+        "id": "0xa4e03dc6e11a4b394d292d43a8f66f5b3d24e7d63c5725ceaf70ee9c23f2264c"
+      },
+      "voter": "0xFA2930a9d96e91B0A7e78d9fEBB7A8c744afD0da",
+      "created": 1681096531,
+      "choice": 1,
+      "vp": 5,
+      "reason": ""
+    },
+    {
+      "id": "0x7c0af4ef1bc752af23cef9bdad5aef1cd46152b71633fe97a5d4f8dd561ab4f1",
+      "proposal": {
+        "id": "0xa4e03dc6e11a4b394d292d43a8f66f5b3d24e7d63c5725ceaf70ee9c23f2264c"
+      },
+      "voter": "0x0f7341C76bA4460736ABec4f65a1953E824658cc",
+      "created": 1681092421,
+      "choice": 3,
+      "vp": 70,
+      "reason": ""
+    },
+    {
+      "id": "0x0f0004696d924fda819238d044803ba9bacbbe04cdd8d05d31276313ea133c9d",
+      "proposal": {
+        "id": "0xa4e03dc6e11a4b394d292d43a8f66f5b3d24e7d63c5725ceaf70ee9c23f2264c"
+      },
+      "voter": "0x9C87A1065994f156f0B7b87AAa8B3c5F7BD67E02",
+      "created": 1681062441,
+      "choice": 3,
+      "vp": 36,
+      "reason": ""
+    },
+    {
+      "id": "0xb87b4816c1d20870ae11166b9f14ab1c58f9ff5c0e2ea5d4629db8d3550f7ca4",
+      "proposal": {
+        "id": "0xa4e03dc6e11a4b394d292d43a8f66f5b3d24e7d63c5725ceaf70ee9c23f2264c"
+      },
+      "voter": "0xdfB6ed808fADddAd9154F5605E349fFF96E3d939",
+      "created": 1681008726,
+      "choice": 1,
+      "vp": 17,
+      "reason": ""
+    },
+    {
+      "id": "0xf409d9ff95de35ad62fe8f108f8699dcd4867a72e11b8b6cebc38d12b9b05cd8",
+      "proposal": {
+        "id": "0xa4e03dc6e11a4b394d292d43a8f66f5b3d24e7d63c5725ceaf70ee9c23f2264c"
+      },
+      "voter": "0x05A1ff0a32bc24265BCB39499d0c5D9A6cb2011c",
+      "created": 1681006261,
+      "choice": 3,
+      "vp": 6,
+      "reason": ""
+    },
+    {
+      "id": "0x871555492a3d0e1cb67d5e78c14b231b230cea9f234fa683e59d67adb7025c4a",
+      "proposal": {
+        "id": "0xa4e03dc6e11a4b394d292d43a8f66f5b3d24e7d63c5725ceaf70ee9c23f2264c"
+      },
+      "voter": "0xD082cC50Db08B028fc12726861d5F260a786777e",
+      "created": 1680981640,
+      "choice": 2,
+      "vp": 1,
+      "reason": ""
+    },
+    {
+      "id": "0xe16fd6e4cf3c59a0977279f0637b37df1233c39381312478ce1c553361dc8483",
+      "proposal": {
+        "id": "0xa4e03dc6e11a4b394d292d43a8f66f5b3d24e7d63c5725ceaf70ee9c23f2264c"
+      },
+      "voter": "0x3994537274f3fF3eefc413E0D669b05D6446D46b",
+      "created": 1680979034,
+      "choice": 3,
+      "vp": 2,
+      "reason": ""
+    },
+    {
+      "id": "0x522e0c3ecf4d4e4cf2d73e96c84a62571e90ee4259bc5f5486264fad999fbc04",
+      "proposal": {
+        "id": "0xa4e03dc6e11a4b394d292d43a8f66f5b3d24e7d63c5725ceaf70ee9c23f2264c"
+      },
+      "voter": "0xEDc1a397589A0236C4810883b7d559288a5Fe7e1",
+      "created": 1680971073,
+      "choice": 2,
+      "vp": 2,
+      "reason": ""
+    },
+    {
+      "id": "0x57b666fb2b41da905886f33c8d1cf37a251165bbf2e2287efd31238422abb817",
+      "proposal": {
+        "id": "0xa4e03dc6e11a4b394d292d43a8f66f5b3d24e7d63c5725ceaf70ee9c23f2264c"
+      },
+      "voter": "0xD9e424871cdf9cA51FCdaf694495c00Aa39ceF4b",
+      "created": 1680933518,
+      "choice": 3,
+      "vp": 12,
+      "reason": ""
+    },
+    {
+      "id": "0x4264c55648f6ecf59c081238563cd7cf4869597d8a75710025abe769b210bdbb",
+      "proposal": {
+        "id": "0xa4e03dc6e11a4b394d292d43a8f66f5b3d24e7d63c5725ceaf70ee9c23f2264c"
+      },
+      "voter": "0x41CB654D1F47913ACAB158a8199191D160DAbe4A",
+      "created": 1680930808,
+      "choice": 2,
+      "vp": 16,
+      "reason": "low effort proposal, if it does not pass dont give up, try again 🛹 🔄 \n\nI also dont feel kevin heard the feedback given by the community"
+    }
+  ]
+}
