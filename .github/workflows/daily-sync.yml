@@ -11,6 +11,8 @@ permissions:
 jobs:
   sync:
     runs-on: ubuntu-latest
+    env:
+      DUNE_API_KEY: ${{ secrets.DUNE_API_KEY }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -22,7 +24,7 @@ jobs:
           python-version: "3.11"
 
       - name: Install Python dependencies
-        run: pip install google-genai pydantic
+        run: pip install google-genai pydantic requests
 
       - uses: actions/setup-node@v4
         with:

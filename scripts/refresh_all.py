@@ -20,6 +20,7 @@ PARALLEL_STEPS: list[tuple[str, str, list[str]]] = [
     ("sync_proposals", "sync_proposals.py", []),
     ("sync_treasury", "sync_treasury.py", []),
     ("sync_snapshot", "sync_snapshot.py --no-votes", []),
+    ("sync_nouns_activity", "sync_nouns_activity.py", []),
 ]
 
 WEEKLY_STEPS: list[tuple[str, str, list[str]]] = [
@@ -27,6 +28,7 @@ WEEKLY_STEPS: list[tuple[str, str, list[str]]] = [
 ]
 
 SEQUENTIAL_STEPS: list[tuple[str, str, list[str]]] = [
+    ("fetch_dune", "fetch_dune_data.py", []),
     (
         "classify",
         "classify_proposals_local.py --incremental" if INCREMENTAL else "classify_proposals_local.py",

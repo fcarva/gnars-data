@@ -88,7 +88,31 @@ GNARS_AUCTIONS_BASE_SUBGRAPH_URL
 GNARS_AUCTIONS_ETHEREUM_SUBGRAPH_URL
 GNARS_AUCTIONS_POLYGON_SUBGRAPH_URL
 BASE_RPC_URL
+DUNE_API_KEY
 ```
+
+### Dune MCP (onchain analytics)
+
+Usar quando precisar de dados onchain verificados (auctions, treasury transfers, precos historicos de ETH).
+
+Setup:
+- DUNE_API_KEY em `.env` (obter em dune.com/settings/api)
+- MCP recomendado: `mcp-web3-stats` (Node)
+
+Queries relevantes para Gnars:
+- Gnars auctions Base: configurar ID em `data/sources.json` > `dune_queries`
+- Gnars auctions Ethereum: configurar ID em `data/sources.json` > `dune_queries`
+- Treasury USDC outflows Base: configurar ID em `data/sources.json` > `dune_queries`
+- ETH prices historical: usar CoinGecko como fallback sem auth
+
+Quando usar Dune MCP vs REST pipeline:
+- MCP (interativo): explorar dados, criar queries, diagnosticar gaps
+- REST API (`scripts/fetch_dune_data.py`): pipeline automatizado/CI
+
+Hierarquia de confianca para valores USD:
+1. Dune query com `prices.usd_daily`
+2. CoinGecko history endpoint
+3. ETH_PRICE constante (ultimo recurso)
 
 ---
 
