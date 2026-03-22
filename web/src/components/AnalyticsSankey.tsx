@@ -13,6 +13,11 @@ type SankeyBand = {
   pct: number;
   col: string;
   rec: string;
+  val_usdc?: number;
+  val_eth?: number;
+  val_usd_total?: number;
+  proposal_count?: number;
+  top_recipients?: string[];
 };
 
 type SemanticSankey = {
@@ -28,7 +33,7 @@ export function AnalyticsSankey({ data }: AnalyticsSankeyProps) {
   const [mode, setMode] = useState<"impact" | "workstream">("impact");
   const [hovered, setHovered] = useState<string | null>(null);
   const [selected, setSelected] = useState<string | null>(null);
-  const [tooltip, setTooltip] = useState<{ x: number; y: number; label: string; val: number; pct: number } | null>(null);
+  const [tooltipPos, setTooltipPos] = useState<{ x: number; y: number } | null>(null);
 
   useEffect(() => {
     let cancelled = false;
@@ -131,15 +136,27 @@ export function AnalyticsSankey({ data }: AnalyticsSankeyProps) {
     return 0.25;
   };
 
+  const hoveredNode = useMemo(() => {
+    if (!hovered) return null;
+    if (!hovered.startsWith("cat:") && !hovered.startsWith("rec:")) return null;
+    const id = hovered.slice(4);
+    return boxes.find((row) => row.id === id) || null;
+  }, [boxes, hovered]);
+
   const showNodeTooltip = (event: MouseEvent<SVGRectElement>, node: SankeyBand, nodeId: string) => {
     event.stopPropagation();
     setHovered(nodeId);
-    setTooltip({ x: event.clientX, y: event.clientY, label: node.label, val: node.val, pct: node.pct });
+    const bounds = event.currentTarget.ownerSVGElement?.getBoundingClientRect();
+    if (bounds) {
+      setTooltipPos({ x: event.clientX - bounds.left, y: event.clientY - bounds.top });
+      return;
+    }
+    setTooltipPos({ x: event.clientX, y: event.clientY });
   };
 
   const clearNodeTooltip = () => {
     setHovered(null);
-    setTooltip(null);
+    setTooltipPos(null);
   };
 
   if (!payload || !bands.length) {
@@ -263,26 +280,41 @@ export function AnalyticsSankey({ data }: AnalyticsSankeyProps) {
           })}
         </svg>
 
-        {tooltip ? (
+        {tooltipPos && hoveredNode ? (
           <div
             style={{
-              position: "fixed",
-              left: tooltip.x + 10,
-              top: tooltip.y + 10,
+              position: "absolute",
+              left: tooltipPos.x + 14,
+              top: tooltipPos.y - 8,
               pointerEvents: "none",
               background: "#282726",
               color: "#FFFEF8",
               fontSize: 9,
               fontFamily: "'Courier New', monospace",
+              lineHeight: 1.8,
               borderRadius: 2,
-              padding: "8px 10px",
-              zIndex: 30,
+              zIndex: 20,
+              padding: "9px 13px",
+              minWidth: 180,
             }}
           >
-            <div>{tooltip.label}</div>
-            <div>{`$${tooltip.val.toFixed(1)}k`}</div>
-            <div>{`${tooltip.pct}% of treasury`}</div>
-            <div style={{ color: "var(--b500)", marginTop: 4 }}>click to highlight · click again to reset</div>
+            <div style={{ fontWeight: 700, fontSize: 10, marginBottom: 4 }}>{hoveredNode.label}</div>
+            <div>
+              {`$${Math.round(hoveredNode.val_usdc || 0).toLocaleString("en-US")} USDC`}
+              {(hoveredNode.val_eth || 0) > 0 ? ` · ${(hoveredNode.val_eth || 0).toFixed(3)} ETH` : ""}
+            </div>
+            <div style={{ color: "#B7B5AC" }}>{`${hoveredNode.pct}% of treasury spend`}</div>
+            {(hoveredNode.proposal_count || 0) > 0 ? (
+              <div style={{ color: "#B7B5AC" }}>{`${hoveredNode.proposal_count} proposals`}</div>
+            ) : null}
+            {hoveredNode.top_recipients?.length ? (
+              <div style={{ marginTop: 6, borderTop: "1px solid #403E3C", paddingTop: 5 }}>
+                {hoveredNode.top_recipients.map((recipient) => (
+                  <div key={recipient} style={{ color: "#DFF3F1", fontSize: 8.5 }}>{`· ${recipient}`}</div>
+                ))}
+              </div>
+            ) : null}
+            <div style={{ color: "#575653", fontSize: 8, marginTop: 4 }}>click to highlight · again to reset</div>
           </div>
         ) : null}
       </div>

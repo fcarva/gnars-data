@@ -73,6 +73,7 @@
             "contributor",
             "delegate",
             "holder",
+            "member",
             "proposer",
             "recipient"
           ]
@@ -138,6 +139,7 @@
             "contributor",
             "delegate",
             "holder",
+            "member",
             "proposer",
             "recipient"
           ]
@@ -214,6 +216,7 @@
             "contributor",
             "delegate",
             "holder",
+            "member",
             "proposer",
             "recipient"
           ]
@@ -246,6 +249,7 @@
           "tribes": [
             "athlete",
             "contributor",
+            "member",
             "proposer"
           ]
         },
@@ -291,6 +295,7 @@
             "contributor",
             "delegate",
             "holder",
+            "member",
             "proposer"
           ]
         },
@@ -306,6 +311,7 @@
             "contributor",
             "delegate",
             "holder",
+            "member",
             "proposer",
             "recipient"
           ]
@@ -382,6 +388,7 @@
             "contributor",
             "delegate",
             "holder",
+            "member",
             "proposer",
             "recipient"
           ]
@@ -430,6 +437,7 @@
           "tribes": [
             "athlete",
             "contributor",
+            "member",
             "proposer"
           ]
         },
@@ -460,6 +468,7 @@
             "contributor",
             "delegate",
             "holder",
+            "member",
             "proposer"
           ]
         },
@@ -475,6 +484,7 @@
             "contributor",
             "delegate",
             "holder",
+            "member",
             "proposer"
           ]
         },
@@ -490,6 +500,7 @@
             "contributor",
             "delegate",
             "holder",
+            "member",
             "proposer"
           ]
         },
@@ -504,6 +515,7 @@
             "contributor",
             "delegate",
             "holder",
+            "member",
             "proposer"
           ]
         },
@@ -519,6 +531,7 @@
             "contributor",
             "delegate",
             "holder",
+            "member",
             "proposer",
             "recipient"
           ]
@@ -799,6 +812,7 @@
           "tribes": [
             "athlete",
             "contributor",
+            "member",
             "proposer",
             "recipient"
           ]
@@ -819,6 +833,7 @@
             "contributor",
             "delegate",
             "holder",
+            "member",
             "proposer",
             "recipient"
           ]
@@ -841,6 +856,7 @@
           "score": 119569120.2873,
           "tribes": [
             "contributor",
+            "member",
             "recipient"
           ]
         },
@@ -866,6 +882,7 @@
           "score": 46500000.0,
           "tribes": [
             "contributor",
+            "member",
             "recipient"
           ]
         },
@@ -885,6 +902,7 @@
             "contributor",
             "delegate",
             "holder",
+            "member",
             "recipient"
           ]
         },
@@ -904,6 +922,7 @@
             "contributor",
             "delegate",
             "holder",
+            "member",
             "recipient"
           ]
         },
@@ -921,6 +940,7 @@
           "score": 12881837.0,
           "tribes": [
             "contributor",
+            "member",
             "recipient"
           ]
         },
@@ -942,6 +962,7 @@
           "score": 29215.0,
           "tribes": [
             "contributor",
+            "member",
             "recipient"
           ]
         },
@@ -959,6 +980,7 @@
           "score": 16116.0,
           "tribes": [
             "contributor",
+            "member",
             "recipient"
           ]
         },
@@ -976,6 +998,7 @@
           "score": 12000.0,
           "tribes": [
             "contributor",
+            "member",
             "recipient"
           ]
         }

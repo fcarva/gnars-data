@@ -527,6 +527,43 @@ def export_activity_timeseries() -> None:
     write_csv("activity_timeseries.csv", rows)
 
 
+def export_nouns_activity_events() -> None:
+    data = load_json("nouns_activity_events")
+    rows = []
+    for record in data.get("records", []):
+        rows.append(
+            {
+                "event_id": record.get("event_id"),
+                "trail": record.get("trail"),
+                "event_kind": record.get("event_kind"),
+                "network": record.get("network"),
+                "chain_id": record.get("chain_id"),
+                "contract_address": record.get("contract_address"),
+                "proposal_id": record.get("proposal_id"),
+                "token_id": record.get("token_id"),
+                "token_address": record.get("token_address"),
+                "token_symbol": record.get("token_symbol"),
+                "direction": record.get("direction"),
+                "from_address": record.get("from_address"),
+                "to_address": record.get("to_address"),
+                "value_raw": record.get("value_raw"),
+                "value_normalized": record.get("value_normalized"),
+                "amount_wei": record.get("amount_wei"),
+                "bidder": record.get("bidder"),
+                "winner": record.get("winner"),
+                "extended": record.get("extended"),
+                "tx_hash": record.get("tx_hash"),
+                "tx_index": record.get("tx_index"),
+                "log_index": record.get("log_index"),
+                "block_number": record.get("block_number"),
+                "block_timestamp": record.get("block_timestamp"),
+                "topic0": record.get("topic0"),
+                "dao_source_url": record.get("dao_source_url"),
+            }
+        )
+    write_csv("nouns_activity_events.csv", rows)
+
+
 def export_treasury_flows() -> None:
     data = load_json("treasury_flows")
     rows = []
@@ -743,6 +780,7 @@ def main() -> int:
     export_dao_metrics()
     export_timeline_events()
     export_activity_timeseries()
+    export_nouns_activity_events()
     export_treasury_flows()
     export_community_signals()
     export_network_graph()

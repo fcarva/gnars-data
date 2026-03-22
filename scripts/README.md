@@ -7,6 +7,7 @@
 - `sync_gnars.py`: pull raw snapshots from live Gnars sources listed in `config/source_catalog.json`
 - `sync_proposals.py`: collect the full governance archive from `gnars.com/proposals` and `Snapshot`
 - `sync_treasury.py`: collect live treasury holdings and normalize the treasury dataset
+- `sync_nouns_activity.py`: ingest Base onchain activity for Gnars DAO nouns.build surface (governor logs, auction logs, treasury ERC20 transfers)
 - `ingest.py`: orchestrate sync scripts (`sync_gnars`, `sync_proposals`, `sync_treasury`) with optional skip flags
 - `tag_proposals.py`: seed and maintain the proposal-tagging review queue
 - `audit_gaps.py`: generate `reports/data_gaps.md` with missing-field coverage across spend/tags/members/proposals

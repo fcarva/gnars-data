@@ -13,3 +13,15 @@
 | members_no_sport | 0 |
 | members_no_totals | 0 |
 | proposals_uncategorized | 222 |
+
+## Sankey Completeness
+
+```text
+SANKEY COMPLETENESS
+--------------------------------
+Total in spend_ledger:    $577,449,600,005,369,342,459,904
+Categorized (in Sankey):  $         0
+Sankey total (from JSON): $   259,400
+Coverage:                  0%
+Drift (ledger vs sankey):  $   259,400
+```

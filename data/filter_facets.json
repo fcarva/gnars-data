@@ -257,6 +257,16 @@
     "community": {
       "tribe": [
         {
+          "value": "contributor",
+          "label": "Contributor",
+          "count": 1180
+        },
+        {
+          "value": "member",
+          "label": "Member",
+          "count": 1180
+        },
+        {
           "value": "holder",
           "label": "Holder",
           "count": 1011
@@ -265,11 +275,6 @@
           "value": "delegate",
           "label": "Delegate",
           "count": 992
-        },
-        {
-          "value": "contributor",
-          "label": "Contributor",
-          "count": 98
         },
         {
           "value": "proposer",
@@ -289,11 +294,6 @@
         {
           "value": "builder",
           "label": "Builder",
-          "count": 3
-        },
-        {
-          "value": "member",
-          "label": "Member",
           "count": 3
         }
       ],

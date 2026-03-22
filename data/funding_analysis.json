@@ -1,6 +1,6 @@
 {
   "dataset": "funding_analysis",
-  "as_of": "2026-03-22T06:27:33.487567Z",
+  "as_of": "2026-03-22T09:00:20.482566Z",
   "version": 1,
   "summary": {
     "funding_sources": 3,
@@ -9,8 +9,8 @@
     "executed_spend_usd": 259364.84,
     "coverage_ratio_approved": 1.152733,
     "coverage_ratio_potential": 0.494028,
-    "auction_revenue_eth": 0,
-    "auction_revenue_usd_estimate": 0.0,
+    "auction_revenue_eth": 15.4626,
+    "auction_revenue_usd_estimate": 50223.32,
     "auction_revenue_fx": "coingecko:ethereum:spot"
   },
   "auction_revenue_by_network": [],
@@ -18,14 +18,14 @@
     {
       "funding_source_id": "onchain_auction",
       "title": "NFT Auction Revenue",
-      "status": "missing",
+      "status": "received",
       "source_date": null,
       "requested_amount": {
         "currency": "ETH",
-        "amount": 0,
-        "usd_estimate_hint": 0.0
+        "amount": 15.4626,
+        "usd_estimate_hint": 50223.32
       },
-      "usd_estimate_at_source": 0.0,
+      "usd_estimate_at_source": 50223.32,
       "usd_estimate_fx": "coingecko:ethereum:spot",
       "proposal_chain": [],
       "source": "onchain_auction"

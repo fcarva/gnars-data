@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -389,18 +390,31 @@ def infer_lifecycle_stage(text: str, category: str) -> str:
 
 
 def main() -> int:
+    INCREMENTAL = "--incremental" in sys.argv or "--inc" in sys.argv
+
     parser = argparse.ArgumentParser(description="Local non-API semantic classifier for proposal tags")
     parser.add_argument("--limit", type=int, default=0, help="Maximum records to update (0 = all missing)")
     parser.add_argument("--force", action="store_true", help="Recompute even when semantic_category exists")
+    parser.add_argument("--incremental", action="store_true", help="Skip records that already have confident semantic tags")
+    parser.add_argument("--inc", action="store_true", help="Alias for --incremental")
     args = parser.parse_args()
+    incremental_mode = INCREMENTAL or args.incremental or args.inc
 
     archive = load_json(ARCHIVE_PATH)
     tags = load_json(TAGS_PATH)
     archive_map = {str(r.get("archive_id") or ""): r for r in archive.get("records", [])}
     records = tags.get("records", [])
+    classified = {str(record.get("archive_id") or ""): record for record in records}
 
     updated = 0
     for record in records:
+        prop_id = str(record.get("archive_id") or "")
+        if incremental_mode:
+            existing = classified.get(prop_id, {})
+            confidence = float(existing.get("confidence") or existing.get("semantic_confidence") or 0)
+            if existing.get("semantic_category") and confidence >= 0.65:
+                continue
+
         has_semantic = bool(record.get("semantic_category"))
         needs_backfill = any(
             [

@@ -13,6 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "data"
 RAW_DIR = ROOT / "raw"
 AUCTIONS_PATH = RAW_DIR / "auctions_all.json"
+DUNE_AUCTIONS_PATH = RAW_DIR / "dune" / "auction_revenue_all_time.json"
 COINGECKO_API_BASE = "https://api.coingecko.com/api/v3"
 USER_AGENT = "gnars-data-funding-analysis/1.0 (+https://github.com/fcarva/gnars-data)"
 CATEGORY_LABELS = {
@@ -131,6 +132,30 @@ def parse_auctions() -> tuple[list[dict[str, Any]], list[str]]:
     return rows, warnings
 
 
+def parse_dune_auction_revenue() -> tuple[float | None, float | None]:
+    if not DUNE_AUCTIONS_PATH.exists():
+        return None, None
+    payload = load_json_path(DUNE_AUCTIONS_PATH)
+    rows = payload if isinstance(payload, list) else payload.get("rows", [])
+    if not isinstance(rows, list):
+        return None, None
+
+    total_eth = 0.0
+    total_usd = 0.0
+    for row in rows:
+        if not isinstance(row, dict):
+            continue
+        try:
+            total_eth += float(row.get("total_eth") or row.get("eth_amount") or 0.0)
+        except (TypeError, ValueError):
+            pass
+        try:
+            total_usd += float(row.get("total_usd") or row.get("usd_value") or 0.0)
+        except (TypeError, ValueError):
+            pass
+    return total_eth, total_usd
+
+
 def main() -> int:
     funding = load_json("funding_origins")
     spend = load_json("spend_ledger")
@@ -156,6 +181,12 @@ def main() -> int:
         auction_by_network[row["network"]] += float(row["amount_eth"])
     auction_total_eth = sum(auction_by_network.values())
     auction_total_usd = (auction_total_eth * auction_eth_spot) if auction_eth_spot is not None else None
+
+    dune_auction_eth, dune_auction_usd = parse_dune_auction_revenue()
+    if dune_auction_eth is not None and dune_auction_eth > 0:
+        auction_total_eth = dune_auction_eth
+    if dune_auction_usd is not None and dune_auction_usd > 0:
+        auction_total_usd = dune_auction_usd
 
     approved_funding_usd = 0.0
     potential_funding_usd = 0.0

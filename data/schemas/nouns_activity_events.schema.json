@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["dataset", "as_of", "version", "network", "chain_id", "dao_source_url", "records"],
+  "properties": {
+    "dataset": { "const": "nouns_activity_events" },
+    "as_of": { "type": "string" },
+    "version": { "type": "integer" },
+    "network": { "type": "string" },
+    "chain_id": { "type": "integer" },
+    "dao_source_url": { "type": "string" },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "event_id",
+          "trail",
+          "event_kind",
+          "network",
+          "chain_id",
+          "dao_source_url",
+          "contract_address",
+          "tx_hash",
+          "tx_index",
+          "log_index",
+          "block_number",
+          "block_timestamp",
+          "removed",
+          "topics",
+          "data"
+        ],
+        "properties": {
+          "event_id": { "type": "string" },
+          "trail": { "type": "string" },
+          "event_kind": { "type": "string" },
+          "network": { "type": "string" },
+          "chain_id": { "type": "integer" },
+          "dao_source_url": { "type": "string" },
+          "contract_address": { "type": "string" },
+          "topic0": { "type": ["string", "null"] },
+          "proposal_id": { "type": ["integer", "null"] },
+          "token_id": { "type": ["integer", "null"] },
+          "bidder": { "type": ["string", "null"] },
+          "winner": { "type": ["string", "null"] },
+          "amount_wei": { "type": ["string", "null"] },
+          "extended": { "type": ["boolean", "null"] },
+          "treasury_address": { "type": ["string", "null"] },
+          "direction": { "type": ["string", "null"] },
+          "from_address": { "type": ["string", "null"] },
+          "to_address": { "type": ["string", "null"] },
+          "token_address": { "type": ["string", "null"] },
+          "token_symbol": { "type": ["string", "null"] },
+          "token_decimals": { "type": ["integer", "null"] },
+          "value_raw": { "type": ["string", "null"] },
+          "value_normalized": { "type": ["number", "null"] },
+          "tx_hash": { "type": ["string", "null"] },
+          "tx_index": { "type": "integer" },
+          "log_index": { "type": "integer" },
+          "block_number": { "type": "integer" },
+          "block_timestamp": { "type": ["string", "null"] },
+          "removed": { "type": "boolean" },
+          "topics": { "type": "array", "items": { "type": "string" } },
+          "data": { "type": ["string", "null"] }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

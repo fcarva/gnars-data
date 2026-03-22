@@ -1,6 +1,6 @@
 {
   "dataset": "notes_index",
-  "as_of": "2026-03-22T02:13:31.777Z",
+  "as_of": "2026-03-22T09:04:02.683Z",
   "version": 1,
   "records": [
     {
@@ -23,6 +23,13 @@
       "section": "docs",
       "href": "/notes/#docs-operations-github-pages-md",
       "excerpt": "GitHub Pages Publishing This repository publishes the legacy static vault fallback built from repository markdown,  , and  . The new public frontend for Gnars Camp is documented separately in docs/operations/vercel.md..."
+    },
+    {
+      "slug": "docs-operations-dune-gnars_dashboard_queries-md",
+      "title": "Gnars DAO Dune Queries (Copy/Paste)",
+      "section": "docs",
+      "href": "/notes/#docs-operations-dune-gnars_dashboard_queries-md",
+      "excerpt": "Gnars DAO Dune Queries (Copy/Paste) Cada bloco abaixo deve ser criado como uma query separada no Dune. Query 1 gnars treasury balance over time sql WITH monthly components AS ( SELECT DATE TRUNC('month', block time) A..."
     },
     {
       "slug": "readme-md",

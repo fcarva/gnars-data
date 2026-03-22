@@ -5,7 +5,8 @@ import json
 import os
 import re
 import urllib.request
-from datetime import datetime, timezone
+import sys
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 
@@ -41,6 +42,14 @@ ROOT = Path(__file__).resolve().parents[1]
 RAW_DIR = ROOT / "raw"
 CONFIG_PATH = ROOT / "config" / "source_catalog.json"
 CONTRACTS_PATH = ROOT / "data" / "contracts.json"
+
+
+def is_stale(filepath: str, max_age_hours: int = 6) -> bool:
+    path = ROOT / filepath
+    if not path.exists():
+        return True
+    age = datetime.now() - datetime.fromtimestamp(path.stat().st_mtime)
+    return age > timedelta(hours=max_age_hours)
 
 
 def load_sources() -> list[dict]:
@@ -290,8 +299,14 @@ def merge_auction_payloads(payloads: list[dict[str, Any]], stamp: str) -> tuple[
 
 
 def main() -> int:
+    OUTPUT_FILE = "raw/auctions_all.json"
+    if not is_stale(OUTPUT_FILE, max_age_hours=6) and "--force" not in sys.argv:
+        print(f"[skip] {OUTPUT_FILE} is fresh (< 6h old). Use --force to re-sync.")
+        sys.exit(0)
+
     parser = argparse.ArgumentParser(description="Capture raw Gnars source snapshots.")
     parser.add_argument("--source", help="Only sync a single source_id", default=None)
+    parser.add_argument("--force", action="store_true", help="Bypass freshness check and force re-sync.")
     args = parser.parse_args()
 
     stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")

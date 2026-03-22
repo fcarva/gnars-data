@@ -4,10 +4,11 @@ import argparse
 import html as html_lib
 import json
 import re
+import sys
 import urllib.error
 import urllib.parse
 import urllib.request
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 
@@ -167,6 +168,14 @@ def write_bytes(path: Path, payload: bytes) -> None:
 def write_json(path: Path, payload: Any) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+
+def is_stale(filepath: str, max_age_hours: int = 6) -> bool:
+    path = ROOT / filepath
+    if not path.exists():
+        return True
+    age = datetime.now() - datetime.fromtimestamp(path.stat().st_mtime)
+    return age > timedelta(hours=max_age_hours)
 
 
 def safe_slug(value: str) -> str:
@@ -773,10 +782,16 @@ def build_archive(records: list[dict[str, Any]], generated_at: str) -> dict[str,
 
 
 def main() -> int:
+    OUTPUT_FILE = "data/proposals_archive.json"
+    if not is_stale(OUTPUT_FILE, max_age_hours=6) and "--force" not in sys.argv:
+        print(f"[skip] {OUTPUT_FILE} is fresh (< 6h old). Use --force to re-sync.")
+        sys.exit(0)
+
     parser = argparse.ArgumentParser(description="Collect Gnars proposals from gnars.com and Snapshot.")
     parser.add_argument("--skip-gnars", action="store_true", help="Skip gnars.com proposal collection.")
     parser.add_argument("--skip-snapshot", action="store_true", help="Skip Snapshot proposal collection.")
     parser.add_argument("--space", default=SNAPSHOT_SPACE, help="Snapshot space id to collect.")
+    parser.add_argument("--force", action="store_true", help="Bypass freshness check and force re-sync.")
     args = parser.parse_args()
 
     stamp = utc_now().strftime("%Y%m%dT%H%M%SZ")

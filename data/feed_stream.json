@@ -643,6 +643,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -655,6 +656,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -709,6 +711,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -721,6 +724,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -826,6 +830,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -836,6 +841,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -883,6 +889,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -894,6 +901,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -943,6 +951,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -954,6 +963,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -1075,6 +1085,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -1086,6 +1097,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -1132,6 +1144,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -1142,6 +1155,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -1191,6 +1205,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -1203,6 +1218,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -1262,6 +1278,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -1273,6 +1290,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -1328,6 +1346,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -1340,6 +1359,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -1453,6 +1473,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -1464,6 +1485,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -1533,7 +1555,7 @@
       "date": "2026-03-21",
       "status": "active",
       "resolved_status": "active",
-      "reconciliation_status": "needs-review",
+      "reconciliation_status": "matched",
       "title": "0xd119...c7d8",
       "summary": "community member. 4 passed authored proposals, 0 treasury routes, 40 proof records.",
       "requested_budget_display": "",
@@ -1546,6 +1568,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -1557,6 +1580,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -1595,7 +1619,7 @@
       "date": "2026-03-21",
       "status": "active",
       "resolved_status": "active",
-      "reconciliation_status": "needs-review",
+      "reconciliation_status": "matched",
       "title": "0x3a7b...d68d",
       "summary": "community member. 0 passed authored proposals, 1 treasury routes, 0 proof records.",
       "requested_budget_display": "",
@@ -1607,6 +1631,7 @@
         "holder",
         "recipient",
         "contributor",
+        "member",
         "community",
         "active",
         "archival"
@@ -1616,6 +1641,7 @@
         "holder",
         "recipient",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -1648,7 +1674,7 @@
       "date": "2026-03-21",
       "status": "active",
       "resolved_status": "active",
-      "reconciliation_status": "needs-review",
+      "reconciliation_status": "matched",
       "title": "0x356d...f7e6",
       "summary": "community member. 1 passed authored proposals, 0 treasury routes, 8 proof records.",
       "requested_budget_display": "",
@@ -1661,6 +1687,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -1672,6 +1699,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -2068,6 +2096,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -2079,6 +2108,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -2114,7 +2144,7 @@
       "date": "2026-03-20",
       "status": "active",
       "resolved_status": "active",
-      "reconciliation_status": "needs-review",
+      "reconciliation_status": "matched",
       "title": "0x8d2a...b252",
       "summary": "community member. 1 passed authored proposals, 1 treasury routes, 16 proof records.",
       "requested_budget_display": "",
@@ -2128,6 +2158,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -2140,6 +2171,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -2861,7 +2893,7 @@
       "date": "2026-03-17",
       "status": "active",
       "resolved_status": "active",
-      "reconciliation_status": "needs-review",
+      "reconciliation_status": "matched",
       "title": "0x2581...f89f",
       "summary": "community member. 3 passed authored proposals, 2 treasury routes, 19 proof records.",
       "requested_budget_display": "",
@@ -2875,6 +2907,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -2887,6 +2920,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -3501,6 +3535,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -3511,6 +3546,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -3559,6 +3595,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -3571,6 +3608,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -3622,6 +3660,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -3633,6 +3672,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -4559,6 +4599,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -4570,6 +4611,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -5217,6 +5259,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -5228,6 +5271,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -5817,6 +5861,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -5828,6 +5873,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -5866,7 +5912,7 @@
       "date": "2026-01-10",
       "status": "active",
       "resolved_status": "active",
-      "reconciliation_status": "needs-review",
+      "reconciliation_status": "matched",
       "title": "0xd2d1...b968",
       "summary": "community member. 0 passed authored proposals, 1 treasury routes, 0 proof records.",
       "requested_budget_display": "",
@@ -5878,6 +5924,7 @@
         "holder",
         "recipient",
         "contributor",
+        "member",
         "community",
         "active",
         "archival"
@@ -5887,6 +5934,7 @@
         "holder",
         "recipient",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -5919,7 +5967,7 @@
       "date": "2026-01-10",
       "status": "active",
       "resolved_status": "active",
-      "reconciliation_status": "needs-review",
+      "reconciliation_status": "matched",
       "title": "0x2858...960f",
       "summary": "community member. 1 passed authored proposals, 1 treasury routes, 6 proof records.",
       "requested_budget_display": "",
@@ -5932,6 +5980,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -5943,6 +5992,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -6238,6 +6288,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -6249,6 +6300,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -6939,6 +6991,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -6950,6 +7003,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -6998,6 +7052,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -7010,6 +7065,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -7049,7 +7105,7 @@
       "date": "2025-11-29",
       "status": "active",
       "resolved_status": "active",
-      "reconciliation_status": "needs-review",
+      "reconciliation_status": "matched",
       "title": "0xddd7...645f",
       "summary": "community member. 3 passed authored proposals, 1 treasury routes, 28 proof records.",
       "requested_budget_display": "",
@@ -7063,6 +7119,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -7075,6 +7132,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -7116,7 +7174,7 @@
       "date": "2025-11-29",
       "status": "active",
       "resolved_status": "active",
-      "reconciliation_status": "needs-review",
+      "reconciliation_status": "matched",
       "title": "0x41cb...be4a",
       "summary": "community member. 20 passed authored proposals, 2 treasury routes, 120 proof records.",
       "requested_budget_display": "",
@@ -7128,6 +7186,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -7138,6 +7197,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -8901,7 +8961,7 @@
       "date": "2025-11-13",
       "status": "active",
       "resolved_status": "active",
-      "reconciliation_status": "needs-review",
+      "reconciliation_status": "matched",
       "title": "0x09e9...88ea",
       "summary": "community member. 2 passed authored proposals, 2 treasury routes, 10 proof records.",
       "requested_budget_display": "",
@@ -8914,6 +8974,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -8925,6 +8986,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -11313,6 +11375,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -11322,6 +11385,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -12922,7 +12986,7 @@
       "date": "2025-08-31",
       "status": "active",
       "resolved_status": "active",
-      "reconciliation_status": "needs-review",
+      "reconciliation_status": "matched",
       "title": "0xe5f6...8beb",
       "summary": "community member. 0 passed authored proposals, 5 treasury routes, 0 proof records.",
       "requested_budget_display": "",
@@ -12932,6 +12996,7 @@
       "labels": [
         "recipient",
         "contributor",
+        "member",
         "community",
         "active",
         "archival"
@@ -12939,6 +13004,7 @@
       "editorial_labels": [
         "recipient",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -13563,6 +13629,7 @@
         "athlete",
         "proposer",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -13572,6 +13639,7 @@
         "athlete",
         "proposer",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -13606,7 +13674,7 @@
       "date": "2025-08-29",
       "status": "active",
       "resolved_status": "active",
-      "reconciliation_status": "needs-review",
+      "reconciliation_status": "matched",
       "title": "0xeed9...a282",
       "summary": "community member. 4 passed authored proposals, 2 treasury routes, 25 proof records.",
       "requested_budget_display": "",
@@ -13620,6 +13688,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -13632,6 +13701,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -14239,6 +14309,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -14250,6 +14321,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -14953,6 +15025,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -14965,6 +15038,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -15014,6 +15088,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -15024,6 +15099,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -15058,7 +15134,7 @@
       "date": "2025-08-02",
       "status": "active",
       "resolved_status": "active",
-      "reconciliation_status": "needs-review",
+      "reconciliation_status": "matched",
       "title": "0x43c3...7970",
       "summary": "community member. 1 passed authored proposals, 1 treasury routes, 16 proof records.",
       "requested_budget_display": "",
@@ -15072,6 +15148,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -15084,6 +15161,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -15733,7 +15811,7 @@
       "date": "2025-07-22",
       "status": "active",
       "resolved_status": "active",
-      "reconciliation_status": "needs-review",
+      "reconciliation_status": "matched",
       "title": "0x761b...6693",
       "summary": "community member. 1 passed authored proposals, 0 treasury routes, 13 proof records.",
       "requested_budget_display": "",
@@ -15744,6 +15822,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -15753,6 +15832,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -18850,7 +18930,7 @@
       "date": "2025-06-01",
       "status": "active",
       "resolved_status": "active",
-      "reconciliation_status": "needs-review",
+      "reconciliation_status": "matched",
       "title": "0xc407...3c28",
       "summary": "community member. 0 passed authored proposals, 1 treasury routes, 0 proof records.",
       "requested_budget_display": "",
@@ -18860,6 +18940,7 @@
       "labels": [
         "recipient",
         "contributor",
+        "member",
         "community",
         "active",
         "archival"
@@ -18867,6 +18948,7 @@
       "editorial_labels": [
         "recipient",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -19350,6 +19432,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -19360,6 +19443,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -19408,6 +19492,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -19419,6 +19504,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -19466,6 +19552,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community",
         "active",
         "archival"
@@ -19476,6 +19563,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -20091,7 +20179,7 @@
       "date": "2025-05-26",
       "status": "active",
       "resolved_status": "active",
-      "reconciliation_status": "needs-review",
+      "reconciliation_status": "matched",
       "title": "0x7351...53f8",
       "summary": "community member. 1 passed authored proposals, 2 treasury routes, 8 proof records.",
       "requested_budget_display": "",
@@ -20104,6 +20192,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -20115,6 +20204,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -21302,6 +21392,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -21312,6 +21403,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -21921,6 +22013,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -21931,6 +22024,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -21967,7 +22061,7 @@
       "date": "2025-05-03",
       "status": "active",
       "resolved_status": "active",
-      "reconciliation_status": "needs-review",
+      "reconciliation_status": "matched",
       "title": "0x9cb9...f772",
       "summary": "community member. 0 passed authored proposals, 1 treasury routes, 24 proof records.",
       "requested_budget_display": "",
@@ -21981,6 +22075,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -21993,6 +22088,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -24247,6 +24343,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community",
         "active",
         "archival"
@@ -24257,6 +24354,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -24289,7 +24387,7 @@
       "date": "2025-04-08",
       "status": "active",
       "resolved_status": "active",
-      "reconciliation_status": "needs-review",
+      "reconciliation_status": "matched",
       "title": "0xbb4e...ef62",
       "summary": "community member. 1 passed authored proposals, 1 treasury routes, 16 proof records.",
       "requested_budget_display": "",
@@ -24303,6 +24401,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -24315,6 +24414,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -26331,7 +26431,7 @@
       "date": "2025-03-25",
       "status": "active",
       "resolved_status": "active",
-      "reconciliation_status": "needs-review",
+      "reconciliation_status": "matched",
       "title": "0x0020...597e",
       "summary": "community member. 0 passed authored proposals, 1 treasury routes, 0 proof records.",
       "requested_budget_display": "",
@@ -26341,6 +26441,7 @@
       "labels": [
         "recipient",
         "contributor",
+        "member",
         "community",
         "active",
         "archival"
@@ -26348,6 +26449,7 @@
       "editorial_labels": [
         "recipient",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -27065,7 +27167,7 @@
       "date": "2025-03-19",
       "status": "active",
       "resolved_status": "active",
-      "reconciliation_status": "needs-review",
+      "reconciliation_status": "matched",
       "title": "0x094c...3b30",
       "summary": "community member. 1 passed authored proposals, 0 treasury routes, 0 proof records.",
       "requested_budget_display": "",
@@ -27078,6 +27180,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community",
         "active",
         "archival"
@@ -27088,6 +27191,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -27190,7 +27294,7 @@
       "date": "2025-03-14",
       "status": "active",
       "resolved_status": "active",
-      "reconciliation_status": "needs-review",
+      "reconciliation_status": "matched",
       "title": "0xe61b...728e",
       "summary": "community member. 0 passed authored proposals, 1 treasury routes, 0 proof records.",
       "requested_budget_display": "",
@@ -27200,6 +27304,7 @@
       "labels": [
         "recipient",
         "contributor",
+        "member",
         "community",
         "active",
         "archival"
@@ -27207,6 +27312,7 @@
       "editorial_labels": [
         "recipient",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -27581,6 +27687,7 @@
         "athlete",
         "proposer",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -27590,6 +27697,7 @@
         "athlete",
         "proposer",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -28100,6 +28208,7 @@
       "labels": [
         "recipient",
         "contributor",
+        "member",
         "community",
         "active",
         "archival"
@@ -28107,6 +28216,7 @@
       "editorial_labels": [
         "recipient",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -29149,7 +29259,7 @@
       "date": "2025-02-09",
       "status": "active",
       "resolved_status": "active",
-      "reconciliation_status": "needs-review",
+      "reconciliation_status": "matched",
       "title": "0x2443...5c87",
       "summary": "community member. 0 passed authored proposals, 3 treasury routes, 0 proof records.",
       "requested_budget_display": "",
@@ -29159,6 +29269,7 @@
       "labels": [
         "recipient",
         "contributor",
+        "member",
         "community",
         "active",
         "archival"
@@ -29166,6 +29277,7 @@
       "editorial_labels": [
         "recipient",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -29754,7 +29866,7 @@
       "date": "2025-02-07",
       "status": "active",
       "resolved_status": "active",
-      "reconciliation_status": "needs-review",
+      "reconciliation_status": "matched",
       "title": "0x0bd4...fc66",
       "summary": "community member. 1 passed authored proposals, 0 treasury routes, 8 proof records.",
       "requested_budget_display": "",
@@ -29766,6 +29878,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -29776,6 +29889,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -29946,7 +30060,7 @@
       "date": "2025-02-03",
       "status": "active",
       "resolved_status": "active",
-      "reconciliation_status": "needs-review",
+      "reconciliation_status": "matched",
       "title": "0xbc94...fc12",
       "summary": "community member. 0 passed authored proposals, 2 treasury routes, 0 proof records.",
       "requested_budget_display": "",
@@ -29956,6 +30070,7 @@
       "labels": [
         "recipient",
         "contributor",
+        "member",
         "community",
         "active",
         "archival"
@@ -29963,6 +30078,7 @@
       "editorial_labels": [
         "recipient",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -31130,6 +31246,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community",
         "active",
         "archival"
@@ -31139,6 +31256,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -31171,7 +31289,7 @@
       "date": "2025-02-01",
       "status": "active",
       "resolved_status": "active",
-      "reconciliation_status": "needs-review",
+      "reconciliation_status": "matched",
       "title": "0xd32d...7cd4",
       "summary": "community member. 1 passed authored proposals, 0 treasury routes, 8 proof records.",
       "requested_budget_display": "",
@@ -31181,6 +31299,7 @@
       "labels": [
         "proposer",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -31189,6 +31308,7 @@
       "editorial_labels": [
         "proposer",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -32959,7 +33079,7 @@
       "date": "2025-01-21",
       "status": "active",
       "resolved_status": "active",
-      "reconciliation_status": "needs-review",
+      "reconciliation_status": "matched",
       "title": "0x32c8...2428",
       "summary": "community member. 0 passed authored proposals, 0 treasury routes, 8 proof records.",
       "requested_budget_display": "",
@@ -32969,6 +33089,7 @@
       "labels": [
         "proposer",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -32977,6 +33098,7 @@
       "editorial_labels": [
         "proposer",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -33011,7 +33133,7 @@
       "date": "2025-01-21",
       "status": "active",
       "resolved_status": "active",
-      "reconciliation_status": "needs-review",
+      "reconciliation_status": "matched",
       "title": "0x1f39...0d2b",
       "summary": "community member. 0 passed authored proposals, 1 treasury routes, 0 proof records.",
       "requested_budget_display": "",
@@ -33021,6 +33143,7 @@
       "labels": [
         "recipient",
         "contributor",
+        "member",
         "community",
         "active",
         "archival"
@@ -33028,6 +33151,7 @@
       "editorial_labels": [
         "recipient",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -33267,6 +33391,7 @@
       "labels": [
         "recipient",
         "contributor",
+        "member",
         "community",
         "active",
         "archival"
@@ -33274,6 +33399,7 @@
       "editorial_labels": [
         "recipient",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -34498,7 +34624,7 @@
       "date": "2024-12-01",
       "status": "active",
       "resolved_status": "active",
-      "reconciliation_status": "needs-review",
+      "reconciliation_status": "matched",
       "title": "0x709a...a68a",
       "summary": "community member. 0 passed authored proposals, 1 treasury routes, 0 proof records.",
       "requested_budget_display": "",
@@ -34508,6 +34634,7 @@
       "labels": [
         "recipient",
         "contributor",
+        "member",
         "community",
         "active",
         "archival"
@@ -34515,6 +34642,7 @@
       "editorial_labels": [
         "recipient",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -35736,7 +35864,7 @@
       "date": "2024-11-11",
       "status": "active",
       "resolved_status": "active",
-      "reconciliation_status": "needs-review",
+      "reconciliation_status": "matched",
       "title": "0x4f81...3f20",
       "summary": "community member. 0 passed authored proposals, 1 treasury routes, 0 proof records.",
       "requested_budget_display": "",
@@ -35746,6 +35874,7 @@
       "labels": [
         "recipient",
         "contributor",
+        "member",
         "community",
         "active",
         "archival"
@@ -35753,6 +35882,7 @@
       "editorial_labels": [
         "recipient",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -36344,6 +36474,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -36355,6 +36486,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -36389,7 +36521,7 @@
       "date": "2024-11-09",
       "status": "active",
       "resolved_status": "active",
-      "reconciliation_status": "needs-review",
+      "reconciliation_status": "matched",
       "title": "0xdb47...63c4",
       "summary": "community member. 1 passed authored proposals, 0 treasury routes, 16 proof records.",
       "requested_budget_display": "",
@@ -36400,6 +36532,7 @@
         "athlete",
         "proposer",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -36409,6 +36542,7 @@
         "athlete",
         "proposer",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -37570,6 +37704,7 @@
       "labels": [
         "proposer",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -37578,6 +37713,7 @@
       "editorial_labels": [
         "proposer",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -37763,6 +37899,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -37774,6 +37911,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -39078,6 +39216,7 @@
       "labels": [
         "proposer",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -39086,6 +39225,7 @@
       "editorial_labels": [
         "proposer",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -39753,7 +39893,7 @@
       "date": "2024-10-19",
       "status": "active",
       "resolved_status": "active",
-      "reconciliation_status": "needs-review",
+      "reconciliation_status": "matched",
       "title": "0x9d4e...937f",
       "summary": "community member. 0 passed authored proposals, 1 treasury routes, 0 proof records.",
       "requested_budget_display": "",
@@ -39763,6 +39903,7 @@
       "labels": [
         "recipient",
         "contributor",
+        "member",
         "community",
         "active",
         "archival"
@@ -39770,6 +39911,7 @@
       "editorial_labels": [
         "recipient",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -41483,7 +41625,7 @@
       "date": "2024-09-30",
       "status": "active",
       "resolved_status": "active",
-      "reconciliation_status": "needs-review",
+      "reconciliation_status": "matched",
       "title": "0x29c0...ec66",
       "summary": "community member. 0 passed authored proposals, 1 treasury routes, 0 proof records.",
       "requested_budget_display": "",
@@ -41495,6 +41637,7 @@
         "holder",
         "recipient",
         "contributor",
+        "member",
         "community",
         "active",
         "archival"
@@ -41504,6 +41647,7 @@
         "holder",
         "recipient",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -42561,6 +42705,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -42572,6 +42717,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -43376,7 +43522,7 @@
       "date": "2024-08-23",
       "status": "active",
       "resolved_status": "active",
-      "reconciliation_status": "needs-review",
+      "reconciliation_status": "matched",
       "title": "0x0a7b...442e",
       "summary": "community member. 0 passed authored proposals, 1 treasury routes, 0 proof records.",
       "requested_budget_display": "",
@@ -43386,6 +43532,7 @@
       "labels": [
         "recipient",
         "contributor",
+        "member",
         "community",
         "active",
         "archival"
@@ -43393,6 +43540,7 @@
       "editorial_labels": [
         "recipient",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -46650,7 +46798,7 @@
       "date": "2024-08-18",
       "status": "active",
       "resolved_status": "active",
-      "reconciliation_status": "needs-review",
+      "reconciliation_status": "matched",
       "title": "0xe1b9...9641",
       "summary": "community member. 0 passed authored proposals, 1 treasury routes, 0 proof records.",
       "requested_budget_display": "",
@@ -46660,6 +46808,7 @@
       "labels": [
         "recipient",
         "contributor",
+        "member",
         "community",
         "active",
         "archival"
@@ -46667,6 +46816,7 @@
       "editorial_labels": [
         "recipient",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -48323,7 +48473,7 @@
       "date": "2024-08-08",
       "status": "active",
       "resolved_status": "active",
-      "reconciliation_status": "needs-review",
+      "reconciliation_status": "matched",
       "title": "0xe8b2...599d",
       "summary": "community member. 0 passed authored proposals, 2 treasury routes, 0 proof records.",
       "requested_budget_display": "",
@@ -48333,6 +48483,7 @@
       "labels": [
         "recipient",
         "contributor",
+        "member",
         "community",
         "active",
         "archival"
@@ -48340,6 +48491,7 @@
       "editorial_labels": [
         "recipient",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -48373,7 +48525,7 @@
       "date": "2024-08-08",
       "status": "active",
       "resolved_status": "active",
-      "reconciliation_status": "needs-review",
+      "reconciliation_status": "matched",
       "title": "0x5979...8db0",
       "summary": "community member. 1 passed authored proposals, 1 treasury routes, 8 proof records.",
       "requested_budget_display": "",
@@ -48387,6 +48539,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -48399,6 +48552,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -49665,7 +49819,7 @@
       "date": "2024-08-02",
       "status": "active",
       "resolved_status": "active",
-      "reconciliation_status": "needs-review",
+      "reconciliation_status": "matched",
       "title": "0x10c3...d7b3",
       "summary": "community member. 0 passed authored proposals, 1 treasury routes, 0 proof records.",
       "requested_budget_display": "",
@@ -49677,6 +49831,7 @@
         "holder",
         "recipient",
         "contributor",
+        "member",
         "community",
         "active",
         "archival"
@@ -49686,6 +49841,7 @@
         "holder",
         "recipient",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -50468,7 +50624,7 @@
       "date": "2024-07-25",
       "status": "active",
       "resolved_status": "active",
-      "reconciliation_status": "needs-review",
+      "reconciliation_status": "matched",
       "title": "0x3f51...f7f2",
       "summary": "community member. 0 passed authored proposals, 1 treasury routes, 0 proof records.",
       "requested_budget_display": "",
@@ -50478,6 +50634,7 @@
       "labels": [
         "recipient",
         "contributor",
+        "member",
         "community",
         "active",
         "archival"
@@ -50485,6 +50642,7 @@
       "editorial_labels": [
         "recipient",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -52317,7 +52475,7 @@
       "date": "2024-07-19",
       "status": "active",
       "resolved_status": "active",
-      "reconciliation_status": "needs-review",
+      "reconciliation_status": "matched",
       "title": "0x459b...69de",
       "summary": "community member. 0 passed authored proposals, 1 treasury routes, 0 proof records.",
       "requested_budget_display": "",
@@ -52327,6 +52485,7 @@
       "labels": [
         "recipient",
         "contributor",
+        "member",
         "community",
         "active",
         "archival"
@@ -52334,6 +52493,7 @@
       "editorial_labels": [
         "recipient",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -58642,7 +58802,7 @@
       "date": "2024-05-01",
       "status": "active",
       "resolved_status": "active",
-      "reconciliation_status": "needs-review",
+      "reconciliation_status": "matched",
       "title": "0xe636...decc",
       "summary": "community member. 0 passed authored proposals, 1 treasury routes, 0 proof records.",
       "requested_budget_display": "",
@@ -58654,6 +58814,7 @@
         "holder",
         "recipient",
         "contributor",
+        "member",
         "community",
         "active",
         "archival"
@@ -58663,6 +58824,7 @@
         "holder",
         "recipient",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -58695,7 +58857,7 @@
       "date": "2024-05-01",
       "status": "active",
       "resolved_status": "active",
-      "reconciliation_status": "needs-review",
+      "reconciliation_status": "matched",
       "title": "0x5769...ecab",
       "summary": "community member. 0 passed authored proposals, 1 treasury routes, 0 proof records.",
       "requested_budget_display": "",
@@ -58707,6 +58869,7 @@
         "holder",
         "recipient",
         "contributor",
+        "member",
         "community",
         "active",
         "archival"
@@ -58716,6 +58879,7 @@
         "holder",
         "recipient",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -60365,6 +60529,7 @@
       "labels": [
         "proposer",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -60373,6 +60538,7 @@
       "editorial_labels": [
         "proposer",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -60407,7 +60573,7 @@
       "date": "2024-03-17",
       "status": "active",
       "resolved_status": "active",
-      "reconciliation_status": "needs-review",
+      "reconciliation_status": "matched",
       "title": "0xc269...67fd",
       "summary": "community member. 2 passed authored proposals, 1 treasury routes, 0 proof records.",
       "requested_budget_display": "",
@@ -60419,6 +60585,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community",
         "active",
         "archival"
@@ -60428,6 +60595,7 @@
         "proposer",
         "recipient",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -64176,7 +64344,7 @@
       "date": "2024-02-03",
       "status": "active",
       "resolved_status": "active",
-      "reconciliation_status": "needs-review",
+      "reconciliation_status": "matched",
       "title": "0x26f0...e0c8",
       "summary": "community member. 1 passed authored proposals, 0 treasury routes, 0 proof records.",
       "requested_budget_display": "",
@@ -64188,6 +64356,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community",
         "active",
         "archival"
@@ -64197,6 +64366,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -64417,7 +64587,7 @@
       "date": "2024-02-01",
       "status": "active",
       "resolved_status": "active",
-      "reconciliation_status": "needs-review",
+      "reconciliation_status": "matched",
       "title": "0x4df4...87f2",
       "summary": "community member. 2 passed authored proposals, 0 treasury routes, 12 proof records.",
       "requested_budget_display": "",
@@ -64428,6 +64598,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -64437,6 +64608,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -67861,6 +68033,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -67872,6 +68045,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -68666,6 +68840,7 @@
       "labels": [
         "proposer",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -68674,6 +68849,7 @@
       "editorial_labels": [
         "proposer",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -71146,6 +71322,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community",
         "active",
         "archival"
@@ -71154,6 +71331,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -71198,6 +71376,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -71208,6 +71387,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -77969,6 +78149,7 @@
         "athlete",
         "proposer",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -77978,6 +78159,7 @@
         "athlete",
         "proposer",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -79432,6 +79614,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -79442,6 +79625,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [
@@ -80242,6 +80426,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community",
         "active",
         "archival",
@@ -80253,6 +80438,7 @@
         "holder",
         "proposer",
         "contributor",
+        "member",
         "community"
       ],
       "status_labels": [

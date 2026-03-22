@@ -44,6 +44,7 @@ DATASETS = {
     "sources": "sources.schema.json",
     "funding_origins": "funding_origins.schema.json",
     "funding_analysis": "funding_analysis.schema.json",
+    "nouns_activity_events": "nouns_activity_events.schema.json",
 }
 
 

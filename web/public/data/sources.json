@@ -2,6 +2,18 @@
   "dataset": "sources",
   "as_of": "2026-03-18",
   "version": 1,
+  "dune_queries": {
+    "treasury_balance_over_time": 6881668,
+    "auction_revenue_all_time": 6881718,
+    "proposal_spend_by_category": 6881723,
+    "holders_over_time": 6881732,
+    "vote_participation": 6881740,
+    "dashboard_url": "https://dune.com/0xsatori/gnarsv2",
+    "gnars_auctions_base": null,
+    "gnars_auctions_ethereum": null,
+    "treasury_outflows_base": null,
+    "eth_price_history": null
+  },
   "records": [
     {
       "source_id": "gnars-com",
@@ -78,6 +90,21 @@
         "proposal-metadata"
       ],
       "notes": "Primary structured source for the gnars.eth proposal archive and vote ledger."
+    },
+    {
+      "source_id": "nouns-build-gnars-dao",
+      "name": "Nouns.build Gnars DAO",
+      "type": "governance-interface",
+      "status": "active",
+      "url": "https://nouns.build/dao/base/0x880Fb3Cf5c6Cc2d7DFC13a993E839a9411200C17/7008",
+      "sync_mode": "rpc-log-sync",
+      "cadence": "daily",
+      "sections": [
+        "governor-events",
+        "auction-bids-settles",
+        "treasury-transfers"
+      ],
+      "notes": "Formal source for Base onchain activity ingestion tied to the Gnars DAO page on nouns.build."
     },
     {
       "source_id": "hive-gnars",

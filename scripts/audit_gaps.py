@@ -34,11 +34,37 @@ def write_report(lines: list[str]) -> None:
     out.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
+def check_sankey_completeness(spend: list[dict], dao_metrics: dict) -> str:
+    eth_price = 2800
+    total_in_ledger = sum(
+        (row.get("amount", 0) if str(row.get("asset") or row.get("asset_symbol") or "").upper() == "USDC" else row.get("amount", 0) * eth_price)
+        for row in spend
+    )
+    categorized = sum(
+        (row.get("amount", 0) if str(row.get("asset") or row.get("asset_symbol") or "").upper() == "USDC" else row.get("amount", 0) * eth_price)
+        for row in spend
+        if row.get("category") and str(row.get("category")).strip() not in {"uncategorized", "Other", ""}
+    )
+    sankey_total = (dao_metrics.get("sankey_total_k", 0) or 0) * 1000
+    coverage = round((categorized / total_in_ledger) * 100) if total_in_ledger else 0
+
+    return f"""
+SANKEY COMPLETENESS
+--------------------------------
+Total in spend_ledger:    ${total_in_ledger:>10,.0f}
+Categorized (in Sankey):  ${categorized:>10,.0f}
+Sankey total (from JSON): ${sankey_total:>10,.0f}
+Coverage:                  {coverage}%
+Drift (ledger vs sankey):  ${abs(categorized - sankey_total):>10,.0f}
+"""
+
+
 def main() -> None:
     spend = records(load(DATA / "spend_ledger.json"))
     tags = records(load(DATA / "proposal_tags.json"))
     members = records(load(DATA / "members.json"))
     props = records(load(DATA / "proposals_archive.json"))
+    dao_metrics = load(DATA / "dao_metrics.json")
 
     spend_no_project = sum(1 for row in spend if not has_value(row.get("project_id")))
     spend_no_category = sum(
@@ -98,8 +124,12 @@ def main() -> None:
     lines = ["# Data Gaps Report", "", "| Field | Missing |", "|---|---|"]
     lines.extend(f"| {k} | {v} |" for k, v in gaps.items())
 
+    sankey_report = check_sankey_completeness(spend, dao_metrics)
+    lines.extend(["", "## Sankey Completeness", "", "```text", sankey_report.strip("\n"), "```"])
+
     write_report(lines)
     print("\n".join(lines))
+    print(sankey_report)
 
 
 if __name__ == "__main__":
