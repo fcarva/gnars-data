@@ -55,13 +55,6 @@ export function AnalyticsSankey({ data }: AnalyticsSankeyProps) {
   const bands = payload?.cats || [];
   const total = useMemo(() => bands.reduce((sum, row) => sum + row.val, 0), [bands]);
 
-  if (!payload || !bands.length) {
-    if (!data || !data.nodes.length || !data.links.length) {
-      return <div className="analytics-note">No Sankey data available.</div>;
-    }
-    return <div className="analytics-note">Semantic Sankey loading...</div>;
-  }
-
   const W = 700;
   const H = 300;
   const BW = 108;
@@ -148,6 +141,13 @@ export function AnalyticsSankey({ data }: AnalyticsSankeyProps) {
     setHovered(null);
     setTooltip(null);
   };
+
+  if (!payload || !bands.length) {
+    if (!data || !data.nodes.length || !data.links.length) {
+      return <div className="analytics-note">No Sankey data available.</div>;
+    }
+    return <div className="analytics-note">Semantic Sankey loading...</div>;
+  }
 
   return (
     <div>
