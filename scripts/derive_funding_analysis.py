@@ -11,6 +11,8 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "data"
+RAW_DIR = ROOT / "raw"
+AUCTIONS_PATH = RAW_DIR / "auctions_all.json"
 COINGECKO_API_BASE = "https://api.coingecko.com/api/v3"
 USER_AGENT = "gnars-data-funding-analysis/1.0 (+https://github.com/fcarva/gnars-data)"
 
@@ -21,6 +23,11 @@ def utc_now_iso() -> str:
 
 def load_json(name: str) -> dict[str, Any]:
     path = DATA_DIR / f"{name}.json"
+    with path.open("r", encoding="utf-8") as handle:
+        return json.load(handle)
+
+
+def load_json_path(path: Path) -> dict[str, Any]:
     with path.open("r", encoding="utf-8") as handle:
         return json.load(handle)
 
@@ -50,6 +57,20 @@ def fetch_eth_price_usd(date_iso: str) -> tuple[float | None, str | None]:
     return float(value), None
 
 
+def fetch_eth_spot_price_usd() -> tuple[float | None, str | None]:
+    url = f"{COINGECKO_API_BASE}/simple/price?ids=ethereum&vs_currencies=usd"
+    request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "Accept": "application/json"})
+    try:
+        with urllib.request.urlopen(request, timeout=45) as response:  # noqa: S310
+            payload = json.loads(response.read().decode("utf-8"))
+    except (urllib.error.URLError, TimeoutError) as exc:
+        return None, f"coingecko spot price fetch failed: {exc}"
+    value = (payload.get("ethereum") or {}).get("usd")
+    if value is None:
+        return None, "coingecko spot price missing ethereum.usd"
+    return float(value), None
+
+
 def month_bucket(value: str | None) -> str:
     if not value:
         return "unknown"
@@ -62,6 +83,37 @@ def month_bucket(value: str | None) -> str:
         return "unknown"
 
 
+def parse_auctions() -> tuple[list[dict[str, Any]], list[str]]:
+    if not AUCTIONS_PATH.exists():
+        return [], ["raw/auctions_all.json missing; auction revenue omitted from funding summary"]
+
+    payload = load_json_path(AUCTIONS_PATH)
+    warnings = list(payload.get("warnings") or [])
+    rows: list[dict[str, Any]] = []
+    for row in payload.get("records") or []:
+        amount_eth_raw = row.get("amount_eth")
+        amount_eth = 0.0
+        if amount_eth_raw not in (None, ""):
+            try:
+                amount_eth = float(amount_eth_raw)
+            except (TypeError, ValueError):
+                amount_eth = 0.0
+        if amount_eth <= 0:
+            continue
+        settled = row.get("settled")
+        if settled is False:
+            continue
+        rows.append(
+            {
+                "network": str(row.get("network") or "unknown"),
+                "auction_id": row.get("auction_id"),
+                "amount_eth": amount_eth,
+                "tx_hash": row.get("tx_hash"),
+            }
+        )
+    return rows, warnings
+
+
 def main() -> int:
     funding = load_json("funding_origins")
     spend = load_json("spend_ledger")
@@ -72,6 +124,17 @@ def main() -> int:
     }
 
     warnings: list[str] = []
+
+    auctions, auction_warnings = parse_auctions()
+    warnings.extend(auction_warnings)
+    auction_eth_spot, auction_spot_warning = fetch_eth_spot_price_usd()
+    if auction_spot_warning:
+        warnings.append(auction_spot_warning)
+    auction_by_network: dict[str, float] = defaultdict(float)
+    for row in auctions:
+        auction_by_network[row["network"]] += float(row["amount_eth"])
+    auction_total_eth = sum(auction_by_network.values())
+    auction_total_usd = (auction_total_eth * auction_eth_spot) if auction_eth_spot is not None else None
 
     approved_funding_usd = 0.0
     potential_funding_usd = 0.0
@@ -226,7 +289,18 @@ def main() -> int:
             "executed_spend_usd": round(total_spend_usd, 2),
             "coverage_ratio_approved": round(coverage_approved, 6) if coverage_approved is not None else None,
             "coverage_ratio_potential": round(coverage_potential, 6) if coverage_potential is not None else None,
+            "auction_revenue_eth": round(auction_total_eth, 8),
+            "auction_revenue_usd_estimate": round(auction_total_usd, 2) if auction_total_usd is not None else None,
+            "auction_revenue_fx": "coingecko:ethereum:spot" if auction_total_usd is not None else None,
         },
+        "auction_revenue_by_network": [
+            {
+                "network": network,
+                "amount_eth": round(amount_eth, 8),
+                "amount_usd_estimate": round(amount_eth * auction_eth_spot, 2) if auction_eth_spot is not None else None,
+            }
+            for network, amount_eth in sorted(auction_by_network.items())
+        ],
         "funding_sources": funding_sources_enriched,
         "allocation_by_proposal": proposal_rows,
         "voting_power_timeseries": monthly_rows,
@@ -235,6 +309,7 @@ def main() -> int:
             "Cost per voting power = executed_spend_usd / scores_total.",
             "coverage_ratio_approved compares spend vs only approved/received funding sources.",
             "coverage_ratio_potential compares spend vs all known funding source asks.",
+            "auction_revenue_* fields are sourced from raw/auctions_all.json and priced using ETH spot when available.",
         ],
         "context_sources": [
             "https://nounsagora.com/proposals/51",

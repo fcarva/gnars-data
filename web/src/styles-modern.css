@@ -12,6 +12,8 @@
   --b700: #403e3c;
   --b900: #282726;
   --b950: #1c1b1a;
+  --ui-sans: "IBM Plex Sans", "Segoe UI", "Helvetica Neue", sans-serif;
+  --ui-mono: "IBM Plex Mono", "SFMono-Regular", Menlo, Monaco, Consolas, monospace;
 }
 
 html[data-theme="dark"] {
@@ -26,6 +28,27 @@ html[data-theme="dark"] {
   --b700: #403e3c;
   --b900: #282726;
   --b950: #1c1b1a;
+}
+
+.feed-page,
+.analytics-dashboard,
+.analytics-panel,
+.ledger-table,
+.section-head h2,
+.analytics-section-title,
+.analytics-block-title {
+  font-family: var(--ui-sans);
+}
+
+.feed-brand,
+.feed-tab,
+.metrics-item-label,
+.ledger-head,
+.ledger-mono,
+.analytics-pill,
+.analytics-label,
+.analytics-kpi-label {
+  font-family: var(--ui-mono);
 }
 
 /* Buttons & Interactive Elements */
@@ -188,6 +211,36 @@ textarea:focus {
   background: color-mix(in srgb, var(--accent-orange) 15%, transparent);
   border-color: color-mix(in srgb, var(--accent-orange) 40%, var(--line-strong));
   color: var(--accent-orange);
+}
+
+.milestone-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 20px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--line-strong);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+}
+
+.milestone-badge.is-completed {
+  color: #1f5630;
+  border-color: #7cb08d;
+  background: #e6f2e8;
+}
+
+.milestone-badge.is-in-progress {
+  color: #8d4f0a;
+  border-color: #d7a76a;
+  background: #fff0da;
+}
+
+.milestone-badge.is-planned {
+  color: var(--b600);
+  border-color: var(--b200);
+  background: var(--b100);
 }
 
 /* Progress bars */

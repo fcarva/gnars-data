@@ -3,6 +3,8 @@ import { FeedHeader } from "@/components/FeedHeader";
 import { EventRow } from "@/components/EventRow";
 import { MetricsBar } from "@/components/MetricsBar";
 import { AnalyticsDashboard } from "@/components/AnalyticsDashboard";
+import { VotesTable } from "@/components/VotesTable";
+import { MilestonesTable } from "@/components/MilestonesTable";
 import {
   fetchTimeline,
   fetchProposalVoteEvents,
@@ -13,6 +15,7 @@ import {
   fetchProposalTags,
   fetchTreasury,
   fetchFundingAnalysis,
+  fetchMilestonesData,
   fetchSankeyData,
   fetchEfficiencyData,
   fetchGovernanceData,
@@ -26,6 +29,7 @@ import {
   type Member,
   type ProposalTagRecord,
   type FundingAnalysis,
+  type MilestoneRecord,
   type SankeyData,
   type EfficiencyData,
   type GovernanceData,
@@ -42,6 +46,7 @@ const Index = () => {
   const [members, setMembers] = useState<Member[]>([]);
   const [proposalTags, setProposalTags] = useState<ProposalTagRecord[]>([]);
   const [fundingAnalysis, setFundingAnalysis] = useState<FundingAnalysis | null>(null);
+  const [milestoneRecords, setMilestoneRecords] = useState<MilestoneRecord[]>([]);
   const [sankeyData, setSankeyData] = useState<SankeyData | null>(null);
   const [efficiencyData, setEfficiencyData] = useState<EfficiencyData | null>(null);
   const [governanceData, setGovernanceData] = useState<GovernanceData | null>(null);
@@ -62,6 +67,7 @@ const Index = () => {
       fetchMembers().then(setMembers),
       fetchProposalTags().then(setProposalTags),
       fetchFundingAnalysis().then(setFundingAnalysis),
+      fetchMilestonesData().then((payload) => setMilestoneRecords(payload.records)).catch(() => setMilestoneRecords([])),
       fetchSankeyData().then(setSankeyData),
       fetchEfficiencyData().then(setEfficiencyData),
       fetchGovernanceData().then(setGovernanceData),
@@ -75,6 +81,17 @@ const Index = () => {
 
   const filtered = useMemo(() => filterEvents(events, filter), [events, filter]);
   const showAnalytics = filter === "analytics";
+  const showVotesTable = filter === "votes";
+  const showMilestonesTable = filter === "milestones" || filter === "deliveries";
+  const shownMilestones = useMemo(() => {
+    if (filter === "deliveries") {
+      return milestoneRecords.filter((record) => {
+        const status = (record.status || "").toLowerCase();
+        return status === "completed";
+      });
+    }
+    return milestoneRecords;
+  }, [filter, milestoneRecords]);
 
   return (
     <div className="feed-page">
@@ -100,6 +117,22 @@ const Index = () => {
           ) : (
             <div className="feed-empty">Loading analytics...</div>
           )
+        ) : showVotesTable ? (
+          filtered.length === 0 ? (
+            <div className="feed-empty">No vote records found.</div>
+          ) : (
+            <VotesTable events={filtered} funding={fundingAnalysis} />
+          )
+        ) : showMilestonesTable ? (
+          <MilestonesTable
+            records={shownMilestones}
+            title={filter === "deliveries" ? "Deliveries" : "Milestones"}
+            emptyMessage={
+              filter === "deliveries"
+                ? "No completed milestones in /data/milestones.json yet."
+                : "No milestones found in /data/milestones.json yet."
+            }
+          />
         ) : loading ? (
           <div className="feed-skeleton-wrap">
             {Array.from({ length: 12 }).map((_, i) => (

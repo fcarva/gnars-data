@@ -58,6 +58,15 @@ export interface LeaderboardEntry {
 }
 
 export interface DaoMetrics {
+  treasury_events?: Array<{
+    proposal_id: string;
+    title: string;
+    amount_usd: number;
+    asset: string;
+    amount: number;
+    executed_at: string;
+    balance_after: number;
+  }>;
   treasury_balance_usd?: number;
   monthly_burn_usd?: number;
   runway_months?: number;
@@ -201,6 +210,29 @@ export interface FundingTimeseriesPoint {
   cost_per_voting_power_usd: number | null;
 }
 
+export interface FundingAuctionRevenueByNetwork {
+  network: string;
+  amount_eth: number;
+  amount_usd_estimate: number | null;
+}
+
+export interface MilestoneRecord {
+  proposal_id: string;
+  proposal_title: string;
+  workstream: string;
+  milestone_title: string;
+  status: string;
+  delivered_at: string | null;
+  proof_links: string[];
+}
+
+export interface MilestonesData {
+  dataset: "milestones";
+  as_of: string;
+  version: number;
+  records: MilestoneRecord[];
+}
+
 export interface FundingAnalysis {
   dataset: "funding_analysis";
   as_of: string;
@@ -212,7 +244,11 @@ export interface FundingAnalysis {
     executed_spend_usd: number;
     coverage_ratio_approved: number | null;
     coverage_ratio_potential: number | null;
+    auction_revenue_eth?: number;
+    auction_revenue_usd_estimate?: number | null;
+    auction_revenue_fx?: string | null;
   };
+  auction_revenue_by_network?: FundingAuctionRevenueByNetwork[];
   funding_sources: FundingSource[];
   allocation_by_proposal: FundingAllocation[];
   voting_power_timeseries: FundingTimeseriesPoint[];
@@ -543,6 +579,11 @@ export async function fetchTreasury(): Promise<{
 
 export async function fetchFundingAnalysis(): Promise<FundingAnalysis> {
   const data = await fetchJson<FundingAnalysis>("funding_analysis.json");
+  return data;
+}
+
+export async function fetchMilestonesData(): Promise<MilestonesData> {
+  const data = await fetchJson<MilestonesData>("milestones.json");
   return data;
 }
 

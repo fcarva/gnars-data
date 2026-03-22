@@ -1,5 +1,16 @@
 ﻿import { useEffect, useState } from "react";
-import { ComposedChart, Line, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, ReferenceLine, CartesianGrid } from "recharts";
+import {
+  Area,
+  Bar,
+  CartesianGrid,
+  ComposedChart,
+  Line,
+  ReferenceLine,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis,
+} from "recharts";
 import { getTreasurySnapshots, type TreasurySnapshotsData, type FundingAnalysis, type ProposalTagRecord } from "@/lib/gnars-data";
 
 interface TreasuryChartProps {
@@ -7,10 +18,61 @@ interface TreasuryChartProps {
   funding?: FundingAnalysis | null;
   proposalTags?: ProposalTagRecord[];
   currentTreasuryUsd?: number | null;
+  treasuryEvents?: Array<{
+    proposal_id: string;
+    title: string;
+    amount_usd: number;
+    asset: string;
+    amount: number;
+    executed_at: string;
+    balance_after: number;
+  }>;
 }
 
-export function TreasuryChart({ projectedZeroDate, funding, proposalTags = [], currentTreasuryUsd }: TreasuryChartProps) {
+function fmtUSD(value: number): string {
+  if (value >= 1_000_000) return `$${(value / 1_000_000).toFixed(1)}m`;
+  if (value >= 1_000) return `$${Math.round(value / 1_000)}k`;
+  return `$${Math.round(value).toLocaleString()}`;
+}
+
+function fmtDate(dateStr: string): string {
+  const d = new Date(dateStr);
+  if (Number.isNaN(d.getTime())) return dateStr;
+  return d.toLocaleDateString("en-US", { month: "short", year: "2-digit" }).replace(" ", " '");
+}
+
+function HistoryRow({ row }: { row: NonNullable<TreasuryChartProps["treasuryEvents"]>[number] }) {
+  const parts = row.proposal_id.split("-");
+  const proposalNumber = parts[parts.length - 1];
+  const shortTitle = row.title.length > 38 ? `${row.title.slice(0, 37)}...` : row.title;
+  return (
+    <div
+      style={{
+        display: "grid",
+        gridTemplateColumns: "1fr auto auto",
+        gap: 10,
+        fontSize: 9,
+        fontFamily: "'Courier New', monospace",
+        lineHeight: 1.45,
+        padding: "2px 0",
+      }}
+    >
+      <span style={{ color: "var(--b600)" }}>{`[#${proposalNumber}] ${shortTitle}`}</span>
+      <span style={{ color: "var(--reL)" }}>{`-$${Math.round(row.amount_usd).toLocaleString()}`}</span>
+      <span style={{ color: "var(--b500)" }}>{`→ $${Math.round(row.balance_after).toLocaleString()}`}</span>
+    </div>
+  );
+}
+
+export function TreasuryChart({
+  projectedZeroDate,
+  funding,
+  proposalTags = [],
+  currentTreasuryUsd,
+  treasuryEvents = [],
+}: TreasuryChartProps) {
   const [data, setData] = useState<TreasurySnapshotsData | null>(null);
+  const [showHistory, setShowHistory] = useState(false);
 
   useEffect(() => {
     getTreasurySnapshots().then(setData);
@@ -41,13 +103,13 @@ export function TreasuryChart({ projectedZeroDate, funding, proposalTags = [], c
     let balance = start;
     const synthetic = months.map((month) => {
       balance -= spendByMonth.get(month) || 0;
-      return { date: `${month}-01`, value: Math.max(balance, 0) };
+      return { date: `${month}-01`, value: Math.max(balance, 0), proposalSpend: spendByMonth.get(month) || 0 };
     });
     if (currentTreasuryUsd && synthetic.length) {
       const last = synthetic[synthetic.length - 1];
       const nowMonth = new Date().toISOString().slice(0, 7);
       if (!last.date.startsWith(nowMonth)) {
-        synthetic.push({ date: `${nowMonth}-01`, value: currentTreasuryUsd });
+        synthetic.push({ date: `${nowMonth}-01`, value: currentTreasuryUsd, proposalSpend: 0 });
       } else {
         last.value = currentTreasuryUsd;
       }
@@ -57,58 +119,80 @@ export function TreasuryChart({ projectedZeroDate, funding, proposalTags = [], c
 
   const tagByArchive = new Map(proposalTags.map((row) => [row.archive_id, row.semantic_category || row.primary_category || "other"]));
 
-  const spendByMonthCategory = new Map<
-    string,
-    { athletes: number; media: number; ops: number; devEvents: number; other: number }
-  >();
+  const spendByMonthCategory = new Map<string, number>();
 
   for (const row of funding?.allocation_by_proposal || []) {
     const month = (row.created_at || "").slice(0, 7);
     if (!month) continue;
     if (!spendByMonthCategory.has(month)) {
-      spendByMonthCategory.set(month, { athletes: 0, media: 0, ops: 0, devEvents: 0, other: 0 });
+      spendByMonthCategory.set(month, 0);
     }
-    const bucket = spendByMonthCategory.get(month);
-    if (!bucket) continue;
     const amount = row.executed_spend_usd || 0;
     const category = tagByArchive.get(row.archive_id) || "other";
-    if (category === "athletes_riders") bucket.athletes += amount;
-    else if (category === "workstream_media") bucket.media += amount;
-    else if (category === "workstream_ops") bucket.ops += amount;
-    else if (category === "workstream_products" || category === "workstream_dev" || category === "irl_events") bucket.devEvents += amount;
-    else bucket.other += amount;
+    if (
+      category === "athletes_riders"
+      || category === "workstream_media"
+      || category === "workstream_ops"
+      || category === "workstream_products"
+      || category === "workstream_dev"
+      || category === "irl_events"
+      || category === "other"
+    ) {
+      spendByMonthCategory.set(month, (spendByMonthCategory.get(month) || 0) + amount);
+    }
   }
 
-  const mergedByMonth = new Map<string, { date: string; value: number; athletes: number; media: number; ops: number; devEvents: number; other: number }>();
+  const auctionByMonth = new Map<string, number>();
+  for (const source of funding?.funding_sources || []) {
+    const marker = `${source.funding_source_id} ${source.title}`.toLowerCase();
+    if (!marker.includes("auction")) continue;
+    const month = (source.source_date || "").slice(0, 7);
+    if (!month) continue;
+    auctionByMonth.set(month, (auctionByMonth.get(month) || 0) + (source.usd_estimate_at_source || 0));
+  }
+
+  if (auctionByMonth.size === 0 && (funding?.summary.auction_revenue_usd_estimate || 0) > 0 && chartData.length) {
+    const latestMonth = chartData[chartData.length - 1].date.slice(0, 7);
+    auctionByMonth.set(latestMonth, funding?.summary.auction_revenue_usd_estimate || 0);
+  }
+
+  const mergedByMonth = new Map<
+    string,
+    { date: string; value: number; proposalSpend: number; auctionInflow: number }
+  >();
   for (const row of chartData) {
     const month = row.date.slice(0, 7);
     mergedByMonth.set(month, {
       date: `${month}-01`,
       value: row.value,
-      athletes: 0,
-      media: 0,
-      ops: 0,
-      devEvents: 0,
-      other: 0,
+      proposalSpend: 0,
+      auctionInflow: 0,
     });
   }
   for (const [month, spend] of spendByMonthCategory.entries()) {
     const existing = mergedByMonth.get(month);
     if (existing) {
-      existing.athletes = spend.athletes;
-      existing.media = spend.media;
-      existing.ops = spend.ops;
-      existing.devEvents = spend.devEvents;
-      existing.other = spend.other;
+      existing.proposalSpend = spend;
     } else {
       mergedByMonth.set(month, {
         date: `${month}-01`,
         value: 0,
-        athletes: spend.athletes,
-        media: spend.media,
-        ops: spend.ops,
-        devEvents: spend.devEvents,
-        other: spend.other,
+        proposalSpend: spend,
+        auctionInflow: 0,
+      });
+    }
+  }
+
+  for (const [month, inflow] of auctionByMonth.entries()) {
+    const existing = mergedByMonth.get(month);
+    if (existing) {
+      existing.auctionInflow = inflow;
+    } else {
+      mergedByMonth.set(month, {
+        date: `${month}-01`,
+        value: 0,
+        proposalSpend: 0,
+        auctionInflow: inflow,
       });
     }
   }
@@ -124,11 +208,8 @@ export function TreasuryChart({ projectedZeroDate, funding, proposalTags = [], c
     return `$${value}`;
   };
 
-  const dtFormatter = (dateStr: string) => {
-    const d = new Date(dateStr);
-    if (isNaN(d.getTime())) return dateStr;
-    return d.toLocaleDateString("en-US", { month: "short", year: "2-digit" }).replace(" ", " '");
-  };
+  const historyRows = treasuryEvents.slice(0, 8);
+  const historyCollapsed = historyRows.length > 5 && !showHistory;
 
   return (
     <div>
@@ -136,6 +217,25 @@ export function TreasuryChart({ projectedZeroDate, funding, proposalTags = [], c
         <div>
           <div className="treasury-total-value">{formatter(currentValue)}</div>
           <div className="analytics-note">Live treasury balance</div>
+          {historyRows.length ? (
+            <div style={{ marginTop: 8 }}>
+              {historyRows.length > 5 ? (
+                <button
+                  type="button"
+                  className="skt"
+                  onClick={() => setShowHistory((value) => !value)}
+                  style={{ marginBottom: 4 }}
+                >
+                  {historyCollapsed ? "show history" : "hide history"}
+                </button>
+              ) : null}
+              <div>
+                {(historyCollapsed ? historyRows.slice(0, 5) : historyRows).map((row) => (
+                  <HistoryRow key={`${row.proposal_id}:${row.executed_at}:${row.amount_usd}`} row={row} />
+                ))}
+              </div>
+            </div>
+          ) : null}
         </div>
         <div className="treasury-total-value" style={{ marginLeft: "auto" }}>Peak {formatter(peakValue)}</div>
       </div>
@@ -146,47 +246,87 @@ export function TreasuryChart({ projectedZeroDate, funding, proposalTags = [], c
             <CartesianGrid strokeDasharray="4 4" stroke="var(--b150)" />
             <XAxis
               dataKey="date"
-              tickFormatter={dtFormatter}
-              tick={{ fill: "var(--b500)", fontSize: 11, fontFamily: "IBM Plex Mono" }}
-              axisLine={{ stroke: "var(--b150)" }}
+              tickFormatter={fmtDate}
+              tick={{ fill: "var(--b500)", fontSize: 8, fontFamily: "'Courier New'" }}
+              axisLine={false}
               tickLine={false}
             />
             <YAxis
-              tickFormatter={formatter}
-              tick={{ fill: "var(--b500)", fontSize: 11, fontFamily: "IBM Plex Mono" }}
+              domain={[0, "auto"]}
+              tickFormatter={fmtUSD}
+              width={52}
+              tick={{ fill: "var(--b500)", fontSize: 9, fontFamily: "'Courier New'" }}
               axisLine={false}
               tickLine={false}
             />
             <Tooltip
-              labelFormatter={(label) => dtFormatter(String(label || ""))}
-              formatter={(val, name) => {
-                if (name === "Treasury") return [formatter(Number(val || 0)), "Treasury"];
-                return [formatter(Number(val || 0)), name];
-              }}
-              contentStyle={{
-                backgroundColor: "var(--pp)",
-                border: "1px solid var(--b150)",
-                borderRadius: 4,
-                fontFamily: "IBM Plex Mono",
-                fontSize: 12,
-                color: "var(--b900)",
+              content={({ active, label, payload }) => {
+                if (!active || !payload || !payload.length) return null;
+                return (
+                  <div
+                    style={{
+                      background: "#282726",
+                      color: "#FFFEF8",
+                      fontSize: 10,
+                      fontFamily: "'Courier New', monospace",
+                      padding: "8px 12px",
+                      borderRadius: 2,
+                      border: "none",
+                    }}
+                  >
+                    <div style={{ marginBottom: 6 }}>{fmtDate(String(label || ""))}</div>
+                    {payload.map((entry) => (
+                      <div key={String(entry.name)} style={{ display: "flex", gap: 8, justifyContent: "space-between" }}>
+                        <span>{String(entry.name)}</span>
+                        <span>{fmtUSD(Number(entry.value || 0))}</span>
+                      </div>
+                    ))}
+                  </div>
+                );
               }}
             />
-            <ReferenceLine y={10000} stroke="#DA702C" strokeDasharray="4 4" label={{ value: "$10k", position: "insideTopRight", fill: "#DA702C", fontSize: 11 }} />
+            <ReferenceLine
+              y={10000}
+              stroke="#DA702C"
+              strokeDasharray="4 3"
+              opacity={0.4}
+              label={{ value: "$10k critical", fontSize: 8, fill: "#DA702C", fontFamily: "'Courier New'" }}
+            />
             {projectedDateTick ? (
               <ReferenceLine x={projectedDateTick} stroke="#D14D41" strokeDasharray="5 4" label={{ value: "Projected zero", angle: -90, position: "insideTop", fill: "#D14D41", fontSize: 10 }} />
             ) : null}
 
-            <Bar dataKey="athletes" stackId="spend" fill="#3AA99F" name="Athletes spend" barSize={14} />
-            <Bar dataKey="media" stackId="spend" fill="#8B7EC8" name="Media spend" barSize={14} />
-            <Bar dataKey="ops" stackId="spend" fill="#DA702C" name="Ops spend" barSize={14} />
-            <Bar dataKey="devEvents" stackId="spend" fill="#4385BE" name="Dev + Events spend" barSize={14} />
-            <Bar dataKey="other" stackId="spend" fill="#B7B5AC" name="Other spend" barSize={14} />
+            <Area
+              type="monotone"
+              dataKey="value"
+              name="Balance fill"
+              fill="rgba(64,62,60,0.05)"
+              stroke="none"
+            />
+
+            <Bar
+              dataKey="proposalSpend"
+              name="Proposal spend"
+              fill="rgba(209,77,65,0.18)"
+              stroke="#D14D41"
+              strokeWidth={1}
+              barSize={14}
+            />
+
+            <Line
+              type="monotone"
+              dataKey="auctionInflow"
+              name="Auction inflow"
+              stroke="#879A39"
+              strokeDasharray="5 3"
+              strokeWidth={1.5}
+              dot={false}
+            />
 
             <Line
               type="monotone"
               dataKey="value"
-              name="Treasury"
+              name="Balance"
               stroke="#403E3C"
               strokeWidth={2}
               dot={false}

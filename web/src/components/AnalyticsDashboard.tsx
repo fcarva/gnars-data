@@ -112,6 +112,7 @@ export function AnalyticsDashboard({
             funding={funding}
             proposalTags={proposalTags}
             currentTreasuryUsd={metrics.treasury_balance_usd ?? o.treasury_total_value_usd}
+            treasuryEvents={metrics.treasury_events || []}
           />
         </div>
       </div>

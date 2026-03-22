@@ -5893,9 +5893,9 @@
       "role": "web development, data pipelines",
       "roles": [
         "web development, data pipelines",
+        "web development",
         "operations",
-        "data pipelines",
-        "web development"
+        "data pipelines"
       ],
       "tags": [
         "athlete",
@@ -9142,10 +9142,10 @@
       "status": "active",
       "role": "technical lead, AI infrastructure",
       "roles": [
-        "AI infrastructure",
+        "operations",
         "technical lead",
-        "technical lead, AI infrastructure",
-        "operations"
+        "AI infrastructure",
+        "technical lead, AI infrastructure"
       ],
       "tags": [
         "builder",

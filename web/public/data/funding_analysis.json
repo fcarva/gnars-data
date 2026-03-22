@@ -1,6 +1,6 @@
 {
   "dataset": "funding_analysis",
-  "as_of": "2026-03-20T22:38:27.339596Z",
+  "as_of": "2026-03-22T01:29:33.184652Z",
   "version": 1,
   "summary": {
     "funding_sources": 2,
@@ -8,8 +8,12 @@
     "potential_funding_usd_estimate": 525000.0,
     "executed_spend_usd": 259364.84,
     "coverage_ratio_approved": 1.152733,
-    "coverage_ratio_potential": 0.494028
+    "coverage_ratio_potential": 0.494028,
+    "auction_revenue_eth": 0,
+    "auction_revenue_usd_estimate": 0.0,
+    "auction_revenue_fx": "coingecko:ethereum:spot"
   },
+  "auction_revenue_by_network": [],
   "funding_sources": [
     {
       "funding_source_id": "nouns-bootstrap-2022",
@@ -1029,7 +1033,8 @@
     "Cost per vote = executed_spend_usd / vote_count for each proposal.",
     "Cost per voting power = executed_spend_usd / scores_total.",
     "coverage_ratio_approved compares spend vs only approved/received funding sources.",
-    "coverage_ratio_potential compares spend vs all known funding source asks."
+    "coverage_ratio_potential compares spend vs all known funding source asks.",
+    "auction_revenue_* fields are sourced from raw/auctions_all.json and priced using ETH spot when available."
   ],
   "context_sources": [
     "https://nounsagora.com/proposals/51",
@@ -1038,6 +1043,7 @@
     "https://www.nouns.camp/proposals/382"
   ],
   "warnings": [
+    "raw/auctions_all.json missing; auction revenue omitted from funding summary",
     "coingecko fetch failed for 2022-04-08: HTTP Error 401: Unauthorized"
   ]
 }

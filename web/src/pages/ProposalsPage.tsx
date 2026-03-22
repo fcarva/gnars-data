@@ -14,6 +14,13 @@ function inWindow(date: string, days: number) {
   return parsed.getTime() >= Date.now() - days * 24 * 60 * 60 * 1000;
 }
 
+function truncateTitle(value: string, maxLength = 88) {
+  if (!value || value.length <= maxLength) {
+    return value;
+  }
+  return `${value.slice(0, maxLength - 1).trimEnd()}...`;
+}
+
 export function ProposalsPage({ meta, props }: { meta: Meta; props: ProposalsPageProps }) {
   const [filters, setFilters] = useUrlState({
     status: "all",
@@ -101,8 +108,10 @@ export function ProposalsPage({ meta, props }: { meta: Meta; props: ProposalsPag
             {proposals.map((proposal) => (
               <div key={proposal.archiveId} className="ledger-row">
                 <span className="ledger-cell ledger-primary">
-                  <a href={proposal.href}>{proposal.numberLabel}</a>
-                  <strong>{proposal.title}</strong>
+                  <strong>
+                    <a href={proposal.href}>{proposal.numberLabel}</a>
+                  </strong>
+                  <span>{truncateTitle(proposal.title)}</span>
                   <small>{proposal.summary}</small>
                   <small>{proposal.proposerLabel} / {proposal.proposerSecondaryLabel}</small>
                 </span>

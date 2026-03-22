@@ -6,6 +6,143 @@
   "monthly_burn_usd": 12968.24,
   "runway_months": 3,
   "projected_zero_date": "2026-06",
+  "treasury_events": [
+    {
+      "proposal_id": "gnars-base-117",
+      "title": "Sponsor Gnars Monik Santos in QS/WSL 2026",
+      "amount_usd": 1570.0,
+      "asset": "USDC",
+      "amount": 1570.0,
+      "executed_at": "2026-03-17",
+      "balance_after": 44736.99
+    },
+    {
+      "proposal_id": "gnars-base-108",
+      "title": "SKATE ACROSS AFRICA (EAST COAST - SOUTH COAST)",
+      "amount_usd": 2500.0,
+      "asset": "USDC",
+      "amount": 2500.0,
+      "executed_at": "2025-12-03",
+      "balance_after": 46306.99
+    },
+    {
+      "proposal_id": "gnars-base-104",
+      "title": "7Capasmag Skate&Jazz Vol 2 - New Nounstacle inauguration in Devconnect",
+      "amount_usd": 1432.04,
+      "asset": "ETH",
+      "amount": 0.42,
+      "executed_at": "2025-11-13",
+      "balance_after": 48806.99
+    },
+    {
+      "proposal_id": "gnars-base-101",
+      "title": "Gnars India Initiative: Building Bridges Through Skateboarding",
+      "amount_usd": 2600.0,
+      "asset": "USDC",
+      "amount": 2600.0,
+      "executed_at": "2025-10-16",
+      "balance_after": 50239.03
+    },
+    {
+      "proposal_id": "gnars-base-101",
+      "title": "Gnars India Initiative: Building Bridges Through Skateboarding",
+      "amount_usd": 2465.57,
+      "asset": "ETH",
+      "amount": 0.619,
+      "executed_at": "2025-10-16",
+      "balance_after": 52839.03
+    },
+    {
+      "proposal_id": "gnars-base-99",
+      "title": "Gnars Crew at Devconnect Buenos Aires 2025 – Skate + Hacker House",
+      "amount_usd": 4515.32,
+      "asset": "ETH",
+      "amount": 1.0,
+      "executed_at": "2025-10-06",
+      "balance_after": 55304.6
+    },
+    {
+      "proposal_id": "gnars-base-97",
+      "title": "Pod Media Proposal 3.0",
+      "amount_usd": 780.0,
+      "asset": "USDC",
+      "amount": 780.0,
+      "executed_at": "2025-08-31",
+      "balance_after": 59819.92
+    },
+    {
+      "proposal_id": "gnars-base-97",
+      "title": "Pod Media Proposal 3.0",
+      "amount_usd": 4373.36,
+      "asset": "ETH",
+      "amount": 1.0,
+      "executed_at": "2025-08-31",
+      "balance_after": 60599.92
+    },
+    {
+      "proposal_id": "gnars-base-95",
+      "title": "Funding Katwe Parkour Culture to make the DIY Parkour Equipments",
+      "amount_usd": 1200.0,
+      "asset": "USDC",
+      "amount": 1200.0,
+      "executed_at": "2025-08-05",
+      "balance_after": 64973.28
+    },
+    {
+      "proposal_id": "gnars-base-91",
+      "title": "IPFS Reimbursement and Advance for Shared IPFS Infrastructure",
+      "amount_usd": 0.0,
+      "asset": "TOKEN-4F6047",
+      "amount": 2.06232e+20,
+      "executed_at": "2025-07-24",
+      "balance_after": 66173.28
+    },
+    {
+      "proposal_id": "gnars-base-90",
+      "title": "Transfer Correction – Proposal 70",
+      "amount_usd": 360.0,
+      "asset": "USDC",
+      "amount": 360.0,
+      "executed_at": "2025-07-19",
+      "balance_after": 66173.28
+    },
+    {
+      "proposal_id": "gnars-base-89",
+      "title": "Noggle Rail - Itapetininga Skate Park ⌐◨-◨",
+      "amount_usd": 1700.0,
+      "asset": "USDC",
+      "amount": 1700.0,
+      "executed_at": "2025-07-01",
+      "balance_after": 66533.28
+    },
+    {
+      "proposal_id": "gnars-base-86",
+      "title": "Gnars Flows",
+      "amount_usd": 8000.0,
+      "asset": "USDC",
+      "amount": 8000.0,
+      "executed_at": "2025-06-01",
+      "balance_after": 68233.28
+    },
+    {
+      "proposal_id": "gnars-base-86",
+      "title": "Gnars Flows",
+      "amount_usd": 2532.36,
+      "asset": "ETH",
+      "amount": 1.0,
+      "executed_at": "2025-06-01",
+      "balance_after": 76233.28
+    },
+    {
+      "proposal_id": "gnars-base-77",
+      "title": "THE GLOBAL PREMIERE OF UGANDA CONNECTION DOCUMENTARY",
+      "amount_usd": 1350.0,
+      "asset": "USDC",
+      "amount": 1350.0,
+      "executed_at": "2025-04-22",
+      "balance_after": 78765.64
+    }
+  ],
   "overview": {
     "proposal_count": 222,
     "active_proposal_count": 2,

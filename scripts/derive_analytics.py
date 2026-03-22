@@ -1855,6 +1855,11 @@ def build_dao_metrics(
         (as_of_dt + timedelta(days=runway_months * 30)).strftime("%Y-%m") if runway_months > 0 else None
     )
 
+    treasury_events = build_treasury_events(
+        spend_records=spend_records,
+        treasury_balance_usd=treasury_balance_usd,
+    )
+
     return {
         "dataset": "dao_metrics",
         "as_of": archive["as_of"],
@@ -1863,6 +1868,7 @@ def build_dao_metrics(
         "monthly_burn_usd": round(monthly_burn_usd, 2),
         "runway_months": runway_months,
         "projected_zero_date": projected_zero_date,
+        "treasury_events": treasury_events,
         "overview": overview,
         "treasury": {
             "wallet_address": treasury["wallet"]["address"],
@@ -1931,6 +1937,141 @@ def build_dao_metrics(
                 for record in project_rollups["records"][:8]
             ],
         },
+    }
+
+
+def build_treasury_events(
+    spend_records: list[dict[str, Any]],
+    treasury_balance_usd: float,
+    limit: int = 15,
+) -> list[dict[str, Any]]:
+    rows: list[dict[str, Any]] = []
+    for record in spend_records:
+        executed_at = (
+            record.get("proposal_executed_at")
+            or record.get("proposal_end_at")
+            or record.get("proposal_created_at")
+        )
+        parsed = parse_datetime(executed_at)
+        if not parsed:
+            continue
+
+        amount_usd = number_or_zero(record.get("usd_value_at_execution"))
+        if amount_usd <= 0:
+            amount_usd = usd_value_from_spend(record)
+
+        proposal_number = integer_or_none(record.get("proposal_number"))
+        chain = str(record.get("chain") or "base").strip().lower() or "base"
+        if proposal_number is not None:
+            proposal_id = f"gnars-{chain}-{proposal_number}"
+        else:
+            proposal_id = str(record.get("proposal_key") or record.get("archive_id") or "unknown")
+
+        rows.append(
+            {
+                "proposal_id": proposal_id,
+                "title": str(record.get("title") or "Untitled proposal").strip(),
+                "amount_usd": round(amount_usd, 2),
+                "asset": str(record.get("asset_symbol") or "").upper(),
+                "amount": round(number_or_zero(record.get("amount")), 8),
+                "executed_at": parsed.date().isoformat(),
+            }
+        )
+
+    rows.sort(key=lambda item: (item["executed_at"], item["proposal_id"]), reverse=True)
+    selected = rows[:limit]
+
+    rolling_balance = treasury_balance_usd
+    for row in selected:
+        row["balance_after"] = round(rolling_balance, 2)
+        rolling_balance += number_or_zero(row.get("amount_usd"))
+
+    return selected
+
+
+def truncate_text(value: str, max_len: int) -> str:
+    text = value.strip()
+    if len(text) <= max_len:
+        return text
+    return f"{text[: max_len - 1].rstrip()}..."
+
+
+def build_milestones(
+    projects: dict[str, Any],
+    archive: dict[str, Any],
+    analytics_as_of: str,
+) -> dict[str, Any]:
+    archive_by_alias: dict[str, dict[str, Any]] = {}
+    for proposal in archive.get("records", []):
+        aliases = {
+            str(proposal.get("archive_id") or "").lower(),
+            str(proposal.get("proposal_key") or "").lower(),
+        }
+        number = proposal.get("proposal_number")
+        chain = str(proposal.get("chain") or "").strip().lower()
+        if number is not None and chain:
+            aliases.add(f"{chain}-{number}")
+        for alias in aliases:
+            if alias:
+                archive_by_alias[alias] = proposal
+
+    records: list[dict[str, Any]] = []
+    for project in projects.get("records", []):
+        origin = (project.get("origin_proposals") or [None])[0]
+        origin_key = str(origin or "").strip().lower()
+        proposal = archive_by_alias.get(origin_key)
+        proposal_id = str(origin or project.get("project_id") or "unknown")
+        proposal_title = truncate_text(str((proposal or {}).get("title") or project.get("name") or "Untitled proposal"), 60)
+        workstream = str(project.get("name") or project.get("project_id") or "workstream")
+
+        milestones = project.get("milestones") or []
+        for milestone in milestones:
+            if isinstance(milestone, str):
+                milestone_title = milestone.strip()
+                status = "planned"
+                delivered_at = None
+                proof_links: list[str] = []
+            elif isinstance(milestone, dict):
+                milestone_title = str(milestone.get("title") or milestone.get("name") or "").strip()
+                status = str(milestone.get("status") or "planned").strip().lower() or "planned"
+                delivered_at = milestone.get("delivered_at") or milestone.get("date")
+                proof_links = [
+                    str(item).strip()
+                    for item in (milestone.get("proof_links") or milestone.get("links") or [])
+                    if str(item).strip()
+                ]
+            else:
+                continue
+
+            if not milestone_title:
+                continue
+
+            records.append(
+                {
+                    "proposal_id": proposal_id,
+                    "proposal_title": proposal_title,
+                    "workstream": workstream,
+                    "milestone_title": milestone_title,
+                    "status": status,
+                    "delivered_at": delivered_at,
+                    "proof_links": proof_links,
+                }
+            )
+
+    records.sort(
+        key=lambda record: (
+            str(record.get("delivered_at") or ""),
+            str(record.get("proposal_id") or ""),
+            str(record.get("milestone_title") or ""),
+        ),
+        reverse=True,
+    )
+
+    return {
+        "dataset": "milestones",
+        "as_of": analytics_as_of,
+        "version": 1,
+        "records": records,
     }
 
 
@@ -3009,6 +3150,11 @@ def main() -> int:
         proposal_tags=proposal_tags,
         analytics_as_of=analytics_as_of,
     )
+    milestones = build_milestones(
+        projects=projects,
+        archive=archive,
+        analytics_as_of=analytics_as_of,
+    )
 
     for payload in (
         people,
@@ -3054,6 +3200,7 @@ def main() -> int:
     write_json("sankey_impact", sankey_impact)
     write_json("sankey_workstream", sankey_workstream)
     write_json("sport_funding", sport_funding)
+    write_json("milestones", milestones)
     return 0
 
 
