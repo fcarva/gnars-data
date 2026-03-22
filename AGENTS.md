@@ -1,27 +1,299 @@
 # AGENTS.md
+**GNARS.DATA — Agent Instructions**
+*Manter atualizado apos cada sprint. Lido automaticamente pelo Copilot ao abrir o workspace.*
 
-This repository is a data backbone for Gnars DAO, not a generic web3 sandbox.
+---
 
-## Priority sources
+## 1. Repositorio e produto
 
-- `data/contracts.json` is the canonical registry for verified contract addresses
-- `data/proposals_archive.json` is the canonical governance archive
-- `data/sources.json` is the canonical source registry
+```
+Repo:   github.com/fcarva/gnars-data
+Site:   gnars-data.vercel.app (Vercel — auto-deploy em push para main)
+Vault:  fcarva.github.io/gnars-data (GitHub Pages — CI daily-sync.yml)
+Stack:  Python pipeline + React/Vite (web/)
+```
 
-## Onchain research workflow
+### Fontes canonicas de dados (nao substituir sem decisao explicita)
 
-- For Base and Ethereum contract context, prefer Herd MCP or Herd Explorer when available
-- If Herd is unavailable, fall back to BaseScan, Etherscan, official project sites, and official contract repositories
-- For Polygon, assume Herd is not enough and use PolygonScan plus official repos and analytics fallbacks
+| Arquivo | Responsabilidade |
+|---|---|
+| `data/contracts.json` | Registry de contratos verificados |
+| `data/proposals_archive.json` | Archive completo de proposals |
+| `data/sources.json` | Registry de fontes externas |
+| `data/proposal_tags.json` | Classificacoes semanticas |
+| `data/members.json` | Diretorio de membros enriquecido |
+| `data/spend_ledger.json` | Todos os payouts |
+| `data/treasury.json` | Holdings do treasury |
+| `data/timeline_events.json` | Eventos cronologicos |
 
-## External skill references
+---
 
-When doing Ethereum-oriented work in this repo, consult the ETHSkills knowledge base if internet access is available:
+## 2. Contexto do projeto
 
-- `https://ethskills.com/SKILL.md`
-- `https://ethskills.com/indexing/SKILL.md`
-- `https://ethskills.com/addresses/SKILL.md`
-- `https://ethskills.com/l2s/SKILL.md`
-- `https://ethskills.com/tools/SKILL.md`
+**Gnars DAO** e um fork do Nouns DAO que financia atletas de action sports (skate, surf, BMX, snowboard) via leiloes de NFT e votacao onchain.
 
-Use those pages for mental models and workflow guidance, not as the source of truth for Gnars-specific data.
+- **Era 1 — Ethereum** (~2022–2023): auctions e governance no mainnet
+- **Era 2 — Base** (~Aug 2023–presente): migracao para Base L2
+- **Voting offchain**: Snapshot space `gnars.eth` (ambas as eras)
+- **Treasury atual**: ~$44k USDC · Peak: ~$312k (Jun 2024)
+
+**Dois frontends:**
+1. `web/` -> Vercel (produto principal — sempre priorizar)
+2. `_site/` -> GitHub Pages (vault estatico — CI cuida, nao buildar manualmente)
+
+**Deploy correto:**
+```bash
+npm run build --prefix web   # verificar
+git push origin main          # Vercel deploya automaticamente
+# NAO rodar build_site.py manualmente
+```
+
+**vercel.json** configura:
+- Build: `cd web && npm run build` · Output: `web/dist`
+- SPA rewrite: todas as rotas para `index.html`
+- Cache: `index.html` sem cache · JS/CSS imutavel · `/data/*` sempre fresco
+
+---
+
+## 3. Pesquisa onchain
+
+### Hierarquia de fontes
+
+**Base e Ethereum (nesta ordem):**
+1. Herd MCP ou Herd Explorer (se disponivel)
+2. BaseScan / Etherscan
+3. Sites e repositorios oficiais do projeto
+
+**Polygon:**
+1. PolygonScan + repositorios oficiais
+2. Analytics de fallback (Herd pode ser insuficiente)
+
+### Referencias de skill Ethereum
+
+Consultar para trabalho orientado a Ethereum (mental models, nao dados especificos da Gnars):
+```
+https://ethskills.com/SKILL.md
+https://ethskills.com/indexing/SKILL.md
+https://ethskills.com/addresses/SKILL.md
+https://ethskills.com/l2s/SKILL.md
+https://ethskills.com/tools/SKILL.md
+```
+
+### Variaveis de ambiente necessarias
+
+Ver `.env.example`. Nunca commitar valores reais.
+
+```
+GNARS_AUCTIONS_BASE_SUBGRAPH_URL
+GNARS_AUCTIONS_ETHEREUM_SUBGRAPH_URL
+GNARS_AUCTIONS_POLYGON_SUBGRAPH_URL
+BASE_RPC_URL
+```
+
+---
+
+## 4. Estrutura do repositorio
+
+```
+gnars-data/
+|- config/                  # Catalogo de fontes e sync targets
+|- data/                    # Dados normalizados (fonte de verdade)
+|- docs/                    # Documentacao e archives de governance
+|- exports/                 # CSVs gerados para BI
+|- media/                   # Assets de marca
+|- raw/                     # Snapshots brutos das APIs [NAO editar]
+|  `- snapshot/
+|     |- proposals.json
+|     `- votes/
+|- reports/                 # Relatorios gerados pelo pipeline
+|  |- data_gaps.md
+|  `- reconciliation.json
+|- scripts/                 # Pipeline Python
+|  |- sync_gnars.py
+|  |- sync_proposals.py
+|  |- sync_treasury.py
+|  |- sync_snapshot.py      # [novo] Snapshot votes + proposals
+|  |- classify_proposals_local.py
+|  |- enrich_members.py
+|  |- enrich_spend.py
+|  |- reconcile_treasury.py # [novo]
+|  |- derive_analytics.py
+|  |- derive_funding_analysis.py
+|  |- audit_gaps.py
+|  |- export_csv.py
+|  `- refresh_all.py        # [novo] Pipeline completo com DAG
+|- web/                     # Frontend React/Vite -> Vercel
+|  |- src/
+|  |  |- components/
+|  |  |- lib/format.ts      # fmtUSD fmtDate fmtRelative fmtETH
+|  |  `- lib/gnars-data.ts  # Fetchers e tipos
+|  |- public/data/          # JSONs servidos ao frontend
+|  `- scripts/prepare-data.mjs
+|- _site/                   # GitHub Pages [gerado pelo CI, nao editar]
+|- AGENTS.md                # Este arquivo
+|- gnars-data.agent.md      # Agent config para VS Code Copilot
+|- .env.example
+|- vercel.json
+`- .github/workflows/
+	 |- daily-sync.yml
+	 `- weekly-votes-sync.yml # [novo]
+```
+
+**Ignorado pelo git:** `__pycache__/`, `.venv/`, `_site/`, `web/node_modules/`, `web/dist/`, `.vercel`
+
+---
+
+## 5. Invariantes do pipeline
+
+1. **Nunca editar `raw/` manualmente** — gerado por scripts
+2. **`data/` e fonte de verdade** — derivar sempre de `data/`, nunca de `raw/` direto
+3. **Ordem obrigatoria:** `sync -> classify -> enrich -> reconcile -> derive -> export`
+4. **Incremental por padrao** — so processar o que mudou
+5. **Staleness check** — sync scripts pulam se arquivo < 6h. `--force` para bypass
+6. **Reconciliar antes de derivar** — `reconcile_treasury.py` antes de `derive_analytics.py`
+7. **Snapshot tem duas eras** — `created >= 1690000000` -> Base, senao -> Ethereum
+
+### Modos de execucao
+
+```bash
+python scripts/refresh_all.py --derive-only   # ~30s
+python scripts/refresh_all.py --incremental   # ~2-3 min
+python scripts/refresh_all.py --force         # ~5-8 min
+```
+
+---
+
+## 6. Invariantes do frontend
+
+1. **Nunca hardcodar dados** — consumir de `/public/data/*.json`
+2. **Formatacao via helpers** — `fmtUSD`, `fmtDate`, `fmtRelative`, `fmtETH` de `format.ts`
+3. **Null safety** — todo fetch tem `.catch(() => [])` ou `.catch(() => null)`
+4. **Build antes de commit** — `npm run build --prefix web` deve passar
+5. **Deploy = push para main** — Vercel cuida do resto
+
+---
+
+## 7. Design — Flexoki Light
+
+```
+--pp:   #FFFEF8   background (paper white)
+--b50:  #F9F8F2   superficies
+--b100: #F4F2EC   KPI bar, headers
+--b150: #E6E4D9   bordas padrao
+--b500: #6F6E69   texto secundario
+--b700: #403E3C   texto escuro
+--b950: #1C1B1A   texto principal
+```
+
+Cores por categoria:
+```
+Athletes & Riders  cyan   #3AA99F / bg #DFF3F1
+Media              purple #8B7EC8 / bg #EDE9FA
+Operations         orange #DA702C / bg #FEF0E4
+Dev                blue   #4385BE / bg #E8F4FF
+Events             green  #879A39 / bg #EEF3D4
+Danger/Against     red    #D14D41 / bg #FBE8E6
+Warning/BMX        yellow #D0A215 / bg #FEF8D0
+```
+
+Tipografia:
+```
+Valores numericos:  'Courier New', monospace
+Pills/badges:       font-size 7px, padding 2px 6px, border-radius 2px
+Filter buttons:     font-size 7.5px, padding 3px 8px, border-radius 2px
+Search bar:         border-radius 16px, input font-family system-ui
+Cards:              border 1px solid var(--b150), background var(--pp)
+```
+
+---
+
+## 8. Labels semanticas de categoria
+
+Sempre usar labels legiveis — nunca expor keys internas:
+
+```python
+CATEGORY_LABELS = {
+		"athletes_riders":   "Athletes & Riders",
+		"workstream_media":  "Media",
+		"workstream_ops":    "Operations",
+		"workstream_dev":    "Dev",
+		"irl_events":        "Events",
+		"public_goods":      "Public Goods",
+		"governance_policy": "Governance",
+		"uncategorized":     "Other",
+}
+```
+
+Aplicar em: `derive_analytics.py`, componentes React, tooltips, legends, CSV exports.
+
+---
+
+## 9. Checklist de auditoria (rodar ao iniciar sessao)
+
+```bash
+git status --short && git log --oneline -5
+
+python scripts/audit_gaps.py
+python scripts/reconcile_treasury.py
+
+npm run build --prefix web 2>&1 | tail -20
+
+python -c "
+from pathlib import Path
+files = [
+	'web/public/data/dao_metrics.json',
+	'web/public/data/sankey_impact.json',
+	'web/public/data/sport_funding.json',
+	'web/public/data/milestones.json',
+	'web/public/data/members.json',
+]
+for f in files:
+		p = Path(f)
+		size = p.stat().st_size if p.exists() else 0
+		ok = 'ok' if size > 100 else 'MISSING'
+		print(f'[{ok}] {f} ({size:,} bytes)')
+"
+```
+
+---
+
+## 10. Resolucao de ambiguidade
+
+| Pedido | Acao |
+|---|---|
+| "Melhora o grafico" | Perguntar qual grafico e qual problema |
+| "Os dados estao errados" | Rodar audit + reconcile antes de qualquer mudanca |
+| "Esta lento" | Medir tempo por script antes de otimizar |
+| "Faz o deploy" | Build primeiro. Push so se build passou |
+| Mudanca de dados | Rodar pipeline e verificar `web/public/data/` atualizado |
+
+---
+
+## 11. Sprint 7 — pendentes
+
+```
+[ ] 0. Category labels globais em derive_analytics.py + React
+[ ] 1A. Remover ledger do TreasuryChart
+[ ] 1B. Dual YAxis (balance $0-500k / spend $0-25k separados)
+[ ] 1C. Mover ledger para aba Treasury
+[ ] 2. Corrigir proof_record_count em enrich_members.py
+[ ] 3. Criar reconcile_treasury.py
+[ ] 4. Sankey tooltip enriquecido (val_usdc + val_eth + top_recipients)
+[ ] 5. refresh_all.py com flags --incremental e --derive-only
+[ ] 6. Sankey completeness check em audit_gaps.py
+[ ] 7. sync_snapshot.py — pipeline only, sem frontend
+```
+
+---
+
+## 12. Politica de ferramentas e mudancas
+
+- Manter acesso completo incluindo `run_in_terminal`
+- Preferir menor mudanca viavel que resolve o problema
+- Nao quebrar schemas de JSON publicos sem plano de migracao
+- Se mudanca conflita com invariantes: explicar e propor alternativa segura
+- Rodar checagens impactadas apos cada edicao
+
+---
+
+*Atualizar apos cada sprint — marcar itens concluidos, adicionar novos pendentes.*
