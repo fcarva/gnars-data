@@ -23,18 +23,33 @@ export function AthletesLeaderboard({ members }: AthletesLeaderboardProps) {
 
   const entries = useMemo(() => {
     return members
+      .filter((member) => {
+        const rawTags = (member as unknown as { tags?: string[] }).tags || [];
+        const tags = rawTags.map((tag) => String(tag).toLowerCase());
+        const usdc = member.total_received_usdc ?? 0;
+        const eth = member.total_received_eth ?? 0;
+        const proof = (member as unknown as { proof_record_count?: number }).proof_record_count ?? 0;
+        const funded = member.funded_proposal_count ?? 0;
+        const isAthlete = tags.includes("athlete");
+        const isBuilder = tags.includes("builder") || (member.role || "").toLowerCase().includes("builder");
+        return isAthlete || isBuilder || usdc > 0 || eth > 0 || proof > 0 || funded > 0;
+      })
       .map((member) => {
+        const proof = (member as unknown as { proof_record_count?: number }).proof_record_count ?? 0;
+        const deliveryCount = (member as unknown as { delivery_count?: number }).delivery_count ?? 0;
+        const explicitSport = (member as unknown as { sport?: string }).sport;
         const totalReceivedUsd = (member.total_received_usdc || 0) + (member.total_received_eth || 0) * 2800;
         const attendancePct = member.metrics?.attendance_pct || 0;
         return {
           member,
-          sport: inferSport(member),
+          sport: (explicitSport || inferSport(member) || "multi") as "sk8" | "surf" | "bmx" | "builder" | "multi",
           totalReceivedUsd,
-          usdc: member.total_received_usdc || 0,
-          eth: member.total_received_eth || 0,
-          fundedProposalCount: member.funded_proposal_count || 0,
+          usdc: member.total_received_usdc ?? 0,
+          eth: member.total_received_eth ?? 0,
+          fundedProposalCount: member.funded_proposal_count ?? 0,
           activeVotes: member.metrics?.active_votes || 0,
-          proof: member.metrics?.votes_count || 0,
+          proof,
+          deliveryCount,
           attendancePct,
         };
       })
@@ -51,7 +66,14 @@ export function AthletesLeaderboard({ members }: AthletesLeaderboardProps) {
     const q = query.trim().toLowerCase();
     let rows = entries;
     if (sportFilter !== "all") {
-      rows = rows.filter((entry) => entry.sport === sportFilter);
+      rows = rows.filter((entry) => {
+        const role = (entry.member.role || "").toLowerCase();
+        const normalizedSport = (entry.sport || "multi") as "sk8" | "surf" | "bmx" | "builder" | "multi";
+        if (sportFilter === "builder") {
+          return normalizedSport === "builder" || role.includes("builder");
+        }
+        return normalizedSport === sportFilter;
+      });
     }
     if (!q) return rows;
     return rows.filter((entry) => {
@@ -112,6 +134,7 @@ export function AthletesLeaderboard({ members }: AthletesLeaderboardProps) {
               <th className="r">PROPS</th>
               <th className="r">PROOF</th>
               <th className="r">SHARE</th>
+              <th className="r">DELIVERY</th>
             </tr>
           </thead>
           <tbody>
@@ -123,7 +146,7 @@ export function AthletesLeaderboard({ members }: AthletesLeaderboardProps) {
                   <td>{entry.member.display_name || entry.member.address}</td>
                   <td>{entry.member.role || "-"}</td>
                   <td className="num"><span className={`pill ${pillClass(entry.sport)}`}>{entry.sport.toUpperCase()}</span></td>
-                  <td className="num">{entry.usdc > 0 ? entry.usdc.toLocaleString() : "-"}</td>
+                  <td className="num">{entry.usdc > 0 ? entry.usdc.toLocaleString("en-US") : "-"}</td>
                   <td className="num">{entry.eth > 0 ? entry.eth.toFixed(2) : "-"}</td>
                   <td className="num">{entry.fundedProposalCount}</td>
                   <td className="num">{entry.proof}</td>
@@ -135,6 +158,7 @@ export function AthletesLeaderboard({ members }: AthletesLeaderboardProps) {
                       </span>
                     ) : "-"}
                   </td>
+                  <td className="num">{entry.fundedProposalCount > 0 ? `${entry.deliveryCount}/${entry.fundedProposalCount}` : "-"}</td>
                 </tr>
               );
             })}

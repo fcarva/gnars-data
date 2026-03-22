@@ -44,6 +44,69 @@ def normalize_address(value: object) -> str:
     return str(value or "").strip().lower()
 
 
+def _sport_from_person(person: dict) -> str | None:
+    explicit = str(person.get("sport") or "").strip().lower()
+    if explicit in {"sk8", "surf", "bmx", "snow", "mx", "mtb"}:
+        return explicit
+    parts = [
+        str(person.get("role") or ""),
+        str(person.get("headline") or ""),
+        str(person.get("history_short") or ""),
+        str(person.get("notes") or ""),
+        " ".join(str(v or "") for v in (person.get("domains") or [])),
+        " ".join(str(v or "") for v in (person.get("tags") or [])),
+        " ".join(str(v or "") for v in (person.get("tribes") or [])),
+    ]
+    return detect_sport(" ".join(parts))
+
+
+def _build_members_from_people(people_records: list[dict]) -> list[dict]:
+    members: list[dict] = []
+    for person in people_records:
+        address = normalize_address(person.get("address"))
+        if not address:
+            continue
+        identity = person.get("identity") or {}
+        governance = person.get("governance") or {}
+        receipts = person.get("receipts") or {}
+        relationships = person.get("relationships") or {}
+        tags = [str(tag).lower() for tag in (person.get("tags") or []) if str(tag or "").strip()]
+        sport = _sport_from_person(person)
+
+        members.append(
+            {
+                "member_id": str(person.get("person_id") or person.get("slug") or address),
+                "display_name": str(person.get("display_name") or person.get("address_short") or address),
+                "address": address,
+                "role": str(person.get("role") or "community member"),
+                "status": str(person.get("status") or "active"),
+                "domains": [str(value) for value in (person.get("domains") or [])],
+                "links": {
+                    "member_url": identity.get("member_url") or person.get("member_url"),
+                    "farcaster": identity.get("farcaster"),
+                    "github": identity.get("github"),
+                },
+                "metrics": {
+                    "token_count": int(governance.get("holder_token_count") or 0),
+                    "active_votes": int(governance.get("active_votes") or 0),
+                    "votes_count": int(governance.get("votes_count") or 0),
+                    "attendance_pct": int(governance.get("attendance_pct") or 0),
+                    "like_pct": int(governance.get("like_pct") or 0),
+                },
+                "notes": str(person.get("notes") or person.get("history_short") or ""),
+                "tags": tags,
+                "sport": sport,
+                "total_received_usdc": float(receipts.get("usdc_received") or 0),
+                "total_received_eth": float(receipts.get("eth_received") or 0),
+                "funded_proposal_count": len(relationships.get("payout_proposals") or []),
+                "proof_record_count": int(person.get("proof_count") or 0),
+                "delivery_count": int(person.get("delivery_count") or 0),
+                "last_proof_date": None,
+            }
+        )
+    return members
+
+
 def get_member_tags(member: dict) -> list[str]:
     tags = [str(v).lower() for v in (member.get("tags") or [])]
     domains = [str(v).lower() for v in (member.get("domains") or [])]
@@ -80,11 +143,19 @@ def _count_proof_records(
 
 def main() -> None:
     members_payload = load(DATA / "members.json")
+    people_payload = load(DATA / "people.json")
     spend_payload = load(DATA / "spend_ledger.json")
     props_payload = load(DATA / "proposals_archive.json")
     timeline_payload = load(DATA / "timeline_events.json")
 
     members = members_payload.get("records") or []
+    people_records = people_payload.get("records") if isinstance(people_payload, dict) else []
+    seed_has_athletes = any("athlete" in [str(tag).lower() for tag in (row.get("tags") or [])] for row in members)
+    if people_records and (len(members) < 50 or not seed_has_athletes):
+        members = _build_members_from_people(people_records)
+        members_payload["as_of"] = people_payload.get("as_of", members_payload.get("as_of"))
+        members_payload["source"] = "people.json"
+
     spend = spend_payload.get("records") or []
     props = props_payload.get("records") or []
     timeline_events = timeline_payload if isinstance(timeline_payload, list) else timeline_payload.get("records", [])
