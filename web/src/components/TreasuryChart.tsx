@@ -43,8 +43,16 @@ function monthLabel(iso: string): string {
   return `${names[idx]} '${year.slice(2)}`;
 }
 
+function fmtAxisUSD(value: number): string {
+  const v = Number(value) || 0;
+  return v >= 1000 ? `$${(v / 1000).toFixed(0)}k` : `$${v}`;
+}
+
 function CustomTooltip({ active, payload, label }: { active?: boolean; payload?: Array<{ dataKey?: string; value?: number }>; label?: string }) {
   if (!active || !payload?.length) return null;
+  const balance = payload.find((item) => item.dataKey === "balance")?.value;
+  const spend = payload.find((item) => item.dataKey === "monthly_spend")?.value;
+  const inflow = payload.find((item) => item.dataKey === "auction_inflow")?.value;
   return (
     <div
       style={{
@@ -60,11 +68,9 @@ function CustomTooltip({ active, payload, label }: { active?: boolean; payload?:
       }}
     >
       <div style={{ fontWeight: 700, marginBottom: 4 }}>{monthLabel(String(label || ""))}</div>
-      {payload.map((entry) => (
-        <div key={String(entry.dataKey)} style={{ color: entry.dataKey === "balance" ? "#FFFEF8" : "#F09595" }}>
-          {entry.dataKey === "balance" ? "Balance" : "Spend"}: {fmtUSD(Number(entry.value || 0))}
-        </div>
-      ))}
+      {balance != null ? <div>{`Balance: ${fmtUSD(Number(balance))}`}</div> : null}
+      {spend != null && Number(spend) > 0 ? <div style={{ color: "#F09595" }}>{`Spend: ${fmtUSD(Number(spend))}`}</div> : null}
+      {inflow != null && Number(inflow) > 0 ? <div style={{ color: "#B7D36B" }}>{`Auction inflow: ${fmtUSD(Number(inflow))}`}</div> : null}
     </div>
   );
 }
@@ -210,6 +216,7 @@ export function TreasuryChart({
     month: row.date.slice(0, 7),
     balance: row.value,
     monthly_spend: row.proposalSpend,
+    auction_inflow: row.auctionInflow,
   }));
   const projectedDateTick = chartRows.find((row) => row.month.startsWith(projectedZeroDate || ""))?.month;
   const currentValue = chartData[chartData.length - 1]?.value || 0;
@@ -230,7 +237,7 @@ export function TreasuryChart({
 
       <div style={{ width: "100%", height: chartHeight, marginTop: 10 }}>
         <ResponsiveContainer width="100%" height="100%">
-          <ComposedChart data={chartRows} margin={{ top: 10, right: 16, bottom: 0, left: 0 }}>
+          <ComposedChart data={chartRows} margin={{ top: 8, right: 44, bottom: 0, left: 0 }}>
             <CartesianGrid strokeDasharray="3 0" vertical={false} stroke="#E6E4D9" strokeWidth={0.5} />
             <XAxis
               dataKey="month"
@@ -244,8 +251,8 @@ export function TreasuryChart({
             <YAxis
               yAxisId="balance"
               orientation="left"
-              domain={[0, (dataMax: number) => Math.ceil((dataMax * 1.1) / 100000) * 100000]}
-              tickFormatter={(value: number) => (value >= 1000 ? `$${(value / 1000).toFixed(0)}k` : `$${value}`)}
+              domain={[0, "auto"]}
+              tickFormatter={fmtAxisUSD}
               tick={{ fontSize: 9, fontFamily: "'Courier New', monospace", fill: "#6F6E69" }}
               axisLine={false}
               tickLine={false}
@@ -255,8 +262,8 @@ export function TreasuryChart({
             <YAxis
               yAxisId="spend"
               orientation="right"
-              domain={[0, (dataMax: number) => Math.ceil((dataMax * 1.2) / 5000) * 5000]}
-              tickFormatter={(value: number) => (value > 0 ? `$${(value / 1000).toFixed(0)}k` : "")}
+              domain={[0, "auto"]}
+              tickFormatter={fmtAxisUSD}
               tick={{ fontSize: 8, fontFamily: "'Courier New', monospace", fill: "#B7B5AC" }}
               axisLine={false}
               tickLine={false}
@@ -279,11 +286,22 @@ export function TreasuryChart({
               yAxisId="spend"
               dataKey="monthly_spend"
               name="Spend"
-              fill="rgba(209,77,65,0.18)"
+              fill="rgba(209,77,65,0.20)"
               stroke="#D14D41"
               strokeWidth={1}
               radius={[2, 2, 0, 0]}
-              maxBarSize={12}
+              maxBarSize={10}
+            />
+
+            <Line
+              yAxisId="spend"
+              type="monotone"
+              dataKey="auction_inflow"
+              name="Auction inflow"
+              stroke="#879A39"
+              strokeDasharray="5 3"
+              strokeWidth={1.5}
+              dot={false}
             />
 
             <Line
@@ -307,6 +325,10 @@ export function TreasuryChart({
         <span style={{ display: "flex", alignItems: "center", gap: 5, fontSize: 8.5, color: "#6F6E69" }}>
           <span style={{ display: "inline-block", width: 10, height: 10, background: "rgba(209,77,65,0.22)", border: "1px solid #D14D41", borderRadius: 1 }} />
           Monthly spend
+        </span>
+        <span style={{ display: "flex", alignItems: "center", gap: 5, fontSize: 8.5, color: "#6F6E69" }}>
+          <span style={{ display: "inline-block", width: 14, height: 2, background: "#879A39", borderTop: "1px dashed #879A39" }} />
+          Auction inflow
         </span>
       </div>
     </div>

@@ -84,6 +84,18 @@ HTML_HEADERS = {
     "Upgrade-Insecure-Requests": "1",
 }
 
+CATEGORY_LABELS = {
+    "athletes_riders": "Athletes & Riders",
+    "workstream_media": "Media",
+    "workstream_ops": "Operations",
+    "workstream_dev": "Dev",
+    "workstream_products": "Dev",
+    "irl_events": "Events",
+    "public_goods": "Public Goods",
+    "governance_policy": "Governance",
+    "uncategorized": "Other",
+}
+
 
 def keccak256(value: bytes) -> bytes:
     digest = keccak.new(digest_bits=256)
@@ -359,6 +371,25 @@ def estimate_monthly_burn(spend_records: list[dict[str, Any]]) -> float:
     return round(sum(non_zero) / len(non_zero), 2)
 
 
+def readable_category(value: str) -> str:
+    key = str(value or "uncategorized").strip().lower() or "uncategorized"
+    return CATEGORY_LABELS.get(key, key)
+
+
+def _get_top_recipients(spend: list[dict[str, Any]], category: str, n: int = 3) -> list[str]:
+    by_recipient: dict[str, float] = {}
+    for row in spend:
+        recipient_name = (
+            row.get("recipient_name")
+            or row.get("recipient_display_name")
+            or short_address(normalize_address(row.get("recipient_address")))
+            or "Unknown"
+        )
+        by_recipient[str(recipient_name)] = by_recipient.get(str(recipient_name), 0.0) + usd_value_from_spend(row)
+    top = sorted(by_recipient.items(), key=lambda item: -item[1])[:n]
+    return [name for name, _ in top]
+
+
 def build_semantic_sankey(
     *,
     spend_records: list[dict[str, Any]],
@@ -371,28 +402,36 @@ def build_semantic_sankey(
 
     if mode == "impact":
         groups = {
-            "athletes_riders": ("athletes_riders", "Athletes & Riders", "#3AA99F", "Riders & athletes"),
-            "workstream_media": ("workstream_media", "Media", "#8B7EC8", "Content creators"),
-            "workstream_ops": ("workstream_ops", "Operations", "#DA702C", "Core contributors"),
-            "workstream_dev": ("workstream_dev", "Dev", "#4385BE", "Builders"),
-            "workstream_products": ("workstream_dev", "Dev", "#4385BE", "Builders"),
-            "irl_events": ("irl_events", "Events IRL", "#879A39", "Event organizers"),
-            "public_goods": ("public_goods", "Public Goods", "#6F6E69", "Community"),
-            "governance_policy": ("governance_policy", "Governance", "#403E3C", "DAO governance"),
+            "athletes_riders": ("athletes_riders", CATEGORY_LABELS.get("athletes_riders", "athletes_riders"), "#3AA99F", "Riders & athletes"),
+            "workstream_media": ("workstream_media", CATEGORY_LABELS.get("workstream_media", "workstream_media"), "#8B7EC8", "Content creators"),
+            "workstream_ops": ("workstream_ops", CATEGORY_LABELS.get("workstream_ops", "workstream_ops"), "#DA702C", "Core contributors"),
+            "workstream_dev": ("workstream_dev", CATEGORY_LABELS.get("workstream_dev", "workstream_dev"), "#4385BE", "Builders"),
+            "workstream_products": ("workstream_dev", CATEGORY_LABELS.get("workstream_dev", "workstream_dev"), "#4385BE", "Builders"),
+            "irl_events": ("irl_events", CATEGORY_LABELS.get("irl_events", "irl_events"), "#879A39", "Event organizers"),
+            "public_goods": ("public_goods", CATEGORY_LABELS.get("public_goods", "public_goods"), "#6F6E69", "Community"),
+            "governance_policy": ("governance_policy", CATEGORY_LABELS.get("governance_policy", "governance_policy"), "#403E3C", "DAO governance"),
         }
     else:
         groups = {
-            "athletes_riders": ("athletes_riders", "Athletes WS", "#3AA99F", "Riders & athletes"),
-            "workstream_media": ("workstream_media", "Media WS", "#8B7EC8", "Content creators"),
-            "workstream_ops": ("workstream_ops", "Ops WS", "#DA702C", "Core contributors"),
-            "workstream_dev": ("workstream_dev", "Dev WS", "#4385BE", "Builders"),
-            "workstream_products": ("workstream_dev", "Dev WS", "#4385BE", "Builders"),
-            "irl_events": ("irl_events", "Events", "#879A39", "Event organizers"),
-            "public_goods": ("public_goods", "Public Goods", "#6F6E69", "Community"),
-            "governance_policy": ("governance_policy", "Governance", "#403E3C", "DAO governance"),
+            "athletes_riders": ("athletes_riders", CATEGORY_LABELS.get("athletes_riders", "athletes_riders"), "#3AA99F", "Riders & athletes"),
+            "workstream_media": ("workstream_media", CATEGORY_LABELS.get("workstream_media", "workstream_media"), "#8B7EC8", "Content creators"),
+            "workstream_ops": ("workstream_ops", CATEGORY_LABELS.get("workstream_ops", "workstream_ops"), "#DA702C", "Core contributors"),
+            "workstream_dev": ("workstream_dev", CATEGORY_LABELS.get("workstream_dev", "workstream_dev"), "#4385BE", "Builders"),
+            "workstream_products": ("workstream_dev", CATEGORY_LABELS.get("workstream_dev", "workstream_dev"), "#4385BE", "Builders"),
+            "irl_events": ("irl_events", CATEGORY_LABELS.get("irl_events", "irl_events"), "#879A39", "Event organizers"),
+            "public_goods": ("public_goods", CATEGORY_LABELS.get("public_goods", "public_goods"), "#6F6E69", "Community"),
+            "governance_policy": ("governance_policy", CATEGORY_LABELS.get("governance_policy", "governance_policy"), "#403E3C", "DAO governance"),
         }
 
-    totals: dict[str, float] = defaultdict(float)
+    totals: dict[str, dict[str, Any]] = defaultdict(
+        lambda: {
+            "usd": 0.0,
+            "usdc": 0.0,
+            "eth": 0.0,
+            "records": [],
+            "proposal_ids": set(),
+        }
+    )
     for record in spend_records:
         archive_id = str(record.get("archive_id") or "")
         tag = tag_map.get(archive_id, {})
@@ -405,12 +444,29 @@ def build_semantic_sankey(
         if category not in groups:
             continue
         key = groups[category][0]
-        totals[key] += usd_value_from_spend(record)
+        usd = usd_value_from_spend(record)
+        symbol = str(record.get("asset_symbol") or "").upper()
+        amount = number_or_zero(record.get("amount"))
+        bucket = totals[key]
+        bucket["usd"] += usd
+        if symbol == "USDC":
+            bucket["usdc"] += amount
+        if symbol == "ETH":
+            bucket["eth"] += amount
+        bucket["records"].append(
+            {
+                **record,
+                "semantic_category": category,
+            }
+        )
+        project_id = str(record.get("project_id") or "").strip()
+        if project_id:
+            bucket["proposal_ids"].add(project_id)
 
-    total_usd = sum(totals.values())
-    ordered = sorted(totals.items(), key=lambda item: -item[1])
+    total_usd = sum(number_or_zero(values.get("usd")) for values in totals.values())
+    ordered = sorted(totals.items(), key=lambda item: -number_or_zero(item[1].get("usd")))
     cats = []
-    for key, value in ordered:
+    for key, values in ordered:
         label, color, recipient = "", "#B7B5AC", "Recipients"
         for source_cat, mapped in groups.items():
             if mapped[0] == key:
@@ -418,14 +474,22 @@ def build_semantic_sankey(
                 color = mapped[2]
                 recipient = mapped[3]
                 break
+        category_label = readable_category(key)
+        usd = number_or_zero(values.get("usd"))
         cats.append(
             {
-                "id": key,
-                "label": label or key.replace("_", " ").title(),
-                "val": round(value / 1000, 1),
-                "pct": round((value / total_usd) * 100) if total_usd else 0,
+                "id": category_label,
+                "label": label or category_label,
+                "category": category_label,
+                "val_usdc": round(number_or_zero(values.get("usdc"))),
+                "val_eth": round(number_or_zero(values.get("eth")), 3),
+                "val_usd_total": round(usd),
+                "val": round(usd / 1000, 1),
+                "pct": round((usd / total_usd) * 100) if total_usd else 0,
                 "col": color,
                 "rec": recipient,
+                "proposal_count": len(values.get("proposal_ids") or []),
+                "top_recipients": _get_top_recipients(values.get("records") or [], key, n=3),
             }
         )
 
@@ -1646,7 +1710,7 @@ def build_project_rollups(
                 "slug": slugify(project["name"]),
                 "name": project["name"],
                 "status": project["status"],
-                "category": project["category"],
+                "category": readable_category(str(project.get("category") or "uncategorized")),
                 "origin_proposals": project["origin_proposals"],
                 "proposal_summaries": proposal_summaries,
                 "owner_addresses": unique_addresses(project.get("owner_addresses") or []),
@@ -1704,13 +1768,28 @@ def build_dao_metrics(
 ) -> dict[str, Any]:
     people_records = people["records"]
     proposal_status_counts = Counter(record["status"] for record in archive["records"])
-    
+
     proposal_category_counts = Counter()
     if proposal_tags:
         tag_map = {t["archive_id"]: t.get("semantic_category") or "uncategorized" for t in proposal_tags.get("records", [])}
         for record in archive["records"]:
             cat = tag_map.get(record["archive_id"], "uncategorized")
-            proposal_category_counts[cat] += 1
+            proposal_category_counts[readable_category(cat)] += 1
+
+    monthly_by_category: dict[str, dict[str, float]] = defaultdict(lambda: defaultdict(float))
+    if proposal_tags:
+        tag_map = {t["archive_id"]: t.get("semantic_category") or "uncategorized" for t in proposal_tags.get("records", [])}
+        for record in spend_records:
+            month = str(
+                record.get("proposal_executed_at")
+                or record.get("proposal_end_at")
+                or record.get("proposal_created_at")
+                or ""
+            )[:7]
+            if not month:
+                continue
+            cat = tag_map.get(str(record.get("archive_id") or ""), record.get("category") or "uncategorized")
+            monthly_by_category[month][readable_category(str(cat))] += usd_value_from_spend(record)
 
     as_of_dt = parse_datetime(archive["as_of"]) or datetime.now(timezone.utc)
     by_30d = as_of_dt - timedelta(days=30)
@@ -1868,7 +1947,21 @@ def build_dao_metrics(
         "monthly_burn_usd": round(monthly_burn_usd, 2),
         "runway_months": runway_months,
         "projected_zero_date": projected_zero_date,
+        "sankey_total_k": 0,
         "treasury_events": treasury_events,
+        "monthly_by_category": {
+            month: {
+                category: round(value, 2)
+                for category, value in sorted(values.items(), key=lambda item: item[0])
+            }
+            for month, values in sorted(monthly_by_category.items(), key=lambda item: item[0])
+        },
+        "field_notes": [
+            {
+                "kind": "category",
+                "summary": "Categories are rendered with semantic labels for readability across analytics surfaces.",
+            }
+        ],
         "overview": overview,
         "treasury": {
             "wallet_address": treasury["wallet"]["address"],
@@ -3145,6 +3238,7 @@ def main() -> int:
         mode="workstream",
         analytics_as_of=analytics_as_of,
     )
+    dao_metrics["sankey_total_k"] = number_or_zero(sankey_impact.get("total_k"))
     sport_funding = build_sport_funding(
         spend_records=spend_records,
         proposal_tags=proposal_tags,

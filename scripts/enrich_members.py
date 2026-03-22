@@ -50,14 +50,44 @@ def get_member_tags(member: dict) -> list[str]:
     return sorted(set(tags + domains))
 
 
+def _count_proof_records(
+    member_id: str,
+    member_address: str,
+    timeline_events: list[dict],
+) -> tuple[int, str | None]:
+    proof_kinds = {"proof", "delivery", "media_proof"}
+    lower_member_id = str(member_id or "").strip().lower()
+
+    member_events = []
+    for event in timeline_events:
+        actor = str(event.get("actor") or "").strip().lower()
+        if not lower_member_id or actor != lower_member_id:
+            continue
+
+        kind = str(event.get("kind") or "").strip().lower()
+        if kind in proof_kinds:
+            member_events.append(event)
+
+    count = len(member_events)
+    dates = [
+        event.get("timestamp") or event.get("created_at") or event.get("date")
+        for event in member_events
+        if event.get("timestamp") or event.get("created_at") or event.get("date")
+    ]
+    last = max(dates) if dates else None
+    return count, last
+
+
 def main() -> None:
     members_payload = load(DATA / "members.json")
     spend_payload = load(DATA / "spend_ledger.json")
     props_payload = load(DATA / "proposals_archive.json")
+    timeline_payload = load(DATA / "timeline_events.json")
 
     members = members_payload.get("records") or []
     spend = spend_payload.get("records") or []
     props = props_payload.get("records") or []
+    timeline_events = timeline_payload if isinstance(timeline_payload, list) else timeline_payload.get("records", [])
 
     addr_to_props: dict[str, list[dict]] = defaultdict(list)
     for p in props:
@@ -113,6 +143,14 @@ def main() -> None:
                 if s.get("archive_id")
             }
         )
+
+        count, last = _count_proof_records(
+            str(member.get("member_id") or member.get("id") or ""),
+            str(member.get("address") or ""),
+            timeline_events,
+        )
+        member["proof_record_count"] = count
+        member["last_proof_date"] = last
 
     members_payload["records"] = members
     save(DATA / "members.json", members_payload)
