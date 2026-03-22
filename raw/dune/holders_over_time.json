@@ -1,0 +1,182 @@
+{
+  "dataset": "holders_over_time",
+  "as_of": "2026-03-22T08:49:31Z",
+  "version": 1,
+  "rows": [
+    {
+      "holders_cumulative": 5062,
+      "month": "2024-03-01 00:00:00.000 UTC",
+      "net_change": 5062,
+      "new_holders": 820,
+      "sellers": 34
+    },
+    {
+      "holders_cumulative": 5480,
+      "month": "2024-04-01 00:00:00.000 UTC",
+      "net_change": 418,
+      "new_holders": 262,
+      "sellers": 105
+    },
+    {
+      "holders_cumulative": 5603,
+      "month": "2024-05-01 00:00:00.000 UTC",
+      "net_change": 123,
+      "new_holders": 87,
+      "sellers": 35
+    },
+    {
+      "holders_cumulative": 5656,
+      "month": "2024-06-01 00:00:00.000 UTC",
+      "net_change": 53,
+      "new_holders": 52,
+      "sellers": 33
+    },
+    {
+      "holders_cumulative": 5729,
+      "month": "2024-07-01 00:00:00.000 UTC",
+      "net_change": 73,
+      "new_holders": 48,
+      "sellers": 40
+    },
+    {
+      "holders_cumulative": 5796,
+      "month": "2024-08-01 00:00:00.000 UTC",
+      "net_change": 67,
+      "new_holders": 49,
+      "sellers": 32
+    },
+    {
+      "holders_cumulative": 5818,
+      "month": "2024-09-01 00:00:00.000 UTC",
+      "net_change": 22,
+      "new_holders": 34,
+      "sellers": 28
+    },
+    {
+      "holders_cumulative": 5859,
+      "month": "2024-10-01 00:00:00.000 UTC",
+      "net_change": 41,
+      "new_holders": 42,
+      "sellers": 36
+    },
+    {
+      "holders_cumulative": 5870,
+      "month": "2024-11-01 00:00:00.000 UTC",
+      "net_change": 11,
+      "new_holders": 26,
+      "sellers": 21
+    },
+    {
+      "holders_cumulative": 5881,
+      "month": "2024-12-01 00:00:00.000 UTC",
+      "net_change": 11,
+      "new_holders": 33,
+      "sellers": 27
+    },
+    {
+      "holders_cumulative": 5902,
+      "month": "2025-01-01 00:00:00.000 UTC",
+      "net_change": 21,
+      "new_holders": 32,
+      "sellers": 36
+    },
+    {
+      "holders_cumulative": 5934,
+      "month": "2025-02-01 00:00:00.000 UTC",
+      "net_change": 32,
+      "new_holders": 29,
+      "sellers": 27
+    },
+    {
+      "holders_cumulative": 5949,
+      "month": "2025-03-01 00:00:00.000 UTC",
+      "net_change": 15,
+      "new_holders": 36,
+      "sellers": 44
+    },
+    {
+      "holders_cumulative": 5954,
+      "month": "2025-04-01 00:00:00.000 UTC",
+      "net_change": 5,
+      "new_holders": 28,
+      "sellers": 24
+    },
+    {
+      "holders_cumulative": 5960,
+      "month": "2025-05-01 00:00:00.000 UTC",
+      "net_change": 6,
+      "new_holders": 34,
+      "sellers": 32
+    },
+    {
+      "holders_cumulative": 5967,
+      "month": "2025-06-01 00:00:00.000 UTC",
+      "net_change": 7,
+      "new_holders": 16,
+      "sellers": 18
+    },
+    {
+      "holders_cumulative": 5970,
+      "month": "2025-07-01 00:00:00.000 UTC",
+      "net_change": 3,
+      "new_holders": 24,
+      "sellers": 22
+    },
+    {
+      "holders_cumulative": 5977,
+      "month": "2025-08-01 00:00:00.000 UTC",
+      "net_change": 7,
+      "new_holders": 28,
+      "sellers": 21
+    },
+    {
+      "holders_cumulative": 5978,
+      "month": "2025-09-01 00:00:00.000 UTC",
+      "net_change": 1,
+      "new_holders": 9,
+      "sellers": 12
+    },
+    {
+      "holders_cumulative": 5979,
+      "month": "2025-10-01 00:00:00.000 UTC",
+      "net_change": 1,
+      "new_holders": 15,
+      "sellers": 12
+    },
+    {
+      "holders_cumulative": 5980,
+      "month": "2025-11-01 00:00:00.000 UTC",
+      "net_change": 1,
+      "new_holders": 18,
+      "sellers": 28
+    },
+    {
+      "holders_cumulative": 5989,
+      "month": "2025-12-01 00:00:00.000 UTC",
+      "net_change": 9,
+      "new_holders": 27,
+      "sellers": 22
+    },
+    {
+      "holders_cumulative": 5994,
+      "month": "2026-01-01 00:00:00.000 UTC",
+      "net_change": 5,
+      "new_holders": 24,
+      "sellers": 18
+    },
+    {
+      "holders_cumulative": 5996,
+      "month": "2026-02-01 00:00:00.000 UTC",
+      "net_change": 2,
+      "new_holders": 14,
+      "sellers": 15
+    },
+    {
+      "holders_cumulative": 6000,
+      "month": "2026-03-01 00:00:00.000 UTC",
+      "net_change": 4,
+      "new_holders": 37,
+      "sellers": 11
+    }
+  ]
+}

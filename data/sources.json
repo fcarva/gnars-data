@@ -3,6 +3,12 @@
   "as_of": "2026-03-18",
   "version": 1,
   "dune_queries": {
+    "treasury_balance_over_time": 6881668,
+    "auction_revenue_all_time": 6881718,
+    "proposal_spend_by_category": 6881723,
+    "holders_over_time": 6881732,
+    "vote_participation": 6881740,
+    "dashboard_url": "https://dune.com/0xsatori/gnarsv2",
     "gnars_auctions_base": null,
     "gnars_auctions_ethereum": null,
     "treasury_outflows_base": null,

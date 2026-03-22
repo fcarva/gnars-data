@@ -58,6 +58,11 @@ def _read_query_ids_from_sources() -> dict[str, int | None]:
 
 def _read_query_ids_from_env() -> dict[str, int | None]:
     env_keys = {
+        "treasury_balance_over_time": "DUNE_QUERY_TREASURY_BALANCE_OVER_TIME",
+        "auction_revenue_all_time": "DUNE_QUERY_AUCTION_REVENUE_ALL_TIME",
+        "proposal_spend_by_category": "DUNE_QUERY_PROPOSAL_SPEND_BY_CATEGORY",
+        "holders_over_time": "DUNE_QUERY_HOLDERS_OVER_TIME",
+        "vote_participation": "DUNE_QUERY_VOTE_PARTICIPATION",
         "gnars_auctions_base": "DUNE_QUERY_GNARS_AUCTIONS_BASE",
         "gnars_auctions_ethereum": "DUNE_QUERY_GNARS_AUCTIONS_ETHEREUM",
         "treasury_outflows_base": "DUNE_QUERY_GNARS_TREASURY_OUTFLOWS_BASE",
@@ -77,6 +82,11 @@ def _query_ids() -> dict[str, int | None]:
     merged = _read_query_ids_from_sources()
     merged.update({k: v for k, v in _read_query_ids_from_env().items() if v})
     return {
+        "treasury_balance_over_time": merged.get("treasury_balance_over_time"),
+        "auction_revenue_all_time": merged.get("auction_revenue_all_time"),
+        "proposal_spend_by_category": merged.get("proposal_spend_by_category"),
+        "holders_over_time": merged.get("holders_over_time"),
+        "vote_participation": merged.get("vote_participation"),
         "gnars_auctions_base": merged.get("gnars_auctions_base"),
         "gnars_auctions_ethereum": merged.get("gnars_auctions_ethereum"),
         "treasury_outflows_base": merged.get("treasury_outflows_base"),

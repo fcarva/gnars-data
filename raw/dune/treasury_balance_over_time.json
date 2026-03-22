@@ -1,0 +1,157 @@
+{
+  "dataset": "treasury_balance_over_time",
+  "as_of": "2026-03-22T08:49:28Z",
+  "version": 1,
+  "rows": [
+    {
+      "auction_eth_in": 3.126115,
+      "eth_out": 13.232357,
+      "month": "2024-03-01 00:00:00.000 UTC",
+      "usdc_out": 0
+    },
+    {
+      "auction_eth_in": 7.340697,
+      "eth_out": 12.959214,
+      "month": "2024-04-01 00:00:00.000 UTC",
+      "usdc_out": 21288
+    },
+    {
+      "auction_eth_in": 1.292559,
+      "eth_out": 1.23558,
+      "month": "2024-05-01 00:00:00.000 UTC",
+      "usdc_out": 3990
+    },
+    {
+      "auction_eth_in": 0.5453,
+      "eth_out": 0.529948,
+      "month": "2024-06-01 00:00:00.000 UTC",
+      "usdc_out": 15884
+    },
+    {
+      "auction_eth_in": 0.735011,
+      "eth_out": 1.699828,
+      "month": "2024-07-01 00:00:00.000 UTC",
+      "usdc_out": 27585
+    },
+    {
+      "auction_eth_in": 0.6812,
+      "eth_out": 5.00609,
+      "month": "2024-08-01 00:00:00.000 UTC",
+      "usdc_out": 53674
+    },
+    {
+      "auction_eth_in": 0.2143,
+      "eth_out": 0.208395,
+      "month": "2024-09-01 00:00:00.000 UTC",
+      "usdc_out": 9850
+    },
+    {
+      "auction_eth_in": 0.42532,
+      "eth_out": 0.80533,
+      "month": "2024-10-01 00:00:00.000 UTC",
+      "usdc_out": 7969
+    },
+    {
+      "auction_eth_in": 0.097346,
+      "eth_out": 0.162245,
+      "month": "2024-11-01 00:00:00.000 UTC",
+      "usdc_out": 5100
+    },
+    {
+      "auction_eth_in": 0.111111,
+      "eth_out": 0.156512,
+      "month": "2024-12-01 00:00:00.000 UTC",
+      "usdc_out": 4139
+    },
+    {
+      "auction_eth_in": 0.222422,
+      "eth_out": 0.220522,
+      "month": "2025-01-01 00:00:00.000 UTC",
+      "usdc_out": 8550
+    },
+    {
+      "auction_eth_in": 0.04,
+      "eth_out": 1.043548,
+      "month": "2025-02-01 00:00:00.000 UTC",
+      "usdc_out": 8100
+    },
+    {
+      "auction_eth_in": 0.132,
+      "eth_out": 0.130377,
+      "month": "2025-03-01 00:00:00.000 UTC",
+      "usdc_out": 3292
+    },
+    {
+      "auction_eth_in": 0.05,
+      "eth_out": 0.050912,
+      "month": "2025-04-01 00:00:00.000 UTC",
+      "usdc_out": 3850
+    },
+    {
+      "auction_eth_in": 0.05,
+      "eth_out": 0.049192,
+      "month": "2025-05-01 00:00:00.000 UTC",
+      "usdc_out": 0
+    },
+    {
+      "auction_eth_in": 0.06,
+      "eth_out": 1.058071,
+      "month": "2025-06-01 00:00:00.000 UTC",
+      "usdc_out": 8000
+    },
+    {
+      "auction_eth_in": 0.0304,
+      "eth_out": 0.029586,
+      "month": "2025-07-01 00:00:00.000 UTC",
+      "usdc_out": 2060
+    },
+    {
+      "auction_eth_in": 0.03001,
+      "eth_out": 1.02851,
+      "month": "2025-08-01 00:00:00.000 UTC",
+      "usdc_out": 1980
+    },
+    {
+      "auction_eth_in": 0.01,
+      "eth_out": 0.009647,
+      "month": "2025-09-01 00:00:00.000 UTC",
+      "usdc_out": 0
+    },
+    {
+      "auction_eth_in": 0.01,
+      "eth_out": 1.809162,
+      "month": "2025-10-01 00:00:00.000 UTC",
+      "usdc_out": 2600
+    },
+    {
+      "auction_eth_in": 0.01,
+      "eth_out": 0.432158,
+      "month": "2025-11-01 00:00:00.000 UTC",
+      "usdc_out": 0
+    },
+    {
+      "auction_eth_in": 0.09,
+      "eth_out": 0.086172,
+      "month": "2025-12-01 00:00:00.000 UTC",
+      "usdc_out": 2500
+    },
+    {
+      "auction_eth_in": 0.05,
+      "eth_out": 0.048169,
+      "month": "2026-01-01 00:00:00.000 UTC",
+      "usdc_out": 0
+    },
+    {
+      "auction_eth_in": 0.0289,
+      "eth_out": 0.027455,
+      "month": "2026-02-01 00:00:00.000 UTC",
+      "usdc_out": 0
+    },
+    {
+      "auction_eth_in": 0.08,
+      "eth_out": 0.106336,
+      "month": "2026-03-01 00:00:00.000 UTC",
+      "usdc_out": 1570
+    }
+  ]
+}

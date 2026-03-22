@@ -923,5 +923,20 @@
       }
     ]
   },
+  "funding_in": {
+    "auction_revenue": {
+      "source": "dune_auction_revenue_all_time",
+      "months": 25,
+      "total_eth": 15.4626,
+      "total_usd": 50223.32
+    }
+  },
+  "governance_stats": {
+    "source": "dune_vote_participation",
+    "proposal_count": 0,
+    "total_votes_cast": 0,
+    "skipped_rows": 311,
+    "records": []
+  },
   "analytics_as_of": "2026-03-20T20:14:44.603849Z"
 }

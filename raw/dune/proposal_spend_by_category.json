@@ -1,0 +1,303 @@
+{
+  "dataset": "proposal_spend_by_category",
+  "as_of": "2026-03-22T08:49:30Z",
+  "version": 1,
+  "rows": [
+    {
+      "block_time": "2026-03-17 21:26:15.000 UTC",
+      "match_source": "unmatched",
+      "proposal_id": null,
+      "recipient": "0x25810d1a8b1affc444d5333bf0496f1202d6f89f",
+      "tx_hash": "0xcafa0a891528977bcaa91c49e0f49b69747887f06d0f6756b90ce466628b463b",
+      "usdc_amount": 1570
+    },
+    {
+      "block_time": "2025-12-03 12:03:05.000 UTC",
+      "match_source": "unmatched",
+      "proposal_id": null,
+      "recipient": "0x8d2a253a5885806aa14e583c80c8833a904fb252",
+      "tx_hash": "0xc23d7983b225e7118db21ab80b74ef3036ffad6fb2ed506057dd1f8bacee99ad",
+      "usdc_amount": 2500
+    },
+    {
+      "block_time": "2025-10-16 16:58:39.000 UTC",
+      "match_source": "unmatched",
+      "proposal_id": null,
+      "recipient": "0x49d31dcb59e115f5c9e505a58a323ade076f2176",
+      "tx_hash": "0xb392443cdd79078fe038ad4700c48ba9cab4d3176b95224af7d20be2c2d63c79",
+      "usdc_amount": 2600
+    },
+    {
+      "block_time": "2025-08-31 23:49:21.000 UTC",
+      "match_source": "unmatched",
+      "proposal_id": null,
+      "recipient": "0xe5f6202ff7ddc5273c249073865bc6f4d5d68beb",
+      "tx_hash": "0x48c48ee014b6d1e50068ad2a350884133f5cd36a1e6e0b076a4386fea1e5b207",
+      "usdc_amount": 780
+    },
+    {
+      "block_time": "2025-08-05 19:12:29.000 UTC",
+      "match_source": "unmatched",
+      "proposal_id": null,
+      "recipient": "0xd2d164aea2a354e46ee3cf207899f48e5432b968",
+      "tx_hash": "0xf45c89a72d6e6ca13ba06ecf880e6d86c3fc4855470e878ef52c893b681d4bd5",
+      "usdc_amount": 1200
+    },
+    {
+      "block_time": "2025-07-19 20:47:15.000 UTC",
+      "match_source": "unmatched",
+      "proposal_id": null,
+      "recipient": "0x25810d1a8b1affc444d5333bf0496f1202d6f89f",
+      "tx_hash": "0x9bb612abfee708952ed9119b5cb161a41aabcc8a73c84e8662309ae0309287dc",
+      "usdc_amount": 360
+    },
+    {
+      "block_time": "2025-07-01 22:31:31.000 UTC",
+      "match_source": "unmatched",
+      "proposal_id": null,
+      "recipient": "0x43c363f3821b4efe4f9d04df74c0e32db42a7970",
+      "tx_hash": "0x3b1e8cb6b283e1589e3b466df0e3171c3fe2605ffea6784940a3d0b2b7f2fc6f",
+      "usdc_amount": 1700
+    },
+    {
+      "block_time": "2025-06-01 20:55:43.000 UTC",
+      "match_source": "unmatched",
+      "proposal_id": null,
+      "recipient": "0xc4079dc1f8f84711eee0942c192829f473fc3c28",
+      "tx_hash": "0xe94e12ee9b7f48a09ffdeecc93b342dea4d7d14496cbe159c53b809464af83f1",
+      "usdc_amount": 8000
+    },
+    {
+      "block_time": "2025-04-22 12:21:21.000 UTC",
+      "match_source": "unmatched",
+      "proposal_id": null,
+      "recipient": "0xddd7c01cecdbd0ac633ef7405a60165f731e645f",
+      "tx_hash": "0x11e58bc7bb46ce641909afc69062c5d5bb8a35c237e4103fd8a3afdf27e12a9b",
+      "usdc_amount": 1350
+    },
+    {
+      "block_time": "2025-04-10 13:03:21.000 UTC",
+      "match_source": "unmatched",
+      "proposal_id": null,
+      "recipient": "0x9ad8d2a8ef4bf60a667dd43fcb178bdbd93ae1c8",
+      "tx_hash": "0xf118566591e740ec3a210c183dfbdd27269cc25358d6bbdf75594dc41aa6f866",
+      "usdc_amount": 2500
+    },
+    {
+      "block_time": "2025-03-25 12:42:31.000 UTC",
+      "match_source": "unmatched",
+      "proposal_id": null,
+      "recipient": "0x0020d02026e6e82a8f002024a418c0f486bc597e",
+      "tx_hash": "0xf20cd57df648bd940579218dee169c68e329994f384d8c1ad33393f590dc18f7",
+      "usdc_amount": 2042
+    },
+    {
+      "block_time": "2025-03-14 03:02:31.000 UTC",
+      "match_source": "unmatched",
+      "proposal_id": null,
+      "recipient": "0xe61bcfe6a7e4fd33f1c439558e9fd549371d728e",
+      "tx_hash": "0x6ff75c20756bff4b669753ee156d4565964b6c91aea0d0399886652f59fa4633",
+      "usdc_amount": 1250
+    },
+    {
+      "block_time": "2025-02-19 14:55:27.000 UTC",
+      "match_source": "unmatched",
+      "proposal_id": null,
+      "recipient": "0x2858eba3985476ca81217f2f8c5e65508f34960f",
+      "tx_hash": "0xbe1ab924056f826eb5a0754243596a20bc024e5b72afeaa9d8313e9c1b07344b",
+      "usdc_amount": 2250
+    },
+    {
+      "block_time": "2025-02-09 04:09:29.000 UTC",
+      "match_source": "unmatched",
+      "proposal_id": null,
+      "recipient": "0x244306053c673b93bc9885fdacfc352032725c87",
+      "tx_hash": "0x8e30aa28ec163986c88bc7e1367866646c78cb7696d2aa845bc94c59e5e49c5c",
+      "usdc_amount": 3200
+    },
+    {
+      "block_time": "2025-02-03 22:24:11.000 UTC",
+      "match_source": "unmatched",
+      "proposal_id": null,
+      "recipient": "0xbc94f5266c5f78677b98238fc93d825d25abfc12",
+      "tx_hash": "0x8455aa4661a2ccf425066661cb39dbb0d6af1f1c2353361c3daf17a92d7f4aeb",
+      "usdc_amount": 2650
+    },
+    {
+      "block_time": "2025-01-23 14:04:15.000 UTC",
+      "match_source": "unmatched",
+      "proposal_id": null,
+      "recipient": "0xe5f6202ff7ddc5273c249073865bc6f4d5d68beb",
+      "tx_hash": "0xac1bded78aa2667930213bc54d9dd8530038e2063f6b8a6ff909d85f40f3f88a",
+      "usdc_amount": 8550
+    },
+    {
+      "block_time": "2024-12-01 10:43:45.000 UTC",
+      "match_source": "unmatched",
+      "proposal_id": null,
+      "recipient": "0x709a480188cf171b1672438e28bbec3ba2d3a68a",
+      "tx_hash": "0xceabc12b5ff339dcd1131215d3bb0c85e365778e75043dc1e0ea7fd613629b7b",
+      "usdc_amount": 4139
+    },
+    {
+      "block_time": "2024-11-11 03:21:17.000 UTC",
+      "match_source": "unmatched",
+      "proposal_id": null,
+      "recipient": "0x4f81ca00ccadfaffa10672d863e6e6077bad3f20",
+      "tx_hash": "0x1095c5405745318b7a48da95e537f949e5559b51f8a41e8300baff685db7d0fd",
+      "usdc_amount": 5100
+    },
+    {
+      "block_time": "2024-10-27 21:09:49.000 UTC",
+      "match_source": "unmatched",
+      "proposal_id": null,
+      "recipient": "0xeed943aa972dd394146e6f77b9434df07f36a282",
+      "tx_hash": "0x2dabb0d78936b91b474a4f6ec21ae38af403eef12e87db8ff2faca8386d6a6e5",
+      "usdc_amount": 1000
+    },
+    {
+      "block_time": "2024-10-19 21:32:45.000 UTC",
+      "match_source": "unmatched",
+      "proposal_id": null,
+      "recipient": "0x9d4e88f7f2ccbb005426c1ed91eb2bb7d235937f",
+      "tx_hash": "0xbf21df3f53f5e88fe7bd9906aa7664128ee9386752e90897635ff899ed0adfd4",
+      "usdc_amount": 6969
+    },
+    {
+      "block_time": "2024-09-28 04:58:15.000 UTC",
+      "match_source": "unmatched",
+      "proposal_id": null,
+      "recipient": "0x9ad8d2a8ef4bf60a667dd43fcb178bdbd93ae1c8",
+      "tx_hash": "0xe9257afab838a6ae3d2e28544231102b65094b03fca641ca8fb3f910ddb104e6",
+      "usdc_amount": 3000
+    },
+    {
+      "block_time": "2024-09-10 09:38:59.000 UTC",
+      "match_source": "unmatched",
+      "proposal_id": null,
+      "recipient": "0xed7be8b630924f437c28af58a99cc63fc80413f4",
+      "tx_hash": "0x827b9c3eb4e964a764af2fb6405fa8731df6f39ffb115df97f00f298a0a2aa8f",
+      "usdc_amount": 6850
+    },
+    {
+      "block_time": "2024-08-25 11:58:45.000 UTC",
+      "match_source": "unmatched",
+      "proposal_id": null,
+      "recipient": "0xe5f6202ff7ddc5273c249073865bc6f4d5d68beb",
+      "tx_hash": "0xbc57ef28e76d8d1844499bfff7b5785bda403e61fccd7e4d58bc4f737064ecff",
+      "usdc_amount": 11800
+    },
+    {
+      "block_time": "2024-08-23 14:24:23.000 UTC",
+      "match_source": "unmatched",
+      "proposal_id": null,
+      "recipient": "0x0a7b7374d9cba3ac9d31f18b2cd45aac4b3b442e",
+      "tx_hash": "0x099eb46aa6f4e9572e1b5dd02821182d4d5809019804c1f68ffe065ee2eb028f",
+      "usdc_amount": 7870
+    },
+    {
+      "block_time": "2024-08-20 10:49:31.000 UTC",
+      "match_source": "unmatched",
+      "proposal_id": null,
+      "recipient": "0x387a161c6b25aa854100abaed39274e51aaffffd",
+      "tx_hash": "0xef6a63c7a21be13028651acb0f2bcda4974b6f8d310ec6eeaa3db6aaf68cbb60",
+      "usdc_amount": 4500
+    },
+    {
+      "block_time": "2024-08-18 20:16:39.000 UTC",
+      "match_source": "unmatched",
+      "proposal_id": null,
+      "recipient": "0xe1b91eb3f3747d00485e95da79041e6d9d399641",
+      "tx_hash": "0xab46e7937e8ce54075fe548d2e5888ecfe2b022a99c1b453224ef54f76e41b58",
+      "usdc_amount": 16116
+    },
+    {
+      "block_time": "2024-08-08 21:34:33.000 UTC",
+      "match_source": "unmatched",
+      "proposal_id": null,
+      "recipient": "0xe8b290f49c2fb50ab018d89626e77c2321dc599d",
+      "tx_hash": "0x7eb905ebe230f6a94c154ee2f6b706f82faa04c213c62d0a2632ba0d501c6797",
+      "usdc_amount": 5500
+    },
+    {
+      "block_time": "2024-08-05 05:06:23.000 UTC",
+      "match_source": "unmatched",
+      "proposal_id": null,
+      "recipient": "0xfc27b375faf1fbd3f3462044cf810082f042a45b",
+      "tx_hash": "0xf822dcdbe8f0a2da810c99571c4b97ae099cd3c7689c448dfd3f41ed276108a6",
+      "usdc_amount": 7888
+    },
+    {
+      "block_time": "2024-07-27 00:08:21.000 UTC",
+      "match_source": "unmatched",
+      "proposal_id": null,
+      "recipient": "0xe5f6202ff7ddc5273c249073865bc6f4d5d68beb",
+      "tx_hash": "0x96aa70f8f10fecdd232f82fd8008f975d813b569f7c66cef1b143344fcc2105b",
+      "usdc_amount": 8085
+    },
+    {
+      "block_time": "2024-07-25 15:56:31.000 UTC",
+      "match_source": "unmatched",
+      "proposal_id": null,
+      "recipient": "0x3f5111e64c0b96cc6b436151da820a3f979ef7f2",
+      "tx_hash": "0xafe38a6cc0190d97457ede5f98d8afcccc5d1db93e4e98344d5a55536688a68f",
+      "usdc_amount": 12000
+    },
+    {
+      "block_time": "2024-07-19 19:37:13.000 UTC",
+      "match_source": "unmatched",
+      "proposal_id": null,
+      "recipient": "0x459b40643251f10d93334d91cf256f97d31f69de",
+      "tx_hash": "0x83acd7a0576c44316791bbcbcfe52740bf3fa167d42f7de7b07f599d59c79a1d",
+      "usdc_amount": 7500
+    },
+    {
+      "block_time": "2024-06-13 04:25:41.000 UTC",
+      "match_source": "unmatched",
+      "proposal_id": null,
+      "recipient": "0x735135ff4152b3ae255ca708eb37d83b0a8853f8",
+      "tx_hash": "0x95582d4e379291657d2015bafb8bac47b4fb66235ceacea83f01f78d9e09aac9",
+      "usdc_amount": 9900
+    },
+    {
+      "block_time": "2024-06-10 11:02:59.000 UTC",
+      "match_source": "unmatched",
+      "proposal_id": null,
+      "recipient": "0xbb4e936d0f29a515757c518fa883794c4048ef62",
+      "tx_hash": "0xd074b4ab30ab53dec073b9ef5763cf121ada03e5125c1f5d2b5a05ac27d2d2c9",
+      "usdc_amount": 5984
+    },
+    {
+      "block_time": "2024-05-15 14:03:55.000 UTC",
+      "match_source": "unmatched",
+      "proposal_id": null,
+      "recipient": "0xb2b7d66bb56ce8ff7838dc8053ff35050ed95e9d",
+      "tx_hash": "0x8eae668d4bc74007e0114867578bf81455e4f9348fe8cc272adb401f377856b9",
+      "usdc_amount": 3990
+    },
+    {
+      "block_time": "2024-04-28 22:04:23.000 UTC",
+      "match_source": "unmatched",
+      "proposal_id": null,
+      "recipient": "0x761b4763a572010f96ed7c22011d0c95e2b36693",
+      "tx_hash": "0x73eca16691e6e1d0cdc782a00190eb8fcd71b83f5dd2086be45e8ebf874fb261",
+      "usdc_amount": 3500
+    },
+    {
+      "block_time": "2024-04-21 13:23:53.000 UTC",
+      "match_source": "unmatched",
+      "proposal_id": null,
+      "recipient": "0x9b88e054b09a87a15f5c9e710f98f733592dea75",
+      "tx_hash": "0x9f381e4806babb53003ae2038400f3a07bbfbbaa04304399960dcdf2c42d3db3",
+      "usdc_amount": 12888
+    },
+    {
+      "block_time": "2024-04-10 05:03:35.000 UTC",
+      "match_source": "unmatched",
+      "proposal_id": null,
+      "recipient": "0xddb4938755c243a4f60a2f2f8f95df4f894c58cc",
+      "tx_hash": "0xdbd9040fd5f1520fe99eb2bce981261d09987096ef74a955c6bdd72c792fabbb",
+      "usdc_amount": 4900
+    }
+  ]
+}

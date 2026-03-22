@@ -407,12 +407,137 @@ def _load_auction_rows() -> list[dict[str, Any]]:
     return []
 
 
+def _load_dune_data() -> dict[str, list[dict[str, Any]]]:
+    dune: dict[str, list[dict[str, Any]]] = {}
+    dune_dir = ROOT / "raw" / "dune"
+    if not dune_dir.exists():
+        return dune
+    for file_path in dune_dir.glob("*.json"):
+        try:
+            data = load_json_path(file_path)
+        except Exception:
+            continue
+        rows = data if isinstance(data, list) else data.get("rows", [])
+        if isinstance(rows, list):
+            dune[file_path.stem] = [row for row in rows if isinstance(row, dict)]
+    return dune
+
+
+def _float_or_zero(value: Any) -> float:
+    try:
+        return float(value)
+    except (TypeError, ValueError):
+        return 0.0
+
+
+def _dune_month(value: Any) -> str | None:
+    if value in (None, ""):
+        return None
+    parsed = parse_datetime(value)
+    if parsed:
+        return parsed.strftime("%Y-%m")
+    text = str(value).strip()
+    if not text:
+        return None
+    if len(text) >= 7:
+        return text[:7]
+    return None
+
+
+def _dune_auction_price_by_month(dune_data: dict[str, list[dict[str, Any]]]) -> dict[str, float]:
+    rows = dune_data.get("auction_revenue_all_time", [])
+    prices: dict[str, float] = {}
+    for row in rows:
+        month = _dune_month(row.get("month"))
+        if not month:
+            continue
+        avg = _float_or_zero(row.get("avg_eth_price"))
+        total_eth = _float_or_zero(row.get("total_eth") or row.get("eth_amount"))
+        total_usd = _float_or_zero(row.get("total_usd") or row.get("usd_value"))
+        if avg > 0:
+            prices[month] = avg
+        elif total_eth > 0 and total_usd > 0:
+            prices[month] = total_usd / total_eth
+    return prices
+
+
+def _build_treasury_history_from_dune(
+    *,
+    dune_data: dict[str, list[dict[str, Any]]],
+    current_balance_usd: float,
+    as_of_month: str,
+) -> list[dict[str, Any]]:
+    rows = dune_data.get("treasury_balance_over_time", [])
+    if not rows:
+        return []
+
+    flows_by_month: dict[str, dict[str, float]] = defaultdict(lambda: {"auction_eth_in": 0.0, "usdc_out": 0.0, "eth_out": 0.0})
+    for row in rows:
+        month = _dune_month(row.get("month"))
+        if not month:
+            continue
+        flows = flows_by_month[month]
+        flows["auction_eth_in"] += _float_or_zero(row.get("auction_eth_in"))
+        flows["usdc_out"] += _float_or_zero(row.get("usdc_out"))
+        flows["eth_out"] += _float_or_zero(row.get("eth_out"))
+
+    if not flows_by_month:
+        return []
+
+    months = sorted(set(flows_by_month.keys()) | {as_of_month})
+    month_prices = _dune_auction_price_by_month(dune_data)
+
+    balance_by_month: dict[str, float] = {months[-1]: current_balance_usd}
+    for index in range(len(months) - 2, -1, -1):
+        next_month = months[index + 1]
+        month = months[index]
+        next_balance = _float_or_zero(balance_by_month.get(next_month))
+        next_flows = flows_by_month.get(next_month, {})
+        eth_price = _float_or_zero(month_prices.get(next_month)) or ETH_FALLBACK_USD
+        inflow_usd = _float_or_zero(next_flows.get("auction_eth_in")) * eth_price
+        outflow_usd = _float_or_zero(next_flows.get("usdc_out")) + (_float_or_zero(next_flows.get("eth_out")) * eth_price)
+        previous_balance = next_balance - inflow_usd + outflow_usd
+        balance_by_month[month] = max(previous_balance, 0.0)
+
+    history: list[dict[str, Any]] = []
+    for month in months:
+        flows = flows_by_month.get(month, {})
+        eth_price = _float_or_zero(month_prices.get(month)) or ETH_FALLBACK_USD
+        auction_eth_in = _float_or_zero(flows.get("auction_eth_in"))
+        usdc_out = _float_or_zero(flows.get("usdc_out"))
+        eth_out = _float_or_zero(flows.get("eth_out"))
+        history.append(
+            {
+                "month": month,
+                "balance": round(_float_or_zero(balance_by_month.get(month)), 2),
+                "monthly_spend": round(usdc_out + (eth_out * eth_price), 2),
+                "auction_inflow": round(auction_eth_in * eth_price, 2),
+                "auction_eth_in": round(auction_eth_in, 6),
+                "usdc_out": round(usdc_out, 2),
+                "eth_out": round(eth_out, 6),
+            }
+        )
+    return history
+
+
 def _build_treasury_history(
     *,
     treasury_snapshots: dict[str, Any],
     spend_records: list[dict[str, Any]],
     analytics_as_of: str,
+    dune_data: dict[str, list[dict[str, Any]]] | None = None,
 ) -> list[dict[str, Any]]:
+    as_of_month = _month_from_any_timestamp(analytics_as_of) or datetime.now(timezone.utc).strftime("%Y-%m")
+    current_balance = number_or_zero(((treasury_snapshots.get("records") or [{}])[-1]).get("total_value_usd"))
+    if dune_data:
+        dune_history = _build_treasury_history_from_dune(
+            dune_data=dune_data,
+            current_balance_usd=current_balance,
+            as_of_month=as_of_month,
+        )
+        if dune_history:
+            return dune_history
+
     spend_by_month: dict[str, float] = defaultdict(float)
     for record in spend_records:
         month = _month_from_any_timestamp(
@@ -442,12 +567,10 @@ def _build_treasury_history(
             continue
         inflow_by_month[month] += amount_eth * ETH_FALLBACK_USD
 
-    as_of_month = _month_from_any_timestamp(analytics_as_of) or datetime.now(timezone.utc).strftime("%Y-%m")
     months = sorted(set(spend_by_month.keys()) | set(inflow_by_month.keys()) | {as_of_month})
     if not months:
         months = [as_of_month]
 
-    current_balance = number_or_zero(((treasury_snapshots.get("records") or [{}])[-1]).get("total_value_usd"))
     balance_by_month: dict[str, float] = {months[-1]: current_balance}
     for index in range(len(months) - 2, -1, -1):
         next_month = months[index + 1]
@@ -465,6 +588,173 @@ def _build_treasury_history(
         }
         for month in months
     ]
+
+
+def _proposal_number_from_archive_id(value: Any) -> int | None:
+    text = str(value or "").strip().lower()
+    if not text:
+        return None
+    match = re.search(r"-(\d+)$", text)
+    if not match:
+        return None
+    try:
+        return int(match.group(1))
+    except ValueError:
+        return None
+
+
+def _enrich_spend_records_with_dune(
+    *,
+    spend_records: list[dict[str, Any]],
+    dune_data: dict[str, list[dict[str, Any]]],
+    proposal_tags: dict[str, Any],
+) -> None:
+    rows = dune_data.get("proposal_spend_by_category", [])
+    if not rows:
+        return
+
+    proposal_category_by_number: dict[int, str] = {}
+    for tag in proposal_tags.get("records", []):
+        proposal_number = _proposal_number_from_archive_id(tag.get("archive_id"))
+        if proposal_number is None:
+            continue
+        category = str(tag.get("semantic_category") or tag.get("primary_category") or "uncategorized")
+        proposal_category_by_number[proposal_number] = category
+
+    dune_by_match_key: dict[tuple[str, str, float], list[dict[str, Any]]] = defaultdict(list)
+    for row in rows:
+        day = (_dune_month(row.get("block_time")) or "")
+        if len(day) >= 7:
+            dt = parse_datetime(row.get("block_time"))
+            day = dt.strftime("%Y-%m-%d") if dt else ""
+        recipient = normalize_address(row.get("recipient"))
+        amount = round(_float_or_zero(row.get("usdc_amount")), 6)
+        if day and recipient and amount > 0:
+            dune_by_match_key[(day, recipient, amount)].append(row)
+
+    for record in spend_records:
+        if str(record.get("asset_symbol") or "").upper() != "USDC":
+            continue
+        event_dt = parse_datetime(
+            record.get("proposal_executed_at")
+            or record.get("valuation_reference_at")
+            or record.get("proposal_end_at")
+            or record.get("proposal_created_at")
+        )
+        if not event_dt:
+            continue
+        day = event_dt.strftime("%Y-%m-%d")
+        recipient = normalize_address(record.get("recipient_address"))
+        amount = round(number_or_zero(record.get("amount")), 6)
+        candidates = dune_by_match_key.get((day, recipient, amount), [])
+        if not candidates:
+            continue
+        dune_row = candidates.pop(0)
+        tx_hash = str(dune_row.get("tx_hash") or "").strip().lower()
+        if tx_hash:
+            record["tx_hash"] = tx_hash
+            record["dune_tx_hash"] = tx_hash
+        record["dune_match_source"] = dune_row.get("match_source")
+        proposal_number = integer_or_none(dune_row.get("proposal_id"))
+        if proposal_number is None:
+            continue
+        record["dune_proposal_id"] = proposal_number
+        category_key = proposal_category_by_number.get(proposal_number)
+        if category_key:
+            record["dune_category_key"] = category_key
+            record["dune_category_label"] = readable_category(category_key)
+
+
+def _build_governance_stats_from_dune(
+    *,
+    dune_data: dict[str, list[dict[str, Any]]],
+    archive: dict[str, Any],
+) -> dict[str, Any]:
+    rows = dune_data.get("vote_participation", [])
+    if not rows:
+        return {
+            "source": "dune_vote_participation",
+            "proposal_count": 0,
+            "total_votes_cast": 0.0,
+            "records": [],
+        }
+
+    archive_by_key: dict[tuple[str, int], dict[str, Any]] = {}
+    for record in archive.get("records", []):
+        chain = str(record.get("chain") or "").lower()
+        number = integer_or_none(record.get("proposal_number"))
+        if chain and number is not None:
+            archive_by_key[(chain, number)] = record
+
+    aggregates: dict[tuple[str, int], dict[str, Any]] = {}
+    skipped_rows = 0
+    for row in rows:
+        chain = str(row.get("chain") or "base").lower()
+        proposal_id = integer_or_none(row.get("proposal_id"))
+        support = integer_or_none(row.get("support"))
+        votes_cast = _float_or_zero(row.get("votes_cast"))
+        if proposal_id is None or support not in {0, 1, 2} or votes_cast <= 0:
+            skipped_rows += 1
+            continue
+        key = (chain, proposal_id)
+        agg = aggregates.setdefault(
+            key,
+            {
+                "chain": chain,
+                "proposal_id": proposal_id,
+                "for_votes": 0.0,
+                "against_votes": 0.0,
+                "abstain_votes": 0.0,
+                "total_vp": 0.0,
+            },
+        )
+        if support == 1:
+            agg["for_votes"] += votes_cast
+        elif support == 0:
+            agg["against_votes"] += votes_cast
+        else:
+            agg["abstain_votes"] += votes_cast
+        agg["total_vp"] += votes_cast
+
+    records: list[dict[str, Any]] = []
+    for key, agg in sorted(aggregates.items(), key=lambda item: (item[0][0], item[0][1])):
+        proposal = archive_by_key.get(key)
+        quorum = number_or_zero((proposal or {}).get("quorum"))
+        turnout_pct = percent(agg["total_vp"], quorum) if quorum > 0 else None
+        records.append(
+            {
+                "chain": agg["chain"],
+                "proposal_id": agg["proposal_id"],
+                "proposal_number": (proposal or {}).get("proposal_number"),
+                "archive_id": (proposal or {}).get("archive_id"),
+                "title": (proposal or {}).get("title"),
+                "for_votes": round(agg["for_votes"], 4),
+                "against_votes": round(agg["against_votes"], 4),
+                "abstain_votes": round(agg["abstain_votes"], 4),
+                "total_vp": round(agg["total_vp"], 4),
+                "turnout_pct": turnout_pct,
+            }
+        )
+
+    return {
+        "source": "dune_vote_participation",
+        "proposal_count": len(records),
+        "total_votes_cast": round(sum(row["total_vp"] for row in records), 4),
+        "skipped_rows": skipped_rows,
+        "records": records,
+    }
+
+
+def _dune_auction_revenue_summary(dune_data: dict[str, list[dict[str, Any]]]) -> dict[str, Any]:
+    rows = dune_data.get("auction_revenue_all_time", [])
+    total_eth = sum(_float_or_zero(row.get("total_eth") or row.get("eth_amount")) for row in rows)
+    total_usd = sum(_float_or_zero(row.get("total_usd") or row.get("usd_value")) for row in rows)
+    return {
+        "source": "dune_auction_revenue_all_time",
+        "months": len(rows),
+        "total_eth": round(total_eth, 8),
+        "total_usd": round(total_usd, 2),
+    }
 
 
 def readable_category(value: str) -> str:
@@ -3119,6 +3409,7 @@ def main() -> int:
     people_overrides = load_json("people_overrides")
     project_updates = load_json("project_updates")
     proposal_tags = load_json("proposal_tags")
+    dune_data = _load_dune_data()
     members_snapshot = latest_members_snapshot()
     analytics_as_of = latest_value(
         archive.get("as_of"),
@@ -3154,6 +3445,11 @@ def main() -> int:
         project_lookup=project_lookup,
         project_names=project_names,
         people_by_address=seed_people_by_address,
+    )
+    _enrich_spend_records_with_dune(
+        spend_records=spend_records,
+        dune_data=dune_data,
+        proposal_tags=proposal_tags,
     )
     ens_profiles = resolve_verified_ens_profiles(
         addresses=[
@@ -3217,6 +3513,13 @@ def main() -> int:
         treasury=treasury,
         project_updates=project_updates,
         proposal_tags=proposal_tags,
+    )
+    dao_metrics["funding_in"] = {
+        "auction_revenue": _dune_auction_revenue_summary(dune_data),
+    }
+    dao_metrics["governance_stats"] = _build_governance_stats_from_dune(
+        dune_data=dune_data,
+        archive=archive,
     )
     timeline_events = build_timeline_events(
         archive=archive,
@@ -3311,6 +3614,7 @@ def main() -> int:
         treasury_snapshots=treasury_snapshots,
         spend_records=spend_records,
         analytics_as_of=analytics_as_of,
+        dune_data=dune_data,
     )
     proposal_reconciliation = build_proposal_reconciliation(
         archive=archive,
