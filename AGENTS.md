@@ -293,19 +293,33 @@ for f in files:
 
 ---
 
-## 11. Sprint 7 — pendentes
+## 11. Sprint 7 e Sprint 8 — status
+
+### Sprint 7 — concluidos
 
 ```
-[ ] 0. Category labels globais em derive_analytics.py + React
-[ ] 1A. Remover ledger do TreasuryChart
-[ ] 1B. Dual YAxis (balance $0-500k / spend $0-25k separados)
-[ ] 1C. Mover ledger para aba Treasury
-[ ] 2. Corrigir proof_record_count em enrich_members.py
-[ ] 3. Criar reconcile_treasury.py
-[ ] 4. Sankey tooltip enriquecido (val_usdc + val_eth + top_recipients)
-[ ] 5. refresh_all.py com flags --incremental e --derive-only
-[ ] 6. Sankey completeness check em audit_gaps.py
-[ ] 7. sync_snapshot.py — pipeline only, sem frontend
+[x] 0. Category labels globais em derive_analytics.py + React
+[x] 1A. Remover ledger do TreasuryChart
+[x] 1B. Dual YAxis (balance $0-500k / spend $0-25k separados)
+[x] 1C. Mover ledger para aba Treasury
+[x] 2. Corrigir proof_record_count em enrich_members.py
+[x] 3. Criar reconcile_treasury.py
+[x] Leaderboard com dados reais (41 atletas)
+[x] Dune MCP integrado (5 queries)
+[x] AGENTS.md criado e commitado
+```
+
+### Sprint 8 — pendentes
+
+```
+[ ] Commit pendente: scripts/derive_funding_analysis.py
+[ ] Queries Dune sem limit para historico completo
+[ ] Reconciliacao com gap < $5k
+[ ] ETH historico por transacao no pipeline
+[ ] sync_snapshot.py (pipeline only, sem frontend)
+[ ] Sankey tooltip enriquecido (val_usdc + val_eth + top_recipients)
+[ ] refresh_all.py com flags --incremental e --derive-only
+[ ] Sankey completeness check em audit_gaps.py
 ```
 
 ---
