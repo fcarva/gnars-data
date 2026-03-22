@@ -1468,8 +1468,22 @@ textarea:focus {
 .treasury-chart-header {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
   gap: 12px;
   margin-bottom: 10px;
+}
+
+.treasury-metrics-inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-left: auto;
+  font-size: 8.5px;
+  color: var(--b500);
+  font-family: var(--mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .treasury-ledger-block {

@@ -5,6 +5,8 @@ import { MetricsBar } from "@/components/MetricsBar";
 import { AnalyticsDashboard } from "@/components/AnalyticsDashboard";
 import { VotesTable } from "@/components/VotesTable";
 import { MilestonesTable } from "@/components/MilestonesTable";
+import { TreasuryChart } from "@/components/TreasuryChart";
+import { TreasuryLedger } from "@/components/TreasuryLedger";
 import {
   fetchTimeline,
   fetchProposalVoteEvents,
@@ -114,6 +116,7 @@ const Index = () => {
 
   const filtered = useMemo(() => filterEvents(events, filter), [events, filter]);
   const showAnalytics = filter === "analytics";
+  const showTreasuryView = filter === "treasury";
   const showVotesTable = filter === "votes";
   const showMilestonesTable = filter === "milestones" || filter === "deliveries";
   const shownMilestones = useMemo(() => {
@@ -149,6 +152,57 @@ const Index = () => {
             />
           ) : (
             <div className="feed-empty">Loading analytics...</div>
+          )
+        ) : showTreasuryView ? (
+          metrics ? (
+            <section className="section-block">
+              <div className="section-head compact-head">
+                <span className="eyebrow">Treasury</span>
+                <h2>{`$${Math.round(metrics.treasury_balance_usd ?? treasuryUsd ?? 0).toLocaleString("en-US")} · ${new Date().toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}`}</h2>
+              </div>
+
+              <div className="analytics-panel" style={{ marginTop: 8 }}>
+                <TreasuryChart
+                  projectedZeroDate={metrics.projected_zero_date}
+                  funding={fundingAnalysis}
+                  proposalTags={proposalTags}
+                  currentTreasuryUsd={metrics.treasury_balance_usd ?? treasuryUsd ?? 0}
+                  monthlyBurnUsd={metrics.monthly_burn_usd}
+                  runwayMonths={metrics.runway_months}
+                  chartHeight={260}
+                />
+              </div>
+
+              <TreasuryLedger events={metrics.treasury_events || []} />
+
+              <div className="ledger-table" style={{ marginTop: 10 }}>
+                <div className="ledger-head">
+                  <span>Asset</span>
+                  <span>Amount</span>
+                  <span>Value USD</span>
+                  <span>Share</span>
+                </div>
+                <div className="ledger-body">
+                  {(metrics.treasury.assets || []).map((asset) => {
+                    const total = metrics.treasury.assets.reduce((sum, item) => sum + (item.value_usd || 0), 0) || 1;
+                    const share = ((asset.value_usd || 0) / total) * 100;
+                    return (
+                      <div key={asset.symbol} className="ledger-row">
+                        <span className="ledger-cell ledger-primary">
+                          <strong>{asset.symbol}</strong>
+                          <small>{asset.name}</small>
+                        </span>
+                        <span className="ledger-cell ledger-mono">{asset.amount.toLocaleString(undefined, { maximumFractionDigits: 4 })}</span>
+                        <span className="ledger-cell ledger-mono">{`$${Math.round(asset.value_usd).toLocaleString("en-US")}`}</span>
+                        <span className="ledger-cell ledger-mono">{`${share.toFixed(1)}%`}</span>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            </section>
+          ) : (
+            <div className="feed-empty">Loading treasury...</div>
           )
         ) : showVotesTable ? (
           filtered.length === 0 ? (

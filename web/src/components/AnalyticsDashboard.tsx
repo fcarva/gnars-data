@@ -114,7 +114,9 @@ export function AnalyticsDashboard({
               funding={funding}
               proposalTags={proposalTags}
               currentTreasuryUsd={metrics.treasury_balance_usd ?? o.treasury_total_value_usd}
-              treasuryEvents={metrics.treasury_events || []}
+              monthlyBurnUsd={metrics.monthly_burn_usd}
+              runwayMonths={metrics.runway_months}
+              chartHeight={200}
             />
           </ErrorBoundary>
         </div>

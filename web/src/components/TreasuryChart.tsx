@@ -1,6 +1,5 @@
 ﻿import { useEffect, useState } from "react";
 import {
-  Area,
   Bar,
   CartesianGrid,
   ComposedChart,
@@ -18,15 +17,9 @@ interface TreasuryChartProps {
   funding?: FundingAnalysis | null;
   proposalTags?: ProposalTagRecord[];
   currentTreasuryUsd?: number | null;
-  treasuryEvents?: Array<{
-    proposal_id: string;
-    title: string;
-    amount_usd: number;
-    asset: string;
-    amount: number;
-    executed_at: string;
-    balance_after: number;
-  }>;
+  monthlyBurnUsd?: number | null;
+  runwayMonths?: number | null;
+  chartHeight?: number;
 }
 
 function fmtUSD(value: number): string {
@@ -41,17 +34,37 @@ function fmtDate(dateStr: string): string {
   return d.toLocaleDateString("en-US", { month: "short", year: "2-digit" }).replace(" ", " '");
 }
 
-function HistoryRow({ row }: { row: NonNullable<TreasuryChartProps["treasuryEvents"]>[number] }) {
-  const parts = row.proposal_id.split("-");
-  const proposalNumber = parts[parts.length - 1];
-  const amountText = `−$${Math.round(row.amount_usd).toLocaleString("en-US")}`;
-  const balanceText = `$${Math.round(row.balance_after).toLocaleString("en-US")}`;
+function monthLabel(iso: string): string {
+  if (!iso) return "";
+  const [year, month] = iso.split("-");
+  const names = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  const idx = Number.parseInt(month || "0", 10) - 1;
+  if (idx < 0 || idx > 11 || !year) return iso;
+  return `${names[idx]} '${year.slice(2)}`;
+}
+
+function CustomTooltip({ active, payload, label }: { active?: boolean; payload?: Array<{ dataKey?: string; value?: number }>; label?: string }) {
+  if (!active || !payload?.length) return null;
   return (
-    <div className="treasury-ledger-row">
-      <span className="treasury-ledger-badge">#{proposalNumber}</span>
-      <span className="treasury-ledger-title" title={row.title}>{row.title}</span>
-      <span className="treasury-ledger-amount">{amountText}</span>
-      <span className="treasury-ledger-balance">{balanceText}</span>
+    <div
+      style={{
+        background: "#282726",
+        color: "#FFFEF8",
+        padding: "8px 12px",
+        fontSize: 10,
+        fontFamily: "'Courier New', monospace",
+        lineHeight: 1.8,
+        borderRadius: 2,
+        border: "none",
+        boxShadow: "none",
+      }}
+    >
+      <div style={{ fontWeight: 700, marginBottom: 4 }}>{monthLabel(String(label || ""))}</div>
+      {payload.map((entry) => (
+        <div key={String(entry.dataKey)} style={{ color: entry.dataKey === "balance" ? "#FFFEF8" : "#F09595" }}>
+          {entry.dataKey === "balance" ? "Balance" : "Spend"}: {fmtUSD(Number(entry.value || 0))}
+        </div>
+      ))}
     </div>
   );
 }
@@ -61,10 +74,11 @@ export function TreasuryChart({
   funding,
   proposalTags = [],
   currentTreasuryUsd,
-  treasuryEvents = [],
+  monthlyBurnUsd,
+  runwayMonths,
+  chartHeight = 200,
 }: TreasuryChartProps) {
   const [data, setData] = useState<TreasurySnapshotsData | null>(null);
-  const [showHistory, setShowHistory] = useState(false);
 
   useEffect(() => {
     getTreasurySnapshots()
@@ -192,151 +206,108 @@ export function TreasuryChart({
   }
 
   const mergedData = Array.from(mergedByMonth.values()).sort((a, b) => a.date.localeCompare(b.date));
-  const balanceData = mergedData.flatMap((row) => [row.value, row.proposalSpend, row.auctionInflow]);
-  const safeMax = Math.max(
-    ...balanceData.filter((value) => value != null && !Number.isNaN(value)),
-  ) * 1.12;
-  const projectedDateTick = mergedData.find((row) => row.date.startsWith(projectedZeroDate || ""))?.date;
+  const chartRows = mergedData.map((row) => ({
+    month: row.date.slice(0, 7),
+    balance: row.value,
+    monthly_spend: row.proposalSpend,
+  }));
+  const projectedDateTick = chartRows.find((row) => row.month.startsWith(projectedZeroDate || ""))?.month;
   const currentValue = chartData[chartData.length - 1]?.value || 0;
   const peakValue = chartData.reduce((max, row) => Math.max(max, row.value), 0);
-
-  const formatter = (value: number) => {
-    if (value >= 1e6) return `$${(value / 1e6).toFixed(1)}m`;
-    if (value >= 1000) return `$${(value / 1000).toFixed(0)}k`;
-    return `$${value}`;
-  };
-
-  const historyRows = treasuryEvents.slice(0, 8);
-  const visibleRows = showHistory ? historyRows : historyRows.slice(0, 3);
-  const hasOverflowRows = historyRows.length > 3;
+  const burn = typeof monthlyBurnUsd === "number" ? monthlyBurnUsd : null;
+  const runway = typeof runwayMonths === "number" ? runwayMonths : null;
 
   return (
     <div>
       <div className="treasury-chart-header">
-        <div>
-          <div className="treasury-total-value">{formatter(currentValue)}</div>
-          <div className="analytics-note">Live treasury balance</div>
-          {historyRows.length ? (
-            <div className="treasury-ledger-block">
-              <div className="treasury-ledger-head">
-                <span>RECENT OUTFLOWS</span>
-                {hasOverflowRows ? (
-                  <button
-                    type="button"
-                    className="treasury-ledger-toggle"
-                    onClick={() => setShowHistory((value) => !value)}
-                  >
-                    {showHistory ? "show less ↑" : "show all ↓"}
-                  </button>
-                ) : null}
-              </div>
-              <div className="treasury-ledger-list">
-                {visibleRows.map((row) => (
-                  <HistoryRow key={`${row.proposal_id}:${row.executed_at}:${row.amount_usd}`} row={row} />
-                ))}
-              </div>
-            </div>
-          ) : null}
+        <div className="treasury-total-value">{`$${Math.round(currentValue).toLocaleString("en-US")}`}</div>
+        <div className="treasury-metrics-inline">
+          <span>{`Peak $${Math.round(peakValue).toLocaleString("en-US")}`}</span>
+          <span>{`Burn/Mo ${burn != null ? `$${Math.round(burn).toLocaleString("en-US")}` : "-"}`}</span>
+          <span>{`Runway ${runway != null ? `${Math.round(runway)} mo` : "-"}`}</span>
         </div>
-        <div className="treasury-total-value" style={{ marginLeft: "auto" }}>Peak {formatter(peakValue)}</div>
       </div>
 
-      <div style={{ width: "100%", height: 300, marginTop: 16 }}>
-        <ResponsiveContainer>
-          <ComposedChart data={mergedData} margin={{ top: 10, right: 10, bottom: 10, left: -20 }}>
-            <CartesianGrid strokeDasharray="4 4" stroke="var(--b150)" />
+      <div style={{ width: "100%", height: chartHeight, marginTop: 10 }}>
+        <ResponsiveContainer width="100%" height="100%">
+          <ComposedChart data={chartRows} margin={{ top: 10, right: 16, bottom: 0, left: 0 }}>
+            <CartesianGrid strokeDasharray="3 0" vertical={false} stroke="#E6E4D9" strokeWidth={0.5} />
             <XAxis
-              dataKey="date"
-              tickFormatter={fmtDate}
-              tick={{ fill: "var(--b500)", fontSize: 8, fontFamily: "'Courier New'" }}
+              dataKey="month"
+              tickFormatter={(value: string) => monthLabel(value)}
+              tick={{ fill: "#6F6E69", fontSize: 9, fontFamily: "'Courier New', monospace" }}
               axisLine={false}
               tickLine={false}
+              interval="preserveStartEnd"
+              minTickGap={60}
             />
             <YAxis
-              domain={[0, Number.isFinite(safeMax) ? safeMax : 350000]}
-              tickFormatter={fmtUSD}
-              width={52}
-              tick={{ fill: "var(--b500)", fontSize: 9, fontFamily: "'Courier New'" }}
+              yAxisId="balance"
+              orientation="left"
+              domain={[0, (dataMax: number) => Math.ceil((dataMax * 1.1) / 100000) * 100000]}
+              tickFormatter={(value: number) => (value >= 1000 ? `$${(value / 1000).toFixed(0)}k` : `$${value}`)}
+              tick={{ fontSize: 9, fontFamily: "'Courier New', monospace", fill: "#6F6E69" }}
               axisLine={false}
               tickLine={false}
+              width={48}
+              tickCount={5}
             />
-            <Tooltip
-              content={({ active, label, payload }) => {
-                if (!active || !payload || !payload.length) return null;
-                return (
-                  <div
-                    style={{
-                      background: "#282726",
-                      color: "#FFFEF8",
-                      fontSize: 10,
-                      fontFamily: "'Courier New', monospace",
-                      padding: "8px 12px",
-                      borderRadius: 2,
-                      border: "none",
-                    }}
-                  >
-                    <div style={{ marginBottom: 6 }}>{fmtDate(String(label || ""))}</div>
-                    {payload.map((entry) => (
-                      <div key={String(entry.name)} style={{ display: "flex", gap: 8, justifyContent: "space-between" }}>
-                        <span>{String(entry.name)}</span>
-                        <span>{fmtUSD(Number(entry.value || 0))}</span>
-                      </div>
-                    ))}
-                  </div>
-                );
-              }}
+            <YAxis
+              yAxisId="spend"
+              orientation="right"
+              domain={[0, (dataMax: number) => Math.ceil((dataMax * 1.2) / 5000) * 5000]}
+              tickFormatter={(value: number) => (value > 0 ? `$${(value / 1000).toFixed(0)}k` : "")}
+              tick={{ fontSize: 8, fontFamily: "'Courier New', monospace", fill: "#B7B5AC" }}
+              axisLine={false}
+              tickLine={false}
+              width={36}
+              tickCount={4}
             />
+            <Tooltip content={<CustomTooltip />} />
             <ReferenceLine
+              yAxisId="balance"
               y={10000}
               stroke="#DA702C"
               strokeDasharray="4 3"
-              opacity={0.4}
-              label={{ value: "$10k critical", fontSize: 8, fill: "#DA702C", fontFamily: "'Courier New'" }}
+              strokeOpacity={0.5}
             />
             {projectedDateTick ? (
-              <ReferenceLine x={projectedDateTick} stroke="#D14D41" strokeDasharray="5 4" label={{ value: "Projected zero", angle: -90, position: "insideTop", fill: "#D14D41", fontSize: 10 }} />
+              <ReferenceLine x={projectedDateTick} stroke="#D14D41" strokeDasharray="5 4" />
             ) : null}
 
-            <Area
-              type="monotone"
-              dataKey="value"
-              name="Balance fill"
-              fill="rgba(64,62,60,0.05)"
-              stroke="none"
-            />
-
             <Bar
-              dataKey="proposalSpend"
-              name="Proposal spend"
+              yAxisId="spend"
+              dataKey="monthly_spend"
+              name="Spend"
               fill="rgba(209,77,65,0.18)"
               stroke="#D14D41"
               strokeWidth={1}
-              barSize={14}
+              radius={[2, 2, 0, 0]}
+              maxBarSize={12}
             />
 
             <Line
+              yAxisId="balance"
               type="monotone"
-              dataKey="auctionInflow"
-              name="Auction inflow"
-              stroke="#879A39"
-              strokeDasharray="5 3"
-              strokeWidth={1.5}
-              dot={false}
-            />
-
-            <Line
-              type="monotone"
-              dataKey="value"
+              dataKey="balance"
               name="Balance"
               stroke="#403E3C"
               strokeWidth={2}
               dot={false}
+              activeDot={{ r: 3, fill: "#403E3C" }}
             />
           </ComposedChart>
         </ResponsiveContainer>
       </div>
-      <div className="analytics-note" style={{ marginTop: 10 }}>
-        Monthly stacked spend by proposal category over treasury balance.
+      <div style={{ display: "flex", gap: 14, marginTop: 10, flexWrap: "wrap" }}>
+        <span style={{ display: "flex", alignItems: "center", gap: 5, fontSize: 8.5, color: "#6F6E69" }}>
+          <span style={{ display: "inline-block", width: 14, height: 2, background: "#403E3C" }} />
+          Balance
+        </span>
+        <span style={{ display: "flex", alignItems: "center", gap: 5, fontSize: 8.5, color: "#6F6E69" }}>
+          <span style={{ display: "inline-block", width: 10, height: 10, background: "rgba(209,77,65,0.22)", border: "1px solid #D14D41", borderRadius: 1 }} />
+          Monthly spend
+        </span>
       </div>
     </div>
   );
