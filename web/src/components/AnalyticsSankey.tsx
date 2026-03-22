@@ -160,7 +160,7 @@ export function AnalyticsSankey({ data }: AnalyticsSankeyProps) {
           BY WORKSTREAM
         </button>
       </div>
-      <div className="analytics-sankey-wrap" style={{ position: "relative" }}>
+      <div className="analytics-sankey-wrap" style={{ position: "relative", overflow: "visible" }}>
         <svg
           width="100%"
           viewBox={`0 0 ${W} ${H}`}

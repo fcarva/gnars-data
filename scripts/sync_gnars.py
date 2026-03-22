@@ -314,6 +314,10 @@ def main() -> int:
     if not auction_networks:
         print("[warn] No gnars auction_house contracts found in data/contracts.json; skipping auction sync.")
     for network in auction_networks:
+        url = auction_subgraph_url(network)
+        if not url:
+            print(f"[skip] {network}: subgraph URL not configured")
+            continue
         path, payload = sync_auctions_for_network(network, contracts, stamp)
         auction_payloads.append(payload)
         print(

@@ -28,14 +28,9 @@ function voteBadge(status: string): string {
   return status.toUpperCase();
 }
 
-function fmtUsd(value: number | null | undefined): string {
-  if (typeof value !== "number" || !Number.isFinite(value)) return "-";
-  return `$${value.toLocaleString(undefined, { maximumFractionDigits: 2 })}`;
-}
-
 export function VotesTable({ events, funding }: VotesTableProps) {
-  const spendByArchive = new Map(
-    (funding?.allocation_by_proposal || []).map((row) => [row.archive_id, row.cost_per_vote_usd]),
+  const fundingByArchive = new Map(
+    (funding?.allocation_by_proposal || []).map((row) => [row.archive_id, row]),
   );
 
   return (
@@ -51,7 +46,10 @@ export function VotesTable({ events, funding }: VotesTableProps) {
         <div className="ledger-body">
           {events.map((event) => {
             const voteCount = parseVoteCount(event.summary || "");
-            const costPerVote = event.archive_id ? spendByArchive.get(event.archive_id) : null;
+            const row = event.archive_id ? fundingByArchive.get(event.archive_id) : null;
+            const costPerVote = row && (row.vote_count ?? 0) > 0
+              ? Math.round((row.executed_spend_usd ?? 0) / row.vote_count)
+              : null;
             const link = event.links?.[0];
             return (
               <div key={event.event_id} className="ledger-row">
@@ -65,7 +63,7 @@ export function VotesTable({ events, funding }: VotesTableProps) {
                 </span>
                 <span className="ledger-cell ledger-mono">{voteCount ?? "-"}</span>
                 <span className="ledger-cell ledger-mono">{parseVotingPower(event.summary || "")}</span>
-                <span className="ledger-cell ledger-mono">{fmtUsd(costPerVote)}</span>
+                <span className="ledger-cell ledger-mono">{costPerVote != null ? `$${costPerVote}` : "—"}</span>
               </div>
             );
           })}

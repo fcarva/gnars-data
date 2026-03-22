@@ -1,7 +1,8 @@
-import type { MilestoneRecord } from "@/lib/gnars-data";
+import { useEffect, useMemo, useState } from "react";
+import { fetchMilestonesData, type MilestoneRecord } from "@/lib/gnars-data";
 
 interface MilestonesTableProps {
-  records: MilestoneRecord[];
+  records?: MilestoneRecord[];
   title: string;
   emptyMessage: string;
 }
@@ -23,6 +24,24 @@ function badgeClass(status: string): string {
 }
 
 export function MilestonesTable({ records, title, emptyMessage }: MilestonesTableProps) {
+  const [localMilestones, setLocalMilestones] = useState<MilestoneRecord[]>(records || []);
+  const [loading, setLoading] = useState(!records);
+
+  useEffect(() => {
+    if (records) {
+      setLocalMilestones(records);
+      setLoading(false);
+      return;
+    }
+
+    fetchMilestonesData()
+      .then((data) => setLocalMilestones(data?.records || []))
+      .catch(() => setLocalMilestones([]))
+      .finally(() => setLoading(false));
+  }, [records]);
+
+  const rows = useMemo(() => localMilestones, [localMilestones]);
+
   return (
     <section className="section-block">
       <div className="section-head compact-head">
@@ -38,12 +57,16 @@ export function MilestonesTable({ records, title, emptyMessage }: MilestonesTabl
           <span>Date</span>
         </div>
         <div className="ledger-body">
-          {records.length === 0 ? (
+          {loading ? (
+            <div className="ledger-empty">
+              <strong>Loading milestones...</strong>
+            </div>
+          ) : rows.length === 0 ? (
             <div className="ledger-empty">
               <strong>{emptyMessage}</strong>
             </div>
           ) : (
-            records.map((record) => {
+            rows.map((record) => {
               const link = record.proof_links?.[0];
               const statusLabel = displayStatus(record.status || "planned");
               return (

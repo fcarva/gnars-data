@@ -14,18 +14,13 @@ function inWindow(date: string, days: number) {
   return parsed.getTime() >= Date.now() - days * 24 * 60 * 60 * 1000;
 }
 
-function truncateTitle(value: string | null | undefined, maxLength = 88) {
-  if (!value) {
-    return "Untitled proposal";
-  }
-  const clean = value
+function truncateTitle(title: string | null | undefined): string {
+  if (!title) return "Untitled proposal";
+  const clean = title
     .replace(/^#+\s+/gm, "")
     .replace(/\n[\s\S]*/, "")
     .trim();
-  if (clean.length <= maxLength) {
-    return clean;
-  }
-  return `${clean.slice(0, maxLength - 1).trimEnd()}...`;
+  return clean.length > 90 ? `${clean.slice(0, 87)}…` : clean;
 }
 
 export function ProposalsPage({ meta, props }: { meta: Meta; props: ProposalsPageProps }) {
