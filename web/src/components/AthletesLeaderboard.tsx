@@ -75,6 +75,12 @@ export function AthletesLeaderboard({ members }: AthletesLeaderboardProps) {
     <div>
       <div className="search-row">
         <div className="search-wrap">
+          <span className="lb-search-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <circle cx="11" cy="11" r="7" />
+              <line x1="16.65" y1="16.65" x2="21" y2="21" />
+            </svg>
+          </span>
           <input
             className="lb-search"
             type="search"
@@ -89,8 +95,8 @@ export function AthletesLeaderboard({ members }: AthletesLeaderboardProps) {
           <button className={`fp${sportFilter === "surf" ? " on" : ""}`} onClick={() => setSportFilter("surf")}>SURF</button>
           <button className={`fp${sportFilter === "bmx" ? " on" : ""}`} onClick={() => setSportFilter("bmx")}>BMX</button>
           <button className={`fp${sportFilter === "builder" ? " on" : ""}`} onClick={() => setSportFilter("builder")}>BUILDERS</button>
+          <span style={{ fontSize: "8.5px", color: "var(--b500)", marginLeft: "4px" }}>{filtered.length} rows</span>
         </div>
-        <span className="pg">{filtered.length} rows</span>
       </div>
 
       <div className="lb-wrap">

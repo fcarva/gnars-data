@@ -44,22 +44,14 @@ function fmtDate(dateStr: string): string {
 function HistoryRow({ row }: { row: NonNullable<TreasuryChartProps["treasuryEvents"]>[number] }) {
   const parts = row.proposal_id.split("-");
   const proposalNumber = parts[parts.length - 1];
-  const shortTitle = row.title.length > 38 ? `${row.title.slice(0, 37)}...` : row.title;
+  const amountText = `−$${Math.round(row.amount_usd).toLocaleString("en-US")}`;
+  const balanceText = `$${Math.round(row.balance_after).toLocaleString("en-US")}`;
   return (
-    <div
-      style={{
-        display: "grid",
-        gridTemplateColumns: "1fr auto auto",
-        gap: 10,
-        fontSize: 9,
-        fontFamily: "'Courier New', monospace",
-        lineHeight: 1.45,
-        padding: "2px 0",
-      }}
-    >
-      <span style={{ color: "var(--b600)" }}>{`[#${proposalNumber}] ${shortTitle}`}</span>
-      <span style={{ color: "var(--reL)" }}>{`-$${Math.round(row.amount_usd).toLocaleString()}`}</span>
-      <span style={{ color: "var(--b500)" }}>{`→ $${Math.round(row.balance_after).toLocaleString()}`}</span>
+    <div className="treasury-ledger-row">
+      <span className="treasury-ledger-badge">#{proposalNumber}</span>
+      <span className="treasury-ledger-title" title={row.title}>{row.title}</span>
+      <span className="treasury-ledger-amount">{amountText}</span>
+      <span className="treasury-ledger-balance">{balanceText}</span>
     </div>
   );
 }
@@ -215,7 +207,8 @@ export function TreasuryChart({
   };
 
   const historyRows = treasuryEvents.slice(0, 8);
-  const historyCollapsed = historyRows.length > 5 && !showHistory;
+  const visibleRows = showHistory ? historyRows : historyRows.slice(0, 3);
+  const hasOverflowRows = historyRows.length > 3;
 
   return (
     <div>
@@ -224,19 +217,21 @@ export function TreasuryChart({
           <div className="treasury-total-value">{formatter(currentValue)}</div>
           <div className="analytics-note">Live treasury balance</div>
           {historyRows.length ? (
-            <div style={{ marginTop: 8 }}>
-              {historyRows.length > 5 ? (
-                <button
-                  type="button"
-                  className="skt"
-                  onClick={() => setShowHistory((value) => !value)}
-                  style={{ marginBottom: 4 }}
-                >
-                  {historyCollapsed ? "show history" : "hide history"}
-                </button>
-              ) : null}
-              <div>
-                {(historyCollapsed ? historyRows.slice(0, 5) : historyRows).map((row) => (
+            <div className="treasury-ledger-block">
+              <div className="treasury-ledger-head">
+                <span>RECENT OUTFLOWS</span>
+                {hasOverflowRows ? (
+                  <button
+                    type="button"
+                    className="treasury-ledger-toggle"
+                    onClick={() => setShowHistory((value) => !value)}
+                  >
+                    {showHistory ? "show less ↑" : "show all ↓"}
+                  </button>
+                ) : null}
+              </div>
+              <div className="treasury-ledger-list">
+                {visibleRows.map((row) => (
                   <HistoryRow key={`${row.proposal_id}:${row.executed_at}:${row.amount_usd}`} row={row} />
                 ))}
               </div>
