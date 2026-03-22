@@ -615,19 +615,34 @@ export type EventFilter =
   | "deliveries"
   | "analytics";
 
+function normalizedTabKind(event: TimelineEvent): "proposals" | "votes" | "treasury" | "milestones" | "deliveries" {
+  const kind = (event.kind || "").toLowerCase();
+  const title = (event.title || "").toLowerCase();
+  const summary = (event.summary || "").toLowerCase();
+
+  if (title.startsWith("vote activity") || kind === "vote" || summary.includes("votes recorded")) {
+    return "votes";
+  }
+
+  if (title.startsWith("treasury payout") || kind === "treasury" || kind === "transfer" || kind === "payout") {
+    return "treasury";
+  }
+
+  if (kind === "milestone") {
+    return "milestones";
+  }
+
+  if (kind === "delivery") {
+    return "deliveries";
+  }
+
+  return "proposals";
+}
+
 export function filterEvents(events: TimelineEvent[], filter: EventFilter): TimelineEvent[] {
   if (filter === "all" || filter === "analytics") return events;
 
-  const kindMap: Record<string, string[]> = {
-    proposals: ["proposal", "planning"],
-    votes: ["vote"],
-    treasury: ["treasury", "transfer", "payout"],
-    milestones: ["milestone"],
-    deliveries: ["delivery"],
-  };
-
-  const kinds = kindMap[filter] || [];
-  return events.filter((e) => kinds.includes(e.kind));
+  return events.filter((event) => normalizedTabKind(event) === filter);
 }
 export interface TreasurySnapshot {
   date: string;

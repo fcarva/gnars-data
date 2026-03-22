@@ -25,6 +25,7 @@ const PILL_CLASS: Record<string, string> = {
   sk8: "p-sk",
   surf: "p-su",
   bmx: "p-bm",
+  build: "p-bu",
   snow: "p-sn",
   multi: "p-mx",
 };

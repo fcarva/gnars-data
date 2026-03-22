@@ -35,9 +35,11 @@ export function FeedHeader({ activeFilter, onFilterChange }: FeedHeaderProps) {
         <nav className="feed-tabs" aria-label="Event filters">
           {tabs.map((tab) => (
             <button
+              type="button"
               key={tab.value}
               onClick={() => onFilterChange(tab.value)}
               className={activeFilter === tab.value ? "feed-tab is-active" : "feed-tab"}
+              aria-pressed={activeFilter === tab.value}
             >
               {tab.label}
             </button>

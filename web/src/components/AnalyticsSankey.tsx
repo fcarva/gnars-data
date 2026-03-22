@@ -59,9 +59,9 @@ export function AnalyticsSankey({ data }: AnalyticsSankeyProps) {
     return <div className="analytics-note">Semantic Sankey loading...</div>;
   }
 
-  const W = 580;
-  const H = 220;
-  const BW = 94;
+  const W = 700;
+  const H = 300;
+  const BW = 108;
   const GAP = 6;
   const PAD = 16;
   const avH = H - PAD * 2 - GAP * (bands.length - 1);
@@ -89,8 +89,8 @@ export function AnalyticsSankey({ data }: AnalyticsSankeyProps) {
           BY WORKSTREAM
         </button>
       </div>
-      <div className="analytics-sankey-wrap" style={{ height: 250 }}>
-        <svg width="100%" viewBox={`0 0 ${W} ${H}`} style={{ display: "block" }}>
+      <div className="analytics-sankey-wrap">
+        <svg width="100%" viewBox={`0 0 ${W} ${H}`} preserveAspectRatio="xMidYMin meet" style={{ display: "block" }}>
           <text x={c1 + BW / 2} y={8} textAnchor="middle" fontSize={7.5} fill="#6F6E69" letterSpacing="0.1em">SOURCE</text>
           <text x={c2 + BW / 2} y={8} textAnchor="middle" fontSize={7.5} fill="#6F6E69" letterSpacing="0.1em">CATEGORY</text>
           <text x={c3 + BW / 2} y={8} textAnchor="middle" fontSize={7.5} fill="#6F6E69" letterSpacing="0.1em">RECIPIENT</text>
@@ -139,7 +139,7 @@ export function AnalyticsSankey({ data }: AnalyticsSankeyProps) {
                 />
                 <rect x={c3} y={b.y} width={BW} height={b.h} fill={b.col} fillOpacity={0.13} rx={2} />
                 <rect x={c3 + BW - 4} y={b.y} width={4} height={b.h} fill={b.col} fillOpacity={1} rx={1} />
-                <text x={c3 + BW / 2} y={b.midY + 3} textAnchor="middle" fontSize={8.5} fill="#282726">{b.rec}</text>
+                {b.h >= 22 ? <text x={c3 + BW / 2} y={b.midY + 3} textAnchor="middle" fontSize={8.5} fill="#282726">{b.rec}</text> : null}
               </g>
             );
           })}

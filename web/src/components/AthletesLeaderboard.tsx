@@ -5,47 +5,42 @@ interface AthletesLeaderboardProps {
   members: Member[];
 }
 
-const STRICT_TERMS = ["athlete", "rider"];
-const HEURISTIC_TERMS = ["skate", "surf", "bmx", "snow", "shred"];
-
-function strictAthleteMatch(member: Member): boolean {
-  const role = (member.role || "").toLowerCase();
-  const domains = (member.domains || []).map((value) => value.toLowerCase());
-  const roleMatch = STRICT_TERMS.some((term) => role.includes(term));
-  const domainMatch = domains.some((domain) => STRICT_TERMS.includes(domain));
-  return roleMatch || domainMatch;
-}
-
-function heuristicAthleteMatch(member: Member): boolean {
-  const role = (member.role || "").toLowerCase();
-  const domains = (member.domains || []).join(" ").toLowerCase();
-  const notes = (member.notes || "").toLowerCase();
-  const haystack = `${role} ${domains} ${notes}`;
-  return HEURISTIC_TERMS.some((hint) => haystack.includes(hint));
-}
-
 export function AthletesLeaderboard({ members }: AthletesLeaderboardProps) {
   const [query, setQuery] = useState("");
+  const [sportFilter, setSportFilter] = useState<"all" | "sk8" | "surf" | "bmx" | "builder">("all");
+
+  const inferSport = (member: Member): "sk8" | "surf" | "bmx" | "builder" | "multi" => {
+    const role = (member.role || "").toLowerCase();
+    const domains = (member.domains || []).join(" ").toLowerCase();
+    const notes = (member.notes || "").toLowerCase();
+    const text = `${role} ${domains} ${notes}`;
+    if (text.includes("builder") || text.includes("dev") || text.includes("infra")) return "builder";
+    if (text.includes("surf")) return "surf";
+    if (text.includes("bmx")) return "bmx";
+    if (text.includes("skate") || text.includes("sk8")) return "sk8";
+    return "multi";
+  };
 
   const entries = useMemo(() => {
-    const strictMatches = members.filter(strictAthleteMatch);
-    const athletePool = strictMatches.length >= 3 ? strictMatches : members.filter((member) => strictAthleteMatch(member) || heuristicAthleteMatch(member));
-
-    return athletePool
+    return members
       .map((member) => {
         const totalReceivedUsd = (member.total_received_usdc || 0) + (member.total_received_eth || 0) * 2800;
         const attendancePct = member.metrics?.attendance_pct || 0;
         return {
           member,
+          sport: inferSport(member),
           totalReceivedUsd,
+          usdc: member.total_received_usdc || 0,
+          eth: member.total_received_eth || 0,
           fundedProposalCount: member.funded_proposal_count || 0,
           activeVotes: member.metrics?.active_votes || 0,
+          proof: member.metrics?.votes_count || 0,
           attendancePct,
         };
       })
-      .filter((entry) => entry.totalReceivedUsd > 0 || entry.fundedProposalCount > 0)
       .sort((a, b) => {
         if (b.totalReceivedUsd !== a.totalReceivedUsd) return b.totalReceivedUsd - a.totalReceivedUsd;
+        if (b.proof !== a.proof) return b.proof - a.proof;
         if (b.fundedProposalCount !== a.fundedProposalCount) return b.fundedProposalCount - a.fundedProposalCount;
         if (b.attendancePct !== a.attendancePct) return b.attendancePct - a.attendancePct;
         return b.activeVotes - a.activeVotes;
@@ -54,40 +49,94 @@ export function AthletesLeaderboard({ members }: AthletesLeaderboardProps) {
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
-    if (!q) return entries;
-    return entries.filter((entry) => {
+    let rows = entries;
+    if (sportFilter !== "all") {
+      rows = rows.filter((entry) => entry.sport === sportFilter);
+    }
+    if (!q) return rows;
+    return rows.filter((entry) => {
       const name = (entry.member.display_name || "").toLowerCase();
       const address = (entry.member.address || "").toLowerCase();
-      return name.includes(q) || address.includes(q);
+      const role = (entry.member.role || "").toLowerCase();
+      return name.includes(q) || address.includes(q) || role.includes(q) || entry.sport.includes(q);
     });
-  }, [entries, query]);
+  }, [entries, query, sportFilter]);
+
+  const maxUsdc = Math.max(1, ...filtered.map((entry) => entry.usdc));
+  const pillClass = (sport: string) => {
+    if (sport === "sk8") return "p-sk";
+    if (sport === "surf") return "p-su";
+    if (sport === "bmx") return "p-bm";
+    if (sport === "builder") return "p-bu";
+    return "p-mx";
+  };
 
   return (
-    <div className="analytics-table-wrap">
+    <div>
       <div className="search-row">
-        <h4 className="analytics-block-title" style={{ marginBottom: 0 }}>ATHLETES LEADERBOARD</h4>
         <div className="search-wrap">
           <input
             className="lb-search"
             type="search"
-            placeholder="Search athletes..."
+            placeholder="Search..."
             value={query}
             onChange={(event) => setQuery(event.target.value)}
           />
         </div>
+        <div className="filter-pills">
+          <button className={`fp${sportFilter === "all" ? " on" : ""}`} onClick={() => setSportFilter("all")}>ALL</button>
+          <button className={`fp${sportFilter === "sk8" ? " on" : ""}`} onClick={() => setSportFilter("sk8")}>SK8</button>
+          <button className={`fp${sportFilter === "surf" ? " on" : ""}`} onClick={() => setSportFilter("surf")}>SURF</button>
+          <button className={`fp${sportFilter === "bmx" ? " on" : ""}`} onClick={() => setSportFilter("bmx")}>BMX</button>
+          <button className={`fp${sportFilter === "builder" ? " on" : ""}`} onClick={() => setSportFilter("builder")}>BUILDERS</button>
+        </div>
+        <span className="pg">{filtered.length} rows</span>
       </div>
 
-      <div className="analytics-table">
-        {filtered.slice(0, 12).map((entry, index) => (
-          <div key={entry.member.member_id || entry.member.address} className="analytics-table-row">
-            <span className="analytics-table-rank">{index + 1}</span>
-            <span className="analytics-table-name">{entry.member.display_name || entry.member.address}</span>
-            <span className="analytics-table-value">${entry.totalReceivedUsd.toLocaleString(undefined, { maximumFractionDigits: 0 })}</span>
-          </div>
-        ))}
+      <div className="lb-wrap">
+        <table className="lb">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>MEMBER</th>
+              <th>ROLE</th>
+              <th className="r">SPORT</th>
+              <th className="r">USDC</th>
+              <th className="r">ETH</th>
+              <th className="r">PROPS</th>
+              <th className="r">PROOF</th>
+              <th className="r">SHARE</th>
+            </tr>
+          </thead>
+          <tbody>
+            {filtered.slice(0, 24).map((entry, index) => {
+              const share = entry.usdc > 0 ? Math.round((entry.usdc / maxUsdc) * 100) : 0;
+              return (
+                <tr key={entry.member.member_id || entry.member.address}>
+                  <td><span className="rank">{index + 1}</span></td>
+                  <td>{entry.member.display_name || entry.member.address}</td>
+                  <td>{entry.member.role || "-"}</td>
+                  <td className="num"><span className={`pill ${pillClass(entry.sport)}`}>{entry.sport.toUpperCase()}</span></td>
+                  <td className="num">{entry.usdc > 0 ? entry.usdc.toLocaleString() : "-"}</td>
+                  <td className="num">{entry.eth > 0 ? entry.eth.toFixed(2) : "-"}</td>
+                  <td className="num">{entry.fundedProposalCount}</td>
+                  <td className="num">{entry.proof}</td>
+                  <td className="num">
+                    {share > 0 ? (
+                      <span style={{ display: "inline-flex", alignItems: "center", gap: 6 }}>
+                        <span className="bar-bg" style={{ width: 48 }}><span className="bar-fg" style={{ width: `${share}%`, background: "#3AA99F", display: "block" }} /></span>
+                        {share}%
+                      </span>
+                    ) : "-"}
+                  </td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
       </div>
 
-      {filtered.length === 0 ? <div className="analytics-note">No athletes matched this search.</div> : null}
+      {filtered.length === 0 ? <div className="analytics-note">No rows matched your filters.</div> : null}
     </div>
   );
 }

@@ -13,7 +13,6 @@ import {
   fetchProposalTags,
   fetchTreasury,
   fetchFundingAnalysis,
-  fetchCommunitySignalsData,
   fetchSankeyData,
   fetchEfficiencyData,
   fetchGovernanceData,
@@ -26,7 +25,6 @@ import {
   type DaoMetrics,
   type Member,
   type ProposalTagRecord,
-  type CommunitySignalsData,
   type FundingAnalysis,
   type SankeyData,
   type EfficiencyData,
@@ -43,7 +41,6 @@ const Index = () => {
   const [metrics, setMetrics] = useState<DaoMetrics | null>(null);
   const [members, setMembers] = useState<Member[]>([]);
   const [proposalTags, setProposalTags] = useState<ProposalTagRecord[]>([]);
-  const [communitySignals, setCommunitySignals] = useState<CommunitySignalsData | null>(null);
   const [fundingAnalysis, setFundingAnalysis] = useState<FundingAnalysis | null>(null);
   const [sankeyData, setSankeyData] = useState<SankeyData | null>(null);
   const [efficiencyData, setEfficiencyData] = useState<EfficiencyData | null>(null);
@@ -64,7 +61,6 @@ const Index = () => {
       fetchMetrics().then(setMetrics),
       fetchMembers().then(setMembers),
       fetchProposalTags().then(setProposalTags),
-      fetchCommunitySignalsData().then(setCommunitySignals),
       fetchFundingAnalysis().then(setFundingAnalysis),
       fetchSankeyData().then(setSankeyData),
       fetchEfficiencyData().then(setEfficiencyData),
@@ -93,7 +89,6 @@ const Index = () => {
               funding={fundingAnalysis}
               members={members}
               proposalTags={proposalTags}
-              communitySignals={communitySignals}
               sankey={sankeyData}
               efficiency={efficiencyData}
               governance={governanceData}

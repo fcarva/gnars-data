@@ -1,28 +1,28 @@
 :root {
-  /* Flexoki Dark */
-  --bg: #100f0f;
-  --bg-soft: #1c1b1a;
-  --surface: #282726;
-  --surface-strong: #100f0f;
-  --surface-raised: #343331;
-  --surface-accent: color-mix(in srgb, var(--accent-blue) 14%, transparent);
-  --text: #cecdc3;
-  --muted: #b7b5ac;
+  /* Flexoki Light baseline (global) */
+  --bg: #fffcf0;
+  --bg-soft: #f2f0e5;
+  --surface: #fffcf0;
+  --surface-strong: #fffcf0;
+  --surface-raised: #f2f0e5;
+  --surface-accent: color-mix(in srgb, var(--accent-blue) 10%, transparent);
+  --text: #100f0f;
+  --muted: #575653;
   --subtle: #878580;
-  --line: #403e3c;
-  --line-strong: #575653;
-  
-  /* Flexoki accents (dark mode variants) */
-  --accent: #4385be;
-  --accent-secondary: #879a39;
-  --accent-yellow: #d0a215;
-  --accent-orange: #da702c;
-  --accent-red: #d14d41;
-  --accent-blue: #4385be;
-  --accent-cyan: #3aa99f;
-  --accent-green: #879a39;
-  --accent-purple: #8b7ec8;
-  --accent-magenta: #ce5d97;
+  --line: #dad8ce;
+  --line-strong: #b7b5ac;
+
+  /* Flexoki accents (light mode variants) */
+  --accent: #205ea6;
+  --accent-secondary: #66800b;
+  --accent-yellow: #ad8301;
+  --accent-orange: #bc5215;
+  --accent-red: #af3029;
+  --accent-blue: #205ea6;
+  --accent-cyan: #24837b;
+  --accent-green: #66800b;
+  --accent-purple: #5e409d;
+  --accent-magenta: #a02f6f;
 
   /* Event colors */
   --event-proposal: var(--accent-blue);
@@ -48,10 +48,11 @@
   --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif;
   --serif: "Sohne", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   
-  color-scheme: dark;
+  color-scheme: light;
 }
 
-html[data-theme="light"] {
+html[data-theme="light"],
+html[data-theme="dark"] {
   --bg: #fffcf0;
   --bg-soft: #f2f0e5;
   --surface: #fffcf0;
@@ -108,12 +109,12 @@ body {
   font-size: 15px;
   line-height: 1.6;
   color: var(--text);
-  background: #FFFCF0;
+  background: var(--bg);
 }
 
 html,
 body {
-  background: #FFFCF0;
+  background: var(--bg);
 }
 
 a {
@@ -324,12 +325,18 @@ img {
 
 .searchbox-input {
   width: 100%;
-  padding: 12px 14px 12px 28px;
-  border: 1px solid var(--line-strong);
-  border-radius: var(--radius-tight);
-  background: color-mix(in srgb, var(--surface-strong) 86%, transparent);
+  padding: 10px 12px 10px 30px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--bg-soft);
   color: var(--text);
   font: inherit;
+}
+
+.searchbox-input:focus {
+  outline: none;
+  border-color: var(--accent-blue);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent-blue) 18%, transparent);
 }
 
 .searchbox-input::placeholder {
@@ -1060,9 +1067,9 @@ img {
   gap: 10px;
   min-height: 42px;
   padding: 0 12px;
-  border: 1px solid var(--line-strong);
-  border-radius: var(--radius-tight);
-  background: var(--surface-strong);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--bg-soft);
 }
 
 .toolbar-search {
