@@ -1,0 +1,17 @@
+{
+  "timestamp": "2024-03-22",
+  "query_examples": {
+    "complete_daily_history": "\nSELECT\n    CAST(minute AS DATE) as day,\n    symbol,\n    blockchain,\n    ROUND(AVG(price)::numeric, 2) as price_usd\nFROM prices.usd\nWHERE blockchain = 'ethereum'\n  AND symbol = 'ETH'\n  AND minute >= CAST('2022-01-01' AS TIMESTAMP)\nGROUP BY 1, 2, 3\nORDER BY day DESC\n            ",
+    "with_last_price": "\nWITH daily_eth AS (\n    SELECT\n        CAST(minute AS DATE) as day,\n        ROUND(AVG(price)::numeric, 2) as price_usd,\n        ROW_NUMBER() OVER (ORDER BY CAST(minute AS DATE) DESC) as day_rank\n    FROM prices.usd\n    WHERE blockchain = 'ethereum'\n      AND symbol = 'ETH'\n      AND minute >= CAST('2022-01-01' AS TIMESTAMP)\n    GROUP BY 1\n)\nSELECT\n    day,\n    price_usd,\n    LAG(price_usd) OVER (ORDER BY day DESC) as previous_day_price,\n    ROUND(((price_usd - LAG(price_usd) OVER (ORDER BY day DESC)) / LAG(price_usd) OVER (ORDER BY day DESC) * 100)::numeric, 2) as pct_change\nFROM daily_eth\nORDER BY day DESC\n            "
+  },
+  "key_fields": {
+    "prices.usd": {
+      "blockchain": "varchar - network identifier",
+      "contract_address": "varchar - token address (0x... or native)",
+      "symbol": "varchar - ticker (ETH, USDC, etc.)",
+      "decimals": "int - token decimal places",
+      "price": "double - USD price per unit",
+      "minute": "timestamp - data point timestamp"
+    }
+  }
+}

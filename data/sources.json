@@ -12,7 +12,9 @@
     "gnars_auctions_base": null,
     "gnars_auctions_ethereum": null,
     "treasury_outflows_base": null,
-    "eth_price_history": null
+    "eth_price_history": null,
+    "eth_price_history_local_file": "raw/dune/eth_price_history.json",
+    "eth_price_history_status": "pending_dune_query_id"
   },
   "records": [
     {
