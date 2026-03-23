@@ -3405,9 +3405,9 @@
         "recipient"
       ],
       "address": "0x41cb654d1f47913acab158a8199191d160dabe4a",
-      "size": 58.89,
+      "size": 60.2,
       "metrics": {
-        "eth_received": 0.0,
+        "eth_received": 12.5,
         "usdc_received": 0.0,
         "gnars_received": 0.0,
         "active_votes": 0,
@@ -3904,12 +3904,13 @@
         "contributor",
         "holder",
         "member",
-        "proposer"
+        "proposer",
+        "recipient"
       ],
       "address": "0x4df4058cdb72c4004ae27fc09243d387f52287f2",
-      "size": 35.97,
+      "size": 38.85,
       "metrics": {
-        "eth_received": 0.0,
+        "eth_received": 3.0,
         "usdc_received": 0.0,
         "gnars_received": 0.0,
         "active_votes": 0,
@@ -5784,12 +5785,13 @@
         "contributor",
         "holder",
         "member",
-        "proposer"
+        "proposer",
+        "recipient"
       ],
       "address": "0x761b4763a572010f96ed7c22011d0c95e2b36693",
-      "size": 35.97,
+      "size": 36.43,
       "metrics": {
-        "eth_received": 0.0,
+        "eth_received": 0.42,
         "usdc_received": 0.0,
         "gnars_received": 0.0,
         "active_votes": 0,
@@ -8853,9 +8855,9 @@
         "recipient"
       ],
       "address": "0xc2691f9994af90711d67286be558f4fa631667fd",
-      "size": 36.25,
+      "size": 36.52,
       "metrics": {
-        "eth_received": 0.253,
+        "eth_received": 0.506,
         "usdc_received": 0.0,
         "gnars_received": 0.0,
         "active_votes": 0,
@@ -12158,12 +12160,13 @@
         "contributor",
         "holder",
         "member",
-        "proposer"
+        "proposer",
+        "recipient"
       ],
       "address": "0x05e189e1bbaf77f1654f0983872fd938ae592edd",
-      "size": 30.09,
+      "size": 31.92,
       "metrics": {
-        "eth_received": 0.0,
+        "eth_received": 1.0,
         "usdc_received": 0.0,
         "gnars_received": 0.0,
         "active_votes": 0,
@@ -14092,12 +14095,13 @@
         "delegate",
         "holder",
         "member",
-        "proposer"
+        "proposer",
+        "recipient"
       ],
       "address": "0x9c87a1065994f156f0b7b87aaa8b3c5f7bd67e02",
-      "size": 61.1,
+      "size": 62.2,
       "metrics": {
-        "eth_received": 0.0,
+        "eth_received": 13.0,
         "usdc_received": 0.0,
         "gnars_received": 0.0,
         "active_votes": 98,
@@ -14417,12 +14421,13 @@
         "delegate",
         "holder",
         "member",
-        "proposer"
+        "proposer",
+        "recipient"
       ],
       "address": "0xc23274347e8aa82d363140d3cefb71ff588effed",
-      "size": 43.44,
+      "size": 43.58,
       "metrics": {
-        "eth_received": 0.0,
+        "eth_received": 0.25,
         "usdc_received": 0.0,
         "gnars_received": 0.0,
         "active_votes": 14,
@@ -15314,12 +15319,13 @@
         "delegate",
         "holder",
         "member",
-        "proposer"
+        "proposer",
+        "recipient"
       ],
       "address": "0xdfb6ed808fadddad9154f5605e349fff96e3d939",
-      "size": 66.15,
+      "size": 67.88,
       "metrics": {
-        "eth_received": 0.0,
+        "eth_received": 34.7,
         "usdc_received": 0.0,
         "gnars_received": 0.0,
         "active_votes": 39,
@@ -16544,9 +16550,9 @@
         "recipient"
       ],
       "address": "0x387a161c6b25aa854100abaed39274e51aaffffd",
-      "size": 98.52,
+      "size": 98.54,
       "metrics": {
-        "eth_received": 10.35730283,
+        "eth_received": 16.87920283,
         "usdc_received": 4500.0,
         "gnars_received": 0.0,
         "active_votes": 134,
@@ -16631,12 +16637,13 @@
         "delegate",
         "holder",
         "member",
-        "proposer"
+        "proposer",
+        "recipient"
       ],
       "address": "0x069da1bad547d67abf26c42358d3a6a8a78deca0",
-      "size": 60.54,
+      "size": 60.61,
       "metrics": {
-        "eth_received": 0.0,
+        "eth_received": 0.69,
         "usdc_received": 0.0,
         "gnars_received": 0.0,
         "active_votes": 100,
@@ -16788,12 +16795,13 @@
         "delegate",
         "holder",
         "member",
-        "proposer"
+        "proposer",
+        "recipient"
       ],
       "address": "0x73222225044ce0fc672ff9b6f9730d0a0421382c",
-      "size": 56.9,
+      "size": 64.09,
       "metrics": {
-        "eth_received": 0.0,
+        "eth_received": 76.76,
         "usdc_received": 0.0,
         "gnars_received": 0.0,
         "active_votes": 4,
@@ -16942,12 +16950,13 @@
         "delegate",
         "holder",
         "member",
-        "proposer"
+        "proposer",
+        "recipient"
       ],
       "address": "0x56b6dcddd5d96535c35b720c96e19939920544d8",
-      "size": 69.33,
+      "size": 69.6,
       "metrics": {
-        "eth_received": 0.0,
+        "eth_received": 6.88,
         "usdc_received": 0.0,
         "gnars_received": 0.0,
         "active_votes": 232,
@@ -19178,7 +19187,7 @@
       "address": "0xfc27b375faf1fbd3f3462044cf810082f042a45b",
       "size": 103.79,
       "metrics": {
-        "eth_received": 0.0,
+        "eth_received": 2.0,
         "usdc_received": 7888.0,
         "gnars_received": 0.0,
         "active_votes": 30,
@@ -19351,12 +19360,13 @@
         "delegate",
         "holder",
         "member",
-        "proposer"
+        "proposer",
+        "recipient"
       ],
       "address": "0x4b5f934da25c33f130efc5df47c91af1375baa30",
-      "size": 39.65,
+      "size": 40.39,
       "metrics": {
-        "eth_received": 0.0,
+        "eth_received": 1.0,
         "usdc_received": 0.0,
         "gnars_received": 0.0,
         "active_votes": 4,
@@ -19937,12 +19947,13 @@
         "delegate",
         "holder",
         "member",
-        "proposer"
+        "proposer",
+        "recipient"
       ],
       "address": "0x9a91cb99b52b2e90e2c23936be987ef861dbb62d",
-      "size": 43.44,
+      "size": 43.96,
       "metrics": {
-        "eth_received": 0.0,
+        "eth_received": 1.0,
         "usdc_received": 0.0,
         "gnars_received": 0.0,
         "active_votes": 14,
@@ -22543,12 +22554,13 @@
         "delegate",
         "holder",
         "member",
-        "proposer"
+        "proposer",
+        "recipient"
       ],
       "address": "0xdcf37d8aa17142f053aaa7dc56025ab00d897a19",
-      "size": 62.2,
+      "size": 62.22,
       "metrics": {
-        "eth_received": 0.0,
+        "eth_received": 0.2,
         "usdc_received": 0.0,
         "gnars_received": 0.0,
         "active_votes": 111,
@@ -23064,12 +23076,13 @@
         "delegate",
         "holder",
         "member",
-        "proposer"
+        "proposer",
+        "recipient"
       ],
       "address": "0xb4964e1eca55db36a94e8aeffbfbab48529a2f6c",
-      "size": 37.03,
+      "size": 37.32,
       "metrics": {
-        "eth_received": 0.0,
+        "eth_received": 0.3,
         "usdc_received": 0.0,
         "gnars_received": 0.0,
         "active_votes": 1,
@@ -25007,12 +25020,13 @@
       "tags": [
         "contributor",
         "member",
-        "proposer"
+        "proposer",
+        "recipient"
       ],
       "address": "0x7c621d5954a4ac21a0fd741ab6f302398f29d644",
-      "size": 30.09,
+      "size": 37.03,
       "metrics": {
-        "eth_received": 0.0,
+        "eth_received": 5.0,
         "usdc_received": 0.0,
         "gnars_received": 0.0,
         "active_votes": 0,
@@ -25696,12 +25710,13 @@
         "delegate",
         "holder",
         "member",
-        "proposer"
+        "proposer",
+        "recipient"
       ],
       "address": "0x8d36bac540c57dbd009ea9d9d8cdf9443a83e3f6",
-      "size": 41.73,
+      "size": 43.7,
       "metrics": {
-        "eth_received": 0.0,
+        "eth_received": 3.5,
         "usdc_received": 0.0,
         "gnars_received": 0.0,
         "active_votes": 7,
@@ -25820,11 +25835,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 32.85,
+      "size": 34.13,
       "metrics": {
         "scores_total": 550,
         "vote_count": 21,
-        "routed_total": 0,
+        "routed_total": 1.0,
         "successful": true
       }
     },
@@ -25920,11 +25935,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 31.55,
+      "size": 32.59,
       "metrics": {
         "scores_total": 463,
         "vote_count": 11,
-        "routed_total": 0,
+        "routed_total": 0.69,
         "successful": true
       }
     },
@@ -25980,11 +25995,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 30.63,
+      "size": 31.34,
       "metrics": {
         "scores_total": 408,
         "vote_count": 26,
-        "routed_total": 0,
+        "routed_total": 0.42,
         "successful": true
       }
     },
@@ -26020,11 +26035,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 32.78,
+      "size": 35.72,
       "metrics": {
         "scores_total": 545,
         "vote_count": 20,
-        "routed_total": 0,
+        "routed_total": 2.5,
         "successful": true
       }
     },
@@ -26140,11 +26155,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 33.72,
+      "size": 36.87,
       "metrics": {
         "scores_total": 616,
         "vote_count": 30,
-        "routed_total": 0,
+        "routed_total": 3.0,
         "successful": true
       }
     },
@@ -26160,11 +26175,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 36.06,
+      "size": 36.71,
       "metrics": {
         "scores_total": 829,
         "vote_count": 26,
-        "routed_total": 0,
+        "routed_total": 0.69,
         "successful": true
       }
     },
@@ -26180,11 +26195,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 34.32,
+      "size": 34.56,
       "metrics": {
         "scores_total": 666,
         "vote_count": 29,
-        "routed_total": 0,
+        "routed_total": 0.2,
         "successful": true
       }
     },
@@ -26220,11 +26235,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 32.76,
+      "size": 36.2,
       "metrics": {
         "scores_total": 544,
         "vote_count": 18,
-        "routed_total": 0,
+        "routed_total": 3.0,
         "successful": true
       }
     },
@@ -26260,11 +26275,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 36.11,
+      "size": 38.62,
       "metrics": {
         "scores_total": 834,
         "vote_count": 30,
-        "routed_total": 0,
+        "routed_total": 3.0,
         "successful": true
       }
     },
@@ -26280,11 +26295,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 35.42,
+      "size": 38.1,
       "metrics": {
         "scores_total": 765,
         "vote_count": 22,
-        "routed_total": 0,
+        "routed_total": 3.0,
         "successful": true
       }
     },
@@ -26300,11 +26315,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 33.73,
+      "size": 38.49,
       "metrics": {
         "scores_total": 617,
         "vote_count": 30,
-        "routed_total": 0,
+        "routed_total": 5.0,
         "successful": true
       }
     },
@@ -26360,11 +26375,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 30.89,
+      "size": 34.97,
       "metrics": {
         "scores_total": 423,
         "vote_count": 26,
-        "routed_total": 0,
+        "routed_total": 3.0,
         "successful": true
       }
     },
@@ -26380,11 +26395,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 31.6,
+      "size": 33.07,
       "metrics": {
         "scores_total": 466,
         "vote_count": 31,
-        "routed_total": 0,
+        "routed_total": 1.0,
         "successful": true
       }
     },
@@ -26540,11 +26555,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 32.14,
+      "size": 32.51,
       "metrics": {
         "scores_total": 501,
         "vote_count": 18,
-        "routed_total": 0,
+        "routed_total": 0.25,
         "successful": true
       }
     },
@@ -26620,11 +26635,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 33.96,
+      "size": 33.98,
       "metrics": {
         "scores_total": 636,
         "vote_count": 24,
-        "routed_total": 0,
+        "routed_total": 0.015,
         "successful": true
       }
     },
@@ -26680,11 +26695,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 32.01,
+      "size": 34.04,
       "metrics": {
         "scores_total": 492,
         "vote_count": 10,
-        "routed_total": 0,
+        "routed_total": 1.5,
         "successful": true
       }
     },
@@ -26720,11 +26735,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 31.5,
+      "size": 33.64,
       "metrics": {
         "scores_total": 460,
         "vote_count": 22,
-        "routed_total": 0,
+        "routed_total": 1.5,
         "successful": true
       }
     },
@@ -26740,11 +26755,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 33.69,
+      "size": 34.87,
       "metrics": {
         "scores_total": 614,
         "vote_count": 29,
-        "routed_total": 0,
+        "routed_total": 1.0,
         "successful": true
       }
     },
@@ -26760,11 +26775,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 31.13,
+      "size": 34.57,
       "metrics": {
         "scores_total": 437,
         "vote_count": 18,
-        "routed_total": 0,
+        "routed_total": 2.5,
         "successful": true
       }
     },
@@ -26900,11 +26915,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 23.95,
+      "size": 31.21,
       "metrics": {
         "scores_total": 142,
         "vote_count": 20,
-        "routed_total": 0,
+        "routed_total": 3.0,
         "successful": true
       }
     },
@@ -27140,11 +27155,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 30.27,
+      "size": 32.68,
       "metrics": {
         "scores_total": 388,
         "vote_count": 25,
-        "routed_total": 0,
+        "routed_total": 1.5,
         "successful": true
       }
     },
@@ -27380,11 +27395,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 30.66,
+      "size": 32.27,
       "metrics": {
         "scores_total": 410,
         "vote_count": 24,
-        "routed_total": 0,
+        "routed_total": 1.0,
         "successful": true
       }
     },
@@ -27420,11 +27435,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 34.3,
+      "size": 39.52,
       "metrics": {
         "scores_total": 664,
         "vote_count": 37,
-        "routed_total": 0,
+        "routed_total": 6.0,
         "successful": true
       }
     },
@@ -27780,11 +27795,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 27.73,
+      "size": 29.27,
       "metrics": {
         "scores_total": 268,
         "vote_count": 15,
-        "routed_total": 0,
+        "routed_total": 0.69,
         "successful": true
       }
     },
@@ -27800,11 +27815,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 34.25,
+      "size": 35.04,
       "metrics": {
         "scores_total": 660,
         "vote_count": 20,
-        "routed_total": 0,
+        "routed_total": 0.69,
         "successful": true
       }
     },
@@ -27820,11 +27835,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 32.8,
+      "size": 33.47,
       "metrics": {
         "scores_total": 547,
         "vote_count": 23,
-        "routed_total": 0,
+        "routed_total": 0.5,
         "successful": true
       }
     },
@@ -27840,11 +27855,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 31.96,
+      "size": 36.62,
       "metrics": {
         "scores_total": 489,
         "vote_count": 13,
-        "routed_total": 0,
+        "routed_total": 4.0,
         "successful": true
       }
     },
@@ -27880,11 +27895,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 32.07,
+      "size": 32.51,
       "metrics": {
         "scores_total": 496,
         "vote_count": 16,
-        "routed_total": 0,
+        "routed_total": 0.3,
         "successful": true
       }
     },
@@ -28040,11 +28055,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 34.94,
+      "size": 40.49,
       "metrics": {
         "scores_total": 720,
         "vote_count": 30,
-        "routed_total": 0,
+        "routed_total": 7.0,
         "successful": true
       }
     },
@@ -28060,11 +28075,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 33.36,
+      "size": 35.65,
       "metrics": {
         "scores_total": 588,
         "vote_count": 22,
-        "routed_total": 0,
+        "routed_total": 2.0,
         "successful": true
       }
     },
@@ -28220,11 +28235,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 32.56,
+      "size": 49.91,
       "metrics": {
         "scores_total": 530,
         "vote_count": 21,
-        "routed_total": 0,
+        "routed_total": 37.0,
         "successful": true
       }
     },
@@ -28360,11 +28375,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 33.72,
+      "size": 37.3,
       "metrics": {
         "scores_total": 616,
         "vote_count": 22,
-        "routed_total": 0,
+        "routed_total": 3.5,
         "successful": true
       }
     },
@@ -28400,11 +28415,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 35.39,
+      "size": 39.5,
       "metrics": {
         "scores_total": 762,
         "vote_count": 23,
-        "routed_total": 0,
+        "routed_total": 5.0,
         "successful": true
       }
     },
@@ -29000,11 +29015,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 31.96,
+      "size": 34.0,
       "metrics": {
         "scores_total": 489,
         "vote_count": 22,
-        "routed_total": 0,
+        "routed_total": 1.5,
         "successful": true
       }
     },
@@ -29040,11 +29055,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 35.05,
+      "size": 35.32,
       "metrics": {
         "scores_total": 730,
         "vote_count": 25,
-        "routed_total": 0,
+        "routed_total": 0.253,
         "successful": true
       }
     },
@@ -29220,11 +29235,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 30.45,
+      "size": 34.69,
       "metrics": {
         "scores_total": 398,
         "vote_count": 20,
-        "routed_total": 0,
+        "routed_total": 3.0,
         "successful": true
       }
     },
@@ -29260,11 +29275,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 22.28,
+      "size": 22.72,
       "metrics": {
         "scores_total": 101,
         "vote_count": 15,
-        "routed_total": 0,
+        "routed_total": 0.1,
         "successful": true
       }
     },
@@ -29280,11 +29295,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 33.13,
+      "size": 39.34,
       "metrics": {
         "scores_total": 571,
         "vote_count": 18,
-        "routed_total": 0,
+        "routed_total": 6.66,
         "successful": true
       }
     },
@@ -29300,11 +29315,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 32.79,
+      "size": 33.46,
       "metrics": {
         "scores_total": 546,
         "vote_count": 23,
-        "routed_total": 0,
+        "routed_total": 0.5,
         "successful": true
       }
     },
@@ -29400,11 +29415,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 30.8,
+      "size": 32.93,
       "metrics": {
         "scores_total": 418,
         "vote_count": 11,
-        "routed_total": 0,
+        "routed_total": 1.38,
         "successful": true
       }
     },
@@ -29440,11 +29455,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 30.89,
+      "size": 33.16,
       "metrics": {
         "scores_total": 423,
         "vote_count": 23,
-        "routed_total": 0,
+        "routed_total": 1.5,
         "successful": true
       }
     },
@@ -29460,11 +29475,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 31.42,
+      "size": 35.31,
       "metrics": {
         "scores_total": 455,
         "vote_count": 20,
-        "routed_total": 0,
+        "routed_total": 3.0,
         "successful": true
       }
     },
@@ -29480,11 +29495,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 34.92,
+      "size": 35.45,
       "metrics": {
         "scores_total": 718,
         "vote_count": 25,
-        "routed_total": 0,
+        "routed_total": 0.5,
         "successful": true
       }
     },
@@ -29500,11 +29515,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 32.22,
+      "size": 35.83,
       "metrics": {
         "scores_total": 506,
         "vote_count": 21,
-        "routed_total": 0,
+        "routed_total": 3.0,
         "successful": true
       }
     },
@@ -29520,11 +29535,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 32.13,
+      "size": 33.51,
       "metrics": {
         "scores_total": 500,
         "vote_count": 21,
-        "routed_total": 0,
+        "routed_total": 1.0,
         "successful": true
       }
     },
@@ -29600,11 +29615,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 35.46,
+      "size": 38.13,
       "metrics": {
         "scores_total": 769,
         "vote_count": 45,
-        "routed_total": 0,
+        "routed_total": 3.0,
         "successful": true
       }
     },
@@ -29620,11 +29635,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 35.52,
+      "size": 38.17,
       "metrics": {
         "scores_total": 775,
         "vote_count": 46,
-        "routed_total": 0,
+        "routed_total": 3.0,
         "successful": true
       }
     },
@@ -29660,11 +29675,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 32.3,
+      "size": 35.89,
       "metrics": {
         "scores_total": 512,
         "vote_count": 23,
-        "routed_total": 0,
+        "routed_total": 3.0,
         "successful": true
       }
     },
@@ -29700,11 +29715,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 33.79,
+      "size": 34.96,
       "metrics": {
         "scores_total": 622,
         "vote_count": 38,
-        "routed_total": 0,
+        "routed_total": 1.0,
         "successful": true
       }
     },
@@ -29720,11 +29735,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 32.22,
+      "size": 35.83,
       "metrics": {
         "scores_total": 506,
         "vote_count": 21,
-        "routed_total": 0,
+        "routed_total": 3.0,
         "successful": true
       }
     },
@@ -29760,11 +29775,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 33.59,
+      "size": 36.78,
       "metrics": {
         "scores_total": 606,
         "vote_count": 26,
-        "routed_total": 0,
+        "routed_total": 3.0,
         "successful": true
       }
     },
@@ -29780,11 +29795,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 35.48,
+      "size": 38.14,
       "metrics": {
         "scores_total": 771,
         "vote_count": 28,
-        "routed_total": 0,
+        "routed_total": 3.0,
         "successful": true
       }
     },
@@ -29800,11 +29815,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 31.31,
+      "size": 35.24,
       "metrics": {
         "scores_total": 448,
         "vote_count": 20,
-        "routed_total": 0,
+        "routed_total": 3.0,
         "successful": true
       }
     },
@@ -29820,11 +29835,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 30.91,
+      "size": 34.98,
       "metrics": {
         "scores_total": 424,
         "vote_count": 28,
-        "routed_total": 0,
+        "routed_total": 3.0,
         "successful": true
       }
     },
@@ -29840,11 +29855,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 31.24,
+      "size": 31.93,
       "metrics": {
         "scores_total": 444,
         "vote_count": 17,
-        "routed_total": 0,
+        "routed_total": 0.43,
         "successful": true
       }
     },
@@ -29860,11 +29875,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 31.47,
+      "size": 35.34,
       "metrics": {
         "scores_total": 458,
         "vote_count": 22,
-        "routed_total": 0,
+        "routed_total": 3.0,
         "successful": true
       }
     },
@@ -29880,11 +29895,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 30.54,
+      "size": 34.75,
       "metrics": {
         "scores_total": 403,
         "vote_count": 20,
-        "routed_total": 0,
+        "routed_total": 3.0,
         "successful": true
       }
     },
@@ -29900,11 +29915,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 33.12,
+      "size": 36.45,
       "metrics": {
         "scores_total": 570,
         "vote_count": 27,
-        "routed_total": 0,
+        "routed_total": 3.0,
         "successful": true
       }
     },
@@ -29940,11 +29955,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 33.89,
+      "size": 33.9,
       "metrics": {
         "scores_total": 630,
         "vote_count": 32,
-        "routed_total": 0,
+        "routed_total": 0.0069,
         "successful": true
       }
     },
@@ -29980,11 +29995,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 31.36,
+      "size": 32.86,
       "metrics": {
         "scores_total": 451,
         "vote_count": 23,
-        "routed_total": 0,
+        "routed_total": 1.0,
         "successful": true
       }
     },
@@ -30040,11 +30055,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 34.87,
+      "size": 35.91,
       "metrics": {
         "scores_total": 714,
         "vote_count": 23,
-        "routed_total": 0,
+        "routed_total": 1.0,
         "successful": true
       }
     },
@@ -30060,11 +30075,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 32.56,
+      "size": 34.71,
       "metrics": {
         "scores_total": 530,
         "vote_count": 20,
-        "routed_total": 0,
+        "routed_total": 1.7,
         "successful": true
       }
     },
@@ -30120,11 +30135,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 33.6,
+      "size": 35.84,
       "metrics": {
         "scores_total": 607,
         "vote_count": 10,
-        "routed_total": 0,
+        "routed_total": 2.0,
         "successful": true
       }
     },
@@ -30220,11 +30235,11 @@
         "snapshot",
         "snapshot"
       ],
-      "size": 32.27,
+      "size": 33.64,
       "metrics": {
         "scores_total": 510,
         "vote_count": 39,
-        "routed_total": 0,
+        "routed_total": 1.0,
         "successful": true
       }
     },
@@ -30259,8 +30274,8 @@
       ],
       "size": 48.0,
       "metrics": {
-        "route_count": 65,
-        "proposal_count": 55
+        "route_count": 129,
+        "proposal_count": 119
       }
     }
   ],
@@ -33176,6 +33191,646 @@
       "href": "/community/0xc269-67fd/"
     },
     {
+      "edge_id": "funded:proposal:snapshot-0x00fc8920736e34ab77c10ed9837df13aed9ddfe35132c271d5982a19a5857b74:person:0xdfb6ed808fadddad9154f5605e349fff96e3d939:ETH",
+      "source": "proposal:snapshot-0x00fc8920736e34ab77c10ed9837df13aed9ddfe35132c271d5982a19a5857b74",
+      "target": "person:0xdfb6ed808fadddad9154f5605e349fff96e3d939",
+      "kind": "funded",
+      "weight": 5.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/davinoyesigye-eth/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0x013702a15624613befa0ed1488350610f8d98c3d71c82e240183e8692600a5f9:person:0x387a161c6b25aa854100abaed39274e51aaffffd:ETH",
+      "source": "proposal:snapshot-0x013702a15624613befa0ed1488350610f8d98c3d71c82e240183e8692600a5f9",
+      "target": "person:0x387a161c6b25aa854100abaed39274e51aaffffd",
+      "kind": "funded",
+      "weight": 3.5,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/gami-eth/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0x08e71d63f57a0e47eb487e8b99c44b051e1d3bf6cb69344726e17a0d75645e8b:person:0xdfb6ed808fadddad9154f5605e349fff96e3d939:ETH",
+      "source": "proposal:snapshot-0x08e71d63f57a0e47eb487e8b99c44b051e1d3bf6cb69344726e17a0d75645e8b",
+      "target": "person:0xdfb6ed808fadddad9154f5605e349fff96e3d939",
+      "kind": "funded",
+      "weight": 4.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/davinoyesigye-eth/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0x0925892015b8809cc4ab3a7030c77364657c46f64ee083eba9f4fd5c61058b9b:person:0xc2691f9994af90711d67286be558f4fa631667fd:ETH",
+      "source": "proposal:snapshot-0x0925892015b8809cc4ab3a7030c77364657c46f64ee083eba9f4fd5c61058b9b",
+      "target": "person:0xc2691f9994af90711d67286be558f4fa631667fd",
+      "kind": "funded",
+      "weight": 0.253,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/0xc269-67fd/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0x0b3d6c307f7e596892dda29cf4914598368c0b0212739081290ab6608de770cf:person:0x8d36bac540c57dbd009ea9d9d8cdf9443a83e3f6:ETH",
+      "source": "proposal:snapshot-0x0b3d6c307f7e596892dda29cf4914598368c0b0212739081290ab6608de770cf",
+      "target": "person:0x8d36bac540c57dbd009ea9d9d8cdf9443a83e3f6",
+      "kind": "funded",
+      "weight": 0.5,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/eth-e3f6/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0x0e7cc997ea5cf22e91fe01456c43dbfaba221857089d9e92065e8b836cde7c05:person:0x73222225044ce0fc672ff9b6f9730d0a0421382c:ETH",
+      "source": "proposal:snapshot-0x0e7cc997ea5cf22e91fe01456c43dbfaba221857089d9e92065e8b836cde7c05",
+      "target": "person:0x73222225044ce0fc672ff9b6f9730d0a0421382c",
+      "kind": "funded",
+      "weight": 0.5,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/gnars-com/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0x1036e9e0f19535c72c33a218d59d59aec34690a089f04a349092e9e1cfd0c122:person:0x73222225044ce0fc672ff9b6f9730d0a0421382c:ETH",
+      "source": "proposal:snapshot-0x1036e9e0f19535c72c33a218d59d59aec34690a089f04a349092e9e1cfd0c122",
+      "target": "person:0x73222225044ce0fc672ff9b6f9730d0a0421382c",
+      "kind": "funded",
+      "weight": 3.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/gnars-com/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0x1353abe6679ea8aecf8505fc0a2785328adfefe358d4352d25862bd97dd2278d:person:0xdcf37d8aa17142f053aaa7dc56025ab00d897a19:ETH",
+      "source": "proposal:snapshot-0x1353abe6679ea8aecf8505fc0a2785328adfefe358d4352d25862bd97dd2278d",
+      "target": "person:0xdcf37d8aa17142f053aaa7dc56025ab00d897a19",
+      "kind": "funded",
+      "weight": 0.2,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/satori-wtf/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0x136c566b303c0d3fa920168ed461cc37d4e18ab203dd9b91c49e7c1af4af9014:person:0x73222225044ce0fc672ff9b6f9730d0a0421382c:ETH",
+      "source": "proposal:snapshot-0x136c566b303c0d3fa920168ed461cc37d4e18ab203dd9b91c49e7c1af4af9014",
+      "target": "person:0x73222225044ce0fc672ff9b6f9730d0a0421382c",
+      "kind": "funded",
+      "weight": 6.66,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/gnars-com/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0x1f626537f05b054c5f5f3e3ad4438606b748234bed9ea5d8d6301b1a2ac26ee2:person:0x73222225044ce0fc672ff9b6f9730d0a0421382c:ETH",
+      "source": "proposal:snapshot-0x1f626537f05b054c5f5f3e3ad4438606b748234bed9ea5d8d6301b1a2ac26ee2",
+      "target": "person:0x73222225044ce0fc672ff9b6f9730d0a0421382c",
+      "kind": "funded",
+      "weight": 3.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/gnars-com/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0x1fbdefc05981d023894a3198e407911800e85d89222cb12e453611d1a953c0e2:person:0xdfb6ed808fadddad9154f5605e349fff96e3d939:ETH",
+      "source": "proposal:snapshot-0x1fbdefc05981d023894a3198e407911800e85d89222cb12e453611d1a953c0e2",
+      "target": "person:0xdfb6ed808fadddad9154f5605e349fff96e3d939",
+      "kind": "funded",
+      "weight": 3.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/davinoyesigye-eth/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0x27c109216d227ccc3fa01bb4fdf864d5aa0bd54be5a33ae7015816ed62ee3703:person:0x761b4763a572010f96ed7c22011d0c95e2b36693:ETH",
+      "source": "proposal:snapshot-0x27c109216d227ccc3fa01bb4fdf864d5aa0bd54be5a33ae7015816ed62ee3703",
+      "target": "person:0x761b4763a572010f96ed7c22011d0c95e2b36693",
+      "kind": "funded",
+      "weight": 0.42,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/0x761b-6693/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0x30847f96110952ed83c1aa78c09b5cc11ef1076614560efd29de73e8b9b18894:person:0xfc27b375faf1fbd3f3462044cf810082f042a45b:ETH",
+      "source": "proposal:snapshot-0x30847f96110952ed83c1aa78c09b5cc11ef1076614560efd29de73e8b9b18894",
+      "target": "person:0xfc27b375faf1fbd3f3462044cf810082f042a45b",
+      "kind": "funded",
+      "weight": 2.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/luizhadad-eth/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0x31563b41a9581f2cac219a22d6ed5c8fbf4a639c427cd3a627b0668ce14f2a55:person:0x41cb654d1f47913acab158a8199191d160dabe4a:ETH",
+      "source": "proposal:snapshot-0x31563b41a9581f2cac219a22d6ed5c8fbf4a639c427cd3a627b0668ce14f2a55",
+      "target": "person:0x41cb654d1f47913acab158a8199191d160dabe4a",
+      "kind": "funded",
+      "weight": 1.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/0x41cb-be4a/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0x31d9113448e4dc06cf86cb8b2d94681297769fbe6cde158c24745c7eaf0f1b62:person:0x73222225044ce0fc672ff9b6f9730d0a0421382c:ETH",
+      "source": "proposal:snapshot-0x31d9113448e4dc06cf86cb8b2d94681297769fbe6cde158c24745c7eaf0f1b62",
+      "target": "person:0x73222225044ce0fc672ff9b6f9730d0a0421382c",
+      "kind": "funded",
+      "weight": 3.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/gnars-com/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0x39abf329516ad7cb9ff48c23b30fae4b46590198421cd8a34977bb58032e7f93:person:0xc23274347e8aa82d363140d3cefb71ff588effed:ETH",
+      "source": "proposal:snapshot-0x39abf329516ad7cb9ff48c23b30fae4b46590198421cd8a34977bb58032e7f93",
+      "target": "person:0xc23274347e8aa82d363140d3cefb71ff588effed",
+      "kind": "funded",
+      "weight": 0.25,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/charoncrypto-eth/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0x3bb0a388713c4a70b06ccb8c1bc9ffaad80e652430955a3b1c414f6bf8e51b3a:person:0x56b6dcddd5d96535c35b720c96e19939920544d8:ETH",
+      "source": "proposal:snapshot-0x3bb0a388713c4a70b06ccb8c1bc9ffaad80e652430955a3b1c414f6bf8e51b3a",
+      "target": "person:0x56b6dcddd5d96535c35b720c96e19939920544d8",
+      "kind": "funded",
+      "weight": 2.5,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/gondy-eth/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0x3df77e8ebb1f5a63a35d63820dd4b4b2c78e9aa3b0b091c13752d601ebce163d:person:0x73222225044ce0fc672ff9b6f9730d0a0421382c:ETH",
+      "source": "proposal:snapshot-0x3df77e8ebb1f5a63a35d63820dd4b4b2c78e9aa3b0b091c13752d601ebce163d",
+      "target": "person:0x73222225044ce0fc672ff9b6f9730d0a0421382c",
+      "kind": "funded",
+      "weight": 3.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/gnars-com/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0x41f72da6620a57ff48a149171f03bc98a4dc48d0444455ce40e16e43758c1c5e:person:0x7c621d5954a4ac21a0fd741ab6f302398f29d644:ETH",
+      "source": "proposal:snapshot-0x41f72da6620a57ff48a149171f03bc98a4dc48d0444455ce40e16e43758c1c5e",
+      "target": "person:0x7c621d5954a4ac21a0fd741ab6f302398f29d644",
+      "kind": "funded",
+      "weight": 5.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/vote-gami-eth/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0x45e98b5ad67bbbbea2703e34d3eab60561b350612ecb8b325b6f0a1933b7cfed:person:0x73222225044ce0fc672ff9b6f9730d0a0421382c:ETH",
+      "source": "proposal:snapshot-0x45e98b5ad67bbbbea2703e34d3eab60561b350612ecb8b325b6f0a1933b7cfed",
+      "target": "person:0x73222225044ce0fc672ff9b6f9730d0a0421382c",
+      "kind": "funded",
+      "weight": 0.5,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/gnars-com/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0x487760526824abbe7997ee2fe4887de10af737eb60d35a4165025b8f58148e50:person:0xdfb6ed808fadddad9154f5605e349fff96e3d939:ETH",
+      "source": "proposal:snapshot-0x487760526824abbe7997ee2fe4887de10af737eb60d35a4165025b8f58148e50",
+      "target": "person:0xdfb6ed808fadddad9154f5605e349fff96e3d939",
+      "kind": "funded",
+      "weight": 2.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/davinoyesigye-eth/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0x4a79512e932f6df01b0af30bc6a622c1fa72fa2a247c6fdc7c8d976fa940b2df:person:0xdfb6ed808fadddad9154f5605e349fff96e3d939:ETH",
+      "source": "proposal:snapshot-0x4a79512e932f6df01b0af30bc6a622c1fa72fa2a247c6fdc7c8d976fa940b2df",
+      "target": "person:0xdfb6ed808fadddad9154f5605e349fff96e3d939",
+      "kind": "funded",
+      "weight": 3.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/davinoyesigye-eth/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0x4b0fef8be71a1beae3d7d2b31d44ee2df2ca539b36aa66a8221b346f6a713c4a:person:0x73222225044ce0fc672ff9b6f9730d0a0421382c:ETH",
+      "source": "proposal:snapshot-0x4b0fef8be71a1beae3d7d2b31d44ee2df2ca539b36aa66a8221b346f6a713c4a",
+      "target": "person:0x73222225044ce0fc672ff9b6f9730d0a0421382c",
+      "kind": "funded",
+      "weight": 3.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/gnars-com/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0x54e14b3264825ebb86ab43768c279431aa83f6e480a86d5bff3341c42feeb4bb:person:0xdfb6ed808fadddad9154f5605e349fff96e3d939:ETH",
+      "source": "proposal:snapshot-0x54e14b3264825ebb86ab43768c279431aa83f6e480a86d5bff3341c42feeb4bb",
+      "target": "person:0xdfb6ed808fadddad9154f5605e349fff96e3d939",
+      "kind": "funded",
+      "weight": 3.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/davinoyesigye-eth/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0x552d01d8f6172bf86262015fb4350e27fa52df606ae468f2a21376755d0135dc:person:0x73222225044ce0fc672ff9b6f9730d0a0421382c:ETH",
+      "source": "proposal:snapshot-0x552d01d8f6172bf86262015fb4350e27fa52df606ae468f2a21376755d0135dc",
+      "target": "person:0x73222225044ce0fc672ff9b6f9730d0a0421382c",
+      "kind": "funded",
+      "weight": 2.5,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/gnars-com/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0x6100932649facab93f27106b0f8bf28194edb952e5c0866b9c297b850d72cedb:person:0x41cb654d1f47913acab158a8199191d160dabe4a:ETH",
+      "source": "proposal:snapshot-0x6100932649facab93f27106b0f8bf28194edb952e5c0866b9c297b850d72cedb",
+      "target": "person:0x41cb654d1f47913acab158a8199191d160dabe4a",
+      "kind": "funded",
+      "weight": 3.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/0x41cb-be4a/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0x6221129699a3f7fa29e9dc736c78a38cf646a48bc75b4a2e1401fc9cec0f7cda:person:0x73222225044ce0fc672ff9b6f9730d0a0421382c:ETH",
+      "source": "proposal:snapshot-0x6221129699a3f7fa29e9dc736c78a38cf646a48bc75b4a2e1401fc9cec0f7cda",
+      "target": "person:0x73222225044ce0fc672ff9b6f9730d0a0421382c",
+      "kind": "funded",
+      "weight": 0.1,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/gnars-com/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0x70526f9ba5616545ed8de674349307f6a6d671c7f9365552f457598026801d1a:person:0x069da1bad547d67abf26c42358d3a6a8a78deca0:ETH",
+      "source": "proposal:snapshot-0x70526f9ba5616545ed8de674349307f6a6d671c7f9365552f457598026801d1a",
+      "target": "person:0x069da1bad547d67abf26c42358d3a6a8a78deca0",
+      "kind": "funded",
+      "weight": 0.69,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/geffenz-eth/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0x7584dfef4e843deaddf4eba549713db9fac03438486925205570998707113dad:person:0x387a161c6b25aa854100abaed39274e51aaffffd:ETH",
+      "source": "proposal:snapshot-0x7584dfef4e843deaddf4eba549713db9fac03438486925205570998707113dad",
+      "target": "person:0x387a161c6b25aa854100abaed39274e51aaffffd",
+      "kind": "funded",
+      "weight": 0.0069,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/gami-eth/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0x75de871dc2cdfb52513789573ba4f5cd27b663122b27de157ae100593d8b916c:person:0xdfb6ed808fadddad9154f5605e349fff96e3d939:ETH",
+      "source": "proposal:snapshot-0x75de871dc2cdfb52513789573ba4f5cd27b663122b27de157ae100593d8b916c",
+      "target": "person:0xdfb6ed808fadddad9154f5605e349fff96e3d939",
+      "kind": "funded",
+      "weight": 1.7,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/davinoyesigye-eth/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0x781c3062dce32c2ae1b29ad80bc95c37175c67c43ed086b196b20104669177bc:person:0xdfb6ed808fadddad9154f5605e349fff96e3d939:ETH",
+      "source": "proposal:snapshot-0x781c3062dce32c2ae1b29ad80bc95c37175c67c43ed086b196b20104669177bc",
+      "target": "person:0xdfb6ed808fadddad9154f5605e349fff96e3d939",
+      "kind": "funded",
+      "weight": 1.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/davinoyesigye-eth/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0x78476546b12ebbc53d842edf6e3987431b0f8ab7ed0fcbc707d0328e98edc0c6:person:0x41cb654d1f47913acab158a8199191d160dabe4a:ETH",
+      "source": "proposal:snapshot-0x78476546b12ebbc53d842edf6e3987431b0f8ab7ed0fcbc707d0328e98edc0c6",
+      "target": "person:0x41cb654d1f47913acab158a8199191d160dabe4a",
+      "kind": "funded",
+      "weight": 1.5,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/0x41cb-be4a/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0x8258faa7a47a97aabc63f1e3a566a5ed027388b1822372c93ceb1d7589ae5f7e:person:0x73222225044ce0fc672ff9b6f9730d0a0421382c:ETH",
+      "source": "proposal:snapshot-0x8258faa7a47a97aabc63f1e3a566a5ed027388b1822372c93ceb1d7589ae5f7e",
+      "target": "person:0x73222225044ce0fc672ff9b6f9730d0a0421382c",
+      "kind": "funded",
+      "weight": 3.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/gnars-com/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0x8262bdb00439e0820c588c334bfda1c44022d227347d343b733f3127fd713a74:person:0xdfb6ed808fadddad9154f5605e349fff96e3d939:ETH",
+      "source": "proposal:snapshot-0x8262bdb00439e0820c588c334bfda1c44022d227347d343b733f3127fd713a74",
+      "target": "person:0xdfb6ed808fadddad9154f5605e349fff96e3d939",
+      "kind": "funded",
+      "weight": 0.43,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/davinoyesigye-eth/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0x872bfadf89dee5dcea47992b94ebff05bd24dcf9a02d3e5daac50b2ff48eb90b:person:0xdfb6ed808fadddad9154f5605e349fff96e3d939:ETH",
+      "source": "proposal:snapshot-0x872bfadf89dee5dcea47992b94ebff05bd24dcf9a02d3e5daac50b2ff48eb90b",
+      "target": "person:0xdfb6ed808fadddad9154f5605e349fff96e3d939",
+      "kind": "funded",
+      "weight": 0.69,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/davinoyesigye-eth/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0x8907d4c2392d670589d35a1deeaed0de70fb72260ccb3e3ad14d6c41119da829:person:0xdfb6ed808fadddad9154f5605e349fff96e3d939:ETH",
+      "source": "proposal:snapshot-0x8907d4c2392d670589d35a1deeaed0de70fb72260ccb3e3ad14d6c41119da829",
+      "target": "person:0xdfb6ed808fadddad9154f5605e349fff96e3d939",
+      "kind": "funded",
+      "weight": 3.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/davinoyesigye-eth/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0x9a6674c83620376227957cafa52a1047dedb28ac6b39c2a6fa60435df83b13c5:person:0xdfb6ed808fadddad9154f5605e349fff96e3d939:ETH",
+      "source": "proposal:snapshot-0x9a6674c83620376227957cafa52a1047dedb28ac6b39c2a6fa60435df83b13c5",
+      "target": "person:0xdfb6ed808fadddad9154f5605e349fff96e3d939",
+      "kind": "funded",
+      "weight": 1.5,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/davinoyesigye-eth/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0x9d63add3de1dd0868f7b4414b9de375e5fc58c3800270ee1a08c819c9b3393ad:person:0x05e189e1bbaf77f1654f0983872fd938ae592edd:ETH",
+      "source": "proposal:snapshot-0x9d63add3de1dd0868f7b4414b9de375e5fc58c3800270ee1a08c819c9b3393ad",
+      "target": "person:0x05e189e1bbaf77f1654f0983872fd938ae592edd",
+      "kind": "funded",
+      "weight": 1.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/0xsatori-eth/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0x9df0af9d78f6d6315afdcb58df19fc5f61641a75721227d6c4aaa236676d4daf:person:0x4df4058cdb72c4004ae27fc09243d387f52287f2:ETH",
+      "source": "proposal:snapshot-0x9df0af9d78f6d6315afdcb58df19fc5f61641a75721227d6c4aaa236676d4daf",
+      "target": "person:0x4df4058cdb72c4004ae27fc09243d387f52287f2",
+      "kind": "funded",
+      "weight": 3.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/0x4df4-87f2/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0x9e670758685c096b923e0b9fa65e2e9cd44906983ea78fe73d750d77be7c568c:person:0x4b5f934da25c33f130efc5df47c91af1375baa30:ETH",
+      "source": "proposal:snapshot-0x9e670758685c096b923e0b9fa65e2e9cd44906983ea78fe73d750d77be7c568c",
+      "target": "person:0x4b5f934da25c33f130efc5df47c91af1375baa30",
+      "kind": "funded",
+      "weight": 1.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/marinioac-eth/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0xa79e84b9c92ae1a329bc546d237972fcbe12143d41d4f82d927e2f7d013b0e97:person:0xdfb6ed808fadddad9154f5605e349fff96e3d939:ETH",
+      "source": "proposal:snapshot-0xa79e84b9c92ae1a329bc546d237972fcbe12143d41d4f82d927e2f7d013b0e97",
+      "target": "person:0xdfb6ed808fadddad9154f5605e349fff96e3d939",
+      "kind": "funded",
+      "weight": 1.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/davinoyesigye-eth/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0xa9ec7b490d8a3120943e069c5458703d57a7eed48eb9d11ce892a864cb5c2fe5:person:0x73222225044ce0fc672ff9b6f9730d0a0421382c:ETH",
+      "source": "proposal:snapshot-0xa9ec7b490d8a3120943e069c5458703d57a7eed48eb9d11ce892a864cb5c2fe5",
+      "target": "person:0x73222225044ce0fc672ff9b6f9730d0a0421382c",
+      "kind": "funded",
+      "weight": 37.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/gnars-com/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0xb30fc7e82ffd81902641f4cd2c15a4604d149645cc057b49ababd99ad8346379:person:0x41cb654d1f47913acab158a8199191d160dabe4a:ETH",
+      "source": "proposal:snapshot-0xb30fc7e82ffd81902641f4cd2c15a4604d149645cc057b49ababd99ad8346379",
+      "target": "person:0x41cb654d1f47913acab158a8199191d160dabe4a",
+      "kind": "funded",
+      "weight": 1.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/0x41cb-be4a/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0xb55ab5a77a14604fd5d4a5d67e00f828fcd6f90ef86e2687276d1973f9b40df5:person:0x73222225044ce0fc672ff9b6f9730d0a0421382c:ETH",
+      "source": "proposal:snapshot-0xb55ab5a77a14604fd5d4a5d67e00f828fcd6f90ef86e2687276d1973f9b40df5",
+      "target": "person:0x73222225044ce0fc672ff9b6f9730d0a0421382c",
+      "kind": "funded",
+      "weight": 3.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/gnars-com/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0xb63306dbfe950dd9754d5edcf8f48c6ff9bdd32eeeff4c644cb90c974a3055fa:person:0x41cb654d1f47913acab158a8199191d160dabe4a:ETH",
+      "source": "proposal:snapshot-0xb63306dbfe950dd9754d5edcf8f48c6ff9bdd32eeeff4c644cb90c974a3055fa",
+      "target": "person:0x41cb654d1f47913acab158a8199191d160dabe4a",
+      "kind": "funded",
+      "weight": 3.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/0x41cb-be4a/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0xb6f1781ada377924f11500e81735dd60170984c7976a1267027b3bd67fca93f1:person:0x387a161c6b25aa854100abaed39274e51aaffffd:ETH",
+      "source": "proposal:snapshot-0xb6f1781ada377924f11500e81735dd60170984c7976a1267027b3bd67fca93f1",
+      "target": "person:0x387a161c6b25aa854100abaed39274e51aaffffd",
+      "kind": "funded",
+      "weight": 1.5,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/gami-eth/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0xb98dbe42c7fee10c45eee0624cfe0ee852e4d7757eacf016d07bcb39b48e5d84:person:0x56b6dcddd5d96535c35b720c96e19939920544d8:ETH",
+      "source": "proposal:snapshot-0xb98dbe42c7fee10c45eee0624cfe0ee852e4d7757eacf016d07bcb39b48e5d84",
+      "target": "person:0x56b6dcddd5d96535c35b720c96e19939920544d8",
+      "kind": "funded",
+      "weight": 1.38,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/gondy-eth/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0xbafd024d57b8750da24ba3d43dc90a5b35aceacf5077cfb8a7e1b2e8e1f97894:person:0x387a161c6b25aa854100abaed39274e51aaffffd:ETH",
+      "source": "proposal:snapshot-0xbafd024d57b8750da24ba3d43dc90a5b35aceacf5077cfb8a7e1b2e8e1f97894",
+      "target": "person:0x387a161c6b25aa854100abaed39274e51aaffffd",
+      "kind": "funded",
+      "weight": 0.015,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/gami-eth/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0xbb73acb16a3b968a7cde352cf046b7d015b0dde0bce3a6d16355d28cf9d519e8:person:0xdfb6ed808fadddad9154f5605e349fff96e3d939:ETH",
+      "source": "proposal:snapshot-0xbb73acb16a3b968a7cde352cf046b7d015b0dde0bce3a6d16355d28cf9d519e8",
+      "target": "person:0xdfb6ed808fadddad9154f5605e349fff96e3d939",
+      "kind": "funded",
+      "weight": 3.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/davinoyesigye-eth/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0xbefdbdf326b35137ef79bb73d67f623fb748e557a78d3c1288f2179620a6d15c:person:0x73222225044ce0fc672ff9b6f9730d0a0421382c:ETH",
+      "source": "proposal:snapshot-0xbefdbdf326b35137ef79bb73d67f623fb748e557a78d3c1288f2179620a6d15c",
+      "target": "person:0x73222225044ce0fc672ff9b6f9730d0a0421382c",
+      "kind": "funded",
+      "weight": 3.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/gnars-com/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0xc0d8af294ff7c51e20145320a8b878ca9ed871599f210ac1616fc6c3d4da263b:person:0xdfb6ed808fadddad9154f5605e349fff96e3d939:ETH",
+      "source": "proposal:snapshot-0xc0d8af294ff7c51e20145320a8b878ca9ed871599f210ac1616fc6c3d4da263b",
+      "target": "person:0xdfb6ed808fadddad9154f5605e349fff96e3d939",
+      "kind": "funded",
+      "weight": 0.69,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/davinoyesigye-eth/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0xc5e3864603d851e7a16323ae30667f57e8f27d2e944a0af40f899cad6b6a46f4:person:0xdfb6ed808fadddad9154f5605e349fff96e3d939:ETH",
+      "source": "proposal:snapshot-0xc5e3864603d851e7a16323ae30667f57e8f27d2e944a0af40f899cad6b6a46f4",
+      "target": "person:0xdfb6ed808fadddad9154f5605e349fff96e3d939",
+      "kind": "funded",
+      "weight": 0.69,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/davinoyesigye-eth/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0xd44c38a59adc8b086ec31e9c8759b2623dbea06421bbfabd65c19d72a2559289:person:0x9c87a1065994f156f0b7b87aaa8b3c5f7bd67e02:ETH",
+      "source": "proposal:snapshot-0xd44c38a59adc8b086ec31e9c8759b2623dbea06421bbfabd65c19d72a2559289",
+      "target": "person:0x9c87a1065994f156f0b7b87aaa8b3c5f7bd67e02",
+      "kind": "funded",
+      "weight": 6.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/brettdrawsstuff-eth/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0xd79cf66e97cce5ae64f72d01a218451f8fcadfcd7f66d8a118c37849b3b60275:person:0x56b6dcddd5d96535c35b720c96e19939920544d8:ETH",
+      "source": "proposal:snapshot-0xd79cf66e97cce5ae64f72d01a218451f8fcadfcd7f66d8a118c37849b3b60275",
+      "target": "person:0x56b6dcddd5d96535c35b720c96e19939920544d8",
+      "kind": "funded",
+      "weight": 3.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/gondy-eth/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0xdc3be19c4d846e9af7bcc625582f355ba4f6ea6db4559251b8ba688e8dbbbe5a:person:0x8d36bac540c57dbd009ea9d9d8cdf9443a83e3f6:ETH",
+      "source": "proposal:snapshot-0xdc3be19c4d846e9af7bcc625582f355ba4f6ea6db4559251b8ba688e8dbbbe5a",
+      "target": "person:0x8d36bac540c57dbd009ea9d9d8cdf9443a83e3f6",
+      "kind": "funded",
+      "weight": 3.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/eth-e3f6/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0xde53e95d97d4c5660423d33a75630a9fb89c85c7773c172f3df9e39dd3546cf2:person:0x41cb654d1f47913acab158a8199191d160dabe4a:ETH",
+      "source": "proposal:snapshot-0xde53e95d97d4c5660423d33a75630a9fb89c85c7773c172f3df9e39dd3546cf2",
+      "target": "person:0x41cb654d1f47913acab158a8199191d160dabe4a",
+      "kind": "funded",
+      "weight": 3.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/0x41cb-be4a/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0xe2d423fe8eb703977b61da957cae6a434ed8c7ba38623f42834c667e0e9af620:person:0x73222225044ce0fc672ff9b6f9730d0a0421382c:ETH",
+      "source": "proposal:snapshot-0xe2d423fe8eb703977b61da957cae6a434ed8c7ba38623f42834c667e0e9af620",
+      "target": "person:0x73222225044ce0fc672ff9b6f9730d0a0421382c",
+      "kind": "funded",
+      "weight": 3.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/gnars-com/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0xe472fc837743ed478fe98ebef15378dbae2efe519f6af18f3a34118ee5dea367:person:0x9c87a1065994f156f0b7b87aaa8b3c5f7bd67e02:ETH",
+      "source": "proposal:snapshot-0xe472fc837743ed478fe98ebef15378dbae2efe519f6af18f3a34118ee5dea367",
+      "target": "person:0x9c87a1065994f156f0b7b87aaa8b3c5f7bd67e02",
+      "kind": "funded",
+      "weight": 7.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/brettdrawsstuff-eth/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0xe5f8417d633b7d2b6136be896b9d100b82056cfbdb7c39e67adb806c8c0d830f:person:0x9a91cb99b52b2e90e2c23936be987ef861dbb62d:ETH",
+      "source": "proposal:snapshot-0xe5f8417d633b7d2b6136be896b9d100b82056cfbdb7c39e67adb806c8c0d830f",
+      "target": "person:0x9a91cb99b52b2e90e2c23936be987ef861dbb62d",
+      "kind": "funded",
+      "weight": 1.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/monkzdao-eth/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0xe603eb28d7152ca1e13532dd070a1c7130d48fe03477e47861e9bc6a1b9e33a5:person:0x387a161c6b25aa854100abaed39274e51aaffffd:ETH",
+      "source": "proposal:snapshot-0xe603eb28d7152ca1e13532dd070a1c7130d48fe03477e47861e9bc6a1b9e33a5",
+      "target": "person:0x387a161c6b25aa854100abaed39274e51aaffffd",
+      "kind": "funded",
+      "weight": 1.5,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/gami-eth/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0xef1162965ed606d02c211bfab16f7ffdea8d25d22438140f05861bc765637052:person:0x73222225044ce0fc672ff9b6f9730d0a0421382c:ETH",
+      "source": "proposal:snapshot-0xef1162965ed606d02c211bfab16f7ffdea8d25d22438140f05861bc765637052",
+      "target": "person:0x73222225044ce0fc672ff9b6f9730d0a0421382c",
+      "kind": "funded",
+      "weight": 1.5,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/gnars-com/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0xf9d1ed89fff9a329cb4fb25771215836f3f2ce985a086115cfe4f34ea6ef0d5c:person:0xdfb6ed808fadddad9154f5605e349fff96e3d939:ETH",
+      "source": "proposal:snapshot-0xf9d1ed89fff9a329cb4fb25771215836f3f2ce985a086115cfe4f34ea6ef0d5c",
+      "target": "person:0xdfb6ed808fadddad9154f5605e349fff96e3d939",
+      "kind": "funded",
+      "weight": 1.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/davinoyesigye-eth/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0xfc4598096ca508794797ed88e9115f52dc9ce63f2b0fb760ea2dea3eb1c5ba4b:person:0x73222225044ce0fc672ff9b6f9730d0a0421382c:ETH",
+      "source": "proposal:snapshot-0xfc4598096ca508794797ed88e9115f52dc9ce63f2b0fb760ea2dea3eb1c5ba4b",
+      "target": "person:0x73222225044ce0fc672ff9b6f9730d0a0421382c",
+      "kind": "funded",
+      "weight": 1.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/gnars-com/"
+    },
+    {
+      "edge_id": "funded:proposal:snapshot-0xff05ff3617e604c701ffde6c6e34d39016bd2126f61efe66499617ea3acfd603:person:0xb4964e1eca55db36a94e8aeffbfbab48529a2f6c:ETH",
+      "source": "proposal:snapshot-0xff05ff3617e604c701ffde6c6e34d39016bd2126f61efe66499617ea3acfd603",
+      "target": "person:0xb4964e1eca55db36a94e8aeffbfbab48529a2f6c",
+      "kind": "funded",
+      "weight": 0.3,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/community/skatehive-eth/"
+    },
+    {
       "edge_id": "funded:treasury:gnars:proposal:gnars-base-101:ETH",
       "source": "treasury:gnars",
       "target": "proposal:gnars-base-101",
@@ -33804,6 +34459,646 @@
       "count": 1,
       "asset_symbol": "ETH",
       "href": "/proposals/gnars-snapshot-101/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0x00fc8920736e34ab77c10ed9837df13aed9ddfe35132c271d5982a19a5857b74:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0x00fc8920736e34ab77c10ed9837df13aed9ddfe35132c271d5982a19a5857b74",
+      "kind": "funded",
+      "weight": 5.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0x00fc8920736e34ab77c10ed9837df13aed9ddfe35132c271d5982a19a5857b74/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0x013702a15624613befa0ed1488350610f8d98c3d71c82e240183e8692600a5f9:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0x013702a15624613befa0ed1488350610f8d98c3d71c82e240183e8692600a5f9",
+      "kind": "funded",
+      "weight": 3.5,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0x013702a15624613befa0ed1488350610f8d98c3d71c82e240183e8692600a5f9/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0x08e71d63f57a0e47eb487e8b99c44b051e1d3bf6cb69344726e17a0d75645e8b:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0x08e71d63f57a0e47eb487e8b99c44b051e1d3bf6cb69344726e17a0d75645e8b",
+      "kind": "funded",
+      "weight": 4.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0x08e71d63f57a0e47eb487e8b99c44b051e1d3bf6cb69344726e17a0d75645e8b/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0x0925892015b8809cc4ab3a7030c77364657c46f64ee083eba9f4fd5c61058b9b:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0x0925892015b8809cc4ab3a7030c77364657c46f64ee083eba9f4fd5c61058b9b",
+      "kind": "funded",
+      "weight": 0.253,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0x0925892015b8809cc4ab3a7030c77364657c46f64ee083eba9f4fd5c61058b9b/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0x0b3d6c307f7e596892dda29cf4914598368c0b0212739081290ab6608de770cf:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0x0b3d6c307f7e596892dda29cf4914598368c0b0212739081290ab6608de770cf",
+      "kind": "funded",
+      "weight": 0.5,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0x0b3d6c307f7e596892dda29cf4914598368c0b0212739081290ab6608de770cf/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0x0e7cc997ea5cf22e91fe01456c43dbfaba221857089d9e92065e8b836cde7c05:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0x0e7cc997ea5cf22e91fe01456c43dbfaba221857089d9e92065e8b836cde7c05",
+      "kind": "funded",
+      "weight": 0.5,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0x0e7cc997ea5cf22e91fe01456c43dbfaba221857089d9e92065e8b836cde7c05/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0x1036e9e0f19535c72c33a218d59d59aec34690a089f04a349092e9e1cfd0c122:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0x1036e9e0f19535c72c33a218d59d59aec34690a089f04a349092e9e1cfd0c122",
+      "kind": "funded",
+      "weight": 3.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0x1036e9e0f19535c72c33a218d59d59aec34690a089f04a349092e9e1cfd0c122/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0x1353abe6679ea8aecf8505fc0a2785328adfefe358d4352d25862bd97dd2278d:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0x1353abe6679ea8aecf8505fc0a2785328adfefe358d4352d25862bd97dd2278d",
+      "kind": "funded",
+      "weight": 0.2,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0x1353abe6679ea8aecf8505fc0a2785328adfefe358d4352d25862bd97dd2278d/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0x136c566b303c0d3fa920168ed461cc37d4e18ab203dd9b91c49e7c1af4af9014:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0x136c566b303c0d3fa920168ed461cc37d4e18ab203dd9b91c49e7c1af4af9014",
+      "kind": "funded",
+      "weight": 6.66,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0x136c566b303c0d3fa920168ed461cc37d4e18ab203dd9b91c49e7c1af4af9014/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0x1f626537f05b054c5f5f3e3ad4438606b748234bed9ea5d8d6301b1a2ac26ee2:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0x1f626537f05b054c5f5f3e3ad4438606b748234bed9ea5d8d6301b1a2ac26ee2",
+      "kind": "funded",
+      "weight": 3.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0x1f626537f05b054c5f5f3e3ad4438606b748234bed9ea5d8d6301b1a2ac26ee2/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0x1fbdefc05981d023894a3198e407911800e85d89222cb12e453611d1a953c0e2:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0x1fbdefc05981d023894a3198e407911800e85d89222cb12e453611d1a953c0e2",
+      "kind": "funded",
+      "weight": 3.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0x1fbdefc05981d023894a3198e407911800e85d89222cb12e453611d1a953c0e2/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0x27c109216d227ccc3fa01bb4fdf864d5aa0bd54be5a33ae7015816ed62ee3703:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0x27c109216d227ccc3fa01bb4fdf864d5aa0bd54be5a33ae7015816ed62ee3703",
+      "kind": "funded",
+      "weight": 0.42,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0x27c109216d227ccc3fa01bb4fdf864d5aa0bd54be5a33ae7015816ed62ee3703/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0x30847f96110952ed83c1aa78c09b5cc11ef1076614560efd29de73e8b9b18894:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0x30847f96110952ed83c1aa78c09b5cc11ef1076614560efd29de73e8b9b18894",
+      "kind": "funded",
+      "weight": 2.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0x30847f96110952ed83c1aa78c09b5cc11ef1076614560efd29de73e8b9b18894/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0x31563b41a9581f2cac219a22d6ed5c8fbf4a639c427cd3a627b0668ce14f2a55:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0x31563b41a9581f2cac219a22d6ed5c8fbf4a639c427cd3a627b0668ce14f2a55",
+      "kind": "funded",
+      "weight": 1.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0x31563b41a9581f2cac219a22d6ed5c8fbf4a639c427cd3a627b0668ce14f2a55/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0x31d9113448e4dc06cf86cb8b2d94681297769fbe6cde158c24745c7eaf0f1b62:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0x31d9113448e4dc06cf86cb8b2d94681297769fbe6cde158c24745c7eaf0f1b62",
+      "kind": "funded",
+      "weight": 3.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0x31d9113448e4dc06cf86cb8b2d94681297769fbe6cde158c24745c7eaf0f1b62/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0x39abf329516ad7cb9ff48c23b30fae4b46590198421cd8a34977bb58032e7f93:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0x39abf329516ad7cb9ff48c23b30fae4b46590198421cd8a34977bb58032e7f93",
+      "kind": "funded",
+      "weight": 0.25,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0x39abf329516ad7cb9ff48c23b30fae4b46590198421cd8a34977bb58032e7f93/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0x3bb0a388713c4a70b06ccb8c1bc9ffaad80e652430955a3b1c414f6bf8e51b3a:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0x3bb0a388713c4a70b06ccb8c1bc9ffaad80e652430955a3b1c414f6bf8e51b3a",
+      "kind": "funded",
+      "weight": 2.5,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0x3bb0a388713c4a70b06ccb8c1bc9ffaad80e652430955a3b1c414f6bf8e51b3a/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0x3df77e8ebb1f5a63a35d63820dd4b4b2c78e9aa3b0b091c13752d601ebce163d:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0x3df77e8ebb1f5a63a35d63820dd4b4b2c78e9aa3b0b091c13752d601ebce163d",
+      "kind": "funded",
+      "weight": 3.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0x3df77e8ebb1f5a63a35d63820dd4b4b2c78e9aa3b0b091c13752d601ebce163d/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0x41f72da6620a57ff48a149171f03bc98a4dc48d0444455ce40e16e43758c1c5e:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0x41f72da6620a57ff48a149171f03bc98a4dc48d0444455ce40e16e43758c1c5e",
+      "kind": "funded",
+      "weight": 5.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0x41f72da6620a57ff48a149171f03bc98a4dc48d0444455ce40e16e43758c1c5e/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0x45e98b5ad67bbbbea2703e34d3eab60561b350612ecb8b325b6f0a1933b7cfed:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0x45e98b5ad67bbbbea2703e34d3eab60561b350612ecb8b325b6f0a1933b7cfed",
+      "kind": "funded",
+      "weight": 0.5,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0x45e98b5ad67bbbbea2703e34d3eab60561b350612ecb8b325b6f0a1933b7cfed/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0x487760526824abbe7997ee2fe4887de10af737eb60d35a4165025b8f58148e50:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0x487760526824abbe7997ee2fe4887de10af737eb60d35a4165025b8f58148e50",
+      "kind": "funded",
+      "weight": 2.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0x487760526824abbe7997ee2fe4887de10af737eb60d35a4165025b8f58148e50/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0x4a79512e932f6df01b0af30bc6a622c1fa72fa2a247c6fdc7c8d976fa940b2df:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0x4a79512e932f6df01b0af30bc6a622c1fa72fa2a247c6fdc7c8d976fa940b2df",
+      "kind": "funded",
+      "weight": 3.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0x4a79512e932f6df01b0af30bc6a622c1fa72fa2a247c6fdc7c8d976fa940b2df/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0x4b0fef8be71a1beae3d7d2b31d44ee2df2ca539b36aa66a8221b346f6a713c4a:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0x4b0fef8be71a1beae3d7d2b31d44ee2df2ca539b36aa66a8221b346f6a713c4a",
+      "kind": "funded",
+      "weight": 3.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0x4b0fef8be71a1beae3d7d2b31d44ee2df2ca539b36aa66a8221b346f6a713c4a/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0x54e14b3264825ebb86ab43768c279431aa83f6e480a86d5bff3341c42feeb4bb:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0x54e14b3264825ebb86ab43768c279431aa83f6e480a86d5bff3341c42feeb4bb",
+      "kind": "funded",
+      "weight": 3.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0x54e14b3264825ebb86ab43768c279431aa83f6e480a86d5bff3341c42feeb4bb/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0x552d01d8f6172bf86262015fb4350e27fa52df606ae468f2a21376755d0135dc:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0x552d01d8f6172bf86262015fb4350e27fa52df606ae468f2a21376755d0135dc",
+      "kind": "funded",
+      "weight": 2.5,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0x552d01d8f6172bf86262015fb4350e27fa52df606ae468f2a21376755d0135dc/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0x6100932649facab93f27106b0f8bf28194edb952e5c0866b9c297b850d72cedb:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0x6100932649facab93f27106b0f8bf28194edb952e5c0866b9c297b850d72cedb",
+      "kind": "funded",
+      "weight": 3.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0x6100932649facab93f27106b0f8bf28194edb952e5c0866b9c297b850d72cedb/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0x6221129699a3f7fa29e9dc736c78a38cf646a48bc75b4a2e1401fc9cec0f7cda:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0x6221129699a3f7fa29e9dc736c78a38cf646a48bc75b4a2e1401fc9cec0f7cda",
+      "kind": "funded",
+      "weight": 0.1,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0x6221129699a3f7fa29e9dc736c78a38cf646a48bc75b4a2e1401fc9cec0f7cda/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0x70526f9ba5616545ed8de674349307f6a6d671c7f9365552f457598026801d1a:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0x70526f9ba5616545ed8de674349307f6a6d671c7f9365552f457598026801d1a",
+      "kind": "funded",
+      "weight": 0.69,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0x70526f9ba5616545ed8de674349307f6a6d671c7f9365552f457598026801d1a/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0x7584dfef4e843deaddf4eba549713db9fac03438486925205570998707113dad:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0x7584dfef4e843deaddf4eba549713db9fac03438486925205570998707113dad",
+      "kind": "funded",
+      "weight": 0.0069,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0x7584dfef4e843deaddf4eba549713db9fac03438486925205570998707113dad/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0x75de871dc2cdfb52513789573ba4f5cd27b663122b27de157ae100593d8b916c:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0x75de871dc2cdfb52513789573ba4f5cd27b663122b27de157ae100593d8b916c",
+      "kind": "funded",
+      "weight": 1.7,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0x75de871dc2cdfb52513789573ba4f5cd27b663122b27de157ae100593d8b916c/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0x781c3062dce32c2ae1b29ad80bc95c37175c67c43ed086b196b20104669177bc:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0x781c3062dce32c2ae1b29ad80bc95c37175c67c43ed086b196b20104669177bc",
+      "kind": "funded",
+      "weight": 1.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0x781c3062dce32c2ae1b29ad80bc95c37175c67c43ed086b196b20104669177bc/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0x78476546b12ebbc53d842edf6e3987431b0f8ab7ed0fcbc707d0328e98edc0c6:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0x78476546b12ebbc53d842edf6e3987431b0f8ab7ed0fcbc707d0328e98edc0c6",
+      "kind": "funded",
+      "weight": 1.5,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0x78476546b12ebbc53d842edf6e3987431b0f8ab7ed0fcbc707d0328e98edc0c6/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0x8258faa7a47a97aabc63f1e3a566a5ed027388b1822372c93ceb1d7589ae5f7e:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0x8258faa7a47a97aabc63f1e3a566a5ed027388b1822372c93ceb1d7589ae5f7e",
+      "kind": "funded",
+      "weight": 3.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0x8258faa7a47a97aabc63f1e3a566a5ed027388b1822372c93ceb1d7589ae5f7e/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0x8262bdb00439e0820c588c334bfda1c44022d227347d343b733f3127fd713a74:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0x8262bdb00439e0820c588c334bfda1c44022d227347d343b733f3127fd713a74",
+      "kind": "funded",
+      "weight": 0.43,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0x8262bdb00439e0820c588c334bfda1c44022d227347d343b733f3127fd713a74/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0x872bfadf89dee5dcea47992b94ebff05bd24dcf9a02d3e5daac50b2ff48eb90b:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0x872bfadf89dee5dcea47992b94ebff05bd24dcf9a02d3e5daac50b2ff48eb90b",
+      "kind": "funded",
+      "weight": 0.69,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0x872bfadf89dee5dcea47992b94ebff05bd24dcf9a02d3e5daac50b2ff48eb90b/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0x8907d4c2392d670589d35a1deeaed0de70fb72260ccb3e3ad14d6c41119da829:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0x8907d4c2392d670589d35a1deeaed0de70fb72260ccb3e3ad14d6c41119da829",
+      "kind": "funded",
+      "weight": 3.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0x8907d4c2392d670589d35a1deeaed0de70fb72260ccb3e3ad14d6c41119da829/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0x9a6674c83620376227957cafa52a1047dedb28ac6b39c2a6fa60435df83b13c5:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0x9a6674c83620376227957cafa52a1047dedb28ac6b39c2a6fa60435df83b13c5",
+      "kind": "funded",
+      "weight": 1.5,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0x9a6674c83620376227957cafa52a1047dedb28ac6b39c2a6fa60435df83b13c5/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0x9d63add3de1dd0868f7b4414b9de375e5fc58c3800270ee1a08c819c9b3393ad:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0x9d63add3de1dd0868f7b4414b9de375e5fc58c3800270ee1a08c819c9b3393ad",
+      "kind": "funded",
+      "weight": 1.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0x9d63add3de1dd0868f7b4414b9de375e5fc58c3800270ee1a08c819c9b3393ad/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0x9df0af9d78f6d6315afdcb58df19fc5f61641a75721227d6c4aaa236676d4daf:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0x9df0af9d78f6d6315afdcb58df19fc5f61641a75721227d6c4aaa236676d4daf",
+      "kind": "funded",
+      "weight": 3.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0x9df0af9d78f6d6315afdcb58df19fc5f61641a75721227d6c4aaa236676d4daf/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0x9e670758685c096b923e0b9fa65e2e9cd44906983ea78fe73d750d77be7c568c:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0x9e670758685c096b923e0b9fa65e2e9cd44906983ea78fe73d750d77be7c568c",
+      "kind": "funded",
+      "weight": 1.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0x9e670758685c096b923e0b9fa65e2e9cd44906983ea78fe73d750d77be7c568c/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0xa79e84b9c92ae1a329bc546d237972fcbe12143d41d4f82d927e2f7d013b0e97:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0xa79e84b9c92ae1a329bc546d237972fcbe12143d41d4f82d927e2f7d013b0e97",
+      "kind": "funded",
+      "weight": 1.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0xa79e84b9c92ae1a329bc546d237972fcbe12143d41d4f82d927e2f7d013b0e97/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0xa9ec7b490d8a3120943e069c5458703d57a7eed48eb9d11ce892a864cb5c2fe5:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0xa9ec7b490d8a3120943e069c5458703d57a7eed48eb9d11ce892a864cb5c2fe5",
+      "kind": "funded",
+      "weight": 37.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0xa9ec7b490d8a3120943e069c5458703d57a7eed48eb9d11ce892a864cb5c2fe5/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0xb30fc7e82ffd81902641f4cd2c15a4604d149645cc057b49ababd99ad8346379:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0xb30fc7e82ffd81902641f4cd2c15a4604d149645cc057b49ababd99ad8346379",
+      "kind": "funded",
+      "weight": 1.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0xb30fc7e82ffd81902641f4cd2c15a4604d149645cc057b49ababd99ad8346379/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0xb55ab5a77a14604fd5d4a5d67e00f828fcd6f90ef86e2687276d1973f9b40df5:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0xb55ab5a77a14604fd5d4a5d67e00f828fcd6f90ef86e2687276d1973f9b40df5",
+      "kind": "funded",
+      "weight": 3.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0xb55ab5a77a14604fd5d4a5d67e00f828fcd6f90ef86e2687276d1973f9b40df5/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0xb63306dbfe950dd9754d5edcf8f48c6ff9bdd32eeeff4c644cb90c974a3055fa:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0xb63306dbfe950dd9754d5edcf8f48c6ff9bdd32eeeff4c644cb90c974a3055fa",
+      "kind": "funded",
+      "weight": 3.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0xb63306dbfe950dd9754d5edcf8f48c6ff9bdd32eeeff4c644cb90c974a3055fa/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0xb6f1781ada377924f11500e81735dd60170984c7976a1267027b3bd67fca93f1:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0xb6f1781ada377924f11500e81735dd60170984c7976a1267027b3bd67fca93f1",
+      "kind": "funded",
+      "weight": 1.5,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0xb6f1781ada377924f11500e81735dd60170984c7976a1267027b3bd67fca93f1/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0xb98dbe42c7fee10c45eee0624cfe0ee852e4d7757eacf016d07bcb39b48e5d84:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0xb98dbe42c7fee10c45eee0624cfe0ee852e4d7757eacf016d07bcb39b48e5d84",
+      "kind": "funded",
+      "weight": 1.38,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0xb98dbe42c7fee10c45eee0624cfe0ee852e4d7757eacf016d07bcb39b48e5d84/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0xbafd024d57b8750da24ba3d43dc90a5b35aceacf5077cfb8a7e1b2e8e1f97894:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0xbafd024d57b8750da24ba3d43dc90a5b35aceacf5077cfb8a7e1b2e8e1f97894",
+      "kind": "funded",
+      "weight": 0.015,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0xbafd024d57b8750da24ba3d43dc90a5b35aceacf5077cfb8a7e1b2e8e1f97894/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0xbb73acb16a3b968a7cde352cf046b7d015b0dde0bce3a6d16355d28cf9d519e8:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0xbb73acb16a3b968a7cde352cf046b7d015b0dde0bce3a6d16355d28cf9d519e8",
+      "kind": "funded",
+      "weight": 3.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0xbb73acb16a3b968a7cde352cf046b7d015b0dde0bce3a6d16355d28cf9d519e8/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0xbefdbdf326b35137ef79bb73d67f623fb748e557a78d3c1288f2179620a6d15c:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0xbefdbdf326b35137ef79bb73d67f623fb748e557a78d3c1288f2179620a6d15c",
+      "kind": "funded",
+      "weight": 3.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0xbefdbdf326b35137ef79bb73d67f623fb748e557a78d3c1288f2179620a6d15c/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0xc0d8af294ff7c51e20145320a8b878ca9ed871599f210ac1616fc6c3d4da263b:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0xc0d8af294ff7c51e20145320a8b878ca9ed871599f210ac1616fc6c3d4da263b",
+      "kind": "funded",
+      "weight": 0.69,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0xc0d8af294ff7c51e20145320a8b878ca9ed871599f210ac1616fc6c3d4da263b/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0xc5e3864603d851e7a16323ae30667f57e8f27d2e944a0af40f899cad6b6a46f4:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0xc5e3864603d851e7a16323ae30667f57e8f27d2e944a0af40f899cad6b6a46f4",
+      "kind": "funded",
+      "weight": 0.69,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0xc5e3864603d851e7a16323ae30667f57e8f27d2e944a0af40f899cad6b6a46f4/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0xd44c38a59adc8b086ec31e9c8759b2623dbea06421bbfabd65c19d72a2559289:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0xd44c38a59adc8b086ec31e9c8759b2623dbea06421bbfabd65c19d72a2559289",
+      "kind": "funded",
+      "weight": 6.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0xd44c38a59adc8b086ec31e9c8759b2623dbea06421bbfabd65c19d72a2559289/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0xd79cf66e97cce5ae64f72d01a218451f8fcadfcd7f66d8a118c37849b3b60275:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0xd79cf66e97cce5ae64f72d01a218451f8fcadfcd7f66d8a118c37849b3b60275",
+      "kind": "funded",
+      "weight": 3.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0xd79cf66e97cce5ae64f72d01a218451f8fcadfcd7f66d8a118c37849b3b60275/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0xdc3be19c4d846e9af7bcc625582f355ba4f6ea6db4559251b8ba688e8dbbbe5a:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0xdc3be19c4d846e9af7bcc625582f355ba4f6ea6db4559251b8ba688e8dbbbe5a",
+      "kind": "funded",
+      "weight": 3.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0xdc3be19c4d846e9af7bcc625582f355ba4f6ea6db4559251b8ba688e8dbbbe5a/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0xde53e95d97d4c5660423d33a75630a9fb89c85c7773c172f3df9e39dd3546cf2:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0xde53e95d97d4c5660423d33a75630a9fb89c85c7773c172f3df9e39dd3546cf2",
+      "kind": "funded",
+      "weight": 3.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0xde53e95d97d4c5660423d33a75630a9fb89c85c7773c172f3df9e39dd3546cf2/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0xe2d423fe8eb703977b61da957cae6a434ed8c7ba38623f42834c667e0e9af620:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0xe2d423fe8eb703977b61da957cae6a434ed8c7ba38623f42834c667e0e9af620",
+      "kind": "funded",
+      "weight": 3.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0xe2d423fe8eb703977b61da957cae6a434ed8c7ba38623f42834c667e0e9af620/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0xe472fc837743ed478fe98ebef15378dbae2efe519f6af18f3a34118ee5dea367:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0xe472fc837743ed478fe98ebef15378dbae2efe519f6af18f3a34118ee5dea367",
+      "kind": "funded",
+      "weight": 7.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0xe472fc837743ed478fe98ebef15378dbae2efe519f6af18f3a34118ee5dea367/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0xe5f8417d633b7d2b6136be896b9d100b82056cfbdb7c39e67adb806c8c0d830f:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0xe5f8417d633b7d2b6136be896b9d100b82056cfbdb7c39e67adb806c8c0d830f",
+      "kind": "funded",
+      "weight": 1.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0xe5f8417d633b7d2b6136be896b9d100b82056cfbdb7c39e67adb806c8c0d830f/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0xe603eb28d7152ca1e13532dd070a1c7130d48fe03477e47861e9bc6a1b9e33a5:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0xe603eb28d7152ca1e13532dd070a1c7130d48fe03477e47861e9bc6a1b9e33a5",
+      "kind": "funded",
+      "weight": 1.5,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0xe603eb28d7152ca1e13532dd070a1c7130d48fe03477e47861e9bc6a1b9e33a5/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0xef1162965ed606d02c211bfab16f7ffdea8d25d22438140f05861bc765637052:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0xef1162965ed606d02c211bfab16f7ffdea8d25d22438140f05861bc765637052",
+      "kind": "funded",
+      "weight": 1.5,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0xef1162965ed606d02c211bfab16f7ffdea8d25d22438140f05861bc765637052/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0xf9d1ed89fff9a329cb4fb25771215836f3f2ce985a086115cfe4f34ea6ef0d5c:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0xf9d1ed89fff9a329cb4fb25771215836f3f2ce985a086115cfe4f34ea6ef0d5c",
+      "kind": "funded",
+      "weight": 1.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0xf9d1ed89fff9a329cb4fb25771215836f3f2ce985a086115cfe4f34ea6ef0d5c/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0xfc4598096ca508794797ed88e9115f52dc9ce63f2b0fb760ea2dea3eb1c5ba4b:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0xfc4598096ca508794797ed88e9115f52dc9ce63f2b0fb760ea2dea3eb1c5ba4b",
+      "kind": "funded",
+      "weight": 1.0,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0xfc4598096ca508794797ed88e9115f52dc9ce63f2b0fb760ea2dea3eb1c5ba4b/"
+    },
+    {
+      "edge_id": "funded:treasury:gnars:proposal:snapshot-0xff05ff3617e604c701ffde6c6e34d39016bd2126f61efe66499617ea3acfd603:ETH",
+      "source": "treasury:gnars",
+      "target": "proposal:snapshot-0xff05ff3617e604c701ffde6c6e34d39016bd2126f61efe66499617ea3acfd603",
+      "kind": "funded",
+      "weight": 0.3,
+      "count": 1,
+      "asset_symbol": "ETH",
+      "href": "/proposals/snapshot-0xff05ff3617e604c701ffde6c6e34d39016bd2126f61efe66499617ea3acfd603/"
     },
     {
       "edge_id": "managed:person:0x05e189e1bbaf77f1654f0983872fd938ae592edd:proposal:snapshot-0x9d63add3de1dd0868f7b4414b9de375e5fc58c3800270ee1a08c819c9b3393ad:all",

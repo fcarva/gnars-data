@@ -3,10 +3,10 @@
   "as_of": "2026-03-20T20:14:44.603849Z",
   "version": 1,
   "treasury_balance_usd": 44736.99,
-  "monthly_burn_usd": 12968.24,
+  "monthly_burn_usd": 14333.38,
   "runway_months": 3,
   "projected_zero_date": "2026-06",
-  "sankey_total_k": 259.4,
+  "sankey_total_k": 530.3,
   "treasury_events": [
     {
       "proposal_id": "gnars-base-117",
@@ -145,8 +145,77 @@
     }
   ],
   "monthly_by_category": {
+    "2022-04": {
+      "Governance": 345.12
+    },
+    "2022-06": {
+      "Events": 3616.8
+    },
+    "2022-07": {
+      "Athletes & Riders": 15138.09,
+      "Media": 6728.04
+    },
+    "2022-08": {
+      "Athletes & Riders": 9954.51
+    },
+    "2022-09": {
+      "Athletes & Riders": 17742.12,
+      "Events": 1761.32,
+      "Media": 66733.4,
+      "Operations": 5506.23
+    },
+    "2022-10": {
+      "Athletes & Riders": 13197.21
+    },
+    "2022-11": {
+      "Athletes & Riders": 7893.77,
+      "Events": 11509.33,
+      "Media": 3881.73
+    },
+    "2022-12": {
+      "Athletes & Riders": 12166.35,
+      "Dev": 884.03
+    },
+    "2023-01": {
+      "Athletes & Riders": 11711.14,
+      "Dev": 19.83,
+      "Governance": 10.7,
+      "Media": 4877.73,
+      "Public Goods": 10965.82
+    },
+    "2023-02": {
+      "Athletes & Riders": 712.33,
+      "Events": 12203.44,
+      "Media": 2260.38,
+      "Operations": 2788.99
+    },
+    "2023-03": {
+      "Athletes & Riders": 4689.69,
+      "Media": 2987.48,
+      "Operations": 1824.96
+    },
+    "2023-04": {
+      "Athletes & Riders": 6005.31,
+      "Media": 4797.59
+    },
+    "2023-05": {
+      "Athletes & Riders": 9430.21
+    },
+    "2023-06": {
+      "Events": 8253.4,
+      "Media": 1269.05
+    },
+    "2023-07": {
+      "Athletes & Riders": 3849.14
+    },
+    "2023-08": {
+      "Athletes & Riders": 3653.86
+    },
+    "2023-12": {
+      "Operations": 679.47
+    },
     "2024-03": {
-      "Athletes & Riders": 921.75,
+      "Athletes & Riders": 1843.5,
       "Governance": 36767.78
     },
     "2024-05": {
@@ -244,7 +313,7 @@
     "delegates_count": 992,
     "contributors_count": 1180,
     "athletes_count": 41,
-    "recipients_count": 51,
+    "recipients_count": 66,
     "proposers_count": 73,
     "unique_voters_count": 464,
     "avg_votes_per_proposal": 20.03,
@@ -256,15 +325,15 @@
     },
     "treasury_assets_count": 6,
     "treasury_total_value_usd": 44736.99098223059,
-    "outflows_eth": 21.27165954,
+    "outflows_eth": 190.24655954,
     "outflows_usdc": 170693.0,
     "outflows_gnars": 0,
-    "fungible_transfer_count": 65,
+    "fungible_transfer_count": 129,
     "nft_transfer_count": 20,
-    "routed_proposal_count": 55,
-    "routed_proposal_share_pct": 24.77,
+    "routed_proposal_count": 119,
+    "routed_proposal_share_pct": 53.6,
     "top10_recipient_concentration_usdc_pct": 65.8,
-    "top10_recipient_concentration_eth_pct": 94.94,
+    "top10_recipient_concentration_eth_pct": 92.1,
     "proposals_30d": 7,
     "successful_proposals_30d": 1,
     "payout_routes_30d": 1,
@@ -339,10 +408,66 @@
   "leaderboards": {
     "eth_received": [
       {
+        "display_name": "gnars.com",
+        "address": "0x73222225044ce0fc672ff9b6f9730d0a0421382c",
+        "slug": "gnars-com",
+        "value": 76.76,
+        "label": "ETH received"
+      },
+      {
+        "display_name": "davinoyesigye.eth",
+        "address": "0xdfb6ed808fadddad9154f5605e349fff96e3d939",
+        "slug": "davinoyesigye-eth",
+        "value": 34.7,
+        "label": "ETH received"
+      },
+      {
         "display_name": "gami.eth",
         "address": "0x387a161c6b25aa854100abaed39274e51aaffffd",
         "slug": "gami-eth",
-        "value": 10.35730283,
+        "value": 16.87920283,
+        "label": "ETH received"
+      },
+      {
+        "display_name": "brettdrawsstuff.eth",
+        "address": "0x9c87a1065994f156f0b7b87aaa8b3c5f7bd67e02",
+        "slug": "brettdrawsstuff-eth",
+        "value": 13.0,
+        "label": "ETH received"
+      },
+      {
+        "display_name": "0x41cb...be4a",
+        "address": "0x41cb654d1f47913acab158a8199191d160dabe4a",
+        "slug": "0x41cb-be4a",
+        "value": 12.5,
+        "label": "ETH received"
+      },
+      {
+        "display_name": "gondy.eth",
+        "address": "0x56b6dcddd5d96535c35b720c96e19939920544d8",
+        "slug": "gondy-eth",
+        "value": 6.88,
+        "label": "ETH received"
+      },
+      {
+        "display_name": "vote.gami.eth",
+        "address": "0x7c621d5954a4ac21a0fd741ab6f302398f29d644",
+        "slug": "vote-gami-eth",
+        "value": 5.0,
+        "label": "ETH received"
+      },
+      {
+        "display_name": "◧-◧¬.eth",
+        "address": "0x8d36bac540c57dbd009ea9d9d8cdf9443a83e3f6",
+        "slug": "eth-e3f6",
+        "value": 3.5,
+        "label": "ETH received"
+      },
+      {
+        "display_name": "0x4df4...87f2",
+        "address": "0x4df4058cdb72c4004ae27fc09243d387f52287f2",
+        "slug": "0x4df4-87f2",
+        "value": 3.0,
         "label": "ETH received"
       },
       {
@@ -350,62 +475,6 @@
         "address": "0xe8b290f49c2fb50ab018d89626e77c2321dc599d",
         "slug": "0xe8b2-599d",
         "value": 3.0,
-        "label": "ETH received"
-      },
-      {
-        "display_name": "0x2443...5c87",
-        "address": "0x244306053c673b93bc9885fdacfc352032725c87",
-        "slug": "0x2443-5c87",
-        "value": 1.0,
-        "label": "ETH received"
-      },
-      {
-        "display_name": "0xe5f6...8beb",
-        "address": "0xe5f6202ff7ddc5273c249073865bc6f4d5d68beb",
-        "slug": "0xe5f6-8beb",
-        "value": 1.0,
-        "label": "ETH received"
-      },
-      {
-        "display_name": "r4topunk",
-        "address": "0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d",
-        "slug": "r4topunk",
-        "value": 1.0,
-        "label": "ETH received"
-      },
-      {
-        "display_name": "rocketman21.eth",
-        "address": "0x289715ffbb2f4b482e2917d2f183feab564ec84f",
-        "slug": "rocketman21-eth",
-        "value": 1.0,
-        "label": "ETH received"
-      },
-      {
-        "display_name": "fuzzyface.eth",
-        "address": "0x33bbf6e27ce7b254e537bcb9f3b00cd1451563ea",
-        "slug": "fuzzyface-eth",
-        "value": 0.99,
-        "label": "ETH received"
-      },
-      {
-        "display_name": "0x5979...8db0",
-        "address": "0x597960438e28e3b529dcea95c267dc9cfc458db0",
-        "slug": "0x5979-8db0",
-        "value": 0.8,
-        "label": "ETH received"
-      },
-      {
-        "display_name": "fernandoferreira.eth",
-        "address": "0x49d31dcb59e115f5c9e505a58a323ade076f2176",
-        "slug": "fernandoferreira-eth",
-        "value": 0.619,
-        "label": "ETH received"
-      },
-      {
-        "display_name": "fattybuthappy.eth",
-        "address": "0xedc1a397589a0236c4810883b7d559288a5fe7e1",
-        "slug": "fattybuthappy-eth",
-        "value": 0.43,
         "label": "ETH received"
       }
     ],
@@ -794,7 +863,7 @@
         "amount": 1570.0,
         "recipient_display_name": "0x2581...f89f",
         "recipient_address": "0x25810d1a8b1affc444d5333bf0496f1202d6f89f",
-        "project_id": null,
+        "project_id": "gnars-base-117",
         "proposal_end_at": "2026-03-15T02:03:01.000Z"
       },
       {
@@ -804,7 +873,7 @@
         "amount": 2500.0,
         "recipient_display_name": "0x8d2a...b252",
         "recipient_address": "0x8d2a253a5885806aa14e583c80c8833a904fb252",
-        "project_id": null,
+        "project_id": "gnars-base-108",
         "proposal_end_at": "2025-11-29T13:13:53.000Z"
       },
       {
@@ -814,7 +883,7 @@
         "amount": 0.42,
         "recipient_display_name": "7capas.eth",
         "recipient_address": "0x9ad8d2a8ef4bf60a667dd43fcb178bdbd93ae1c8",
-        "project_id": null,
+        "project_id": "gnars-base-104",
         "proposal_end_at": "2025-11-09T18:49:01.000Z"
       },
       {
@@ -824,7 +893,7 @@
         "amount": 2600.0,
         "recipient_display_name": "fernandoferreira.eth",
         "recipient_address": "0x49d31dcb59e115f5c9e505a58a323ade076f2176",
-        "project_id": null,
+        "project_id": "gnars-base-101",
         "proposal_end_at": "2025-10-14T14:45:39.000Z"
       },
       {
@@ -834,7 +903,7 @@
         "amount": 0.619,
         "recipient_display_name": "fernandoferreira.eth",
         "recipient_address": "0x49d31dcb59e115f5c9e505a58a323ade076f2176",
-        "project_id": null,
+        "project_id": "gnars-base-101",
         "proposal_end_at": "2025-10-14T14:45:39.000Z"
       },
       {
@@ -844,7 +913,7 @@
         "amount": 1.0,
         "recipient_display_name": "r4topunk",
         "recipient_address": "0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d",
-        "project_id": null,
+        "project_id": "gnars-base-99",
         "proposal_end_at": "2025-10-03T12:50:33.000Z"
       },
       {
@@ -854,7 +923,7 @@
         "amount": 780.0,
         "recipient_display_name": "0xe5f6...8beb",
         "recipient_address": "0xe5f6202ff7ddc5273c249073865bc6f4d5d68beb",
-        "project_id": null,
+        "project_id": "gnars-base-97",
         "proposal_end_at": "2025-08-29T21:20:25.000Z"
       },
       {
@@ -864,7 +933,7 @@
         "amount": 1.0,
         "recipient_display_name": "0xe5f6...8beb",
         "recipient_address": "0xe5f6202ff7ddc5273c249073865bc6f4d5d68beb",
-        "project_id": null,
+        "project_id": "gnars-base-97",
         "proposal_end_at": "2025-08-29T21:20:25.000Z"
       },
       {
@@ -874,7 +943,7 @@
         "amount": 1200.0,
         "recipient_display_name": "0xd2d1...b968",
         "recipient_address": "0xd2d164aea2a354e46ee3cf207899f48e5432b968",
-        "project_id": null,
+        "project_id": "gnars-base-95",
         "proposal_end_at": "2025-08-02T00:37:01.000Z"
       },
       {
@@ -884,7 +953,7 @@
         "amount": 2.06232e+20,
         "recipient_display_name": "0x41cb...be4a",
         "recipient_address": "0x41cb654d1f47913acab158a8199191d160dabe4a",
-        "project_id": null,
+        "project_id": "gnars-base-91",
         "proposal_end_at": "2025-07-21T11:34:45.000Z"
       },
       {
@@ -894,7 +963,7 @@
         "amount": 360.0,
         "recipient_display_name": "0x2581...f89f",
         "recipient_address": "0x25810d1a8b1affc444d5333bf0496f1202d6f89f",
-        "project_id": null,
+        "project_id": "gnars-base-90",
         "proposal_end_at": "2025-07-12T02:42:39.000Z"
       },
       {
@@ -904,7 +973,7 @@
         "amount": 1700.0,
         "recipient_display_name": "0x43c3...7970",
         "recipient_address": "0x43c363f3821b4efe4f9d04df74c0e32db42a7970",
-        "project_id": null,
+        "project_id": "gnars-base-89",
         "proposal_end_at": "2025-06-29T17:44:05.000Z"
       }
     ],

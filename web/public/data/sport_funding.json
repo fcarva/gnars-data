@@ -4,44 +4,70 @@
   "version": 1,
   "rows": [
     {
-      "sport": "multi",
-      "pill": "MULTI",
-      "label": "Multi / Other",
-      "color": "#6F6E69",
-      "athletes": 7,
-      "proposals": 8,
-      "usdc": 38850.0,
-      "eth": 4.0,
-      "usd_equiv": 50272.74,
-      "top_recipient": "0xe1b9...9641",
-      "pct": 55
-    },
-    {
       "sport": "sk8",
       "pill": "SK8",
       "label": "Skateboarding",
       "color": "#66800B",
-      "athletes": 7,
-      "proposals": 7,
+      "athletes": 15,
+      "proposals": 22,
       "usdc": 31209.0,
-      "eth": 0.253,
-      "usd_equiv": 32130.75,
-      "top_recipient": "0x3f51...f7f2",
-      "pct": 35
+      "eth": 34.256,
+      "usd_equiv": 88361.68,
+      "top_recipient": "gnars.com",
+      "pct": 42
+    },
+    {
+      "sport": "multi",
+      "pill": "MULTI",
+      "label": "Multi / Other",
+      "color": "#6F6E69",
+      "athletes": 11,
+      "proposals": 16,
+      "usdc": 38850.0,
+      "eth": 24.0,
+      "usd_equiv": 80264.62,
+      "top_recipient": "0xe1b9...9641",
+      "pct": 39
     },
     {
       "sport": "surf",
       "pill": "SURF",
       "label": "Surfing",
       "color": "#205EA6",
-      "athletes": 3,
-      "proposals": 3,
+      "athletes": 10,
+      "proposals": 11,
       "usdc": 6262.0,
-      "eth": 0.0,
-      "usd_equiv": 8533.81,
+      "eth": 11.13,
+      "usd_equiv": 24416.38,
       "top_recipient": "0xbc94...fc12",
-      "pct": 9
+      "pct": 12
+    },
+    {
+      "sport": "snow",
+      "pill": "SNOW",
+      "label": "Snowboarding",
+      "color": "#24837B",
+      "athletes": 2,
+      "proposals": 3,
+      "usdc": 0.0,
+      "eth": 9.0,
+      "usd_equiv": 11086.86,
+      "top_recipient": "davinoyesigye.eth",
+      "pct": 5
+    },
+    {
+      "sport": "bmx",
+      "pill": "BMX",
+      "label": "BMX / Bike",
+      "color": "#AD8301",
+      "athletes": 1,
+      "proposals": 1,
+      "usdc": 0.0,
+      "eth": 3.0,
+      "usd_equiv": 3873.24,
+      "top_recipient": "gondy.eth",
+      "pct": 2
     }
   ],
-  "total_usd": 90937.3
+  "total_usd": 208002.78
 }

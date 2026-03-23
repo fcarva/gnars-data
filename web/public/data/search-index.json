@@ -1,6 +1,6 @@
 {
   "dataset": "search_index",
-  "as_of": "2026-03-23T05:43:29.822Z",
+  "as_of": "2026-03-23T23:08:15.232Z",
   "version": 1,
   "records": [
     {
@@ -190,16 +190,82 @@
       "summary": "community member 0xeed9...a282"
     },
     {
+      "title": "gnars.com",
+      "href": "/community/gnars-com/",
+      "kind": "Community",
+      "summary": "community member gnars.com"
+    },
+    {
+      "title": "davinoyesigye.eth",
+      "href": "/community/davinoyesigye-eth/",
+      "kind": "Community",
+      "summary": "community member davinoyesigye.eth"
+    },
+    {
+      "title": "brettdrawsstuff.eth",
+      "href": "/community/brettdrawsstuff-eth/",
+      "kind": "Community",
+      "summary": "community member brettdrawsstuff.eth"
+    },
+    {
+      "title": "0x41cb...be4a",
+      "href": "/community/0x41cb-be4a/",
+      "kind": "Community",
+      "summary": "community member 0x41cb...be4a"
+    },
+    {
+      "title": "gondy.eth",
+      "href": "/community/gondy-eth/",
+      "kind": "Community",
+      "summary": "community member gondy.eth"
+    },
+    {
+      "title": "vote.gami.eth",
+      "href": "/community/vote-gami-eth/",
+      "kind": "Community",
+      "summary": "community member vote.gami.eth"
+    },
+    {
+      "title": "◧-◧¬.eth",
+      "href": "/community/eth-e3f6/",
+      "kind": "Community",
+      "summary": "community member ◧ ◧¬.eth"
+    },
+    {
+      "title": "0x4df4...87f2",
+      "href": "/community/0x4df4-87f2/",
+      "kind": "Community",
+      "summary": "community member 0x4df4...87f2"
+    },
+    {
       "title": "r4topunk",
       "href": "/community/r4topunk/",
       "kind": "Community",
       "summary": "Builds Gnars web surfaces and operational data pipelines. r4topunk.eth"
     },
     {
+      "title": "monkzdao.eth",
+      "href": "/community/monkzdao-eth/",
+      "kind": "Community",
+      "summary": "community member monkzdao.eth"
+    },
+    {
+      "title": "marinioac.eth",
+      "href": "/community/marinioac-eth/",
+      "kind": "Community",
+      "summary": "community member marinioac.eth"
+    },
+    {
       "title": "rocketman21.eth",
       "href": "/community/rocketman21-eth/",
       "kind": "Community",
       "summary": "community member rocketman21.eth"
+    },
+    {
+      "title": "0xsatori.eth",
+      "href": "/community/0xsatori-eth/",
+      "kind": "Community",
+      "summary": "community member 0xsatori.eth"
     },
     {
       "title": "fuzzyface.eth",
@@ -214,16 +280,46 @@
       "summary": "community member 0x5979...8db0"
     },
     {
-      "title": "fattybuthappy.eth",
-      "href": "/community/fattybuthappy-eth/",
+      "title": "geffenz.eth",
+      "href": "/community/geffenz-eth/",
       "kind": "Community",
-      "summary": "community member fattybuthappy.eth"
+      "summary": "community member geffenz.eth"
     },
     {
       "title": "0xc269...67fd",
       "href": "/community/0xc269-67fd/",
       "kind": "Community",
       "summary": "community member 0xc269...67fd"
+    },
+    {
+      "title": "fattybuthappy.eth",
+      "href": "/community/fattybuthappy-eth/",
+      "kind": "Community",
+      "summary": "community member fattybuthappy.eth"
+    },
+    {
+      "title": "0x761b...6693",
+      "href": "/community/0x761b-6693/",
+      "kind": "Community",
+      "summary": "community member 0x761b...6693"
+    },
+    {
+      "title": "skatehive.eth",
+      "href": "/community/skatehive-eth/",
+      "kind": "Community",
+      "summary": "community member skatehive.eth"
+    },
+    {
+      "title": "charoncrypto.eth",
+      "href": "/community/charoncrypto-eth/",
+      "kind": "Community",
+      "summary": "community member charoncrypto.eth"
+    },
+    {
+      "title": "satori.wtf",
+      "href": "/community/satori-wtf/",
+      "kind": "Community",
+      "summary": "community member satori.wtf"
     },
     {
       "title": "bagelface.eth",
@@ -286,40 +382,16 @@
       "summary": "community member 0x9a67...91fd"
     },
     {
-      "title": "gondy.eth",
-      "href": "/community/gondy-eth/",
-      "kind": "Community",
-      "summary": "community member gondy.eth"
-    },
-    {
       "title": "vlad",
       "href": "/community/vlad/",
       "kind": "Community",
       "summary": "Maintains AI native systems, infra and governance tooling for Gnars operations. 0x8bf5...3c26"
     },
     {
-      "title": "satori.wtf",
-      "href": "/community/satori-wtf/",
-      "kind": "Community",
-      "summary": "community member satori.wtf"
-    },
-    {
       "title": "blue-onchain.eth",
       "href": "/community/blue-onchain-eth/",
       "kind": "Community",
       "summary": "community member blue onchain.eth"
-    },
-    {
-      "title": "geffenz.eth",
-      "href": "/community/geffenz-eth/",
-      "kind": "Community",
-      "summary": "community member geffenz.eth"
-    },
-    {
-      "title": "brettdrawsstuff.eth",
-      "href": "/community/brettdrawsstuff-eth/",
-      "kind": "Community",
-      "summary": "community member brettdrawsstuff.eth"
     },
     {
       "title": "gnarley-quinn.eth",
@@ -380,12 +452,6 @@
       "href": "/community/0xbfed-ea17/",
       "kind": "Community",
       "summary": "community member 0xbfed...ea17"
-    },
-    {
-      "title": "davinoyesigye.eth",
-      "href": "/community/davinoyesigye-eth/",
-      "kind": "Community",
-      "summary": "community member davinoyesigye.eth"
     },
     {
       "title": "gnartoshi.eth",
@@ -602,18 +668,6 @@
       "href": "/community/buidl-scottrepreneur-eth/",
       "kind": "Community",
       "summary": "community member buidl.scottrepreneur.eth"
-    },
-    {
-      "title": "charoncrypto.eth",
-      "href": "/community/charoncrypto-eth/",
-      "kind": "Community",
-      "summary": "community member charoncrypto.eth"
-    },
-    {
-      "title": "monkzdao.eth",
-      "href": "/community/monkzdao-eth/",
-      "kind": "Community",
-      "summary": "community member monkzdao.eth"
     },
     {
       "title": "0x8feb...42b9",
@@ -968,12 +1022,6 @@
       "href": "/community/timcox-eth/",
       "kind": "Community",
       "summary": "community member timcox.eth"
-    },
-    {
-      "title": "◧-◧¬.eth",
-      "href": "/community/eth-e3f6/",
-      "kind": "Community",
-      "summary": "community member ◧ ◧¬.eth"
     },
     {
       "title": "0x08048000.eth",
@@ -1348,12 +1396,6 @@
       "summary": "community member gino2022.eth"
     },
     {
-      "title": "gnars.com",
-      "href": "/community/gnars-com/",
-      "kind": "Community",
-      "summary": "community member gnars.com"
-    },
-    {
       "title": "iixii.eth",
       "href": "/community/iixii-eth/",
       "kind": "Community",
@@ -1370,12 +1412,6 @@
       "href": "/community/mabot-eth/",
       "kind": "Community",
       "summary": "community member mabot.eth"
-    },
-    {
-      "title": "marinioac.eth",
-      "href": "/community/marinioac-eth/",
-      "kind": "Community",
-      "summary": "community member marinioac.eth"
     },
     {
       "title": "mcoso.eth",
@@ -5764,12 +5800,6 @@
       "summary": "community member simuran.eth"
     },
     {
-      "title": "skatehive.eth",
-      "href": "/community/skatehive-eth/",
-      "kind": "Community",
-      "summary": "community member skatehive.eth"
-    },
-    {
       "title": "skipperlee.eth",
       "href": "/community/skipperlee-eth/",
       "kind": "Community",
@@ -6190,12 +6220,6 @@
       "summary": "community member 0x3dfd...da49"
     },
     {
-      "title": "0x41cb...be4a",
-      "href": "/community/0x41cb-be4a/",
-      "kind": "Community",
-      "summary": "community member 0x41cb...be4a"
-    },
-    {
       "title": "0x43cf...3276",
       "href": "/community/0x43cf-3276/",
       "kind": "Community",
@@ -6212,12 +6236,6 @@
       "href": "/community/0x4a0a-9eb3/",
       "kind": "Community",
       "summary": "community member 0x4a0a...9eb3"
-    },
-    {
-      "title": "0x4df4...87f2",
-      "href": "/community/0x4df4-87f2/",
-      "kind": "Community",
-      "summary": "community member 0x4df4...87f2"
     },
     {
       "title": "0x535f...088b",
@@ -6266,12 +6284,6 @@
       "href": "/community/0x6ad1-d08d/",
       "kind": "Community",
       "summary": "community member 0x6ad1...d08d"
-    },
-    {
-      "title": "0x761b...6693",
-      "href": "/community/0x761b-6693/",
-      "kind": "Community",
-      "summary": "community member 0x761b...6693"
     },
     {
       "title": "0x77c3...dbfd",
@@ -6482,12 +6494,6 @@
       "href": "/community/0xjer-eth/",
       "kind": "Community",
       "summary": "community member 0xjer.eth"
-    },
-    {
-      "title": "0xsatori.eth",
-      "href": "/community/0xsatori-eth/",
-      "kind": "Community",
-      "summary": "community member 0xsatori.eth"
     },
     {
       "title": "0xteej.eth",
@@ -7076,12 +7082,6 @@
       "href": "/community/viniciusbedum-eth/",
       "kind": "Community",
       "summary": "community member viniciusbedum.eth"
-    },
-    {
-      "title": "vote.gami.eth",
-      "href": "/community/vote-gami-eth/",
-      "kind": "Community",
-      "summary": "community member vote.gami.eth"
     },
     {
       "title": "wojci.eth",

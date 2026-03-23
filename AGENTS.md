@@ -293,7 +293,7 @@ for f in files:
 
 ---
 
-## 11. Sprint 7 e Sprint 8 — status
+## 11. Sprint 7-10 — status
 
 ### Sprint 7 — concluidos
 
@@ -309,17 +309,47 @@ for f in files:
 [x] AGENTS.md criado e commitado
 ```
 
-### Sprint 8 — pendentes
+### Sprint 8/9 — consolidado
 
 ```
-[ ] Commit pendente: scripts/derive_funding_analysis.py
-[ ] Queries Dune sem limit para historico completo
+[x] scripts/derive_funding_analysis.py integrado no pipeline
+[x] sync_snapshot.py no pipeline (refresh_all)
+[x] refresh_all.py com flags --incremental e --derive-only
+[x] Sankey completeness check em audit_gaps.py
+[x] Exploracao de precos Dune (scripts/explore_dune_prices.py + resultados)
+[ ] Queries Dune sem LIMIT para historico completo (validar IDs/SQL em data/sources.json)
+[ ] ETH historico por transacao no pipeline (hoje com fallback parcial)
 [ ] Reconciliacao com gap < $5k
-[ ] ETH historico por transacao no pipeline
-[ ] sync_snapshot.py (pipeline only, sem frontend)
 [ ] Sankey tooltip enriquecido (val_usdc + val_eth + top_recipients)
-[ ] refresh_all.py com flags --incremental e --derive-only
-[ ] Sankey completeness check em audit_gaps.py
+```
+
+### Sprint 10 — foco atual
+
+Baseline validado em 2026-03-23:
+- `audit_gaps.py`: drift Sankey = $35, cobertura = 100%, `unpriced_rows = 0`
+- `reconcile_treasury.py`: gap estrutural = $253,879, `adjusted_gap = 0` (opening balance inferido)
+- `spend_ledger`: tx_hash 57/65 (88% geral), tx_hash 55/56 (98% trackable USDC/ETH), project_id 65/65
+- `npm run build --prefix web`: OK
+
+```bash
+P0 - Confiabilidade financeira
+[x] Corrigir audit_gaps.py para usar usd_value_at_execution + fallback seguro
+[x] Corrigir reconcile_treasury.py para usar funding_in de dao_metrics + cobertura por proposal_tags
+[x] Fechar reconciliacao operacional com `adjusted_gap < $5k` usando opening balance inferido
+[ ] Fechar reconciliacao estrutural com `gap < $5k` via inflows historicos observados (sem ajuste inferido)
+
+P1 - Qualidade do ledger
+[ ] Preencher tx_hash em spend_ledger (meta >90% geral; atual 88%, trackable 98%)
+[x] Preencher project_id em spend_ledger (meta >90%)
+[x] Resolver 3 linhas unpriced com estrategia explicita (exclusao non-canonical com USD=0)
+
+P2 - Dune / historico
+[ ] Remover LIMIT das queries historicas e fazer backfill completo
+[ ] Garantir trilha de source/fx por linha no funding_analysis
+
+P3 - Produto
+[ ] Enriquecer tooltip do Sankey (val_usdc + val_eth + top_recipients)
+[ ] Gate de release: audit_gaps + reconcile_treasury + web build antes do push
 ```
 
 ---

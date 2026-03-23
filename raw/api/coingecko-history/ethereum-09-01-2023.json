@@ -1,0 +1,10 @@
+{
+  "market_data": {
+    "current_price": {
+      "usd": 1321.68
+    }
+  },
+  "_price_source": "coingecko-html-historical-page",
+  "_price_url": "https://www.coingecko.com/en/coins/ethereum/historical_data?start=2023-01-09&end=2023-01-09",
+  "_price_date": "2023-01-09"
+}

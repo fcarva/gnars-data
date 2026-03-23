@@ -230,6 +230,7 @@ def main() -> int:
             {
                 "funding_source_id": source.get("funding_source_id"),
                 "title": source.get("title"),
+                "phase": source.get("phase"),
                 "status": status,
                 "source_date": source_date,
                 "requested_amount": source.get("requested_amount"),
@@ -244,6 +245,7 @@ def main() -> int:
         {
             "funding_source_id": "onchain_auction",
             "title": "NFT Auction Revenue",
+            "phase": "Phase 3 - Zora Coin/Auctions",
             "status": "received" if (auction_total_usd or 0) > 0 else "missing",
             "source_date": None,
             "requested_amount": {

@@ -800,6 +800,228 @@
       ]
     },
     {
+      "address": "0x73222225044ce0fc672ff9b6f9730d0a0421382c",
+      "slug": "gnars-com",
+      "display_name": "gnars.com",
+      "identity_source": "ens-verified",
+      "identity_confidence": "high",
+      "repo_value": {
+        "display_name": "gnars.com",
+        "member_url": "https://www.gnars.com/members/0x73222225044ce0fc672ff9b6f9730d0a0421382c"
+      },
+      "site_value": {
+        "display_name": "gnars.com",
+        "member_url": "https://www.gnars.com/members/0x73222225044ce0fc672ff9b6f9730d0a0421382c"
+      },
+      "chain_value": {
+        "ens": "gnars.com",
+        "ens_verified_at": "2026-03-20T20:14:44.603849Z"
+      },
+      "resolved_value": {
+        "display_name": "gnars.com",
+        "identity_label": "gnars.com"
+      },
+      "reconciliation_status": "matched",
+      "evidence_urls": [
+        "https://www.gnars.com/members/0x73222225044ce0fc672ff9b6f9730d0a0421382c",
+        "https://app.ens.domains/gnars.com"
+      ]
+    },
+    {
+      "address": "0xdfb6ed808fadddad9154f5605e349fff96e3d939",
+      "slug": "davinoyesigye-eth",
+      "display_name": "davinoyesigye.eth",
+      "identity_source": "ens-verified",
+      "identity_confidence": "high",
+      "repo_value": {
+        "display_name": "davinoyesigye.eth",
+        "member_url": "https://www.gnars.com/members/0xdfb6ed808fadddad9154f5605e349fff96e3d939"
+      },
+      "site_value": {
+        "display_name": "davinoyesigye.eth",
+        "member_url": "https://www.gnars.com/members/0xdfb6ed808fadddad9154f5605e349fff96e3d939"
+      },
+      "chain_value": {
+        "ens": "davinoyesigye.eth",
+        "ens_verified_at": "2026-03-20T20:14:44.603849Z"
+      },
+      "resolved_value": {
+        "display_name": "davinoyesigye.eth",
+        "identity_label": "davinoyesigye.eth"
+      },
+      "reconciliation_status": "matched",
+      "evidence_urls": [
+        "https://www.gnars.com/members/0xdfb6ed808fadddad9154f5605e349fff96e3d939",
+        "https://app.ens.domains/davinoyesigye.eth"
+      ]
+    },
+    {
+      "address": "0x9c87a1065994f156f0b7b87aaa8b3c5f7bd67e02",
+      "slug": "brettdrawsstuff-eth",
+      "display_name": "brettdrawsstuff.eth",
+      "identity_source": "ens-verified",
+      "identity_confidence": "high",
+      "repo_value": {
+        "display_name": "brettdrawsstuff.eth",
+        "member_url": "https://www.gnars.com/members/0x9c87a1065994f156f0b7b87aaa8b3c5f7bd67e02"
+      },
+      "site_value": {
+        "display_name": "brettdrawsstuff.eth",
+        "member_url": "https://www.gnars.com/members/0x9c87a1065994f156f0b7b87aaa8b3c5f7bd67e02"
+      },
+      "chain_value": {
+        "ens": "brettdrawsstuff.eth",
+        "ens_verified_at": "2026-03-20T20:14:44.603849Z"
+      },
+      "resolved_value": {
+        "display_name": "brettdrawsstuff.eth",
+        "identity_label": "brettdrawsstuff.eth"
+      },
+      "reconciliation_status": "matched",
+      "evidence_urls": [
+        "https://www.gnars.com/members/0x9c87a1065994f156f0b7b87aaa8b3c5f7bd67e02",
+        "https://app.ens.domains/brettdrawsstuff.eth"
+      ]
+    },
+    {
+      "address": "0x41cb654d1f47913acab158a8199191d160dabe4a",
+      "slug": "0x41cb-be4a",
+      "display_name": "0x41cb...be4a",
+      "identity_source": "gnars-member",
+      "identity_confidence": "medium",
+      "repo_value": {
+        "display_name": "0x41cb...be4a",
+        "member_url": "https://www.gnars.com/members/0x41cb654d1f47913acab158a8199191d160dabe4a"
+      },
+      "site_value": {
+        "display_name": "0x41cb...be4a",
+        "member_url": "https://www.gnars.com/members/0x41cb654d1f47913acab158a8199191d160dabe4a"
+      },
+      "chain_value": {
+        "ens": null,
+        "ens_verified_at": null
+      },
+      "resolved_value": {
+        "display_name": "0x41cb...be4a",
+        "identity_label": "0x41cb...be4a"
+      },
+      "reconciliation_status": "matched",
+      "evidence_urls": [
+        "https://www.gnars.com/members/0x41cb654d1f47913acab158a8199191d160dabe4a"
+      ]
+    },
+    {
+      "address": "0x56b6dcddd5d96535c35b720c96e19939920544d8",
+      "slug": "gondy-eth",
+      "display_name": "gondy.eth",
+      "identity_source": "ens-verified",
+      "identity_confidence": "high",
+      "repo_value": {
+        "display_name": "gondy.eth",
+        "member_url": "https://www.gnars.com/members/0x56b6dcddd5d96535c35b720c96e19939920544d8"
+      },
+      "site_value": {
+        "display_name": "gondy.eth",
+        "member_url": "https://www.gnars.com/members/0x56b6dcddd5d96535c35b720c96e19939920544d8"
+      },
+      "chain_value": {
+        "ens": "gondy.eth",
+        "ens_verified_at": "2026-03-20T20:14:44.603849Z"
+      },
+      "resolved_value": {
+        "display_name": "gondy.eth",
+        "identity_label": "gondy.eth"
+      },
+      "reconciliation_status": "matched",
+      "evidence_urls": [
+        "https://www.gnars.com/members/0x56b6dcddd5d96535c35b720c96e19939920544d8",
+        "https://app.ens.domains/gondy.eth"
+      ]
+    },
+    {
+      "address": "0x7c621d5954a4ac21a0fd741ab6f302398f29d644",
+      "slug": "vote-gami-eth",
+      "display_name": "vote.gami.eth",
+      "identity_source": "ens-verified",
+      "identity_confidence": "high",
+      "repo_value": {
+        "display_name": "vote.gami.eth",
+        "member_url": "https://www.gnars.com/members/0x7c621d5954a4ac21a0fd741ab6f302398f29d644"
+      },
+      "site_value": {
+        "display_name": "vote.gami.eth",
+        "member_url": "https://www.gnars.com/members/0x7c621d5954a4ac21a0fd741ab6f302398f29d644"
+      },
+      "chain_value": {
+        "ens": "vote.gami.eth",
+        "ens_verified_at": "2026-03-20T20:14:44.603849Z"
+      },
+      "resolved_value": {
+        "display_name": "vote.gami.eth",
+        "identity_label": "vote.gami.eth"
+      },
+      "reconciliation_status": "matched",
+      "evidence_urls": [
+        "https://www.gnars.com/members/0x7c621d5954a4ac21a0fd741ab6f302398f29d644",
+        "https://app.ens.domains/vote.gami.eth"
+      ]
+    },
+    {
+      "address": "0x8d36bac540c57dbd009ea9d9d8cdf9443a83e3f6",
+      "slug": "eth-e3f6",
+      "display_name": "◧-◧¬.eth",
+      "identity_source": "ens-verified",
+      "identity_confidence": "high",
+      "repo_value": {
+        "display_name": "◧-◧¬.eth",
+        "member_url": "https://www.gnars.com/members/0x8d36bac540c57dbd009ea9d9d8cdf9443a83e3f6"
+      },
+      "site_value": {
+        "display_name": "◧-◧¬.eth",
+        "member_url": "https://www.gnars.com/members/0x8d36bac540c57dbd009ea9d9d8cdf9443a83e3f6"
+      },
+      "chain_value": {
+        "ens": "◧-◧¬.eth",
+        "ens_verified_at": "2026-03-20T20:14:44.603849Z"
+      },
+      "resolved_value": {
+        "display_name": "◧-◧¬.eth",
+        "identity_label": "◧-◧¬.eth"
+      },
+      "reconciliation_status": "matched",
+      "evidence_urls": [
+        "https://www.gnars.com/members/0x8d36bac540c57dbd009ea9d9d8cdf9443a83e3f6",
+        "https://app.ens.domains/◧-◧¬.eth"
+      ]
+    },
+    {
+      "address": "0x4df4058cdb72c4004ae27fc09243d387f52287f2",
+      "slug": "0x4df4-87f2",
+      "display_name": "0x4df4...87f2",
+      "identity_source": "gnars-member",
+      "identity_confidence": "medium",
+      "repo_value": {
+        "display_name": "0x4df4...87f2",
+        "member_url": "https://www.gnars.com/members/0x4df4058cdb72c4004ae27fc09243d387f52287f2"
+      },
+      "site_value": {
+        "display_name": "0x4df4...87f2",
+        "member_url": "https://www.gnars.com/members/0x4df4058cdb72c4004ae27fc09243d387f52287f2"
+      },
+      "chain_value": {
+        "ens": null,
+        "ens_verified_at": null
+      },
+      "resolved_value": {
+        "display_name": "0x4df4...87f2",
+        "identity_label": "0x4df4...87f2"
+      },
+      "reconciliation_status": "matched",
+      "evidence_urls": [
+        "https://www.gnars.com/members/0x4df4058cdb72c4004ae27fc09243d387f52287f2"
+      ]
+    },
+    {
       "address": "0x39a7b6fa1597bb6657fe84e64e3b836c37d6f75d",
       "slug": "r4topunk",
       "display_name": "r4topunk",
@@ -828,6 +1050,62 @@
       ]
     },
     {
+      "address": "0x9a91cb99b52b2e90e2c23936be987ef861dbb62d",
+      "slug": "monkzdao-eth",
+      "display_name": "monkzdao.eth",
+      "identity_source": "ens-verified",
+      "identity_confidence": "high",
+      "repo_value": {
+        "display_name": "monkzdao.eth",
+        "member_url": "https://www.gnars.com/members/0x9a91cb99b52b2e90e2c23936be987ef861dbb62d"
+      },
+      "site_value": {
+        "display_name": "monkzdao.eth",
+        "member_url": "https://www.gnars.com/members/0x9a91cb99b52b2e90e2c23936be987ef861dbb62d"
+      },
+      "chain_value": {
+        "ens": "monkzdao.eth",
+        "ens_verified_at": "2026-03-20T20:14:44.603849Z"
+      },
+      "resolved_value": {
+        "display_name": "monkzdao.eth",
+        "identity_label": "monkzdao.eth"
+      },
+      "reconciliation_status": "matched",
+      "evidence_urls": [
+        "https://www.gnars.com/members/0x9a91cb99b52b2e90e2c23936be987ef861dbb62d",
+        "https://app.ens.domains/monkzdao.eth"
+      ]
+    },
+    {
+      "address": "0x4b5f934da25c33f130efc5df47c91af1375baa30",
+      "slug": "marinioac-eth",
+      "display_name": "marinioac.eth",
+      "identity_source": "ens-verified",
+      "identity_confidence": "high",
+      "repo_value": {
+        "display_name": "marinioac.eth",
+        "member_url": "https://www.gnars.com/members/0x4b5f934da25c33f130efc5df47c91af1375baa30"
+      },
+      "site_value": {
+        "display_name": "marinioac.eth",
+        "member_url": "https://www.gnars.com/members/0x4b5f934da25c33f130efc5df47c91af1375baa30"
+      },
+      "chain_value": {
+        "ens": "marinioac.eth",
+        "ens_verified_at": "2026-03-20T20:14:44.603849Z"
+      },
+      "resolved_value": {
+        "display_name": "marinioac.eth",
+        "identity_label": "marinioac.eth"
+      },
+      "reconciliation_status": "matched",
+      "evidence_urls": [
+        "https://www.gnars.com/members/0x4b5f934da25c33f130efc5df47c91af1375baa30",
+        "https://app.ens.domains/marinioac.eth"
+      ]
+    },
+    {
       "address": "0x289715ffbb2f4b482e2917d2f183feab564ec84f",
       "slug": "rocketman21-eth",
       "display_name": "rocketman21.eth",
@@ -853,6 +1131,34 @@
       "evidence_urls": [
         "https://www.gnars.com/members/0x289715ffbb2f4b482e2917d2f183feab564ec84f",
         "https://app.ens.domains/rocketman21.eth"
+      ]
+    },
+    {
+      "address": "0x05e189e1bbaf77f1654f0983872fd938ae592edd",
+      "slug": "0xsatori-eth",
+      "display_name": "0xsatori.eth",
+      "identity_source": "ens-verified",
+      "identity_confidence": "high",
+      "repo_value": {
+        "display_name": "0xsatori.eth",
+        "member_url": "https://www.gnars.com/members/0x05e189e1bbaf77f1654f0983872fd938ae592edd"
+      },
+      "site_value": {
+        "display_name": "0xsatori.eth",
+        "member_url": "https://www.gnars.com/members/0x05e189e1bbaf77f1654f0983872fd938ae592edd"
+      },
+      "chain_value": {
+        "ens": "0xsatori.eth",
+        "ens_verified_at": "2026-03-20T20:14:44.603849Z"
+      },
+      "resolved_value": {
+        "display_name": "0xsatori.eth",
+        "identity_label": "0xsatori.eth"
+      },
+      "reconciliation_status": "matched",
+      "evidence_urls": [
+        "https://www.gnars.com/members/0x05e189e1bbaf77f1654f0983872fd938ae592edd",
+        "https://app.ens.domains/0xsatori.eth"
       ]
     },
     {
@@ -911,6 +1217,61 @@
       ]
     },
     {
+      "address": "0x069da1bad547d67abf26c42358d3a6a8a78deca0",
+      "slug": "geffenz-eth",
+      "display_name": "geffenz.eth",
+      "identity_source": "ens-verified",
+      "identity_confidence": "high",
+      "repo_value": {
+        "display_name": "geffenz.eth",
+        "member_url": "https://www.gnars.com/members/0x069da1bad547d67abf26c42358d3a6a8a78deca0"
+      },
+      "site_value": {
+        "display_name": "geffenz.eth",
+        "member_url": "https://www.gnars.com/members/0x069da1bad547d67abf26c42358d3a6a8a78deca0"
+      },
+      "chain_value": {
+        "ens": "geffenz.eth",
+        "ens_verified_at": "2026-03-20T20:14:44.603849Z"
+      },
+      "resolved_value": {
+        "display_name": "geffenz.eth",
+        "identity_label": "geffenz.eth"
+      },
+      "reconciliation_status": "matched",
+      "evidence_urls": [
+        "https://www.gnars.com/members/0x069da1bad547d67abf26c42358d3a6a8a78deca0",
+        "https://app.ens.domains/geffenz.eth"
+      ]
+    },
+    {
+      "address": "0xc2691f9994af90711d67286be558f4fa631667fd",
+      "slug": "0xc269-67fd",
+      "display_name": "0xc269...67fd",
+      "identity_source": "gnars-member",
+      "identity_confidence": "medium",
+      "repo_value": {
+        "display_name": "0xc269...67fd",
+        "member_url": "https://www.gnars.com/members/0xc2691f9994af90711d67286be558f4fa631667fd"
+      },
+      "site_value": {
+        "display_name": "0xc269...67fd",
+        "member_url": "https://www.gnars.com/members/0xc2691f9994af90711d67286be558f4fa631667fd"
+      },
+      "chain_value": {
+        "ens": null,
+        "ens_verified_at": null
+      },
+      "resolved_value": {
+        "display_name": "0xc269...67fd",
+        "identity_label": "0xc269...67fd"
+      },
+      "reconciliation_status": "matched",
+      "evidence_urls": [
+        "https://www.gnars.com/members/0xc2691f9994af90711d67286be558f4fa631667fd"
+      ]
+    },
+    {
       "address": "0xedc1a397589a0236c4810883b7d559288a5fe7e1",
       "slug": "fattybuthappy-eth",
       "display_name": "fattybuthappy.eth",
@@ -939,30 +1300,114 @@
       ]
     },
     {
-      "address": "0xc2691f9994af90711d67286be558f4fa631667fd",
-      "slug": "0xc269-67fd",
-      "display_name": "0xc269...67fd",
+      "address": "0x761b4763a572010f96ed7c22011d0c95e2b36693",
+      "slug": "0x761b-6693",
+      "display_name": "0x761b...6693",
       "identity_source": "gnars-member",
       "identity_confidence": "medium",
       "repo_value": {
-        "display_name": "0xc269...67fd",
-        "member_url": "https://www.gnars.com/members/0xc2691f9994af90711d67286be558f4fa631667fd"
+        "display_name": "0x761b...6693",
+        "member_url": "https://www.gnars.com/members/0x761b4763a572010f96ed7c22011d0c95e2b36693"
       },
       "site_value": {
-        "display_name": "0xc269...67fd",
-        "member_url": "https://www.gnars.com/members/0xc2691f9994af90711d67286be558f4fa631667fd"
+        "display_name": "0x761b...6693",
+        "member_url": "https://www.gnars.com/members/0x761b4763a572010f96ed7c22011d0c95e2b36693"
       },
       "chain_value": {
         "ens": null,
         "ens_verified_at": null
       },
       "resolved_value": {
-        "display_name": "0xc269...67fd",
-        "identity_label": "0xc269...67fd"
+        "display_name": "0x761b...6693",
+        "identity_label": "0x761b...6693"
       },
       "reconciliation_status": "matched",
       "evidence_urls": [
-        "https://www.gnars.com/members/0xc2691f9994af90711d67286be558f4fa631667fd"
+        "https://www.gnars.com/members/0x761b4763a572010f96ed7c22011d0c95e2b36693"
+      ]
+    },
+    {
+      "address": "0xb4964e1eca55db36a94e8aeffbfbab48529a2f6c",
+      "slug": "skatehive-eth",
+      "display_name": "skatehive.eth",
+      "identity_source": "ens-verified",
+      "identity_confidence": "high",
+      "repo_value": {
+        "display_name": "skatehive.eth",
+        "member_url": "https://www.gnars.com/members/0xb4964e1eca55db36a94e8aeffbfbab48529a2f6c"
+      },
+      "site_value": {
+        "display_name": "skatehive.eth",
+        "member_url": "https://www.gnars.com/members/0xb4964e1eca55db36a94e8aeffbfbab48529a2f6c"
+      },
+      "chain_value": {
+        "ens": "skatehive.eth",
+        "ens_verified_at": "2026-03-20T20:14:44.603849Z"
+      },
+      "resolved_value": {
+        "display_name": "skatehive.eth",
+        "identity_label": "skatehive.eth"
+      },
+      "reconciliation_status": "matched",
+      "evidence_urls": [
+        "https://www.gnars.com/members/0xb4964e1eca55db36a94e8aeffbfbab48529a2f6c",
+        "https://app.ens.domains/skatehive.eth"
+      ]
+    },
+    {
+      "address": "0xc23274347e8aa82d363140d3cefb71ff588effed",
+      "slug": "charoncrypto-eth",
+      "display_name": "charoncrypto.eth",
+      "identity_source": "ens-verified",
+      "identity_confidence": "high",
+      "repo_value": {
+        "display_name": "charoncrypto.eth",
+        "member_url": "https://www.gnars.com/members/0xc23274347e8aa82d363140d3cefb71ff588effed"
+      },
+      "site_value": {
+        "display_name": "charoncrypto.eth",
+        "member_url": "https://www.gnars.com/members/0xc23274347e8aa82d363140d3cefb71ff588effed"
+      },
+      "chain_value": {
+        "ens": "charoncrypto.eth",
+        "ens_verified_at": "2026-03-20T20:14:44.603849Z"
+      },
+      "resolved_value": {
+        "display_name": "charoncrypto.eth",
+        "identity_label": "charoncrypto.eth"
+      },
+      "reconciliation_status": "matched",
+      "evidence_urls": [
+        "https://www.gnars.com/members/0xc23274347e8aa82d363140d3cefb71ff588effed",
+        "https://app.ens.domains/charoncrypto.eth"
+      ]
+    },
+    {
+      "address": "0xdcf37d8aa17142f053aaa7dc56025ab00d897a19",
+      "slug": "satori-wtf",
+      "display_name": "satori.wtf",
+      "identity_source": "ens-verified",
+      "identity_confidence": "high",
+      "repo_value": {
+        "display_name": "satori.wtf",
+        "member_url": "https://www.gnars.com/members/0xdcf37d8aa17142f053aaa7dc56025ab00d897a19"
+      },
+      "site_value": {
+        "display_name": "satori.wtf",
+        "member_url": "https://www.gnars.com/members/0xdcf37d8aa17142f053aaa7dc56025ab00d897a19"
+      },
+      "chain_value": {
+        "ens": "satori.wtf",
+        "ens_verified_at": "2026-03-20T20:14:44.603849Z"
+      },
+      "resolved_value": {
+        "display_name": "satori.wtf",
+        "identity_label": "satori.wtf"
+      },
+      "reconciliation_status": "matched",
+      "evidence_urls": [
+        "https://www.gnars.com/members/0xdcf37d8aa17142f053aaa7dc56025ab00d897a19",
+        "https://app.ens.domains/satori.wtf"
       ]
     },
     {
@@ -1239,34 +1684,6 @@
       ]
     },
     {
-      "address": "0x56b6dcddd5d96535c35b720c96e19939920544d8",
-      "slug": "gondy-eth",
-      "display_name": "gondy.eth",
-      "identity_source": "ens-verified",
-      "identity_confidence": "high",
-      "repo_value": {
-        "display_name": "gondy.eth",
-        "member_url": "https://www.gnars.com/members/0x56b6dcddd5d96535c35b720c96e19939920544d8"
-      },
-      "site_value": {
-        "display_name": "gondy.eth",
-        "member_url": "https://www.gnars.com/members/0x56b6dcddd5d96535c35b720c96e19939920544d8"
-      },
-      "chain_value": {
-        "ens": "gondy.eth",
-        "ens_verified_at": "2026-03-20T20:14:44.603849Z"
-      },
-      "resolved_value": {
-        "display_name": "gondy.eth",
-        "identity_label": "gondy.eth"
-      },
-      "reconciliation_status": "matched",
-      "evidence_urls": [
-        "https://www.gnars.com/members/0x56b6dcddd5d96535c35b720c96e19939920544d8",
-        "https://app.ens.domains/gondy.eth"
-      ]
-    },
-    {
       "address": "0x8bf5941d27176242745b716251943ae4892a3c26",
       "slug": "vlad",
       "display_name": "vlad",
@@ -1291,34 +1708,6 @@
       "reconciliation_status": "matched",
       "evidence_urls": [
         "https://www.gnars.com/members/0x8bf5941d27176242745b716251943ae4892a3c26"
-      ]
-    },
-    {
-      "address": "0xdcf37d8aa17142f053aaa7dc56025ab00d897a19",
-      "slug": "satori-wtf",
-      "display_name": "satori.wtf",
-      "identity_source": "ens-verified",
-      "identity_confidence": "high",
-      "repo_value": {
-        "display_name": "satori.wtf",
-        "member_url": "https://www.gnars.com/members/0xdcf37d8aa17142f053aaa7dc56025ab00d897a19"
-      },
-      "site_value": {
-        "display_name": "satori.wtf",
-        "member_url": "https://www.gnars.com/members/0xdcf37d8aa17142f053aaa7dc56025ab00d897a19"
-      },
-      "chain_value": {
-        "ens": "satori.wtf",
-        "ens_verified_at": "2026-03-20T20:14:44.603849Z"
-      },
-      "resolved_value": {
-        "display_name": "satori.wtf",
-        "identity_label": "satori.wtf"
-      },
-      "reconciliation_status": "matched",
-      "evidence_urls": [
-        "https://www.gnars.com/members/0xdcf37d8aa17142f053aaa7dc56025ab00d897a19",
-        "https://app.ens.domains/satori.wtf"
       ]
     },
     {
@@ -1347,62 +1736,6 @@
       "evidence_urls": [
         "https://www.gnars.com/members/0x978bdbecb54c54800d01055df5a8f6af600bface",
         "https://app.ens.domains/blue-onchain.eth"
-      ]
-    },
-    {
-      "address": "0x069da1bad547d67abf26c42358d3a6a8a78deca0",
-      "slug": "geffenz-eth",
-      "display_name": "geffenz.eth",
-      "identity_source": "ens-verified",
-      "identity_confidence": "high",
-      "repo_value": {
-        "display_name": "geffenz.eth",
-        "member_url": "https://www.gnars.com/members/0x069da1bad547d67abf26c42358d3a6a8a78deca0"
-      },
-      "site_value": {
-        "display_name": "geffenz.eth",
-        "member_url": "https://www.gnars.com/members/0x069da1bad547d67abf26c42358d3a6a8a78deca0"
-      },
-      "chain_value": {
-        "ens": "geffenz.eth",
-        "ens_verified_at": "2026-03-20T20:14:44.603849Z"
-      },
-      "resolved_value": {
-        "display_name": "geffenz.eth",
-        "identity_label": "geffenz.eth"
-      },
-      "reconciliation_status": "matched",
-      "evidence_urls": [
-        "https://www.gnars.com/members/0x069da1bad547d67abf26c42358d3a6a8a78deca0",
-        "https://app.ens.domains/geffenz.eth"
-      ]
-    },
-    {
-      "address": "0x9c87a1065994f156f0b7b87aaa8b3c5f7bd67e02",
-      "slug": "brettdrawsstuff-eth",
-      "display_name": "brettdrawsstuff.eth",
-      "identity_source": "ens-verified",
-      "identity_confidence": "high",
-      "repo_value": {
-        "display_name": "brettdrawsstuff.eth",
-        "member_url": "https://www.gnars.com/members/0x9c87a1065994f156f0b7b87aaa8b3c5f7bd67e02"
-      },
-      "site_value": {
-        "display_name": "brettdrawsstuff.eth",
-        "member_url": "https://www.gnars.com/members/0x9c87a1065994f156f0b7b87aaa8b3c5f7bd67e02"
-      },
-      "chain_value": {
-        "ens": "brettdrawsstuff.eth",
-        "ens_verified_at": "2026-03-20T20:14:44.603849Z"
-      },
-      "resolved_value": {
-        "display_name": "brettdrawsstuff.eth",
-        "identity_label": "brettdrawsstuff.eth"
-      },
-      "reconciliation_status": "matched",
-      "evidence_urls": [
-        "https://www.gnars.com/members/0x9c87a1065994f156f0b7b87aaa8b3c5f7bd67e02",
-        "https://app.ens.domains/brettdrawsstuff.eth"
       ]
     },
     {
@@ -1680,34 +2013,6 @@
       "reconciliation_status": "matched",
       "evidence_urls": [
         "https://www.gnars.com/members/0xbfed6e8e48f6bb944f241319a68b8b8d36c1ea17"
-      ]
-    },
-    {
-      "address": "0xdfb6ed808fadddad9154f5605e349fff96e3d939",
-      "slug": "davinoyesigye-eth",
-      "display_name": "davinoyesigye.eth",
-      "identity_source": "ens-verified",
-      "identity_confidence": "high",
-      "repo_value": {
-        "display_name": "davinoyesigye.eth",
-        "member_url": "https://www.gnars.com/members/0xdfb6ed808fadddad9154f5605e349fff96e3d939"
-      },
-      "site_value": {
-        "display_name": "davinoyesigye.eth",
-        "member_url": "https://www.gnars.com/members/0xdfb6ed808fadddad9154f5605e349fff96e3d939"
-      },
-      "chain_value": {
-        "ens": "davinoyesigye.eth",
-        "ens_verified_at": "2026-03-20T20:14:44.603849Z"
-      },
-      "resolved_value": {
-        "display_name": "davinoyesigye.eth",
-        "identity_label": "davinoyesigye.eth"
-      },
-      "reconciliation_status": "matched",
-      "evidence_urls": [
-        "https://www.gnars.com/members/0xdfb6ed808fadddad9154f5605e349fff96e3d939",
-        "https://app.ens.domains/davinoyesigye.eth"
       ]
     },
     {
@@ -2698,62 +3003,6 @@
       "evidence_urls": [
         "https://www.gnars.com/members/0x843a3c4ed93fb1f1335d5d174745551468106715",
         "https://app.ens.domains/buidl.scottrepreneur.eth"
-      ]
-    },
-    {
-      "address": "0xc23274347e8aa82d363140d3cefb71ff588effed",
-      "slug": "charoncrypto-eth",
-      "display_name": "charoncrypto.eth",
-      "identity_source": "ens-verified",
-      "identity_confidence": "high",
-      "repo_value": {
-        "display_name": "charoncrypto.eth",
-        "member_url": "https://www.gnars.com/members/0xc23274347e8aa82d363140d3cefb71ff588effed"
-      },
-      "site_value": {
-        "display_name": "charoncrypto.eth",
-        "member_url": "https://www.gnars.com/members/0xc23274347e8aa82d363140d3cefb71ff588effed"
-      },
-      "chain_value": {
-        "ens": "charoncrypto.eth",
-        "ens_verified_at": "2026-03-20T20:14:44.603849Z"
-      },
-      "resolved_value": {
-        "display_name": "charoncrypto.eth",
-        "identity_label": "charoncrypto.eth"
-      },
-      "reconciliation_status": "matched",
-      "evidence_urls": [
-        "https://www.gnars.com/members/0xc23274347e8aa82d363140d3cefb71ff588effed",
-        "https://app.ens.domains/charoncrypto.eth"
-      ]
-    },
-    {
-      "address": "0x9a91cb99b52b2e90e2c23936be987ef861dbb62d",
-      "slug": "monkzdao-eth",
-      "display_name": "monkzdao.eth",
-      "identity_source": "ens-verified",
-      "identity_confidence": "high",
-      "repo_value": {
-        "display_name": "monkzdao.eth",
-        "member_url": "https://www.gnars.com/members/0x9a91cb99b52b2e90e2c23936be987ef861dbb62d"
-      },
-      "site_value": {
-        "display_name": "monkzdao.eth",
-        "member_url": "https://www.gnars.com/members/0x9a91cb99b52b2e90e2c23936be987ef861dbb62d"
-      },
-      "chain_value": {
-        "ens": "monkzdao.eth",
-        "ens_verified_at": "2026-03-20T20:14:44.603849Z"
-      },
-      "resolved_value": {
-        "display_name": "monkzdao.eth",
-        "identity_label": "monkzdao.eth"
-      },
-      "reconciliation_status": "matched",
-      "evidence_urls": [
-        "https://www.gnars.com/members/0x9a91cb99b52b2e90e2c23936be987ef861dbb62d",
-        "https://app.ens.domains/monkzdao.eth"
       ]
     },
     {
@@ -4381,34 +4630,6 @@
       "evidence_urls": [
         "https://www.gnars.com/members/0xa8078cabce440b0feadd7264adf179d301fcef18",
         "https://app.ens.domains/timcox.eth"
-      ]
-    },
-    {
-      "address": "0x8d36bac540c57dbd009ea9d9d8cdf9443a83e3f6",
-      "slug": "eth-e3f6",
-      "display_name": "◧-◧¬.eth",
-      "identity_source": "ens-verified",
-      "identity_confidence": "high",
-      "repo_value": {
-        "display_name": "◧-◧¬.eth",
-        "member_url": "https://www.gnars.com/members/0x8d36bac540c57dbd009ea9d9d8cdf9443a83e3f6"
-      },
-      "site_value": {
-        "display_name": "◧-◧¬.eth",
-        "member_url": "https://www.gnars.com/members/0x8d36bac540c57dbd009ea9d9d8cdf9443a83e3f6"
-      },
-      "chain_value": {
-        "ens": "◧-◧¬.eth",
-        "ens_verified_at": "2026-03-20T20:14:44.603849Z"
-      },
-      "resolved_value": {
-        "display_name": "◧-◧¬.eth",
-        "identity_label": "◧-◧¬.eth"
-      },
-      "reconciliation_status": "matched",
-      "evidence_urls": [
-        "https://www.gnars.com/members/0x8d36bac540c57dbd009ea9d9d8cdf9443a83e3f6",
-        "https://app.ens.domains/◧-◧¬.eth"
       ]
     },
     {
@@ -6127,34 +6348,6 @@
       ]
     },
     {
-      "address": "0x73222225044ce0fc672ff9b6f9730d0a0421382c",
-      "slug": "gnars-com",
-      "display_name": "gnars.com",
-      "identity_source": "ens-verified",
-      "identity_confidence": "high",
-      "repo_value": {
-        "display_name": "gnars.com",
-        "member_url": "https://www.gnars.com/members/0x73222225044ce0fc672ff9b6f9730d0a0421382c"
-      },
-      "site_value": {
-        "display_name": "gnars.com",
-        "member_url": "https://www.gnars.com/members/0x73222225044ce0fc672ff9b6f9730d0a0421382c"
-      },
-      "chain_value": {
-        "ens": "gnars.com",
-        "ens_verified_at": "2026-03-20T20:14:44.603849Z"
-      },
-      "resolved_value": {
-        "display_name": "gnars.com",
-        "identity_label": "gnars.com"
-      },
-      "reconciliation_status": "matched",
-      "evidence_urls": [
-        "https://www.gnars.com/members/0x73222225044ce0fc672ff9b6f9730d0a0421382c",
-        "https://app.ens.domains/gnars.com"
-      ]
-    },
-    {
       "address": "0xbea33ec0b1bbf093f3eb985e6970f121dda38a20",
       "slug": "iixii-eth",
       "display_name": "iixii.eth",
@@ -6236,34 +6429,6 @@
       "evidence_urls": [
         "https://www.gnars.com/members/0xbfbe29231556b51d0f6745e70285224bc1cf1f72",
         "https://app.ens.domains/mabot.eth"
-      ]
-    },
-    {
-      "address": "0x4b5f934da25c33f130efc5df47c91af1375baa30",
-      "slug": "marinioac-eth",
-      "display_name": "marinioac.eth",
-      "identity_source": "ens-verified",
-      "identity_confidence": "high",
-      "repo_value": {
-        "display_name": "marinioac.eth",
-        "member_url": "https://www.gnars.com/members/0x4b5f934da25c33f130efc5df47c91af1375baa30"
-      },
-      "site_value": {
-        "display_name": "marinioac.eth",
-        "member_url": "https://www.gnars.com/members/0x4b5f934da25c33f130efc5df47c91af1375baa30"
-      },
-      "chain_value": {
-        "ens": "marinioac.eth",
-        "ens_verified_at": "2026-03-20T20:14:44.603849Z"
-      },
-      "resolved_value": {
-        "display_name": "marinioac.eth",
-        "identity_label": "marinioac.eth"
-      },
-      "reconciliation_status": "matched",
-      "evidence_urls": [
-        "https://www.gnars.com/members/0x4b5f934da25c33f130efc5df47c91af1375baa30",
-        "https://app.ens.domains/marinioac.eth"
       ]
     },
     {
@@ -26364,34 +26529,6 @@
       ]
     },
     {
-      "address": "0xb4964e1eca55db36a94e8aeffbfbab48529a2f6c",
-      "slug": "skatehive-eth",
-      "display_name": "skatehive.eth",
-      "identity_source": "ens-verified",
-      "identity_confidence": "high",
-      "repo_value": {
-        "display_name": "skatehive.eth",
-        "member_url": "https://www.gnars.com/members/0xb4964e1eca55db36a94e8aeffbfbab48529a2f6c"
-      },
-      "site_value": {
-        "display_name": "skatehive.eth",
-        "member_url": "https://www.gnars.com/members/0xb4964e1eca55db36a94e8aeffbfbab48529a2f6c"
-      },
-      "chain_value": {
-        "ens": "skatehive.eth",
-        "ens_verified_at": "2026-03-20T20:14:44.603849Z"
-      },
-      "resolved_value": {
-        "display_name": "skatehive.eth",
-        "identity_label": "skatehive.eth"
-      },
-      "reconciliation_status": "matched",
-      "evidence_urls": [
-        "https://www.gnars.com/members/0xb4964e1eca55db36a94e8aeffbfbab48529a2f6c",
-        "https://app.ens.domains/skatehive.eth"
-      ]
-    },
-    {
       "address": "0x1c989bc6c665e983ada649f6dace6f988018e5a0",
       "slug": "skipperlee-eth",
       "display_name": "skipperlee.eth",
@@ -28332,33 +28469,6 @@
       ]
     },
     {
-      "address": "0x41cb654d1f47913acab158a8199191d160dabe4a",
-      "slug": "0x41cb-be4a",
-      "display_name": "0x41cb...be4a",
-      "identity_source": "gnars-member",
-      "identity_confidence": "medium",
-      "repo_value": {
-        "display_name": "0x41cb...be4a",
-        "member_url": "https://www.gnars.com/members/0x41cb654d1f47913acab158a8199191d160dabe4a"
-      },
-      "site_value": {
-        "display_name": "0x41cb...be4a",
-        "member_url": "https://www.gnars.com/members/0x41cb654d1f47913acab158a8199191d160dabe4a"
-      },
-      "chain_value": {
-        "ens": null,
-        "ens_verified_at": null
-      },
-      "resolved_value": {
-        "display_name": "0x41cb...be4a",
-        "identity_label": "0x41cb...be4a"
-      },
-      "reconciliation_status": "matched",
-      "evidence_urls": [
-        "https://www.gnars.com/members/0x41cb654d1f47913acab158a8199191d160dabe4a"
-      ]
-    },
-    {
       "address": "0x43cf3250bba01d8bf5a8370b6e0681d909293276",
       "slug": "0x43cf-3276",
       "display_name": "0x43cf...3276",
@@ -28437,33 +28547,6 @@
       "reconciliation_status": "matched",
       "evidence_urls": [
         "https://www.gnars.com/members/0x4a0a41f0278c732562e2a09008dfb0e4b9189eb3"
-      ]
-    },
-    {
-      "address": "0x4df4058cdb72c4004ae27fc09243d387f52287f2",
-      "slug": "0x4df4-87f2",
-      "display_name": "0x4df4...87f2",
-      "identity_source": "gnars-member",
-      "identity_confidence": "medium",
-      "repo_value": {
-        "display_name": "0x4df4...87f2",
-        "member_url": "https://www.gnars.com/members/0x4df4058cdb72c4004ae27fc09243d387f52287f2"
-      },
-      "site_value": {
-        "display_name": "0x4df4...87f2",
-        "member_url": "https://www.gnars.com/members/0x4df4058cdb72c4004ae27fc09243d387f52287f2"
-      },
-      "chain_value": {
-        "ens": null,
-        "ens_verified_at": null
-      },
-      "resolved_value": {
-        "display_name": "0x4df4...87f2",
-        "identity_label": "0x4df4...87f2"
-      },
-      "reconciliation_status": "matched",
-      "evidence_urls": [
-        "https://www.gnars.com/members/0x4df4058cdb72c4004ae27fc09243d387f52287f2"
       ]
     },
     {
@@ -28680,33 +28763,6 @@
       "reconciliation_status": "matched",
       "evidence_urls": [
         "https://www.gnars.com/members/0x6ad1bb9de62b004aecdab504f5c6ec18f494d08d"
-      ]
-    },
-    {
-      "address": "0x761b4763a572010f96ed7c22011d0c95e2b36693",
-      "slug": "0x761b-6693",
-      "display_name": "0x761b...6693",
-      "identity_source": "gnars-member",
-      "identity_confidence": "medium",
-      "repo_value": {
-        "display_name": "0x761b...6693",
-        "member_url": "https://www.gnars.com/members/0x761b4763a572010f96ed7c22011d0c95e2b36693"
-      },
-      "site_value": {
-        "display_name": "0x761b...6693",
-        "member_url": "https://www.gnars.com/members/0x761b4763a572010f96ed7c22011d0c95e2b36693"
-      },
-      "chain_value": {
-        "ens": null,
-        "ens_verified_at": null
-      },
-      "resolved_value": {
-        "display_name": "0x761b...6693",
-        "identity_label": "0x761b...6693"
-      },
-      "reconciliation_status": "matched",
-      "evidence_urls": [
-        "https://www.gnars.com/members/0x761b4763a572010f96ed7c22011d0c95e2b36693"
       ]
     },
     {
@@ -29655,34 +29711,6 @@
       "evidence_urls": [
         "https://www.gnars.com/members/0x56200128c056772d7d68268fb32f0727463d8b8d",
         "https://app.ens.domains/0xjer.eth"
-      ]
-    },
-    {
-      "address": "0x05e189e1bbaf77f1654f0983872fd938ae592edd",
-      "slug": "0xsatori-eth",
-      "display_name": "0xsatori.eth",
-      "identity_source": "ens-verified",
-      "identity_confidence": "high",
-      "repo_value": {
-        "display_name": "0xsatori.eth",
-        "member_url": "https://www.gnars.com/members/0x05e189e1bbaf77f1654f0983872fd938ae592edd"
-      },
-      "site_value": {
-        "display_name": "0xsatori.eth",
-        "member_url": "https://www.gnars.com/members/0x05e189e1bbaf77f1654f0983872fd938ae592edd"
-      },
-      "chain_value": {
-        "ens": "0xsatori.eth",
-        "ens_verified_at": "2026-03-20T20:14:44.603849Z"
-      },
-      "resolved_value": {
-        "display_name": "0xsatori.eth",
-        "identity_label": "0xsatori.eth"
-      },
-      "reconciliation_status": "matched",
-      "evidence_urls": [
-        "https://www.gnars.com/members/0x05e189e1bbaf77f1654f0983872fd938ae592edd",
-        "https://app.ens.domains/0xsatori.eth"
       ]
     },
     {
@@ -32427,34 +32455,6 @@
       "evidence_urls": [
         "https://www.gnars.com/members/0x1e5b89c74fda05bf25ff586d3cfa4fcdafce4f94",
         "https://app.ens.domains/viniciusbedum.eth"
-      ]
-    },
-    {
-      "address": "0x7c621d5954a4ac21a0fd741ab6f302398f29d644",
-      "slug": "vote-gami-eth",
-      "display_name": "vote.gami.eth",
-      "identity_source": "ens-verified",
-      "identity_confidence": "high",
-      "repo_value": {
-        "display_name": "vote.gami.eth",
-        "member_url": "https://www.gnars.com/members/0x7c621d5954a4ac21a0fd741ab6f302398f29d644"
-      },
-      "site_value": {
-        "display_name": "vote.gami.eth",
-        "member_url": "https://www.gnars.com/members/0x7c621d5954a4ac21a0fd741ab6f302398f29d644"
-      },
-      "chain_value": {
-        "ens": "vote.gami.eth",
-        "ens_verified_at": "2026-03-20T20:14:44.603849Z"
-      },
-      "resolved_value": {
-        "display_name": "vote.gami.eth",
-        "identity_label": "vote.gami.eth"
-      },
-      "reconciliation_status": "matched",
-      "evidence_urls": [
-        "https://www.gnars.com/members/0x7c621d5954a4ac21a0fd741ab6f302398f29d644",
-        "https://app.ens.domains/vote.gami.eth"
       ]
     },
     {

@@ -2,9 +2,9 @@
 
 | Field | Missing |
 |---|---|
-| spend_no_project | 65 |
-| spend_no_category | 65 |
-| spend_no_sport | 65 |
+| spend_no_project | 0 |
+| spend_no_category | 0 |
+| spend_no_sport | 0 |
 | spend_no_recipient_name | 0 |
 | tags_no_semantic | 0 |
 | tags_no_sport | 0 |
@@ -19,9 +19,10 @@
 ```text
 SANKEY COMPLETENESS
 --------------------------------
-Total in spend_ledger:    $577,449,600,005,369,342,459,904
-Categorized (in Sankey):  $         0
-Sankey total (from JSON): $   259,400
-Coverage:                  0%
-Drift (ledger vs sankey):  $   259,400
+Total in spend_ledger:    $   530,335
+Categorized (in Sankey):  $   530,335
+Sankey total (from JSON): $   530,300
+Coverage:                  100%
+Drift (ledger vs sankey):  $        35
+Unpriced ledger rows:      0
 ```

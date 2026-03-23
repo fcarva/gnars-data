@@ -9,35 +9,17 @@
       "label": "Athletes & Riders",
       "category": "Athletes & Riders",
       "val_usdc": 76321,
-      "val_eth": 4.253,
-      "val_usd_total": 90937,
-      "val": 90.9,
-      "pct": 35,
+      "val_eth": 81.386,
+      "val_usd_total": 208003,
+      "val": 208.0,
+      "pct": 39,
       "col": "#3AA99F",
       "rec": "Riders & athletes",
-      "proposal_count": 0,
+      "proposal_count": 53,
       "top_recipients": [
-        "0xe1b9...9641",
-        "0xe8b2...599d",
-        "0x3f51...f7f2"
-      ]
-    },
-    {
-      "id": "Events",
-      "label": "Events",
-      "category": "Events",
-      "val_usdc": 32378,
-      "val_eth": 2.22,
-      "val_usd_total": 40258,
-      "val": 40.3,
-      "pct": 16,
-      "col": "#879A39",
-      "rec": "Event organizers",
-      "proposal_count": 0,
-      "top_recipients": [
-        "0xe5f6...8beb",
-        "luizhadad.eth",
-        "0x4f81...3f20"
+        "gnars.com",
+        "davinoyesigye.eth",
+        "0xe1b9...9641"
       ]
     },
     {
@@ -45,17 +27,35 @@
       "label": "Media",
       "category": "Media",
       "val_usdc": 20915,
-      "val_eth": 1.0,
-      "val_usd_total": 39426,
-      "val": 39.4,
-      "pct": 15,
+      "val_eth": 55.49,
+      "val_usd_total": 132962,
+      "val": 133.0,
+      "pct": 25,
       "col": "#8B7EC8",
       "rec": "Content creators",
-      "proposal_count": 0,
+      "proposal_count": 21,
       "top_recipients": [
+        "gnars.com",
         "0xe5f6...8beb",
-        "0xe636...decc",
-        "0x5769...ecab"
+        "davinoyesigye.eth"
+      ]
+    },
+    {
+      "id": "Events",
+      "label": "Events",
+      "category": "Events",
+      "val_usdc": 32378,
+      "val_eth": 25.6,
+      "val_usd_total": 77602,
+      "val": 77.6,
+      "pct": 15,
+      "col": "#879A39",
+      "rec": "Event organizers",
+      "proposal_count": 16,
+      "top_recipients": [
+        "brettdrawsstuff.eth",
+        "0xe5f6...8beb",
+        "vote.gami.eth"
       ]
     },
     {
@@ -63,16 +63,17 @@
       "label": "Governance",
       "category": "Governance",
       "val_usdc": 360,
-      "val_eth": 10.237,
-      "val_usd_total": 37128,
-      "val": 37.1,
-      "pct": 14,
+      "val_eth": 10.344,
+      "val_usd_total": 37484,
+      "val": 37.5,
+      "pct": 7,
       "col": "#403E3C",
       "rec": "DAO governance",
-      "proposal_count": 0,
+      "proposal_count": 4,
       "top_recipients": [
         "gami.eth",
-        "0x2581...f89f"
+        "0x2581...f89f",
+        "gnars.com"
       ]
     },
     {
@@ -80,13 +81,13 @@
       "label": "Operations",
       "category": "Operations",
       "val_usdc": 22469,
-      "val_eth": 1.4,
-      "val_usd_total": 26252,
-      "val": 26.3,
-      "pct": 10,
+      "val_eth": 7.9,
+      "val_usd_total": 37052,
+      "val": 37.1,
+      "pct": 7,
       "col": "#DA702C",
       "rec": "Core contributors",
-      "proposal_count": 0,
+      "proposal_count": 10,
       "top_recipients": [
         "0xc407...3c28",
         "0x459b...69de",
@@ -98,13 +99,13 @@
       "label": "Dev",
       "category": "Dev",
       "val_usdc": 15650,
-      "val_eth": 1.542,
-      "val_usd_total": 20297,
-      "val": 20.3,
-      "pct": 8,
+      "val_eth": 2.247,
+      "val_usd_total": 21201,
+      "val": 21.2,
+      "pct": 4,
       "col": "#4385BE",
       "rec": "Builders",
-      "proposal_count": 0,
+      "proposal_count": 13,
       "top_recipients": [
         "0x7351...53f8",
         "gami.eth",
@@ -116,17 +117,18 @@
       "label": "Public Goods",
       "category": "Public Goods",
       "val_usdc": 2600,
-      "val_eth": 0.619,
-      "val_usd_total": 5066,
-      "val": 5.1,
-      "pct": 2,
+      "val_eth": 7.279,
+      "val_usd_total": 16031,
+      "val": 16.0,
+      "pct": 3,
       "col": "#6F6E69",
       "rec": "Community",
-      "proposal_count": 0,
+      "proposal_count": 2,
       "top_recipients": [
+        "gnars.com",
         "fernandoferreira.eth"
       ]
     }
   ],
-  "total_k": 259.4
+  "total_k": 530.3
 }

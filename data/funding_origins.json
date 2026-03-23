@@ -45,13 +45,14 @@
         "governance",
         "treasury"
       ],
-      "notes": "First major external treasury source used to bootstrap Gnars as a Nouns-aligned sub-DAO."
+      "notes": "First major external treasury source used to bootstrap Gnars as a Nouns-aligned sub-DAO.",
+      "phase": "Phase 1 - Nouns/Ethereum"
     },
     {
       "funding_source_id": "nouns-growth-2023-revision-track",
       "title": "Bring a million shredders onchain",
       "source_kind": "nouns-governance-grant",
-      "status": "revision-track",
+      "status": "approved",
       "requested_amount": {
         "currency": "USDC",
         "amount": 300000.0
@@ -103,7 +104,8 @@
         "governance",
         "treasury"
       ],
-      "notes": "Treated as one funding source with two governance artifacts (original + revised)."
+      "notes": "Treated as one funding source with two governance artifacts (original + revised).",
+      "phase": "Phase 2 - Base/USDC"
     }
   ]
 }

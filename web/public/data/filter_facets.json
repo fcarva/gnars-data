@@ -17,14 +17,14 @@
           "count": 222
         },
         {
+          "value": "payout",
+          "label": "Payout",
+          "count": 129
+        },
+        {
           "value": "community_reference",
           "label": "Community Reference",
           "count": 96
-        },
-        {
-          "value": "payout",
-          "label": "Payout",
-          "count": 65
         },
         {
           "value": "delivery",
@@ -46,7 +46,7 @@
         {
           "value": "closed",
           "label": "Closed",
-          "count": 543
+          "count": 607
         },
         {
           "value": "defeated",
@@ -83,37 +83,37 @@
         {
           "value": "media",
           "label": "Media",
-          "count": 684
+          "count": 714
         },
         {
           "value": "events",
           "label": "Events",
-          "count": 283
+          "count": 297
         },
         {
           "value": "operations",
           "label": "Operations",
-          "count": 160
+          "count": 165
         },
         {
           "value": "travel",
           "label": "Travel",
-          "count": 118
+          "count": 122
         },
         {
           "value": "athlete-support",
           "label": "Athlete Support",
-          "count": 97
+          "count": 101
         },
         {
           "value": "governance",
           "label": "Governance",
-          "count": 88
+          "count": 91
         },
         {
           "value": "software",
           "label": "Software",
-          "count": 52
+          "count": 56
         },
         {
           "value": "other",
@@ -123,14 +123,14 @@
       ],
       "asset": [
         {
+          "value": "ETH",
+          "label": "ETH",
+          "count": 209
+        },
+        {
           "value": "USDC",
           "label": "USDC",
           "count": 97
-        },
-        {
-          "value": "ETH",
-          "label": "ETH",
-          "count": 64
         },
         {
           "value": "SENDIT",
@@ -284,7 +284,7 @@
         {
           "value": "recipient",
           "label": "Recipient",
-          "count": 51
+          "count": 66
         },
         {
           "value": "athlete",
@@ -334,14 +334,14 @@
     "treasury": {
       "asset": [
         {
+          "value": "ETH",
+          "label": "ETH",
+          "count": 86
+        },
+        {
           "value": "USDC",
           "label": "USDC",
           "count": 34
-        },
-        {
-          "value": "ETH",
-          "label": "ETH",
-          "count": 22
         },
         {
           "value": "SENDIT",
@@ -364,9 +364,19 @@
           "value": "executed",
           "label": "Executed",
           "count": 65
+        },
+        {
+          "value": "closed",
+          "label": "Closed",
+          "count": 64
         }
       ],
       "chain": [
+        {
+          "value": "snapshot",
+          "label": "Snapshot",
+          "count": 65
+        },
         {
           "value": "base",
           "label": "Base",
@@ -376,48 +386,43 @@
           "value": "ethereum",
           "label": "Ethereum",
           "count": 1
-        },
-        {
-          "value": "snapshot",
-          "label": "Snapshot",
-          "count": 1
         }
       ],
       "category": [
         {
           "value": "media",
           "label": "Media",
-          "count": 30
+          "count": 60
         },
         {
           "value": "events",
           "label": "Events",
-          "count": 12
+          "count": 26
         },
         {
           "value": "operations",
           "label": "Operations",
-          "count": 11
+          "count": 16
         },
         {
           "value": "travel",
           "label": "Travel",
-          "count": 5
+          "count": 9
         },
         {
           "value": "software",
           "label": "Software",
-          "count": 4
-        },
-        {
-          "value": "governance",
-          "label": "Governance",
-          "count": 2
+          "count": 8
         },
         {
           "value": "athlete-support",
           "label": "Athlete Support",
-          "count": 1
+          "count": 5
+        },
+        {
+          "value": "governance",
+          "label": "Governance",
+          "count": 5
         }
       ]
     },

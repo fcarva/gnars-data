@@ -14,7 +14,7 @@
         "payout_count": 1,
         "delivery_count": 4,
         "recipient_count": 1,
-        "project_count": 0,
+        "project_count": 1,
         "unique_voters_count": 37,
         "avg_votes_per_proposal": 24.0,
         "median_votes_per_proposal": 24.0,
@@ -40,7 +40,19 @@
           ]
         }
       ],
-      "top_projects": [],
+      "top_projects": [
+        {
+          "project_id": "gnars-base-117",
+          "project_name": "Sponsor Gnars Monik Santos in QS/WSL 2026",
+          "status": "unknown",
+          "totals_by_asset": [
+            {
+              "symbol": "USDC",
+              "amount": 1570.0
+            }
+          ]
+        }
+      ],
       "top_proposals": [
         {
           "archive_id": "gnars-base-117",
@@ -157,7 +169,7 @@
         "payout_count": 1,
         "delivery_count": 4,
         "recipient_count": 1,
-        "project_count": 0,
+        "project_count": 1,
         "unique_voters_count": 38,
         "avg_votes_per_proposal": 11.86,
         "median_votes_per_proposal": 7.0,
@@ -183,7 +195,19 @@
           ]
         }
       ],
-      "top_projects": [],
+      "top_projects": [
+        {
+          "project_id": "gnars-base-117",
+          "project_name": "Sponsor Gnars Monik Santos in QS/WSL 2026",
+          "status": "unknown",
+          "totals_by_asset": [
+            {
+              "symbol": "USDC",
+              "amount": 1570.0
+            }
+          ]
+        }
+      ],
       "top_proposals": [
         {
           "archive_id": "gnars-base-117",
@@ -329,7 +353,7 @@
         "payout_count": 1,
         "delivery_count": 4,
         "recipient_count": 1,
-        "project_count": 0,
+        "project_count": 1,
         "unique_voters_count": 52,
         "avg_votes_per_proposal": 13.27,
         "median_votes_per_proposal": 11.0,
@@ -355,7 +379,19 @@
           ]
         }
       ],
-      "top_projects": [],
+      "top_projects": [
+        {
+          "project_id": "gnars-base-117",
+          "project_name": "Sponsor Gnars Monik Santos in QS/WSL 2026",
+          "status": "unknown",
+          "totals_by_asset": [
+            {
+              "symbol": "USDC",
+              "amount": 1570.0
+            }
+          ]
+        }
+      ],
       "top_proposals": [
         {
           "archive_id": "gnars-base-117",
@@ -546,15 +582,15 @@
         "active_proposals_now": 2,
         "proposal_count": 222,
         "successful_proposal_count": 170,
-        "payout_count": 65,
+        "payout_count": 129,
         "delivery_count": 4,
-        "recipient_count": 47,
-        "project_count": 0,
+        "recipient_count": 62,
+        "project_count": 119,
         "unique_voters_count": 464,
         "avg_votes_per_proposal": 20.03,
         "median_votes_per_proposal": 21.0,
         "proposal_success_rate_pct": 76.58,
-        "payouts_per_proposal": 0.293,
+        "payouts_per_proposal": 0.581,
         "deliveries_per_proposal": 0.018,
         "payouts_by_asset": [
           {
@@ -575,7 +611,7 @@
           },
           {
             "symbol": "ETH",
-            "amount": 21.27165954
+            "amount": 190.24655954
           }
         ]
       },
@@ -591,6 +627,10 @@
             {
               "symbol": "SENDIT",
               "amount": 85879900.0
+            },
+            {
+              "symbol": "ETH",
+              "amount": 12.5
             }
           ]
         },
@@ -681,7 +721,108 @@
           ]
         }
       ],
-      "top_projects": [],
+      "top_projects": [
+        {
+          "project_id": "gnars-base-91",
+          "project_name": "IPFS Reimbursement and Advance for Shared IPFS Infrastructure",
+          "status": "unknown",
+          "totals_by_asset": [
+            {
+              "symbol": "TOKEN-4F6047",
+              "amount": 2.06232e+20
+            }
+          ]
+        },
+        {
+          "project_id": "gnars-base-36",
+          "project_name": "Maryhill Fall RVOD Freeride Sponsorship",
+          "status": "unknown",
+          "totals_by_asset": [
+            {
+              "symbol": "TOKEN-09E938",
+              "amount": 950000000.0
+            }
+          ]
+        },
+        {
+          "project_id": "gnars-base-35",
+          "project_name": "Salt Spring Slasher Sponsorship",
+          "status": "unknown",
+          "totals_by_asset": [
+            {
+              "symbol": "TOKEN-09E938",
+              "amount": 625000000.0
+            }
+          ]
+        },
+        {
+          "project_id": "gnars-base-61",
+          "project_name": "Bernardo Nassar renewal propososal V2 (Bodyboarder)",
+          "status": "unknown",
+          "totals_by_asset": [
+            {
+              "symbol": "SENDIT",
+              "amount": 119569120.28725314
+            },
+            {
+              "symbol": "USDC",
+              "amount": 2650.0
+            }
+          ]
+        },
+        {
+          "project_id": "gnars-base-57",
+          "project_name": "Create a Round in Rounds.wtf for sharing Gnarly Media created in 2024",
+          "status": "unknown",
+          "totals_by_asset": [
+            {
+              "symbol": "SENDIT",
+              "amount": 85879900.0
+            }
+          ]
+        },
+        {
+          "project_id": "gnars-base-12",
+          "project_name": "Fund the Community and Tech Pods with Sendit",
+          "status": "unknown",
+          "totals_by_asset": [
+            {
+              "symbol": "SENDIT",
+              "amount": 77777777.77
+            }
+          ]
+        },
+        {
+          "project_id": "gnars-base-63",
+          "project_name": "Dave Bachinsky » 1 Year Sponsorship Proposal ",
+          "status": "unknown",
+          "totals_by_asset": [
+            {
+              "symbol": "SENDIT",
+              "amount": 46500000.0
+            },
+            {
+              "symbol": "USDC",
+              "amount": 3200.0
+            },
+            {
+              "symbol": "ETH",
+              "amount": 1.0
+            }
+          ]
+        },
+        {
+          "project_id": "gnars-base-65",
+          "project_name": "Reimbursement Proposal for Benbodhi",
+          "status": "unknown",
+          "totals_by_asset": [
+            {
+              "symbol": "SENDIT",
+              "amount": 12881837.0
+            }
+          ]
+        }
+      ],
       "top_proposals": [
         {
           "archive_id": "gnars-base-91",
@@ -804,6 +945,10 @@
             {
               "symbol": "SENDIT",
               "amount": 85879900.0
+            },
+            {
+              "symbol": "ETH",
+              "amount": 12.5
             }
           ],
           "authored_count": 22,
@@ -1018,7 +1163,7 @@
       "window_id": "30d",
       "kind": "delivery",
       "title": "Workstreams are legible when treasury and proof sit together.",
-      "summary": "Current workstreams surfaces as a leading delivery node when treasury routes, proposals, and public updates are read as one chain of evidence."
+      "summary": "Sponsor Gnars Monik Santos in QS/WSL 2026 surfaces as a leading delivery node when treasury routes, proposals, and public updates are read as one chain of evidence."
     },
     {
       "note_id": "field-note-governance",
