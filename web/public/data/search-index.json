@@ -1,6 +1,6 @@
 {
   "dataset": "search_index",
-  "as_of": "2026-03-22T09:04:02.769Z",
+  "as_of": "2026-03-23T05:43:29.822Z",
   "version": 1,
   "records": [
     {
@@ -9800,6 +9800,18 @@
       "href": "/notes/#docs-readme-md",
       "kind": "Archive",
       "summary": "Documentation This directory holds the human readable context around the : architecture/ explains how the repository is organized governance/ defines proposal taxonomy and governance modeling operations/ defines sync,..."
+    },
+    {
+      "title": "Dune ETH-USD Prices — Quick Reference",
+      "href": "/notes/#docs-datasources-dune_prices_quick_ref-md",
+      "kind": "Archive",
+      "summary": "Dune ETH USD Prices — Quick Reference Exploration Complete ✓ Primary Table: prices.usd Field Type Description ──────────────────────────────────────────────────────────── blockchain varchar 'ethereum', 'base', etc. co..."
+    },
+    {
+      "title": "Dune Price Tables & ETH-USD Data Structure Guide",
+      "href": "/notes/#docs-datasources-dune_prices_schema_guide-md",
+      "kind": "Archive",
+      "summary": "Dune Price Tables & ETH USD Data Structure Guide Exploration Date: March 22, 2024 Data Coverage: 2022–Present Primary Table: prices.usd 1. Available Price Tables in Dune | Table | Type | Coverage | Best Use | | | | | ..."
     },
     {
       "title": "ETHSkills",

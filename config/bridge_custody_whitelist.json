@@ -1,0 +1,20 @@
+{
+  "description": "Addresses treated as bridge/custody/internal routing candidates for treasury flow noise filtering.",
+  "bridge_custody": [
+    {
+      "address": "0x387a161c6b25aa854100abaed39274e51aaffffd",
+      "label": "Bridge/Custody Router Candidate",
+      "notes": "Largest inflow counterparty observed in treasury full flows; treated as bridge/custody candidate."
+    },
+    {
+      "address": "0xaf75199b91aedbe2b99476899782c5bb507393e0",
+      "label": "Base Treasury Ops Hot Wallet",
+      "notes": "High-frequency routing address paired with many mirrored inflow/outflow transactions."
+    },
+    {
+      "address": "0x0000000000000068f116a894984e2db1123eb395",
+      "label": "Base System/Custody Sink",
+      "notes": "System-like counterparty recurrent in tiny mirrored transfers with treasury ops wallet."
+    }
+  ]
+}

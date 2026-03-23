@@ -1,0 +1,214 @@
+{
+  "generated_at": "2026-03-22T23:48:30.736207+00:00",
+  "inputs": {
+    "auction_revenue_usd": 50223.0,
+    "external_funding_usd": 525000.0,
+    "funding_total_usd": 575223.0,
+    "actual_balance_usd": 44737.0,
+    "expected_balance_funding_model_usd": 178969.0,
+    "gap_funding_model_usd": 134232.0,
+    "onchain_inflow_usd": 346977.49,
+    "onchain_outflow_usd": 396254.25,
+    "onchain_net_usd": -49276.76
+  },
+  "bucket_decomposition": {
+    "inflow_missing_usd": 228245.51,
+    "outflow_explained_onchain_usd": 396254.25,
+    "initial_balance_adjustment_usd": 94013.76,
+    "signed_gap_actual_minus_expected_usd": -134232.0,
+    "signed_gap_identity_rhs_usd": -134231.75,
+    "identity_holds": true
+  },
+  "interpretation": {
+    "summary": "Residual gap is decomposed into missing inflow vs reference funding and an initial-balance adjustment implied by onchain net flows.",
+    "notes": [
+      "inflow_missing_usd > 0 means reference funding exceeds tracked onchain inflows for treasury addresses.",
+      "initial_balance_adjustment_usd > 0 means current treasury balance is above the simple net-flow baseline.",
+      "outflow_explained_onchain_usd is fully traceable from transaction-level records."
+    ]
+  },
+  "top_inflows": [
+    {
+      "block_time": "2024-03-30 22:37:57.000 UTC",
+      "chain": "base",
+      "asset": "USDC",
+      "usd_value": 202461.0,
+      "counterparty": "0x387a161c6b25aa854100abaed39274e51aaffffd",
+      "tx_hash": "0x8becbb493fb0ed0633f47aba7b578557e718a1d26e6dd1cc982c5ba3a9b59856",
+      "tx_url": "https://basescan.org/tx/0x8becbb493fb0ed0633f47aba7b578557e718a1d26e6dd1cc982c5ba3a9b59856"
+    },
+    {
+      "block_time": "2023-06-27 09:23:35.000 UTC",
+      "chain": "ethereum",
+      "asset": "ETH",
+      "usd_value": 36365.53,
+      "counterparty": "0x0658f4ed17289144717713adffc2539ef7c2ef8e",
+      "tx_hash": "0x6c7fe18fd29ec1ca12b210de9d59cd568519ce0edf53147ac67f321d8657c640",
+      "tx_url": "https://etherscan.io/tx/0x6c7fe18fd29ec1ca12b210de9d59cd568519ce0edf53147ac67f321d8657c640"
+    },
+    {
+      "block_time": "2024-03-30 22:38:49.000 UTC",
+      "chain": "base",
+      "asset": "ETH",
+      "usd_value": 36053.69,
+      "counterparty": "0x387a161c6b25aa854100abaed39274e51aaffffd",
+      "tx_hash": "0xabb16df67c2cb7af40644f528523e40f367d345eac3945c3482731c51fd5c046",
+      "tx_url": "https://basescan.org/tx/0xabb16df67c2cb7af40644f528523e40f367d345eac3945c3482731c51fd5c046"
+    },
+    {
+      "block_time": "2026-01-14 23:19:59.000 UTC",
+      "chain": "base",
+      "asset": "USDC",
+      "usd_value": 6004.2,
+      "counterparty": "0xc4079dc1f8f84711eee0942c192829f473fc3c28",
+      "tx_hash": "0x7974cc4e456f846d3e79af508b6bd216ecd9ab7c8dda0e02862a44431fea44b8",
+      "tx_url": "https://basescan.org/tx/0x7974cc4e456f846d3e79af508b6bd216ecd9ab7c8dda0e02862a44431fea44b8"
+    },
+    {
+      "block_time": "2024-10-20 00:41:45.000 UTC",
+      "chain": "base",
+      "asset": "USDC",
+      "usd_value": 3050.0,
+      "counterparty": "0xe63617c62f18dbc7eff3d7c9eb8bac4d1c2adecc",
+      "tx_hash": "0x3b5adc10a840613ac2ea0cb9bb1bf751857a625c012172bae4df1729008f6bb7",
+      "tx_url": "https://basescan.org/tx/0x3b5adc10a840613ac2ea0cb9bb1bf751857a625c012172bae4df1729008f6bb7"
+    },
+    {
+      "block_time": "2025-11-11 00:06:23.000 UTC",
+      "chain": "base",
+      "asset": "USDC",
+      "usd_value": 1613.0,
+      "counterparty": "0x576950a0ae9c6c134a381fb4cf245e478e82ecab",
+      "tx_hash": "0x8be74eee23a8aef8582f0e3718ef5f8172dc97ccd5b47c238795a465faae7597",
+      "tx_url": "https://basescan.org/tx/0x8be74eee23a8aef8582f0e3718ef5f8172dc97ccd5b47c238795a465faae7597"
+    },
+    {
+      "block_time": "2024-03-30 14:35:47.000 UTC",
+      "chain": "base",
+      "asset": "ETH",
+      "usd_value": 1004.43,
+      "counterparty": "0x494eaa55ecf6310658b8fc004b0888dcb698097f",
+      "tx_hash": "0xe05c5d50b5c8efadc105d0a837ed8433bbc19f6a9476abe318fd20762957e037",
+      "tx_url": "https://basescan.org/tx/0xe05c5d50b5c8efadc105d0a837ed8433bbc19f6a9476abe318fd20762957e037"
+    },
+    {
+      "block_time": "2025-10-10 17:04:29.000 UTC",
+      "chain": "base",
+      "asset": "ETH",
+      "usd_value": 762.85,
+      "counterparty": "0x8fb66f38cf86a3d5e8768f8f1754a24a6c661fb8",
+      "tx_hash": "0xcfbf6501dadcbab4a33d0dd1d0bfbb35fa2a000a7af3c3fbdf476f3b099d3e73",
+      "tx_url": "https://basescan.org/tx/0xcfbf6501dadcbab4a33d0dd1d0bfbb35fa2a000a7af3c3fbdf476f3b099d3e73"
+    },
+    {
+      "block_time": "2023-09-19 22:15:11.000 UTC",
+      "chain": "ethereum",
+      "asset": "ETH",
+      "usd_value": 459.9,
+      "counterparty": "0x8d028dc71b347268d439432349b55bc27989851e",
+      "tx_hash": "0xaeec8cab36906208eb862bb3aec7bb61e60510e17fab367e4e5eefaf44ff9b65",
+      "tx_url": "https://etherscan.io/tx/0xaeec8cab36906208eb862bb3aec7bb61e60510e17fab367e4e5eefaf44ff9b65"
+    },
+    {
+      "block_time": "2023-06-26 02:30:11.000 UTC",
+      "chain": "ethereum",
+      "asset": "ETH",
+      "usd_value": 253.39,
+      "counterparty": "0xc28e0d3c00296dd8c5c3f2e9707361920f92a209",
+      "tx_hash": "0xac2220eb11b67fb4f49cebf1153ecb599daaaffd91c3a832a29d4f9f2c0859b9",
+      "tx_url": "https://etherscan.io/tx/0xac2220eb11b67fb4f49cebf1153ecb599daaaffd91c3a832a29d4f9f2c0859b9"
+    }
+  ],
+  "top_outflows": [
+    {
+      "block_time": "2024-03-30 22:16:47.000 UTC",
+      "chain": "ethereum",
+      "asset": "ETH",
+      "usd_value": 36079.43,
+      "counterparty": "0x387a161c6b25aa854100abaed39274e51aaffffd",
+      "tx_hash": "0x1b848f2d384c183315aa1bf460ea8571dfd379b134447a4b3b69c775d0ebd24a",
+      "tx_url": "https://etherscan.io/tx/0x1b848f2d384c183315aa1bf460ea8571dfd379b134447a4b3b69c775d0ebd24a"
+    },
+    {
+      "block_time": "2024-03-30 22:38:49.000 UTC",
+      "chain": "base",
+      "asset": "ETH",
+      "usd_value": 36053.69,
+      "counterparty": "0xaf75199b91aedbe2b99476899782c5bb507393e0",
+      "tx_hash": "0xabb16df67c2cb7af40644f528523e40f367d345eac3945c3482731c51fd5c046",
+      "tx_url": "https://basescan.org/tx/0xabb16df67c2cb7af40644f528523e40f367d345eac3945c3482731c51fd5c046"
+    },
+    {
+      "block_time": "2024-08-18 20:16:39.000 UTC",
+      "chain": "base",
+      "asset": "USDC",
+      "usd_value": 16116.0,
+      "counterparty": "0xe1b91eb3f3747d00485e95da79041e6d9d399641",
+      "tx_hash": "0xab46e7937e8ce54075fe548d2e5888ecfe2b022a99c1b453224ef54f76e41b58",
+      "tx_url": "https://basescan.org/tx/0xab46e7937e8ce54075fe548d2e5888ecfe2b022a99c1b453224ef54f76e41b58"
+    },
+    {
+      "block_time": "2024-04-21 13:23:53.000 UTC",
+      "chain": "base",
+      "asset": "USDC",
+      "usd_value": 12888.0,
+      "counterparty": "0x9b88e054b09a87a15f5c9e710f98f733592dea75",
+      "tx_hash": "0x9f381e4806babb53003ae2038400f3a07bbfbbaa04304399960dcdf2c42d3db3",
+      "tx_url": "https://basescan.org/tx/0x9f381e4806babb53003ae2038400f3a07bbfbbaa04304399960dcdf2c42d3db3"
+    },
+    {
+      "block_time": "2024-04-12 02:14:11.000 UTC",
+      "chain": "base",
+      "asset": "ETH",
+      "usd_value": 12035.83,
+      "counterparty": "0x244306053c673b93bc9885fdacfc352032725c87",
+      "tx_hash": "0x2b59c43b780c37a5dd7bf32a0a89bfa6f24acba384ed8f5c085687d8ab267f0e",
+      "tx_url": "https://basescan.org/tx/0x2b59c43b780c37a5dd7bf32a0a89bfa6f24acba384ed8f5c085687d8ab267f0e"
+    },
+    {
+      "block_time": "2024-07-25 15:56:31.000 UTC",
+      "chain": "base",
+      "asset": "USDC",
+      "usd_value": 12000.0,
+      "counterparty": "0x3f5111e64c0b96cc6b436151da820a3f979ef7f2",
+      "tx_hash": "0xafe38a6cc0190d97457ede5f98d8afcccc5d1db93e4e98344d5a55536688a68f",
+      "tx_url": "https://basescan.org/tx/0xafe38a6cc0190d97457ede5f98d8afcccc5d1db93e4e98344d5a55536688a68f"
+    },
+    {
+      "block_time": "2024-08-25 11:58:45.000 UTC",
+      "chain": "base",
+      "asset": "USDC",
+      "usd_value": 11800.0,
+      "counterparty": "0xe5f6202ff7ddc5273c249073865bc6f4d5d68beb",
+      "tx_hash": "0xbc57ef28e76d8d1844499bfff7b5785bda403e61fccd7e4d58bc4f737064ecff",
+      "tx_url": "https://basescan.org/tx/0xbc57ef28e76d8d1844499bfff7b5785bda403e61fccd7e4d58bc4f737064ecff"
+    },
+    {
+      "block_time": "2024-06-13 04:25:41.000 UTC",
+      "chain": "base",
+      "asset": "USDC",
+      "usd_value": 9900.0,
+      "counterparty": "0x735135ff4152b3ae255ca708eb37d83b0a8853f8",
+      "tx_hash": "0x95582d4e379291657d2015bafb8bac47b4fb66235ceacea83f01f78d9e09aac9",
+      "tx_url": "https://basescan.org/tx/0x95582d4e379291657d2015bafb8bac47b4fb66235ceacea83f01f78d9e09aac9"
+    },
+    {
+      "block_time": "2025-01-23 14:04:15.000 UTC",
+      "chain": "base",
+      "asset": "USDC",
+      "usd_value": 8550.0,
+      "counterparty": "0xe5f6202ff7ddc5273c249073865bc6f4d5d68beb",
+      "tx_hash": "0xac1bded78aa2667930213bc54d9dd8530038e2063f6b8a6ff909d85f40f3f88a",
+      "tx_url": "https://basescan.org/tx/0xac1bded78aa2667930213bc54d9dd8530038e2063f6b8a6ff909d85f40f3f88a"
+    },
+    {
+      "block_time": "2024-07-27 00:08:21.000 UTC",
+      "chain": "base",
+      "asset": "USDC",
+      "usd_value": 8085.0,
+      "counterparty": "0xe5f6202ff7ddc5273c249073865bc6f4d5d68beb",
+      "tx_hash": "0x96aa70f8f10fecdd232f82fd8008f975d813b569f7c66cef1b143344fcc2105b",
+      "tx_url": "https://basescan.org/tx/0x96aa70f8f10fecdd232f82fd8008f975d813b569f7c66cef1b143344fcc2105b"
+    }
+  ]
+}

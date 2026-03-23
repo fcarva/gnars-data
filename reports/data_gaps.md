@@ -10,7 +10,7 @@
 | tags_no_sport | 0 |
 | tags_no_capital_breakdown | 0 |
 | tags_no_confidence | 0 |
-| members_no_sport | 0 |
+| members_no_sport | 17 |
 | members_no_totals | 0 |
 | proposals_uncategorized | 222 |
 
