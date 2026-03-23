@@ -1,0 +1,208 @@
+{
+  "dataset": "auctions",
+  "as_of": "2026-03-22T08:49:29Z",
+  "version": 1,
+  "schema_notes": "Aggregated by month. Individual transaction records pending Dune query IDs (gnars_auctions_base, gnars_auctions_ethereum)",
+  "records": [
+    {
+      "month": "2024-03-01",
+      "chain": "base+ethereum",
+      "auction_count": 219,
+      "total_eth": 3.1261,
+      "avg_eth_price": 3518.16,
+      "total_usd": 10988.93
+    },
+    {
+      "month": "2024-04-01",
+      "chain": "base+ethereum",
+      "auction_count": 435,
+      "total_eth": 7.3407,
+      "avg_eth_price": 3267.94,
+      "total_usd": 24243.66
+    },
+    {
+      "month": "2024-05-01",
+      "chain": "base+ethereum",
+      "auction_count": 181,
+      "total_eth": 1.2926,
+      "avg_eth_price": 3162.1,
+      "total_usd": 4019.21
+    },
+    {
+      "month": "2024-06-01",
+      "chain": "base+ethereum",
+      "auction_count": 98,
+      "total_eth": 0.5453,
+      "avg_eth_price": 3597.87,
+      "total_usd": 1969.19
+    },
+    {
+      "month": "2024-07-01",
+      "chain": "base+ethereum",
+      "auction_count": 168,
+      "total_eth": 0.735,
+      "avg_eth_price": 3284.61,
+      "total_usd": 2427.32
+    },
+    {
+      "month": "2024-08-01",
+      "chain": "base+ethereum",
+      "auction_count": 118,
+      "total_eth": 0.6812,
+      "avg_eth_price": 2669.39,
+      "total_usd": 1816.42
+    },
+    {
+      "month": "2024-09-01",
+      "chain": "base+ethereum",
+      "auction_count": 76,
+      "total_eth": 0.2143,
+      "avg_eth_price": 2465.35,
+      "total_usd": 533.1
+    },
+    {
+      "month": "2024-10-01",
+      "chain": "base+ethereum",
+      "auction_count": 78,
+      "total_eth": 0.4253,
+      "avg_eth_price": 2523.8,
+      "total_usd": 1068.83
+    },
+    {
+      "month": "2024-11-01",
+      "chain": "base+ethereum",
+      "auction_count": 80,
+      "total_eth": 0.0973,
+      "avg_eth_price": 2974.63,
+      "total_usd": 287.4
+    },
+    {
+      "month": "2024-12-01",
+      "chain": "base+ethereum",
+      "auction_count": 76,
+      "total_eth": 0.1111,
+      "avg_eth_price": 3614.49,
+      "total_usd": 402.07
+    },
+    {
+      "month": "2025-01-01",
+      "chain": "base+ethereum",
+      "auction_count": 44,
+      "total_eth": 0.2224,
+      "avg_eth_price": 3327.2,
+      "total_usd": 730.88
+    },
+    {
+      "month": "2025-02-01",
+      "chain": "base+ethereum",
+      "auction_count": 39,
+      "total_eth": 0.04,
+      "avg_eth_price": 2684.87,
+      "total_usd": 108.73
+    },
+    {
+      "month": "2025-03-01",
+      "chain": "base+ethereum",
+      "auction_count": 48,
+      "total_eth": 0.132,
+      "avg_eth_price": 2023.5,
+      "total_usd": 270.1
+    },
+    {
+      "month": "2025-04-01",
+      "chain": "base+ethereum",
+      "auction_count": 33,
+      "total_eth": 0.05,
+      "avg_eth_price": 1664.4,
+      "total_usd": 88.02
+    },
+    {
+      "month": "2025-05-01",
+      "chain": "base+ethereum",
+      "auction_count": 25,
+      "total_eth": 0.05,
+      "avg_eth_price": 2300.42,
+      "total_usd": 113.76
+    },
+    {
+      "month": "2025-06-01",
+      "chain": "base+ethereum",
+      "auction_count": 25,
+      "total_eth": 0.06,
+      "avg_eth_price": 2521.34,
+      "total_usd": 151.24
+    },
+    {
+      "month": "2025-07-01",
+      "chain": "base+ethereum",
+      "auction_count": 43,
+      "total_eth": 0.0304,
+      "avg_eth_price": 3583.51,
+      "total_usd": 108.58
+    },
+    {
+      "month": "2025-08-01",
+      "chain": "base+ethereum",
+      "auction_count": 49,
+      "total_eth": 0.03,
+      "avg_eth_price": 4173.7,
+      "total_usd": 133.12
+    },
+    {
+      "month": "2025-09-01",
+      "chain": "base+ethereum",
+      "auction_count": 7,
+      "total_eth": 0.01,
+      "avg_eth_price": 4309.38,
+      "total_usd": 43.25
+    },
+    {
+      "month": "2025-10-01",
+      "chain": "base+ethereum",
+      "auction_count": 19,
+      "total_eth": 0.01,
+      "avg_eth_price": 4090.48,
+      "total_usd": 41.55
+    },
+    {
+      "month": "2025-11-01",
+      "chain": "base+ethereum",
+      "auction_count": 15,
+      "total_eth": 0.01,
+      "avg_eth_price": 3256.5,
+      "total_usd": 34.49
+    },
+    {
+      "month": "2025-12-01",
+      "chain": "base+ethereum",
+      "auction_count": 31,
+      "total_eth": 0.09,
+      "avg_eth_price": 3002.95,
+      "total_usd": 267.72
+    },
+    {
+      "month": "2026-01-01",
+      "chain": "base+ethereum",
+      "auction_count": 16,
+      "total_eth": 0.05,
+      "avg_eth_price": 3087.21,
+      "total_usd": 156.72
+    },
+    {
+      "month": "2026-02-01",
+      "chain": "base+ethereum",
+      "auction_count": 6,
+      "total_eth": 0.0289,
+      "avg_eth_price": 2029.49,
+      "total_usd": 58.73
+    },
+    {
+      "month": "2026-03-01",
+      "chain": "base+ethereum",
+      "auction_count": 16,
+      "total_eth": 0.08,
+      "avg_eth_price": 2053.67,
+      "total_usd": 160.3
+    }
+  ]
+}

@@ -9488,9 +9488,9 @@
       "status": "active",
       "role": "web development, data pipelines",
       "roles": [
-        "operations",
-        "web development",
         "web development, data pipelines",
+        "web development",
+        "operations",
         "data pipelines"
       ],
       "tags": [
@@ -33432,10 +33432,10 @@
       "status": "active",
       "role": "community infrastructure, documentation, QA",
       "roles": [
-        "documentation",
         "community infrastructure",
-        "community infrastructure, documentation, QA",
-        "operations"
+        "operations",
+        "documentation",
+        "community infrastructure, documentation, QA"
       ],
       "tags": [
         "builder",

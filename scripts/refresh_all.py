@@ -47,6 +47,8 @@ SEQUENTIAL_STEPS: list[tuple[str, str, list[str]]] = [
     ("reconcile", "reconcile_treasury.py", ["data/spend_ledger.json"]),
     ("derive", "derive_analytics.py", []),
     ("derive_funding", "derive_funding_analysis.py", []),
+    ("build_auction_history", "build_auction_history.py", ["raw/dune/auction_revenue_all_time.json"]),
+    ("build_treasury_history", "build_treasury_history.py", ["data/spend_ledger.json", "data/auctions_daily.json"]),
     ("audit", "audit_gaps.py", []),
     ("export", "export_csv.py", []),
 ]
@@ -54,6 +56,8 @@ SEQUENTIAL_STEPS: list[tuple[str, str, list[str]]] = [
 DERIVE_ONLY_STEPS: list[tuple[str, str, list[str]]] = [
     ("derive", "derive_analytics.py", []),
     ("derive_funding", "derive_funding_analysis.py", []),
+    ("build_auction_history", "build_auction_history.py", ["raw/dune/auction_revenue_all_time.json"]),
+    ("build_treasury_history", "build_treasury_history.py", ["data/spend_ledger.json", "data/auctions_daily.json"]),
     ("export", "export_csv.py", []),
 ]
 
@@ -81,6 +85,10 @@ def copy_to_web() -> None:
         "sport_funding.json",
         "milestones.json",
         "members.json",
+        "auctions_monthly.json",
+        "auctions_daily.json",
+        "auctions_summary.json",
+        "treasury_history.json",
     ]
     dest = ROOT / "web" / "public" / "data"
     dest.mkdir(parents=True, exist_ok=True)

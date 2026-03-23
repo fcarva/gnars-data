@@ -1,0 +1,5196 @@
+{
+  "dataset": "treasury_history",
+  "as_of": "2026-03-23T20:23:18.591545",
+  "version": 1,
+  "summary": {
+    "start_date": "2024-03-01T00:00:00",
+    "end_date": "2026-03-23T20:23:18.571656",
+    "opening_balance_usd": 524860.63,
+    "current_balance_usd": 314748.2,
+    "total_inflows_usd": 50211.54,
+    "total_outflows_usd": 530335.18,
+    "note": "Opening balance inferred from current balance and net flows. May not match blockchain genesis."
+  },
+  "records": [
+    {
+      "date": "2024-03-01",
+      "inflow_usd": 366.3,
+      "outflow_usd": 0.0,
+      "balance_usd": 525226.93,
+      "has_activity": true
+    },
+    {
+      "date": "2024-03-02",
+      "inflow_usd": 366.3,
+      "outflow_usd": 0.0,
+      "balance_usd": 525593.23,
+      "has_activity": true
+    },
+    {
+      "date": "2024-03-03",
+      "inflow_usd": 366.3,
+      "outflow_usd": 0.0,
+      "balance_usd": 525959.53,
+      "has_activity": true
+    },
+    {
+      "date": "2024-03-04",
+      "inflow_usd": 366.3,
+      "outflow_usd": 0.0,
+      "balance_usd": 526325.83,
+      "has_activity": true
+    },
+    {
+      "date": "2024-03-05",
+      "inflow_usd": 366.3,
+      "outflow_usd": 0.0,
+      "balance_usd": 526692.13,
+      "has_activity": true
+    },
+    {
+      "date": "2024-03-06",
+      "inflow_usd": 366.3,
+      "outflow_usd": 0.0,
+      "balance_usd": 527058.43,
+      "has_activity": true
+    },
+    {
+      "date": "2024-03-07",
+      "inflow_usd": 366.3,
+      "outflow_usd": 0.0,
+      "balance_usd": 527424.73,
+      "has_activity": true
+    },
+    {
+      "date": "2024-03-08",
+      "inflow_usd": 366.3,
+      "outflow_usd": 0.0,
+      "balance_usd": 527791.03,
+      "has_activity": true
+    },
+    {
+      "date": "2024-03-09",
+      "inflow_usd": 366.3,
+      "outflow_usd": 0.0,
+      "balance_usd": 528157.33,
+      "has_activity": true
+    },
+    {
+      "date": "2024-03-10",
+      "inflow_usd": 366.3,
+      "outflow_usd": 0.0,
+      "balance_usd": 528523.63,
+      "has_activity": true
+    },
+    {
+      "date": "2024-03-11",
+      "inflow_usd": 366.3,
+      "outflow_usd": 0.0,
+      "balance_usd": 528889.93,
+      "has_activity": true
+    },
+    {
+      "date": "2024-03-12",
+      "inflow_usd": 366.3,
+      "outflow_usd": 0.0,
+      "balance_usd": 529256.23,
+      "has_activity": true
+    },
+    {
+      "date": "2024-03-13",
+      "inflow_usd": 366.3,
+      "outflow_usd": 0.0,
+      "balance_usd": 529622.53,
+      "has_activity": true
+    },
+    {
+      "date": "2024-03-14",
+      "inflow_usd": 366.3,
+      "outflow_usd": 0.0,
+      "balance_usd": 529988.83,
+      "has_activity": true
+    },
+    {
+      "date": "2024-03-15",
+      "inflow_usd": 366.3,
+      "outflow_usd": 0.0,
+      "balance_usd": 530355.13,
+      "has_activity": true
+    },
+    {
+      "date": "2024-03-16",
+      "inflow_usd": 366.3,
+      "outflow_usd": 0.0,
+      "balance_usd": 530721.43,
+      "has_activity": true
+    },
+    {
+      "date": "2024-03-17",
+      "inflow_usd": 366.3,
+      "outflow_usd": 1843.5,
+      "balance_usd": 529244.23,
+      "has_activity": true
+    },
+    {
+      "date": "2024-03-18",
+      "inflow_usd": 366.3,
+      "outflow_usd": 0.0,
+      "balance_usd": 529610.53,
+      "has_activity": true
+    },
+    {
+      "date": "2024-03-19",
+      "inflow_usd": 366.3,
+      "outflow_usd": 0.0,
+      "balance_usd": 529976.83,
+      "has_activity": true
+    },
+    {
+      "date": "2024-03-20",
+      "inflow_usd": 366.3,
+      "outflow_usd": 0.0,
+      "balance_usd": 530343.13,
+      "has_activity": true
+    },
+    {
+      "date": "2024-03-21",
+      "inflow_usd": 366.3,
+      "outflow_usd": 0.0,
+      "balance_usd": 530709.43,
+      "has_activity": true
+    },
+    {
+      "date": "2024-03-22",
+      "inflow_usd": 366.3,
+      "outflow_usd": 0.0,
+      "balance_usd": 531075.73,
+      "has_activity": true
+    },
+    {
+      "date": "2024-03-23",
+      "inflow_usd": 366.3,
+      "outflow_usd": 0.0,
+      "balance_usd": 531442.03,
+      "has_activity": true
+    },
+    {
+      "date": "2024-03-24",
+      "inflow_usd": 366.3,
+      "outflow_usd": 0.0,
+      "balance_usd": 531808.33,
+      "has_activity": true
+    },
+    {
+      "date": "2024-03-25",
+      "inflow_usd": 366.3,
+      "outflow_usd": 0.0,
+      "balance_usd": 532174.63,
+      "has_activity": true
+    },
+    {
+      "date": "2024-03-26",
+      "inflow_usd": 366.3,
+      "outflow_usd": 36767.78,
+      "balance_usd": 495773.14,
+      "has_activity": true
+    },
+    {
+      "date": "2024-03-27",
+      "inflow_usd": 366.3,
+      "outflow_usd": 0.0,
+      "balance_usd": 496139.44,
+      "has_activity": true
+    },
+    {
+      "date": "2024-03-28",
+      "inflow_usd": 366.3,
+      "outflow_usd": 0.0,
+      "balance_usd": 496505.74,
+      "has_activity": true
+    },
+    {
+      "date": "2024-03-29",
+      "inflow_usd": 366.3,
+      "outflow_usd": 0.0,
+      "balance_usd": 496872.04,
+      "has_activity": true
+    },
+    {
+      "date": "2024-03-30",
+      "inflow_usd": 366.3,
+      "outflow_usd": 0.0,
+      "balance_usd": 497238.34,
+      "has_activity": true
+    },
+    {
+      "date": "2024-04-01",
+      "inflow_usd": 808.12,
+      "outflow_usd": 0.0,
+      "balance_usd": 498046.46,
+      "has_activity": true
+    },
+    {
+      "date": "2024-04-02",
+      "inflow_usd": 808.12,
+      "outflow_usd": 0.0,
+      "balance_usd": 498854.58,
+      "has_activity": true
+    },
+    {
+      "date": "2024-04-03",
+      "inflow_usd": 808.12,
+      "outflow_usd": 0.0,
+      "balance_usd": 499662.7,
+      "has_activity": true
+    },
+    {
+      "date": "2024-04-04",
+      "inflow_usd": 808.12,
+      "outflow_usd": 0.0,
+      "balance_usd": 500470.82,
+      "has_activity": true
+    },
+    {
+      "date": "2024-04-05",
+      "inflow_usd": 808.12,
+      "outflow_usd": 0.0,
+      "balance_usd": 501278.94,
+      "has_activity": true
+    },
+    {
+      "date": "2024-04-06",
+      "inflow_usd": 808.12,
+      "outflow_usd": 0.0,
+      "balance_usd": 502087.06,
+      "has_activity": true
+    },
+    {
+      "date": "2024-04-07",
+      "inflow_usd": 808.12,
+      "outflow_usd": 0.0,
+      "balance_usd": 502895.18,
+      "has_activity": true
+    },
+    {
+      "date": "2024-04-08",
+      "inflow_usd": 808.12,
+      "outflow_usd": 0.0,
+      "balance_usd": 503703.3,
+      "has_activity": true
+    },
+    {
+      "date": "2024-04-09",
+      "inflow_usd": 808.12,
+      "outflow_usd": 0.0,
+      "balance_usd": 504511.42,
+      "has_activity": true
+    },
+    {
+      "date": "2024-04-10",
+      "inflow_usd": 808.12,
+      "outflow_usd": 0.0,
+      "balance_usd": 505319.54,
+      "has_activity": true
+    },
+    {
+      "date": "2024-04-11",
+      "inflow_usd": 808.12,
+      "outflow_usd": 0.0,
+      "balance_usd": 506127.66,
+      "has_activity": true
+    },
+    {
+      "date": "2024-04-12",
+      "inflow_usd": 808.12,
+      "outflow_usd": 0.0,
+      "balance_usd": 506935.78,
+      "has_activity": true
+    },
+    {
+      "date": "2024-04-13",
+      "inflow_usd": 808.12,
+      "outflow_usd": 0.0,
+      "balance_usd": 507743.9,
+      "has_activity": true
+    },
+    {
+      "date": "2024-04-14",
+      "inflow_usd": 808.12,
+      "outflow_usd": 0.0,
+      "balance_usd": 508552.02,
+      "has_activity": true
+    },
+    {
+      "date": "2024-04-15",
+      "inflow_usd": 808.12,
+      "outflow_usd": 0.0,
+      "balance_usd": 509360.14,
+      "has_activity": true
+    },
+    {
+      "date": "2024-04-16",
+      "inflow_usd": 808.12,
+      "outflow_usd": 0.0,
+      "balance_usd": 510168.26,
+      "has_activity": true
+    },
+    {
+      "date": "2024-04-17",
+      "inflow_usd": 808.12,
+      "outflow_usd": 0.0,
+      "balance_usd": 510976.38,
+      "has_activity": true
+    },
+    {
+      "date": "2024-04-18",
+      "inflow_usd": 808.12,
+      "outflow_usd": 0.0,
+      "balance_usd": 511784.5,
+      "has_activity": true
+    },
+    {
+      "date": "2024-04-19",
+      "inflow_usd": 808.12,
+      "outflow_usd": 0.0,
+      "balance_usd": 512592.62,
+      "has_activity": true
+    },
+    {
+      "date": "2024-04-20",
+      "inflow_usd": 808.12,
+      "outflow_usd": 0.0,
+      "balance_usd": 513400.74,
+      "has_activity": true
+    },
+    {
+      "date": "2024-04-21",
+      "inflow_usd": 808.12,
+      "outflow_usd": 0.0,
+      "balance_usd": 514208.86,
+      "has_activity": true
+    },
+    {
+      "date": "2024-04-22",
+      "inflow_usd": 808.12,
+      "outflow_usd": 0.0,
+      "balance_usd": 515016.98,
+      "has_activity": true
+    },
+    {
+      "date": "2024-04-23",
+      "inflow_usd": 808.12,
+      "outflow_usd": 0.0,
+      "balance_usd": 515825.1,
+      "has_activity": true
+    },
+    {
+      "date": "2024-04-24",
+      "inflow_usd": 808.12,
+      "outflow_usd": 0.0,
+      "balance_usd": 516633.22,
+      "has_activity": true
+    },
+    {
+      "date": "2024-04-25",
+      "inflow_usd": 808.12,
+      "outflow_usd": 0.0,
+      "balance_usd": 517441.34,
+      "has_activity": true
+    },
+    {
+      "date": "2024-04-26",
+      "inflow_usd": 808.12,
+      "outflow_usd": 0.0,
+      "balance_usd": 518249.46,
+      "has_activity": true
+    },
+    {
+      "date": "2024-04-27",
+      "inflow_usd": 808.12,
+      "outflow_usd": 0.0,
+      "balance_usd": 519057.58,
+      "has_activity": true
+    },
+    {
+      "date": "2024-04-28",
+      "inflow_usd": 808.12,
+      "outflow_usd": 0.0,
+      "balance_usd": 519865.7,
+      "has_activity": true
+    },
+    {
+      "date": "2024-04-29",
+      "inflow_usd": 808.12,
+      "outflow_usd": 0.0,
+      "balance_usd": 520673.82,
+      "has_activity": true
+    },
+    {
+      "date": "2024-04-30",
+      "inflow_usd": 808.12,
+      "outflow_usd": 0.0,
+      "balance_usd": 521481.94,
+      "has_activity": true
+    },
+    {
+      "date": "2024-05-01",
+      "inflow_usd": 133.97,
+      "outflow_usd": 11556.22,
+      "balance_usd": 510059.69,
+      "has_activity": true
+    },
+    {
+      "date": "2024-05-02",
+      "inflow_usd": 133.97,
+      "outflow_usd": 0.0,
+      "balance_usd": 510193.66,
+      "has_activity": true
+    },
+    {
+      "date": "2024-05-03",
+      "inflow_usd": 133.97,
+      "outflow_usd": 0.0,
+      "balance_usd": 510327.63,
+      "has_activity": true
+    },
+    {
+      "date": "2024-05-04",
+      "inflow_usd": 133.97,
+      "outflow_usd": 0.0,
+      "balance_usd": 510461.6,
+      "has_activity": true
+    },
+    {
+      "date": "2024-05-05",
+      "inflow_usd": 133.97,
+      "outflow_usd": 0.0,
+      "balance_usd": 510595.57,
+      "has_activity": true
+    },
+    {
+      "date": "2024-05-06",
+      "inflow_usd": 133.97,
+      "outflow_usd": 0.0,
+      "balance_usd": 510729.54,
+      "has_activity": true
+    },
+    {
+      "date": "2024-05-07",
+      "inflow_usd": 133.97,
+      "outflow_usd": 0.0,
+      "balance_usd": 510863.51,
+      "has_activity": true
+    },
+    {
+      "date": "2024-05-08",
+      "inflow_usd": 133.97,
+      "outflow_usd": 0.0,
+      "balance_usd": 510997.48,
+      "has_activity": true
+    },
+    {
+      "date": "2024-05-09",
+      "inflow_usd": 133.97,
+      "outflow_usd": 0.0,
+      "balance_usd": 511131.45,
+      "has_activity": true
+    },
+    {
+      "date": "2024-05-10",
+      "inflow_usd": 133.97,
+      "outflow_usd": 1.16,
+      "balance_usd": 511264.26,
+      "has_activity": true
+    },
+    {
+      "date": "2024-05-11",
+      "inflow_usd": 133.97,
+      "outflow_usd": 0.0,
+      "balance_usd": 511398.23,
+      "has_activity": true
+    },
+    {
+      "date": "2024-05-12",
+      "inflow_usd": 133.97,
+      "outflow_usd": 0.0,
+      "balance_usd": 511532.2,
+      "has_activity": true
+    },
+    {
+      "date": "2024-05-13",
+      "inflow_usd": 133.97,
+      "outflow_usd": 0.0,
+      "balance_usd": 511666.17,
+      "has_activity": true
+    },
+    {
+      "date": "2024-05-14",
+      "inflow_usd": 133.97,
+      "outflow_usd": 0.0,
+      "balance_usd": 511800.14,
+      "has_activity": true
+    },
+    {
+      "date": "2024-05-15",
+      "inflow_usd": 133.97,
+      "outflow_usd": 3990.0,
+      "balance_usd": 507944.11,
+      "has_activity": true
+    },
+    {
+      "date": "2024-05-16",
+      "inflow_usd": 133.97,
+      "outflow_usd": 0.0,
+      "balance_usd": 508078.08,
+      "has_activity": true
+    },
+    {
+      "date": "2024-05-17",
+      "inflow_usd": 133.97,
+      "outflow_usd": 0.0,
+      "balance_usd": 508212.05,
+      "has_activity": true
+    },
+    {
+      "date": "2024-05-18",
+      "inflow_usd": 133.97,
+      "outflow_usd": 0.0,
+      "balance_usd": 508346.02,
+      "has_activity": true
+    },
+    {
+      "date": "2024-05-19",
+      "inflow_usd": 133.97,
+      "outflow_usd": 0.0,
+      "balance_usd": 508479.99,
+      "has_activity": true
+    },
+    {
+      "date": "2024-05-20",
+      "inflow_usd": 133.97,
+      "outflow_usd": 0.0,
+      "balance_usd": 508613.96,
+      "has_activity": true
+    },
+    {
+      "date": "2024-05-21",
+      "inflow_usd": 133.97,
+      "outflow_usd": 0.0,
+      "balance_usd": 508747.93,
+      "has_activity": true
+    },
+    {
+      "date": "2024-05-22",
+      "inflow_usd": 133.97,
+      "outflow_usd": 0.0,
+      "balance_usd": 508881.9,
+      "has_activity": true
+    },
+    {
+      "date": "2024-05-23",
+      "inflow_usd": 133.97,
+      "outflow_usd": 0.0,
+      "balance_usd": 509015.87,
+      "has_activity": true
+    },
+    {
+      "date": "2024-05-24",
+      "inflow_usd": 133.97,
+      "outflow_usd": 0.0,
+      "balance_usd": 509149.84,
+      "has_activity": true
+    },
+    {
+      "date": "2024-05-25",
+      "inflow_usd": 133.97,
+      "outflow_usd": 0.0,
+      "balance_usd": 509283.81,
+      "has_activity": true
+    },
+    {
+      "date": "2024-05-26",
+      "inflow_usd": 133.97,
+      "outflow_usd": 0.0,
+      "balance_usd": 509417.78,
+      "has_activity": true
+    },
+    {
+      "date": "2024-05-27",
+      "inflow_usd": 133.97,
+      "outflow_usd": 0.0,
+      "balance_usd": 509551.75,
+      "has_activity": true
+    },
+    {
+      "date": "2024-05-28",
+      "inflow_usd": 133.97,
+      "outflow_usd": 0.0,
+      "balance_usd": 509685.72,
+      "has_activity": true
+    },
+    {
+      "date": "2024-05-29",
+      "inflow_usd": 133.97,
+      "outflow_usd": 0.0,
+      "balance_usd": 509819.69,
+      "has_activity": true
+    },
+    {
+      "date": "2024-05-30",
+      "inflow_usd": 133.97,
+      "outflow_usd": 0.0,
+      "balance_usd": 509953.66,
+      "has_activity": true
+    },
+    {
+      "date": "2024-06-01",
+      "inflow_usd": 65.64,
+      "outflow_usd": 1.02,
+      "balance_usd": 510018.28,
+      "has_activity": true
+    },
+    {
+      "date": "2024-06-02",
+      "inflow_usd": 65.64,
+      "outflow_usd": 0.0,
+      "balance_usd": 510083.92,
+      "has_activity": true
+    },
+    {
+      "date": "2024-06-03",
+      "inflow_usd": 65.64,
+      "outflow_usd": 0.94,
+      "balance_usd": 510148.62,
+      "has_activity": true
+    },
+    {
+      "date": "2024-06-04",
+      "inflow_usd": 65.64,
+      "outflow_usd": 0.0,
+      "balance_usd": 510214.26,
+      "has_activity": true
+    },
+    {
+      "date": "2024-06-05",
+      "inflow_usd": 65.64,
+      "outflow_usd": 0.0,
+      "balance_usd": 510279.9,
+      "has_activity": true
+    },
+    {
+      "date": "2024-06-06",
+      "inflow_usd": 65.64,
+      "outflow_usd": 0.0,
+      "balance_usd": 510345.54,
+      "has_activity": true
+    },
+    {
+      "date": "2024-06-07",
+      "inflow_usd": 65.64,
+      "outflow_usd": 0.0,
+      "balance_usd": 510411.18,
+      "has_activity": true
+    },
+    {
+      "date": "2024-06-08",
+      "inflow_usd": 65.64,
+      "outflow_usd": 0.0,
+      "balance_usd": 510476.82,
+      "has_activity": true
+    },
+    {
+      "date": "2024-06-09",
+      "inflow_usd": 65.64,
+      "outflow_usd": 0.0,
+      "balance_usd": 510542.46,
+      "has_activity": true
+    },
+    {
+      "date": "2024-06-10",
+      "inflow_usd": 65.64,
+      "outflow_usd": 5984.0,
+      "balance_usd": 504624.1,
+      "has_activity": true
+    },
+    {
+      "date": "2024-06-11",
+      "inflow_usd": 65.64,
+      "outflow_usd": 0.0,
+      "balance_usd": 504689.74,
+      "has_activity": true
+    },
+    {
+      "date": "2024-06-12",
+      "inflow_usd": 65.64,
+      "outflow_usd": 0.0,
+      "balance_usd": 504755.38,
+      "has_activity": true
+    },
+    {
+      "date": "2024-06-13",
+      "inflow_usd": 65.64,
+      "outflow_usd": 9900.0,
+      "balance_usd": 494921.02,
+      "has_activity": true
+    },
+    {
+      "date": "2024-06-14",
+      "inflow_usd": 65.64,
+      "outflow_usd": 0.0,
+      "balance_usd": 494986.66,
+      "has_activity": true
+    },
+    {
+      "date": "2024-06-15",
+      "inflow_usd": 65.64,
+      "outflow_usd": 0.0,
+      "balance_usd": 495052.3,
+      "has_activity": true
+    },
+    {
+      "date": "2024-06-16",
+      "inflow_usd": 65.64,
+      "outflow_usd": 0.0,
+      "balance_usd": 495117.94,
+      "has_activity": true
+    },
+    {
+      "date": "2024-06-17",
+      "inflow_usd": 65.64,
+      "outflow_usd": 0.0,
+      "balance_usd": 495183.58,
+      "has_activity": true
+    },
+    {
+      "date": "2024-06-18",
+      "inflow_usd": 65.64,
+      "outflow_usd": 0.0,
+      "balance_usd": 495249.22,
+      "has_activity": true
+    },
+    {
+      "date": "2024-06-19",
+      "inflow_usd": 65.64,
+      "outflow_usd": 0.0,
+      "balance_usd": 495314.86,
+      "has_activity": true
+    },
+    {
+      "date": "2024-06-20",
+      "inflow_usd": 65.64,
+      "outflow_usd": 0.0,
+      "balance_usd": 495380.5,
+      "has_activity": true
+    },
+    {
+      "date": "2024-06-21",
+      "inflow_usd": 65.64,
+      "outflow_usd": 0.0,
+      "balance_usd": 495446.14,
+      "has_activity": true
+    },
+    {
+      "date": "2024-06-22",
+      "inflow_usd": 65.64,
+      "outflow_usd": 0.0,
+      "balance_usd": 495511.78,
+      "has_activity": true
+    },
+    {
+      "date": "2024-06-23",
+      "inflow_usd": 65.64,
+      "outflow_usd": 0.0,
+      "balance_usd": 495577.42,
+      "has_activity": true
+    },
+    {
+      "date": "2024-06-24",
+      "inflow_usd": 65.64,
+      "outflow_usd": 0.94,
+      "balance_usd": 495642.12,
+      "has_activity": true
+    },
+    {
+      "date": "2024-06-25",
+      "inflow_usd": 65.64,
+      "outflow_usd": 0.0,
+      "balance_usd": 495707.76,
+      "has_activity": true
+    },
+    {
+      "date": "2024-06-26",
+      "inflow_usd": 65.64,
+      "outflow_usd": 0.0,
+      "balance_usd": 495773.4,
+      "has_activity": true
+    },
+    {
+      "date": "2024-06-27",
+      "inflow_usd": 65.64,
+      "outflow_usd": 0.0,
+      "balance_usd": 495839.04,
+      "has_activity": true
+    },
+    {
+      "date": "2024-06-28",
+      "inflow_usd": 65.64,
+      "outflow_usd": 0.0,
+      "balance_usd": 495904.68,
+      "has_activity": true
+    },
+    {
+      "date": "2024-06-29",
+      "inflow_usd": 65.64,
+      "outflow_usd": 0.0,
+      "balance_usd": 495970.32,
+      "has_activity": true
+    },
+    {
+      "date": "2024-06-30",
+      "inflow_usd": 65.64,
+      "outflow_usd": 0.0,
+      "balance_usd": 496035.96,
+      "has_activity": true
+    },
+    {
+      "date": "2024-07-01",
+      "inflow_usd": 80.91,
+      "outflow_usd": 0.0,
+      "balance_usd": 496116.87,
+      "has_activity": true
+    },
+    {
+      "date": "2024-07-02",
+      "inflow_usd": 80.91,
+      "outflow_usd": 0.0,
+      "balance_usd": 496197.78,
+      "has_activity": true
+    },
+    {
+      "date": "2024-07-03",
+      "inflow_usd": 80.91,
+      "outflow_usd": 0.0,
+      "balance_usd": 496278.69,
+      "has_activity": true
+    },
+    {
+      "date": "2024-07-04",
+      "inflow_usd": 80.91,
+      "outflow_usd": 0.0,
+      "balance_usd": 496359.6,
+      "has_activity": true
+    },
+    {
+      "date": "2024-07-05",
+      "inflow_usd": 80.91,
+      "outflow_usd": 0.0,
+      "balance_usd": 496440.51,
+      "has_activity": true
+    },
+    {
+      "date": "2024-07-06",
+      "inflow_usd": 80.91,
+      "outflow_usd": 0.0,
+      "balance_usd": 496521.42,
+      "has_activity": true
+    },
+    {
+      "date": "2024-07-07",
+      "inflow_usd": 80.91,
+      "outflow_usd": 0.0,
+      "balance_usd": 496602.33,
+      "has_activity": true
+    },
+    {
+      "date": "2024-07-08",
+      "inflow_usd": 80.91,
+      "outflow_usd": 0.0,
+      "balance_usd": 496683.24,
+      "has_activity": true
+    },
+    {
+      "date": "2024-07-09",
+      "inflow_usd": 80.91,
+      "outflow_usd": 0.0,
+      "balance_usd": 496764.15,
+      "has_activity": true
+    },
+    {
+      "date": "2024-07-10",
+      "inflow_usd": 80.91,
+      "outflow_usd": 0.0,
+      "balance_usd": 496845.06,
+      "has_activity": true
+    },
+    {
+      "date": "2024-07-11",
+      "inflow_usd": 80.91,
+      "outflow_usd": 0.0,
+      "balance_usd": 496925.97,
+      "has_activity": true
+    },
+    {
+      "date": "2024-07-12",
+      "inflow_usd": 80.91,
+      "outflow_usd": 1.07,
+      "balance_usd": 497005.81,
+      "has_activity": true
+    },
+    {
+      "date": "2024-07-13",
+      "inflow_usd": 80.91,
+      "outflow_usd": 0.0,
+      "balance_usd": 497086.72,
+      "has_activity": true
+    },
+    {
+      "date": "2024-07-14",
+      "inflow_usd": 80.91,
+      "outflow_usd": 0.0,
+      "balance_usd": 497167.63,
+      "has_activity": true
+    },
+    {
+      "date": "2024-07-15",
+      "inflow_usd": 80.91,
+      "outflow_usd": 0.0,
+      "balance_usd": 497248.54,
+      "has_activity": true
+    },
+    {
+      "date": "2024-07-16",
+      "inflow_usd": 80.91,
+      "outflow_usd": 0.0,
+      "balance_usd": 497329.45,
+      "has_activity": true
+    },
+    {
+      "date": "2024-07-17",
+      "inflow_usd": 80.91,
+      "outflow_usd": 0.0,
+      "balance_usd": 497410.36,
+      "has_activity": true
+    },
+    {
+      "date": "2024-07-18",
+      "inflow_usd": 80.91,
+      "outflow_usd": 0.0,
+      "balance_usd": 497491.27,
+      "has_activity": true
+    },
+    {
+      "date": "2024-07-19",
+      "inflow_usd": 80.91,
+      "outflow_usd": 7500.0,
+      "balance_usd": 490072.18,
+      "has_activity": true
+    },
+    {
+      "date": "2024-07-20",
+      "inflow_usd": 80.91,
+      "outflow_usd": 0.0,
+      "balance_usd": 490153.09,
+      "has_activity": true
+    },
+    {
+      "date": "2024-07-21",
+      "inflow_usd": 80.91,
+      "outflow_usd": 0.0,
+      "balance_usd": 490234.0,
+      "has_activity": true
+    },
+    {
+      "date": "2024-07-22",
+      "inflow_usd": 80.91,
+      "outflow_usd": 0.0,
+      "balance_usd": 490314.91,
+      "has_activity": true
+    },
+    {
+      "date": "2024-07-23",
+      "inflow_usd": 80.91,
+      "outflow_usd": 0.0,
+      "balance_usd": 490395.82,
+      "has_activity": true
+    },
+    {
+      "date": "2024-07-24",
+      "inflow_usd": 80.91,
+      "outflow_usd": 0.0,
+      "balance_usd": 490476.73,
+      "has_activity": true
+    },
+    {
+      "date": "2024-07-25",
+      "inflow_usd": 80.91,
+      "outflow_usd": 15142.02,
+      "balance_usd": 475415.62,
+      "has_activity": true
+    },
+    {
+      "date": "2024-07-26",
+      "inflow_usd": 80.91,
+      "outflow_usd": 0.0,
+      "balance_usd": 475496.53,
+      "has_activity": true
+    },
+    {
+      "date": "2024-07-27",
+      "inflow_usd": 80.91,
+      "outflow_usd": 8085.0,
+      "balance_usd": 467492.44,
+      "has_activity": true
+    },
+    {
+      "date": "2024-07-28",
+      "inflow_usd": 80.91,
+      "outflow_usd": 0.0,
+      "balance_usd": 467573.35,
+      "has_activity": true
+    },
+    {
+      "date": "2024-07-29",
+      "inflow_usd": 80.91,
+      "outflow_usd": 0.0,
+      "balance_usd": 467654.26,
+      "has_activity": true
+    },
+    {
+      "date": "2024-07-30",
+      "inflow_usd": 80.91,
+      "outflow_usd": 0.0,
+      "balance_usd": 467735.17,
+      "has_activity": true
+    },
+    {
+      "date": "2024-08-01",
+      "inflow_usd": 60.55,
+      "outflow_usd": 0.0,
+      "balance_usd": 467795.72,
+      "has_activity": true
+    },
+    {
+      "date": "2024-08-02",
+      "inflow_usd": 60.55,
+      "outflow_usd": 0.0,
+      "balance_usd": 467856.27,
+      "has_activity": true
+    },
+    {
+      "date": "2024-08-03",
+      "inflow_usd": 60.55,
+      "outflow_usd": 0.0,
+      "balance_usd": 467916.82,
+      "has_activity": true
+    },
+    {
+      "date": "2024-08-04",
+      "inflow_usd": 60.55,
+      "outflow_usd": 0.0,
+      "balance_usd": 467977.37,
+      "has_activity": true
+    },
+    {
+      "date": "2024-08-05",
+      "inflow_usd": 60.55,
+      "outflow_usd": 9820.5,
+      "balance_usd": 458217.42,
+      "has_activity": true
+    },
+    {
+      "date": "2024-08-06",
+      "inflow_usd": 60.55,
+      "outflow_usd": 0.0,
+      "balance_usd": 458277.97,
+      "has_activity": true
+    },
+    {
+      "date": "2024-08-07",
+      "inflow_usd": 60.55,
+      "outflow_usd": 0.0,
+      "balance_usd": 458338.52,
+      "has_activity": true
+    },
+    {
+      "date": "2024-08-08",
+      "inflow_usd": 60.55,
+      "outflow_usd": 13555.03,
+      "balance_usd": 444844.04,
+      "has_activity": true
+    },
+    {
+      "date": "2024-08-09",
+      "inflow_usd": 60.55,
+      "outflow_usd": 0.0,
+      "balance_usd": 444904.59,
+      "has_activity": true
+    },
+    {
+      "date": "2024-08-10",
+      "inflow_usd": 60.55,
+      "outflow_usd": 0.0,
+      "balance_usd": 444965.14,
+      "has_activity": true
+    },
+    {
+      "date": "2024-08-11",
+      "inflow_usd": 60.55,
+      "outflow_usd": 0.0,
+      "balance_usd": 445025.69,
+      "has_activity": true
+    },
+    {
+      "date": "2024-08-12",
+      "inflow_usd": 60.55,
+      "outflow_usd": 0.0,
+      "balance_usd": 445086.24,
+      "has_activity": true
+    },
+    {
+      "date": "2024-08-13",
+      "inflow_usd": 60.55,
+      "outflow_usd": 0.0,
+      "balance_usd": 445146.79,
+      "has_activity": true
+    },
+    {
+      "date": "2024-08-14",
+      "inflow_usd": 60.55,
+      "outflow_usd": 1.07,
+      "balance_usd": 445206.27,
+      "has_activity": true
+    },
+    {
+      "date": "2024-08-15",
+      "inflow_usd": 60.55,
+      "outflow_usd": 0.0,
+      "balance_usd": 445266.82,
+      "has_activity": true
+    },
+    {
+      "date": "2024-08-16",
+      "inflow_usd": 60.55,
+      "outflow_usd": 0.0,
+      "balance_usd": 445327.37,
+      "has_activity": true
+    },
+    {
+      "date": "2024-08-17",
+      "inflow_usd": 60.55,
+      "outflow_usd": 0.0,
+      "balance_usd": 445387.92,
+      "has_activity": true
+    },
+    {
+      "date": "2024-08-18",
+      "inflow_usd": 60.55,
+      "outflow_usd": 16116.0,
+      "balance_usd": 429332.47,
+      "has_activity": true
+    },
+    {
+      "date": "2024-08-19",
+      "inflow_usd": 60.55,
+      "outflow_usd": 0.0,
+      "balance_usd": 429393.02,
+      "has_activity": true
+    },
+    {
+      "date": "2024-08-20",
+      "inflow_usd": 60.55,
+      "outflow_usd": 4809.08,
+      "balance_usd": 424644.5,
+      "has_activity": true
+    },
+    {
+      "date": "2024-08-21",
+      "inflow_usd": 60.55,
+      "outflow_usd": 0.0,
+      "balance_usd": 424705.05,
+      "has_activity": true
+    },
+    {
+      "date": "2024-08-22",
+      "inflow_usd": 60.55,
+      "outflow_usd": 0.0,
+      "balance_usd": 424765.6,
+      "has_activity": true
+    },
+    {
+      "date": "2024-08-23",
+      "inflow_usd": 60.55,
+      "outflow_usd": 7870.0,
+      "balance_usd": 416956.15,
+      "has_activity": true
+    },
+    {
+      "date": "2024-08-24",
+      "inflow_usd": 60.55,
+      "outflow_usd": 1190.17,
+      "balance_usd": 415826.52,
+      "has_activity": true
+    },
+    {
+      "date": "2024-08-25",
+      "inflow_usd": 60.55,
+      "outflow_usd": 11800.0,
+      "balance_usd": 404087.07,
+      "has_activity": true
+    },
+    {
+      "date": "2024-08-26",
+      "inflow_usd": 60.55,
+      "outflow_usd": 0.0,
+      "balance_usd": 404147.62,
+      "has_activity": true
+    },
+    {
+      "date": "2024-08-27",
+      "inflow_usd": 60.55,
+      "outflow_usd": 0.0,
+      "balance_usd": 404208.17,
+      "has_activity": true
+    },
+    {
+      "date": "2024-08-28",
+      "inflow_usd": 60.55,
+      "outflow_usd": 0.0,
+      "balance_usd": 404268.72,
+      "has_activity": true
+    },
+    {
+      "date": "2024-08-29",
+      "inflow_usd": 60.55,
+      "outflow_usd": 0.0,
+      "balance_usd": 404329.27,
+      "has_activity": true
+    },
+    {
+      "date": "2024-08-30",
+      "inflow_usd": 60.55,
+      "outflow_usd": 0.0,
+      "balance_usd": 404389.82,
+      "has_activity": true
+    },
+    {
+      "date": "2024-09-01",
+      "inflow_usd": 17.77,
+      "outflow_usd": 0.0,
+      "balance_usd": 404407.59,
+      "has_activity": true
+    },
+    {
+      "date": "2024-09-02",
+      "inflow_usd": 17.77,
+      "outflow_usd": 0.0,
+      "balance_usd": 404425.36,
+      "has_activity": true
+    },
+    {
+      "date": "2024-09-03",
+      "inflow_usd": 17.77,
+      "outflow_usd": 0.0,
+      "balance_usd": 404443.13,
+      "has_activity": true
+    },
+    {
+      "date": "2024-09-04",
+      "inflow_usd": 17.77,
+      "outflow_usd": 0.0,
+      "balance_usd": 404460.9,
+      "has_activity": true
+    },
+    {
+      "date": "2024-09-05",
+      "inflow_usd": 17.77,
+      "outflow_usd": 0.0,
+      "balance_usd": 404478.67,
+      "has_activity": true
+    },
+    {
+      "date": "2024-09-06",
+      "inflow_usd": 17.77,
+      "outflow_usd": 0.0,
+      "balance_usd": 404496.44,
+      "has_activity": true
+    },
+    {
+      "date": "2024-09-07",
+      "inflow_usd": 17.77,
+      "outflow_usd": 0.0,
+      "balance_usd": 404514.21,
+      "has_activity": true
+    },
+    {
+      "date": "2024-09-08",
+      "inflow_usd": 17.77,
+      "outflow_usd": 0.0,
+      "balance_usd": 404531.98,
+      "has_activity": true
+    },
+    {
+      "date": "2024-09-09",
+      "inflow_usd": 17.77,
+      "outflow_usd": 0.0,
+      "balance_usd": 404549.75,
+      "has_activity": true
+    },
+    {
+      "date": "2024-09-10",
+      "inflow_usd": 17.77,
+      "outflow_usd": 6850.0,
+      "balance_usd": 397717.52,
+      "has_activity": true
+    },
+    {
+      "date": "2024-09-11",
+      "inflow_usd": 17.77,
+      "outflow_usd": 0.0,
+      "balance_usd": 397735.29,
+      "has_activity": true
+    },
+    {
+      "date": "2024-09-12",
+      "inflow_usd": 17.77,
+      "outflow_usd": 0.0,
+      "balance_usd": 397753.06,
+      "has_activity": true
+    },
+    {
+      "date": "2024-09-13",
+      "inflow_usd": 17.77,
+      "outflow_usd": 0.0,
+      "balance_usd": 397770.83,
+      "has_activity": true
+    },
+    {
+      "date": "2024-09-14",
+      "inflow_usd": 17.77,
+      "outflow_usd": 0.0,
+      "balance_usd": 397788.6,
+      "has_activity": true
+    },
+    {
+      "date": "2024-09-15",
+      "inflow_usd": 17.77,
+      "outflow_usd": 0.0,
+      "balance_usd": 397806.37,
+      "has_activity": true
+    },
+    {
+      "date": "2024-09-16",
+      "inflow_usd": 17.77,
+      "outflow_usd": 0.0,
+      "balance_usd": 397824.14,
+      "has_activity": true
+    },
+    {
+      "date": "2024-09-17",
+      "inflow_usd": 17.77,
+      "outflow_usd": 0.0,
+      "balance_usd": 397841.91,
+      "has_activity": true
+    },
+    {
+      "date": "2024-09-18",
+      "inflow_usd": 17.77,
+      "outflow_usd": 0.0,
+      "balance_usd": 397859.68,
+      "has_activity": true
+    },
+    {
+      "date": "2024-09-19",
+      "inflow_usd": 17.77,
+      "outflow_usd": 0.0,
+      "balance_usd": 397877.45,
+      "has_activity": true
+    },
+    {
+      "date": "2024-09-20",
+      "inflow_usd": 17.77,
+      "outflow_usd": 0.0,
+      "balance_usd": 397895.22,
+      "has_activity": true
+    },
+    {
+      "date": "2024-09-21",
+      "inflow_usd": 17.77,
+      "outflow_usd": 0.0,
+      "balance_usd": 397912.99,
+      "has_activity": true
+    },
+    {
+      "date": "2024-09-22",
+      "inflow_usd": 17.77,
+      "outflow_usd": 0.0,
+      "balance_usd": 397930.76,
+      "has_activity": true
+    },
+    {
+      "date": "2024-09-23",
+      "inflow_usd": 17.77,
+      "outflow_usd": 0.0,
+      "balance_usd": 397948.53,
+      "has_activity": true
+    },
+    {
+      "date": "2024-09-24",
+      "inflow_usd": 17.77,
+      "outflow_usd": 0.0,
+      "balance_usd": 397966.3,
+      "has_activity": true
+    },
+    {
+      "date": "2024-09-25",
+      "inflow_usd": 17.77,
+      "outflow_usd": 0.0,
+      "balance_usd": 397984.07,
+      "has_activity": true
+    },
+    {
+      "date": "2024-09-26",
+      "inflow_usd": 17.77,
+      "outflow_usd": 0.0,
+      "balance_usd": 398001.84,
+      "has_activity": true
+    },
+    {
+      "date": "2024-09-27",
+      "inflow_usd": 17.77,
+      "outflow_usd": 0.0,
+      "balance_usd": 398019.61,
+      "has_activity": true
+    },
+    {
+      "date": "2024-09-28",
+      "inflow_usd": 17.77,
+      "outflow_usd": 3000.0,
+      "balance_usd": 395037.38,
+      "has_activity": true
+    },
+    {
+      "date": "2024-09-29",
+      "inflow_usd": 17.77,
+      "outflow_usd": 0.0,
+      "balance_usd": 395055.15,
+      "has_activity": true
+    },
+    {
+      "date": "2024-09-30",
+      "inflow_usd": 17.77,
+      "outflow_usd": 1.09,
+      "balance_usd": 395071.83,
+      "has_activity": true
+    },
+    {
+      "date": "2024-10-01",
+      "inflow_usd": 35.63,
+      "outflow_usd": 0.0,
+      "balance_usd": 395107.46,
+      "has_activity": true
+    },
+    {
+      "date": "2024-10-02",
+      "inflow_usd": 35.63,
+      "outflow_usd": 0.0,
+      "balance_usd": 395143.09,
+      "has_activity": true
+    },
+    {
+      "date": "2024-10-03",
+      "inflow_usd": 35.63,
+      "outflow_usd": 0.0,
+      "balance_usd": 395178.72,
+      "has_activity": true
+    },
+    {
+      "date": "2024-10-04",
+      "inflow_usd": 35.63,
+      "outflow_usd": 0.0,
+      "balance_usd": 395214.35,
+      "has_activity": true
+    },
+    {
+      "date": "2024-10-05",
+      "inflow_usd": 35.63,
+      "outflow_usd": 0.0,
+      "balance_usd": 395249.98,
+      "has_activity": true
+    },
+    {
+      "date": "2024-10-06",
+      "inflow_usd": 35.63,
+      "outflow_usd": 0.0,
+      "balance_usd": 395285.61,
+      "has_activity": true
+    },
+    {
+      "date": "2024-10-07",
+      "inflow_usd": 35.63,
+      "outflow_usd": 0.0,
+      "balance_usd": 395321.24,
+      "has_activity": true
+    },
+    {
+      "date": "2024-10-08",
+      "inflow_usd": 35.63,
+      "outflow_usd": 0.0,
+      "balance_usd": 395356.87,
+      "has_activity": true
+    },
+    {
+      "date": "2024-10-09",
+      "inflow_usd": 35.63,
+      "outflow_usd": 0.0,
+      "balance_usd": 395392.5,
+      "has_activity": true
+    },
+    {
+      "date": "2024-10-10",
+      "inflow_usd": 35.63,
+      "outflow_usd": 0.0,
+      "balance_usd": 395428.13,
+      "has_activity": true
+    },
+    {
+      "date": "2024-10-11",
+      "inflow_usd": 35.63,
+      "outflow_usd": 0.0,
+      "balance_usd": 395463.76,
+      "has_activity": true
+    },
+    {
+      "date": "2024-10-12",
+      "inflow_usd": 35.63,
+      "outflow_usd": 0.0,
+      "balance_usd": 395499.39,
+      "has_activity": true
+    },
+    {
+      "date": "2024-10-13",
+      "inflow_usd": 35.63,
+      "outflow_usd": 0.0,
+      "balance_usd": 395535.02,
+      "has_activity": true
+    },
+    {
+      "date": "2024-10-14",
+      "inflow_usd": 35.63,
+      "outflow_usd": 0.0,
+      "balance_usd": 395570.65,
+      "has_activity": true
+    },
+    {
+      "date": "2024-10-15",
+      "inflow_usd": 35.63,
+      "outflow_usd": 0.0,
+      "balance_usd": 395606.28,
+      "has_activity": true
+    },
+    {
+      "date": "2024-10-16",
+      "inflow_usd": 35.63,
+      "outflow_usd": 0.0,
+      "balance_usd": 395641.91,
+      "has_activity": true
+    },
+    {
+      "date": "2024-10-17",
+      "inflow_usd": 35.63,
+      "outflow_usd": 0.0,
+      "balance_usd": 395677.54,
+      "has_activity": true
+    },
+    {
+      "date": "2024-10-18",
+      "inflow_usd": 35.63,
+      "outflow_usd": 0.0,
+      "balance_usd": 395713.17,
+      "has_activity": true
+    },
+    {
+      "date": "2024-10-19",
+      "inflow_usd": 35.63,
+      "outflow_usd": 6969.0,
+      "balance_usd": 388779.8,
+      "has_activity": true
+    },
+    {
+      "date": "2024-10-20",
+      "inflow_usd": 35.63,
+      "outflow_usd": 0.0,
+      "balance_usd": 388815.43,
+      "has_activity": true
+    },
+    {
+      "date": "2024-10-21",
+      "inflow_usd": 35.63,
+      "outflow_usd": 0.0,
+      "balance_usd": 388851.06,
+      "has_activity": true
+    },
+    {
+      "date": "2024-10-22",
+      "inflow_usd": 35.63,
+      "outflow_usd": 0.0,
+      "balance_usd": 388886.69,
+      "has_activity": true
+    },
+    {
+      "date": "2024-10-23",
+      "inflow_usd": 35.63,
+      "outflow_usd": 0.0,
+      "balance_usd": 388922.32,
+      "has_activity": true
+    },
+    {
+      "date": "2024-10-24",
+      "inflow_usd": 35.63,
+      "outflow_usd": 0.0,
+      "balance_usd": 388957.95,
+      "has_activity": true
+    },
+    {
+      "date": "2024-10-25",
+      "inflow_usd": 35.63,
+      "outflow_usd": 0.0,
+      "balance_usd": 388993.58,
+      "has_activity": true
+    },
+    {
+      "date": "2024-10-26",
+      "inflow_usd": 35.63,
+      "outflow_usd": 0.0,
+      "balance_usd": 389029.21,
+      "has_activity": true
+    },
+    {
+      "date": "2024-10-27",
+      "inflow_usd": 35.63,
+      "outflow_usd": 1000.0,
+      "balance_usd": 388064.84,
+      "has_activity": true
+    },
+    {
+      "date": "2024-10-28",
+      "inflow_usd": 35.63,
+      "outflow_usd": 0.0,
+      "balance_usd": 388100.47,
+      "has_activity": true
+    },
+    {
+      "date": "2024-10-29",
+      "inflow_usd": 35.63,
+      "outflow_usd": 1055.46,
+      "balance_usd": 387080.65,
+      "has_activity": true
+    },
+    {
+      "date": "2024-10-30",
+      "inflow_usd": 35.63,
+      "outflow_usd": 0.0,
+      "balance_usd": 387116.28,
+      "has_activity": true
+    },
+    {
+      "date": "2024-11-01",
+      "inflow_usd": 9.58,
+      "outflow_usd": 0.0,
+      "balance_usd": 387125.86,
+      "has_activity": true
+    },
+    {
+      "date": "2024-11-02",
+      "inflow_usd": 9.58,
+      "outflow_usd": 0.0,
+      "balance_usd": 387135.44,
+      "has_activity": true
+    },
+    {
+      "date": "2024-11-03",
+      "inflow_usd": 9.58,
+      "outflow_usd": 0.0,
+      "balance_usd": 387145.02,
+      "has_activity": true
+    },
+    {
+      "date": "2024-11-04",
+      "inflow_usd": 9.58,
+      "outflow_usd": 0.0,
+      "balance_usd": 387154.6,
+      "has_activity": true
+    },
+    {
+      "date": "2024-11-05",
+      "inflow_usd": 9.58,
+      "outflow_usd": 0.0,
+      "balance_usd": 387164.18,
+      "has_activity": true
+    },
+    {
+      "date": "2024-11-06",
+      "inflow_usd": 9.58,
+      "outflow_usd": 0.0,
+      "balance_usd": 387173.76,
+      "has_activity": true
+    },
+    {
+      "date": "2024-11-07",
+      "inflow_usd": 9.58,
+      "outflow_usd": 0.0,
+      "balance_usd": 387183.34,
+      "has_activity": true
+    },
+    {
+      "date": "2024-11-08",
+      "inflow_usd": 9.58,
+      "outflow_usd": 0.0,
+      "balance_usd": 387192.92,
+      "has_activity": true
+    },
+    {
+      "date": "2024-11-09",
+      "inflow_usd": 9.58,
+      "outflow_usd": 0.0,
+      "balance_usd": 387202.5,
+      "has_activity": true
+    },
+    {
+      "date": "2024-11-10",
+      "inflow_usd": 9.58,
+      "outflow_usd": 0.0,
+      "balance_usd": 387212.08,
+      "has_activity": true
+    },
+    {
+      "date": "2024-11-11",
+      "inflow_usd": 9.58,
+      "outflow_usd": 5100.0,
+      "balance_usd": 382121.66,
+      "has_activity": true
+    },
+    {
+      "date": "2024-11-12",
+      "inflow_usd": 9.58,
+      "outflow_usd": 0.0,
+      "balance_usd": 382131.24,
+      "has_activity": true
+    },
+    {
+      "date": "2024-11-13",
+      "inflow_usd": 9.58,
+      "outflow_usd": 0.0,
+      "balance_usd": 382140.82,
+      "has_activity": true
+    },
+    {
+      "date": "2024-11-14",
+      "inflow_usd": 9.58,
+      "outflow_usd": 0.0,
+      "balance_usd": 382150.4,
+      "has_activity": true
+    },
+    {
+      "date": "2024-11-15",
+      "inflow_usd": 9.58,
+      "outflow_usd": 0.0,
+      "balance_usd": 382159.98,
+      "has_activity": true
+    },
+    {
+      "date": "2024-11-16",
+      "inflow_usd": 9.58,
+      "outflow_usd": 0.0,
+      "balance_usd": 382169.56,
+      "has_activity": true
+    },
+    {
+      "date": "2024-11-17",
+      "inflow_usd": 9.58,
+      "outflow_usd": 0.0,
+      "balance_usd": 382179.14,
+      "has_activity": true
+    },
+    {
+      "date": "2024-11-18",
+      "inflow_usd": 9.58,
+      "outflow_usd": 0.0,
+      "balance_usd": 382188.72,
+      "has_activity": true
+    },
+    {
+      "date": "2024-11-19",
+      "inflow_usd": 9.58,
+      "outflow_usd": 0.0,
+      "balance_usd": 382198.3,
+      "has_activity": true
+    },
+    {
+      "date": "2024-11-20",
+      "inflow_usd": 9.58,
+      "outflow_usd": 0.0,
+      "balance_usd": 382207.88,
+      "has_activity": true
+    },
+    {
+      "date": "2024-11-21",
+      "inflow_usd": 9.58,
+      "outflow_usd": 0.0,
+      "balance_usd": 382217.46,
+      "has_activity": true
+    },
+    {
+      "date": "2024-11-22",
+      "inflow_usd": 9.58,
+      "outflow_usd": 0.0,
+      "balance_usd": 382227.04,
+      "has_activity": true
+    },
+    {
+      "date": "2024-11-23",
+      "inflow_usd": 9.58,
+      "outflow_usd": 0.0,
+      "balance_usd": 382236.62,
+      "has_activity": true
+    },
+    {
+      "date": "2024-11-24",
+      "inflow_usd": 9.58,
+      "outflow_usd": 0.0,
+      "balance_usd": 382246.2,
+      "has_activity": true
+    },
+    {
+      "date": "2024-11-25",
+      "inflow_usd": 9.58,
+      "outflow_usd": 0.0,
+      "balance_usd": 382255.78,
+      "has_activity": true
+    },
+    {
+      "date": "2024-11-26",
+      "inflow_usd": 9.58,
+      "outflow_usd": 0.0,
+      "balance_usd": 382265.36,
+      "has_activity": true
+    },
+    {
+      "date": "2024-11-27",
+      "inflow_usd": 9.58,
+      "outflow_usd": 0.0,
+      "balance_usd": 382274.94,
+      "has_activity": true
+    },
+    {
+      "date": "2024-11-28",
+      "inflow_usd": 9.58,
+      "outflow_usd": 0.0,
+      "balance_usd": 382284.52,
+      "has_activity": true
+    },
+    {
+      "date": "2024-11-29",
+      "inflow_usd": 9.58,
+      "outflow_usd": 0.0,
+      "balance_usd": 382294.1,
+      "has_activity": true
+    },
+    {
+      "date": "2024-11-30",
+      "inflow_usd": 9.58,
+      "outflow_usd": 0.0,
+      "balance_usd": 382303.68,
+      "has_activity": true
+    },
+    {
+      "date": "2024-12-01",
+      "inflow_usd": 13.4,
+      "outflow_usd": 4139.0,
+      "balance_usd": 378178.08,
+      "has_activity": true
+    },
+    {
+      "date": "2024-12-02",
+      "inflow_usd": 13.4,
+      "outflow_usd": 0.0,
+      "balance_usd": 378191.48,
+      "has_activity": true
+    },
+    {
+      "date": "2024-12-03",
+      "inflow_usd": 13.4,
+      "outflow_usd": 0.0,
+      "balance_usd": 378204.88,
+      "has_activity": true
+    },
+    {
+      "date": "2024-12-04",
+      "inflow_usd": 13.4,
+      "outflow_usd": 0.0,
+      "balance_usd": 378218.28,
+      "has_activity": true
+    },
+    {
+      "date": "2024-12-05",
+      "inflow_usd": 13.4,
+      "outflow_usd": 0.0,
+      "balance_usd": 378231.68,
+      "has_activity": true
+    },
+    {
+      "date": "2024-12-06",
+      "inflow_usd": 13.4,
+      "outflow_usd": 0.0,
+      "balance_usd": 378245.08,
+      "has_activity": true
+    },
+    {
+      "date": "2024-12-07",
+      "inflow_usd": 13.4,
+      "outflow_usd": 0.0,
+      "balance_usd": 378258.48,
+      "has_activity": true
+    },
+    {
+      "date": "2024-12-08",
+      "inflow_usd": 13.4,
+      "outflow_usd": 0.0,
+      "balance_usd": 378271.88,
+      "has_activity": true
+    },
+    {
+      "date": "2024-12-09",
+      "inflow_usd": 13.4,
+      "outflow_usd": 0.0,
+      "balance_usd": 378285.28,
+      "has_activity": true
+    },
+    {
+      "date": "2024-12-10",
+      "inflow_usd": 13.4,
+      "outflow_usd": 0.0,
+      "balance_usd": 378298.68,
+      "has_activity": true
+    },
+    {
+      "date": "2024-12-11",
+      "inflow_usd": 13.4,
+      "outflow_usd": 0.0,
+      "balance_usd": 378312.08,
+      "has_activity": true
+    },
+    {
+      "date": "2024-12-12",
+      "inflow_usd": 13.4,
+      "outflow_usd": 0.0,
+      "balance_usd": 378325.48,
+      "has_activity": true
+    },
+    {
+      "date": "2024-12-13",
+      "inflow_usd": 13.4,
+      "outflow_usd": 0.0,
+      "balance_usd": 378338.88,
+      "has_activity": true
+    },
+    {
+      "date": "2024-12-14",
+      "inflow_usd": 13.4,
+      "outflow_usd": 0.0,
+      "balance_usd": 378352.28,
+      "has_activity": true
+    },
+    {
+      "date": "2024-12-15",
+      "inflow_usd": 13.4,
+      "outflow_usd": 0.0,
+      "balance_usd": 378365.68,
+      "has_activity": true
+    },
+    {
+      "date": "2024-12-16",
+      "inflow_usd": 13.4,
+      "outflow_usd": 0.0,
+      "balance_usd": 378379.08,
+      "has_activity": true
+    },
+    {
+      "date": "2024-12-17",
+      "inflow_usd": 13.4,
+      "outflow_usd": 0.0,
+      "balance_usd": 378392.48,
+      "has_activity": true
+    },
+    {
+      "date": "2024-12-18",
+      "inflow_usd": 13.4,
+      "outflow_usd": 0.0,
+      "balance_usd": 378405.88,
+      "has_activity": true
+    },
+    {
+      "date": "2024-12-19",
+      "inflow_usd": 13.4,
+      "outflow_usd": 0.0,
+      "balance_usd": 378419.28,
+      "has_activity": true
+    },
+    {
+      "date": "2024-12-20",
+      "inflow_usd": 13.4,
+      "outflow_usd": 0.0,
+      "balance_usd": 378432.68,
+      "has_activity": true
+    },
+    {
+      "date": "2024-12-21",
+      "inflow_usd": 13.4,
+      "outflow_usd": 0.0,
+      "balance_usd": 378446.08,
+      "has_activity": true
+    },
+    {
+      "date": "2024-12-22",
+      "inflow_usd": 13.4,
+      "outflow_usd": 0.0,
+      "balance_usd": 378459.48,
+      "has_activity": true
+    },
+    {
+      "date": "2024-12-23",
+      "inflow_usd": 13.4,
+      "outflow_usd": 2580.69,
+      "balance_usd": 375892.19,
+      "has_activity": true
+    },
+    {
+      "date": "2024-12-24",
+      "inflow_usd": 13.4,
+      "outflow_usd": 0.0,
+      "balance_usd": 375905.59,
+      "has_activity": true
+    },
+    {
+      "date": "2024-12-25",
+      "inflow_usd": 13.4,
+      "outflow_usd": 0.0,
+      "balance_usd": 375918.99,
+      "has_activity": true
+    },
+    {
+      "date": "2024-12-26",
+      "inflow_usd": 13.4,
+      "outflow_usd": 0.0,
+      "balance_usd": 375932.39,
+      "has_activity": true
+    },
+    {
+      "date": "2024-12-27",
+      "inflow_usd": 13.4,
+      "outflow_usd": 0.0,
+      "balance_usd": 375945.79,
+      "has_activity": true
+    },
+    {
+      "date": "2024-12-28",
+      "inflow_usd": 13.4,
+      "outflow_usd": 0.0,
+      "balance_usd": 375959.19,
+      "has_activity": true
+    },
+    {
+      "date": "2024-12-29",
+      "inflow_usd": 13.4,
+      "outflow_usd": 0.0,
+      "balance_usd": 375972.59,
+      "has_activity": true
+    },
+    {
+      "date": "2024-12-30",
+      "inflow_usd": 13.4,
+      "outflow_usd": 0.0,
+      "balance_usd": 375985.99,
+      "has_activity": true
+    },
+    {
+      "date": "2025-01-01",
+      "inflow_usd": 24.36,
+      "outflow_usd": 0.0,
+      "balance_usd": 376010.35,
+      "has_activity": true
+    },
+    {
+      "date": "2025-01-02",
+      "inflow_usd": 24.36,
+      "outflow_usd": 0.0,
+      "balance_usd": 376034.71,
+      "has_activity": true
+    },
+    {
+      "date": "2025-01-03",
+      "inflow_usd": 24.36,
+      "outflow_usd": 0.0,
+      "balance_usd": 376059.07,
+      "has_activity": true
+    },
+    {
+      "date": "2025-01-04",
+      "inflow_usd": 24.36,
+      "outflow_usd": 0.0,
+      "balance_usd": 376083.43,
+      "has_activity": true
+    },
+    {
+      "date": "2025-01-05",
+      "inflow_usd": 24.36,
+      "outflow_usd": 0.0,
+      "balance_usd": 376107.79,
+      "has_activity": true
+    },
+    {
+      "date": "2025-01-06",
+      "inflow_usd": 24.36,
+      "outflow_usd": 0.0,
+      "balance_usd": 376132.15,
+      "has_activity": true
+    },
+    {
+      "date": "2025-01-07",
+      "inflow_usd": 24.36,
+      "outflow_usd": 0.0,
+      "balance_usd": 376156.51,
+      "has_activity": true
+    },
+    {
+      "date": "2025-01-08",
+      "inflow_usd": 24.36,
+      "outflow_usd": 0.0,
+      "balance_usd": 376180.87,
+      "has_activity": true
+    },
+    {
+      "date": "2025-01-09",
+      "inflow_usd": 24.36,
+      "outflow_usd": 0.0,
+      "balance_usd": 376205.23,
+      "has_activity": true
+    },
+    {
+      "date": "2025-01-10",
+      "inflow_usd": 24.36,
+      "outflow_usd": 0.0,
+      "balance_usd": 376229.59,
+      "has_activity": true
+    },
+    {
+      "date": "2025-01-11",
+      "inflow_usd": 24.36,
+      "outflow_usd": 0.0,
+      "balance_usd": 376253.95,
+      "has_activity": true
+    },
+    {
+      "date": "2025-01-12",
+      "inflow_usd": 24.36,
+      "outflow_usd": 0.0,
+      "balance_usd": 376278.31,
+      "has_activity": true
+    },
+    {
+      "date": "2025-01-13",
+      "inflow_usd": 24.36,
+      "outflow_usd": 0.0,
+      "balance_usd": 376302.67,
+      "has_activity": true
+    },
+    {
+      "date": "2025-01-14",
+      "inflow_usd": 24.36,
+      "outflow_usd": 0.0,
+      "balance_usd": 376327.03,
+      "has_activity": true
+    },
+    {
+      "date": "2025-01-15",
+      "inflow_usd": 24.36,
+      "outflow_usd": 0.0,
+      "balance_usd": 376351.39,
+      "has_activity": true
+    },
+    {
+      "date": "2025-01-16",
+      "inflow_usd": 24.36,
+      "outflow_usd": 0.0,
+      "balance_usd": 376375.75,
+      "has_activity": true
+    },
+    {
+      "date": "2025-01-17",
+      "inflow_usd": 24.36,
+      "outflow_usd": 0.0,
+      "balance_usd": 376400.11,
+      "has_activity": true
+    },
+    {
+      "date": "2025-01-18",
+      "inflow_usd": 24.36,
+      "outflow_usd": 0.0,
+      "balance_usd": 376424.47,
+      "has_activity": true
+    },
+    {
+      "date": "2025-01-19",
+      "inflow_usd": 24.36,
+      "outflow_usd": 0.0,
+      "balance_usd": 376448.83,
+      "has_activity": true
+    },
+    {
+      "date": "2025-01-20",
+      "inflow_usd": 24.36,
+      "outflow_usd": 0.0,
+      "balance_usd": 376473.19,
+      "has_activity": true
+    },
+    {
+      "date": "2025-01-21",
+      "inflow_usd": 24.36,
+      "outflow_usd": 0.0,
+      "balance_usd": 376497.55,
+      "has_activity": true
+    },
+    {
+      "date": "2025-01-22",
+      "inflow_usd": 24.36,
+      "outflow_usd": 0.0,
+      "balance_usd": 376521.91,
+      "has_activity": true
+    },
+    {
+      "date": "2025-01-23",
+      "inflow_usd": 24.36,
+      "outflow_usd": 8550.0,
+      "balance_usd": 367996.27,
+      "has_activity": true
+    },
+    {
+      "date": "2025-01-24",
+      "inflow_usd": 24.36,
+      "outflow_usd": 0.0,
+      "balance_usd": 368020.63,
+      "has_activity": true
+    },
+    {
+      "date": "2025-01-25",
+      "inflow_usd": 24.36,
+      "outflow_usd": 0.0,
+      "balance_usd": 368044.99,
+      "has_activity": true
+    },
+    {
+      "date": "2025-01-26",
+      "inflow_usd": 24.36,
+      "outflow_usd": 0.0,
+      "balance_usd": 368069.35,
+      "has_activity": true
+    },
+    {
+      "date": "2025-01-27",
+      "inflow_usd": 24.36,
+      "outflow_usd": 0.0,
+      "balance_usd": 368093.71,
+      "has_activity": true
+    },
+    {
+      "date": "2025-01-28",
+      "inflow_usd": 24.36,
+      "outflow_usd": 0.0,
+      "balance_usd": 368118.07,
+      "has_activity": true
+    },
+    {
+      "date": "2025-01-29",
+      "inflow_usd": 24.36,
+      "outflow_usd": 0.0,
+      "balance_usd": 368142.43,
+      "has_activity": true
+    },
+    {
+      "date": "2025-01-30",
+      "inflow_usd": 24.36,
+      "outflow_usd": 0.0,
+      "balance_usd": 368166.79,
+      "has_activity": true
+    },
+    {
+      "date": "2025-02-01",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 368170.41,
+      "has_activity": true
+    },
+    {
+      "date": "2025-02-02",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 368174.03,
+      "has_activity": true
+    },
+    {
+      "date": "2025-02-03",
+      "inflow_usd": 3.62,
+      "outflow_usd": 4921.81,
+      "balance_usd": 363255.83,
+      "has_activity": true
+    },
+    {
+      "date": "2025-02-04",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 363259.45,
+      "has_activity": true
+    },
+    {
+      "date": "2025-02-05",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 363263.07,
+      "has_activity": true
+    },
+    {
+      "date": "2025-02-06",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 363266.69,
+      "has_activity": true
+    },
+    {
+      "date": "2025-02-07",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 363270.31,
+      "has_activity": true
+    },
+    {
+      "date": "2025-02-08",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 363273.93,
+      "has_activity": true
+    },
+    {
+      "date": "2025-02-09",
+      "inflow_usd": 3.62,
+      "outflow_usd": 6567.7,
+      "balance_usd": 356709.85,
+      "has_activity": true
+    },
+    {
+      "date": "2025-02-10",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 356713.47,
+      "has_activity": true
+    },
+    {
+      "date": "2025-02-11",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 356717.09,
+      "has_activity": true
+    },
+    {
+      "date": "2025-02-12",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 356720.71,
+      "has_activity": true
+    },
+    {
+      "date": "2025-02-13",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 356724.33,
+      "has_activity": true
+    },
+    {
+      "date": "2025-02-14",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 356727.95,
+      "has_activity": true
+    },
+    {
+      "date": "2025-02-15",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 356731.57,
+      "has_activity": true
+    },
+    {
+      "date": "2025-02-16",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 356735.19,
+      "has_activity": true
+    },
+    {
+      "date": "2025-02-17",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 356738.81,
+      "has_activity": true
+    },
+    {
+      "date": "2025-02-18",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 356742.43,
+      "has_activity": true
+    },
+    {
+      "date": "2025-02-19",
+      "inflow_usd": 3.62,
+      "outflow_usd": 2250.0,
+      "balance_usd": 354496.05,
+      "has_activity": true
+    },
+    {
+      "date": "2025-02-20",
+      "inflow_usd": 3.62,
+      "outflow_usd": 195.68,
+      "balance_usd": 354303.99,
+      "has_activity": true
+    },
+    {
+      "date": "2025-02-21",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 354307.61,
+      "has_activity": true
+    },
+    {
+      "date": "2025-02-22",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 354311.23,
+      "has_activity": true
+    },
+    {
+      "date": "2025-02-23",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 354314.85,
+      "has_activity": true
+    },
+    {
+      "date": "2025-02-24",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 354318.47,
+      "has_activity": true
+    },
+    {
+      "date": "2025-02-25",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 354322.09,
+      "has_activity": true
+    },
+    {
+      "date": "2025-02-26",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 354325.71,
+      "has_activity": true
+    },
+    {
+      "date": "2025-02-27",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 354329.33,
+      "has_activity": true
+    },
+    {
+      "date": "2025-02-28",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 354332.95,
+      "has_activity": true
+    },
+    {
+      "date": "2025-03-01",
+      "inflow_usd": 9.0,
+      "outflow_usd": 0.0,
+      "balance_usd": 354341.95,
+      "has_activity": true
+    },
+    {
+      "date": "2025-03-02",
+      "inflow_usd": 9.0,
+      "outflow_usd": 0.0,
+      "balance_usd": 354350.95,
+      "has_activity": true
+    },
+    {
+      "date": "2025-03-03",
+      "inflow_usd": 9.0,
+      "outflow_usd": 0.0,
+      "balance_usd": 354359.95,
+      "has_activity": true
+    },
+    {
+      "date": "2025-03-04",
+      "inflow_usd": 9.0,
+      "outflow_usd": 0.0,
+      "balance_usd": 354368.95,
+      "has_activity": true
+    },
+    {
+      "date": "2025-03-05",
+      "inflow_usd": 9.0,
+      "outflow_usd": 0.0,
+      "balance_usd": 354377.95,
+      "has_activity": true
+    },
+    {
+      "date": "2025-03-06",
+      "inflow_usd": 9.0,
+      "outflow_usd": 0.0,
+      "balance_usd": 354386.95,
+      "has_activity": true
+    },
+    {
+      "date": "2025-03-07",
+      "inflow_usd": 9.0,
+      "outflow_usd": 0.0,
+      "balance_usd": 354395.95,
+      "has_activity": true
+    },
+    {
+      "date": "2025-03-08",
+      "inflow_usd": 9.0,
+      "outflow_usd": 0.0,
+      "balance_usd": 354404.95,
+      "has_activity": true
+    },
+    {
+      "date": "2025-03-09",
+      "inflow_usd": 9.0,
+      "outflow_usd": 0.0,
+      "balance_usd": 354413.95,
+      "has_activity": true
+    },
+    {
+      "date": "2025-03-10",
+      "inflow_usd": 9.0,
+      "outflow_usd": 0.0,
+      "balance_usd": 354422.95,
+      "has_activity": true
+    },
+    {
+      "date": "2025-03-11",
+      "inflow_usd": 9.0,
+      "outflow_usd": 0.0,
+      "balance_usd": 354431.95,
+      "has_activity": true
+    },
+    {
+      "date": "2025-03-12",
+      "inflow_usd": 9.0,
+      "outflow_usd": 0.0,
+      "balance_usd": 354440.95,
+      "has_activity": true
+    },
+    {
+      "date": "2025-03-13",
+      "inflow_usd": 9.0,
+      "outflow_usd": 0.0,
+      "balance_usd": 354449.95,
+      "has_activity": true
+    },
+    {
+      "date": "2025-03-14",
+      "inflow_usd": 9.0,
+      "outflow_usd": 1250.0,
+      "balance_usd": 353208.95,
+      "has_activity": true
+    },
+    {
+      "date": "2025-03-15",
+      "inflow_usd": 9.0,
+      "outflow_usd": 0.0,
+      "balance_usd": 353217.95,
+      "has_activity": true
+    },
+    {
+      "date": "2025-03-16",
+      "inflow_usd": 9.0,
+      "outflow_usd": 0.0,
+      "balance_usd": 353226.95,
+      "has_activity": true
+    },
+    {
+      "date": "2025-03-17",
+      "inflow_usd": 9.0,
+      "outflow_usd": 0.0,
+      "balance_usd": 353235.95,
+      "has_activity": true
+    },
+    {
+      "date": "2025-03-18",
+      "inflow_usd": 9.0,
+      "outflow_usd": 0.0,
+      "balance_usd": 353244.95,
+      "has_activity": true
+    },
+    {
+      "date": "2025-03-19",
+      "inflow_usd": 9.0,
+      "outflow_usd": 0.0,
+      "balance_usd": 353253.95,
+      "has_activity": true
+    },
+    {
+      "date": "2025-03-20",
+      "inflow_usd": 9.0,
+      "outflow_usd": 0.0,
+      "balance_usd": 353262.95,
+      "has_activity": true
+    },
+    {
+      "date": "2025-03-21",
+      "inflow_usd": 9.0,
+      "outflow_usd": 0.0,
+      "balance_usd": 353271.95,
+      "has_activity": true
+    },
+    {
+      "date": "2025-03-22",
+      "inflow_usd": 9.0,
+      "outflow_usd": 0.0,
+      "balance_usd": 353280.95,
+      "has_activity": true
+    },
+    {
+      "date": "2025-03-23",
+      "inflow_usd": 9.0,
+      "outflow_usd": 0.0,
+      "balance_usd": 353289.95,
+      "has_activity": true
+    },
+    {
+      "date": "2025-03-24",
+      "inflow_usd": 9.0,
+      "outflow_usd": 0.0,
+      "balance_usd": 353298.95,
+      "has_activity": true
+    },
+    {
+      "date": "2025-03-25",
+      "inflow_usd": 9.0,
+      "outflow_usd": 2042.0,
+      "balance_usd": 351265.95,
+      "has_activity": true
+    },
+    {
+      "date": "2025-03-26",
+      "inflow_usd": 9.0,
+      "outflow_usd": 0.0,
+      "balance_usd": 351274.95,
+      "has_activity": true
+    },
+    {
+      "date": "2025-03-27",
+      "inflow_usd": 9.0,
+      "outflow_usd": 0.0,
+      "balance_usd": 351283.95,
+      "has_activity": true
+    },
+    {
+      "date": "2025-03-28",
+      "inflow_usd": 9.0,
+      "outflow_usd": 0.0,
+      "balance_usd": 351292.95,
+      "has_activity": true
+    },
+    {
+      "date": "2025-03-29",
+      "inflow_usd": 9.0,
+      "outflow_usd": 0.0,
+      "balance_usd": 351301.95,
+      "has_activity": true
+    },
+    {
+      "date": "2025-03-30",
+      "inflow_usd": 9.0,
+      "outflow_usd": 0.0,
+      "balance_usd": 351310.95,
+      "has_activity": true
+    },
+    {
+      "date": "2025-04-01",
+      "inflow_usd": 2.93,
+      "outflow_usd": 0.0,
+      "balance_usd": 351313.88,
+      "has_activity": true
+    },
+    {
+      "date": "2025-04-02",
+      "inflow_usd": 2.93,
+      "outflow_usd": 0.0,
+      "balance_usd": 351316.81,
+      "has_activity": true
+    },
+    {
+      "date": "2025-04-03",
+      "inflow_usd": 2.93,
+      "outflow_usd": 0.0,
+      "balance_usd": 351319.74,
+      "has_activity": true
+    },
+    {
+      "date": "2025-04-04",
+      "inflow_usd": 2.93,
+      "outflow_usd": 0.0,
+      "balance_usd": 351322.67,
+      "has_activity": true
+    },
+    {
+      "date": "2025-04-05",
+      "inflow_usd": 2.93,
+      "outflow_usd": 0.0,
+      "balance_usd": 351325.6,
+      "has_activity": true
+    },
+    {
+      "date": "2025-04-06",
+      "inflow_usd": 2.93,
+      "outflow_usd": 0.0,
+      "balance_usd": 351328.53,
+      "has_activity": true
+    },
+    {
+      "date": "2025-04-07",
+      "inflow_usd": 2.93,
+      "outflow_usd": 0.0,
+      "balance_usd": 351331.46,
+      "has_activity": true
+    },
+    {
+      "date": "2025-04-08",
+      "inflow_usd": 2.93,
+      "outflow_usd": 0.0,
+      "balance_usd": 351334.39,
+      "has_activity": true
+    },
+    {
+      "date": "2025-04-09",
+      "inflow_usd": 2.93,
+      "outflow_usd": 0.0,
+      "balance_usd": 351337.32,
+      "has_activity": true
+    },
+    {
+      "date": "2025-04-10",
+      "inflow_usd": 2.93,
+      "outflow_usd": 2500.0,
+      "balance_usd": 348840.25,
+      "has_activity": true
+    },
+    {
+      "date": "2025-04-11",
+      "inflow_usd": 2.93,
+      "outflow_usd": 0.0,
+      "balance_usd": 348843.18,
+      "has_activity": true
+    },
+    {
+      "date": "2025-04-12",
+      "inflow_usd": 2.93,
+      "outflow_usd": 0.0,
+      "balance_usd": 348846.11,
+      "has_activity": true
+    },
+    {
+      "date": "2025-04-13",
+      "inflow_usd": 2.93,
+      "outflow_usd": 0.0,
+      "balance_usd": 348849.04,
+      "has_activity": true
+    },
+    {
+      "date": "2025-04-14",
+      "inflow_usd": 2.93,
+      "outflow_usd": 0.0,
+      "balance_usd": 348851.97,
+      "has_activity": true
+    },
+    {
+      "date": "2025-04-15",
+      "inflow_usd": 2.93,
+      "outflow_usd": 0.0,
+      "balance_usd": 348854.9,
+      "has_activity": true
+    },
+    {
+      "date": "2025-04-16",
+      "inflow_usd": 2.93,
+      "outflow_usd": 0.0,
+      "balance_usd": 348857.83,
+      "has_activity": true
+    },
+    {
+      "date": "2025-04-17",
+      "inflow_usd": 2.93,
+      "outflow_usd": 0.0,
+      "balance_usd": 348860.76,
+      "has_activity": true
+    },
+    {
+      "date": "2025-04-18",
+      "inflow_usd": 2.93,
+      "outflow_usd": 0.0,
+      "balance_usd": 348863.69,
+      "has_activity": true
+    },
+    {
+      "date": "2025-04-19",
+      "inflow_usd": 2.93,
+      "outflow_usd": 0.0,
+      "balance_usd": 348866.62,
+      "has_activity": true
+    },
+    {
+      "date": "2025-04-20",
+      "inflow_usd": 2.93,
+      "outflow_usd": 0.0,
+      "balance_usd": 348869.55,
+      "has_activity": true
+    },
+    {
+      "date": "2025-04-21",
+      "inflow_usd": 2.93,
+      "outflow_usd": 0.0,
+      "balance_usd": 348872.48,
+      "has_activity": true
+    },
+    {
+      "date": "2025-04-22",
+      "inflow_usd": 2.93,
+      "outflow_usd": 1350.0,
+      "balance_usd": 347525.41,
+      "has_activity": true
+    },
+    {
+      "date": "2025-04-23",
+      "inflow_usd": 2.93,
+      "outflow_usd": 0.0,
+      "balance_usd": 347528.34,
+      "has_activity": true
+    },
+    {
+      "date": "2025-04-24",
+      "inflow_usd": 2.93,
+      "outflow_usd": 0.0,
+      "balance_usd": 347531.27,
+      "has_activity": true
+    },
+    {
+      "date": "2025-04-25",
+      "inflow_usd": 2.93,
+      "outflow_usd": 0.0,
+      "balance_usd": 347534.2,
+      "has_activity": true
+    },
+    {
+      "date": "2025-04-26",
+      "inflow_usd": 2.93,
+      "outflow_usd": 0.0,
+      "balance_usd": 347537.13,
+      "has_activity": true
+    },
+    {
+      "date": "2025-04-27",
+      "inflow_usd": 2.93,
+      "outflow_usd": 0.0,
+      "balance_usd": 347540.06,
+      "has_activity": true
+    },
+    {
+      "date": "2025-04-28",
+      "inflow_usd": 2.93,
+      "outflow_usd": 0.0,
+      "balance_usd": 347542.99,
+      "has_activity": true
+    },
+    {
+      "date": "2025-04-29",
+      "inflow_usd": 2.93,
+      "outflow_usd": 0.0,
+      "balance_usd": 347545.92,
+      "has_activity": true
+    },
+    {
+      "date": "2025-04-30",
+      "inflow_usd": 2.93,
+      "outflow_usd": 0.0,
+      "balance_usd": 347548.85,
+      "has_activity": true
+    },
+    {
+      "date": "2025-05-01",
+      "inflow_usd": 3.79,
+      "outflow_usd": 0.0,
+      "balance_usd": 347552.64,
+      "has_activity": true
+    },
+    {
+      "date": "2025-05-02",
+      "inflow_usd": 3.79,
+      "outflow_usd": 0.0,
+      "balance_usd": 347556.43,
+      "has_activity": true
+    },
+    {
+      "date": "2025-05-03",
+      "inflow_usd": 3.79,
+      "outflow_usd": 0.0,
+      "balance_usd": 347560.22,
+      "has_activity": true
+    },
+    {
+      "date": "2025-05-04",
+      "inflow_usd": 3.79,
+      "outflow_usd": 0.0,
+      "balance_usd": 347564.01,
+      "has_activity": true
+    },
+    {
+      "date": "2025-05-05",
+      "inflow_usd": 3.79,
+      "outflow_usd": 0.0,
+      "balance_usd": 347567.8,
+      "has_activity": true
+    },
+    {
+      "date": "2025-05-06",
+      "inflow_usd": 3.79,
+      "outflow_usd": 0.0,
+      "balance_usd": 347571.59,
+      "has_activity": true
+    },
+    {
+      "date": "2025-05-07",
+      "inflow_usd": 3.79,
+      "outflow_usd": 0.0,
+      "balance_usd": 347575.38,
+      "has_activity": true
+    },
+    {
+      "date": "2025-05-08",
+      "inflow_usd": 3.79,
+      "outflow_usd": 0.0,
+      "balance_usd": 347579.17,
+      "has_activity": true
+    },
+    {
+      "date": "2025-05-09",
+      "inflow_usd": 3.79,
+      "outflow_usd": 0.0,
+      "balance_usd": 347582.96,
+      "has_activity": true
+    },
+    {
+      "date": "2025-05-10",
+      "inflow_usd": 3.79,
+      "outflow_usd": 0.0,
+      "balance_usd": 347586.75,
+      "has_activity": true
+    },
+    {
+      "date": "2025-05-11",
+      "inflow_usd": 3.79,
+      "outflow_usd": 0.0,
+      "balance_usd": 347590.54,
+      "has_activity": true
+    },
+    {
+      "date": "2025-05-12",
+      "inflow_usd": 3.79,
+      "outflow_usd": 0.0,
+      "balance_usd": 347594.33,
+      "has_activity": true
+    },
+    {
+      "date": "2025-05-13",
+      "inflow_usd": 3.79,
+      "outflow_usd": 0.0,
+      "balance_usd": 347598.12,
+      "has_activity": true
+    },
+    {
+      "date": "2025-05-14",
+      "inflow_usd": 3.79,
+      "outflow_usd": 0.0,
+      "balance_usd": 347601.91,
+      "has_activity": true
+    },
+    {
+      "date": "2025-05-15",
+      "inflow_usd": 3.79,
+      "outflow_usd": 0.0,
+      "balance_usd": 347605.7,
+      "has_activity": true
+    },
+    {
+      "date": "2025-05-16",
+      "inflow_usd": 3.79,
+      "outflow_usd": 0.0,
+      "balance_usd": 347609.49,
+      "has_activity": true
+    },
+    {
+      "date": "2025-05-17",
+      "inflow_usd": 3.79,
+      "outflow_usd": 0.0,
+      "balance_usd": 347613.28,
+      "has_activity": true
+    },
+    {
+      "date": "2025-05-18",
+      "inflow_usd": 3.79,
+      "outflow_usd": 0.0,
+      "balance_usd": 347617.07,
+      "has_activity": true
+    },
+    {
+      "date": "2025-05-19",
+      "inflow_usd": 3.79,
+      "outflow_usd": 0.0,
+      "balance_usd": 347620.86,
+      "has_activity": true
+    },
+    {
+      "date": "2025-05-20",
+      "inflow_usd": 3.79,
+      "outflow_usd": 0.0,
+      "balance_usd": 347624.65,
+      "has_activity": true
+    },
+    {
+      "date": "2025-05-21",
+      "inflow_usd": 3.79,
+      "outflow_usd": 0.0,
+      "balance_usd": 347628.44,
+      "has_activity": true
+    },
+    {
+      "date": "2025-05-22",
+      "inflow_usd": 3.79,
+      "outflow_usd": 0.0,
+      "balance_usd": 347632.23,
+      "has_activity": true
+    },
+    {
+      "date": "2025-05-23",
+      "inflow_usd": 3.79,
+      "outflow_usd": 0.0,
+      "balance_usd": 347636.02,
+      "has_activity": true
+    },
+    {
+      "date": "2025-05-24",
+      "inflow_usd": 3.79,
+      "outflow_usd": 0.0,
+      "balance_usd": 347639.81,
+      "has_activity": true
+    },
+    {
+      "date": "2025-05-25",
+      "inflow_usd": 3.79,
+      "outflow_usd": 0.0,
+      "balance_usd": 347643.6,
+      "has_activity": true
+    },
+    {
+      "date": "2025-05-26",
+      "inflow_usd": 3.79,
+      "outflow_usd": 0.0,
+      "balance_usd": 347647.39,
+      "has_activity": true
+    },
+    {
+      "date": "2025-05-27",
+      "inflow_usd": 3.79,
+      "outflow_usd": 0.0,
+      "balance_usd": 347651.18,
+      "has_activity": true
+    },
+    {
+      "date": "2025-05-28",
+      "inflow_usd": 3.79,
+      "outflow_usd": 0.0,
+      "balance_usd": 347654.97,
+      "has_activity": true
+    },
+    {
+      "date": "2025-05-29",
+      "inflow_usd": 3.79,
+      "outflow_usd": 0.0,
+      "balance_usd": 347658.76,
+      "has_activity": true
+    },
+    {
+      "date": "2025-05-30",
+      "inflow_usd": 3.79,
+      "outflow_usd": 0.0,
+      "balance_usd": 347662.55,
+      "has_activity": true
+    },
+    {
+      "date": "2025-06-01",
+      "inflow_usd": 5.04,
+      "outflow_usd": 10532.36,
+      "balance_usd": 337135.23,
+      "has_activity": true
+    },
+    {
+      "date": "2025-06-02",
+      "inflow_usd": 5.04,
+      "outflow_usd": 0.0,
+      "balance_usd": 337140.27,
+      "has_activity": true
+    },
+    {
+      "date": "2025-06-03",
+      "inflow_usd": 5.04,
+      "outflow_usd": 0.0,
+      "balance_usd": 337145.31,
+      "has_activity": true
+    },
+    {
+      "date": "2025-06-04",
+      "inflow_usd": 5.04,
+      "outflow_usd": 0.0,
+      "balance_usd": 337150.35,
+      "has_activity": true
+    },
+    {
+      "date": "2025-06-05",
+      "inflow_usd": 5.04,
+      "outflow_usd": 0.0,
+      "balance_usd": 337155.39,
+      "has_activity": true
+    },
+    {
+      "date": "2025-06-06",
+      "inflow_usd": 5.04,
+      "outflow_usd": 0.0,
+      "balance_usd": 337160.43,
+      "has_activity": true
+    },
+    {
+      "date": "2025-06-07",
+      "inflow_usd": 5.04,
+      "outflow_usd": 0.0,
+      "balance_usd": 337165.47,
+      "has_activity": true
+    },
+    {
+      "date": "2025-06-08",
+      "inflow_usd": 5.04,
+      "outflow_usd": 0.0,
+      "balance_usd": 337170.51,
+      "has_activity": true
+    },
+    {
+      "date": "2025-06-09",
+      "inflow_usd": 5.04,
+      "outflow_usd": 0.0,
+      "balance_usd": 337175.55,
+      "has_activity": true
+    },
+    {
+      "date": "2025-06-10",
+      "inflow_usd": 5.04,
+      "outflow_usd": 0.0,
+      "balance_usd": 337180.59,
+      "has_activity": true
+    },
+    {
+      "date": "2025-06-11",
+      "inflow_usd": 5.04,
+      "outflow_usd": 0.0,
+      "balance_usd": 337185.63,
+      "has_activity": true
+    },
+    {
+      "date": "2025-06-12",
+      "inflow_usd": 5.04,
+      "outflow_usd": 0.0,
+      "balance_usd": 337190.67,
+      "has_activity": true
+    },
+    {
+      "date": "2025-06-13",
+      "inflow_usd": 5.04,
+      "outflow_usd": 0.0,
+      "balance_usd": 337195.71,
+      "has_activity": true
+    },
+    {
+      "date": "2025-06-14",
+      "inflow_usd": 5.04,
+      "outflow_usd": 0.0,
+      "balance_usd": 337200.75,
+      "has_activity": true
+    },
+    {
+      "date": "2025-06-15",
+      "inflow_usd": 5.04,
+      "outflow_usd": 0.0,
+      "balance_usd": 337205.79,
+      "has_activity": true
+    },
+    {
+      "date": "2025-06-16",
+      "inflow_usd": 5.04,
+      "outflow_usd": 0.0,
+      "balance_usd": 337210.83,
+      "has_activity": true
+    },
+    {
+      "date": "2025-06-17",
+      "inflow_usd": 5.04,
+      "outflow_usd": 0.0,
+      "balance_usd": 337215.87,
+      "has_activity": true
+    },
+    {
+      "date": "2025-06-18",
+      "inflow_usd": 5.04,
+      "outflow_usd": 0.0,
+      "balance_usd": 337220.91,
+      "has_activity": true
+    },
+    {
+      "date": "2025-06-19",
+      "inflow_usd": 5.04,
+      "outflow_usd": 0.0,
+      "balance_usd": 337225.95,
+      "has_activity": true
+    },
+    {
+      "date": "2025-06-20",
+      "inflow_usd": 5.04,
+      "outflow_usd": 0.0,
+      "balance_usd": 337230.99,
+      "has_activity": true
+    },
+    {
+      "date": "2025-06-21",
+      "inflow_usd": 5.04,
+      "outflow_usd": 0.0,
+      "balance_usd": 337236.03,
+      "has_activity": true
+    },
+    {
+      "date": "2025-06-22",
+      "inflow_usd": 5.04,
+      "outflow_usd": 0.0,
+      "balance_usd": 337241.07,
+      "has_activity": true
+    },
+    {
+      "date": "2025-06-23",
+      "inflow_usd": 5.04,
+      "outflow_usd": 0.0,
+      "balance_usd": 337246.11,
+      "has_activity": true
+    },
+    {
+      "date": "2025-06-24",
+      "inflow_usd": 5.04,
+      "outflow_usd": 0.0,
+      "balance_usd": 337251.15,
+      "has_activity": true
+    },
+    {
+      "date": "2025-06-25",
+      "inflow_usd": 5.04,
+      "outflow_usd": 0.0,
+      "balance_usd": 337256.19,
+      "has_activity": true
+    },
+    {
+      "date": "2025-06-26",
+      "inflow_usd": 5.04,
+      "outflow_usd": 0.0,
+      "balance_usd": 337261.23,
+      "has_activity": true
+    },
+    {
+      "date": "2025-06-27",
+      "inflow_usd": 5.04,
+      "outflow_usd": 0.0,
+      "balance_usd": 337266.27,
+      "has_activity": true
+    },
+    {
+      "date": "2025-06-28",
+      "inflow_usd": 5.04,
+      "outflow_usd": 0.0,
+      "balance_usd": 337271.31,
+      "has_activity": true
+    },
+    {
+      "date": "2025-06-29",
+      "inflow_usd": 5.04,
+      "outflow_usd": 0.0,
+      "balance_usd": 337276.35,
+      "has_activity": true
+    },
+    {
+      "date": "2025-06-30",
+      "inflow_usd": 5.04,
+      "outflow_usd": 0.0,
+      "balance_usd": 337281.39,
+      "has_activity": true
+    },
+    {
+      "date": "2025-07-01",
+      "inflow_usd": 3.62,
+      "outflow_usd": 1700.0,
+      "balance_usd": 335585.01,
+      "has_activity": true
+    },
+    {
+      "date": "2025-07-02",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 335588.63,
+      "has_activity": true
+    },
+    {
+      "date": "2025-07-03",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 335592.25,
+      "has_activity": true
+    },
+    {
+      "date": "2025-07-04",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 335595.87,
+      "has_activity": true
+    },
+    {
+      "date": "2025-07-05",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 335599.49,
+      "has_activity": true
+    },
+    {
+      "date": "2025-07-06",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 335603.11,
+      "has_activity": true
+    },
+    {
+      "date": "2025-07-07",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 335606.73,
+      "has_activity": true
+    },
+    {
+      "date": "2025-07-08",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 335610.35,
+      "has_activity": true
+    },
+    {
+      "date": "2025-07-09",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 335613.97,
+      "has_activity": true
+    },
+    {
+      "date": "2025-07-10",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 335617.59,
+      "has_activity": true
+    },
+    {
+      "date": "2025-07-11",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 335621.21,
+      "has_activity": true
+    },
+    {
+      "date": "2025-07-12",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 335624.83,
+      "has_activity": true
+    },
+    {
+      "date": "2025-07-13",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 335628.45,
+      "has_activity": true
+    },
+    {
+      "date": "2025-07-14",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 335632.07,
+      "has_activity": true
+    },
+    {
+      "date": "2025-07-15",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 335635.69,
+      "has_activity": true
+    },
+    {
+      "date": "2025-07-16",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 335639.31,
+      "has_activity": true
+    },
+    {
+      "date": "2025-07-17",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 335642.93,
+      "has_activity": true
+    },
+    {
+      "date": "2025-07-18",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 335646.55,
+      "has_activity": true
+    },
+    {
+      "date": "2025-07-19",
+      "inflow_usd": 3.62,
+      "outflow_usd": 360.0,
+      "balance_usd": 335290.17,
+      "has_activity": true
+    },
+    {
+      "date": "2025-07-20",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 335293.79,
+      "has_activity": true
+    },
+    {
+      "date": "2025-07-21",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 335297.41,
+      "has_activity": true
+    },
+    {
+      "date": "2025-07-22",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 335301.03,
+      "has_activity": true
+    },
+    {
+      "date": "2025-07-23",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 335304.65,
+      "has_activity": true
+    },
+    {
+      "date": "2025-07-24",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 335308.27,
+      "has_activity": true
+    },
+    {
+      "date": "2025-07-25",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 335311.89,
+      "has_activity": true
+    },
+    {
+      "date": "2025-07-26",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 335315.51,
+      "has_activity": true
+    },
+    {
+      "date": "2025-07-27",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 335319.13,
+      "has_activity": true
+    },
+    {
+      "date": "2025-07-28",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 335322.75,
+      "has_activity": true
+    },
+    {
+      "date": "2025-07-29",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 335326.37,
+      "has_activity": true
+    },
+    {
+      "date": "2025-07-30",
+      "inflow_usd": 3.62,
+      "outflow_usd": 0.0,
+      "balance_usd": 335329.99,
+      "has_activity": true
+    },
+    {
+      "date": "2025-08-01",
+      "inflow_usd": 4.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 335334.43,
+      "has_activity": true
+    },
+    {
+      "date": "2025-08-02",
+      "inflow_usd": 4.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 335338.87,
+      "has_activity": true
+    },
+    {
+      "date": "2025-08-03",
+      "inflow_usd": 4.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 335343.31,
+      "has_activity": true
+    },
+    {
+      "date": "2025-08-04",
+      "inflow_usd": 4.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 335347.75,
+      "has_activity": true
+    },
+    {
+      "date": "2025-08-05",
+      "inflow_usd": 4.44,
+      "outflow_usd": 1200.0,
+      "balance_usd": 334152.19,
+      "has_activity": true
+    },
+    {
+      "date": "2025-08-06",
+      "inflow_usd": 4.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 334156.63,
+      "has_activity": true
+    },
+    {
+      "date": "2025-08-07",
+      "inflow_usd": 4.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 334161.07,
+      "has_activity": true
+    },
+    {
+      "date": "2025-08-08",
+      "inflow_usd": 4.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 334165.51,
+      "has_activity": true
+    },
+    {
+      "date": "2025-08-09",
+      "inflow_usd": 4.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 334169.95,
+      "has_activity": true
+    },
+    {
+      "date": "2025-08-10",
+      "inflow_usd": 4.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 334174.39,
+      "has_activity": true
+    },
+    {
+      "date": "2025-08-11",
+      "inflow_usd": 4.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 334178.83,
+      "has_activity": true
+    },
+    {
+      "date": "2025-08-12",
+      "inflow_usd": 4.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 334183.27,
+      "has_activity": true
+    },
+    {
+      "date": "2025-08-13",
+      "inflow_usd": 4.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 334187.71,
+      "has_activity": true
+    },
+    {
+      "date": "2025-08-14",
+      "inflow_usd": 4.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 334192.15,
+      "has_activity": true
+    },
+    {
+      "date": "2025-08-15",
+      "inflow_usd": 4.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 334196.59,
+      "has_activity": true
+    },
+    {
+      "date": "2025-08-16",
+      "inflow_usd": 4.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 334201.03,
+      "has_activity": true
+    },
+    {
+      "date": "2025-08-17",
+      "inflow_usd": 4.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 334205.47,
+      "has_activity": true
+    },
+    {
+      "date": "2025-08-18",
+      "inflow_usd": 4.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 334209.91,
+      "has_activity": true
+    },
+    {
+      "date": "2025-08-19",
+      "inflow_usd": 4.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 334214.35,
+      "has_activity": true
+    },
+    {
+      "date": "2025-08-20",
+      "inflow_usd": 4.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 334218.79,
+      "has_activity": true
+    },
+    {
+      "date": "2025-08-21",
+      "inflow_usd": 4.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 334223.23,
+      "has_activity": true
+    },
+    {
+      "date": "2025-08-22",
+      "inflow_usd": 4.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 334227.67,
+      "has_activity": true
+    },
+    {
+      "date": "2025-08-23",
+      "inflow_usd": 4.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 334232.11,
+      "has_activity": true
+    },
+    {
+      "date": "2025-08-24",
+      "inflow_usd": 4.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 334236.55,
+      "has_activity": true
+    },
+    {
+      "date": "2025-08-25",
+      "inflow_usd": 4.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 334240.99,
+      "has_activity": true
+    },
+    {
+      "date": "2025-08-26",
+      "inflow_usd": 4.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 334245.43,
+      "has_activity": true
+    },
+    {
+      "date": "2025-08-27",
+      "inflow_usd": 4.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 334249.87,
+      "has_activity": true
+    },
+    {
+      "date": "2025-08-28",
+      "inflow_usd": 4.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 334254.31,
+      "has_activity": true
+    },
+    {
+      "date": "2025-08-29",
+      "inflow_usd": 4.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 334258.75,
+      "has_activity": true
+    },
+    {
+      "date": "2025-08-30",
+      "inflow_usd": 4.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 334263.19,
+      "has_activity": true
+    },
+    {
+      "date": "2025-08-31",
+      "inflow_usd": 0.0,
+      "outflow_usd": 5153.36,
+      "balance_usd": 329109.83,
+      "has_activity": true
+    },
+    {
+      "date": "2025-09-01",
+      "inflow_usd": 1.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 329111.27,
+      "has_activity": true
+    },
+    {
+      "date": "2025-09-02",
+      "inflow_usd": 1.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 329112.71,
+      "has_activity": true
+    },
+    {
+      "date": "2025-09-03",
+      "inflow_usd": 1.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 329114.15,
+      "has_activity": true
+    },
+    {
+      "date": "2025-09-04",
+      "inflow_usd": 1.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 329115.59,
+      "has_activity": true
+    },
+    {
+      "date": "2025-09-05",
+      "inflow_usd": 1.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 329117.03,
+      "has_activity": true
+    },
+    {
+      "date": "2025-09-06",
+      "inflow_usd": 1.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 329118.47,
+      "has_activity": true
+    },
+    {
+      "date": "2025-09-07",
+      "inflow_usd": 1.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 329119.91,
+      "has_activity": true
+    },
+    {
+      "date": "2025-09-08",
+      "inflow_usd": 1.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 329121.35,
+      "has_activity": true
+    },
+    {
+      "date": "2025-09-09",
+      "inflow_usd": 1.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 329122.79,
+      "has_activity": true
+    },
+    {
+      "date": "2025-09-10",
+      "inflow_usd": 1.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 329124.23,
+      "has_activity": true
+    },
+    {
+      "date": "2025-09-11",
+      "inflow_usd": 1.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 329125.67,
+      "has_activity": true
+    },
+    {
+      "date": "2025-09-12",
+      "inflow_usd": 1.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 329127.11,
+      "has_activity": true
+    },
+    {
+      "date": "2025-09-13",
+      "inflow_usd": 1.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 329128.55,
+      "has_activity": true
+    },
+    {
+      "date": "2025-09-14",
+      "inflow_usd": 1.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 329129.99,
+      "has_activity": true
+    },
+    {
+      "date": "2025-09-15",
+      "inflow_usd": 1.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 329131.43,
+      "has_activity": true
+    },
+    {
+      "date": "2025-09-16",
+      "inflow_usd": 1.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 329132.87,
+      "has_activity": true
+    },
+    {
+      "date": "2025-09-17",
+      "inflow_usd": 1.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 329134.31,
+      "has_activity": true
+    },
+    {
+      "date": "2025-09-18",
+      "inflow_usd": 1.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 329135.75,
+      "has_activity": true
+    },
+    {
+      "date": "2025-09-19",
+      "inflow_usd": 1.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 329137.19,
+      "has_activity": true
+    },
+    {
+      "date": "2025-09-20",
+      "inflow_usd": 1.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 329138.63,
+      "has_activity": true
+    },
+    {
+      "date": "2025-09-21",
+      "inflow_usd": 1.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 329140.07,
+      "has_activity": true
+    },
+    {
+      "date": "2025-09-22",
+      "inflow_usd": 1.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 329141.51,
+      "has_activity": true
+    },
+    {
+      "date": "2025-09-23",
+      "inflow_usd": 1.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 329142.95,
+      "has_activity": true
+    },
+    {
+      "date": "2025-09-24",
+      "inflow_usd": 1.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 329144.39,
+      "has_activity": true
+    },
+    {
+      "date": "2025-09-25",
+      "inflow_usd": 1.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 329145.83,
+      "has_activity": true
+    },
+    {
+      "date": "2025-09-26",
+      "inflow_usd": 1.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 329147.27,
+      "has_activity": true
+    },
+    {
+      "date": "2025-09-27",
+      "inflow_usd": 1.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 329148.71,
+      "has_activity": true
+    },
+    {
+      "date": "2025-09-28",
+      "inflow_usd": 1.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 329150.15,
+      "has_activity": true
+    },
+    {
+      "date": "2025-09-29",
+      "inflow_usd": 1.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 329151.59,
+      "has_activity": true
+    },
+    {
+      "date": "2025-09-30",
+      "inflow_usd": 1.44,
+      "outflow_usd": 0.0,
+      "balance_usd": 329153.03,
+      "has_activity": true
+    },
+    {
+      "date": "2025-10-01",
+      "inflow_usd": 1.39,
+      "outflow_usd": 0.0,
+      "balance_usd": 329154.42,
+      "has_activity": true
+    },
+    {
+      "date": "2025-10-02",
+      "inflow_usd": 1.39,
+      "outflow_usd": 0.0,
+      "balance_usd": 329155.81,
+      "has_activity": true
+    },
+    {
+      "date": "2025-10-03",
+      "inflow_usd": 1.39,
+      "outflow_usd": 0.0,
+      "balance_usd": 329157.2,
+      "has_activity": true
+    },
+    {
+      "date": "2025-10-04",
+      "inflow_usd": 1.39,
+      "outflow_usd": 0.0,
+      "balance_usd": 329158.59,
+      "has_activity": true
+    },
+    {
+      "date": "2025-10-05",
+      "inflow_usd": 1.39,
+      "outflow_usd": 0.0,
+      "balance_usd": 329159.98,
+      "has_activity": true
+    },
+    {
+      "date": "2025-10-06",
+      "inflow_usd": 1.39,
+      "outflow_usd": 4515.32,
+      "balance_usd": 324646.05,
+      "has_activity": true
+    },
+    {
+      "date": "2025-10-07",
+      "inflow_usd": 1.39,
+      "outflow_usd": 0.0,
+      "balance_usd": 324647.44,
+      "has_activity": true
+    },
+    {
+      "date": "2025-10-08",
+      "inflow_usd": 1.39,
+      "outflow_usd": 0.0,
+      "balance_usd": 324648.83,
+      "has_activity": true
+    },
+    {
+      "date": "2025-10-09",
+      "inflow_usd": 1.39,
+      "outflow_usd": 0.0,
+      "balance_usd": 324650.22,
+      "has_activity": true
+    },
+    {
+      "date": "2025-10-10",
+      "inflow_usd": 1.39,
+      "outflow_usd": 0.0,
+      "balance_usd": 324651.61,
+      "has_activity": true
+    },
+    {
+      "date": "2025-10-11",
+      "inflow_usd": 1.39,
+      "outflow_usd": 0.0,
+      "balance_usd": 324653.0,
+      "has_activity": true
+    },
+    {
+      "date": "2025-10-12",
+      "inflow_usd": 1.39,
+      "outflow_usd": 0.0,
+      "balance_usd": 324654.39,
+      "has_activity": true
+    },
+    {
+      "date": "2025-10-13",
+      "inflow_usd": 1.39,
+      "outflow_usd": 0.0,
+      "balance_usd": 324655.78,
+      "has_activity": true
+    },
+    {
+      "date": "2025-10-14",
+      "inflow_usd": 1.39,
+      "outflow_usd": 0.0,
+      "balance_usd": 324657.17,
+      "has_activity": true
+    },
+    {
+      "date": "2025-10-15",
+      "inflow_usd": 1.39,
+      "outflow_usd": 0.0,
+      "balance_usd": 324658.56,
+      "has_activity": true
+    },
+    {
+      "date": "2025-10-16",
+      "inflow_usd": 1.39,
+      "outflow_usd": 5065.57,
+      "balance_usd": 319594.38,
+      "has_activity": true
+    },
+    {
+      "date": "2025-10-17",
+      "inflow_usd": 1.39,
+      "outflow_usd": 0.0,
+      "balance_usd": 319595.77,
+      "has_activity": true
+    },
+    {
+      "date": "2025-10-18",
+      "inflow_usd": 1.39,
+      "outflow_usd": 0.0,
+      "balance_usd": 319597.16,
+      "has_activity": true
+    },
+    {
+      "date": "2025-10-19",
+      "inflow_usd": 1.39,
+      "outflow_usd": 0.0,
+      "balance_usd": 319598.55,
+      "has_activity": true
+    },
+    {
+      "date": "2025-10-20",
+      "inflow_usd": 1.39,
+      "outflow_usd": 0.0,
+      "balance_usd": 319599.94,
+      "has_activity": true
+    },
+    {
+      "date": "2025-10-21",
+      "inflow_usd": 1.39,
+      "outflow_usd": 0.0,
+      "balance_usd": 319601.33,
+      "has_activity": true
+    },
+    {
+      "date": "2025-10-22",
+      "inflow_usd": 1.39,
+      "outflow_usd": 0.0,
+      "balance_usd": 319602.72,
+      "has_activity": true
+    },
+    {
+      "date": "2025-10-23",
+      "inflow_usd": 1.39,
+      "outflow_usd": 0.0,
+      "balance_usd": 319604.11,
+      "has_activity": true
+    },
+    {
+      "date": "2025-10-24",
+      "inflow_usd": 1.39,
+      "outflow_usd": 0.0,
+      "balance_usd": 319605.5,
+      "has_activity": true
+    },
+    {
+      "date": "2025-10-25",
+      "inflow_usd": 1.39,
+      "outflow_usd": 0.0,
+      "balance_usd": 319606.89,
+      "has_activity": true
+    },
+    {
+      "date": "2025-10-26",
+      "inflow_usd": 1.39,
+      "outflow_usd": 0.0,
+      "balance_usd": 319608.28,
+      "has_activity": true
+    },
+    {
+      "date": "2025-10-27",
+      "inflow_usd": 1.39,
+      "outflow_usd": 0.0,
+      "balance_usd": 319609.67,
+      "has_activity": true
+    },
+    {
+      "date": "2025-10-28",
+      "inflow_usd": 1.39,
+      "outflow_usd": 0.0,
+      "balance_usd": 319611.06,
+      "has_activity": true
+    },
+    {
+      "date": "2025-10-29",
+      "inflow_usd": 1.39,
+      "outflow_usd": 0.0,
+      "balance_usd": 319612.45,
+      "has_activity": true
+    },
+    {
+      "date": "2025-10-30",
+      "inflow_usd": 1.39,
+      "outflow_usd": 0.0,
+      "balance_usd": 319613.84,
+      "has_activity": true
+    },
+    {
+      "date": "2025-11-01",
+      "inflow_usd": 1.15,
+      "outflow_usd": 0.0,
+      "balance_usd": 319614.99,
+      "has_activity": true
+    },
+    {
+      "date": "2025-11-02",
+      "inflow_usd": 1.15,
+      "outflow_usd": 0.0,
+      "balance_usd": 319616.14,
+      "has_activity": true
+    },
+    {
+      "date": "2025-11-03",
+      "inflow_usd": 1.15,
+      "outflow_usd": 0.0,
+      "balance_usd": 319617.29,
+      "has_activity": true
+    },
+    {
+      "date": "2025-11-04",
+      "inflow_usd": 1.15,
+      "outflow_usd": 0.0,
+      "balance_usd": 319618.44,
+      "has_activity": true
+    },
+    {
+      "date": "2025-11-05",
+      "inflow_usd": 1.15,
+      "outflow_usd": 0.0,
+      "balance_usd": 319619.59,
+      "has_activity": true
+    },
+    {
+      "date": "2025-11-06",
+      "inflow_usd": 1.15,
+      "outflow_usd": 0.0,
+      "balance_usd": 319620.74,
+      "has_activity": true
+    },
+    {
+      "date": "2025-11-07",
+      "inflow_usd": 1.15,
+      "outflow_usd": 0.0,
+      "balance_usd": 319621.89,
+      "has_activity": true
+    },
+    {
+      "date": "2025-11-08",
+      "inflow_usd": 1.15,
+      "outflow_usd": 0.0,
+      "balance_usd": 319623.04,
+      "has_activity": true
+    },
+    {
+      "date": "2025-11-09",
+      "inflow_usd": 1.15,
+      "outflow_usd": 0.0,
+      "balance_usd": 319624.19,
+      "has_activity": true
+    },
+    {
+      "date": "2025-11-10",
+      "inflow_usd": 1.15,
+      "outflow_usd": 0.0,
+      "balance_usd": 319625.34,
+      "has_activity": true
+    },
+    {
+      "date": "2025-11-11",
+      "inflow_usd": 1.15,
+      "outflow_usd": 0.0,
+      "balance_usd": 319626.49,
+      "has_activity": true
+    },
+    {
+      "date": "2025-11-12",
+      "inflow_usd": 1.15,
+      "outflow_usd": 0.0,
+      "balance_usd": 319627.64,
+      "has_activity": true
+    },
+    {
+      "date": "2025-11-13",
+      "inflow_usd": 1.15,
+      "outflow_usd": 1432.04,
+      "balance_usd": 318196.75,
+      "has_activity": true
+    },
+    {
+      "date": "2025-11-14",
+      "inflow_usd": 1.15,
+      "outflow_usd": 0.0,
+      "balance_usd": 318197.9,
+      "has_activity": true
+    },
+    {
+      "date": "2025-11-15",
+      "inflow_usd": 1.15,
+      "outflow_usd": 0.0,
+      "balance_usd": 318199.05,
+      "has_activity": true
+    },
+    {
+      "date": "2025-11-16",
+      "inflow_usd": 1.15,
+      "outflow_usd": 0.0,
+      "balance_usd": 318200.2,
+      "has_activity": true
+    },
+    {
+      "date": "2025-11-17",
+      "inflow_usd": 1.15,
+      "outflow_usd": 0.0,
+      "balance_usd": 318201.35,
+      "has_activity": true
+    },
+    {
+      "date": "2025-11-18",
+      "inflow_usd": 1.15,
+      "outflow_usd": 0.0,
+      "balance_usd": 318202.5,
+      "has_activity": true
+    },
+    {
+      "date": "2025-11-19",
+      "inflow_usd": 1.15,
+      "outflow_usd": 0.0,
+      "balance_usd": 318203.65,
+      "has_activity": true
+    },
+    {
+      "date": "2025-11-20",
+      "inflow_usd": 1.15,
+      "outflow_usd": 0.0,
+      "balance_usd": 318204.8,
+      "has_activity": true
+    },
+    {
+      "date": "2025-11-21",
+      "inflow_usd": 1.15,
+      "outflow_usd": 0.0,
+      "balance_usd": 318205.95,
+      "has_activity": true
+    },
+    {
+      "date": "2025-11-22",
+      "inflow_usd": 1.15,
+      "outflow_usd": 0.0,
+      "balance_usd": 318207.1,
+      "has_activity": true
+    },
+    {
+      "date": "2025-11-23",
+      "inflow_usd": 1.15,
+      "outflow_usd": 0.0,
+      "balance_usd": 318208.25,
+      "has_activity": true
+    },
+    {
+      "date": "2025-11-24",
+      "inflow_usd": 1.15,
+      "outflow_usd": 0.0,
+      "balance_usd": 318209.4,
+      "has_activity": true
+    },
+    {
+      "date": "2025-11-25",
+      "inflow_usd": 1.15,
+      "outflow_usd": 0.0,
+      "balance_usd": 318210.55,
+      "has_activity": true
+    },
+    {
+      "date": "2025-11-26",
+      "inflow_usd": 1.15,
+      "outflow_usd": 0.0,
+      "balance_usd": 318211.7,
+      "has_activity": true
+    },
+    {
+      "date": "2025-11-27",
+      "inflow_usd": 1.15,
+      "outflow_usd": 0.0,
+      "balance_usd": 318212.85,
+      "has_activity": true
+    },
+    {
+      "date": "2025-11-28",
+      "inflow_usd": 1.15,
+      "outflow_usd": 0.0,
+      "balance_usd": 318214.0,
+      "has_activity": true
+    },
+    {
+      "date": "2025-11-29",
+      "inflow_usd": 1.15,
+      "outflow_usd": 0.0,
+      "balance_usd": 318215.15,
+      "has_activity": true
+    },
+    {
+      "date": "2025-11-30",
+      "inflow_usd": 1.15,
+      "outflow_usd": 0.0,
+      "balance_usd": 318216.3,
+      "has_activity": true
+    },
+    {
+      "date": "2025-12-01",
+      "inflow_usd": 8.92,
+      "outflow_usd": 0.0,
+      "balance_usd": 318225.22,
+      "has_activity": true
+    },
+    {
+      "date": "2025-12-02",
+      "inflow_usd": 8.92,
+      "outflow_usd": 0.0,
+      "balance_usd": 318234.14,
+      "has_activity": true
+    },
+    {
+      "date": "2025-12-03",
+      "inflow_usd": 8.92,
+      "outflow_usd": 2500.0,
+      "balance_usd": 315743.06,
+      "has_activity": true
+    },
+    {
+      "date": "2025-12-04",
+      "inflow_usd": 8.92,
+      "outflow_usd": 0.0,
+      "balance_usd": 315751.98,
+      "has_activity": true
+    },
+    {
+      "date": "2025-12-05",
+      "inflow_usd": 8.92,
+      "outflow_usd": 0.0,
+      "balance_usd": 315760.9,
+      "has_activity": true
+    },
+    {
+      "date": "2025-12-06",
+      "inflow_usd": 8.92,
+      "outflow_usd": 0.0,
+      "balance_usd": 315769.82,
+      "has_activity": true
+    },
+    {
+      "date": "2025-12-07",
+      "inflow_usd": 8.92,
+      "outflow_usd": 0.0,
+      "balance_usd": 315778.74,
+      "has_activity": true
+    },
+    {
+      "date": "2025-12-08",
+      "inflow_usd": 8.92,
+      "outflow_usd": 0.0,
+      "balance_usd": 315787.66,
+      "has_activity": true
+    },
+    {
+      "date": "2025-12-09",
+      "inflow_usd": 8.92,
+      "outflow_usd": 0.0,
+      "balance_usd": 315796.58,
+      "has_activity": true
+    },
+    {
+      "date": "2025-12-10",
+      "inflow_usd": 8.92,
+      "outflow_usd": 0.0,
+      "balance_usd": 315805.5,
+      "has_activity": true
+    },
+    {
+      "date": "2025-12-11",
+      "inflow_usd": 8.92,
+      "outflow_usd": 0.0,
+      "balance_usd": 315814.42,
+      "has_activity": true
+    },
+    {
+      "date": "2025-12-12",
+      "inflow_usd": 8.92,
+      "outflow_usd": 0.0,
+      "balance_usd": 315823.34,
+      "has_activity": true
+    },
+    {
+      "date": "2025-12-13",
+      "inflow_usd": 8.92,
+      "outflow_usd": 0.0,
+      "balance_usd": 315832.26,
+      "has_activity": true
+    },
+    {
+      "date": "2025-12-14",
+      "inflow_usd": 8.92,
+      "outflow_usd": 0.0,
+      "balance_usd": 315841.18,
+      "has_activity": true
+    },
+    {
+      "date": "2025-12-15",
+      "inflow_usd": 8.92,
+      "outflow_usd": 0.0,
+      "balance_usd": 315850.1,
+      "has_activity": true
+    },
+    {
+      "date": "2025-12-16",
+      "inflow_usd": 8.92,
+      "outflow_usd": 0.0,
+      "balance_usd": 315859.02,
+      "has_activity": true
+    },
+    {
+      "date": "2025-12-17",
+      "inflow_usd": 8.92,
+      "outflow_usd": 0.0,
+      "balance_usd": 315867.94,
+      "has_activity": true
+    },
+    {
+      "date": "2025-12-18",
+      "inflow_usd": 8.92,
+      "outflow_usd": 0.0,
+      "balance_usd": 315876.86,
+      "has_activity": true
+    },
+    {
+      "date": "2025-12-19",
+      "inflow_usd": 8.92,
+      "outflow_usd": 0.0,
+      "balance_usd": 315885.78,
+      "has_activity": true
+    },
+    {
+      "date": "2025-12-20",
+      "inflow_usd": 8.92,
+      "outflow_usd": 0.0,
+      "balance_usd": 315894.7,
+      "has_activity": true
+    },
+    {
+      "date": "2025-12-21",
+      "inflow_usd": 8.92,
+      "outflow_usd": 0.0,
+      "balance_usd": 315903.62,
+      "has_activity": true
+    },
+    {
+      "date": "2025-12-22",
+      "inflow_usd": 8.92,
+      "outflow_usd": 0.0,
+      "balance_usd": 315912.54,
+      "has_activity": true
+    },
+    {
+      "date": "2025-12-23",
+      "inflow_usd": 8.92,
+      "outflow_usd": 0.0,
+      "balance_usd": 315921.46,
+      "has_activity": true
+    },
+    {
+      "date": "2025-12-24",
+      "inflow_usd": 8.92,
+      "outflow_usd": 0.0,
+      "balance_usd": 315930.38,
+      "has_activity": true
+    },
+    {
+      "date": "2025-12-25",
+      "inflow_usd": 8.92,
+      "outflow_usd": 0.0,
+      "balance_usd": 315939.3,
+      "has_activity": true
+    },
+    {
+      "date": "2025-12-26",
+      "inflow_usd": 8.92,
+      "outflow_usd": 0.0,
+      "balance_usd": 315948.22,
+      "has_activity": true
+    },
+    {
+      "date": "2025-12-27",
+      "inflow_usd": 8.92,
+      "outflow_usd": 0.0,
+      "balance_usd": 315957.14,
+      "has_activity": true
+    },
+    {
+      "date": "2025-12-28",
+      "inflow_usd": 8.92,
+      "outflow_usd": 0.0,
+      "balance_usd": 315966.06,
+      "has_activity": true
+    },
+    {
+      "date": "2025-12-29",
+      "inflow_usd": 8.92,
+      "outflow_usd": 0.0,
+      "balance_usd": 315974.98,
+      "has_activity": true
+    },
+    {
+      "date": "2025-12-30",
+      "inflow_usd": 8.92,
+      "outflow_usd": 0.0,
+      "balance_usd": 315983.9,
+      "has_activity": true
+    },
+    {
+      "date": "2026-01-01",
+      "inflow_usd": 5.22,
+      "outflow_usd": 0.0,
+      "balance_usd": 315989.12,
+      "has_activity": true
+    },
+    {
+      "date": "2026-01-02",
+      "inflow_usd": 5.22,
+      "outflow_usd": 0.0,
+      "balance_usd": 315994.34,
+      "has_activity": true
+    },
+    {
+      "date": "2026-01-03",
+      "inflow_usd": 5.22,
+      "outflow_usd": 0.0,
+      "balance_usd": 315999.56,
+      "has_activity": true
+    },
+    {
+      "date": "2026-01-04",
+      "inflow_usd": 5.22,
+      "outflow_usd": 0.0,
+      "balance_usd": 316004.78,
+      "has_activity": true
+    },
+    {
+      "date": "2026-01-05",
+      "inflow_usd": 5.22,
+      "outflow_usd": 0.0,
+      "balance_usd": 316010.0,
+      "has_activity": true
+    },
+    {
+      "date": "2026-01-06",
+      "inflow_usd": 5.22,
+      "outflow_usd": 0.0,
+      "balance_usd": 316015.22,
+      "has_activity": true
+    },
+    {
+      "date": "2026-01-07",
+      "inflow_usd": 5.22,
+      "outflow_usd": 0.0,
+      "balance_usd": 316020.44,
+      "has_activity": true
+    },
+    {
+      "date": "2026-01-08",
+      "inflow_usd": 5.22,
+      "outflow_usd": 0.0,
+      "balance_usd": 316025.66,
+      "has_activity": true
+    },
+    {
+      "date": "2026-01-09",
+      "inflow_usd": 5.22,
+      "outflow_usd": 0.0,
+      "balance_usd": 316030.88,
+      "has_activity": true
+    },
+    {
+      "date": "2026-01-10",
+      "inflow_usd": 5.22,
+      "outflow_usd": 0.0,
+      "balance_usd": 316036.1,
+      "has_activity": true
+    },
+    {
+      "date": "2026-01-11",
+      "inflow_usd": 5.22,
+      "outflow_usd": 0.0,
+      "balance_usd": 316041.32,
+      "has_activity": true
+    },
+    {
+      "date": "2026-01-12",
+      "inflow_usd": 5.22,
+      "outflow_usd": 0.0,
+      "balance_usd": 316046.54,
+      "has_activity": true
+    },
+    {
+      "date": "2026-01-13",
+      "inflow_usd": 5.22,
+      "outflow_usd": 0.0,
+      "balance_usd": 316051.76,
+      "has_activity": true
+    },
+    {
+      "date": "2026-01-14",
+      "inflow_usd": 5.22,
+      "outflow_usd": 0.0,
+      "balance_usd": 316056.98,
+      "has_activity": true
+    },
+    {
+      "date": "2026-01-15",
+      "inflow_usd": 5.22,
+      "outflow_usd": 0.0,
+      "balance_usd": 316062.2,
+      "has_activity": true
+    },
+    {
+      "date": "2026-01-16",
+      "inflow_usd": 5.22,
+      "outflow_usd": 0.0,
+      "balance_usd": 316067.42,
+      "has_activity": true
+    },
+    {
+      "date": "2026-01-17",
+      "inflow_usd": 5.22,
+      "outflow_usd": 0.0,
+      "balance_usd": 316072.64,
+      "has_activity": true
+    },
+    {
+      "date": "2026-01-18",
+      "inflow_usd": 5.22,
+      "outflow_usd": 0.0,
+      "balance_usd": 316077.86,
+      "has_activity": true
+    },
+    {
+      "date": "2026-01-19",
+      "inflow_usd": 5.22,
+      "outflow_usd": 0.0,
+      "balance_usd": 316083.08,
+      "has_activity": true
+    },
+    {
+      "date": "2026-01-20",
+      "inflow_usd": 5.22,
+      "outflow_usd": 0.0,
+      "balance_usd": 316088.3,
+      "has_activity": true
+    },
+    {
+      "date": "2026-01-21",
+      "inflow_usd": 5.22,
+      "outflow_usd": 0.0,
+      "balance_usd": 316093.52,
+      "has_activity": true
+    },
+    {
+      "date": "2026-01-22",
+      "inflow_usd": 5.22,
+      "outflow_usd": 0.0,
+      "balance_usd": 316098.74,
+      "has_activity": true
+    },
+    {
+      "date": "2026-01-23",
+      "inflow_usd": 5.22,
+      "outflow_usd": 0.0,
+      "balance_usd": 316103.96,
+      "has_activity": true
+    },
+    {
+      "date": "2026-01-24",
+      "inflow_usd": 5.22,
+      "outflow_usd": 0.0,
+      "balance_usd": 316109.18,
+      "has_activity": true
+    },
+    {
+      "date": "2026-01-25",
+      "inflow_usd": 5.22,
+      "outflow_usd": 0.0,
+      "balance_usd": 316114.4,
+      "has_activity": true
+    },
+    {
+      "date": "2026-01-26",
+      "inflow_usd": 5.22,
+      "outflow_usd": 0.0,
+      "balance_usd": 316119.62,
+      "has_activity": true
+    },
+    {
+      "date": "2026-01-27",
+      "inflow_usd": 5.22,
+      "outflow_usd": 0.0,
+      "balance_usd": 316124.84,
+      "has_activity": true
+    },
+    {
+      "date": "2026-01-28",
+      "inflow_usd": 5.22,
+      "outflow_usd": 0.0,
+      "balance_usd": 316130.06,
+      "has_activity": true
+    },
+    {
+      "date": "2026-01-29",
+      "inflow_usd": 5.22,
+      "outflow_usd": 0.0,
+      "balance_usd": 316135.28,
+      "has_activity": true
+    },
+    {
+      "date": "2026-01-30",
+      "inflow_usd": 5.22,
+      "outflow_usd": 0.0,
+      "balance_usd": 316140.5,
+      "has_activity": true
+    },
+    {
+      "date": "2026-02-01",
+      "inflow_usd": 1.96,
+      "outflow_usd": 0.0,
+      "balance_usd": 316142.46,
+      "has_activity": true
+    },
+    {
+      "date": "2026-02-02",
+      "inflow_usd": 1.96,
+      "outflow_usd": 0.0,
+      "balance_usd": 316144.42,
+      "has_activity": true
+    },
+    {
+      "date": "2026-02-03",
+      "inflow_usd": 1.96,
+      "outflow_usd": 0.0,
+      "balance_usd": 316146.38,
+      "has_activity": true
+    },
+    {
+      "date": "2026-02-04",
+      "inflow_usd": 1.96,
+      "outflow_usd": 0.0,
+      "balance_usd": 316148.34,
+      "has_activity": true
+    },
+    {
+      "date": "2026-02-05",
+      "inflow_usd": 1.96,
+      "outflow_usd": 0.0,
+      "balance_usd": 316150.3,
+      "has_activity": true
+    },
+    {
+      "date": "2026-02-06",
+      "inflow_usd": 1.96,
+      "outflow_usd": 0.0,
+      "balance_usd": 316152.26,
+      "has_activity": true
+    },
+    {
+      "date": "2026-02-07",
+      "inflow_usd": 1.96,
+      "outflow_usd": 0.0,
+      "balance_usd": 316154.22,
+      "has_activity": true
+    },
+    {
+      "date": "2026-02-08",
+      "inflow_usd": 1.96,
+      "outflow_usd": 0.0,
+      "balance_usd": 316156.18,
+      "has_activity": true
+    },
+    {
+      "date": "2026-02-09",
+      "inflow_usd": 1.96,
+      "outflow_usd": 0.0,
+      "balance_usd": 316158.14,
+      "has_activity": true
+    },
+    {
+      "date": "2026-02-10",
+      "inflow_usd": 1.96,
+      "outflow_usd": 0.0,
+      "balance_usd": 316160.1,
+      "has_activity": true
+    },
+    {
+      "date": "2026-02-11",
+      "inflow_usd": 1.96,
+      "outflow_usd": 0.0,
+      "balance_usd": 316162.06,
+      "has_activity": true
+    },
+    {
+      "date": "2026-02-12",
+      "inflow_usd": 1.96,
+      "outflow_usd": 0.0,
+      "balance_usd": 316164.02,
+      "has_activity": true
+    },
+    {
+      "date": "2026-02-13",
+      "inflow_usd": 1.96,
+      "outflow_usd": 0.0,
+      "balance_usd": 316165.98,
+      "has_activity": true
+    },
+    {
+      "date": "2026-02-14",
+      "inflow_usd": 1.96,
+      "outflow_usd": 0.0,
+      "balance_usd": 316167.94,
+      "has_activity": true
+    },
+    {
+      "date": "2026-02-15",
+      "inflow_usd": 1.96,
+      "outflow_usd": 0.0,
+      "balance_usd": 316169.9,
+      "has_activity": true
+    },
+    {
+      "date": "2026-02-16",
+      "inflow_usd": 1.96,
+      "outflow_usd": 0.0,
+      "balance_usd": 316171.86,
+      "has_activity": true
+    },
+    {
+      "date": "2026-02-17",
+      "inflow_usd": 1.96,
+      "outflow_usd": 0.0,
+      "balance_usd": 316173.82,
+      "has_activity": true
+    },
+    {
+      "date": "2026-02-18",
+      "inflow_usd": 1.96,
+      "outflow_usd": 0.0,
+      "balance_usd": 316175.78,
+      "has_activity": true
+    },
+    {
+      "date": "2026-02-19",
+      "inflow_usd": 1.96,
+      "outflow_usd": 0.0,
+      "balance_usd": 316177.74,
+      "has_activity": true
+    },
+    {
+      "date": "2026-02-20",
+      "inflow_usd": 1.96,
+      "outflow_usd": 0.0,
+      "balance_usd": 316179.7,
+      "has_activity": true
+    },
+    {
+      "date": "2026-02-21",
+      "inflow_usd": 1.96,
+      "outflow_usd": 0.0,
+      "balance_usd": 316181.66,
+      "has_activity": true
+    },
+    {
+      "date": "2026-02-22",
+      "inflow_usd": 1.96,
+      "outflow_usd": 0.0,
+      "balance_usd": 316183.62,
+      "has_activity": true
+    },
+    {
+      "date": "2026-02-23",
+      "inflow_usd": 1.96,
+      "outflow_usd": 0.0,
+      "balance_usd": 316185.58,
+      "has_activity": true
+    },
+    {
+      "date": "2026-02-24",
+      "inflow_usd": 1.96,
+      "outflow_usd": 0.0,
+      "balance_usd": 316187.54,
+      "has_activity": true
+    },
+    {
+      "date": "2026-02-25",
+      "inflow_usd": 1.96,
+      "outflow_usd": 0.0,
+      "balance_usd": 316189.5,
+      "has_activity": true
+    },
+    {
+      "date": "2026-02-26",
+      "inflow_usd": 1.96,
+      "outflow_usd": 0.0,
+      "balance_usd": 316191.46,
+      "has_activity": true
+    },
+    {
+      "date": "2026-02-27",
+      "inflow_usd": 1.96,
+      "outflow_usd": 0.0,
+      "balance_usd": 316193.42,
+      "has_activity": true
+    },
+    {
+      "date": "2026-02-28",
+      "inflow_usd": 1.96,
+      "outflow_usd": 0.0,
+      "balance_usd": 316195.38,
+      "has_activity": true
+    },
+    {
+      "date": "2026-03-01",
+      "inflow_usd": 5.34,
+      "outflow_usd": 0.0,
+      "balance_usd": 316200.72,
+      "has_activity": true
+    },
+    {
+      "date": "2026-03-02",
+      "inflow_usd": 5.34,
+      "outflow_usd": 0.0,
+      "balance_usd": 316206.06,
+      "has_activity": true
+    },
+    {
+      "date": "2026-03-03",
+      "inflow_usd": 5.34,
+      "outflow_usd": 0.0,
+      "balance_usd": 316211.4,
+      "has_activity": true
+    },
+    {
+      "date": "2026-03-04",
+      "inflow_usd": 5.34,
+      "outflow_usd": 0.0,
+      "balance_usd": 316216.74,
+      "has_activity": true
+    },
+    {
+      "date": "2026-03-05",
+      "inflow_usd": 5.34,
+      "outflow_usd": 0.0,
+      "balance_usd": 316222.08,
+      "has_activity": true
+    },
+    {
+      "date": "2026-03-06",
+      "inflow_usd": 5.34,
+      "outflow_usd": 0.0,
+      "balance_usd": 316227.42,
+      "has_activity": true
+    },
+    {
+      "date": "2026-03-07",
+      "inflow_usd": 5.34,
+      "outflow_usd": 0.0,
+      "balance_usd": 316232.76,
+      "has_activity": true
+    },
+    {
+      "date": "2026-03-08",
+      "inflow_usd": 5.34,
+      "outflow_usd": 0.0,
+      "balance_usd": 316238.1,
+      "has_activity": true
+    },
+    {
+      "date": "2026-03-09",
+      "inflow_usd": 5.34,
+      "outflow_usd": 0.0,
+      "balance_usd": 316243.44,
+      "has_activity": true
+    },
+    {
+      "date": "2026-03-10",
+      "inflow_usd": 5.34,
+      "outflow_usd": 0.0,
+      "balance_usd": 316248.78,
+      "has_activity": true
+    },
+    {
+      "date": "2026-03-11",
+      "inflow_usd": 5.34,
+      "outflow_usd": 0.0,
+      "balance_usd": 316254.12,
+      "has_activity": true
+    },
+    {
+      "date": "2026-03-12",
+      "inflow_usd": 5.34,
+      "outflow_usd": 0.0,
+      "balance_usd": 316259.46,
+      "has_activity": true
+    },
+    {
+      "date": "2026-03-13",
+      "inflow_usd": 5.34,
+      "outflow_usd": 0.0,
+      "balance_usd": 316264.8,
+      "has_activity": true
+    },
+    {
+      "date": "2026-03-14",
+      "inflow_usd": 5.34,
+      "outflow_usd": 0.0,
+      "balance_usd": 316270.14,
+      "has_activity": true
+    },
+    {
+      "date": "2026-03-15",
+      "inflow_usd": 5.34,
+      "outflow_usd": 0.0,
+      "balance_usd": 316275.48,
+      "has_activity": true
+    },
+    {
+      "date": "2026-03-16",
+      "inflow_usd": 5.34,
+      "outflow_usd": 0.0,
+      "balance_usd": 316280.82,
+      "has_activity": true
+    },
+    {
+      "date": "2026-03-17",
+      "inflow_usd": 5.34,
+      "outflow_usd": 1570.0,
+      "balance_usd": 314716.16,
+      "has_activity": true
+    },
+    {
+      "date": "2026-03-18",
+      "inflow_usd": 5.34,
+      "outflow_usd": 0.0,
+      "balance_usd": 314721.5,
+      "has_activity": true
+    },
+    {
+      "date": "2026-03-19",
+      "inflow_usd": 5.34,
+      "outflow_usd": 0.0,
+      "balance_usd": 314726.84,
+      "has_activity": true
+    },
+    {
+      "date": "2026-03-20",
+      "inflow_usd": 5.34,
+      "outflow_usd": 0.0,
+      "balance_usd": 314732.18,
+      "has_activity": true
+    },
+    {
+      "date": "2026-03-21",
+      "inflow_usd": 5.34,
+      "outflow_usd": 0.0,
+      "balance_usd": 314737.52,
+      "has_activity": true
+    },
+    {
+      "date": "2026-03-22",
+      "inflow_usd": 5.34,
+      "outflow_usd": 0.0,
+      "balance_usd": 314742.86,
+      "has_activity": true
+    },
+    {
+      "date": "2026-03-23",
+      "inflow_usd": 5.34,
+      "outflow_usd": 0.0,
+      "balance_usd": 314748.2,
+      "has_activity": true
+    }
+  ]
+}

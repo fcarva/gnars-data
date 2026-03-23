@@ -1,0 +1,17 @@
+{
+  "dataset": "auction_summary",
+  "as_of": "2026-03-22T08:49:29Z",
+  "version": 1,
+  "summary": {
+    "total_eth_all_time": 15.4626,
+    "total_usd_all_time": 50223.32,
+    "auction_count_all_time": 1945,
+    "avg_eth_per_auction": 0.00794992,
+    "date_range": {
+      "first_month": "2024-03-01",
+      "last_month": "2026-03-01"
+    },
+    "data_source": "Dune query 'auction_revenue_all_time' (monthly aggregated)",
+    "note": "Individual auction transactions require Dune query IDs: gnars_auctions_base, gnars_auctions_ethereum"
+  }
+}
