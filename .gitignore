@@ -11,3 +11,29 @@ web/dist/
 
 .vercel
 .env
+
+# Local debug artifacts
+diff.txt
+out.txt
+t.py
+ubprocess
+rt*
+
+DUNE_DIAGNOSTIC_SUMMARY.py
+DUNE_QUERY_*_DIAGNOSTIC.md
+etherscan_output*.txt
+query_dune.py
+rune_dune*.py
+get_etherscan_v2*.py
+find_ah.py
+fix_query2.py
+get_txes.py
+
+temp/check_dune_access.py
+temp/continue_legacy_lookup.py
+temp/run_dune_sql_and_save.py
+temp/treasury_balance_over_time_fixed.sql
+temp/validate_api_keys.py
+
+temp_dune_*.py
+temp_dune_*.txt
