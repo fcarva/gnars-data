@@ -1,6 +1,6 @@
 {
   "dataset": "search_index",
-  "as_of": "2026-03-23T23:23:30.235Z",
+  "as_of": "2026-03-24T00:57:20.324Z",
   "version": 1,
   "records": [
     {
@@ -9796,6 +9796,12 @@
       "summary": "This is a test proposal to make sure the https://gnosis.github.io/zodiac/docs/tutorial module reality/get started/ from our https://snapshot.org/ /gnars.eth works with our [Gnosis Safe](https://gnosis safe.io/app/eth:0x0658f4"
     },
     {
+      "title": "AUDIT_QUICK_START",
+      "href": "/notes/#docs-audit_quick_start-md",
+      "kind": "Archive",
+      "summary": ""
+    },
+    {
       "title": "Documentation",
       "href": "/notes/#docs-readme-md",
       "kind": "Archive",
@@ -9814,10 +9820,22 @@
       "summary": "Dune Price Tables & ETH USD Data Structure Guide Exploration Date: March 22, 2024 Data Coverage: 2022–Present Primary Table: prices.usd 1. Available Price Tables in Dune | Table | Type | Coverage | Best Use | | | | | ..."
     },
     {
+      "title": "Dune Queries Configuration Guide",
+      "href": "/notes/#docs-dune_setup-md",
+      "kind": "Archive",
+      "summary": "Dune Queries Configuration Guide Status Atual Auctions estão configuradas como null em data/sources. :  { \"gnars auctions base\": null, \"gnars auctions ethereum\": null, \"treasury outflows base\": null } Como Configurar ..."
+    },
+    {
       "title": "ETHSkills",
       "href": "/notes/#docs-operations-ethskills-md",
       "kind": "Archive",
       "summary": "ETHSkills Why it is relevant to gnars data ETHSkills is not a Gnars data source. It is a supplemental Ethereum knowledge base for agents and operators working on this repository. It is useful when the task is about: i..."
+    },
+    {
+      "title": "Frontend Improvements - Treasury & Auctions Visualization",
+      "href": "/notes/#docs-frontend_improvements-md",
+      "kind": "Archive",
+      "summary": "Frontend Improvements Treasury & Auctions Visualization Dados Disponíveis 1. Treasury History Timeseries File : web/public/data/treasury history.  { \"records\": [ { \"date\": \"2024 03 01\", \"inflow usd\": 3518.16, \"outflow..."
     },
     {
       "title": "GitHub Pages Publishing",
@@ -9836,6 +9854,18 @@
       "href": "/notes/#readme-md",
       "kind": "Archive",
       "summary": "gnars data Canonical data repository for Gnars DAO across gnars.com , gnars.wtf , gnars.center , governance archives, and legacy community sources. Supplementary operator tooling tracked in this repo includes Dune for..."
+    },
+    {
+      "title": "GNARS-DATA AUDIT EXECUTION CHECKLIST",
+      "href": "/notes/#docs-audit_execution_checklist-md",
+      "kind": "Archive",
+      "summary": "GNARS DATA AUDIT EXECUTION CHECKLIST Objetivo : 100% completude de dados para Votes, Treasury, Milestones e Analytics Data Início : 2026 03 23 Target : 2026 03 30 📋 FASE 1: DIAGNÓSTICO (Dia 1 2) 1.1 VOTES TAB Diagnos..."
+    },
+    {
+      "title": "GNARS-DATA AUDIT PROMPT - Data Completeness & Quality",
+      "href": "/notes/#docs-audit_prompt_data_completeness-md",
+      "kind": "Archive",
+      "summary": "GNARS DATA AUDIT PROMPT Data Completeness & Quality Objetivo Auditoria completa de dados para garantir que 100% dos gráficos, tabs e listas estejam completos, precisos e refletindo a realidade do DAO Gnars. Escopo : A..."
     },
     {
       "title": "Governance Model",

@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-03-23T20:42:11.705771",
+  "votes": {
+    "coverage": 88.28828828828829,
+    "status": "⚠️  NEEDS WORK"
+  },
+  "treasury": {
+    "balance": null,
+    "tx_hash_pct": 50.3875968992248,
+    "project_id_pct": 100.0,
+    "category_pct": 0.0,
+    "status": "❌ NEEDS WORK"
+  },
+  "milestones": {
+    "coverage": 0.0,
+    "status": "⚠️  NEEDS WORK"
+  },
+  "analytics": {
+    "members_count": 1180,
+    "sport_pct": 2.0338983050847457,
+    "display_pct": 100.0,
+    "recipient_coverage_pct": 100.0,
+    "tag_confidence_pct": 100.0
+  },
+  "overall_score": 22.580546648343258
+}
